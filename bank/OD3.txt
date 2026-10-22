@@ -271,7 +271,7 @@ B | The didgeridoo is not as curved as the tuba.
 F | A clarinet is not as long a bassoon. | A clarinet is not as long as a bassoon.
 F | The flute sound is as sharp a whistle. | The flute sounds as sharp as a whistle.
 W | panpipes | Make a sentence about panpipes.
-P | 🎷🪘🎸🌏 | Which instrument is from which place? Talk about it.
+P | 🎷🥁🎸🌏 | Which instrument is from which place? Talk about it.
 C | Are string instruments better than drums? | String instruments | Drums
 Z | Name three instruments from around the world.
 S | Describe your favorite instrument in two sentences.
@@ -294,7 +294,7 @@ B | A knife and a fork are both wedges.
 F | Harry doesn't fall off and Jay doesn't, too. | Harry doesn't fall off and Jay doesn't, either.
 F | I climbed up the stairs. I did, either. | I climbed up the stairs. I did, too.
 W | doorknob | Make a sentence about a doorknob.
-PT | 🔨🪜🔪🔩 | Which simple machine is each tool? Type one sentence.
+PT | 🔨🔧🔪🔩 | Which simple machine is each tool? Type one sentence.
 C | Is a ramp more useful than a ladder? | A ramp | A ladder
 Z | Name three simple machines.
 S | Explain how a seesaw works in two sentences.

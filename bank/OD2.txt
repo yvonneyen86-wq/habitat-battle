@@ -409,7 +409,7 @@ F | How many paper was there? | How much paper was there?
 F | How much seals were there? There was one seal. | How many seals were there? There was one seal.
 W | edge | Make a sentence with the word edge.
 W | seal | Make a sentence with the word seal.
-P | 📄🕊️🦭⛵ | Tell the story of Maki's origami world.
+P | 📄🕊️🐬⛵ | Tell the story of Maki's origami world.
 C | Is origami easier than painting? | Yes, easier | No, harder
 Z | Name three things you use to make art.
 S | Ask your partner how much or how many of something there is in the classroom.

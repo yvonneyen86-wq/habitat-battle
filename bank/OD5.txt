@@ -18,7 +18,7 @@ B | Tigers have sanctuaries where they can live safely.
 F | I have been read this book for an hour. | I have been reading this book for an hour.
 F | Woolly mammoths has been extinct for thousands of years. | Woolly mammoths have been extinct for thousands of years.
 W | endangered | Make a sentence about an endangered animal.
-P | 🦤🐘🌲❌ | What is happening to these animals? Tell the story.
+P | 🦏🐘🌲❌ | What is happening to these animals? Tell the story.
 C | Is it more important to save wild animals or to grow more crops for people? | Save wild animals | Grow more crops
 Z | Name three extinct animals from the story.
 S | Why do we protect animals? Give two reasons.
@@ -340,7 +340,7 @@ B | This lemon smells good, but it tastes bitter.
 F | I felt sickly this morning, but I'm OK now. | I felt sick this morning, but I'm OK now.
 F | Your new song sounds fantastically! | Your new song sounds fantastic!
 W | design | Make a sentence about a design you like.
-P | 🗿🌊🐠🪸 | What is this art? Describe what you see.
+P | 🗿🌊🐠🐚 | What is this art? Describe what you see.
 C | Which is better for art, a gallery or the ocean? | A gallery | The ocean
 Z | Name the five sense verbs.
 S | Describe your favorite food using three sense verbs.
@@ -409,7 +409,7 @@ B | They renamed the castle Peril-Dawson Castle.
 F | Yesterday, Thomas climbs onto the ramparts. | Yesterday, Thomas climbed onto the ramparts.
 F | Someday I see the castles of Wales. | Someday I will see the castles of Wales.
 W | tremble | Make a sentence with the word tremble.
-P | 🏰🪙🐦‍⬛🔑 | What is the mystery? Tell the story.
+P | 🏰🪙🐦🔑 | What is the mystery? Tell the story.
 C | Should old castles be restored or left as ruins? | Restored | Left as ruins
 Z | Name three parts of a castle.
 S | Talk about yesterday, today and tomorrow. Say one sentence for each.

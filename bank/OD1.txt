@@ -245,7 +245,7 @@ F | Do you has onions? | Do you have onions?
 F | What you have? | What do you have?
 W | onions | Make a sentence with the word "onions".
 W | mango | Make a sentence with the word "mango".
-P | 🥣🪨🥔🥕 | Tell the story of the stone soup.
+P | 🥣🗿🥔🥕 | Tell the story of the stone soup.
 C | Is fruit salad better than vegetable soup? | Fruit salad | Vegetable soup
 Z | Name three vegetables.
 S | Ask your partner: Do you have a pencil?
@@ -420,7 +420,7 @@ F | A doll can grows. | A doll can't grow. / A doll cannot grow.
 F | People can breathes. | People can breathe.
 W | rose | Make a sentence with the word "rose".
 W | fountain | Make a sentence with the word "fountain".
-P | 🌳🐶⚽🪑 | Which are living? Which are nonliving? Say why.
+P | 🌳🐶⚽🛋️ | Which are living? Which are nonliving? Say why.
 C | Is a plant a living thing? | Yes, it is | No, it isn't
 Z | Name three living things in a park.
 S | Say: I'm sorry. Then your partner says: That's OK.

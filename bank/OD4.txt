@@ -259,7 +259,7 @@ S | Explain what happens when you breathe in.
 B | In ancient times, people used to think differently.
 F | My father use to play games with his friends. | My father used to play games with his friends.
 W | heart | Make a sentence about what the heart does.
-P | 🫁❤️🩸💨 | Describe how oxygen travels through the body.
+P | 🩺❤️🩸💨 | Describe how oxygen travels through the body.
 C | Is it more important to exercise your heart or your lungs? | Your heart | Your lungs
 Z | Name three parts of the circulatory system.
 F | Last week, I used to think about the circulatory system. | Last week, I thought about the circulatory system.
