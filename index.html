@@ -116,6 +116,9 @@ h1,h2,h3{font-family:var(--display);margin:0;line-height:1.05;text-wrap:balance}
 .hab .bar{width:88%;height:calc(var(--hw,12cqmin)*.075);background:rgba(0,0,0,.18);box-shadow:inset 0 0 0 .2cqmin rgba(255,255,255,.7)}
 .bar i{background:linear-gradient(180deg,#69db7c,#2f9e44)}
 .bar i.low{background:linear-gradient(180deg,#ff8787,#e03131)}
+.wi{height:1.05em;width:auto;vertical-align:-.15em;display:inline-block}
+.hab .wall{position:absolute;left:5%;right:5%;top:calc(var(--hw,12cqmin)*.5);--rh:calc(var(--hw,12cqmin)*.075);height:calc(var(--rh)*var(--r,1));background:var(--wall-img) repeat;background-size:calc(var(--rh)*8) calc(var(--rh)*2);border-radius:.5cqmin;box-shadow:0 .25cqmin .3cqmin rgba(0,0,0,.35);z-index:2;pointer-events:none;transition:height .3s}
+.dio .wall{position:absolute;left:8%;right:8%;bottom:19%;--rh:min(3.6cqi,18px);height:calc(var(--rh)*var(--r,1));background:var(--wall-img) repeat;background-size:calc(var(--rh)*8) calc(var(--rh)*2);border-radius:6px;box-shadow:0 4px 5px rgba(0,0,0,.35);z-index:2;pointer-events:none;transition:height .3s}
 .hab .ar{position:absolute;top:calc(var(--hw,12cqmin)*.02);left:2%;box-shadow:0 .2cqmin 0 rgba(0,0,0,.12);z-index:2;font-size:calc(var(--hw,12cqmin)*.12);background:#fff;border-radius:99px;padding:0 .6cqmin}
 .hab .st{position:absolute;bottom:calc(var(--hw,12cqmin)*.3);right:.3cqmin;font-size:calc(var(--hw,12cqmin)*.16)}
 .hab.down{opacity:.75}
@@ -590,6 +593,13 @@ W | habitat
 T | Write a question that starts with "Where". | Where do you live?
 C | Would you rather live in space or under the sea? | In space | Under the sea
 Z | Name four animals that can swim.`;
+const WALL_SVG=`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 30'><rect width='120' height='30' fill='#5c6470'/><g stroke='#424a55' stroke-width='1.6' stroke-linejoin='round'><rect x='1.5' y='1.5' width='27' height='12' rx='3.5' fill='#aeb6c0'/><rect x='31.5' y='1.5' width='27' height='12' rx='3.5' fill='#9ca5b0'/><rect x='61.5' y='1.5' width='27' height='12' rx='3.5' fill='#b7bec7'/><rect x='91.5' y='1.5' width='27' height='12' rx='3.5' fill='#a3abb6'/><rect x='-13.5' y='16.5' width='27' height='12' rx='3.5' fill='#a3abb6'/><rect x='16.5' y='16.5' width='27' height='12' rx='3.5' fill='#b7bec7'/><rect x='46.5' y='16.5' width='27' height='12' rx='3.5' fill='#9ca5b0'/><rect x='76.5' y='16.5' width='27' height='12' rx='3.5' fill='#aeb6c0'/><rect x='106.5' y='16.5' width='27' height='12' rx='3.5' fill='#9ca5b0'/></g><g fill='#fff' opacity='.35'><rect x='4' y='3.5' width='12' height='2.5' rx='1.2'/><rect x='34' y='3.5' width='12' height='2.5' rx='1.2'/><rect x='64' y='3.5' width='12' height='2.5' rx='1.2'/><rect x='94' y='3.5' width='12' height='2.5' rx='1.2'/><rect x='19' y='18.5' width='12' height='2.5' rx='1.2'/><rect x='49' y='18.5' width='12' height='2.5' rx='1.2'/><rect x='79' y='18.5' width='12' height='2.5' rx='1.2'/></g></svg>`;
+const WALL_ICON=`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 34'><rect x='1' y='2' width='38' height='31' rx='5' fill='#5c6470' stroke='#3b424c' stroke-width='2'/><g stroke='#424a55' stroke-width='1.4' stroke-linejoin='round'><rect x='4' y='5' width='15' height='7' rx='2.5' fill='#b7bec7'/><rect x='21' y='5' width='15' height='7' rx='2.5' fill='#9ca5b0'/><rect x='-5' y='14' width='15' height='7' rx='2.5' fill='#a3abb6'/><rect x='12' y='14' width='15' height='7' rx='2.5' fill='#aeb6c0'/><rect x='29' y='14' width='15' height='7' rx='2.5' fill='#9ca5b0'/><rect x='4' y='23' width='15' height='7' rx='2.5' fill='#9ca5b0'/><rect x='21' y='23' width='15' height='7' rx='2.5' fill='#b7bec7'/></g><g fill='#fff' opacity='.35'><rect x='6' y='6.5' width='7' height='2' rx='1'/><rect x='23' y='6.5' width='7' height='2' rx='1'/><rect x='14' y='15.5' width='7' height='2' rx='1'/><rect x='6' y='24.5' width='7' height='2' rx='1'/><rect x='23' y='24.5' width='7' height='2' rx='1'/></g></svg>`;
+const WALL_IMG='data:image/svg+xml;utf8,'+encodeURIComponent(WALL_SVG),WALL_ICO='data:image/svg+xml;utf8,'+encodeURIComponent(WALL_ICON);
+document.documentElement.style.setProperty('--wall-img',`url("${WALL_IMG}")`);
+const WALL_EL=new Image();WALL_EL.src=WALL_ICO;
+const ico=e=>e==='🧱'?`<img class="wi" src="${WALL_ICO}" alt="wall">`:e;
+const wallRows=a=>a<=0?0:a<=4?1:a<=8?2:3;
 const SPELLS={animal:'I am brave and strong, and I will protect my home!',dino:'I am a mighty dinosaur, and my tail is super strong!',space:'Three, two, one, blast off! I can fly through any wall!',hero:'I am a hero, and I will keep my team safe!'};
 Object.entries(SPELLS).forEach(([k,v])=>CLASSES[k].spell=v);
 const BOSSES={jungle:['Giant Gorilla','🦍'],dino:['Lava Dragon','🐉'],space:['Galaxy Monster','👾'],town:['Grumpy Ogre','👹']};
@@ -811,6 +821,7 @@ function fxLoop(ts){
     p.vy+=p.g*dt;p.vx*=p.drag||1;p.vy*=p.drag||1;p.x+=p.vx*dt;p.y+=p.vy*dt;p.rot+=p.vr*dt;
     c.save();c.globalAlpha=Math.min(1,p.life/p.max*1.8);c.translate(p.x,p.y);c.rotate(p.rot);
     if(p.txt){c.font=`800 ${p.s}px "Baloo 2",sans-serif`;c.textAlign='center';c.textBaseline='middle';c.lineJoin='round';c.lineWidth=p.s/4.5;c.strokeStyle='#fff';c.strokeText(p.txt,0,0);c.fillStyle=p.col||'#1e2433';c.fillText(p.txt,0,0);}
+    else if(p.e==='🧱'){c.drawImage(WALL_EL,-p.s/2,-p.s*.42,p.s,p.s*.85);}
     else if(p.e){c.font=`${p.s}px ${EMOJI_FONT}`;c.textAlign='center';c.textBaseline='middle';c.fillText(p.e,0,0);}
     else{c.fillStyle=p.col;c.fillRect(-p.s/2,-p.s/4,p.s,p.s/2);}
     c.restore();
@@ -1273,7 +1284,7 @@ function renderStage(){
     return `<div class="terr${defT.includes(t.ti)?' defend':''}" style="--tc:${t.color}" id="terr-${t.ti}"><div class="terr-h"><span class="tn">${esc(t.name)}</span><div class="bar"><i class="${t.pct<.35?'low':''}" style="width:${Math.round(t.pct*100)}%"></i></div><span class="hpt">❤️ ${t.hp}/${t.max}</span>${ph!=='gather'?`<span class="pts">🏆 ${t.pts}</span>`:`<span class="hpt">🪙 ${t.coins}</span>`}</div>
     <div class="habs" style="--hw:${hw}cqmin">${n?ps.map((p,k)=>{const h=habOf(p),ch=charById(p.char),pct=p.down?0:p.hp/maxHp(p);
       const tr=okIds[p.pid]||0;const st=readyIds[p.pid]?'⚡':tr===3?'🌟':tr===2?'⭐':tr?'✓':(live&&b.subs[p.pid]&&b.subs[p.pid].ok==null?'📝':live&&b.spells&&b.spells[p.pid]?'🪄':'');const fire=(p.streak||0)>=2&&ph==='battle';const blk=b&&b.step==='defense'&&b.def&&b.def.blocks[p.pid];
-      return `<div class="hab${p.down?' down':''}${readyIds[p.pid]?' ready':''}${fire?' flame':''}" id="hab-${p.pid}" title="${esc(p.name)}" style="--d:${((k*.53)%2.2).toFixed(2)}s"><span class="flag"></span>${p.lv>=3?'<span class="spark">✨</span>':''}<span class="av">${ch.e}</span>${p.armor?`<span class="ar">🛡️${p.armor}</span>`:''}<span class="he">${h[1]}</span>${p.down?'<span class="zz">💤</span>':''}${fire?`<span class="fire">🔥${p.streak}</span>`:''}${blk?'<span class="blk">🛡️</span>':''}<span class="lvl">${'★'.repeat(p.lv)}${'☆'.repeat(3-p.lv)}</span><span class="hn">${esc(p.name)}</span><div class="bar"><i class="${pct<.35?'low':''}" style="width:${Math.round(pct*100)}%"></i></div>${st?`<span class="st">${st}</span>`:''}</div>`;}).join(''):'<div class="empty-t">Waiting for players…</div>'}</div></div>`;
+      return `<div class="hab${p.down?' down':''}${readyIds[p.pid]?' ready':''}${fire?' flame':''}" id="hab-${p.pid}" title="${esc(p.name)}" style="--d:${((k*.53)%2.2).toFixed(2)}s"><span class="flag"></span>${p.lv>=3?'<span class="spark">✨</span>':''}<span class="av">${ch.e}</span>${p.armor?`<span class="ar">🛡️${p.armor}</span>`:''}<span class="he">${h[1]}</span>${p.armor&&!p.down?`<span class="wall" style="--r:${wallRows(p.armor)}"></span>`:''}${p.down?'<span class="zz">💤</span>':''}${fire?`<span class="fire">🔥${p.streak}</span>`:''}${blk?'<span class="blk">🛡️</span>':''}<span class="lvl">${'★'.repeat(p.lv)}${'☆'.repeat(3-p.lv)}</span><span class="hn">${esc(p.name)}</span><div class="bar"><i class="${pct<.35?'low':''}" style="width:${Math.round(pct*100)}%"></i></div>${st?`<span class="st">${st}</span>`:''}</div>`;}).join(''):'<div class="empty-t">Waiting for players…</div>'}</div></div>`;
   }).join('');
   // footer
   const foot=$('#foot');
@@ -1334,7 +1345,7 @@ function renderConsole(){
       :`<button class="btn coin" data-act="coin" data-pid="${p.pid}">✓ +${CORRECT_COINS} 🪙</button><button class="btn star" data-act="great" data-pid="${p.pid}">⭐ Great job</button><button class="btn" data-act="coin-minus" data-pid="${p.pid}">−🪙</button>`;
     return `<div class="prow${p.online?'':' off'}" id="row-${p.pid}" style="--tc:${teamColor(p.team)}"><span class="av">${ch.e}</span>
     <div class="nm"><span>${esc(p.name)}</span><small>${h[1]} ${esc(h[0])}${p.online?'':' · offline'}</small>${stt}</div>
-    <div class="stats"><span>🪙 <b>${p.coins}</b></span><span>${p.down?'💤':'❤️'} <b>${p.down?0:p.hp}/${maxHp(p)}</b></span>${p.armor?`<span>🛡️ <b>${p.armor}</b></span>`:''}<span>${c.atk[1]}${p.inv.atk} ${c.def[1]}${p.inv.def} ${c.heal[1]}${p.inv.heal}</span><span>${items}</span>${flags?`<b>${flags}</b>`:''}</div>
+    <div class="stats"><span>🪙 <b>${p.coins}</b></span><span>${p.down?'💤':'❤️'} <b>${p.down?0:p.hp}/${maxHp(p)}</b></span>${p.armor?`<span>🛡️ <b>${p.armor}</b></span>`:''}<span>${c.atk[1]}${p.inv.atk} ${ico(c.def[1])}${p.inv.def} ${c.heal[1]}${p.inv.heal}</span><span>${items}</span>${flags?`<b>${flags}</b>`:''}</div>
     <div class="acts">${btns}<button class="btn x" data-act="remove" data-pid="${p.pid}">${H.confirm==='rm-'+p.pid?'Remove?':'✕'}</button></div></div>`;}).join('')
     :`<div class="empty">No players yet. Students scan the QR code, type their name, pick a team and a character.<br><br>Code: <b>${esc(S.code)}</b></div>`;
   const legend=ph==='gather'?`<div class="legend"><b>Learning Time</b><br>Students earn 🪙 coins and spend them on their tablets:<br>🏠 Upgrade habitat (${UPGRADE_COST[1]} / ${UPGRADE_COST[2]} 🪙): more ❤️ (10 → 15 → 20)<br>⚔️ Attack gear (${GEAR_COST} 🪙): 3 damage instead of 1<br>🛡️ Defense gear (${GEAR_COST} 🪙): +3 wall instead of +1<br>🍖 Supplies (${GEAR_COST} 🪙): +4 ❤️ instead of +1<br>⭐ 3 class items charge a power. Press <b>⚔️ Start Battle</b> for the last ${S.battleMin} minutes.</div>`
@@ -1549,7 +1560,7 @@ function sJoin(app,s){
     if(!app._jb){app._jb=true;app.addEventListener('click',sJoinClick);}}
   $('#j-scene').textContent=`${SCENES[s.scene].icon} ${SCENES[s.scene].name}`;
   $('#j-teams').innerHTML=s.teams.map((t,i)=>`<button data-team="${i}" class="${ST.team===i?'sel':''}" style="--tc:${t.color}">${esc(t.name)}</button>`).join('');
-  $('#j-chars').innerHTML=Object.entries(CLASSES).map(([k,c])=>`<div class="class-block"><div class="cl"><b>${esc(c.label)}</b><span>Home: ${c.hab.map(h=>h[1]).join(' → ')} · Gear: ${c.atk[1]} ${c.def[1]} ${c.heal[1]} · Power: ${esc(c.power)}</span></div><div class="char-pick">${CHARS.filter(x=>x.c===k).map(x=>`<button data-char="${x.id}" class="${ST.char===x.id?'sel':''}"><span class="e">${x.e}</span><small>${esc(x.n)}</small></button>`).join('')}</div></div>`).join('');
+  $('#j-chars').innerHTML=Object.entries(CLASSES).map(([k,c])=>`<div class="class-block"><div class="cl"><b>${esc(c.label)}</b><span>Home: ${c.hab.map(h=>h[1]).join(' → ')} · Gear: ${c.atk[1]} ${ico(c.def[1])} ${c.heal[1]} · Power: ${esc(c.power)}</span></div><div class="char-pick">${CHARS.filter(x=>x.c===k).map(x=>`<button data-char="${x.id}" class="${ST.char===x.id?'sel':''}"><span class="e">${x.e}</span><small>${esc(x.n)}</small></button>`).join('')}</div></div>`).join('');
   jUpdate();
 }
 function jUpdate(){const b=$('#j-go');if(b)b.disabled=!(ST.name.trim()&&ST.team!==null&&ST.char);}
@@ -1561,7 +1572,7 @@ function sSkeleton(app){
       <button class="supply" id="t-supply" data-sact="shop" aria-label="Open supplies"><span class="bag">🎒</span><span>Supplies</span><i class="badge" id="t-badge" hidden></i></button></div>
     <div class="s-teams" id="t-teams"></div>
     <div class="bosspill" id="t-boss" hidden></div>
-    <div class="s-hero"><div class="dio" id="h-dio"><div class="rays" id="h-rays"></div><div class="mound"></div><span class="flag"></span><span class="hab-e" id="h-hab"></span><span class="char" id="h-char"></span><span class="zz" id="h-zz" hidden>💤</span></div>
+    <div class="s-hero"><div class="dio" id="h-dio"><div class="rays" id="h-rays"></div><div class="mound"></div><span class="flag"></span><span class="hab-e" id="h-hab"></span><span class="wall" id="h-wall" hidden></span><span class="char" id="h-char"></span><span class="zz" id="h-zz" hidden>💤</span></div>
       <div class="hname" id="h-name"></div>
       <div class="hp"><span class="em" id="h-heart">❤️</span><div class="bar"><i id="h-hp"></i></div><b id="h-hpt"></b><span id="h-ar"></span></div>
       <div class="inv"><span id="i-atk"></span><span id="i-def"></span><span id="i-heal"></span></div>
@@ -1586,8 +1597,8 @@ function sPlay(s,me){
   $('#h-name').innerHTML=`${esc(h[0])} <span class="st">${'★'.repeat(me.lv)}${'☆'.repeat(3-me.lv)}</span>${(me.streak||0)>=2&&s.phase==='battle'?` <span class="streak">🔥${me.streak}</span>`:''}`;
   const bo=s.battle&&s.battle.boss&&!s.battle.boss.defeated?s.battle.boss:null;const bp=$('#t-boss');bp.hidden=!bo;if(bo)bp.innerHTML=`<span class="em">${bo.e}</span><span>${esc(bo.name)}</span><div class="bar"><i style="width:${Math.round(bo.hp/bo.max*100)}%"></i></div><b>${bo.hp}</b>`;
   const pct=me.down?0:me.hp/mx;const hb=$('#h-hp');hb.style.width=Math.round(pct*100)+'%';hb.className=pct<.35?'low':'';
-  $('#h-heart').textContent=me.down?'💤':'❤️';$('#h-hpt').textContent=`${me.down?0:me.hp}/${mx}`;$('#h-ar').textContent=me.armor?`🛡️ ${me.armor}`:'';
-  $('#i-atk').innerHTML=`<i>${c.atk[1]}</i>${me.inv.atk}`;$('#i-def').innerHTML=`<i>${c.def[1]}</i>${me.inv.def}`;$('#i-heal').innerHTML=`<i>${c.heal[1]}</i>${me.inv.heal}`;
+  $('#h-heart').textContent=me.down?'💤':'❤️';$('#h-hpt').textContent=`${me.down?0:me.hp}/${mx}`;$('#h-ar').textContent=me.armor?`🛡️ ${me.armor}`:'';{const hw=$('#h-wall');if(hw){hw.hidden=!(me.armor>0&&!me.down);hw.style.setProperty('--r',wallRows(me.armor));}}
+  $('#i-atk').innerHTML=`<i>${c.atk[1]}</i>${me.inv.atk}`;$('#i-def').innerHTML=`<i>${ico(c.def[1])}</i>${me.inv.def}`;$('#i-heal').innerHTML=`<i>${c.heal[1]}</i>${me.inv.heal}`;
   ['atk','def','heal'].forEach(k=>$('#i-'+k).title=c[k][0]);
   const pw=$('#h-pow');const showP=me.powers>0||me.dash||me.warp;pw.hidden=!showP;
   if(showP){const casting=ST.my&&ST.my.spell;pw.disabled=me.powers<1||s.phase!=='battle'||casting;pw.textContent=casting?'🪄 Casting… read your spell!':me.powers>0?(s.phase==='battle'?`🪄 Cast ${c.power} (${me.powers})`:`⚡ ${c.power} is ready for battle!`):me.dash?'🦖 Dino Dash ready!':'🌙 Warp Strike ready!';}
@@ -1601,7 +1612,7 @@ function sPlay(s,me){
     else if((me.down?0:me.hp)<pv.hp){sShake();sFloat(`−${pv.hp-me.hp} ❤️`,'#e03131');}
     else if(me.hp>pv.hp&&!pv.down&&me.lv===pv.lv){sFloat(`+${me.hp-pv.hp} ❤️`,'#2f9e44');sBurst($('#h-dio'),['💚'],6);}
     else if(pv.down&&!me.down&&me.lv===pv.lv){sFloat('Rebuilt! 🔨','#2f9e44');sBurst($('#h-dio'),['🔨','✨'],10);}
-    if(me.armor>pv.armor){sFloat(`+${me.armor-pv.armor} 🛡️`,'#3b5bdb');sBurst($('#h-dio'),['🛡️','🧱'],6);}
+    if(me.armor>pv.armor){sFloat(`+${me.armor-pv.armor} 🛡️`,'#3b5bdb');sBurst($('#h-dio'),['🛡️','✨'],6);}
   }
 }
 function sDock(s,me,c){
@@ -1634,7 +1645,7 @@ function sDock(s,me,c){
     const head=t===3?'<div class="tiermsg t3">🌟 AMAZING! ×2 and through walls!</div>':t===2?'<div class="tiermsg t2">⭐ GREAT answer! Your action is ×2!</div>':'<div class="dock-h">⚡ Good answer! Choose your action</div>';
     const atkSub=`${me.inv.atk>0?c.atk[1]+' ':''}${dmg} damage${me.warp||t===3?' · through walls':''}${(me.streak||0)>=2?' · 🔥':''}`;
     d=`${head}<div class="acts3"><div class="att">${boss?`<button style="--tc:#5f3dc4" data-sact="act" data-k="attack" data-t="boss">⚔️ Attack the ${esc(boss.name)} ${boss.e}<small>${atkSub}</small></button>`:s.teams.map((tm,i)=>i===me.team?'':`<button style="--tc:${tm.color}" data-sact="act" data-k="attack" data-t="${i}">⚔️ Attack ${esc(tm.name)}<small>${atkSub}</small></button>`).join('')}</div>
-      <div class="two"><button data-sact="act" data-k="build">🛡️ ${me.down?'Rebuild':'Build'}<small>${me.down?'Rebuild your home':'+'+((me.inv.def>0?3:1)*m)+' wall'}</small></button><button data-sact="act" data-k="repair">❤️ ${me.down?'Rebuild':'Repair'}<small>${me.down?'Rebuild your home':'+'+((me.inv.heal>0?4:1)*m)+' ❤️'}</small></button></div></div>`;
+      <div class="two"><button data-sact="act" data-k="build"><img class="wi" src="${WALL_ICO}" alt=""> ${me.down?'Rebuild':'Build'}<small>${me.down?'Rebuild your home':'+'+((me.inv.def>0?3:1)*m)+' wall'}</small></button><button data-sact="act" data-k="repair">❤️ ${me.down?'Rebuild':'Repair'}<small>${me.down?'Rebuild your home':'+'+((me.inv.heal>0?4:1)*m)+' ❤️'}</small></button></div></div>`;
     if(t===3)setTimeout(()=>sBurst(dock,['🌟','✨','⭐','🎉'],22),60);
   }
   else if(b.step==='defense')d=msg('🛡️ Defense Challenge!','Watch the big screen.');
@@ -1679,7 +1690,7 @@ function sShop(me,c){
   $('#s-sheet').innerHTML=`<div class="sh-h"><span class="bag">🎒</span><b>Supplies</b><span class="sp"></span><span class="coins small"><span class="em">🪙</span><b>${me.coins}</b></span><button class="btn" data-sact="shop-close" aria-label="Close">✕</button></div>
   <div class="shop">${nextH?item('upgrade',nextH[1],'Upgrade to '+nextH[0],`${h[1]} → ${nextH[1]} · ❤️ ${HPMAX[me.lv]} → ${HPMAX[me.lv+1]}`,up,me.coins<up,true):`<div class="it big"><span class="e">${h[1]}</span><div class="d"><b>${esc(h[0])}</b><small>Your habitat is fully upgraded! ★★★</small></div></div>`}
   ${item('atk',c.atk[1],c.atk[0],`Attack: 3 damage instead of 1 · ${me.inv.atk}/${INV_CAP}`,GEAR_COST,me.coins<GEAR_COST||me.inv.atk>=INV_CAP)}
-  ${item('def',c.def[1],c.def[0],`Defense: +3 🛡️ instead of +1 · ${me.inv.def}/${INV_CAP}`,GEAR_COST,me.coins<GEAR_COST||me.inv.def>=INV_CAP)}
+  ${item('def',ico(c.def[1]),c.def[0],`Defense: +3 🛡️ instead of +1 · ${me.inv.def}/${INV_CAP}`,GEAR_COST,me.coins<GEAR_COST||me.inv.def>=INV_CAP)}
   ${item('heal',c.heal[1],c.heal[0],`Supplies: +4 ❤️ instead of +1 · ${me.inv.heal}/${INV_CAP}`,GEAR_COST,me.coins<GEAR_COST||me.inv.heal>=INV_CAP)}</div>
   <p class="hint">Answer questions to earn more 🪙!</p>`;
 }
