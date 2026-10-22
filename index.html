@@ -1182,7 +1182,7 @@ function onStudent(conn,m){
   if(m.t==='buzz')onBuzz(pid);
   if(m.t==='vote')onVote(pid,m.i);
   if(m.t==='act')onAct(pid,m.kind,m.target);
-  if(m.t==='power')requestSpell(pid);
+  if(m.t==='power')usePower(pid);
 }
 function joinURL(){const u=new URL(location.href);const q=new URLSearchParams();q.set('join',S.code);PEER_PARAMS.forEach(k=>{if(params.get(k))q.set(k,params.get(k));});return u.origin+u.pathname+'?'+q.toString();}
 function makeQR(el,size){if(!el)return;el.innerHTML='';if(typeof QRCode==='undefined'){el.innerHTML='<div class="warn">QR code could not load. Students can type the link below.</div>';return;}new QRCode(el,{text:joinURL(),width:size,height:size,colorDark:'#1e2433',colorLight:'#ffffff',correctLevel:QRCode.CorrectLevel.M});}
