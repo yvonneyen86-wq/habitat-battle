@@ -1,6 +1,7 @@
 /* ===== core: renderer, helpers, materials ===== */
 const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
-const stage=document.getElementById('stage');
+const EMBED=!!window.HB3D_EMBED;/* true when bundled into index.html: no demo HUD, host drives state */
+const stage=document.getElementById('stage3d')||document.getElementById('stage');
 const renderer=new THREE.WebGLRenderer({antialias:true,powerPreference:'high-performance'});
 renderer.setPixelRatio(Math.min(2,devicePixelRatio));renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;
 renderer.outputEncoding=THREE.sRGBEncoding;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.12;
@@ -54,4 +55,4 @@ const anims=[];function animate(dur,fn,done){anims.push({t:0,dur,fn,done});}
 const parts=[];const partGeos=[SPH(.16,8,6),BOX(.24,.24,.24),new THREE.OctahedronGeometry(.2)];const partMats={};
 function spawn(pos,color,n=18,speed=6,up=5,life=1.1){const m=partMats[color]||(partMats[color]=GLOW(color,color,.35));for(let i=0;i<n;i++){const o=new THREE.Mesh(partGeos[i%3],m);o.position.copy(pos);o.userData={v:new THREE.Vector3(rnd(-1,1)*speed,rnd(.3,1)*up+2,rnd(-1,1)*speed),life:life*rnd(.7,1.3),rot:new THREE.Vector3(rnd(-5,5),rnd(-5,5),rnd(-5,5))};scene.add(o);parts.push(o);}}
 function ring(pos,color,size=5,dur=.7){const r=new THREE.Mesh(new THREE.TorusGeometry(1,.18,8,40),GLOW(color,color,.8,{transparent:true}));r.rotation.x=Math.PI/2;r.position.copy(pos);r.position.y+=.3;scene.add(r);animate(dur,k=>{r.scale.setScalar(1+k*size);r.material.opacity=1-k;},()=>scene.remove(r));}
-function banner(t,c){const b=document.createElement('div');b.className='banner';b.style.setProperty('--bc',c||'#e03131');b.innerHTML='<span></span>';b.firstChild.textContent=t;document.body.appendChild(b);setTimeout(()=>b.remove(),2000);}
+function banner(t,c){if(EMBED)return;const b=document.createElement('div');b.className='banner';b.style.setProperty('--bc',c||'#e03131');b.innerHTML='<span></span>';b.firstChild.textContent=t;document.body.appendChild(b);setTimeout(()=>b.remove(),2000);}

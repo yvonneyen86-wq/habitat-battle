@@ -91,4 +91,13 @@ if(typeof THREE==='undefined'){document.querySelector('.note').textContent='3D l
 js=''.join(open(f).read()+'\n' for f in ['core.js','chars.js','habitats.js','scenes.js','game.js'])
 out=head+js+'})();\n</script>\n</body>\n</html>\n'
 open('habitat-3d.html','w').write(out)
+# ---- embed the same bundle into ../index.html between the 3D-BUNDLE markers (index sets window.HB3D_EMBED before calling HB3D_INIT) ----
+import os
+ip=os.path.join(os.path.dirname(os.path.abspath(__file__)),'..','index.html')
+if os.path.exists(ip):
+    h=open(ip).read();B='/*3D-BUNDLE-BEGIN*/';E='/*3D-BUNDLE-END*/'
+    if B in h and E in h:
+        a=h.index(B)+len(B);b=h.index(E)
+        h=h[:a]+'\nwindow.HB3D_INIT=function(){\n'+js+'\nreturn HB3D_API;};\n'+h[b:]
+        open(ip,'w').write(h);print('embedded into index.html',len(h))
 print(len(out))

@@ -6,18 +6,18 @@ Live site: https://yvonneyen86-wq.github.io/habitat-battle/ (GitHub Pages, branc
 ## Hard rules
 - **Everything students or the projector can see must be English only.** Chinese is allowed only in `docs/使用說明.md` and in replies to the teacher.
 - The teacher (Yvonne) is the only user who edits this repo; she prefers 中文 replies, bullet points, concrete steps, no filler.
-- Keep the game a **single self-contained `index.html`** (inline CSS/JS). External scripts: only PeerJS (jsDelivr), qrcodejs (cdnjs) and — once the 3D stage is wired in — Three.js r128 (cdnjs). Nothing else.
+- Keep the game a **single self-contained `index.html`** (inline CSS/JS). External scripts: only PeerJS (jsDelivr), qrcodejs (cdnjs) and Three.js r128 (cdnjs; the host loads it on demand only when the teacher switches the 3D stage on). Nothing else.
 - Never add logins, accounts, databases or analytics. Students join by scanning the QR code; connections are peer-to-peer (PeerJS); game state lives in the teacher's browser `localStorage`.
 - Do not change the PeerJS id prefix (`habitatbattle-ivan-`) or the URL scheme `?join=CODE`.
 
 ## Layout
-- `index.html` — the whole game (teacher console + projector stage + student tablet view). ~310 KB.
+- `index.html` — the whole game (teacher console + projector stage + student tablet view). ~460 KB; about 140 KB of that is the 3D stage bundle between `/*3D-BUNDLE-BEGIN*/` and `/*3D-BUNDLE-END*/` — **never edit that block by hand**, edit `3d/*.js` and run `python3 3d/build.py`, which rebuilds the demo page and re-embeds the bundle.
 - `bank/OD1.txt … OD5.txt` — Oxford Discover question bank, one file per level, 18 units each. **The hosted game fetches these at load time**, so editing a bank file on GitHub changes the questions without touching `index.html`. The same data is also embedded in `index.html` as `const OD_BANK=…` (offline fallback); regenerate it with `python3 tools/build_bank.py` after editing bank files.
 - `tools/check_bank.py` — validates bank files (run before committing bank edits).
 - `tools/build_bank.py` — embeds bank files into `index.html`.
 - `tools/mkpreview.py` — builds `preview.html` (teacher screen with sample students, no network) for Claude artifact previews.
 - `docs/使用說明.md` — teacher's manual (Chinese).
-- `3d/` — Three.js 3D stage for the teacher/whiteboard screen (**prototype, not yet wired into `index.html`**). Read `3d/README.md` first. `3d/habitat-3d.html` is the standalone demo; `python3 3d/build.py` rebuilds it from the five `.js` files; `node 3d/stubtest.js` is the no-browser smoke test. Students' tablets stay 2D. When integrating: keep `index.html` single-file, add a `🎮 3D Stage` toggle (default off) and fall back to the 2D canvas if THREE fails to load.
+- `3d/` — Three.js 3D stage for the teacher/whiteboard screen, **embedded in `index.html`** behind the `🎮 3D` header toggle (default off, saved with the game state; THREE is fetched on demand and the game stays 2D if it fails). Read `3d/README.md` first. `3d/habitat-3d.html` is the standalone demo; `python3 3d/build.py` rebuilds it from the five `.js` files **and re-embeds the bundle into `index.html`**; `node 3d/stubtest.js` is the no-browser smoke test. Students' tablets stay 2D. In `index.html` the host talks to the stage only through `H.hb3d` (`sync/correct/attack/bossHit/bossDefeated/cheer/spotOne/spotTeam/overview`), see `apply3d()`/`view3d()`.
 - `docs/3D整合指令.md` — the teacher's step-by-step prompts for integrating the 3D stage (Chinese).
 
 ## Bank file format

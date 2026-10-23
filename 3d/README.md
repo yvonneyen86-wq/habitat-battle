@@ -1,6 +1,6 @@
 # Habitat Battle — 3D 模組（Three.js）
 
-這個資料夾是 3D 舞台的獨立原型與原始碼，**尚未**接進正式遊戲 `index.html`。
+這個資料夾是 3D 舞台的原始碼。**已接進正式遊戲 `index.html`**（老師端 `🎮 3D` 開關，預設關閉）；`habitat-3d.html` 仍是可獨立開啟的展示頁。
 目標：把老師端／電子白板上的 2D canvas 舞台（`paintScene/paintDynamic`）換成可選的 3D 舞台；學生平板端維持 2D。
 
 ## 檔案
@@ -80,7 +80,14 @@
 5. **效能**：白板一般是 Chromium 核心，r128 + 8 名玩家 + 一個場景測過結構無誤；若卡頓先把 `renderer.setPixelRatio` 上限從 2 降到 1.5、關掉 `fill` 燈。
 6. **測試**：`node --check`、`node 3d/stubtest.js`、本機 `python3 -m http.server` 開啟後四個場景各切一次、按一次 Attack / Level up / Boss。
 
+## 已整合進 index.html（2026-10）
+- `python3 3d/build.py` 會把五個 js 串成 `habitat-3d.html`，**同時**寫進 `index.html` 的 `/*3D-BUNDLE-BEGIN*/…/*3D-BUNDLE-END*/` 區塊（包成 `window.HB3D_INIT=function(){…return HB3D_API}`）。改了 3D 程式一定要重跑 build.py，不要手改 index.html 那一段。
+- `index.html` 老師端：`apply3d()` 在開啟時動態載入 Three.js（失敗就留在 2D 並提示），建立 `H.hb3d=HB3D_INIT()`；`#stage3d` 是蓋在投影區底層的 WebGL 層，`.stage.is3d` 時隱藏 2D 棲息地與特效，保留題目卡、QR、橫幅。
+- 狀態同步：每次 `render()` 都呼叫 `sync3d()` → `H.hb3d.sync(view3d())`，把 `S.players`（名字、角色、隊伍、等級、血量、倒地、外型 av）、隊伍、基地、場景、Boss 推給舞台；舞台用 `sync()` 比對後重建或播放動畫（升級＝擴建動畫、倒地＝knockOut、復活＝revive）。角色 id 對照表 `CHAR_MAP`（lion→tiger、panda→monkey、egg→stego、dragon→triceratops、四個英雄→kidA–D），實際生物仍依世界決定。
+- 事件：`markCorrect`→`correct(pid,tier)`；`resolveRound` 的攻擊→`await attack(from,to,dmg)`（舞台 landHit 不改血量，由 sync 套用）；Boss→`sync` 召喚、`bossHit(pid)`、`bossDefeated()`；投票揭曉→`cheer(pid)`（自動聚光＋彩花）。
+- 老師操作：學生列的 🎤 聚光、投影區左下 `🏝️ Island / 👥 隊伍合照 / 🏕️ Bases`（選基地，存進 `S.teams[i].site`）。
+- `EMBED` 模式下 `banner()` 不顯示（老師端有自己的橫幅）、Boss 不自動攻擊、`resize/pick` 用 `#stage3d` 的尺寸。
+
 ## 尚未做的事
 - 還沒拿到實機截圖校色，鏡頭角度與地標比例可能要再調。
-- 角色 id 與正式遊戲角色清單的對應表。
 - 學生端平板不做 3D（老師決定）。
