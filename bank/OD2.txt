@@ -84,6 +84,48 @@ P | 🐱🐦🦊🌲 | Tell the story of Leo and Lily.
 C | Who is braver, Leo or Lily? | Leo | Lily
 Z | Say three adverbs of frequency.
 S | Tell us something you always do and something you never do.
+# words
+worm | worm | w/orm | 🪱
+berries | ber·ries | ber/ries | 🫐
+hunt | hunt | h/unt | 🏹
+escape | es·cape | es/cape | 🏃
+creep | creep | cr/eep | 🐾
+fight | fight | f/ight | 🥊
+peck | peck | p/eck | 🐦
+pinecone | pine·cone | pine/cone | 🌲
+squawk | squawk | squ/awk | 🦜
+strong | strong | str/ong | 💪
+gentle | gen·tle | gen/tle | 🐰
+smart | smart | sm/art | 🧠
+calm | calm | c/alm | 😌
+fierce | fierce | f/ierce | 🦁
+# reading
+> Leo and Lily's Adventure
+> Leo and Lily live in a big garden near a forest. Lily is red and yellow. She's friendly, but she is usually very nervous. Lily flies from tree to tree in the garden, and she hops in the grass. She eats worms, nuts, and berries. Leo is black and white. He is very fast and very clever. He's brave, too. He climbs trees in the garden, and he hunts for mice... and birds! Leo sometimes tries to catch Lily, but Lily always escapes. Leo can run fast, but Lily can fly. This makes Leo angry!
+> One day, Leo sees Lily in the garden. Leo wants to catch Lily. He creeps through the garden very slowly and quietly. But Lily sees Leo, and she flies away into the forest. Leo chases Lily. Lily flies and flies, and Leo runs and runs. Soon they are a long way from the garden, and they don't know the way home. It's dark in the forest. Leo and Lily are scared.
+> Leo and Lily hear a noise. It's a fox! The fox is hungry. It wants some dinner. It wants to eat Leo! Leo tries to fight the fox, but the fox is very big.
+> Lily is in a tree. She pecks a pinecone. The pinecone falls and hits the fox on the head! Leo escapes and climbs up the tree. The fox is angry. It can't climb trees.
+> Leo and Lily wait in the tree for a long time. At last, the fox goes away. Leo and Lily are safe, but they want to go home now. Lily flies up very high. She sees the garden! She squawks happily. Lily shows Leo the way home. But Lily is small and her wings are tired. She sits on Leo's back, and Leo carries Lily home. Leo and Lily are safe at home in their garden again. They're friends now. Lily flies around the garden, and Leo never tries to catch her... Well, hardly ever!
+RC | What does Lily eat? | worms and berries | mice and birds | fish and nuts
+RC | Who wants to eat Leo in the forest? | a fox | a dog | a bird
+RC | What hits the fox on the head? | a pinecone | a worm | a nut
+RT | Why can't Leo catch Lily in the garden? | Leo can run fast, but Lily can fly.
+RT | Why can't the fox catch Leo in the tree? | The fox can't climb trees.
+RT | How does Lily get home? | She sits on Leo's back, and Leo carries her home.
+RS | How are Leo and Lily different? Tell us one thing.
+RS | Why are Leo and Lily friends at the end of the story?
+# grammar
+G | Lily always escapes from Leo.
+G | Lily is usually very nervous.
+G | Leo sometimes tries to catch Lily.
+G | Leo hardly ever tries to catch Lily now.
+G | Leo and Lily never fight now.
+G | Why can't my cat and bird be friends?
+G | I always eat ice cream in the summer.
+G | He sometimes watches TV in the evening.
+# speak-write
+SP | A: {Eagles} have feathers and wings to help them fly. | B: What animal group are they in? | A: They're in the bird group. | B: That's right! | eagles / parrots / owls / ducks / penguins / chickens
+SW | I know a {dog}. It is {gentle} and {smart}. It can {run fast}. | Write about an animal you know and say what it is like.
 ## U3 | What Is Our World Made Of? | How do things change?
 # learn
 What does "liquid" mean? | something that can flow, like water or juice
@@ -107,6 +149,49 @@ P | 🧊💧☁️🔥 | What is happening? Tell us how water changes.
 C | Which is more fun, a snowy day or a hot day? | A snowy day | A hot day
 Z | Name three liquids.
 S | Tell us about something that changed from one state to another.
+# words
+flow | flow | fl/ow | 🌊
+solid | sol·id | sol/id | 🧱
+liquid | liq·uid | liq/uid | 💧
+gas | gas | g/as | 💨
+heat | heat | h/eat | 🔥
+steam | steam | st/eam | ♨️
+ice | ice | i/ce | 🧊
+freeze | freeze | fr/eeze | 🥶
+melt | melt | m/elt | 🫠
+balloon | bal·loon | bal/loon | 🎈
+kettle | ket·tle | ket/tle | 🫖
+popcorn | pop·corn | pop/corn | 🍿
+icicle | i·ci·cle | i/ci/cle | ❄️
+candle | can·dle | can/dle | 🕯️
+# reading
+> What Is Our World Made Of?
+> Everything in our world is made of matter. Matter comes in three states: solids, liquids, and gases. Look around you. Can you find a solid, a liquid, and a gas?
+> Solids: A solid has its own shape. We can see and feel a solid. Solids can be hard, like a rock or a book, or soft, like a pillow. Ice is a solid.
+> Liquids: A liquid does not have its own shape. A liquid flows and takes the shape of the cup or bottle it is in. Liquids can be thick, like honey, or thin, like water. Water and juice are liquids.
+> Gases: We cannot usually see a gas, but sometimes we can feel it. The air around us is a gas. When you blow up a balloon, you fill it with gas. Steam is a gas, too.
+> Things can change from one state to another when we make them hot or cold. When we make water very cold, it freezes and changes to ice. When ice or snow heats up, it melts and changes back to water. When we heat water, it boils and changes to steam.
+> Look at these three pictures of things changing from one state to another. The snow was a solid and now it's a liquid. The water was a liquid and now it's a solid. The water was a liquid and now it's a gas.
+RC | What is ice? | a solid | a liquid | a gas
+RC | What happens when we heat water? | it boils | it freezes | it flows
+RC | Which one is a gas? | steam | snow | honey
+RT | What happens when we make water very cold? | It freezes and changes to ice.
+RT | What happens when ice or snow heats up? | It melts and changes back to water.
+RT | What does a liquid do in a cup or bottle? | It flows and takes the shape of the cup or bottle.
+RS | What is the cause of the snow melting? What is the effect?
+RS | Tell us one solid, one liquid, and one gas in our classroom.
+# grammar
+G | It was a liquid.
+G | Now it's a gas.
+G | They were hard before.
+G | Now they're very soft.
+G | What was it then?
+G | What is it now?
+G | It was an orange.
+G | Now it's orange juice.
+# speak-write
+SP | A: I see {ice}. What state is it? | B: It's a solid. | A: What was it before? | B: It was a liquid. It was water! | ice / snow / an icicle / an ice pop / steam / popcorn
+SW | Yesterday it was {water}. It was a {liquid}. Now it's {ice}. It's a {solid}. | Write about something that changed from one state to another.
 ## U4 | Let's Make Ice Cream! | How do things change?
 # learn
 What does "mixture" mean? | two or more things mixed together
@@ -130,6 +215,47 @@ P | 🍦🧊🥛🥳 | What are the students doing? Tell the story.
 C | Is ice cream better in summer or in winter? | In summer | In winter
 Z | Name three things you need to make ice cream.
 S | Tell us about a party you went to. Where was it?
+# words
+cream | cream | cr/eam | 🍦
+sugar | sug·ar | sug/ar | 🍬
+salt | salt | s/alt | 🧂
+pour | pour | p/our | 🫗
+mixture | mix·ture | mix/ture | 🥣
+open | o·pen | o/pen | 🚪
+closed | closed | cl/osed | 🔒
+freezer | freez·er | freez/er | 🧊
+coffee | cof·fee | cof/fee | ☕
+tea | tea | t/ea | 🍵
+salad | sal·ad | sal/ad | 🥗
+fruit | fruit | fr/uit | 🍎
+vegetables | veg·e·ta·bles | veg/e/ta/bles | 🥕
+pasta | pas·ta | pas/ta | 🍝
+# reading
+> Let's Make Ice Cream!
+> Scene 1. Ms. Woods: Today is our school party. Let's go to the cafeteria and get the ice cream you bought yesterday. It's in the freezer. Students: Oh, no! It's liquid! Luis: Yuck! Judy: That was our ice cream! Mark: Was the freezer door open? Ms. Woods: Yes, it was. It was open all night. Now there's no ice cream for the party.
+> Scene 2. Mr. Jenkins: What's wrong? Why's everyone so sad? Ms. Woods: It was our job to bring the ice cream for the party, but it melted. Now we can't have ice cream. Mr. Jenkins: Sure you can! You can make ice cream. I can teach you! Students: Yippee! Mr. Jenkins: OK, kids. Get big and small plastic bags, cream, sugar, vanilla, and salt. Then come to my classroom.
+> Scene 3. Students: Ready, Mr. Jenkins! Mr. Jenkins: My freezer was closed all night, so I have ice. Now, let's make ice cream. Students: Yes! Let's make ice cream! Mr. Jenkins: Mix the sugar, and vanilla, and cream. Students: Mix the sugar, and vanilla, and cream. Done! Mr. Jenkins: Pour the cream, sugar, and vanilla mixture into the small bag. Students: Pour the mixture into the small bag. Done! Mr. Jenkins: Put the salt and the ice cubes into the big bag. Students: Put the salt and the ice cubes into the big bag. Done! Mr. Jenkins: Now put the small bag in the big bag. Students: Put the small bag in the big bag. Done! Mr. Jenkins: Now shake, shake, shake! What do you have? Luis: Hey! Look! We have ice cream! And we didn't use a freezer!
+> Scene 4. Students: How is the ice cream, Mr. Jenkins? Mr. Jenkins: It's great! Can I have some more?
+RC | Why did the ice cream melt? | the door was open | it was too sweet | the party was late
+RC | Who teaches the students to make ice cream? | Mr. Jenkins | Ms. Woods | Luis
+RC | What goes into the big bag? | salt and ice cubes | cream and sugar | vanilla and milk
+RT | What is in the mixture? | The mixture is cream, sugar, and vanilla.
+RT | Where do the students pour the mixture? | They pour the mixture into the small bag.
+RT | What do the students do after they put the small bag in the big bag? | They shake, shake, shake the bag.
+RS | What is the effect of shaking the mixture?
+RS | Why did Mr. Jenkins help the students? What do you think?
+# grammar
+G | Was the freezer door open?
+G | Yes, it was open all night.
+G | Were the students happy?
+G | No, they weren't happy.
+G | Where was the ice cream?
+G | It was in the freezer.
+G | Where were you yesterday?
+G | We were at a party.
+# speak-write
+SP | A: Tell me about the party. | B: My friends were there. | A: How was the {ice cream}? | B: It was tasty! | ice cream / pasta / salad / fruit / cake / juice
+SW | My favorite food is {salad}. It's a mixture. It has {tomatoes}, {cucumbers}, and {salt} in it. | Write about one of your favorite foods and say what is in it.
 ## U5 | Then and Now | How are things different now from long ago?
 # learn
 What does "communication" mean? | sharing news or ideas with other people
@@ -153,6 +279,48 @@ P | 🐴📻✉️✈️ | Which things are from long ago? Which are from today?
 C | Which is better, a letter or an e-mail? | A letter | An e-mail
 Z | Name three ways to travel today.
 S | Tell us two things you did yesterday.
+# words
+travel | trav·el | trav/el | 🧳
+communication | com·mu·ni·ca·tion | com/mu/ni/ca/tion | 💬
+airplane | air·plane | air/plane | ✈️
+news | news | n/ews | 📰
+letter | let·ter | let/ter | ✉️
+internet | in·ter·net | in/ter/net | 🌐
+radio | ra·di·o | ra/di/o | 📻
+boat | boat | b/oat | ⛵
+bus | bus | b/us | 🚌
+motorcycle | mo·tor·cy·cle | mo/tor/cy/cle | 🏍️
+truck | truck | tr/uck | 🚚
+horse | horse | h/orse | 🐴
+# reading
+> Then and Now
+> Today, communication and travel are fast, and it's easy to get news. But a long time ago, things were very different.
+> Communication: Long ago, people used letters to communicate. They mailed letters to friends and families. Letters were carried by horse and cart, and later by train or boat. Today, communication is different and letters are carried by airplane. We can use e-mail, text messages, or phone calls to communicate quickly with friends and family all over the world.
+> My great-grandma mailed a letter to her friend in London. It took two months to get there. Today I send e-mails to my friend in London. She can read them right away.
+> News: Before newspapers, people talked to each other to get news. Then people printed the news on paper and newspapers started. Later they listened to the radio for news. Today we can get news any time we want.
+> Long ago, people listened to the news on the radio at 6 o'clock every day. Now they watch the news on TV and read it on the Internet anytime they want.
+> Travel: People long ago walked from place to place or traveled by horse and cart. When they traveled long distances they went by train or ship. It was slow and difficult. Today we can travel in cars, fast trains, buses, or airplanes to go to places that are far away. We can travel to places across the ocean, or across the world, in a day. Travel is fast and easy now.
+> Long ago, people traveled for two days from New York to Boston. It takes 30 minutes to travel from New York to Boston today.
+RC | How were letters carried long ago? | by horse and cart | by airplane | by e-mail
+RC | Which came first, newspapers or the radio? | newspapers | the radio | the Internet
+RC | How long did great-grandma's letter take to get to London? | two months | two days | 30 minutes
+RT | How can people communicate quickly today? | We can use e-mail, text messages, or phone calls.
+RT | What was it like traveling by train and ship long ago? | It was slow and difficult.
+RT | What is traveling like today? | Travel is fast and easy now.
+RS | How did people get news before newspapers?
+RS | How is travel different now from long ago? Tell us one thing.
+# grammar
+G | People listened to the news on the radio.
+G | They didn't watch the news on TV.
+G | People traveled by horse and cart.
+G | They didn't travel by airplane.
+G | Great Grandma traveled on a ship.
+G | I cleaned my room last night.
+G | I talked to my friend last night.
+G | What did you do last night?
+# speak-write
+SP | A: What country do you come from? | B: I come from {Egypt}. | A: Would you repeat that, please? | B: Sure. Egypt. | Egypt / Mexico / Korea / Taiwan / Japan / Canada
+SW | Long ago, people {traveled by horse and cart}. Now we {travel by airplane}. Long ago, people didn't {use the Internet}. | Write about something people did long ago but don't do now.
 ## U6 | Tell Me a Story, Grandpa | How are things different now from long ago?
 # learn
 What does "crowded" mean? | full of too many people
@@ -176,6 +344,53 @@ P | 🚢👴🇮🇹🗽 | What is Grandpa's story about? Tell it.
 C | Is it better to travel by ship or by airplane? | By ship | By airplane
 Z | Name three things in a living room.
 S | Ask your partner a question about what he or she did yesterday.
+# words
+arrive | ar·rive | ar/rive | 🛬
+ask | ask | a/sk | ❓
+enter | en·ter | en/ter | 🚪
+poor | poor | p/oor | 💸
+crowded | crowd·ed | crowd/ed | 👥
+clerk | clerk | cl/erk | 🧑‍💼
+visit | vis·it | vis/it | 👋
+sick | sick | s/ick | 🤒
+couch | couch | c/ouch | 🛋️
+chair | chair | ch/air | 🪑
+lamp | lamp | l/amp | 💡
+clock | clock | cl/ock | 🕰️
+bathtub | bath·tub | bath/tub | 🛁
+sink | sink | s/ink | 🚰
+# reading
+> Tell Me a Story, Grandpa
+> "Tell me a story, Grandpa!"
+> "Okay," says Grandpa. "I'll tell you a story about my grandfather, Carlo. In 1910, Carlo was ten years old. He and his family lived in Italy. They were very poor, so they came to the United States for a better life. This was the first time that Carlo traveled to a place far away."
+> "Really? I'm ten, too," says Henry. "And Mom, Dad, and I visit a different country every summer!"
+> "Yes, Henry. Things are different now," says Grandpa.
+> "How did they travel here?" asks Henry.
+> "They traveled by ship," says Grandpa. "It wasn't an easy trip because the ship was crowded and dirty. There wasn't much food, and many people got sick. Carlo was sick too. They arrived at Ellis Island in New York after ten days."
+> "Wow! That's slow!" says Henry. "Now it only takes about nine hours in an airplane."
+> "I know," says Grandpa. "It's very different today."
+> "Where did they live?" asks Henry.
+> "They lived with Carlo's uncle in New York," says Grandpa.
+RC | How old was Carlo in 1910? | ten | nine | twenty
+RC | How did Carlo's family travel to the United States? | by ship | by airplane | by train
+RC | Where did the ship arrive? | Ellis Island | Italy | London
+RT | Why did Carlo's family come to the United States? | They were very poor, so they came for a better life.
+RT | How long did the trip take? | They arrived after ten days.
+RT | Who did they live with in New York? | They lived with Carlo's uncle.
+RS | Why wasn't the trip easy? Tell us one thing.
+RS | How is Henry's life different from Carlo's life?
+# grammar
+G | Did they travel by ship?
+G | Yes, they traveled by ship.
+G | Did they arrive in two days?
+G | No, they didn't arrive in two days.
+G | What did they do yesterday?
+G | They lived with Carlo's uncle.
+G | Where did he travel?
+G | He traveled to New York.
+# speak-write
+SP | A: Where did you travel? | B: I traveled to Washington. | A: How did you travel there? | B: I traveled by {train} from New York. | train / ship / boat / bus / horse / airplane
+SW | A hundred years ago, people traveled to {New York} by {ship}. It took {ten days}. Today we go there by airplane in {nine hours}. | Write about traveling to a place 100 years ago and today.
 ## U7 | Subtraction | How do we use numbers?
 # learn
 What does "subtraction" mean? | taking one number away from another number
@@ -199,6 +414,47 @@ PT | 🍪➖🍪🟰 | Write a subtraction word problem about cookies.
 C | Is subtraction easier in a row or in a column? | In a row | In a column
 Z | Count backward from twenty to ten.
 S | Tell your partner about something you subtract every day.
+# words
+subtraction | sub·trac·tion | sub/trac/tion | ➖
+column | col·umn | col/umn | 📊
+row | row | r/ow | ➡️
+left | left | l/eft | 🍎
+number | num·ber | num/ber | 🔢
+clean | clean | cl/ean | 🧼
+dirty | dirt·y | dirt/y | 🧹
+tired | tired | t/ired | 😴
+hungry | hun·gry | hun/gry | 🍽️
+thirsty | thirst·y | thirst/y | 🥤
+full | full | f/ull | 😋
+# reading
+> Subtraction
+> What is subtraction? When we add things, we join them together. When we subtract things, we take them away from other things. Then we can see how many things are left.
+> Subtracting in Groups: Here are five apples. We take away two apples. There are 3 apples left.
+> When we count backward, we're subtracting 1 each time. Count backward from 50 to 1. Now count backward by fives, subtracting 5 each time: 50, 45, 40, 35, 30, 25, 20, 15, 10. Now count backward by tens. How much are you subtracting each time now?
+> Subtraction Math Problems: All subtraction math problems have a minus sign. The minus sign tells us to subtract 4 from 9. The answer tells how many are left. We write 9 - 4 = 5. We say "Nine minus four equals five."
+> Subtraction Math Problems in Rows and Columns: We usually write subtraction math problems for single-digit numbers in a row, and we usually write subtraction problems for double-digit numbers in a column.
+> Subtraction Word Problems: Let's use subtraction to solve these problems. Alma bought five cookies. Her friends ate three. How many cookies were left? Olivia had thirty-five grapes. She gave twenty grapes to her little sister. How many grapes were left?
+> Now think of some things that people subtract every day. My teacher subtracts numbers from 100 for my test score!
+RC | What sign do all subtraction math problems have? | a minus sign | a plus sign | an equals sign
+RC | How do we usually write subtraction problems for double-digit numbers? | in a column | in a row | in a circle
+RC | How many cookies did Alma's friends eat? | three | five | two
+RT | When we count backward by fives, how many do we subtract each time? | We subtract 5 each time.
+RT | How do we say 9 - 4 = 5? | We say nine minus four equals five.
+RT | How many grapes did Olivia give to her little sister? | She gave twenty grapes to her little sister.
+RS | What happens when we subtract things?
+RS | When do people use subtraction every day? Tell us one thing.
+# grammar
+G | Alma bought five cookies.
+G | Her friends ate three cookies.
+G | Olivia had thirty-five grapes.
+G | She gave twenty grapes to her sister.
+G | I ate ten cookies at lunch.
+G | What did you eat for lunch?
+G | Did she give grapes to her sister?
+G | How many cookies were left?
+# speak-write
+SP | A: Would you like some {fruit}? | B: No, thank you. I'm full. | A: How about some water? | B: Yes, please. I'm thirsty. | fruit / pasta / salad / soup / juice / tea
+SW | I had {ten} {cookies}. I ate {four}. Now I have {six} left. | Write an interesting subtraction problem of your own.
 ## U8 | Bandar, the Greedy Monkey | How do we use numbers?
 # learn
 What does "greedy" mean? | wanting more than you need
@@ -291,6 +547,49 @@ P | 🌳☀️💧🗑️ | Which pictures show natural resources? Which one hur
 C | Which is more important to save, water or trees? | Water | Trees
 Z | Name three things we make from wood.
 S | Tell your partner two things you can reduce or reuse at home.
+# words
+resources | re·sourc·es | re/sourc/es | 🌍
+wood | wood | w/ood | 🪵
+landfill | land·fill | land/fill | 🗑️
+land | land | l/and | 🏞️
+trash | trash | tr/ash | 🚮
+smoke | smoke | sm/oke | 💨
+sunlight | sun·light | sun/light | ☀️
+reduce | re·duce | re/duce | ⬇️
+reuse | re·use | re/use | ♻️
+camp | camp | c/amp | ⛺
+hike | hike | h/ike | 🥾
+surf | surf | s/urf | 🏄
+fish | fish | f/ish | 🎣
+ski | ski | sk/i | ⛷️
+# reading
+> Natural Resources
+> The Earth gives us special and important things that we need to help us live. We call these things natural resources. Air, sunlight, water, wood, and land are all natural resources.
+> People Need Natural Resources: Living things need clean air to breathe and clean water to drink. Plants need sunlight and land to grow, and we need plants for food. When plants breathe, they clean the air around them. We use the wood from plants and trees to make a lot of things, like paper, some houses, and furniture.
+> Hurting Our Natural Resources: We shouldn't hurt our natural resources because we can't usually make more of them. Smoke from cars and factories makes the air dirty. If the air is dirty, people can get sick and plants can't grow. If we cut down trees, we should plant new ones.
+> Trash is very bad for our natural resources. Sometimes people throw trash into water, but we can't drink dirty water, and plants can't grow near it.
+> Trash goes to places called landfills, and it stays there forever. Some landfills are dirty and they smell bad. People can't use that land, and farmers can't grow food on it.
+> Taking Care of Our Natural Resources: We can all take care of Earth's resources. Here are some ideas. Use things until you can't use them anymore. Don't throw things away. Reuse them. Make toys from old things. Reduce the natural resources you use. Take your own bags to the store.
+> What can you do today to help take care of our natural resources?
+RC | What makes the air dirty? | smoke from cars | clean water | sunlight
+RC | Where does trash go? | to landfills | to the store | into the sky
+RC | What do we make from wood? | paper and furniture | clean air | sunlight
+RT | Why should we take care of our natural resources? | We can't usually make more of them.
+RT | What do plants need to grow? | Plants need sunlight and land to grow.
+RT | What should we do if we cut down trees? | We should plant new trees.
+RS | Why are landfills bad? Give one reason.
+RS | What can you do today to help take care of our natural resources?
+# grammar
+G | There's smoke in the air above the city.
+G | The landfill is across from the park.
+G | The trash can is behind the tree.
+G | The tree is in front of the trash can.
+G | There are birds above the pond.
+G | There are trees behind the pond.
+G | Where is the trash can?
+# speak-write
+SP | A: Please don't litter. Use the trash can. | B: Sorry. Where is it? | A: It's {in front of} that tree. | B: Oh, I see it. Thanks. | in front of / behind / near / next to / across from / above
+SW | I see {sunlight} every day. I see {water} and {trees}, too. We need them to {live}. | Write about three natural resources you see every day.
 ## U12 | A Juice Carton's Diary | Why should we take care of the Earth?
 # learn
 What does "carton" mean? | a box made of hard paper for juice or milk
@@ -314,6 +613,47 @@ P | 🧃🏞️🚤♻️ | Tell the story of the juice carton.
 C | Is it worse to litter on land or in water? | On land | In water
 Z | Name three things you can recycle.
 S | Describe where three things are in this room. Use prepositions.
+# words
+carton | car·ton | car/ton | 🧃
+diary | di·a·ry | di/a/ry | 📔
+paper | pa·per | pa/per | 📄
+blow | blow | bl/ow | 🌬️
+shelf | shelf | sh/elf | 🗄️
+machine | ma·chine | ma/chine | ⚙️
+rescue | res·cue | res/cue | 🛟
+time | time | t/ime | ⏰
+week | week | w/eek | 📅
+recycle | re·cy·cle | re/cy/cle | ♻️
+bottle | bot·tle | bot/tle | 🍾
+notebook | note·book | note/book | 📓
+# reading
+> A Juice Carton's Diary
+> January 15. Dear Diary, I'm sitting on a shelf in a big store! I can see many wonderful things. The little carton in front of me has a picture of an orange on it. I think I know what I am. I'm an orange juice carton! I'm made of hard paper.
+> January 16. Dear Diary, This morning, something great happened. A little girl looked at my shelf for a long time, and then she chose me! She's taking me to a picnic by the lake, so I hope she's very thirsty.
+> January 17. Dear Diary, I'm in a lake! The little girl drank the juice, but she left me in front of the lake. The wind blew me into the water. I don't like it here. There was a trash can behind the tree. Why didn't the little girl put me in it?
+> January 18. Dear Diary, I saw a man taking litter out of the lake with a net. He saw my bright orange carton, and he rescued me! He caught me and a plastic bottle in his net. Now we're in the boat, and we aren't trash anymore! We're happy.
+> January 19. Dear Diary, I'm at the recycling plant! It's a little scary here because there are large machines that make loud noises. Where's my plastic bottle friend? He's across from me. He's in a bin with other plastic bottles. I think this is a good place.
+> January 20. Dear Diary, I'm sitting on a shelf in a stationery store! Everything here is made of paper! Yes, they recycled me into a notebook! I'm very happy and excited, and I really want to see the recycling plant again. Maybe next time I'll be a comic book!
+RC | What is the juice carton made of? | hard paper | plastic | glass
+RC | How did the carton get into the water? | the wind blew it | the girl threw it | a man dropped it
+RC | What did the carton become at the end? | a notebook | a comic book | a plastic bottle
+RT | Where was the carton on January 15? | It was on a shelf in a big store.
+RT | Who rescued the carton from the lake? | A man with a net rescued the carton.
+RT | Why was the recycling plant a little scary? | There were large machines that made loud noises.
+RS | Where was the trash can at the lake? Why didn't the girl use it?
+RS | Why is it important to recycle things?
+# grammar
+G | Where is the fountain?
+G | It's across from the statue.
+G | Is there a trash can behind the tree?
+G | Where is my cat Charlie?
+G | Is he under the trash can?
+G | He is between the bench and the tree.
+G | Is there a bicycle in front of the red bin?
+G | There's a bicycle next to the green bin.
+# speak-write
+SP | A: I {recycled my milk cartons} last week. Did you? | B: Yes, I did. I did that, too! | A: Great! Let's keep the Earth clean. | B: OK! Let's do it together. | recycled my milk cartons / reused my paper bags / cleaned the park / recycled my plastic bottles / reused my old boxes / picked up litter
+SW | I was {a juice carton}. The wind blew me into {a lake}. Now I am {a notebook}! | Imagine you were recycled and write what you were and what you are now.
 ## U13 | How Music Makes Us Feel | How does music make us feel?
 # learn
 What does "sleepy" mean? | feeling like you want to sleep
@@ -337,6 +677,50 @@ P | 🎵😴🎺🐺 | What kind of music do you imagine? How does it feel?
 C | Which is better, fast music or slow music? | Fast music | Slow music
 Z | Name three musical instruments.
 S | Tell your partner what you do in the morning and in the evening.
+# words
+high | high | h/igh | ⬆️
+low | low | l/ow | ⬇️
+excited | ex·cit·ed | ex/cit/ed | 🤩
+sleepy | sleep·y | sleep/y | 😴
+right | right | r/ight | ✅
+wrong | wrong | wr/ong | ❌
+wolf | wolf | w/olf | 🐺
+trumpet | trum·pet | trum/pet | 🎺
+feelings | feel·ings | feel/ings | 💗
+proud | proud | pr/oud | 🏆
+smile | smile | sm/ile | 😊
+nervous | ner·vous | ner/vous | 😬
+yawn | yawn | y/awn | 🥱
+unhappy | un·hap·py | un/hap/py | 😢
+# reading
+> How Music Makes Us Feel
+> People all around the world enjoy music. Some music is fast, and some music is slow. Some music is high, and some music is low. Listen to this piano music. What can you say about it? Is it fast or slow, high or low?
+> Music and Feelings: When we listen to music, we feel different things. Slow music can make us feel sleepy, and fast music can make us feel excited. The same music can make one person feel sad and another person feel happy. There are no right or wrong feelings about music.
+> Listen to this flute music. How does it make you feel? Mothers play this music for their babies at night because it helps the babies sleep. Now listen to this trumpet music. How does it make you feel?
+> Pedro listens to slow music at night so he can fall asleep. Amanda listens to fast music in the morning so she can wake up.
+> Music and Imagination: Music can help us imagine things, like animals. When the music is fast, we can imagine an animal running. When it's slow, we can imagine an animal sleeping. When it's low and slow, we can imagine an animal that is in danger. Listen. What animal does this sound like, a duck or a wolf? What do you imagine the animals are doing?
+> Listen to this music. What did you hear, thunder or rain? Now listen again. What did you hear this time?
+> Next time you listen to music, draw a picture of what you imagine. Look at it a week later. Does it help you to remember the music?
+RC | How can slow music make us feel? | sleepy | excited | nervous
+RC | Why do mothers play flute music for their babies at night? | it helps them sleep | it wakes them up | it makes them cry
+RC | When does Amanda listen to fast music? | in the morning | at night | in the afternoon
+RT | How can fast music make us feel? | Fast music can make us feel excited.
+RT | Why does Pedro listen to slow music at night? | He listens to slow music so he can fall asleep.
+RT | What can we imagine when the music is fast? | We can imagine an animal running.
+RS | Are there right or wrong feelings about music? Why?
+RS | How does music help us imagine things? Tell us one example.
+# grammar
+G | Pedro listens to slow music at night.
+G | When does Amanda listen to fast music?
+G | She listens to fast music in the morning.
+G | Does she go to her trumpet lesson in the evening?
+G | Sandy has a dance lesson in the evening.
+G | On Monday he goes to school with friends.
+G | He doesn't listen to loud music at night.
+G | What do you do in the morning on Saturdays?
+# speak-write
+SP | A: Please turn down {the music}! | B: Why? | A: I can't stand it. | B: Really? I love it! | the music / that song / the radio / that CD / the trumpet / the drums
+SW | I listened to {a fast trumpet song}. It was {loud and fast}. It made me feel {excited}. | Write about a piece of music and how it made you feel.
 ## U14 | Olga's Flute | How does music make us feel?
 # learn
 What does "notes" mean? | the single sounds in a piece of music
@@ -360,6 +744,51 @@ P | 🎶😰🦋🌧️ | How does Olga feel? What does the music sound like?
 C | Is it better to practice alone or with friends? | Alone | With friends
 Z | Name three things a musician does.
 S | Tell your partner something you did yesterday and something you did today.
+# words
+notes | notes | n/otes | 🎵
+wait | wait | w/ait | ⏳
+worried | wor·ried | wor/ried | 😟
+flu | flu | fl/u | 🤒
+tears | tears | t/ears | 😢
+solo | so·lo | so/lo | 🎤
+hummingbird | hum·ming·bird | hum/ming/bird | 🐦
+record | re·cord | re/cord | 🎙️
+musician | mu·si·cian | mu/si/cian | 🎻
+concert | con·cert | con/cert | 🎶
+autograph | au·to·graph | au/to/graph | ✍️
+interview | in·ter·view | in/ter/view | 📺
+fans | fans | f/ans | 👏
+mistake | mis·take | mis/take | ❌
+# reading
+> Olga's Flute
+> When Olga plays her flute she feels many things. High and slow notes make her feel happy and the low long notes can make her feel sleepy. When Olga plays a fast tune, she feels like she is flying.
+> Olga's school is having a big concert tonight. Olga plays second flute, so if the first flute player gets sick, Olga can play his or her part. Today, Olga goes to school early for extra practice. Her music teacher is waiting for her.
+> "Alonso has the flu," Mr. Perez tells Olga. "You must play his part tonight." Olga is very worried. "Alonso is the best flute player in the school," she says. "I'm not good enough."
+> Mr. Perez smiles. "You practice every day, Olga," he tells her. "Alonso plays well, but so do you. Please try, Olga."
+> She closes her eyes and begins to play, but this morning she feels nervous. The high notes are hard to reach and the fast notes are difficult to play. The quiet part seems too loud. When Olga finishes, her eyes fill with tears. "I wish I could play like Alonso," she says.
+> Mr. Perez pushes a button on his computer and Olga hears music. She thinks it is Alonso's flute solo. She imagines butterflies on the high notes. The fast notes sound like hummingbirds or rain. The low, quiet notes are like snow falling. "That's beautiful. I wish I played like that!" Olga says.
+> Mr. Perez smiles. "Olga, I recorded you just now. That's you playing!" Olga is amazed. "Do I really sound like that?" she asks. Mr. Perez laughs. "You should listen when you play." "I do listen, but I'm often too nervous!" Olga says.
+> "Don't worry tonight," Mr. Perez tells her. "You work hard and you play well, but never forget to have fun and enjoy the music. You're a great musician!"
+RC | What notes make Olga feel happy? | high and slow notes | low long notes | fast notes
+RC | Why must Olga play Alonso's part tonight? | Alonso has the flu | Alonso is late | Alonso moved away
+RC | Whose music does Olga hear on the computer? | her own music | Alonso's music | Mr. Perez's music
+RT | How does Olga feel when she plays a fast tune? | She feels like she is flying.
+RT | Why does Mr. Perez think Olga plays well? | She practices every day.
+RT | What does Mr. Perez say Olga should never forget? | She should never forget to have fun and enjoy the music.
+RS | Why do Olga's eyes fill with tears this morning?
+RS | Is Mr. Perez smart and kind? Why?
+# grammar
+G | This morning, Olga goes to school early.
+G | Yesterday he played the trumpet.
+G | Last week Gus played the cymbals.
+G | When did Mark go to music class?
+G | He went yesterday morning.
+G | Did he practice the piano last week?
+G | Last night he played the piano.
+G | This morning he played the tambourine.
+# speak-write
+SP | A: What did you do yesterday? | B: I gave a concert. I was {proud}. | A: What did you do then? | B: Then I signed autographs. I was excited. | proud / excited / nervous / happy / tired / worried
+SW | My favorite music is {rock music}. It sounds {loud and fast}. When I listen to it, I feel {excited}. | Write about your favorite music and what it sounds like.
 ## U15 | Forces and Movement | What makes things move?
 # learn
 What does "push" mean? | to move something away from you
@@ -383,6 +812,49 @@ P | 🚂🐢⚽🛒 | Which things are fast? Which are slow? Compare them.
 C | Is it more fun to push or to pull things? | To push | To pull
 Z | Name three things you can push.
 S | Compare two things in this room. Use "-er than".
+# words
+push | push | p/ush | 👐
+pull | pull | p/ull | 🪢
+movement | move·ment | move/ment | 🏃
+ground | ground | gr/ound | 🌍
+throw | throw | thr/ow | 🏀
+speed | speed | sp/eed | 🚄
+heavy | heav·y | heav/y | 🏋️
+light | light | l/ight | 🪶
+easy | eas·y | eas/y | 👍
+stapler | sta·pler | sta/pler | 📎
+suitcase | suit·case | suit/case | 🧳
+broom | broom | br/oom | 🧹
+drawer | draw·er | draw/er | 🗄️
+door | door | d/oor | 🚪
+# reading
+> Forces and Movement
+> We see things move every day. We see people walking, birds flying, and leaves falling to the ground on a windy day. Things move in many ways. They move up and down, right and left, and over and under things. Look around your classroom. What things are moving?
+> Force: A force makes something move. A push is a force, and it moves something away from you. We push people on swings. A pull is a force, too, and it moves something toward you. We pull things in wagons. Can you name something you push and something you pull?
+> Movement: A small force causes a small movement and a big force causes a big movement. When we use a small force to throw a ball, it doesn't go far. When we use a big force to throw the same ball, it goes a long way.
+> It is easier to move a light thing than a heavy thing. We can move a toy car with a small force because it's light. We need a big force to move a real car because it's heavy.
+> Speed: Speed is how fast things move. Some things, like a train, move fast and some things, like a tortoise, move slowly. Can you name some things that move fast?
+> A force can change the speed of things. When you push a door with a small force, it opens slowly, but when you push a door with a big force, it opens quickly.
+> The next time you see something moving, ask yourself, "What force is moving it, a push or a pull? Is the force small or big?"
+RC | What does a force do? | makes something move | makes something stop | makes something heavy
+RC | Which force moves something toward you? | a pull | a push | a throw
+RC | What is speed? | how fast things move | how heavy things are | how big things are
+RT | What happens when we throw a ball with a small force? | The ball doesn't go far.
+RT | Why can we move a toy car with a small force? | We can move it with a small force because it is light.
+RT | What happens when you push a door with a big force? | The door opens quickly.
+RS | Tell us something you push and something you pull.
+RS | Why do we need a big force to move a real car?
+# grammar
+G | A ball is lighter than a desk.
+G | Is a desk heavier than a ball?
+G | A train is slower than an airplane.
+G | What's bigger than a car?
+G | A bus is bigger than a car.
+G | A horse is faster than a tortoise.
+G | Is a book bigger than a chair?
+# speak-write
+SP | A: Phew! I can't move this. It's too heavy. | B: Let me help you. | A: Thanks. That would be {great}! | B: You're welcome. | great / cool / awesome / nice / kind / wonderful
+SW | I push {a door} every day. I pull {a wagon}. The {wagon} is heavy, so I need a big force. | Write about something you push and something you pull.
 ## U16 | Two Stubborn Little Goats | What makes things move?
 # learn
 What does "stubborn" mean? | never changing your mind or saying sorry
@@ -406,6 +878,50 @@ P | 🐐🐐🌉💦 | Tell the story of the two stubborn goats.
 C | Which goat was more stubborn? | Brown Goat | Black Goat
 Z | Say the superlative of big, fast, and juicy.
 S | Talk about your family. Who is the youngest? Who is the tallest?
+# words
+stubborn | stub·born | stub/born | 😤
+angry | an·gry | an/gry | 😠
+goat | goat | g/oat | 🐐
+mountain | moun·tain | moun/tain | ⛰️
+west | west | w/est | 🧭
+east | east | e/ast | 🌅
+forward | for·ward | for/ward | ➡️
+horns | horns | h/orns | 🐏
+wet | wet | w/et | 💧
+basketball | bas·ket·ball | bas/ket/ball | 🏀
+soccer | soc·cer | soc/cer | ⚽
+tennis | ten·nis | ten/nis | 🎾
+baseball | base·ball | base/ball | ⚾
+hockey | hock·ey | hock/ey | 🏒
+# reading
+> Two Stubborn Little Goats
+> A long time ago, a family of goats lived on East Mountain. Two of the brothers, Black Goat and Brown Goat, always fought about who was the best in the family. They were very stubborn: they never said "sorry" or "I'm wrong."
+> One day, they were on a small patch of the greenest grass on East Mountain. It was only enough for one goat. Brown Goat said, "I'm the oldest brother in the family, so I should eat the grass." Black Goat said, "I'm the smartest brother in the family, so I should eat the grass."
+> They pushed each other with their horns. They pushed with the same force, so they didn't move forward or backward. They pushed for a long time and then they both got tired and fell down. Black Goat was angry so he moved to West Mountain.
+> There was a very narrow bridge between East Mountain and West Mountain. Every day Brown Goat crossed it to drink from the coldest water in the pond on West Mountain. Every day Black Goat crossed it to eat the juiciest grass on East Mountain. Brown Goat always crossed early, and Black Goat always crossed late.
+> One day, Brown Goat got up late so both goats were on the bridge at the same time. Brown Goat said, "Go back! I'm the oldest so I should cross first." Black Goat said, "You go back! I'm the smartest so I should cross first."
+> They pushed each other with their horns. They pushed with the same force so they didn't move forward or backward. They pushed for a long time and then they both got tired and fell into the river below the bridge.
+> The goats swam to the riverbank. Then they slowly walked home to their mountains. They were angry, tired, wet, cold, and hungry. And that's what happens to stubborn little goats.
+RC | Where did the family of goats live? | on East Mountain | on West Mountain | on a bridge
+RC | What did the goats push each other with? | their horns | their legs | their heads
+RC | Why didn't the goats move forward or backward? | the same force | a small force | a big force
+RT | Why did Black Goat move to West Mountain? | He moved to West Mountain because he was angry.
+RT | Why did Brown Goat cross the bridge every day? | He crossed it to drink the coldest water in the pond.
+RT | How did the goats feel at the end of the story? | They were angry, tired, wet, cold, and hungry.
+RS | Why didn't Black Goat and Brown Goat get along?
+RS | Why did the goats fall into the river?
+# grammar
+G | I'm the youngest person in my family.
+G | Is the juiciest grass on East Mountain?
+G | Brown Goat drinks the coldest water.
+G | Is the man the oldest person?
+G | My father is the biggest person in my family.
+G | Black Goat is the smartest brother.
+G | Brown Goat is the oldest brother in the family.
+G | Each goat tried to shout the loudest.
+# speak-write
+SP | A: I run, jump, and throw the ball. | B: You're playing {basketball}. | A: Yes! Do you like it? | B: Yes, I do. It's my favorite sport. | basketball / soccer / tennis / baseball / hockey / golf
+SW | I like to play {soccer}. I {kick the ball} with a big force. The ball moves {fast}. | Write about the speed and movement in a sport you like.
 ## U17 | Shapes in Art | How do we make art?
 # learn
 What does "crescent" mean? | a shape like a thin moon with two curved sides
@@ -429,6 +945,51 @@ P | ⭐🌙🔺🔵 | Name the shapes. Where can you see them in nature?
 C | Which is better, a painting or a sculpture? | A painting | A sculpture
 Z | Name three shapes with straight lines.
 S | Describe the shapes you can see in this room.
+# words
+crescent | cres·cent | cres/cent | 🌙
+star | star | st/ar | ⭐
+spiral | spi·ral | spi/ral | 🌀
+oval | o·val | o/val | 🥚
+straight | straight | str/aight | 📏
+nature | na·ture | na/ture | 🌳
+collage | col·lage | col/lage | 🖼️
+sculpture | sculp·ture | sculp/ture | 🗿
+pattern | pat·tern | pat/tern | 🔷
+photograph | pho·to·graph | pho/to/graph | 📷
+origami | or·i·ga·mi | or/i/ga/mi | 🦢
+drawing | draw·ing | draw/ing | ✏️
+mobile | mo·bile | mo/bile | 🎐
+mosaic | mo·sa·ic | mo/sa/ic | 🧩
+# reading
+> Shapes in Art
+> We can see shapes in people, animals, nature, art, and much more in our world. They are all around us.
+> Kinds of Shapes: Squares and rectangles have four straight sides and four corners. How are squares and rectangles different? A square has four corners and all four sides are the same length. A rectangle also has four corners, but two sides are longer than the other two.
+> Circles and ovals don't have straight lines or corners. How are circles and ovals different? All triangles have three straight lines and three corners.
+> Stars, crescents, and spirals are all very different kinds of shapes. Stars have lots of sides. Crescents have two sides, but they aren't straight. Spirals don't have sides, and they don't have straight lines or corners. What shapes do you see in this nature collage?
+> Art Shapes: George W. Hart made this sculpture from wood. He uses math to help him make all his sculptures. What shapes can you see in this sculpture?
+> This picture is made from lots of circles, and each circle has one color inside it. The artist, Ben Heine, used a computer to make this picture.
+> A famous painter called Piet Mondrian inspired people to use shapes and straight lines in their paintings. Some things today, like dresses, use his patterns and colors. How many different shapes can you see in the painting?
+> The next time you paint, draw, or make a piece of art, look for the shapes in your world to help you.
+RC | How many corners does a square have? | four | three | two
+RC | Which shape has three straight lines and three corners? | a triangle | a circle | a crescent
+RC | What did George W. Hart make his sculpture from? | wood | paper | stone
+RT | What shapes did Ben Heine use to make his picture? | He used lots of circles to make his picture.
+RT | What does George Hart use to help him make his sculptures? | He uses math to help him make his sculptures.
+RT | Which artist inspired people to use shapes and straight lines? | Piet Mondrian inspired people to use shapes and straight lines.
+RS | How are squares and rectangles different?
+RS | How are crescents and spirals different from squares? Tell us one thing.
+# grammar
+G | There are a lot of shapes.
+G | There is a lot of paper.
+G | There aren't any triangles.
+G | There isn't any red paint.
+G | Are there any stars in the painting?
+G | Your collage has green triangles.
+G | There's a lot of snow in this collage.
+G | But there aren't any flowers.
+# speak-write
+SP | A: Wow! That's a really great {mobile}! | B: Thank you. | A: You're very good at art. | B: Thanks. And you're good at math! | mobile / collage / sculpture / drawing / photograph / mosaic
+SW | My favorite kind of art is {collage}. I use {circles} and {triangles}. There are a lot of {colors} in my art. | Write about your favorite kind of art and the shapes you use.
 ## U18 | Origami | How do we make art?
 # learn
 What does "fold" mean? | to bend paper so one part lies on another part
@@ -452,3 +1013,49 @@ P | 📄🕊️🐬⛵ | Tell the story of Maki's origami world.
 C | Is origami easier than painting? | Yes, easier | No, harder
 Z | Name three things you use to make art.
 S | Ask your partner how much or how many of something there is in the classroom.
+# words
+shiny | shin·y | shin/y | ✨
+fold | fold | f/old | 📄
+edge | edge | e/dge | 📐
+crane | crane | cr/ane | 🦢
+seal | seal | s/eal | 🦭
+crumple | crum·ple | crum/ple | 🗞️
+climb | climb | cl/imb | 🧗
+golden | gold·en | gold/en | 🌟
+waves | waves | w/aves | 🌊
+markers | mark·ers | mark/ers | 🖊️
+scissors | scis·sors | scis/sors | ✂️
+glue | glue | gl/ue | 🧴
+watercolors | wa·ter·col·ors | wa/ter/col/ors | 🎨
+chalk | chalk | ch/alk | 🖍️
+# reading
+> Origami
+> Maki woke up early. Her room was quiet. Everyone was sleeping, even her little sister Akiko in the bed next to hers. What could she do? I know, she thought. I can do origami! On the table was some colored paper.
+> Maki got out of bed quietly. The paper was shiny, and there were a lot of colors. Maki folded a red square, bending the paper in the middle and at the edges. She worked until it was done. Suddenly, it was a crane!
+> The crane looked lonely, so she made another, this time a blue one. Soon she had a whole row of origami cranes! "Would you like some friends?" Maki asked the cranes. "Oh, yes!" said the cranes. "You can speak?" Maki laughed. "Of course. You're in our origami world now!" So Maki picked up more paper.
+> She made an orange seal. Seals like to play, Maki knew, so she made him a purple ball. "Thanks," said the seal. And he rolled the ball back to her. They played and played until Maki had another idea.
+> With blue paper, Maki made water, crumpling it to make waves. Maki dived into the water and swam happily with the cranes and seal. A green fish jumped through the air.
+> But something was missing. Maki remembered her sister, Akiko. She missed her and wanted to see her.
+> Maki saw a sailboat. The boat came near, and Maki heard a voice. "All aboard!" the voice said. Maki looked up. It was her sister's voice! Akiko was awake and looking for her in the origami world.
+> She climbed into the sailboat. "Hello, Akiko!" she said. Her new friends looked at her from the water, smiling.
+> In Maki's hands was one last piece of paper. It was golden. Maki folded it, threw it high into the air, and made a big, round sun.
+RC | What color ball did Maki make for the seal? | purple | red | blue
+RC | What did Maki make with blue paper? | water and waves | a crane | a sun
+RC | Whose voice did Maki hear from the sailboat? | her sister's | her mother's | the seal's
+RT | When Maki woke up, what did she see on the table? | She saw some colored paper on the table.
+RT | What animals did Maki make? | She made cranes and an orange seal.
+RT | What did Maki make with the golden paper? | She made a big, round sun.
+RS | Why did Maki make a second crane?
+RS | Why did Maki get onto the sailboat?
+# grammar
+G | Did Maki have any pencils?
+G | No, she didn't have any pencils.
+G | How many seals were there?
+G | There was one orange seal.
+G | How much paper was there?
+G | There was a lot of paper.
+G | Do you have any green paint?
+G | How many paintbrushes do you have?
+# speak-write
+SP | A: It's a picture of the rainforest. | B: What did you use to make it? | A: I used {watercolors} for the trees. | B: Wow! You made a beautiful painting! | watercolors / markers / chalk / glue / paper / stone
+SW | I usually use {markers}, {scissors}, and {glue} in my art projects. I like {markers} best. | Write about the art tools you usually use in your art projects.
