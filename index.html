@@ -1298,7 +1298,9 @@ async function apply3d(){if(MODE!=='host'||applying3d)return;applying3d=true;try
     try{window.HB3D_EMBED=true;H.hb3d=HB3D_INIT();H.hb3d.onSite=sites=>{sites.forEach((k,i)=>{if(S.teams[i])S.teams[i].site=k;});save();};}
     catch(e){console.error(e);H.no3d=true;S.ui3d=false;$('#stage3d').hidden=true;toast('3D stage failed to start. Staying in 2D.');renderHeader();return;}}
   const on=want&&!!H.hb3d;st.classList.toggle('is3d',on);$('#stage3d').hidden=!on;$('#p3d-ui').hidden=!on;if(!on)$('#p3d-pop').hidden=true;
+  document.body.classList.remove('cine','spot');
   if(H.hb3d){if(on){H.hb3d.start();H.hb3d.resize();sync3d();}else H.hb3d.stop();}
+  render();
 }finally{applying3d=false;}}
 function ui3d(){return !!(S.ui3d&&H.hb3d&&$('#stage')&&$('#stage').classList.contains('is3d'));}
 function view3d(){const b=S.battle;return{scene:S.scene,teamCount:S.teamCount,teams:S.teams.slice(0,S.teamCount),players:Object.fromEntries(Object.values(S.players).map(p=>[p.pid,{pid:p.pid,name:p.name,char:p.char,cls:charById(p.char).c,team:p.team,lv:p.lv,hp:p.hp,max:maxHp(p),down:!!p.down,av:p.av||null}])),boss:b&&b.boss&&!b.boss.defeated?{name:b.boss.name,hp:b.boss.hp,max:b.boss.max}:null};}
@@ -2611,7 +2613,7 @@ const HB3D_API=EMBED?{
  sync,onSite:null,fps(){return fpsV;},
  mount(el){if(!el||el===stage)return;stage=el;el.appendChild(renderer.domElement);bindStage(el);if(ro){try{ro.observe(el);}catch(e){}}resize();},
  show:miniShow,react:miniReact,
- start(){if(running)return;running=true;clock.getDelta();loop();},stop(){running=false;},
+ start(){if(running)return;running=true;clock.getDelta();loop();},stop(){running=false;spotEnd(false);cleanShot=false;lvTarget=null;if(!MINI)document.body.classList.remove('cine','spot');},
  resize,overview(){spotEnd();overview();},renderBases(){renderHud();},
  correct(pid,tier){const g=byPid(pid);if(!g)return;const u=g.userData;setFace(u.ch,'happy',2600);jump(g);const hp=g.position.clone().add(new THREE.Vector3(u.at.x,u.at.y+u.top,u.at.z));spawn(hp,0xffd43b,8+tier*10,5,7,1.3);if(tier>=2)spawn(hp,TEAMS[u.p.team].color,12,5,7,1.2);if(tier===3){ring(g.position,0xffd43b,9,1);shakeCam=.5;}},
  wrong(pid){const g=byPid(pid);if(g){setFace(g.userData.ch,'sad',2200);g.userData.shake=.5;}},

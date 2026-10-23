@@ -262,7 +262,7 @@ const HB3D_API=EMBED?{
  sync,onSite:null,fps(){return fpsV;},
  mount(el){if(!el||el===stage)return;stage=el;el.appendChild(renderer.domElement);bindStage(el);if(ro){try{ro.observe(el);}catch(e){}}resize();},
  show:miniShow,react:miniReact,
- start(){if(running)return;running=true;clock.getDelta();loop();},stop(){running=false;},
+ start(){if(running)return;running=true;clock.getDelta();loop();},stop(){running=false;spotEnd(false);cleanShot=false;lvTarget=null;if(!MINI)document.body.classList.remove('cine','spot');},
  resize,overview(){spotEnd();overview();},renderBases(){renderHud();},
  correct(pid,tier){const g=byPid(pid);if(!g)return;const u=g.userData;setFace(u.ch,'happy',2600);jump(g);const hp=g.position.clone().add(new THREE.Vector3(u.at.x,u.at.y+u.top,u.at.z));spawn(hp,0xffd43b,8+tier*10,5,7,1.3);if(tier>=2)spawn(hp,TEAMS[u.p.team].color,12,5,7,1.2);if(tier===3){ring(g.position,0xffd43b,9,1);shakeCam=.5;}},
  wrong(pid){const g=byPid(pid);if(g){setFace(g.userData.ch,'sad',2200);g.userData.shake=.5;}},
