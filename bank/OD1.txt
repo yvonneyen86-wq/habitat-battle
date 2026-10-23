@@ -24,6 +24,48 @@ P | 👨‍👩‍👧‍👦🏠❤️ | Who is in this family? Tell us.
 C | Is a big family better than a small family? | A big family | A small family
 Z | Name three family words.
 S | Introduce a friend. Say: This is my friend. He or she is ...
+# words
+family | fam·i·ly | fam/i/ly | 👨‍👩‍👧‍👦
+mother | moth·er | moth/er | 👩
+father | fa·ther | fa/ther | 👨
+sister | sis·ter | sis/ter | 👧
+brother | broth·er | broth/er | 👦
+grandmother | grand·moth·er | grand/moth/er | 👵
+grandfather | grand·fa·ther | grand/fa/ther | 👴
+friend | friend | fr/iend | 🤝
+uncle | un·cle | un/cle | 🧔
+aunt | aunt | au/nt | 👩‍🦱
+cousin | cous·in | cous/in | 🧒
+parents | par·ents | par/ents | 👫
+son | son | s/on | 👦
+daughter | daugh·ter | daugh/ter | 👧
+# reading
+> Families and Friends
+> Families: We live in families. Families help each other. They go places together.
+> Jake is seven. His family is big. He lives with his mother, father, and sisters.
+> Mandy is eight. She lives with her brother, grandfather, and grandmother.
+> Kim is six. Her family is small. She lives with her mother. Which family is like your family?
+> Friends: Friends are important, too. Friends play together. They share things. Who are your good friends?
+RC | How old is Jake? | seven | eight | six
+RC | Who lives with her mother only? | Kim | Mandy | Jake
+RC | What do friends do? | share things | drive cars | cook dinner
+RT | Is Jake's family big or small? | Jake's family is big.
+RT | How old is Kim? | Kim is six years old.
+RT | Who does Mandy live with? | She lives with her brother, grandfather, and grandmother.
+RS | What do families do together? Tell us one thing.
+RS | Which family is like your family? Why?
+# grammar
+G | I'm six years old.
+G | My family is big.
+G | He's eight years old.
+G | Friends are important.
+G | Her family is small.
+G | She's seven years old.
+G | We are a family.
+G | Is your family big?
+# speak-write
+SP | A: Hello, Emma. This is my {brother}. | B: Hi! I'm Emma. It's nice to meet you. | A: Nice to meet you, too. | brother / sister / cousin / friend / father / mother
+SW | I'm {Lisa}. I'm {eight} years old. My family is {big}. | Write about yourself and your family.
 ## U2 | Elliot's New Friend | Who are your family and friends?
 # learn
 What does "lonely" mean? | sad because you have no friends with you
@@ -49,6 +91,49 @@ P | 🐘🐢🦓🦁 | What happens in the story? Tell us.
 C | Is a dog a better pet than a goldfish? | A dog | A goldfish
 Z | Name three pets.
 S | Say two things about your best friend.
+# words
+elephant | el·e·phant | el/e/phant | 🐘
+tortoise | tor·toise | tor/toise | 🐢
+lonely | lone·ly | lone/ly | 😔
+sad | sad | s/ad | 😢
+scared | scared | sc/ared | 😨
+eat | eat | ea/t | 🍽️
+play | play | pl/ay | ⚽
+sleep | sleep | sl/eep | 😴
+hamster | ham·ster | ham/ster | 🐹
+goldfish | gold·fish | gold/fish | 🐠
+bird | bird | b/ird | 🐦
+rabbit | rab·bit | rab/bit | 🐰
+lizard | liz·ard | liz/ard | 🦎
+kitten | kit·ten | kit/ten | 🐱
+# reading
+> Elliot's New Friend
+> Elliot is sad and lonely. He sees a tortoise.
+> "Hello, I'm Tuti." "I'm Elliot. I can't find my family."
+> "Look! Is that your family?" "No! Those are zebras." The zebras are scared. They run away.
+> "Let's look." Elliot and Tuti eat, play, and sleep.
+> "Look! Is that your family?" "No! Those are lions." Elliot and Tuti are scared. They run away.
+> "Look! Elephants." "I'm an elephant. That's my family." "YES!"
+> "Thanks, Tuti." Elliot has a new friend.
+RC | What animal is Tuti? | a tortoise | a zebra | a lion
+RC | How does Elliot feel at the start? | sad and lonely | happy | hungry
+RC | Who runs away from Elliot and Tuti? | the zebras | the elephants | the birds
+RT | Who is Elliot's new friend? | His new friend is Tuti.
+RT | What can't Elliot find? | He can't find his family.
+RT | What do Elliot and Tuti do together? | They eat, play, and sleep together.
+RS | Why are Elliot and Tuti scared?
+RS | Is Elliot happy at the end of the story? Why?
+# grammar
+G | This is a zebra.
+G | These are zebras.
+G | That's a lion.
+G | Those are lions.
+G | Is that your family?
+G | These are small tortoises.
+G | Those are my friends.
+# speak-write
+SP | A: This is Tim. He's my friend. | B: Does he have a pet? | A: Yes. He has a {hamster}. We play together. | B: Cool! | hamster / goldfish / bird / rabbit / lizard / kitten
+SW | This is {Tim}. He's my friend. He has a {hamster}. We {play} together. | Write about your friend and his or her pet.
 ## U3 | Colors | Where can we see colors?
 # learn
 What does "purple" mean? | a color made from red and blue
@@ -74,6 +159,45 @@ P | 🌳🦋🐦🐱 | What is in the tree? Tell us the colors.
 C | Which is better, a dark night or a light day? | A dark night | A light day
 Z | Name five colors.
 S | Look around you. Say three things and their colors.
+# words
+red | red | r/ed | ❤️
+yellow | yel·low | yel/low | 💛
+blue | blue | bl/ue | 💙
+green | green | gr/een | 💚
+purple | pur·ple | pur/ple | 💜
+black | black | bl/ack | 🖤
+brown | brown | br/own | 🤎
+white | white | wh/ite | 🤍
+orange | or·ange | or/ange | 🧡
+pink | pink | p/ink | 🌸
+gray | gray | gr/ay | 🐘
+dark | dark | d/ark | 🌙
+light | light | l/ight | ☀️
+fireworks | fire·works | fire/works | 🎆
+# reading
+> Color Poems
+> Who's in the Tree? (by Tamzin Thompson): Out in the garden / Up in the tree / There are six red butterflies / Can you see? / Out in the garden / Up in the tree / There are five green lizards / Can you see? / Out in the garden / Up in the tree / There are four brown birds / Can you see? / Out in the garden / Up in the tree / There are three purple cats / Can you see? / Out in the garden / Up in the tree / There are two yellow dogs / Can you see? / Now there's a problem / Look at the tree! / There are twenty animals! / Can you see?
+> Colors of the Sky (by Lesley Koustaff): The sky is blue. / The clouds are white. / They all look black / In the dark, dark night.
+RC | How many red butterflies are in the tree? | six | five | four
+RC | What color are the lizards? | green | brown | purple
+RC | What color are the clouds? | white | blue | black
+RT | How many animals are in the tree? | There are twenty animals in the tree.
+RT | What color is the sky? | The sky is blue.
+RT | What color are the dogs? | The dogs are yellow.
+RS | Which animals are in the tree? Tell us two.
+RS | What words in the poems end with the same sound?
+# grammar
+G | There is a black kitten.
+G | There are white kittens.
+G | There's a black spider.
+G | There are brown hamsters.
+G | There are six red butterflies.
+G | There are four brown birds.
+G | There's a white kitten in my yard.
+G | Is there a cat in the tree?
+# speak-write
+SP | A: Do you want to play with me? | B: Sure! | A: Let's {color}! | B: OK. Good idea! | color / play / read / sing / draw / eat
+SW | There is a {blue} {bird} in my yard. There are two {brown} dogs. | Write two sentences about the colors you can see.
 ## U4 | Let's Make Colors | Where can we see colors?
 # learn
 What does "mix" mean? | to put two things together
@@ -99,6 +223,45 @@ PT | 🎨🔴🔵🟣 | What colors do you mix? Type a sentence.
 C | Is orange a nicer color than purple? | Orange | Purple
 Z | Name three secondary colors.
 S | Tell us about your favorite clothes and their colors.
+# words
+mix | mix | m/ix | 🎨
+mural | mu·ral | mu/ral | 🖼️
+ocean | o·cean | o/cean | 🌊
+sand | sand | s/and | 🏖️
+seaweed | sea·weed | sea/weed | 🌿
+seashell | sea·shell | sea/shell | 🐚
+jellyfish | jel·ly·fish | jel/ly/fish | 🐙
+starfish | star·fish | star/fish | ⭐
+jacket | jack·et | jack/et | 🧥
+shorts | shorts | sh/orts | 🩳
+sneakers | sneak·ers | sneak/ers | 👟
+hat | hat | h/at | 🎩
+pants | pants | p/ants | 👖
+# reading
+> Let's Make Colors!
+> Primary and Secondary Colors: There are three primary colors: red, blue, and yellow. There are three secondary colors: orange, purple, and green. We can mix primary colors to make secondary colors.
+> The Color Wheel: The color wheel shows us primary and secondary colors. Look at orange. Red and yellow are next to orange. We mix red and yellow to make orange. Red and blue are next to purple. We mix red and blue to make purple. What makes green?
+> Using Colors: Some children paint a mural of the ocean at their school. There's yellow sand. There's a red fish next to the seaweed. Look! The blue starfish is under the seashell.
+> The children want green, orange, and purple to finish the mural. They mix their paints. Now there's green seaweed, an orange seashell, and purple jellyfish.
+RC | What are the three primary colors? | red, blue, and yellow | orange, purple, and green | red, green, and blue
+RC | What do red and yellow make? | orange | purple | green
+RC | Where is the blue starfish? | under the seashell | on the sand | next to the fish
+RT | What color is the sand? | The sand is yellow.
+RT | What do red and blue make? | Red and blue make purple.
+RT | What do the children paint? | They paint a mural of the ocean.
+RS | How do we make a secondary color? Tell us one.
+RS | What is in the ocean mural? Tell us two things.
+# grammar
+G | I am in the ocean.
+G | The starfish is under the seashell.
+G | The seashells are on the sand.
+G | The seaweed is next to the fish.
+G | The starfish is not in the ocean.
+G | The pencil is on the desk.
+G | Is the starfish on the hot sand?
+# speak-write
+SP | A: Look at my picture! I'm in the ocean. | B: What do you have? | A: I have a {yellow} hat and red shorts. | B: Nice! There's a starfish next to you. | yellow / red / blue / green / orange / purple
+SW | The {starfish} is {under} the {seashell}. It is {orange}. | Write two sentences about where something is in your picture and what color it is.
 ## U5 | Animal Homes | Where do animals live?
 # learn
 What does "nest" mean? | a home that a bird makes for its chicks
@@ -124,6 +287,48 @@ P | 🦅🌳🐝🦀 | Where do these animals live? Tell us.
 C | Is a nest a better home than a hive? | A nest | A hive
 Z | Name three animal homes.
 S | Say one animal and where it lives.
+# words
+eagle | ea·gle | ea/gle | 🦅
+chick | chick | ch/ick | 🐤
+nest | nest | n/est | 🐣
+opossum | o·pos·sum | o/pos/sum | 🐀
+honeybee | hon·ey·bee | hon/ey/bee | 🐝
+hive | hive | h/ive | 🍯
+crab | crab | cr/ab | 🦀
+woods | woods | w/oods | 🌲
+field | field | f/ield | 🌾
+pond | pond | p/ond | 🏞️
+squirrel | squir·rel | squir/rel | 🐿️
+mouse | mouse | m/ouse | 🐭
+frog | frog | fr/og | 🐸
+# reading
+> Animal Homes
+> Animals make their homes in many places. Where are some animal homes?
+> High in a tree is a big eagle's nest. There, eagles keep their chicks safe. Facts: Some eagles are white and brown. They eat rabbits, lizards, frogs, birds, and even small dogs!
+> An opossum lives inside a tree hollow. It lines it with leaves and grass. Inside, it stays safe and dry. Facts: Opossums are gray or black. Mother opossums carry their babies on their backs.
+> Honeybees make a hive for their home. They make honey in the hive. The bees have food all winter long. Facts: Honeybees have five eyes. Honeybees can't see the color red.
+> Some crabs make their homes in old seashells. They find new seashells as they get big. Facts: Crabs live under water and on land. They have ten legs.
+> An animal's home is the best place for it to live. Where is your home? How is your home right for you?
+RC | Which animal's home is up high in a tree? | the eagle | the crab | the opossum
+RC | Which animal makes food in its home? | the honeybee | the eagle | the crab
+RC | Which animal has ten legs? | the crab | the opossum | the honeybee
+RT | Where does an opossum live? | An opossum lives inside a tree hollow.
+RT | How many eyes do honeybees have? | Honeybees have five eyes.
+RT | Where do some crabs make their homes? | Some crabs make their homes in old seashells.
+RS | Why do crabs find new seashells?
+RS | How does an opossum make its home safe and dry? Tell us.
+# grammar
+G | Where is the eagle?
+G | It is under the tree.
+G | Where are the chicks?
+G | They are in the nest.
+G | Where are the honeybees?
+G | They are in the hive.
+G | Where is the pencil?
+G | It is on the desk.
+# speak-write
+SP | A: Watch out! Be careful! | B: Why? What is it? | A: It's a {beehive}. | B: OK. Thanks! | beehive / nest / crab / pond / eagle / frog
+SW | The {eagle} lives in a {nest}. Its home is {high in a tree}. | Write two sentences about an animal and its home.
 ## U6 | My Friend Anak | Where do animals live?
 # learn
 What does "take care of" mean? | to help and look after someone
@@ -149,6 +354,48 @@ P | 🦧🌴🍼👩 | Tell the story of Anak and Dian.
 C | Is it better to sleep in the day or at night? | In the day | At night
 Z | Name four times of the day.
 S | Point at something and ask your partner: What's that?
+# words
+orangutan | o·rang·u·tan | o/rang/u/tan | 🦧
+rainforest | rain·for·est | rain/for/est | 🌴
+reserve | re·serve | re/serve | 🏞️
+teach | teach | t/each | 👩‍🏫
+miss | miss | m/iss | 😢
+day | day | d/ay | ☀️
+night | night | n/ight | 🌙
+morning | morn·ing | morn/ing | 🌅
+midday | mid·day | mid/day | 🕛
+afternoon | af·ter·noon | af/ter/noon | 🌤️
+evening | eve·ning | eve/ning | 🌆
+# reading
+> My Friend, Anak
+> This is a story about an orangutan called Anak.
+> My name is Dian. I take care of young orangutans at the Happy House Reserve in the rainforest. These young orangutans don't have families. They can't live alone.
+> Anak is a baby. I take care of her every day. I give her milk from a bottle. I teach Anak about the rainforest. We have fun together. Anak isn't sad or lonely.
+> Anak is now four years old. She eats fruit, leaves, and flowers. She can climb trees. She plays with other orangutans. But I am still Anak's special friend.
+> Anak is eight years old now. She sleeps and eats at the reserve. She plays in the rainforest a lot. Sometimes she takes a nap there.
+> Anak is twelve years old now. She lives and sleeps in the rainforest. I put out Anak's favorite foods, but she doesn't come. I miss Anak!
+> Look! Who's this? It's Anak. She's fifteen. She has a baby! Anak and I are happy to see each other.
+> I miss Anak, but I'm happy. Anak lives in the rainforest and teaches her baby how to live there, too.
+RC | Who takes care of Anak? | Dian | Anak's mother | a teacher
+RC | What does baby Anak drink? | milk from a bottle | water | juice
+RC | How old is Anak when she has a baby? | fifteen | eight | four
+RT | Where does Dian work? | Dian works at the Happy House Reserve.
+RT | What does Anak eat when she is four? | She eats fruit, leaves, and flowers.
+RT | Where does Anak live when she is twelve? | She lives in the rainforest.
+RS | Why is Anak at the reserve at the beginning of the story?
+RS | At the end of the story, is Dian happy or sad? Why?
+# grammar
+G | What is that?
+G | It is a tree.
+G | Who is this?
+G | It is Anak.
+G | What is this animal?
+G | It is an orangutan.
+G | Who is that girl?
+G | It is my friend.
+# speak-write
+SP | A: I have three clues. It's small. It lives in the woods. It's brown. | B: What is it? Is it a {mouse}? | A: Yes, it is! | B: My turn now. | mouse / squirrel / frog / crab / chick / eagle
+SW | What is it? It is a {squirrel}. It lives in the {woods}. It is {brown}. | Write about an animal: what it is, where it lives, and what color it is.
 ## U7 | The Four Seasons | How are seasons different?
 # learn
 What does "warm" mean? | a little hot
@@ -174,6 +421,49 @@ P | 🌸☀️🍂❄️ | Name the four seasons and say one thing about each.
 C | Is summer better than winter? | Summer | Winter
 Z | Name the four seasons.
 S | Say three things about the weather where you live.
+# words
+warm | warm | w/arm | 🌤️
+hot | hot | h/ot | 🔥
+rain | rain | r/ain | 🌧️
+snow | snow | sn/ow | ❄️
+cool | cool | c/ool | 🍃
+cold | cold | c/old | 🥶
+long | long | l/ong | 📏
+short | short | sh/ort | ✂️
+weather | weath·er | weath/er | 🌦️
+cloudy | cloud·y | cloud/y | ☁️
+sunny | sun·ny | sun/ny | ☀️
+windy | wind·y | wind/y | 💨
+snowy | snow·y | snow/y | 🌨️
+rainy | rain·y | rain/y | ☔
+# reading
+> The Four Seasons
+> There are four seasons in a year: spring, summer, fall, and winter. Each season is special.
+> Spring: Spring is a growing season. It gets warm outside. It rains a lot. The rain helps plants grow. Buds grow on trees and plants. Birds make nests in trees.
+> Summer: Summer comes after spring. It gets hot outside. The days are long and the nights are short. The sun helps the buds grow into fruit and flowers. Animals eat the fruit.
+> Fall: Fall comes after summer. It gets cool outside. Leaves turn red, yellow, and orange. Then they fall to the ground. Animals collect food for the winter.
+> Winter: Winter comes after fall. The days are short and the nights are long. It gets cold outside and it snows. The snow covers the ground. Lots of trees don't have leaves now. The animals eat the food they collect in the fall.
+> Then it's spring, and the seasons begin again.
+RC | How many seasons are in a year? | four | three | two
+RC | What helps plants grow in spring? | the rain | the snow | the leaves
+RC | What colors do leaves turn in fall? | red, yellow, and orange | blue and green | white and black
+RT | Which season comes after spring? | Summer comes after spring.
+RT | What do birds make in spring? | Birds make nests in trees.
+RT | What covers the ground in winter? | The snow covers the ground.
+RS | What do animals do in the fall?
+RS | How are summer days and winter days different?
+# grammar
+G | It gets hot in the summer.
+G | It doesn't get cold.
+G | It snows in the winter.
+G | It doesn't snow in the summer.
+G | It rains a lot in spring.
+G | It gets cool in the fall.
+G | Does it snow in the winter?
+G | The days are long and sunny.
+# speak-write
+SP | A: Do you want to play in the {snow} with me? | B: Sure! | A: Great! Let's go! | snow / rain / park / garden / leaves / sun
+SW | It gets {hot} in the {summer}. It doesn't {snow}. | Write two sentences about your favorite season.
 ## U8 | Arnold's Apple Tree | How are seasons different?
 # learn
 What does "build a snowman" mean? | to make a man out of snow
@@ -199,6 +489,49 @@ P | 🍎🌳🏡⛄ | What does Arnold do with his apple tree?
 C | Is a tree house better than a swing? | A tree house | A swing
 Z | Name three things you do in the winter.
 S | Ask your partner: What do you do in the spring?
+# words
+watch | watch | w/atch | 👀
+grow | grow | gr/ow | 🌱
+fall | fall | f/all | 🍂
+bring | bring | br/ing | 🎁
+build | build | b/uild | 🔨
+make | make | m/ake | 🛠️
+snowman | snow·man | snow/man | ⛄
+swing | swing | sw/ing | 🎠
+apple | ap·ple | ap/ple | 🍎
+pie | pie | p/ie | 🥧
+bicycle | bi·cy·cle | bi/cy/cle | 🚲
+beach | beach | b/each | 🏖️
+kite | kite | k/ite | 🪁
+flowers | flow·ers | flow/ers | 🌸
+# reading
+> The Seasons of Arnold's Apple Tree
+> My name is Arnold. I have an apple tree. It keeps me busy all year.
+> It's spring. I watch small buds grow on my apple tree. They grow into apple blossoms. I watch honeybees collect nectar from the blossoms. I make a swing for my apple tree.
+> It's summer. I build a tree house in my apple tree. My apple tree shades me from the hot sun. I watch small apples begin to grow. I juggle some green apples for my tree friend.
+> It's fall. My apple tree now has big, red, tasty apples. I bring some leaves up to my tree house. I make a soft floor to lie on. I shake the branches. Red apples fall to the ground. I put them in a basket and take them home. My family and I make apple pies.
+> It's winter. In the winter, snow falls. It's quiet. The branches of my apple tree are bare. I hang strings of popcorn and berries on the branches. The birds eat them. I build a snowman.
+> The snow melts. It's spring again...
+RC | What grows on the apple tree in spring? | buds | red apples | popcorn
+RC | What does Arnold build in the summer? | a tree house | a snowman | a swing
+RC | Who eats the popcorn and berries? | the birds | Arnold's family | the honeybees
+RT | What does Arnold make in the spring? | He makes a swing for his apple tree.
+RT | What color are the apples in the fall? | The apples are big and red.
+RT | What does Arnold build in the winter? | He builds a snowman.
+RS | What does Arnold's family make in the fall?
+RS | Does Arnold like his apple tree? Why?
+# grammar
+G | I make a swing for my tree.
+G | I don't make apple pies.
+G | Do you watch honeybees?
+G | You build a snowman.
+G | You don't build a tree house.
+G | I watch small apples grow.
+G | Do you like the winter?
+G | In the fall, I make an apple pie.
+# speak-write
+SP | A: What do you do in the spring? | B: I {ride a bicycle} in the spring. | A: What do you do in the summer? | B: I eat ice cream! | ride a bicycle / fly a kite / plant flowers / go to the beach / build a tree house / watch birds
+SW | In the {spring}, I {fly a kite}. I don't {build a snowman}. | Write two sentences about what you do in your favorite season.
 ## U9 | Working with Numbers | How do numbers help us?
 # learn
 What does "plus sign" mean? | the sign + that tells us to add
@@ -224,6 +557,47 @@ PT | ✏️➕📚🟰 | Make an addition problem with school things. Type it.
 C | Is counting by twos faster than counting by ones? | By twos | By ones
 Z | Say three even numbers.
 S | Count your school things. Tell us how many you have.
+# words
+numbers | num·bers | num/bers | 🔢
+plus | plus | pl/us | ➕
+sign | sign | s/ign | 🪧
+problem | prob·lem | prob/lem | ❓
+answer | an·swer | an/swer | ✅
+odd | odd | o/dd | 🔴
+even | e·ven | e/ven | 🔵
+addition | ad·di·tion | ad/di/tion | 🧮
+pen | pen | p/en | 🖊️
+pencil | pen·cil | pen/cil | ✏️
+eraser | e·ras·er | e/ras/er | 🧽
+ruler | rul·er | rul/er | 📏
+backpack | back·pack | back/pack | 🎒
+notebook | note·book | note/book | 📓
+# reading
+> Working with Numbers
+> Numbers: Look at the number line. It shows the numbers 1 to 20 in order. Some numbers are even, and some numbers are odd. The even numbers are blue, and the odd numbers are red.
+> Counting: Read the even numbers aloud. When there are a lot of things in a group, we can use the even numbers to count the things by twos. This helps us to count fast. Count the fish by twos.
+> Addition: We use addition every day. It helps us count things. We join groups of things with addition. This is a plus sign: +. It tells us to add the numbers together. This is an equals sign: =. It tells us that the numbers on both sides are the same amount. After the equals sign comes the answer. We say, "Two plus three equals five." We write 2 + 3 = 5.
+> Addition problems: Let's use addition to work out answers to these word problems. You have eight orange seashells. I have nine green seashells. How many seashells do we have? They have six red crabs, five blue crabs, and four yellow crabs. How many crabs do they have? How do you use addition every day?
+RC | What color are the even numbers? | blue | red | green
+RC | What does the plus sign tell us? | add the numbers | count by twos | stop counting
+RC | Which numbers help us count by twos? | even numbers | odd numbers | red numbers
+RT | What does the number line show? | It shows the numbers 1 to 20 in order.
+RT | How do we say 2 + 3 = 5? | Two plus three equals five.
+RT | How many seashells do we have? | We have seventeen seashells.
+RS | Why do we count things by twos?
+RS | How do you use addition every day?
+# grammar
+G | You have a seashell.
+G | I don't have a seashell.
+G | They have seven T-shirts.
+G | We don't have T-shirts.
+G | I have four shells.
+G | You have six shells.
+G | Together we have ten shells.
+G | I don't have a pet.
+# speak-write
+SP | A: Olly, how old are you? | B: I'm {seven} years old. How about you, Ben? | A: I'm seven, too! | six / seven / eight / nine / ten / eleven
+SW | I have {two} {pencils}. I don't have {a ruler}. | Write two sentences about the things you have and don't have.
 ## U10 | Stone Soup | How do numbers help us?
 # learn
 What does "pot" mean? | a big thing we cook soup in
@@ -249,6 +623,50 @@ P | 🥣🗿🥔🥕 | Tell the story of the stone soup.
 C | Is fruit salad better than vegetable soup? | Fruit salad | Vegetable soup
 Z | Name three vegetables.
 S | Ask your partner: Do you have a pencil?
+# words
+pot | pot | p/ot | 🍲
+stone | stone | st/one | 🪨
+food | food | f/ood | 🍽️
+sausages | sau·sa·ges | sau/sa/ges | 🌭
+carrots | car·rots | car/rots | 🥕
+onions | on·ions | on/ions | 🧅
+potatoes | po·ta·toes | po/ta/toes | 🥔
+soup | soup | s/oup | 🍜
+tomato | to·ma·to | to/ma/to | 🍅
+cucumber | cu·cum·ber | cu/cum/ber | 🥒
+avocado | av·o·ca·do | av/o/ca/do | 🥑
+orange | or·ange | or/ange | 🍊
+mango | man·go | man/go | 🥭
+peach | peach | p/each | 🍑
+# reading
+> Stone Soup
+> Hans and his wife, Ann, and their daughter, Olga, walk to a town. They see a woman. "We're very hungry," says Hans. "Do you have any food?" "No," says the woman. "I'm hungry, too!"
+> They see a man. Olga says, "We're hungry. Do you have any food?" "No," says the man. "I'm hungry, too!"
+> The family has a big pot. Hans puts water in it. Ann and Olga look for stones. They each find four stones and put them into the pot.
+> "What's that?" ask the woman and her friend. "It's stone soup," says Hans. "It's tasty. You can try some, but we don't have any potatoes. It's good with potatoes." "I have five!" says the woman. "I have seven," says her friend. They put the potatoes into the pot.
+> "What's that?" ask the man and his son. "It's stone soup," says Olga. "It's tasty. You can try some, but we don't have any sausages. It's good with sausages." "I have two," says the man. "I have three," says his son. They put the sausages into the pot.
+> Later, the people from the town smell the soup and come out to look. "We have onions. We have carrots," they say, and put them into the pot.
+> Everyone eats some soup. "We didn't have enough food," say the people. "But we added our food together, and now we all have tasty soup!"
+RC | What does Hans put in the big pot first? | water | potatoes | sausages
+RC | How many potatoes does the woman have? | five | seven | four
+RC | What do the people from the town add? | onions and carrots | stones | milk
+RT | How many stones do Ann and Olga each find? | They each find four stones.
+RT | What does the man put into the pot? | The man puts two sausages into the pot.
+RT | Who eats the soup at the end? | Everyone eats some soup.
+RS | Are the people hungry at the end of the story? Why not?
+RS | What is the lesson of the story?
+# grammar
+G | Do you have any food?
+G | Yes, I do.
+G | What do you have?
+G | I have four big onions.
+G | Do you have potatoes?
+G | No, I don't.
+G | What do you have in your backpack?
+G | I have carrots and onions.
+# speak-write
+SP | A: I have two {oranges}. | B: I have one. How many do we have? | A: Two plus one equals three. | B: We have three! Yum! | oranges / tomatoes / peaches / mangoes / carrots / potatoes
+SW | I have {potatoes} and {onions}. Let's make {potato} soup! It is tasty. | Write about the food you have and the soup you want to make.
 ## U11 | The Farmer and the Hat | What do we need?
 # learn
 What does "farmer" mean? | a person who grows food and keeps animals
@@ -274,6 +692,50 @@ P | 👨‍🌾🐄🎩👗 | What happens to the farmer? Tell the story.
 C | Is a fancy hat better than a plain hat? | A fancy hat | A plain hat
 Z | Name three toys.
 S | Ask your partner: Can I borrow your pencil, please?
+# words
+farmer | farm·er | farm/er | 👨‍🌾
+cow | cow | c/ow | 🐄
+milk | milk | m/ilk | 🥛
+market | mar·ket | mar/ket | 🏪
+sell | sell | s/ell | 💰
+buy | buy | b/uy | 🛒
+plain | plain | pl/ain | 🧢
+fancy | fan·cy | fan/cy | 🎩
+games | games | g/ames | 🎮
+doll | doll | d/oll | 🪆
+stickers | stick·ers | stick/ers | ⭐
+pins | pins | p/ins | 📌
+# reading
+> The Farmer and the Hat
+> Tomas Flores is a farmer. He doesn't have a lot of money. He grows carrots, potatoes, and onions. He and his wife, Rosa, work hard every day.
+> Farmer Flores has a cow. It gives lots of milk every day. Mrs. Flores sells the milk at the market in town.
+> One day, Mrs. Flores comes home from town. She's very excited. "There's a dance in town on Saturday. Can we go?"
+> "I'm sorry, but no," says Farmer Flores. "We're plain people. It's too fancy for us!" His wife is very sad.
+> The next day, Farmer Flores has an idea. He takes the cow to town and sells it at the market. He buys a very fancy hat for himself and a beautiful dress for his wife.
+> He runs home. He puts on the fancy hat. He gives his wife the beautiful dress. "We can go to the dance," he says.
+> His wife is angry! "Our cow gives us milk every day!" she says. "We sell the milk. We get money to buy food!"
+> "But you want beautiful clothes for the dance," says Farmer Flores. "Can we eat the fancy hat and the beautiful dress?" Mrs. Flores asks. "No, we can't," says the farmer. "We need our cow!"
+> Farmer Flores takes the dress and the hat back to the market. He buys his cow back. Now he tells people, "Never sell something you need to buy something you want."
+RC | What does Farmer Flores grow? | carrots and potatoes | apples and mangoes | milk and eggs
+RC | What gives the family milk every day? | the cow | the market | the farmer
+RC | What does Farmer Flores buy for himself? | a fancy hat | a beautiful dress | a new cow
+RT | Where does Mrs. Flores sell the milk? | She sells the milk at the market in town.
+RT | What does Farmer Flores buy for his wife? | He buys a beautiful dress for his wife.
+RT | What does the farmer do at the end of the story? | He takes the hat and the dress back and buys his cow back.
+RS | Why is Mrs. Flores angry?
+RS | What is the lesson of the story?
+# grammar
+G | He has a cow.
+G | He doesn't have a hat.
+G | He wants a fancy hat.
+G | He doesn't want a cow.
+G | She needs a cow.
+G | She doesn't need a dress.
+G | She wants a pretty kite.
+G | He wants sausages and soup.
+# speak-write
+SP | A: Can I borrow your {comic book}, please? | B: Sure, Sara. Here you are. | A: Thanks, Ben. | B: Bring it back tomorrow, please. | comic book / board game / doll / stickers / pins / game
+SW | I have {a doll}. I don't have {a board game}. I want {a comic book}. | Write about the things you have and the things you want.
 ## U12 | Wants and Needs | What do we need?
 # learn
 What does "need" mean? | something you must have to live
@@ -299,6 +761,47 @@ P | 🍎💧🏠👕 | Are these wants or needs? Tell us why.
 C | Is soda a want or a need? | A want | A need
 Z | Name three jobs that help people.
 S | Say one thing you want and one thing you need.
+# words
+job | job | j/ob | 💼
+doctor | doc·tor | doc/tor | 👩‍⚕️
+teacher | teach·er | teach/er | 👩‍🏫
+help | help | h/elp | 🤝
+money | mon·ey | mon/ey | 💵
+clothes | clothes | cl/othes | 👕
+water | wa·ter | wa/ter | 💧
+sandwich | sand·wich | sand/wich | 🥪
+grapes | grapes | gr/apes | 🍇
+juice | juice | j/uice | 🧃
+cookie | cook·ie | cook/ie | 🍪
+chips | chips | ch/ips | 🍟
+soda | so·da | so/da | 🥤
+# reading
+> Wants and Needs
+> What do we want? Wants are things we would like to have. People want different things. Maria wants a kitten. Akif wants a new bicycle.
+> What do we need? Needs are things we must have to live. People need the same things. We need a home to live in. We need food and water to grow and keep healthy. We need clothes to keep us warm.
+> Needs are also things that are important to us and help us. Ji-Min needs a pencil to do her homework. Sam needs new sneakers to walk to school.
+> We need money to buy the things we want and need. People have jobs to get money. Some people make or grow things to sell. A farmer grows food. A truck driver takes the food to the store. We go to the store to buy the food we need.
+> Who do we need? Some people have service jobs. These are jobs that help other people get what they need. We need to learn, and to be safe and healthy. Police officers have a service job. They help us and keep us safe. Doctors have service jobs. They help keep us healthy. Teachers have service jobs, too. They help us learn. What other people have jobs that help us?
+RC | What does Maria want? | a kitten | a bicycle | a pencil
+RC | What do we need to keep us warm? | clothes | money | a pencil
+RC | Who helps keep us healthy? | doctors | teachers | farmers
+RT | Why do people have jobs? | People have jobs to get money.
+RT | What does a farmer do? | A farmer grows food.
+RT | What do teachers help us do? | Teachers help us learn.
+RS | What is a service job? Tell us one example.
+RS | What do you need? Do you have these things?
+# grammar
+G | Does Maria have a kitten?
+G | No, she doesn't.
+G | What does Akif want?
+G | He wants a bicycle.
+G | Does she have a doll?
+G | Yes, she does.
+G | What does she want today?
+G | She wants stickers from the teacher.
+# speak-write
+SP | A: We want {soda}. | B: Yes! And we want chips! | A: We need fruit. | B: And we need water. | soda / chips / cookies / grapes / juice / sandwiches
+SW | I need {water} and {food}. I want {a cookie}. | Write about the things you need and the things you want.
 ## U13 | Where's Your Home? | Where do we live?
 # learn
 What does "neighborhood" mean? | a place where families live, work, and play
@@ -324,6 +827,50 @@ P | 🏙️🏡🌾🚜 | Is this the city or the country? Tell us how you know.
 C | Is the city better than the country? | The city | The country
 Z | Say three words from small to big: apartment, building, city.
 S | Tell your partner your address.
+# words
+street | street | str/eet | 🛣️
+neighborhood | neigh·bor·hood | neigh/bor/hood | 🏘️
+town | town | t/own | 🏡
+city | cit·y | cit/y | 🏙️
+country | coun·try | coun/try | 🌾
+apartment | a·part·ment | a/part/ment | 🏢
+building | build·ing | build/ing | 🏬
+world | world | w/orld | 🌍
+noisy | nois·y | nois/y | 🔊
+quiet | qui·et | qui/et | 🤫
+safe | safe | s/afe | 🛡️
+dangerous | dan·ger·ous | dan/ger/ous | ⚠️
+boring | bor·ing | bor/ing | 😴
+interesting | in·ter·est·ing | in/ter/est/ing | 🤩
+# reading
+> Where's Your Home?
+> The world is very big, and people live in all kinds of places. We all live in homes. Some homes are apartments. Some homes are houses. Some homes are big, and some homes are small.
+> Homes are in neighborhoods. A neighborhood is where families live, work, and play. Some neighborhoods are in towns and cities, and some are in the country.
+> Towns: There are a lot of neighborhoods in towns. In towns there are parks, trees, and a lot of small streets. Many people live in houses. Some people live in apartments. This is Matias. Matias's house is in a town. "I live in Loreto. Loreto is a small town."
+> The Country: In the country there are woods, farms, and fields. Many people live on farms. People live in houses, too. There are no apartment buildings. Houses in the country are far apart. This is Jenna's house. "I live on a farm in the country."
+> Cities: Cities are like very big towns. There are a lot of people, streets, and big buildings in cities. The buildings are close together. Many people live in apartments. This is Nada. Nada's apartment is in the city. "I live in Cairo. Cairo is a big city."
+> What's your address? Everyone's home has an address. It tells us where it is. "My address is 19 Main Street, Rivertown." An address has a house number, a street name, and a town name.
+> When do we use an address? We write an address on a letter. We use an address to find our friend's house.
+RC | What is a neighborhood? | where families live | a big building | a letter
+RC | Where are the buildings close together? | in the city | in the country | on a farm
+RC | What do we write on a letter? | an address | a town | a park
+RT | Where does Jenna live? | Jenna lives on a farm in the country.
+RT | What is Cairo? | Cairo is a big city.
+RT | What does an address tell us? | An address tells us where a home is.
+RS | What is in a town? Tell us one thing.
+RS | When do we use an address?
+# grammar
+G | Matias's house is in a town.
+G | Jenna's house is in the country.
+G | Nada's apartment is in the city.
+G | Is this Jenna's house?
+G | Where does Billy live?
+G | Billy's house is at 18 Circle Road.
+G | Mason's address is 19 Main Street.
+G | Is Ali's address 48 Canal Street?
+# speak-write
+SP | A: This is my {house}. Come in. | B: Wow, Emma! Your home is really nice. | A: Thanks, Sara. | B: Let's go and play! | house / apartment / home / room / bedroom / kitchen
+SW | I live in {Zhubei}. My home is {an apartment}. {Lily}'s home is in {the country}. | Write where you live and where your friend lives.
 ## U14 | City Mouse and Country Mouse | Where do we live?
 # learn
 What does "orchard" mean? | a place with many fruit trees
@@ -349,6 +896,51 @@ P | 🐭🏙️🐭🌾 | Tell the story of the two mice.
 C | Is the country safer than the city? | The country | The city
 Z | Name three places in a city.
 S | Ask your partner: Is your home in the city?
+# words
+restaurant | res·tau·rant | res/tau/rant | 🍽️
+hotel | ho·tel | ho/tel | 🏨
+cornfield | corn·field | corn/field | 🌽
+orchard | or·chard | or/chard | 🍎
+new | new | n/ew | ✨
+old | old | o/ld | 🏚️
+park | park | p/ark | 🌳
+library | li·brar·y | li/brar/y | 📚
+supermarket | su·per·mar·ket | su/per/mar/ket | 🛒
+drugstore | drug·store | drug/store | 💊
+bakery | bak·er·y | bak/er/y | 🥐
+museum | mu·se·um | mu/se/um | 🏛️
+# reading
+> City Mouse and Country Mouse
+> City Mouse lives in the city. "There are too many people and cars here. I want some fresh air! I can visit my cousin, Country Mouse," he says.
+> City Mouse flies to the country. Country Mouse runs to him. "Hello, City Mouse! Welcome to my home!" "Thanks, Country Mouse!" says City Mouse. "I'm hungry. What's for dinner?"
+> They go to the cornfield and eat some corn. Then they go to the orchard and eat some apples. "This food is okay, but it's too plain for me!" says City Mouse.
+> It's bedtime, and they're tired. They sleep in an old barn.
+> The next morning, they walk to the pond. "The country is okay, but it's too boring for me," says City Mouse. "Come with me to the city! It's interesting there." "OK," says Country Mouse.
+> City Mouse and Country Mouse take a train to the city. They go to a movie theater, a department store, and a restaurant. They eat cheese and cookies. "This food is okay, but it's too fancy for me," says Country Mouse.
+> It's bedtime, and they're tired. They sleep in a new hotel.
+> The next morning, they hear a loud noise. "Cats! Run!" says City Mouse. City Mouse and Country Mouse run and run until they are safe.
+> "The city is okay, but it's too dangerous for me!" says Country Mouse. "Come with me to the country. It's safe there." "No, the country is good for you, and the city is good for me," says City Mouse.
+> The two mice say goodbye and go home happy.
+RC | What do the mice eat in the country? | corn and apples | cheese and cookies | bread and milk
+RC | Where do they sleep in the city? | in a new hotel | in an old barn | in a cornfield
+RC | Who says "Welcome to my home!"? | Country Mouse | City Mouse | a cat
+RT | How do the mice go to the city? | They take a train to the city.
+RT | Why do the mice run in the city? | They run because they hear cats.
+RT | What does City Mouse think about the country? | He thinks the country is too boring.
+RS | Why does Country Mouse go home?
+RS | How are City Mouse and Country Mouse different? Tell us one thing.
+# grammar
+G | His home is in the city.
+G | Her neighborhood isn't quiet.
+G | Is your apartment small?
+G | We like her house.
+G | Her house is old and big.
+G | Is your home in the city?
+G | Her apartment is big.
+G | We play in her cornfield.
+# speak-write
+SP | A: Is there a {park} in your neighborhood? | B: Yes, there is. | A: Is there a library in your neighborhood? | B: No, there isn't. | park / library / supermarket / drugstore / bakery / museum
+SW | My home is in {the city}. My neighborhood is {noisy}. There is a {park} in my neighborhood. | Write about your home and the places in your neighborhood.
 ## U15 | Percussion Instruments | How can we make music?
 # learn
 What does "strike" mean? | to hit something
@@ -374,6 +966,50 @@ P | 🥁🎵👏🦶 | How can we keep the beat? Show and tell.
 C | Is loud music better than soft music? | Loud music | Soft music
 Z | Name three percussion instruments.
 S | Clap a beat and say: I'm clapping my hands.
+# words
+instruments | in·stru·ments | in/stru/ments | 🎵
+cymbals | cym·bals | cym/bals | 🎶
+tambourine | tam·bou·rine | tam/bou/rine | 🪘
+drum | drum | dr/um | 🥁
+triangle | tri·an·gle | tri/an/gle | 🔺
+shake | shake | sh/ake | 🫨
+xylophone | xy·lo·phone | xy/lo/phone | 🎹
+strike | strike | str/ike | 👊
+fast | fast | f/ast | 🐇
+slow | slow | sl/ow | 🐢
+loud | loud | l/oud | 🔊
+soft | soft | s/oft | 🔈
+awful | aw·ful | aw/ful | 😖
+lovely | love·ly | love/ly | 😍
+# reading
+> Percussion Instruments
+> Percussion instruments are a family of musical instruments. We strike or shake them. Percussion instruments are big and small. These instruments add special sounds to music.
+> Percussion instruments keep the beat: 1, 2, 3, 4. We can keep the beat, too. Clap your hands to this beat: 1, 2, 3, 4. Can you stamp your feet to the beat? 1, 2, 3, 4.
+> Drums: There are a lot of different drums in the world. We strike drums with our fingers, our hands, or with drumsticks or mallets. This keeps the beat. This big drum is called a bass drum. The boy is striking the big white drum with two mallets.
+> The Tambourine: A tambourine is like a small drum. We strike it with our hands. We can shake it, too.
+> The Xylophone: A xylophone has wooden bars. The girl is striking the xylophone with mallets.
+> The Triangle: Why do you think this instrument is called a triangle? Its shape is a triangle. We strike it.
+> Cymbals: When we play the cymbals, we strike two cymbals together. There are many kinds of cymbals. Some are big and some are small. They sound different. This boy is playing big cymbals.
+RC | What do we do with percussion instruments? | strike or shake them | blow them | sing with them
+RC | What does a xylophone have? | wooden bars | strings | a big drum
+RC | What is like a small drum? | a tambourine | a triangle | a xylophone
+RT | How do we play the cymbals? | We strike two cymbals together.
+RT | What do we strike drums with? | We strike drums with our hands or mallets.
+RT | Why is a triangle called a triangle? | Its shape is a triangle.
+RS | How can we keep the beat without an instrument?
+RS | Which percussion instrument is your favorite? Tell us how we play it.
+# grammar
+G | You're playing the drums.
+G | You aren't playing the xylophone.
+G | I'm shaking the tambourine.
+G | I'm not striking it.
+G | Gus is playing the xylophone.
+G | He isn't playing the drum.
+G | Layla's playing the cymbals.
+G | They are making music.
+# speak-write
+SP | A: Can you help me, please? | B: Sure! Let's {play the drum} together. | A: Thanks a lot! | B: You're welcome! | play the drum / shake the tambourine / strike the triangle / play the cymbals / play the xylophone / clap the beat
+SW | I'm playing the {drum}. I'm {striking} it. It sounds {loud} and {fast}. | Write about a percussion instrument you are playing.
 ## U16 | Let's Make Music | How can we make music?
 # learn
 What does "concert" mean? | a show where people play music
@@ -399,6 +1035,49 @@ P | 🎟️🥁🎶📸 | What is happening at the concert? Tell us.
 C | Is a concert better than a circus? | A concert | A circus
 Z | Name three kinds of performances.
 S | Act out a performance. Ask the class: What are we doing?
+# words
+dance | dance | d/ance | 💃
+sing | sing | s/ing | 🎤
+clap | clap | cl/ap | 👏
+idea | i·de·a | i/de/a | 💡
+practice | prac·tice | prac/tice | 🎻
+tickets | tick·ets | tick/ets | 🎟️
+money | mon·ey | mon/ey | 💰
+pictures | pic·tures | pic/tures | 📷
+parade | pa·rade | pa/rade | 🎺
+concert | con·cert | con/cert | 🎶
+ballet | bal·let | bal/let | 🩰
+play | play | pl/ay | 🎭
+puppet | pup·pet | pup/pet | 🧸
+circus | cir·cus | cir/cus | 🎪
+# reading
+> Let's Make Music!
+> January: I'm Maddie, and we're students in Ms. King's class. We want music lessons, but we don't have instruments. We can't buy instruments because we don't have any money. We have a big problem. We need a good idea.
+> February: We think, and think, and think, and then get an idea. Let's make instruments and give a concert! We can sell tickets, get money, and buy new instruments. But how do we make instruments? We ask our friends and families. Aha! We can use things from our homes.
+> April: We're making instruments that we can shake. We're using paper rolls and beads. Fay and Oscar are shaking them. Evan and Kate are using jars and candy. They're shaking them to a beat.
+> May: We're all practicing our instruments. These buckets and pots are our drums. Bruno, Sara, and Dan are striking them. These are our cymbals. Aziz and I are striking them together. Ms. King is helping us. What do you think? Are we having fun?
+> June: It's concert night. Look at all the people! They're buying tickets. Everyone is excited. We're all playing our instruments, singing, and dancing. Our parents are taking pictures. The people are clapping and giving money! It's a wonderful concert.
+> September: Look! These are our new instruments! We're very happy. We're playing them, and we sound great. We still like our old instruments, too!
+RC | What do the students want? | music lessons | new shoes | a puppet show
+RC | What are the buckets and pots? | drums | cymbals | tickets
+RC | Who is helping the students? | Ms. King | their parents | Maddie
+RT | Why can't the students buy instruments? | They don't have any money.
+RT | What are the parents doing at the concert? | They are taking pictures.
+RT | What are the people doing at the concert? | They are clapping and giving money.
+RS | What is the students' problem? What is their solution?
+RS | Why are the students happy at the end of the story?
+# grammar
+G | Are you singing a song?
+G | Yes, I am singing.
+G | Is she dancing in the parade?
+G | No, she isn't dancing.
+G | Are they playing instruments?
+G | Yes, they are playing instruments.
+G | Is he clapping his hands?
+G | Are we having fun?
+# speak-write
+SP | A: What are we doing? | B: You're playing instruments and walking. It's a {parade}! | A: Yes, that's right! | parade / concert / ballet / play / puppet show / circus
+SW | My favorite performance is a {concert}. Are the people {singing}? Yes, they are! | Write about your favorite kind of performance.
 ## U17 | Living and Nonliving Things (partial) | What are living things?
 # learn
 What does "living" mean? | alive; it can grow, move, and breathe
@@ -424,6 +1103,51 @@ P | 🌳🐶⚽🛋️ | Which are living? Which are nonliving? Say why.
 C | Is a plant a living thing? | Yes, it is | No, it isn't
 Z | Name three living things in a park.
 S | Say: I'm sorry. Then your partner says: That's OK.
+# words
+living | liv·ing | liv/ing | 🌱
+nonliving | non·liv·ing | non/liv/ing | 🪨
+breathe | breathe | br/eathe | 🌬️
+move | move | m/ove | 🏃
+change | change | ch/ange | 🦋
+air | air | a/ir | 💨
+bench | bench | b/ench | 🪑
+bush | bush | b/ush | 🌳
+statue | stat·ue | stat/ue | 🗽
+grass | grass | gr/ass | 🌿
+rose | rose | r/ose | 🌹
+fountain | foun·tain | foun/tain | ⛲
+# reading
+> Living and Nonliving Things
+> We see many things in our world every day. All of these things are living or nonliving. Let's read about how they are different.
+> Living things: A living thing can grow and change. Look at the caterpillar and butterfly. What is different?
+> A plant is a living thing. An animal is a living thing. You are a living thing! Living things breathe air, and they need food and water.
+> People and animals can move by themselves. They can get food and water from different places. Where can animals get water?
+> Plants can't move by themselves. They make their food from sunlight, water, and air. They can grow tall to get sunlight. Water comes to them. What living things do you see every day?
+> Nonliving things: A nonliving thing doesn't need food, air, or water. It can't breathe. A toy is a nonliving thing.
+> A nonliving thing doesn't grow, but it can change. Look at the sneakers. What's different?
+> A ball can move. Is a ball a living thing? No, it isn't. A ball can only move if we move it. It can't move by itself. It can't breathe, and it doesn't grow. It's a nonliving thing.
+> What nonliving things do you move every day? Look around you. What nonliving things do you see?
+> All living and nonliving things in our world are important. It is good to take care of all of them.
+RC | What can a living thing do? | grow and change | sing and dance | read and write
+RC | Which one is a nonliving thing? | a toy | a plant | an animal
+RC | What do plants make their food from? | sunlight, water, and air | milk and bread | toys and balls
+RT | What do living things breathe? | Living things breathe air.
+RT | Can plants move by themselves? | No, plants can't move by themselves.
+RT | Can a ball move by itself? | No, a ball can only move if we move it.
+RS | How are living and nonliving things different? Tell us one thing.
+RS | What living things do you see every day?
+# grammar
+G | An animal can grow.
+G | A toy can't grow.
+G | People can breathe air.
+G | Sneakers can't breathe.
+G | A tree can grow tall.
+G | A house can't move.
+G | Can a ball move by itself?
+G | Plants can't move by themselves.
+# speak-write
+SP | A: Oh, no! My {drum} is broken! | B: I'm sorry. That's OK. I can fix it. | A: Thank you! | B: I can help. | drum / bike / toy / doll / bench / fountain
+SW | A {tree} is a living thing. It can {grow and change}. A {ball} is a nonliving thing. It can't {breathe}. | Write about one living thing and one nonliving thing.
 ## U18 | The Gingerbread Man | What are living things?
 # learn
 What does "chase" mean? | to run after someone
@@ -449,3 +1173,65 @@ P | 🍪👵🐔🦊 | Tell the story of the gingerbread man.
 C | Should you go to bed early or late? | Early | Late
 Z | Name three things you should do to take care of yourself.
 S | Give your partner advice. Say: You should ... You shouldn't ...
+# words
+run | run | r/un | 🏃
+chase | chase | ch/ase | 🐕
+catch | catch | c/atch | 🧤
+stop | stop | st/op | 🛑
+cross | cross | cr/oss | 🚸
+bake | bake | b/ake | 🍪
+smell | smell | sm/ell | 👃
+open | o·pen | o/pen | 🚪
+early | ear·ly | ear/ly | 🌅
+late | late | l/ate | 🌙
+healthy | health·y | health/y | 🥗
+outside | out·side | out/side | 🌳
+bed | bed | b/ed | 🛏️
+# reading
+> The Gingerbread Man
+> Narrator: One day, an old woman makes a gingerbread man cookie. She bakes it in the oven.
+> Old Man: It smells good! I'm hungry!
+> Narrator: The old woman opens the oven door. The gingerbread man jumps up and runs out the door!
+> Old Woman: Stop! Don't run away! We want to eat you!
+> Narrator: The old woman and old man chase the gingerbread man. He should run fast!
+> Gingerbread Man: Run, run as fast as you can! You can't catch me, I'm the gingerbread man!
+> Narrator: The gingerbread man sees a chicken in the yard.
+> Chicken: Stop! Don't run away! I want to eat you!
+> Narrator: The old woman, old man, and chicken all chase the gingerbread man. But he's too fast.
+> Gingerbread Man: Run, run as fast as you can! You can't catch me, I'm the gingerbread man!
+> Narrator: He sees a cow in a grassy field.
+> Cow: Stop! Don't run away! I want to eat you!
+> Narrator: The old woman, old man, chicken, and the cow all chase the gingerbread man. But he's too fast.
+> Gingerbread Man: Run, run as fast as you can! You can't catch me, I'm the gingerbread man!
+> Narrator: He sees a horse next to a tree.
+> Horse: Stop! Don't run away! I want to eat you!
+> Narrator: The old woman, old man, chicken, cow, and the horse all chase the gingerbread man. But he's too fast.
+> Gingerbread Man: Run, run as fast as you can! You can't catch me, I'm the gingerbread man!
+> Narrator: The gingerbread man comes to a river. He should swim across it!
+> Gingerbread Man: Oh, no! I can't swim!
+> Narrator: The gingerbread man sees a fox. He shouldn't talk to the fox!
+> Fox: You really shouldn't stay here. I can help you. Climb on my nose, and we can cross the river.
+> Gingerbread Man: OK!
+> Narrator: The gingerbread man jumps on the fox's nose. The fox throws the gingerbread man up in the air and...
+> Fox: Yum! Delicious!
+> Narrator: And that's the end of the gingerbread man!
+RC | Who bakes the gingerbread man? | an old woman | a fox | a chicken
+RC | Where does the gingerbread man see the cow? | in a grassy field | in the yard | next to a tree
+RC | Who eats the gingerbread man? | the fox | the horse | the old man
+RT | Why can't the gingerbread man swim across the river? | He can't swim.
+RT | Why can't they catch the gingerbread man? | He is too fast.
+RT | What does the fox tell the gingerbread man to do? | The fox tells him to climb on his nose.
+RS | Why does everyone chase the gingerbread man?
+RS | Why does the fox tell the gingerbread man to climb on his nose?
+# grammar
+G | You should run away!
+G | You shouldn't stay here.
+G | She should close the door.
+G | He should run fast.
+G | You shouldn't talk to the fox.
+G | Should I go to bed early?
+G | You should eat healthy food.
+G | You shouldn't eat junk food.
+# speak-write
+SP | A: Stop! You shouldn't {run} in the classroom. | B: Oh, I'm sorry. | A: You should walk! | B: OK, you're right. | run / shout / jump / eat / push / play
+SW | We should {give plants water}. We shouldn't {throw junk in the park}. | Write what you should and shouldn't do to take care of living things.

@@ -50,7 +50,7 @@ SP | A: line | B: line | A: My {leg} hurts! | B: line | leg / head / ear   ({} =
 SW | My favorite animal group is {birds}. They have {wings}. | prompt      ({} = parts the student changes in their own sentences)
 ```
 Lines starting with `//` are ignored. One question per line, `|` only as separator, no Chinese. `python3 tools/check_bank.py` enforces all of the above (including the 8-question reading rule and that chunks/syllables spell the word).
-Content for the four Learning Time sections comes from the scanned Oxford Discover Student Book pages in the teacher's Google Drive (folders OD1–OD5, files `p.N`; each unit = 8 pages: Words, Before You Read, Reading ×2, Understand, Grammar, Words+Listening, Speaking/Word Study/Write). Production order agreed with the teacher: OD2 (all 18 units) → OD3 → OD4 → OD1 → OD5.
+Content for the four Learning Time sections comes from the scanned Oxford Discover Student Book pages in the teacher's Google Drive (folders OD1–OD5, files `p.N`; each unit = 8 pages: Words, Before You Read, Reading ×2, Understand, Grammar, Words+Listening, Speaking/Word Study/Write). All five levels (90 units) now carry the four sections; the per-level drafting notes live in the scratchpad briefs (page map → one agent per 3 units → check_unit.py → merge). OD5 units 7–12 start two pages later (p.70, 78, 90, 98, 110, 118) and 13–18 four pages later (p.132 …) because of the Testing Practice spreads.
 
 ## Game architecture (index.html)
 - Mode is decided by the URL: no `?join=` → teacher/host; `?join=CODE` → student.
