@@ -488,14 +488,13 @@ C | Is Bandar bad or just hungry? | Bad | Just hungry
 Z | Thirty cookies minus fifteen cookies. How many are left?
 S | Tell your partner three things you did last night.
 # words
+steal | steal | st/eal | 🦝
+hide | hide | h/ide | 🙈
+jar | jar | j/ar | 🫙
 greedy | greed·y | greed/y | 🐵
+bored | bored | b/ored | 🥱
 baker | bak·er | bak/er | 👨‍🍳
-cookies | cook·ies | cook/ies | 🍪
-gardener | gar·den·er | gar/den/er | 🧑‍🌾
-carrots | car·rots | car/rots | 🥕
 cook | cook | c/ook | 🍳
-sausages | sau·sag·es | sau/sag/es | 🌭
-candy | can·dy | can/dy | 🍬
 hand | hand | h/and | ✋
 nose | nose | n/ose | 👃
 face | face | f/ace | 🙂
@@ -504,18 +503,21 @@ foot | foot | f/oot | 🦶
 knee | knee | kn/ee | 🦵
 # reading
 > Bandar, the Greedy Monkey
-> Bandar was a greedy little monkey. He lived in the woods near a town. One day, Bandar was hungry, so he went into town to look for food.
-> First, he went to the bakery. The baker had thirty cookies on the table. Bandar grabbed fifteen cookies and ran away. The baker saw Bandar and chased him. "You greedy little monkey! Now there are only fifteen cookies!"
-> Next, Bandar went to the garden. The gardener had sixty carrots. Bandar dug up sixteen carrots and ate them. The gardener saw Bandar and chased him. "You greedy little monkey! Now there are only forty-four carrots!"
-> Then Bandar went to the kitchen. The cook had forty-two sausages. Bandar ate twelve sausages. The cook saw Bandar and chased him. "You greedy little monkey! Now there are only thirty sausages!"
+> A monkey called Bandar lived in the woods near a small town. One day, Bandar was bored and decided to go into the town.
+> Bandar went to a bakery and saw thirty beautiful cookies. He stole a cookie and ate it. It was good! He ate more and more cookies!
+> The baker saw Bandar and chased him. "You greedy little monkey!" he cried. "Now there are only fifteen cookies!"
+> Bandar ran up a tree and hid in the leaves. When he looked down, he saw sixty small carrots in a garden. When the gardener wasn't looking, Bandar ran down the tree, dug up a carrot, and ate it. It was good! He ate more and more carrots!
+> The gardener saw Bandar and chased him. "You greedy little monkey! Now there are only forty-four carrots!"
+> Bandar went to a restaurant and saw forty-two sausages. He stole a sausage and ate it. It was good! He ate more and more sausages!
+> The cook saw Bandar and chased him. "You greedy little monkey! Now there are only thirty sausages!"
 > Bandar stole food all over the town. Everyone was angry. They tried to catch Bandar, but he was too fast. Then the candy maker had an idea.
 > The next day, Bandar went to the candy store. He saw two big jars of candy in every color, and it all looked good! Bandar put his hands in the jars and grabbed twenty pieces of candy. But he couldn't get the candy out of the jars.
 > The candy maker ran in. "You greedy little monkey! Let go of the candy and you can run away!"
 > Did Bandar let go of the candy? No, he didn't, and the candy maker caught him. He took him back to the woods and told him never to come to town again.
-RC | How many cookies did Bandar steal? | fifteen | thirty | twelve
+RC | Why did Bandar go into the town? | he was bored | he was lost | he was cold
+RC | How many cookies were left at the bakery? | fifteen | thirty | sixty
 RC | Who had an idea to catch Bandar? | the candy maker | the baker | the cook
-RC | Where did the candy maker take Bandar? | back to the woods | to the bakery | to the garden
-RT | What did Bandar do with the sausages? | He ate twelve sausages.
+RT | Where did Bandar hide after the baker chased him? | He hid in the leaves of a tree.
 RT | What did Bandar grab in the candy store? | He grabbed twenty pieces of candy.
 RT | Did Bandar let go of the candy? | No, he didn't let go of the candy.
 RS | Why couldn't the people catch Bandar at first?
