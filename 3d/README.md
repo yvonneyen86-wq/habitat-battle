@@ -34,6 +34,8 @@
 
 ## 角色、特寫與合照（2026-10）
 - `chars.js`：人物改為大頭娃娃比例（`person()`：短腿、圓身、頭半徑 .66），衣服是 canvas 畫的布料（`fabricTex`：條紋／圓點／葉子／花／數字／星星），**臉是畫在頭前方薄片上的 canvas 貼圖**（`addFace` + `faceTex(o,expr)`），表情 `smile blink happy talk wow sad ouch ko` 可即時切換；叢林動物也用同一套臉。恐龍改為電影感寫實輪廓：`loftGeo()` 沿脊椎掃出一整條身體（Catmull-Rom 脊椎＋橢圓截面）、`dinoSkin()` 皮膚貼圖（背部條紋、斑點）、`inkify()` 反面擠出的墨線外框；暴龍有可開合的下顎 `userData.jaw`。
+- **`SPH / CYL / BOX / CONE` 回傳的幾何是共用快取**（同參數同一份），不要對它們做 `translate/scale/rotate` 或改頂點；要改先 `.clone()`。有了快取，建一個世界大多是快取命中，`sync()` 時間約減半。
+- 正式遊戲會在老師端開啟 4 秒後背景先把 3D 舞台建好、把玩家放好、把 shader 都編譯並畫一張隱藏的畫面（`warm3d()` → `HB3D_API.warm()`），所以按 🎮 3D 幾乎是立刻切換。
 - **`Object3D.add()` 回傳的是父物件**，所以 `g.add(mesh(...)).rotation.x=...` 會轉到父物件（這個 bug 曾讓太空人整顆頭轉 90°）。要鏈式調整請用 `par.add(tw(mesh(...),o=>o.rotation.x=1))`（`tw` 在 `core.js`）。
 - 鏡頭預設更低更近（`overview()` phi .32、`focusSite()` phi .24）。`game.js`：
   - `spotOne(g)`：指定學生回答。學生從自己的家走到廣場側（`walkTo`，不超出 `site.stageR`），轉身面對鏡頭，鏡頭貼地平視（phi .12；太陽系 .3），HUD 上方出現「🎤 Name is answering」。

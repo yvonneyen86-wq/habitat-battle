@@ -119,10 +119,13 @@ const rnd=(a,b)=>a+Math.random()*(b-a);
 /* tweak-then-return: `par.add(tw(m,o=>o.rotation.x=1))` (Object3D.add returns the PARENT, so chaining on add() is a trap) */
 const tw=(o,f)=>{f(o);return o;};
 const mesh=(g,m,x=0,y=0,z=0,sh=true)=>{const o=new THREE.Mesh(g,m);o.position.set(x,y,z);o.castShadow=sh;o.receiveShadow=true;return o;};
-const SPH=(r,a=9,b=7)=>new THREE.SphereGeometry(r,Math.max(18,a*2),Math.max(12,b*2));
-const CYL=(a,b,h,s=10)=>new THREE.CylinderGeometry(a,b,h,s===6?6:Math.max(20,s*2));
-const BOX=(a,b,c)=>new THREE.BoxGeometry(a,b,c);
-const CONE=(r,h,s=8)=>new THREE.ConeGeometry(r,h,s<=4?s:Math.max(16,s*2));
+/* geometry cache: thousands of trees/limbs share identical shapes, so building a world is mostly cache hits (never mutate these; clone first) */
+const GEO_CACHE=new Map();const gk=(t,a)=>t+':'+a.map(v=>Math.round(v*1000)/1000).join(',');
+function cached(t,args,make){const k=gk(t,args);let g=GEO_CACHE.get(k);if(!g){g=make();GEO_CACHE.set(k,g);}return g;}
+const SPH=(r,a=9,b=7)=>cached('s',[r,a,b],()=>new THREE.SphereGeometry(r,Math.max(18,a*2),Math.max(12,b*2)));
+const CYL=(a,b,h,s=10)=>cached('c',[a,b,h,s],()=>new THREE.CylinderGeometry(a,b,h,s===6?6:Math.max(20,s*2)));
+const BOX=(a,b,c)=>cached('b',[a,b,c],()=>new THREE.BoxGeometry(a,b,c));
+const CONE=(r,h,s=8)=>cached('k',[r,h,s],()=>new THREE.ConeGeometry(r,h,s<=4?s:Math.max(16,s*2)));
 function lathe(pts,seg=24){seg=Math.max(40,seg);return new THREE.LatheGeometry(pts.map(p=>new THREE.Vector2(p[0],p[1])),seg);}
 function capsule(r,h,m){const g=new THREE.Group();g.add(mesh(CYL(r,r,h,20),m,0,0,0));g.add(mesh(SPH(r),m,0,h/2,0));g.add(mesh(SPH(r),m,0,-h/2,0));return g;}
 /* sky dome with vertex gradient */
@@ -843,7 +846,9 @@ const HB3D_API=EMBED?{
  sync,onSite:null,fps(){return fpsV;},
  mount(el){if(!el||el===stage)return;stage=el;el.appendChild(renderer.domElement);bindStage(el);if(ro){try{ro.observe(el);}catch(e){}}resize();},
  show:miniShow,react:miniReact,
- start(){if(running)return;running=true;clock.getDelta();loop();},stop(){running=false;spotEnd(false);cleanShot=false;lvTarget=null;if(!MINI)document.body.classList.remove('cine','spot');},
+ start(){if(running)return;running=true;clock.getDelta();loop();},
+ /* compile every shader and draw one hidden frame now, so the first visible frame after the toggle is instant */
+ warm(){try{resize();if(renderer.compile)renderer.compile(scene,camera);renderer.render(scene,camera);}catch(e){}},stop(){running=false;spotEnd(false);cleanShot=false;lvTarget=null;if(!MINI)document.body.classList.remove('cine','spot');},
  resize,overview(){spotEnd();overview();},renderBases(){renderHud();},
  correct(pid,tier){const g=byPid(pid);if(!g)return;const u=g.userData;setFace(u.ch,'happy',2600);jump(g);const hp=g.position.clone().add(new THREE.Vector3(u.at.x,u.at.y+u.top,u.at.z));spawn(hp,0xffd43b,8+tier*10,5,7,1.3);if(tier>=2)spawn(hp,TEAMS[u.p.team].color,12,5,7,1.2);if(tier===3){ring(g.position,0xffd43b,9,1);shakeCam=.5;}},
  wrong(pid){const g=byPid(pid);if(g){setFace(g.userData.ch,'sad',2200);g.userData.shake=.5;}},

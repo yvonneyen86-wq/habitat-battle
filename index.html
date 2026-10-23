@@ -1342,7 +1342,7 @@ function hostShell(){
   ['#topbar','#console','#ovl','#modal-root','#qbar','#sv','#p3d-ui'].forEach(s=>$(s).addEventListener('click',onHostClick));
   $('#sv-who').addEventListener('change',e=>openStudentView(e.target.value));
   $('#console').addEventListener('keydown',e=>{if(e.key==='Enter'&&e.target.id==='cq'){e.preventDefault();askCustom('T');}});
-  makeQR($('#qr'),220);fxSetup();apply3d();
+  makeQR($('#qr'),220);fxSetup();apply3d();setTimeout(warm3d,4000);
   setInterval(tick,1000);
 }
 function tick(){
@@ -1353,13 +1353,17 @@ function tick(){
 function render(){if(MODE!=='host'||!$('#stage'))return;applyScene(S.scene);renderHeader();renderStage();renderOverlay();renderConsole();sync3d();}
 /* ===== 3D stage (optional, teacher screen only). The bundle in the 3D-BUNDLE block is built from 3d/*.js by python3 3d/build.py ===== */
 function ensureThree(){return new Promise(r=>{if(window.THREE)return r(true);const sc=document.createElement('script');sc.src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js';sc.onload=()=>r(!!window.THREE);sc.onerror=()=>r(false);document.head.appendChild(sc);});}
-let applying3d=false;
+let applying3d=false,making3d=null;
+/* build the stage once (also warmed in the background a few seconds after the console opens, so the 🎮 3D toggle is instant) */
+function make3d(){if(H.hb3d)return Promise.resolve(true);if(H.no3d)return Promise.resolve(false);if(making3d)return making3d;
+  return making3d=ensureThree().then(ok=>{if(!ok||typeof HB3D_INIT!=='function'){H.no3d=true;return false;}
+    try{window.HB3D_EMBED=true;const api=HB3D_INIT();api.onSite=sites=>{sites.forEach((k,i)=>{if(S.teams[i])S.teams[i].site=k;});save();};api.stop();H.hb3d=api;return true;}
+    catch(e){console.error(e);H.no3d=true;return false;}}).finally(()=>{making3d=null;});}
+function warm3d(){if(MODE!=='host'||H.hb3d||H.no3d||S.ui3d)return;const go=()=>make3d().then(ok=>{if(!ok)return;if(S.ui3d)apply3d();else{try{H.hb3d.sync(view3d());H.hb3d.warm();}catch(e){}}});if('requestIdleCallback' in window)requestIdleCallback(go,{timeout:8000});else setTimeout(go,1500);}
 async function apply3d(){if(MODE!=='host'||applying3d)return;applying3d=true;try{
   const st=$('#stage'),want=!!S.ui3d;
-  if(want&&!H.hb3d&&!H.no3d){$('#stage3d').hidden=false;
-    if(typeof HB3D_INIT!=='function'||!(await ensureThree())){H.no3d=true;S.ui3d=false;$('#stage3d').hidden=true;toast('3D stage could not load. Staying in 2D.');renderHeader();return;}
-    try{window.HB3D_EMBED=true;H.hb3d=HB3D_INIT();H.hb3d.onSite=sites=>{sites.forEach((k,i)=>{if(S.teams[i])S.teams[i].site=k;});save();};}
-    catch(e){console.error(e);H.no3d=true;S.ui3d=false;$('#stage3d').hidden=true;toast('3D stage failed to start. Staying in 2D.');renderHeader();return;}}
+  if(want&&!H.hb3d&&!H.no3d){$('#stage3d').hidden=false;toast('Loading the 3D stage…');
+    if(!(await make3d())){S.ui3d=false;$('#stage3d').hidden=true;toast('3D stage could not load. Staying in 2D.');renderHeader();return;}}
   const on=want&&!!H.hb3d;st.classList.toggle('is3d',on);$('#stage3d').hidden=!on;$('#p3d-ui').hidden=!on;if(!on)$('#p3d-pop').hidden=true;
   document.body.classList.remove('cine','spot');
   if(H.hb3d){if(on){H.hb3d.start();H.hb3d.resize();sync3d();}else H.hb3d.stop();}
@@ -2018,10 +2022,13 @@ const rnd=(a,b)=>a+Math.random()*(b-a);
 /* tweak-then-return: `par.add(tw(m,o=>o.rotation.x=1))` (Object3D.add returns the PARENT, so chaining on add() is a trap) */
 const tw=(o,f)=>{f(o);return o;};
 const mesh=(g,m,x=0,y=0,z=0,sh=true)=>{const o=new THREE.Mesh(g,m);o.position.set(x,y,z);o.castShadow=sh;o.receiveShadow=true;return o;};
-const SPH=(r,a=9,b=7)=>new THREE.SphereGeometry(r,Math.max(18,a*2),Math.max(12,b*2));
-const CYL=(a,b,h,s=10)=>new THREE.CylinderGeometry(a,b,h,s===6?6:Math.max(20,s*2));
-const BOX=(a,b,c)=>new THREE.BoxGeometry(a,b,c);
-const CONE=(r,h,s=8)=>new THREE.ConeGeometry(r,h,s<=4?s:Math.max(16,s*2));
+/* geometry cache: thousands of trees/limbs share identical shapes, so building a world is mostly cache hits (never mutate these; clone first) */
+const GEO_CACHE=new Map();const gk=(t,a)=>t+':'+a.map(v=>Math.round(v*1000)/1000).join(',');
+function cached(t,args,make){const k=gk(t,args);let g=GEO_CACHE.get(k);if(!g){g=make();GEO_CACHE.set(k,g);}return g;}
+const SPH=(r,a=9,b=7)=>cached('s',[r,a,b],()=>new THREE.SphereGeometry(r,Math.max(18,a*2),Math.max(12,b*2)));
+const CYL=(a,b,h,s=10)=>cached('c',[a,b,h,s],()=>new THREE.CylinderGeometry(a,b,h,s===6?6:Math.max(20,s*2)));
+const BOX=(a,b,c)=>cached('b',[a,b,c],()=>new THREE.BoxGeometry(a,b,c));
+const CONE=(r,h,s=8)=>cached('k',[r,h,s],()=>new THREE.ConeGeometry(r,h,s<=4?s:Math.max(16,s*2)));
 function lathe(pts,seg=24){seg=Math.max(40,seg);return new THREE.LatheGeometry(pts.map(p=>new THREE.Vector2(p[0],p[1])),seg);}
 function capsule(r,h,m){const g=new THREE.Group();g.add(mesh(CYL(r,r,h,20),m,0,0,0));g.add(mesh(SPH(r),m,0,h/2,0));g.add(mesh(SPH(r),m,0,-h/2,0));return g;}
 /* sky dome with vertex gradient */
@@ -2742,7 +2749,9 @@ const HB3D_API=EMBED?{
  sync,onSite:null,fps(){return fpsV;},
  mount(el){if(!el||el===stage)return;stage=el;el.appendChild(renderer.domElement);bindStage(el);if(ro){try{ro.observe(el);}catch(e){}}resize();},
  show:miniShow,react:miniReact,
- start(){if(running)return;running=true;clock.getDelta();loop();},stop(){running=false;spotEnd(false);cleanShot=false;lvTarget=null;if(!MINI)document.body.classList.remove('cine','spot');},
+ start(){if(running)return;running=true;clock.getDelta();loop();},
+ /* compile every shader and draw one hidden frame now, so the first visible frame after the toggle is instant */
+ warm(){try{resize();if(renderer.compile)renderer.compile(scene,camera);renderer.render(scene,camera);}catch(e){}},stop(){running=false;spotEnd(false);cleanShot=false;lvTarget=null;if(!MINI)document.body.classList.remove('cine','spot');},
  resize,overview(){spotEnd();overview();},renderBases(){renderHud();},
  correct(pid,tier){const g=byPid(pid);if(!g)return;const u=g.userData;setFace(u.ch,'happy',2600);jump(g);const hp=g.position.clone().add(new THREE.Vector3(u.at.x,u.at.y+u.top,u.at.z));spawn(hp,0xffd43b,8+tier*10,5,7,1.3);if(tier>=2)spawn(hp,TEAMS[u.p.team].color,12,5,7,1.2);if(tier===3){ring(g.position,0xffd43b,9,1);shakeCam=.5;}},
  wrong(pid){const g=byPid(pid);if(g){setFace(g.userData.ch,'sad',2200);g.userData.shake=.5;}},
