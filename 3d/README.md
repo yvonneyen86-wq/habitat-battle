@@ -7,7 +7,7 @@
 | 檔案 | 內容 |
 |---|---|
 | `core.js` | renderer、燈光、材質（`M` 霧面 / `GLOSS` 亮面 / `GLOW` 自發光）、幾何捷徑（`SPH CYL BOX CONE lathe capsule`）、天空漸層 `setSky`、canvas sprite（`labelSprite` 名牌、`bubbleSprite` 對話泡泡名牌、`hpSprite` 血條、`textSprite`）、動畫佇列 `animate`、粒子 `spawn`、衝擊環 `ring`、全螢幕 `banner` |
-| `chars.js` | 16 個低多邊形角色 `CHAR_BUILDERS`（monkey elephant tiger toucan / trex bronto triceratops stego / astro rocket alien robot / kid teen adult grandma），`CHAR_SETS` 決定每個世界顯示哪四種、`CHAR_CLASS`（角色→職業組）、`buildChar(id)` |
+| `chars.js` | 16 個低多邊形角色 `CHAR_BUILDERS`（monkey elephant tiger toucan / trex bronto triceratops stego / astro rocket alien robot / kidA kidB kidC kidD），`CHAR_SETS` 決定每個世界顯示哪四種、`CHAR_CLASS`（角色→職業組）、`buildChar(id)` |
 | `habitats.js` | `HAB[animal|dino|space|hero][0..2]` 三級棲息地建築；`BOSS[jungle|dino|space|town]` 四隻 Boss |
 | `scenes.js` | `ENV[jungle|dino|space|town]()` 四個場景，各回傳 `{sites, bossAt, tick}`；`sites` 是 4 個可選的隊伍基地（名稱、位置、`yAt`、`claim(team)`）；地平線層 `ground hills forest bushes rocks mountains cityBlocks carFleet birds`；基地零件 `patch signpost mkSite` |
 | `game.js` | 示範邏輯：`TEAM_DEFS`（最多 4 隊）、`teamCount / teamSite`、`ROSTER`、`makePlayer(p,site,k,n)`、`loadScene(key)`、`buildTeams()`、`setTeamCount(n)`、`chooseSite(team,siteIdx)`、`renderHud()`、動作 `setHp knockOut revive jump attack levelUp summonBoss bossAttack resetAll`、鏡頭拖曳／縮放、主迴圈 `loop` |
@@ -45,7 +45,7 @@
 - `?fast` 網址參數只給截圖測試用（軟體 GL 很慢時讓每幀涵蓋更多時間）。
 
 ## 四個世界（2026-10 改版）
-- 風格仿低多邊形桌遊微縮模型：六角島嶼浮在水面、切面幾何、柔和土色調、圓頭小人與原生生物。角色依世界決定：Jungle 是叢林動物（monkey / elephant / tiger / toucan）、Dino 是恐龍（trex / bronto / triceratops / stego）、Space 是太空人／外星人／機器人、Hsinchu 是一般市民（kid / teen / adult / grandma，沒有職業制服）。
+- 風格仿低多邊形桌遊微縮模型：六角島嶼浮在水面、切面幾何、柔和土色調、圓頭小人與原生生物。角色依世界決定：Jungle 是叢林動物（monkey / elephant / tiger / toucan）、Dino 是恐龍（trex / bronto / triceratops / stego）、Space 是太空人／外星人／機器人、Hsinchu 是四個中性打扮的學生（kidA–kidD：不同髮型、膚色、衣服；沒有裙子、沒有大人）。
 - **Jungle**：六角島叢林（營火廣場、瀑布山、遺跡、河岸、大樹、花田、蝴蝶與鳥群）。
 - **Dino**：火山是主角（頂點位移岩體、岩漿流、冒煙、噴泉、焦油坑、化石、翼龍）。
 - **Solar System**：先看整個太陽系（太陽、八大行星軌道、小行星帶、彗星），選了星球鏡頭飛過去；每顆行星就是一個基地，隊伍站在球面上。
