@@ -27,6 +27,8 @@ const GLOSS=(c,o={})=>bendMat(new THREE.MeshStandardMaterial(Object.assign({colo
 const GLOW=(c,e,i=.8,o={})=>bendMat(new THREE.MeshStandardMaterial(Object.assign({color:col(c),emissive:col(e),emissiveIntensity:i,roughness:.6},o)));
 function outline(root){return root;}
 const rnd=(a,b)=>a+Math.random()*(b-a);
+/* tweak-then-return: `par.add(tw(m,o=>o.rotation.x=1))` (Object3D.add returns the PARENT, so chaining on add() is a trap) */
+const tw=(o,f)=>{f(o);return o;};
 const mesh=(g,m,x=0,y=0,z=0,sh=true)=>{const o=new THREE.Mesh(g,m);o.position.set(x,y,z);o.castShadow=sh;o.receiveShadow=true;return o;};
 const SPH=(r,a=9,b=7)=>new THREE.SphereGeometry(r,Math.max(18,a*2),Math.max(12,b*2));
 const CYL=(a,b,h,s=10)=>new THREE.CylinderGeometry(a,b,h,s===6?6:Math.max(20,s*2));
@@ -37,7 +39,7 @@ function capsule(r,h,m){const g=new THREE.Group();g.add(mesh(CYL(r,r,h,20),m,0,0
 /* sky dome with vertex gradient */
 let sky=null;
 function setSky(top,hor,fogCol,fogNear=60,fogFar=140){if(sky)scene.remove(sky);const g=new THREE.SphereGeometry(220,32,16);const pos=g.attributes.position,cols=[];const T=col(top),H=col(hor);
- for(let i=0;i<pos.count;i++){const y=pos.getY(i)/220;const c=H.clone().lerp(T,Math.max(0,Math.min(1,(y+.1)*1.3)));cols.push(c.r,c.g,c.b);}
+ for(let i=0;i<pos.count;i++){const y=pos.getY(i)/220;const c=H.clone().lerp(T,Math.max(0,Math.min(1,(y+.02)*2.4)));cols.push(c.r,c.g,c.b);}
  g.setAttribute('color',new THREE.Float32BufferAttribute(cols,3));sky=new THREE.Mesh(g,new THREE.MeshBasicMaterial({vertexColors:true,side:THREE.BackSide,fog:false}));scene.add(sky);scene.fog=new THREE.Fog(col(fogCol),fogNear,fogFar);}
 /* canvas sprites */
 function canvasTex(draw,w=512,h=160){const c=document.createElement('canvas');c.width=w;c.height=h;draw(c.getContext('2d'),w,h);const t=new THREE.CanvasTexture(c);t.anisotropy=8;t.encoding=THREE.sRGBEncoding;return t;}

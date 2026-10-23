@@ -55,6 +55,8 @@ canvas{display:block}
 .ctr button{font:inherit;font-family:var(--display);font-size:1.05rem;border:0;border-radius:14px;padding:10px 16px;cursor:pointer;background:#f1f3f5;color:var(--ink);box-shadow:0 3px 0 rgba(0,0,0,.16)}
 .ctr button:active{transform:translateY(3px);box-shadow:none}
 .ctr button.war{background:#e03131;color:#fff}.ctr button.gold{background:var(--gold);color:#3a2a00}.ctr button.boss{background:#7048e8;color:#fff}.ctr button.ok{background:#40c057;color:#fff}
+.ctr button.sky{background:#1c7ed6;color:#fff}.ctr button.back{display:none;background:#343a40;color:#fff}body.spot .ctr button.back{display:inline-block}
+.spottag{position:fixed;left:50%;top:96px;transform:translateX(-50%);z-index:6;display:none;font-family:var(--display);font-size:1.5rem;font-weight:900;color:#fff;background:var(--tc,#1c7ed6);padding:10px 26px;border-radius:999px;box-shadow:0 6px 18px rgba(0,0,0,.18),inset 0 -4px 0 rgba(0,0,0,.15);pointer-events:none}body.spot .spottag{display:block}body.spot .tcards{opacity:0;pointer-events:none}
 .ctr button:focus-visible,.sc button:focus-visible,.fab:focus-visible{outline:3px solid #3b5bdb}
 /* cinematic mode: HUD slides away, letterbox bars slide in */
 .lb{position:fixed;left:0;right:0;height:9vh;background:#0b0d14;z-index:15;pointer-events:none;transition:transform .5s cubic-bezier(.2,.9,.3,1)}
@@ -74,12 +76,13 @@ body.cine .teams *{pointer-events:none}
 <div class="lb top"></div><div class="lb bot"></div>
 <div class="hud"><div class="plate glass"><h1 id="title">🌴 Jungle Safari</h1><p class="note">3D prototype with sample students</p></div><span class="sp"></span><div class="q glass"><span class="k">⌨️ TYPE A FULL SENTENCE · ROUND 3</span><div class="t">What did you do last weekend?</div></div><button class="fab glass" id="fab">🗺️ Worlds &amp; Bases</button></div>
 <div class="scrim" id="scrim"></div>
+<div class="spottag" id="spottag"></div>
 <aside class="drawer glass" id="drawer" aria-label="Worlds and bases"><div class="dh"><b>🗺️ Worlds &amp; Bases</b><button id="dclose" aria-label="Close">✕</button></div>
  <h3>World</h3><div class="sc"><button data-s="jungle" class="sel">🌴 Jungle</button><button data-s="dino">🌋 Dino</button><button data-s="space">🪐 Solar System</button><button data-s="town">🏙️ Hsinchu</button></div>
  <h3>Teams &amp; bases</h3><div class="bases" id="bases"></div></aside>
 <div class="teams">
   <div class="tcards" id="tcards"></div>
-  <div class="ctr glass"><button class="war" data-a="attack">⚔️ Attack</button><button class="gold" data-a="level">🔨 Level up</button><button class="ok" data-a="heal">❤️ Repair</button><button class="boss" data-a="boss">👹 Boss</button><button data-a="cheer">🎉 Cheer</button><button data-a="reset">↺ Reset</button></div>
+  <div class="ctr glass"><button class="war" data-a="attack">⚔️ Attack</button><button class="gold" data-a="level">🔨 Level up</button><button class="ok" data-a="heal">❤️ Repair</button><button class="boss" data-a="boss">👹 Boss</button><button class="sky" data-a="one">🎤 Student</button><button class="sky" data-a="team">👥 Team</button><button class="ok" data-a="ok">✅ Correct</button><button data-a="no">❌ Wrong</button><button class="back" data-a="back">↩ Island</button><button data-a="reset">↺ Reset</button></div>
 </div>
 <script>
 (function(){

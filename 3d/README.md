@@ -32,6 +32,18 @@
 - 六角地塊改為圓角擠出（`hexShape / slab`）：土色懸崖＋草地頂＋淺水環；白色木柵欄；亮青綠海面；粉嫩天空；雲移到遠方高空繞圈，不擋畫面。
 - 光線偏暖（太陽 `0xfff0d0`、曝光 1.12、柔影 radius 4）。
 
+## 角色、特寫與合照（2026-10）
+- `chars.js`：人物改為大頭娃娃比例（`person()`：短腿、圓身、頭半徑 .66），衣服是 canvas 畫的布料（`fabricTex`：條紋／圓點／葉子／花／數字／星星），**臉是畫在頭前方薄片上的 canvas 貼圖**（`addFace` + `faceTex(o,expr)`），表情 `smile blink happy talk wow sad ouch ko` 可即時切換；叢林動物也用同一套臉。恐龍改為電影感寫實輪廓：`loftGeo()` 沿脊椎掃出一整條身體（Catmull-Rom 脊椎＋橢圓截面）、`dinoSkin()` 皮膚貼圖（背部條紋、斑點）、`inkify()` 反面擠出的墨線外框；暴龍有可開合的下顎 `userData.jaw`。
+- **`Object3D.add()` 回傳的是父物件**，所以 `g.add(mesh(...)).rotation.x=...` 會轉到父物件（這個 bug 曾讓太空人整顆頭轉 90°）。要鏈式調整請用 `par.add(tw(mesh(...),o=>o.rotation.x=1))`（`tw` 在 `core.js`）。
+- 鏡頭預設更低更近（`overview()` phi .32、`focusSite()` phi .24）。`game.js`：
+  - `spotOne(g)`：指定學生回答。學生從自己的家走到廣場側（`walkTo`，不超出 `site.stageR`），轉身面對鏡頭，鏡頭貼地平視（phi .12；太陽系 .3），HUD 上方出現「🎤 Name is answering」。
+  - `spotTeam(i)`：整組回答。全隊在基地前排成一列面對鏡頭（`gap` 依生物大小），顯示「👥 Red Team is answering」。
+  - `react(ok)`：老師按 ✅ Correct / ❌ Wrong → 聚光中的學生（沒有聚光時是全部）做出 happy 跳躍＋彩花，或 sad 臉。
+  - `spotEnd()`／「↩ Island」回到原本鏡頭；Attack / Level up / Boss / Reset 會先自動結束聚光。**點電子白板上的角色也會直接聚光**（`pick()` 用與 shader 相同的彎曲投影找最近的角色）。
+  - 擋住特寫的東西會暫時隱藏：`hideOccluders()`（場景裡的樹、石頭、地標；用 Box3 快取 `env.occ`）、`blocks()`（鄰居的角色與房子）、以及聚光學生自己的房子（太陽系小行星上會擋到合照）。
+  - `faceTick()` 每幀決定表情：倒地 ko、短暫反應（`setFace(ch,expr,ms)`）、否則 smile 並隨機眨眼；暴龍下顎跟著表情開合。
+- `?fast` 網址參數只給截圖測試用（軟體 GL 很慢時讓每幀涵蓋更多時間）。
+
 ## 四個世界（2026-10 改版）
 - 風格仿低多邊形桌遊微縮模型：六角島嶼浮在水面、切面幾何、柔和土色調、圓頭小人與原生生物。角色依世界決定：Jungle 是叢林動物（monkey / elephant / tiger / toucan）、Dino 是恐龍（trex / bronto / triceratops / stego）、Space 是太空人／外星人／機器人、Hsinchu 是一般市民（kid / teen / adult / grandma，沒有職業制服）。
 - **Jungle**：六角島叢林（營火廣場、瀑布山、遺跡、河岸、大樹、花田、蝴蝶與鳥群）。
