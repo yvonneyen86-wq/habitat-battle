@@ -55,3 +55,7 @@ Lines starting with `//` are ignored. One question per line, `|` only as separat
 
 ## Deploy
 GitHub Pages serves `main` at the root. No build step. `preview.html` is optional.
+
+## 課堂導航
+- 開工前先用 WebFetch 讀最新規格:https://reading-cert.vercel.app/cr-kit/spec.md
+- 做完用試車場測到 8 項全綠:https://reading-cert.vercel.app/cr-kit/testbench.html

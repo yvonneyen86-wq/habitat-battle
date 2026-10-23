@@ -587,6 +587,7 @@ body.nofx *,body.nofx *::before,body.nofx *::after{animation:none!important}
 </head>
 <body>
 <div id="app"></div>
+<script>if(/[?&]screen=/.test(location.search)&&window.parent!==window){document.getElementById('app').innerHTML='<div class="student"><div class="s-col"><div class="s-head"><span class="brand">⚔️ Habitat Battle</span></div><div class="card conn"><div class="e">📡</div><h2>Getting ready…</h2><p class="hint">Waiting for the classroom screen.</p></div></div></div>';}</script>
 <div id="toast" class="toast" hidden></div>
 
 <script>
@@ -1974,7 +1975,10 @@ function sPlayClick(e){
 CR.start(function(init){/* inside the classroom runner: roster + questions come from init, no name/QR screens */
   if(CR.screen==='tablet'||init.screen==='tablet'){MODE='student';JOIN=String(init.join||'').toUpperCase().replace(/[^A-Z0-9]/g,'').slice(0,8);const a=store(avKey());ST.av=a?cleanAv(a,init.me&&init.me.name):avFromName(init.me&&init.me.name);if(!JOIN){ST.status='Waiting for the big screen…';sRender();return;}sRender();studentConnect();}
   else{MODE='host';initHost();}
-},function(){if(MODE==='host')initHost();else{sRender();studentConnect();}});
+},function(){if(MODE==='host')initHost();else{sRender();studentConnect();}
+  /* the runner answered after the fallback: adopt its roster/questions now */
+  CR.on('cr:init',function(init){if(CR.screen==='tablet'||init.screen==='tablet'){if(MODE!=='student')return;JOIN=String(init.join||'').toUpperCase().replace(/[^A-Z0-9]/g,'').slice(0,8);const a=store(avKey());ST.av=a?cleanAv(a,init.me&&init.me.name):avFromName(init.me&&init.me.name);ST.me=null;ST.view='';if(JOIN){sRender();studentConnect();}}
+    else if(MODE==='host'){crHostSetup();applyScene(S.scene);render();save();if(H.status==='on'&&!H.crReady){H.crReady=true;CR.ready(S.code);}else if(H.status==='off'&&!H.crReady){H.crReady=true;CR.ready(null);}}});});
 
 /*3D-BUNDLE-BEGIN*/
 window.HB3D_INIT=function(){
