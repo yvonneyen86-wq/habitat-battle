@@ -589,6 +589,14 @@ body.lite .amb-canvas{display:none}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 
 /* ---- Learning Time activities ---- */
+.ltlist.words{display:grid;grid-template-columns:1fr 1fr;gap:6px}.ltlist .lw{display:grid;grid-template-columns:auto 1fr;gap:2px 8px;align-items:center;background:#f8f9fa;border-radius:10px;padding:6px 8px}
+.ltlist .lw i{font-style:normal;font-family:var(--emoji);font-size:1.4rem;grid-row:span 2}.ltlist .lw b{font-family:var(--display)}.ltlist .lw small{color:var(--muted);font-size:.78rem}
+.ltlist.gram{margin:0;padding-left:22px;display:grid;gap:4px;font-weight:700}
+.overlay .ltwords{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.6cqmin;max-width:150cqmin;width:100%}
+.overlay .wc{background:#fff;border-radius:2cqmin;padding:1.6cqmin 1cqmin;display:grid;gap:.6cqmin;justify-items:center;box-shadow:0 .6cqmin 0 rgba(0,0,0,.1)}
+.overlay .wc i{font-style:normal;font-family:var(--emoji);font-size:7cqmin;line-height:1.1}.overlay .wc b{font-family:var(--display);font-size:4cqmin;line-height:1.1;display:flex;flex-wrap:wrap;justify-content:center}
+.overlay .wc b span{background:#fff3bf;border-radius:1cqmin;padding:0 .8cqmin;margin:.2cqmin}.overlay .wc b em{font-style:normal;color:var(--muted)}.overlay .wc small{font-size:2cqmin;color:var(--muted)}
+.overlay .ltgram{text-align:left;font-family:var(--display);font-size:4.4cqmin;line-height:1.35;display:grid;gap:1.4cqmin;margin:0;padding-left:5cqmin;max-width:150cqmin}.overlay .ltgram li{background:#fff;border-radius:1.6cqmin;padding:1cqmin 2cqmin;box-shadow:0 .5cqmin 0 rgba(0,0,0,.1)}
 .panel.lt .cats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
 .btn.ltc{display:grid;gap:2px;justify-items:center;padding:10px 6px;font-family:var(--display);font-size:1rem;line-height:1.1;background:#f1f3f5;color:var(--ink)}
 .btn.ltc small{font-family:var(--body);font-size:.75rem;color:var(--muted)}.btn.ltc.on{background:var(--scene-deep,#2b7a3d);color:#fff}.btn.ltc.on small{color:#fff;opacity:.85}.btn.ltc:disabled{opacity:.4}
@@ -1504,7 +1512,7 @@ function renderOverlay(){
     o.hidden=!!H.hideResults;return;}
   if(S.phase==='battle'&&S.battle&&S.battle.vote){const v=S.battle.vote,c=voteCounts(),tot=Math.max(1,c.reduce((a,x)=>a+x,0)),n=Object.keys(v.votes).length;
     o.innerHTML=`<div class="kind">🗳️ Vote for the best sentence</div><div class="vote-items">${v.items.map((it,i)=>{const pp=P(it.pid);return `<div class="vi${v.revealed&&v.winner===i?' win':''}">${v.revealed?`<i class="fill" style="width:${Math.round(c[i]/tot*100)}%"></i>`:''}<span class="L">${'ABCD'[i]}</span><span class="tx">${esc(it.text)}${v.revealed&&v.winner===i&&pp?`<small> — ${charById(pp.char).e} ${esc(pp.name)}</small>`:''}</span>${v.revealed?`<b class="cnt">${c[i]}</b>`:''}</div>`;}).join('')}</div><div class="hint">🗳️ ${n} vote${n===1?'':'s'} so far · Students vote on their tablets</div><div class="acts">${v.revealed?'':'<button class="btn primary" data-act="vote-reveal">🏅 Show results</button>'}<button class="btn" data-act="vote-close">Close</button></div>`;o.hidden=false;return;}
-  if(S.phase==='gather'&&S.lt&&S.lt.cat==='reading'&&!H.ltHideText&&ltUnit()&&ltUnit().reading){o.innerHTML=ltOverlayHTML();o.hidden=false;return;}
+  if(S.phase==='gather'&&S.lt&&S.lt.cat!=='sw'&&!H.ltHideText&&ltUnit()){const h=ltOverlayHTML();if(h){o.innerHTML=h;o.hidden=false;return;}}
   if(S.phase==='gather'&&S.card){const c=S.card;o.innerHTML=`<div class="kind">Question Card · Everyone</div><div class="q">${esc(c.q)}</div><div class="ans">${H.showAns&&c.a?'Answer: '+esc(c.a):''}</div><div class="acts">${c.a?`<button class="btn" data-act="show-ans">${H.showAns?'Hide':'Show'} answer</button>`:''}<button class="btn primary" data-act="card">Next question</button><button class="btn" data-act="card-close">Close</button></div><div class="hint">Reward the student who answers: tap ✓ +${CORRECT_COINS} 🪙 in the player list.</div>`;o.hidden=false;return;}
   o.hidden=true;
 }
@@ -1664,7 +1672,7 @@ function ltUnit(){const us=ltUnits();if(!us.length)return null;return us[Math.ma
 function ltOn(cat){return !!(S.phase==='gather'&&S.lt&&S.lt.cat&&(!cat||S.lt.cat===cat));}
 function ltHas(u,cat){return !!(u&&(cat==='words'?u.words.length:cat==='reading'?(u.reading&&u.reading.qs.length):cat==='grammar'?u.grammar.length:cat==='sw'?u.sw:false));}
 function ltStart(cat){const u=ltUnit();if(!u||!ltHas(u,cat))return toast('This unit has no '+LT_CATS[cat][1]+' content yet.');
-  S.lt={cat,u:u.n,level:u.level,i:cat==='reading'?-1:0,prog:{},subs:{},pairs:{},started:Date.now()};H.ltHideText=false;S.card=null;
+  S.lt={cat,u:u.n,level:u.level,i:cat==='reading'?-1:0,prog:{},subs:{},pairs:{},started:Date.now()};H.ltHideText=cat!=='reading';S.card=null;
   if(cat==='sw'){const byTeam={};Object.values(S.players).filter(p=>!p.pre).sort((a,b)=>a.pid.localeCompare(b.pid,undefined,{numeric:true})).forEach(p=>{(byTeam[p.team]=byTeam[p.team]||[]).push(p.pid);});
     Object.values(byTeam).forEach(ids=>{for(let k=0;k<ids.length;k+=2){const a=ids[k],b=ids[k+1]||ids[0];if(a===b){S.lt.pairs[a]={partner:null,role:'A'};continue;}S.lt.pairs[a]=Object.assign({},S.lt.pairs[a]||{},{partner:b,role:'A'});if(!S.lt.pairs[b])S.lt.pairs[b]={partner:a,role:'B'};}});}
   log(`${LT_CATS[cat][0]} ${LT_CATS[cat][1]} · U${u.n} ${u.title}`);crStart();changed();}
@@ -1713,7 +1721,8 @@ function renderLTPanel(){const us=ltUnits();if(!us.length)return `<h2>Learning T
     else if(l.cat==='sw'){const sb=l.subs.write||{};const ents=Object.entries(sb).filter(([pid])=>P(pid)).sort((x,y)=>(x[1].ok===null?0:1)-(y[1].ok===null?0:1)||x[1].at-y[1].at);
       ctl=`<div class="row"><button class="btn" data-act="lt-stop">⏹ Stop</button><small>Pairs practice the dialogue (use 🎤 to spotlight a pair), then write their own sentences below.</small></div><div class="ltq"><b>Model:</b> ${esc(u.sw.model||'')}</div>
       <div class="subs">${ents.length?ents.map(([pid,s])=>`<div class="sub ${s.ok?'ok':s.ok===false?'no':''}"><div class="who" style="color:${teamColor(P(pid).team)}">${esc(P(pid).name)}</div><div class="txt">${esc(s.text)}</div><div class="row"><button class="btn tier t1${s.ok===1?' on':''}" data-act="lt-grade" data-pid="${pid}" data-key="write" data-t="1">✓ Good +2</button><button class="btn tier t2${s.ok>=2?' on':''}" data-act="lt-grade" data-pid="${pid}" data-key="write" data-t="2">⭐ Great +3</button>${s.ok?'':`<button class="btn bad" data-act="lt-grade" data-pid="${pid}" data-key="write" data-t="0">✗ Fix it</button>`}</div></div>`).join(''):'<div class="empty">Waiting for writing…</div>'}</div>`;}
-    else ctl=`<div class="row"><button class="btn" data-act="lt-stop">⏹ Stop</button><small>${l.cat==='words'?'Students build each word on their tablets: +1 🪙 per word.':'Students unscramble the sentences: +2 🪙 first try, +1 after.'}</small></div>`;
+    else{const list=l.cat==='words'?`<div class="ltlist words">${u.words.map((w,i)=>`<span class="lw"><i>${esc(w.pic||'🔤')}</i><b>${esc(w.w)}</b><small>${esc(w.syl.join('·'))} · ${esc(w.chunks.join(' / '))}</small></span>`).join('')}</div>`:`<ol class="ltlist gram">${u.grammar.map(g=>`<li>${esc(g)}</li>`).join('')}</ol>`;
+      ctl=`<div class="row"><button class="btn" data-act="lt-text">${H.ltHideText?'📺 Show on board':'🙈 Hide from board'}</button><button class="btn" data-act="lt-stop">⏹ Stop</button><small>${l.cat==='words'?'Students build each word on their tablets: +1 🪙 per word.':'Students unscramble the sentences: +2 🪙 first try, +1 after.'}</small></div>${list}`;}
     body=`${ctl}<div class="ltchips">${chips||'<small>No students yet.</small>'}</div>`;}
   return `<h2>Learning Time activities</h2><div class="panel lt"><div class="row">${unitSel}</div><div class="row cats">${cats}</div>${body}</div>`;}
 /* projector: progress board in the info card; reading text in the overlay */
@@ -1721,7 +1730,10 @@ function ltBoardHTML(){const l=S.lt,u=ltUnit();if(!l||!u)return '';const[e,n]=LT
   const ps=Object.values(S.players).filter(p=>!p.pre).sort((a,b)=>a.team-b.team);
   return `<h3>${e} ${esc(n)} · U${u.n} ${esc(u.title)}</h3><div class="ltboard">${ps.map(p=>{const pr=l.prog[p.pid]||{done:{},ok:0};const pct=total?Math.round(Object.keys(pr.done).length/total*100):0;const w=l.cat==='sw'?(l.subs.write&&l.subs.write[p.pid]?(l.subs.write[p.pid].ok?'✓':'✍️'):'💬'):`${pr.ok}/${total}`;
     return `<div class="lp${total&&Object.keys(pr.done).length>=total?' done':''}" style="--tc:${teamColor(p.team)}">${avImg(p.av,p.name,36)}<span>${esc(p.name)}</span><i style="width:${pct}%"></i><b>${w}${l.cat==='reading'&&pr.hand===l.i?' 🙋':''}</b></div>`;}).join('')}</div>`;}
-function ltOverlayHTML(){const l=S.lt,u=ltUnit();if(!l||!u||!u.reading)return '';const r=u.reading,q=l.i>=0?r.qs[l.i]:null;
+function ltOverlayHTML(){const l=S.lt,u=ltUnit();if(!l||!u)return '';
+  if(l.cat==='words')return `<div class="kind">🔤 Words · U${u.n} ${esc(u.title)}</div><div class="ltwords">${u.words.map(w=>`<div class="wc"><i>${esc(w.pic||'🔤')}</i><b>${w.syl.map(x=>`<span>${esc(x)}</span>`).join('<em>·</em>')}</b><small>${esc(w.chunks.join(' / '))}</small></div>`).join('')}</div><div class="acts"><button class="btn" data-act="lt-text">🙈 Hide</button></div>`;
+  if(l.cat==='grammar')return `<div class="kind">🧩 Grammar · U${u.n} ${esc(u.title)}</div><ol class="ltgram">${u.grammar.map(g=>`<li>${esc(g)}</li>`).join('')}</ol><div class="acts"><button class="btn" data-act="lt-text">🙈 Hide</button></div>`;
+  if(!u.reading)return '';const r=u.reading,q=l.i>=0?r.qs[l.i]:null;
   return `<div class="kind">📖 Reading · U${u.n}</div><div class="ltread"><h2>${esc(r.title)}</h2>${r.paras.map(p=>`<p>${esc(p)}</p>`).join('')}</div>
   ${q?`<div class="ltqbig"><span class="k">Question ${l.i+1} of ${r.qs.length} · ${q.type==='C'?'⚖️ Choose':q.type==='T'?'⌨️ Type a full sentence':'🎤 Answer out loud'}</span><div class="q">${esc(q.text)}</div>${q.type==='C'?`<div class="opts">${q.opts.map((o,i)=>`<span>${'ABC'[i]}. ${esc(o)}</span>`).join('')}</div>`:''}</div>`:'<div class="hint">Read the text together. Press ▶ First question when you are ready.</div>'}
   <div class="acts"><button class="btn" data-act="lt-prev" ${l.i<0?'disabled':''}>◀</button><button class="btn primary" data-act="lt-next" ${l.i>=r.qs.length-1?'disabled':''}>${l.i<0?'▶ First question':'Next question ▶'}</button><button class="btn" data-act="lt-text">🙈 Hide text</button></div>`;}
