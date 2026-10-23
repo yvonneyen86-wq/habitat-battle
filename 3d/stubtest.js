@@ -25,7 +25,7 @@ const els={};function el(){return{textContent:'',innerText:'',innerHTML:'',style
 global.document={getElementById:()=>el(),querySelector:()=>el(),querySelectorAll:()=>[],createElement:()=>el(),body:el()};
 global.window=global;global.addEventListener=()=>{};global.innerWidth=1440;global.innerHeight=900;global.devicePixelRatio=1;global.matchMedia=()=>({matches:false});global.requestAnimationFrame=()=>{};global.setTimeout=(f)=>{};
 global.THREE=THREE;
-const fs=require('fs');const s=fs.readFileSync('/home/claude/preview/habitat-3d.html','utf8');const code=s.match(/<script>\n([\s\S]*?)<\/script>/)[1];
+const fs=require('fs');const s=fs.readFileSync(require('path').join(__dirname,'habitat-3d.html'),'utf8');const code=s.match(/<script>\n([\s\S]*?)<\/script>/)[1];
 // expose internals by stripping the IIFE wrapper
 const inner=code.replace(/^\(function\(\)\{\n/,'').replace(/\}\)\(\);\s*$/,'');
 new Function('THREE',inner+`

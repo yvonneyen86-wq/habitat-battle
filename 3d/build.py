@@ -1,5 +1,11 @@
-import re
-head=r'''<title>Habitat Battle 3D</title>
+import re, os
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+head=r'''<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Habitat Battle 3D</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@700;900&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
@@ -39,6 +45,8 @@ canvas{display:block}
 .note{position:fixed;right:max(16px,env(safe-area-inset-right,0px));top:calc(14px + 84px);background:rgba(255,255,255,.9);border-radius:12px;padding:6px 10px;font-size:.78rem;color:var(--muted);pointer-events:none}
 @media (prefers-reduced-motion:reduce){.banner{animation:none}}
 </style>
+</head>
+<body>
 <div id="stage"></div>
 <div class="hud"><div class="plate"><h1 id="title">🌴 Jungle Safari</h1><p>3D prototype · drag to look around · pinch or scroll to zoom</p></div><div class="sc"><button data-s="jungle" class="sel">🌴 Jungle</button><button data-s="dino">🌋 Dino</button><button data-s="space">🪐 Space</button><button data-s="town">🏙️ Town</button></div><span class="sp"></span><div class="q"><span class="k">⌨️ TYPE A FULL SENTENCE · ROUND 3</span><div class="t">What did you do last weekend?</div></div></div>
 <div class="note">Prototype: sample students, no real players connected</div>
@@ -52,6 +60,6 @@ canvas{display:block}
 if(typeof THREE==='undefined'){document.querySelector('.note').textContent='3D library could not load.';return;}
 '''
 js=''.join(open(f).read()+'\n' for f in ['core.js','chars.js','habitats.js','scenes.js','game.js'])
-out=head+js+'})();\n</script>\n'
+out=head+js+'})();\n</script>\n</body>\n</html>\n'
 open('habitat-3d.html','w').write(out)
 print(len(out))
