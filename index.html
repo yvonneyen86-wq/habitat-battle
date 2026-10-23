@@ -1352,18 +1352,28 @@ function tick(){
 }
 function render(){if(MODE!=='host'||!$('#stage'))return;applyScene(S.scene);renderHeader();renderStage();renderOverlay();renderConsole();sync3d();}
 /* ===== 3D stage (optional, teacher screen only). The bundle in the 3D-BUNDLE block is built from 3d/*.js by python3 3d/build.py ===== */
-function ensureThree(){return new Promise(r=>{if(window.THREE)return r(true);const sc=document.createElement('script');sc.src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js';sc.onload=()=>r(!!window.THREE);sc.onerror=()=>r(false);document.head.appendChild(sc);});}
+function ensureThree(){return new Promise(r=>{if(window.THREE)return r(true);const sc=document.createElement('script');sc.src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js';const t=setTimeout(()=>r(!!window.THREE),20000);sc.onload=()=>{clearTimeout(t);r(!!window.THREE);};sc.onerror=()=>{clearTimeout(t);r(false);};document.head.appendChild(sc);});}
+function hasWebGL(){try{const c=document.createElement('canvas');return !!(c.getContext('webgl2')||c.getContext('webgl')||c.getContext('experimental-webgl'));}catch(e){return false;}}
+/* why 3D is unavailable, shown as a real dialog (a toast is too easy to miss) */
+function no3dDialog(){const why=H.no3dWhy||'webgl';$('#modal-root').innerHTML=`<div class="modal-bg"><div class="modal" role="dialog" aria-label="3D stage unavailable"><h2>🎮 3D stage can't start here</h2>
+${why==='script'?`<p style="margin:0">The 3D library (Three.js) could not be downloaded. Check the internet connection, then try again.</p>`
+:`<p style="margin:0">This browser has <b>WebGL (graphics acceleration) turned off</b>, so 3D cannot be drawn. The 2D stage keeps working.</p>
+<p style="margin:0"><b>Chrome / Edge:</b> Menu ⋮ → Settings → System → turn on <b>“Use graphics acceleration when available”</b> → Relaunch.<br>Still off? Open <code>chrome://flags</code>, search <b>WebGL</b> and set <b>“Override software rendering list”</b> to Enabled → Relaunch.<br><b>Safari:</b> Settings → Advanced → Feature Flags → WebGL on.</p>
+<p style="margin:0;color:var(--muted)">Quick check: open <code>https://get.webgl.org</code> — it should show a spinning cube.</p>`}
+<div class="mrow"><button class="btn" data-act="m-close">Close</button><button class="btn primary" data-act="3d-retry">↻ Try again</button></div></div></div>`;}
 let applying3d=false,making3d=null;
 /* build the stage once (also warmed in the background a few seconds after the console opens, so the 🎮 3D toggle is instant) */
 function make3d(){if(H.hb3d)return Promise.resolve(true);if(H.no3d)return Promise.resolve(false);if(making3d)return making3d;
-  return making3d=ensureThree().then(ok=>{if(!ok||typeof HB3D_INIT!=='function'){H.no3d=true;return false;}
+  if(!hasWebGL()){H.no3d=true;H.no3dWhy='webgl';return Promise.resolve(false);}
+  return making3d=ensureThree().then(ok=>{if(!ok||typeof HB3D_INIT!=='function'){H.no3d=true;H.no3dWhy='script';return false;}
+    if(!hasWebGL()){H.no3d=true;H.no3dWhy='webgl';return false;}
     try{window.HB3D_EMBED=true;const api=HB3D_INIT();api.onSite=sites=>{sites.forEach((k,i)=>{if(S.teams[i])S.teams[i].site=k;});save();};api.stop();H.hb3d=api;return true;}
-    catch(e){console.error(e);H.no3d=true;return false;}}).finally(()=>{making3d=null;});}
+    catch(e){console.error(e);H.no3d=true;H.no3dWhy=/WebGL/i.test(String(e&&e.message))?'webgl':'init';return false;}}).finally(()=>{making3d=null;});}
 function warm3d(){if(MODE!=='host'||H.hb3d||H.no3d||S.ui3d)return;const go=()=>make3d().then(ok=>{if(!ok)return;if(S.ui3d)apply3d();else{try{H.hb3d.sync(view3d());H.hb3d.warm();}catch(e){}}});if('requestIdleCallback' in window)requestIdleCallback(go,{timeout:8000});else setTimeout(go,1500);}
 async function apply3d(){if(MODE!=='host'||applying3d)return;applying3d=true;try{
   const st=$('#stage'),want=!!S.ui3d;
-  if(want&&!H.hb3d&&!H.no3d){$('#stage3d').hidden=false;toast('Loading the 3D stage…');
-    if(!(await make3d())){S.ui3d=false;$('#stage3d').hidden=true;toast('3D stage could not load. Staying in 2D.');renderHeader();return;}}
+  if(want&&!H.hb3d){$('#stage3d').hidden=false;if(!H.no3d)toast('Loading the 3D stage…');
+    if(!(await make3d())){S.ui3d=false;$('#stage3d').hidden=true;renderHeader();no3dDialog();return;}}
   const on=want&&!!H.hb3d;st.classList.toggle('is3d',on);$('#stage3d').hidden=!on;$('#p3d-ui').hidden=!on;if(!on)$('#p3d-pop').hidden=true;
   document.body.classList.remove('cine','spot');
   if(H.hb3d){if(on){H.hb3d.start();H.hb3d.resize();sync3d();}else H.hb3d.stop();}
@@ -1595,6 +1605,7 @@ function onHostClick(e){
   switch(a){
     case 'qr-toggle':S.showQR=!S.showQR;changed();break;
     case '3d':S.ui3d=!S.ui3d;apply3d();changed();break;
+    case '3d-retry':$('#modal-root').innerHTML='';H.no3d=false;H.no3dWhy='';S.ui3d=true;apply3d();changed();break;
     case 'spot':if(ui3d())H.hb3d.spotOne(pid);break;
     case 'spot-team':if(ui3d())H.hb3d.spotTeam(+b.dataset.i);break;
     case 'island':if(ui3d())H.hb3d.overview();break;
