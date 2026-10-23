@@ -35,13 +35,28 @@ W | word | prompt             (word bomb)
 P | 🦁🌧️🏠 | prompt           (picture talk, speak)   PT = picture talk, type
 C | question | option A | option B   (choose & defend)
 Z | question                  (buzzer)
+# words                       (Learning Time 🔤 Words — chunk spelling with syllable boxes)
+word | syl·la·bles | chu/nks | 🪶      (chunks are coarse word-family pieces, e.g. fea/thers, am/phib/i/ans; every syllable break must also be a chunk break; 1-syllable words split onset/rime: g/ills)
+# reading                     (Learning Time 📖 Reading — exactly 8 questions: RC×3, RT×3, RS×2)
+> Title                       (first > line is the title, the rest are paragraphs)
+> paragraph …
+RC | question | correct | wrong | wrong   (choice; correct option FIRST, the game shuffles)
+RT | question | model sentence           (type a full sentence; teacher grades)
+RS | question                            (speak; students raise a hand, teacher grades)
+# grammar                     (Learning Time 🧩 Grammar — unscramble, 6–8 sentences)
+G | correct sentence
+# speak-write                 (Learning Time 💬 Speak & Write)
+SP | A: line | B: line | A: My {leg} hurts! | B: line | leg / head / ear   ({} = swappable key word, last field = the words to swap)
+SW | My favorite animal group is {birds}. They have {wings}. | prompt      ({} = parts the student changes in their own sentences)
 ```
-Lines starting with `//` are ignored. One question per line, `|` only as separator, no Chinese.
+Lines starting with `//` are ignored. One question per line, `|` only as separator, no Chinese. `python3 tools/check_bank.py` enforces all of the above (including the 8-question reading rule and that chunks/syllables spell the word).
+Content for the four Learning Time sections comes from the scanned Oxford Discover Student Book pages in the teacher's Google Drive (folders OD1–OD5, files `p.N`; each unit = 8 pages: Words, Before You Read, Reading ×2, Understand, Grammar, Words+Listening, Speaking/Word Study/Write). Production order agreed with the teacher: OD2 (all 18 units) → OD3 → OD4 → OD1 → OD5.
 
 ## Game architecture (index.html)
 - Mode is decided by the URL: no `?join=` → teacher/host; `?join=CODE` → student.
 - Host state object `S` (players, phase `gather|battle|end`, battle round data, qText/bText question text, bankSel). `changed()` = render + save + broadcast.
 - Student state `ST`; students receive `{t:'state', s, me, my}` snapshots and send `{t:'join'|'buy'|'answer'|'build'|'choose'|'buzz'|'vote'|'act'|'power'}`.
+- Learning Time activities (`S.lt`, host `ltStart/ltStop/ltNext/ltMsg/ltGrade/renderLTPanel/ltBoardHTML/ltOverlayHTML`, tablet `sLtDock/sLtClick`, student messages `{t:'lt',k:'word'|'gram'|'choice'|'type'|'hand'|'write'}`): the per-unit content is built by `ltFromUnit()` when a textbook unit is applied (`S.ltUnits`, `S.ltU`), and the panel appears in the console during `gather`. Auto-judged items pay +1 🪙 (+2 for a first-try grammar sentence); teacher-graded ones ✓ +2 / ⭐ +3.
 - Question types parsed by `parseQ()`; battle flow: `nextRound()` → grading (`markCorrect(pid, tier 1|2|3)`) → students `onAct()` → optional `startDefense()` → `resolveRound()`. Extras: `summonBoss()`, `openVote()/revealVote()`, `requestSpell()/castSpell()`.
 - Projector effects: canvas painters `paintScene()/paintDynamic()`, particle engine `burst/confetti/floatText/projectile`, `banner()` queue.
 - Student tablet: `sSkeleton()/sPlay()/sDock()`; shop sheet `sShop()`; level-up animation `sTransform()`.

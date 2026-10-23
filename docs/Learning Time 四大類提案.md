@@ -1,6 +1,6 @@
-# Learning Time 四大類 — 設計提案（中文確認稿）
+# Learning Time 四大類 — 設計提案（已確認，2025-10 上線）
 
-> 老師確認方向後再動工。全部內容依雲端 OD1–OD5 課本頁（Google Drive 的 OD 資料夾，每單元 8 頁）製作；範例用 OD2 Unit 1「Amazing Animals」。
+> **老師已確認**：字塊採粗切（`fea/thers`）、金幣自動判 +1／老師判 +2、製作順序 OD2 → OD3 → OD4 → OD1 → OD5、Reading 8 題＝口說 2＋選擇 3＋打句 3。功能已做進遊戲，OD2 U1 內容已上線，其餘單元陸續補。全部內容依雲端 OD1–OD5 課本頁（Google Drive 的 OD 資料夾，每單元 8 頁）製作；範例用 OD2 Unit 1「Amazing Animals」。
 
 ## 1. 課本頁 → 四大類的對應（每單元 8 頁，每級 18 單元）
 
@@ -27,18 +27,18 @@
 ```
 ## U1 | Amazing Animals | How are animals different from one another?
 # words
-feathers | fea·thers | f/ea/th/er/s | 🪶
-wings | wings | w/i/ng/s | 🕊️
-gills | gills | g/i/ll/s | 🐟
-scales | scales | s/c/a/l/e/s | 🐠
-mammals | mam·mals | m/a/mm/a/l/s | 🐘
-amphibians | am·phib·i·ans | a/m/ph/i/b/i/a/n/s | 🐸
-eggs | eggs | e/gg/s | 🥚
-skin | skin | s/k/i/n | 🖐️
+feathers | fea·thers | fea/thers | 🪶
+wings | wings | w/ings | 🕊️
+gills | gills | g/ills | 🐟
+scales | scales | sc/ales | 🐠
+mammals | mam·mals | mam/mals | 🐘
+amphibians | am·phib·i·ans | am/phib/i/ans | 🐸
+eggs | eggs | e/ggs | 🥚
+skin | skin | sk/in | 🖐️
 fur | fur | f/ur | 🐻
-body | bod·y | b/o/d/y | 🧍
-head | head | h/ea/d | 🙂
-mouth | mouth | m/ou/th | 👄
+body | bod·y | bod/y | 🧍
+head | head | h/ead | 🙂
+mouth | mouth | m/outh | 👄
 # reading
 > Amazing Animals
 > All animals can breathe and move, but they're different in many amazing ways. Here, we look at how they are the same and how they are different. This helps us put them into groups.
@@ -66,7 +66,7 @@ G | Mammals have fur to keep them warm.
 SP | A: Ouch! | B: Are you OK? | A: No. My {leg} hurts! | B: Oh, no! That's awful. | leg / head / ear / mouth / body
 SW | My favorite animal group is {birds}. They have {wings and feathers}. They can {fly}. | Write three things about your favorite animal group.
 ```
-- Words：`單字 | 音節（·分隔）| 字塊（/分隔）| 圖示`。字塊規則：母音組合（ea, ee, ai, oa, ou, ow…）、子音組合（th, sh, ch, ng, ck, qu…）、r 母音（ar, er, ir, or, ur）、雙子音（ll, ss, mm…）各算一塊，其餘一個字母一塊。
+- Words：`單字 | 音節（·分隔）| 字塊（/分隔）| 圖示`。字塊採**粗切**：多音節字一個音節一塊（fea/thers、am/phib/i/ans）；單音節字切「開頭子音／韻尾」兩塊（g/ills、sc/ales）。音節邊界一定也是字塊邊界。
 - Reading：`>` 開頭是文章；`RC` 選擇（第一個選項是正解，顯示時打亂）、`RT` 打完整句、`RS` 口說。
 - Grammar：`G | 正確句`（遊戲打散）。
 - Speak & Write：`SP` 對話（`{}` 是可換的關鍵字，最後一欄是可換的字）；`SW` 仿寫範例（`{}` 是學生要換的部分）+ 題目。

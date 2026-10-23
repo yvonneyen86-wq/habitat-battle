@@ -22,6 +22,45 @@ P | 🐟🐸🐦🐘 | Which animal groups do you see? Tell us about one.
 C | Which is a better pet, a fish or a mammal? | A fish | A mammal
 Z | Name three animals that are mammals.
 S | Describe your favorite animal in two sentences.
+# words
+feathers | fea·thers | fea/thers | 🪶
+wings | wings | w/ings | 🕊️
+gills | gills | g/ills | 🐟
+scales | scales | sc/ales | 🐠
+mammals | mam·mals | mam/mals | 🐘
+amphibians | am·phib·i·ans | am/phib/i/ans | 🐸
+eggs | eggs | e/ggs | 🥚
+skin | skin | sk/in | 🖐️
+fur | fur | f/ur | 🐻
+body | bod·y | bod/y | 🧍
+head | head | h/ead | 🙂
+mouth | mouth | m/outh | 👄
+# reading
+> Amazing Animals
+> All animals can breathe and move, but they're different in many amazing ways. Here, we look at how they are the same and how they are different. This helps us put them into groups.
+> Birds: All birds have two legs, two wings, and feathers, and most birds can fly. The wings and feathers help them fly, and the feathers help keep them warm. Birds lay eggs with hard shells. They keep the baby birds inside safe from animals that want to eat them.
+> Fish: Fish have gills to help them breathe in water. Scales all over their bodies help keep them safe from dangerous fish that want to bite them. They don't have legs, but their fins and tails help them swim. Fish lay their eggs in water, and their eggs are soft.
+> Amphibians: Amphibians are very interesting because they can live on land and in water. Amphibians need to have wet skin, so they live in wet places. They lay their soft eggs in water. They have gills when they're young and the gills help them breathe in water. Most amphibians, like frogs, have legs that help them walk and jump on land.
+> Mammals: Some mammals live on land and some live in water. Whales are water mammals, and cats, rabbits, and lions are land mammals. Hair or fur covers most land mammals' bodies and this helps keep them warm. People are mammals too! Mammals don't lay eggs. Their babies drink milk from their mothers.
+RC | What helps fish breathe in water? | gills | fins | scales
+RC | What do birds have on their bodies? | feathers | fur | scales
+RC | Where do amphibians lay their eggs? | in water | on land | in a nest
+RT | Where do fish lay their eggs? | Fish lay their eggs in water.
+RT | What do baby mammals drink? | Baby mammals drink milk from their mothers.
+RT | What covers most land mammals' bodies? | Hair or fur covers their bodies.
+RS | How are birds and fish different? Tell us one thing.
+RS | Why do birds' eggs have hard shells?
+# grammar
+G | Fish have gills.
+G | Gills help them breathe.
+G | Do gills help fish breathe?
+G | Yes, gills help them breathe.
+G | Birds have wings and feathers.
+G | They lay eggs with hard shells.
+G | Mammals have fur to keep them warm.
+# speak-write
+SP | A: Ouch! | B: Are you OK? | A: No. My {leg} hurts! | B: Oh, no! That's awful. | leg / head / ear / mouth / body / eye
+SW | My favorite animal group is {birds}. They have {wings and feathers}. They can {fly}. | Write three things about your favorite animal group.
 ## U2 | Leo and Lily's Adventure | How are animals different from one another?
 # learn
 What does "escape" mean? | to get away from danger
