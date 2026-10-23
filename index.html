@@ -389,6 +389,7 @@ button.av{border:0;padding:0;cursor:pointer;position:relative;overflow:visible}b
 .dio .flag{position:absolute;top:2%;right:15%;width:5px;height:30%;background:#6b4f3a;border-radius:3px;z-index:1}
 .dio .flag::after{content:'';position:absolute;left:100%;top:0;border-left:38px solid var(--tc);border-top:14px solid transparent;border-bottom:14px solid transparent;transform-origin:left center;animation:wave 1.3s ease-in-out infinite}
 .dio .zz{position:absolute;top:4%;left:46%;font-family:var(--emoji);font-size:min(12cqi,56px);z-index:4;animation:zz 2s ease-in-out infinite}
+.dio .dio3d{position:absolute;inset:0;z-index:6;border-radius:18px;overflow:hidden;background:#dff3ff}.dio .dio3d[hidden]{display:none}.dio.is3d>:not(.dio3d){visibility:hidden}.dio .dio3d canvas{display:block;width:100%!important;height:100%!important}
 .dio.down .hab-e{filter:grayscale(1) brightness(.8) drop-shadow(0 10px 6px rgba(0,0,0,.28))}
 .rays{position:absolute;inset:-25%;border-radius:50%;background:repeating-conic-gradient(rgba(255,244,170,.75) 0 9deg,transparent 9deg 24deg);-webkit-mask:radial-gradient(circle,#000 25%,transparent 68%);mask:radial-gradient(circle,#000 25%,transparent 68%);opacity:0;z-index:0;pointer-events:none}
 .flash{position:absolute;inset:-10%;border-radius:50%;background:radial-gradient(circle,#fff 0 40%,rgba(255,255,255,0) 70%);z-index:5;pointer-events:none}
@@ -982,7 +983,7 @@ function pub(){
     def:b.def?{teams:b.def.teams,q:b.def.q}:null,
     boss:b.boss?{name:b.boss.name,e:b.boss.e,hp:b.boss.hp,max:b.boss.max,defeated:!!b.boss.defeated}:null,
     vote:b.vote?{items:b.vote.items.map(x=>x.text),revealed:b.vote.revealed,counts:b.vote.revealed?voteCounts():null,winner:b.vote.revealed?b.vote.winner:-1,n:Object.keys(b.vote.votes).length}:null};}
-  return{code:S.code,scene:S.scene,phase:S.phase,teams:S.teams.slice(0,S.teamCount),teamCount:S.teamCount,players:S.players,log:S.log.slice(-4),battle:bp,results:S.results};
+  return{code:S.code,scene:S.scene,phase:S.phase,teams:S.teams.slice(0,S.teamCount),teamCount:S.teamCount,players:S.players,log:S.log.slice(-4),battle:bp,results:S.results,tab3d:!!S.tab3d};
 }
 function myView(pid){const b=S.battle;if(!pid||!b)return null;const sb=b.subs[pid],v=b.vote,p=P(pid);
   return{qid:b.qid,ok:b.ok[pid]||0,act:b.acts[pid]||null,sub:sb?{text:sb.text,ok:sb.ok}:null,choice:b.choice[pid]??-1,buzz:b.buzz.indexOf(pid),
@@ -1046,7 +1047,7 @@ function markCorrect(pid,tier=1){
   if(tier){const prev=b.ok[pid]||0;b.ok[pid]=tier;
     if(b.subs[pid]){b.subs[pid].ok=tier;if(!prev&&b.q&&TYPED.has(b.q.type)){b.approved.push({pid,text:b.subs[pid].text,round:b.round});if(b.approved.length>40)b.approved.shift();}}
     if(prev!==tier){beep(tier===3?990:820);floatText(pid,tier===3?'🌟 AMAZING!':tier===2?'⭐ GREAT!':'✓',tier===3?'#e8590c':tier===2?'#f08c00':'#2f9e44');burst(pid,tier===3?['🌟','✨','⚡']:tier===2?['⭐','⚡']:['⚡'],tier===3?18:tier===2?10:5,{speed:18});
-      if(!prev)log(`${p.name} ${tier===3?'gave an AMAZING answer! 🌟':tier===2?'gave a great answer! ⭐':'can take an action! ⚡'}`);if(ui3d())H.hb3d.correct(pid,tier);}
+      if(!prev)log(`${p.name} ${tier===3?'gave an AMAZING answer! 🌟':tier===2?'gave a great answer! ⭐':'can take an action! ⚡'}`);if(ui3d())H.hb3d.correct(pid,tier);sendTo(pid,{t:'fx',k:'cheer',tier});}
   }else{delete b.ok[pid];delete b.acts[pid];if(b.subs[pid])b.subs[pid].ok=false;}
   changed();
 }
@@ -1453,7 +1454,7 @@ function applyBank(replace){
   log(`📚 ${b.level} Unit${picked.length>1?'s':''} ${picked.join(', ')} loaded: ${us.reduce((a,u)=>a+u.learn.length,0)} learning + ${us.reduce((a,u)=>a+u.battle.length,0)} battle questions`);
   $('#modal-root').innerHTML='';changed();toast(`${b.level} U${picked.join(', ')} ready`);
 }
-function openSetup(){H.setupDraft={scene:S.scene,teamCount:S.teamCount,teams:S.teams.map(t=>({...t})),qText:S.qText,bText:S.bText,battleMin:S.battleMin};H.confirm=null;renderSetup();}
+function openSetup(){H.setupDraft={scene:S.scene,teamCount:S.teamCount,teams:S.teams.map(t=>({...t})),qText:S.qText,bText:S.bText,battleMin:S.battleMin,tab3d:!!S.tab3d};H.confirm=null;renderSetup();}
 function renderSetup(){
   const d=H.setupDraft;
   $('#modal-root').innerHTML=`<div class="modal-bg"><div class="modal" role="dialog" aria-label="Game setup">
@@ -1462,6 +1463,7 @@ function renderSetup(){
   <label>Number of teams</label><div class="seg">${[2,3,4].map(n=>`<button class="${d.teamCount===n?'sel':''}" data-act="d-teams" data-n="${n}">${n} teams</button>`).join('')}</div>
   <div class="tname-grid">${d.teams.slice(0,d.teamCount).map((t,i)=>`<label>Team ${i+1}<input id="tn${i}" value="${esc(t.name)}" maxlength="18" style="border-color:${t.color}"></label>`).join('')}</div>
   <label>Battle length</label><div class="seg">${[10,15,20,25,30].map(n=>`<button class="${d.battleMin===n?'sel':''}" data-act="d-min" data-n="${n}">${n} min</button>`).join('')}</div>
+  <label>Student tablets — the home picture at the top of each tablet</label><div class="seg"><button class="${!d.tab3d?'sel':''}" data-act="d-tab3d" data-v="0">🖼️ 2D picture</button><button class="${d.tab3d?'sel':''}" data-act="d-tab3d" data-v="1">🎮 Mini 3D (own home)</button></div>
   <div class="bk-tools"><b>📚 Textbook questions</b><small>${S.bankSel?`Loaded: ${esc(S.bankSel.level)} Unit${S.bankSel.units.length>1?'s':''} ${S.bankSel.units.join(', ')}`:'Pick Oxford Discover units to fill the two boxes below.'}</small><span class="sp"></span><button class="btn primary" data-act="bank">Choose units</button></div>
   <label for="qtext">Learning Time questions (Question Card) — one per line. Answer after | is optional and only you see it.</label>
   <textarea id="qtext">${esc(d.qText)}</textarea>
@@ -1542,7 +1544,8 @@ function onHostClick(e){
     case 'd-scene':readSetupInputs();H.setupDraft.scene=b.dataset.k;applyScene(b.dataset.k);renderSetup();break;
     case 'd-teams':readSetupInputs();H.setupDraft.teamCount=+b.dataset.n;renderSetup();break;
     case 'd-min':readSetupInputs();H.setupDraft.battleMin=+b.dataset.n;renderSetup();break;
-    case 'd-save':{readSetupInputs();const d=H.setupDraft;S.scene=d.scene;S.teamCount=d.teamCount;S.teams=d.teams;S.qText=d.qText;S.bText=d.bText;S.battleMin=d.battleMin;S.qOrder=[];S.bOrder=[];
+    case 'd-tab3d':readSetupInputs();H.setupDraft.tab3d=b.dataset.v==='1';renderSetup();break;
+    case 'd-save':{readSetupInputs();const d=H.setupDraft;S.scene=d.scene;S.teamCount=d.teamCount;S.teams=d.teams;S.qText=d.qText;S.bText=d.bText;S.battleMin=d.battleMin;S.tab3d=!!d.tab3d;S.qOrder=[];S.bOrder=[];
       Object.values(S.players).forEach(p=>{if(p.team>=S.teamCount)p.team=0;});log(`Welcome to ${SCENES[S.scene].name}!`);$('#modal-root').innerHTML='';changed();break;}
     case 'reset-game':if(H.confirm==='reset'){Object.values(S.players).forEach(p=>Object.assign(p,{coins:0,lv:1,hp:HPMAX[1],armor:0,inv:{atk:0,def:0,heal:0},items:0,powers:0,dash:false,warp:false,down:false,pts:0}));S.phase='gather';S.battle=null;S.results=null;S.card=null;S.log=['New game! Answer questions to collect supplies.'];H.confirm=null;$('#modal-root').innerHTML='';changed();}else{readSetupInputs();H.confirm='reset';renderSetup();}break;
     case 'new-game':if(H.confirm==='new'){readSetupInputs();const d=H.setupDraft;S=newState({scene:d.scene,teamCount:d.teamCount,teams:d.teams,qText:d.qText,bText:d.bText,battleMin:d.battleMin});H.confirm=null;H.conns.forEach((_,c)=>{try{c.close();}catch(e){}});H.conns.clear();$('#modal-root').innerHTML='';makeQR($('#qr'),220);changed();startHost();}else{readSetupInputs();H.confirm='new';renderSetup();}break;
@@ -1589,7 +1592,7 @@ function studentConnect(){
   });
   peer.on('error',e=>{ST.status=e.type==='peer-unavailable'?`Game ${JOIN} is not open yet. Waiting for the teacher…`:'Connection problem. Retrying…';sRender();retrySoon();});
 }
-function sRecv(m){if(!m)return;if(m.t==='state'){ST.s=m.s;ST.me=m.me;ST.my=m.my;if(m.s.battle)ST.deadline=Date.now()+m.s.battle.endsIn;sRender();}if(m.t==='toast')toast(m.msg);if(m.t==='fx'){if(m.k==='wrong'){toast('Not quite! Try again.');const l=$('#bline');if(l&&!RM){l.classList.remove('shake');void l.offsetWidth;l.classList.add('shake');}}if(m.k==='right')sBurst($('#s-dock'),['🧩','✨','⭐'],14);}}
+function sRecv(m){if(!m)return;if(m.t==='state'){ST.s=m.s;ST.me=m.me;ST.my=m.my;if(m.s.battle)ST.deadline=Date.now()+m.s.battle.endsIn;sRender();}if(m.t==='toast')toast(m.msg);if(m.t==='fx'){if(m.k==='wrong'){toast('Not quite! Try again.');const l=$('#bline');if(l&&!RM){l.classList.remove('shake');void l.offsetWidth;l.classList.add('shake');}}if(m.k==='right')sBurst($('#s-dock'),['🧩','✨','⭐'],14);if(m.k==='cheer'&&ST.mini)ST.mini.react('happy',m.tier);}}
 function retrySoon(){clearTimeout(ST.retry);ST.retry=setTimeout(studentConnect,3000);}
 function sBgHost(){return ST.embedded?$('#sv-app'):null;}
 function sBackground(scene){
@@ -1629,7 +1632,7 @@ function sRenderInner(){
     if(!ST.boundPlay){ST.boundPlay=true;document.addEventListener('click',sPlayClick);document.addEventListener('input',e=>{if(e.target.id==='ans'){ST.draft=e.target.value;sMeter();}});}}
   sPlay(s,me);
 }
-function sJoin(app,s){
+function sJoin(app,s){if(ST.mini)ST.mini.stop();
   if(ST.view!=='join'){ST.view='join';app.innerHTML=`<div class="student"><div class="s-col">
     <div class="s-head"><span class="brand">⚔️ Habitat Battle</span><span class="sp"></span><span class="chip" id="j-scene"></span></div>
     <div class="card"><h2>What's your name?</h2><input class="name-in" id="j-name" maxlength="14" autocomplete="off" placeholder="Type your English name"></div>
@@ -1659,7 +1662,7 @@ function sSkeleton(app){
       <button class="supply" id="t-supply" data-sact="shop" aria-label="Open supplies"><span class="bag">🎒</span><span>Supplies</span><i class="badge" id="t-badge" hidden></i></button></div>
     <div class="s-teams" id="t-teams"></div>
     <div class="bosspill" id="t-boss" hidden></div>
-    <div class="s-hero"><div class="dio" id="h-dio"><div class="rays" id="h-rays"></div><div class="mound"></div><span class="flag"></span><span class="hab-e" id="h-hab"></span><span class="wall" id="h-wall" hidden></span><span class="char" id="h-char"></span><span class="zz" id="h-zz" hidden>💤</span></div>
+    <div class="s-hero"><div class="dio" id="h-dio"><div class="rays" id="h-rays"></div><div class="mound"></div><span class="flag"></span><span class="hab-e" id="h-hab"></span><span class="wall" id="h-wall" hidden></span><span class="char" id="h-char"></span><span class="zz" id="h-zz" hidden>💤</span><div class="dio3d" id="dio3d" hidden></div></div>
       <div class="hname" id="h-name"></div>
       <div class="hp"><span class="em" id="h-heart">❤️</span><div class="bar"><i id="h-hp"></i></div><b id="h-hpt"></b><span id="h-ar"></span></div>
       <div class="inv"><span id="i-atk"></span><span id="i-def"></span><span id="i-heal"></span></div>
@@ -1670,7 +1673,19 @@ function sSkeleton(app){
     <div class="s-sheet" id="s-sheet" hidden></div>
   </div>`;
 }
-function sPlay(s,me){
+/* mini 3D on the tablet: the student's own home in the hero card; falls back to the 2D picture on weak tablets */
+function sMini(s,me){const el=$('#dio3d'),dio=$('#h-dio');if(!el||!dio)return;const want=!!s.tab3d&&!ST.no3d&&!store('habitat-tab3d-off');
+  if(!want){if(ST.mini)ST.mini.stop();el.hidden=true;dio.classList.remove('is3d');return;}
+  if(!ST.mini){if(ST.miniLoading)return;ST.miniLoading=true;ensureThree().then(ok=>{ST.miniLoading=false;if(!ok||typeof HB3D_INIT!=='function'){ST.no3d=true;return;}
+    const el2=$('#dio3d'),dio2=$('#h-dio');if(!el2)return;try{window.HB3D_EMBED=true;window.HB3D_MINI=true;window.HB3D_STAGE_ID='dio3d';el2.hidden=false;dio2.classList.add('is3d');ST.mini=HB3D_INIT();ST.miniEl=el2;}
+    catch(e){console.error(e);ST.no3d=true;el2.hidden=true;dio2.classList.remove('is3d');return;}finally{window.HB3D_MINI=false;window.HB3D_STAGE_ID='';}
+    ST.miniT0=Date.now();if(ST.s&&ST.me&&ST.s.players[ST.me])sMini(ST.s,ST.s.players[ST.me]);});return;}
+  el.hidden=false;dio.classList.add('is3d');if(ST.miniEl!==el){ST.mini.mount(el);ST.miniEl=el;}ST.mini.start();
+  const team=s.teams[me.team]||{name:'Team',color:'#888'};
+  ST.mini.show({pid:me.pid,name:me.name,char:me.char,cls:charById(me.char).c,av:me.av||null,lv:me.lv||1,hp:me.hp,max:HPMAX[me.lv||1],down:!!me.down,teamName:team.name,teamColor:team.color,scene:s.scene});
+  if(ST.prevHp!=null&&me.hp<ST.prevHp&&!me.down)ST.mini.react('ouch');ST.prevHp=me.hp;
+  if(Date.now()-ST.miniT0>6000&&ST.mini.fps()>0&&ST.mini.fps()<14&&!/[?&]fast/.test(location.search)){ST.mini.stop();el.hidden=true;dio.classList.remove('is3d');store('habitat-tab3d-off',true);ST.no3d=true;toast('3D is too slow on this tablet. Using the picture instead.');}}
+function sPlay(s,me){sMini(s,me);
   const ch=charById(me.char),c=CLASSES[ch.c],team=s.teams[me.team]||{name:'Team',color:'#888'},h=c.hab[me.lv-1],mx=HPMAX[me.lv];
   $('#s-root').style.setProperty('--tc',team.color);
   {const el=$('#t-av'),k=JSON.stringify(me.av||0)+me.name;if(el.dataset.k!==k){el.dataset.k=k;el.innerHTML=avImg(me.av,me.name,44);}}$('#t-name').textContent=me.name;$('#t-team').textContent=team.name;$('#t-coin-n').textContent=me.coins;
@@ -1841,9 +1856,10 @@ window.HB3D_INIT=function(){
 /* ===== core: renderer, helpers, materials ===== */
 const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const EMBED=!!window.HB3D_EMBED;/* true when bundled into index.html: no demo HUD, host drives state */
-const stage=document.getElementById('stage3d')||document.getElementById('stage');
+const MINI=!!window.HB3D_MINI;/* student tablet: one home + one character, no shadows, low pixel ratio */
+let stage=document.getElementById(window.HB3D_STAGE_ID||'stage3d')||document.getElementById('stage');
 const renderer=new THREE.WebGLRenderer({antialias:true,powerPreference:'high-performance'});
-renderer.setPixelRatio(Math.min(2,devicePixelRatio));renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;
+renderer.setPixelRatio(Math.min(MINI?1.25:2,devicePixelRatio));renderer.shadowMap.enabled=!MINI;renderer.shadowMap.type=THREE.PCFSoftShadowMap;
 renderer.outputEncoding=THREE.sRGBEncoding;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.12;
 stage.appendChild(renderer.domElement);
 const scene=new THREE.Scene();
@@ -2371,7 +2387,7 @@ function setTeamCount(n){teamCount=Math.max(2,Math.min(TEAM_DEFS.length,n));cons
 const drawerEl=document.getElementById('drawer'),scrimEl=document.getElementById('scrim');
 function drawer(open){if(drawerEl)drawerEl.classList.toggle('open',open);if(scrimEl)scrimEl.classList.toggle('open',open);}
 const fabEl=document.getElementById('fab'),dcloseEl=document.getElementById('dclose');if(fabEl)fabEl.addEventListener('click',()=>drawer(true));if(dcloseEl)dcloseEl.addEventListener('click',()=>drawer(false));if(scrimEl)scrimEl.addEventListener('click',()=>drawer(false));
-let cineId=0,cleanShot=false;function cinema(ms,clean){drawer(false);document.body.classList.add('cine');cleanShot=!!clean;const id=++cineId;animate(ms/1000,()=>{},()=>{if(id===cineId){document.body.classList.remove('cine');cleanShot=false;}});}
+let cineId=0,cleanShot=false;function cinema(ms,clean){drawer(false);if(!MINI)document.body.classList.add('cine');cleanShot=!!clean;const id=++cineId;animate(ms/1000,()=>{},()=>{if(id===cineId){document.body.classList.remove('cine');cleanShot=false;}});}
 /* briefly fly the camera to a spot, then go back to where it was */
 /* close-up: shoot from the world centre side (open plaza) toward the base so scenery on the rim never blocks it */
 let camBack=null,peekId=0;function peek(pos,r,ms){if(!camBack)camBack={t:camGoal.t.clone(),r:camGoal.r,phi:camGoal.phi};camGoal.t.set(pos.x,pos.y,pos.z);camGoal.r=r;camGoal.phi=.78;const d=Math.hypot(pos.x,pos.z);camGoal.th=d>1?Math.atan2(-pos.x,-pos.z):theta;const id=++peekId;animate(ms/1000,()=>{},()=>{if(id===peekId&&camBack){camGoal.t.copy(camBack.t);camGoal.r=camBack.r;camGoal.phi=camBack.phi;camGoal.th=null;camBack=null;}});}
@@ -2409,7 +2425,7 @@ function later(fn,ms){animate(ms/1000,()=>{},fn);}
    scaffolding goes up and the bigger home is built piece by piece from the ground up ---- */
 let lvTarget=null;
 function levelUp(g){const p=g.userData.p;if(p.lv>=3||g.userData.down)return false;spotEnd(false);lvTarget=g;setFace(g.userData.ch,'happy',7000);const lv=p.lv;p.lv=lv+1;const u=g.userData,old=u.hab,T=TEAMS[p.team];const base=g.position.clone().setY(g.position.y+.5);
- cinema(7200,true);peek(base.clone().setY(base.y+3),26,6800);jump(g);u.building=true;later(()=>{u.building=false;},7300);
+ cinema(7200,true);peek(base.clone().setY(base.y+3),MINI?13:26,6800);jump(g);u.building=true;later(()=>{u.building=false;},7300);
  const ADD={transparent:true,opacity:0,depthWrite:false,blending:THREE.AdditiveBlending};
  const glow=mesh(new THREE.CircleGeometry(1,24),new THREE.MeshBasicMaterial(Object.assign({color:0xffc94d},ADD)),base.x,base.y+.06,base.z,false);glow.rotation.x=-Math.PI/2;scene.add(glow);
  const light=new THREE.PointLight(0xffd43b,0,30,2);light.position.set(base.x,base.y+4,base.z);scene.add(light);
@@ -2511,18 +2527,19 @@ const target=new THREE.Vector3(0,2,0);const camGoal={t:new THREE.Vector3(0,2,0),
 /* panorama → zoom: the whole world first, then fly to a base when it is chosen */
 function overview(){const v=(env&&env.view)||{};camGoal.t.set(v.x||0,v.y??2,v.z||0);camGoal.r=v.r||50;camGoal.phi=v.phi||.32;camGoal.th=null;}
 function focusSite(site){if(!site)return;camGoal.t.set(site.x,(site.yAt?site.yAt(0,0):site.y)+1.5,site.z);camGoal.r=(env&&env.focusR)||24;camGoal.phi=(env&&env.focusPhi)||.24;}
-stage.addEventListener('pointerdown',e=>{ptrs.set(e.pointerId,{x:e.clientX,y:e.clientY});tap={x:e.clientX,y:e.clientY,t:performance.now(),n:ptrs.size};auto=false;idle=0;camGoal.r=radius;camGoal.phi=phi;if(ptrs.size===2){const[a,b]=[...ptrs.values()];pinch0=Math.hypot(a.x-b.x,a.y-b.y);rad0=radius;}});
+function bindStage(el){el.addEventListener('pointerdown',e=>{ptrs.set(e.pointerId,{x:e.clientX,y:e.clientY});tap={x:e.clientX,y:e.clientY,t:performance.now(),n:ptrs.size};auto=false;idle=0;camGoal.r=radius;camGoal.phi=phi;if(ptrs.size===2){const[a,b]=[...ptrs.values()];pinch0=Math.hypot(a.x-b.x,a.y-b.y);rad0=radius;}});
 const endPtr=e=>{if(ptrs.has(e.pointerId)&&e.type==='pointerup'&&tap.n===1&&ptrs.size===1&&Math.hypot(e.clientX-tap.x,e.clientY-tap.y)<10&&performance.now()-tap.t<450){const g=pick(e.clientX,e.clientY);if(g)spotOne(g);else if(spot)spotEnd();}ptrs.delete(e.pointerId);};addEventListener('pointerup',endPtr);addEventListener('pointercancel',endPtr);
-addEventListener('pointermove',e=>{const p=ptrs.get(e.pointerId);if(!p)return;if(ptrs.size===1){theta-=(e.clientX-p.x)*.006;phi=Math.max(.06,Math.min(1.05,phi+(e.clientY-p.y)*.004));camGoal.phi=phi;if(Math.hypot(e.clientX-tap.x,e.clientY-tap.y)>10)camGoal.th=null;}p.x=e.clientX;p.y=e.clientY;if(ptrs.size===2){const[a,b]=[...ptrs.values()];const d=Math.hypot(a.x-b.x,a.y-b.y);if(pinch0){radius=Math.max(16,Math.min(190,rad0*pinch0/d));camGoal.r=radius;}}});
-stage.addEventListener('wheel',e=>{radius=Math.max(16,Math.min(190,radius+e.deltaY*.05));camGoal.r=radius;},{passive:true});
+addEventListener('pointermove',e=>{const p=ptrs.get(e.pointerId);if(!p)return;if(ptrs.size===1){theta-=(e.clientX-p.x)*.006;phi=Math.max(.06,Math.min(1.05,phi+(e.clientY-p.y)*.004));camGoal.phi=phi;if(Math.hypot(e.clientX-tap.x,e.clientY-tap.y)>10)camGoal.th=null;}p.x=e.clientX;p.y=e.clientY;if(ptrs.size===2){const[a,b]=[...ptrs.values()];const d=Math.hypot(a.x-b.x,a.y-b.y);if(pinch0){radius=Math.max(MINI?6:16,Math.min(190,rad0*pinch0/d));camGoal.r=radius;}}});
+el.addEventListener('wheel',e=>{radius=Math.max(MINI?6:16,Math.min(190,radius+e.deltaY*.05));camGoal.r=radius;},{passive:true});}
+bindStage(stage);
 function resize(){const w=EMBED?(stage.clientWidth||innerWidth):innerWidth,h=EMBED?(stage.clientHeight||innerHeight):innerHeight;renderer.setSize(w,h);camera.aspect=w/h;camera.updateProjectionMatrix();}
-addEventListener('resize',resize);if(EMBED&&typeof ResizeObserver==='function'){try{new ResizeObserver(resize).observe(stage);}catch(e){}}resize();
+let ro=null;addEventListener('resize',resize);if(EMBED&&typeof ResizeObserver==='function'){try{ro=new ResizeObserver(resize);ro.observe(stage);}catch(e){}}resize();
 /* loop */
 const clock=new THREE.Clock();
 /* ?fast (screenshot testing on slow software GL only): let one frame cover more time */
 const DTMAX=(typeof location!=='undefined'&&/[?&]fast/.test(location.search))?.5:.05;
-let running=false;
-function loop(){if(!running)return;requestAnimationFrame(loop);const dt=Math.min(DTMAX,clock.getDelta()),t=clock.elapsedTime;
+let running=false,fpsN=0,fpsT=0,fpsV=0;
+function loop(){if(!running)return;requestAnimationFrame(loop);const dt=Math.min(DTMAX,clock.getDelta());fpsN++;if(clock.elapsedTime-fpsT>1){fpsV=fpsN/(clock.elapsedTime-fpsT);fpsN=0;fpsT=clock.elapsedTime;}const t=clock.elapsedTime;
  if(!ptrs.size){idle+=dt;if(idle>5)auto=true;}if(auto&&!RM&&camGoal.th==null)theta+=dt*.07;
  /* rolling horizon: strong when close, flatter for wide panoramas */
  BEND.value=((env&&env.curve!=null)?env.curve:.0012)*Math.min(1.3,Math.pow(48/Math.max(1,radius),1.4));
@@ -2534,9 +2551,9 @@ function loop(){if(!running)return;requestAnimationFrame(loop);const dt=Math.min
   if(env&&env.tick)env.tick(dt,t);
   nowT=t;const fpt=spot?spot.pt:(cleanShot&&lvTarget?lvTarget.position:null),keep=spot?spot.gs:(lvTarget?[lvTarget]:[]);const dT=fpt?camera.position.distanceTo(fpt):0;if(fpt)hideOccluders(fpt,spot?spot.w||0:1.5);else if(occOn){(env.occ||[]).forEach(q=>q.o.visible=true);occOn=false;}
   baseDecos.forEach(d=>{if(d.children[1])d.children[1].visible=!cleanShot&&!spot;d.visible=!(fpt&&camera.position.distanceTo(d.position)<dT&&d.position.distanceTo(fpt)<10);});
-  players.forEach(g=>{const u=g.userData,focus=keep.includes(g);g.visible=!(fpt&&!focus&&blocks(g,fpt,spot?spot.w||0:1.5));u.lab.visible=!cleanShot&&(!spot||focus);{const ls=spot?.6:1;u.lab.scale.set(3.6*ls,1.24*ls,1);}
+  players.forEach(g=>{const u=g.userData,focus=keep.includes(g);g.visible=!(fpt&&!focus&&blocks(g,fpt,spot?spot.w||0:1.5));u.lab.visible=!MINI&&!cleanShot&&(!spot||focus);{const ls=spot?.6:1;u.lab.scale.set(3.6*ls,1.24*ls,1);}
    /* on the tiny planets a student's own home can stand between the camera and the line-up: hide the buildings, keep the student */
-   {const hb=!!(spot&&focus&&onLine(g.position.x,g.position.z,fpt,YARD[u.p.lv]+1.6,spot.w||0,spot.gs.length>1?1.7:1.25));[u.hab,u.annex,u.flag,u.yard].forEach(o=>{if(o)o.visible=!hb;});}u.hp.visible=!spot&&(!cleanShot||g===lvTarget);faceTick(g,t);
+   {const hb=!!(spot&&focus&&onLine(g.position.x,g.position.z,fpt,YARD[u.p.lv]+1.6,spot.w||0,spot.gs.length>1?1.7:1.25));[u.hab,u.annex,u.flag,u.yard].forEach(o=>{if(o)o.visible=!hb;});}u.hp.visible=!MINI&&!spot&&(!cleanShot||g===lvTarget);faceTick(g,t);
    if(!u.down){u.hab.position.y=.5+Math.sin(t*1.6+u.bob)*.05;const ch=u.ch,at=u.at;const dx=at.x-ch.position.x,dz=at.z-ch.position.z,dd=Math.hypot(dx,dz);let want;
     if(dd>.03){const st=Math.min(dd,dt*6);ch.position.x+=dx/dd*st;ch.position.z+=dz/dd*st;u.walk=(u.walk||0)+dt*13;want=Math.atan2(dx,dz);}else{u.walk=0;want=u.look!=null?u.look:.35+Math.sin(t*.8+u.bob)*.25;}
     u.ry+=Math.atan2(Math.sin(want-u.ry),Math.cos(want-u.ry))*Math.min(1,dt*7);ch.rotation.y=u.ry;
@@ -2571,8 +2588,29 @@ function sync(h){if(syncing)return;syncing=true;try{
  const hb=h.boss;if(hb&&!boss)summonBoss(hb.name);if(!hb&&boss){world.remove(boss);boss=null;}
 }finally{syncing=false;}}
 function hitPromise(g,go,ms){return new Promise(res=>{if(!g){res();return;}g.userData.inFlight=true;g.userData.onLand=()=>{g.userData.inFlight=false;g.userData.onLand=null;res();};go();later(()=>{if(g.userData.onLand){const f=g.userData.onLand;g.userData.onLand=null;g.userData.inFlight=false;f();}},ms);});}
+/* ---- mini stage (student tablet): the student's own home and character on a small island, same animations as the whiteboard ---- */
+const MINI_GROUND={jungle:[0x6fcf4f,0xb98f63,0x58b947],dino:[0xf3e2b0,0xb98a5c,0xc9a070],space:[0xd0d4e4,0x8d93ad,0xb0b6cc],town:[0x9fdb6e,0xb98f63,0x58b947]};
+const MINI_SKY={jungle:[0x4db8ff,0xcfeeff,0xd8f1ff],dino:[0xff9e6b,0xffe6bf,0xffe0c2],space:[0x070b2a,0x1d2060,0x10133a],town:[0x4db8ff,0xcfeeff,0xd8f1ff]};
+let mp=null,miniKey='';
+function miniScene(key){current=ENV[key]?key:'jungle';clearWorld();players=[];mp=null;miniKey='';boss=null;const[g1,g2,g3]=MINI_GROUND[current],[a,b,c]=MINI_SKY[current];setSky(a,b,c,40,120);
+ world.add(mesh(new THREE.CylinderGeometry(9,9.6,1.2,40),M(g2),0,-.1,0,false));const top=mesh(new THREE.CircleGeometry(9,40),M(g1),0,.51,0,false);top.rotation.x=-Math.PI/2;world.add(top);
+ for(let i=0;i<6;i++){const an=i/6*6.283+.5,r=6.4+(i%2)*1.2;const bsh=mesh(SPH(.6+(i%3)*.2,12,8),M(g3),Math.cos(an)*r,.7,Math.sin(an)*r);bsh.scale.y=.8;world.add(bsh);}
+ env={sites:[{name:'Home',x:0,z:0,y:.55,k:0,yAt:null,slotR:0,stageR:6,claim:null,sign:null}],curve:0,bossAt:{x:0,z:-4},view:{x:-.8,y:1.7,z:1,r:10.5,phi:.24},focusR:11,tick:null};bendTree(world);
+ sun.color.set(current==='dino'?0xffd0a0:0xfff0d0);sun.intensity=current==='space'?1.1:1.4;overview();camGoal.th=.3;theta=.3;auto=false;}
+function miniShow(v){const key=ENV[v.scene]?v.scene:'jungle';if(key!==current||!env||!world||!env.view||env.view.r!==10.5)miniScene(key);
+ TEAMS=[{name:String(v.teamName||'Team').replace(/\s+Team$/i,''),color:parseCol(v.teamColor),css:v.teamColor||'#888'}];
+ const k=[v.pid,v.name,v.char,v.cls,JSON.stringify(v.av||0),v.teamColor].join('|');
+ if(!mp||k!==miniKey){if(mp){world.remove(mp);players=players.filter(g=>g!==mp);}miniKey=k;mp=makePlayer({pid:v.pid,name:v.name,char:v.char,cls:v.cls||'animal',team:0,lv:Math.max(1,Math.min(3,v.lv||1)),av:v.av||null,i:null},env.sites[0],0,1);bendTree(mp);mp.userData.hp0=v.max||HPMAX[mp.userData.p.lv-1];setHp(mp,v.down?0:v.hp|0);if(v.down)knockOut(mp);return;}
+ const u=mp.userData;if(v.lv>u.p.lv&&!u.down&&!u.building){if(!levelUp(mp))u.p.lv=v.lv;}else if(v.lv<u.p.lv){miniKey='';return miniShow(v);}
+ if(u.building)return;u.hp0=v.max||HPMAX[u.p.lv-1];if(v.down&&!u.down)knockOut(mp);else if(!v.down&&u.down)revive(mp);setHp(mp,v.down?0:Math.max(0,Math.min(u.hp0,v.hp|0)));}
+function miniReact(kind,tier){if(!mp||mp.userData.down)return;const u=mp.userData,hp=mp.position.clone().add(new THREE.Vector3(u.at.x,u.at.y+u.top,u.at.z));
+ if(kind==='happy'){setFace(u.ch,'happy',2600);jump(mp);spawn(hp,0xffd43b,10+(tier||1)*8,4,6,1.2);if((tier||1)>=2)spawn(hp,TEAMS[0].color,10,4,6,1.1);if(tier===3)ring(mp.position,0xffd43b,6,.9);}
+ else if(kind==='ouch'){setFace(u.ch,'ouch',2200);u.shake=1.2;shakeCam=.8;spawn(hp,0xff6b6b,14,5,5,1);}
+ else if(kind==='sad'){setFace(u.ch,'sad',2200);u.shake=.4;}}
 const HB3D_API=EMBED?{
- sync,onSite:null,
+ sync,onSite:null,fps(){return fpsV;},
+ mount(el){if(!el||el===stage)return;stage=el;el.appendChild(renderer.domElement);bindStage(el);if(ro){try{ro.observe(el);}catch(e){}}resize();},
+ show:miniShow,react:miniReact,
  start(){if(running)return;running=true;clock.getDelta();loop();},stop(){running=false;},
  resize,overview(){spotEnd();overview();},renderBases(){renderHud();},
  correct(pid,tier){const g=byPid(pid);if(!g)return;const u=g.userData;setFace(u.ch,'happy',2600);jump(g);const hp=g.position.clone().add(new THREE.Vector3(u.at.x,u.at.y+u.top,u.at.z));spawn(hp,0xffd43b,8+tier*10,5,7,1.3);if(tier>=2)spawn(hp,TEAMS[u.p.team].color,12,5,7,1.2);if(tier===3){ring(g.position,0xffd43b,9,1);shakeCam=.5;}},

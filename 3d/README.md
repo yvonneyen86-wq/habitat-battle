@@ -88,6 +88,12 @@
 - 老師操作：學生列的 🎤 聚光、投影區左下 `🏝️ Island / 👥 隊伍合照 / 🏕️ Bases`（選基地，存進 `S.teams[i].site`）。
 - `EMBED` 模式下 `banner()` 不顯示（老師端有自己的橫幅）、Boss 不自動攻擊、`resize/pick` 用 `#stage3d` 的尺寸。
 
+## 學生平板的迷你 3D（2026-10）
+- 老師端 Setup →「Student tablets」選 **Mini 3D (own home)**，`S.tab3d` 隨 state 廣播（`pub().tab3d`）。平板收到後 `sMini()` 動態載入 Three.js，呼叫 `HB3D_INIT()` 時先設 `window.HB3D_MINI=true`、`window.HB3D_STAGE_ID='dio3d'`（同一頁可與白板版並存，各自一個實例）。
+- MINI 模式：無陰影、pixelRatio ≤1.25、不顯示名牌與血條（平板本來就有）、`cinema()` 不動 body class、升級特寫半徑 13。`miniScene(key)` 只建一座小圓島＋幾顆灌木，`miniShow(v)` 放學生自己的家與角色（`makePlayer`），等級／血量／倒地同步規則與白板相同；`miniReact('happy'|'ouch'|'sad')` 由老師端 `{t:'fx',k:'cheer',tier}` 與血量下降觸發。
+- 保護：啟動 6 秒後若 fps < 14，自動關閉並記在 `localStorage habitat-tab3d-off`，之後都用 2D 圖卡（提示 "3D is too slow on this tablet"）。Three.js 載不到也退回 2D。
+- 生物仍依場景決定（叢林裡 astro 班的學生也是叢林動物），與白板一致。
+
 ## 尚未做的事
 - 還沒拿到實機截圖校色，鏡頭角度與地標比例可能要再調。
-- 學生端平板不做 3D（老師決定）。
+- 平板 3D 預設關閉；Android 舊機若 6 秒內 fps 不到 14 會自動退回 2D。

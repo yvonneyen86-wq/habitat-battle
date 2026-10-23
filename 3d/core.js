@@ -1,9 +1,10 @@
 /* ===== core: renderer, helpers, materials ===== */
 const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const EMBED=!!window.HB3D_EMBED;/* true when bundled into index.html: no demo HUD, host drives state */
-const stage=document.getElementById('stage3d')||document.getElementById('stage');
+const MINI=!!window.HB3D_MINI;/* student tablet: one home + one character, no shadows, low pixel ratio */
+let stage=document.getElementById(window.HB3D_STAGE_ID||'stage3d')||document.getElementById('stage');
 const renderer=new THREE.WebGLRenderer({antialias:true,powerPreference:'high-performance'});
-renderer.setPixelRatio(Math.min(2,devicePixelRatio));renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;
+renderer.setPixelRatio(Math.min(MINI?1.25:2,devicePixelRatio));renderer.shadowMap.enabled=!MINI;renderer.shadowMap.type=THREE.PCFSoftShadowMap;
 renderer.outputEncoding=THREE.sRGBEncoding;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.12;
 stage.appendChild(renderer.domElement);
 const scene=new THREE.Scene();
