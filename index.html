@@ -276,6 +276,8 @@ body.sv-on .sv{display:flex;flex-direction:column;gap:8px;min-height:0;backgroun
 .avimg{border-radius:50%;display:block;background:#fff}
 .prow .av{position:relative;display:grid;place-items:center}.prow .av .avimg{width:44px;height:44px}.prow .av i{position:absolute;right:-9px;bottom:-5px;font-style:normal;font-size:1.05rem;font-family:var(--emoji)}
 .s-top .who .av .avimg{width:100%;height:100%}
+button.av{border:0;padding:0;cursor:pointer;position:relative;overflow:visible}button.av::after{content:'✏️';position:absolute;right:-9px;bottom:-7px;font-size:.95rem;font-family:var(--emoji);background:#fff;border-radius:50%;width:22px;height:22px;display:grid;place-items:center;box-shadow:0 2px 0 rgba(0,0,0,.15)}
+.look-sheet{display:grid;gap:12px}.look-sheet .look canvas{width:124px;height:124px}.look-sheet .acts{display:flex;gap:8px;flex-wrap:wrap}.look-sheet .acts .btn{flex:1}
 .me{display:flex;align-items:center;gap:14px}
 .me .home{position:relative;width:118px;height:118px;border-radius:26px;display:grid;place-items:center;background:linear-gradient(var(--sky1),var(--sky2) 58%,var(--mound) 58%,var(--mound2));border:5px solid var(--tc);flex:0 0 auto;font-size:3.9rem;overflow:visible}
 .me .home .he{filter:drop-shadow(0 4px 3px rgba(0,0,0,.25))}
@@ -681,10 +683,10 @@ const classOf=p=>CLASSES[charById(p.char).c];
 const habOf=p=>classOf(p).hab[(p.lv||1)-1];
 const maxHp=p=>HPMAX[p.lv||1];
 /* ===== student look (avatar): chosen on the join screen, drawn here as a 2D bust and on the 3D stage as a villager (3d/chars.js keeps the same tables) ===== */
-const AV={SKIN:['#ffdcc0','#f5c9a3','#d9a27a','#a8724d'],HAIR:['#2b1a12','#5c4030','#f76707','#e9c46a','#845ef7','#1c7ed6'],HS:['Short','Side','Curly','Bob','Top knot','Pigtails'],SHIRT:['#e03131','#f08c00','#ffd43b','#40c057','#1c7ed6','#845ef7','#f06595','#f8f9fa'],PAT:['Plain','Stripes','Dots','Star','Number']};
-function randomAv(){const r=n=>Math.floor(Math.random()*n);return{sk:r(4),hs:r(6),hc:r(6),sh:r(8),pt:r(5),n:1+r(9)};}
-function avFromName(name){let h=7;for(const ch of String(name||''))h=(h*31+ch.charCodeAt(0))>>>0;return{sk:h%4,hs:(h>>2)%6,hc:(h>>5)%6,sh:(h>>8)%8,pt:(h>>11)%5,n:1+(h>>14)%9};}
-function cleanAv(a,name){const d=avFromName(name);if(!a||typeof a!=='object')return d;const c=(v,n,f)=>Number.isInteger(v)&&v>=0&&v<n?v:f;return{sk:c(a.sk,4,d.sk),hs:c(a.hs,6,d.hs),hc:c(a.hc,6,d.hc),sh:c(a.sh,8,d.sh),pt:c(a.pt,5,d.pt),n:c(a.n-1,9,d.n-1)+1};}
+const AV={SKIN:['#ffdcc0','#f5c9a3','#d9a27a','#a8724d'],HAIR:['#2b1a12','#5c4030','#f76707','#e9c46a','#845ef7','#1c7ed6'],HS:['Short','Side','Curly','Bob','Top knot','Pigtails','Long','Braids','Buzz'],SHIRT:['#e03131','#f08c00','#ffd43b','#40c057','#1c7ed6','#845ef7','#f06595','#f8f9fa'],PAT:['Plain','Stripes','Dots','Star','Number']};
+function randomAv(){const r=n=>Math.floor(Math.random()*n);return{sk:r(4),hs:r(9),hc:r(6),sh:r(8),pt:r(5),n:1+r(9)};}
+function avFromName(name){let h=7;for(const ch of String(name||''))h=(h*31+ch.charCodeAt(0))>>>0;return{sk:h%4,hs:(h>>2)%9,hc:(h>>5)%6,sh:(h>>8)%8,pt:(h>>11)%5,n:1+(h>>14)%9};}
+function cleanAv(a,name){const d=avFromName(name);if(!a||typeof a!=='object')return d;const c=(v,n,f)=>Number.isInteger(v)&&v>=0&&v<n?v:f;return{sk:c(a.sk,4,d.sk),hs:c(a.hs,9,d.hs),hc:c(a.hc,6,d.hc),sh:c(a.sh,8,d.sh),pt:c(a.pt,5,d.pt),n:c(a.n-1,9,d.n-1)+1};}
 function drawAvatar(x,av,S){x.clearRect(0,0,S,S);x.save();x.scale(S/100,S/100);x.lineCap='round';x.lineJoin='round';const skin=AV.SKIN[av.sk],hair=AV.HAIR[av.hc],shirt=AV.SHIRT[av.sh],hs=av.hs,pt=av.pt,ink='#2a1a12';
   x.fillStyle=shirt;x.beginPath();x.moveTo(12,100);x.lineTo(12,86);x.quadraticCurveTo(12,70,30,69);x.lineTo(70,69);x.quadraticCurveTo(88,70,88,86);x.lineTo(88,100);x.closePath();x.fill();
   x.save();x.clip();x.fillStyle=av.sh===7?'#1c7ed6':'rgba(255,255,255,.92)';
@@ -694,13 +696,15 @@ function drawAvatar(x,av,S){x.clearRect(0,0,S,S);x.save();x.scale(S/100,S/100);x
   if(hs===3){x.beginPath();x.ellipse(50,46,34,34,0,0,6.283);x.fill();x.fillRect(16,46,68,18);}
   if(hs===5){for(const s of[-1,1]){x.beginPath();x.ellipse(50+s*34,54,9,13,0,0,6.283);x.fill();}}
   if(hs===4){x.beginPath();x.arc(50,13,9,0,6.283);x.fill();}
+  if(hs===6){x.beginPath();x.ellipse(50,46,34,34,0,0,6.283);x.fill();x.beginPath();x.moveTo(16,46);x.lineTo(16,74);x.quadraticCurveTo(16,82,24,82);x.lineTo(76,82);x.quadraticCurveTo(84,82,84,74);x.lineTo(84,46);x.closePath();x.fill();}
+  if(hs===7){for(const s of[-1,1]){for(let i=0;i<5;i++){x.beginPath();x.ellipse(50+s*(31+(i%2?2:0)),52+i*7,5.5,5,0,0,6.283);x.fill();}}}
   x.fillStyle=skin;x.beginPath();x.arc(50,43,30,0,6.283);x.fill();for(const s of[-1,1]){x.beginPath();x.ellipse(50+s*30,45,5,6,0,0,6.283);x.fill();}
-  x.fillStyle=hair;x.beginPath();x.arc(50,42,31.5,Math.PI,0);x.closePath();x.fill();
+  x.fillStyle=hair;if(hs===8){x.beginPath();x.arc(50,43,30.3,Math.PI*1.08,-Math.PI*.08);x.closePath();x.fill();}else{x.beginPath();x.arc(50,42,31.5,Math.PI,0);x.closePath();x.fill();}
   const bump=(cx,cy,rx,ry)=>{x.beginPath();x.ellipse(cx,cy,rx,ry,0,0,6.283);x.fill();};
-  if(hs===0||hs===5){bump(36,43,10,8);bump(50,45,10,8);bump(64,43,10,8);}else if(hs===1){x.save();x.translate(55,42);x.rotate(-.18);bump(0,0,26,8);x.restore();bump(26,42,7,8);}
+  if(hs===0||hs===5||hs===6){bump(36,43,10,8);bump(50,45,10,8);bump(64,43,10,8);}else if(hs===7){x.fillRect(18.5,38,63,9);bump(50,46,12,5);}else if(hs===1){x.save();x.translate(55,42);x.rotate(-.18);bump(0,0,26,8);x.restore();bump(26,42,7,8);}
   else if(hs===2){for(let i=0;i<=6;i++){const a=Math.PI+i/6*Math.PI;bump(50+Math.cos(a)*30,42+Math.sin(a)*30,7.5,7.5);}bump(40,46,8,7);bump(58,46,8,7);}
   else if(hs===3){x.fillRect(18.5,38,63,10);}else if(hs===4){bump(42,44,10,7);bump(58,44,10,7);}
-  if(hs===5){x.fillStyle='#ff6b9d';for(const s of[-1,1]){x.beginPath();x.arc(50+s*32,43,3.5,0,6.283);x.fill();}}
+  if(hs===5){x.fillStyle='#ff6b9d';for(const s of[-1,1]){x.beginPath();x.arc(50+s*32,43,3.5,0,6.283);x.fill();}}if(hs===7){x.fillStyle='#ffd43b';for(const s of[-1,1]){x.beginPath();x.arc(50+s*31,83,3.5,0,6.283);x.fill();}}
   x.fillStyle='rgba(255,120,140,.45)';bump(31,61,6,3.5);bump(69,61,6,3.5);
   for(const s of[-1,1]){const ex=50+s*12,ey=54;x.fillStyle='#fff';bump(ex,ey,6.5,8.5);x.strokeStyle=ink;x.lineWidth=1.2;x.stroke();x.fillStyle='#3b2414';bump(ex,ey+1,4.6,6.6);x.fillStyle=ink;bump(ex,ey+1.5,2.6,3.6);x.fillStyle='#fff';bump(ex-1.8,ey-2.2,2,2);x.strokeStyle='#5a3a22';x.lineWidth=1.6;x.beginPath();x.moveTo(ex-5,ey-11.5);x.quadraticCurveTo(ex,ey-14,ex+5,ey-11.5);x.stroke();}
   x.fillStyle='#8a2b2b';x.beginPath();x.moveTo(44,65);x.quadraticCurveTo(50,72,56,65);x.closePath();x.fill();x.fillStyle=skin;bump(50,43,2.4,1.8);x.restore();}
@@ -1224,6 +1228,7 @@ function onStudent(conn,m){
   }
   const pid=info.pid;if(!pid||!S.players[pid])return;
   if(m.t==='buy')buy(pid,m.item);
+  if(m.t==='look'){S.players[pid].av=cleanAv(m.av,S.players[pid].name);changed();return;}
   if(m.t==='answer')onAnswer(pid,m.text);
   if(m.t==='build')onBuild(pid,m.words);
   if(m.t==='choose')onChoose(pid,m.i);
@@ -1601,16 +1606,17 @@ function sJoin(app,s){
   $('#j-chars').innerHTML=Object.entries(CLASSES).map(([k,c])=>`<div class="class-block"><div class="cl"><b>${esc(c.label)}</b><span>Home: ${c.hab.map(h=>h[1]).join(' → ')} · Gear: ${c.atk[1]} ${ico(c.def[1])} ${c.heal[1]} · Power: ${esc(c.power)}</span></div><div class="char-pick">${CHARS.filter(x=>x.c===k).map(x=>`<button data-char="${x.id}" class="${ST.char===x.id?'sel':''}"><span class="e">${x.e}</span><small>${esc(x.n)}</small></button>`).join('')}</div></div>`).join('');
   jUpdate();jLookOpts();
 }
-function jLookOpts(){const o=$('#j-look-opts');if(!o)return;const a=ST.av;const sw=(k,arr)=>arr.map((c,i)=>`<button class="sw${a[k]===i?' sel':''}" data-av="${k}" data-v="${i}" style="--c:${c}" aria-label="${k} ${i+1}"></button>`).join('');const tx=(k,arr)=>arr.map((t,i)=>`<button class="${a[k]===i?'sel':''}" data-av="${k}" data-v="${i}">${k==='pt'&&i===4?'#'+a.n:t}</button>`).join('');
-  o.innerHTML=`<div class="row"><b>Skin</b>${sw('sk',AV.SKIN)}</div><div class="row"><b>Hair</b>${tx('hs',AV.HS)}</div><div class="row"><b>Hair color</b>${sw('hc',AV.HAIR)}</div><div class="row"><b>Shirt</b>${sw('sh',AV.SHIRT)}</div><div class="row"><b>Pattern</b>${tx('pt',AV.PAT)}${a.pt===4?'<button data-av="n">Next number ▸</button>':''}</div>`;
-  const c=$('#j-look');if(c)drawAvatar(c.getContext('2d'),a,c.width);}
+function lookOptsHTML(a,x=''){const sw=(k,arr)=>arr.map((c,i)=>`<button class="sw${a[k]===i?' sel':''}" ${x} data-av="${k}" data-v="${i}" style="--c:${c}" aria-label="${k} ${i+1}"></button>`).join('');const tx=(k,arr)=>arr.map((t,i)=>`<button class="${a[k]===i?'sel':''}" ${x} data-av="${k}" data-v="${i}">${k==='pt'&&i===4?'#'+a.n:t}</button>`).join('');
+  return `<div class="row"><b>Skin</b>${sw('sk',AV.SKIN)}</div><div class="row"><b>Hair</b>${tx('hs',AV.HS)}</div><div class="row"><b>Hair color</b>${sw('hc',AV.HAIR)}</div><div class="row"><b>Shirt</b>${sw('sh',AV.SHIRT)}</div><div class="row"><b>Pattern</b>${tx('pt',AV.PAT)}${a.pt===4?`<button ${x} data-av="n">Next number ▸</button>`:''}</div>`;}
+function avClick(el){const k=el.dataset.av;if(k==='n')ST.av.n=ST.av.n%9+1;else ST.av[k]=+el.dataset.v;store('habitat-av',ST.av);}
+function jLookOpts(){const o=$('#j-look-opts');if(!o)return;o.innerHTML=lookOptsHTML(ST.av);const c=$('#j-look');if(c)drawAvatar(c.getContext('2d'),ST.av,c.width);}
 function jUpdate(){const b=$('#j-go');if(b)b.disabled=!(ST.name.trim()&&ST.team!==null&&ST.char);}
 function sJoinClick(e){if(ST.view!=='join')return;const t=e.target.closest('[data-team]'),c=e.target.closest('[data-char]'),a=e.target.closest('[data-av]');if(t){ST.team=+t.dataset.team;sRender();}if(c){ST.char=c.dataset.char;sRender();}
-  if(a){const k=a.dataset.av;if(k==='n')ST.av.n=ST.av.n%9+1;else ST.av[k]=+a.dataset.v;store('habitat-av',ST.av);jLookOpts();}if(e.target.closest('#j-shuffle')){ST.av=randomAv();store('habitat-av',ST.av);jLookOpts();}
+  if(a){avClick(a);jLookOpts();}if(e.target.closest('#j-shuffle')){ST.av=randomAv();store('habitat-av',ST.av);jLookOpts();}
   if(e.target.closest('#j-go')){if(sSend({t:'join',name:ST.name,team:ST.team,char:ST.char,av:ST.av}))toast('Joining…');}}
 function sSkeleton(app){
   app.innerHTML=`<div class="sv2" id="s-root">
-    <div class="s-top"><div class="who"><span class="av" id="t-av"></span><div><b id="t-name"></b><small id="t-team"></small></div></div><span class="sp"></span>
+    <div class="s-top"><div class="who"><button class="av" id="t-av" data-sact="look" aria-label="Change my look"></button><div><b id="t-name"></b><small id="t-team"></small></div></div><span class="sp"></span>
       <div class="coins" id="t-coins"><span class="em">🪙</span><b id="t-coin-n">0</b></div>
       <button class="supply" id="t-supply" data-sact="shop" aria-label="Open supplies"><span class="bag">🎒</span><span>Supplies</span><i class="badge" id="t-badge" hidden></i></button></div>
     <div class="s-teams" id="t-teams"></div>
@@ -1727,7 +1733,7 @@ function sMeter(){
   el.innerHTML=`<div class="mt">⚡ Power ${m.score}/5${m.score>=5?' — MAX! 🔥':''}</div><div class="segs">${[0,1,2,3,4].map(i=>`<i class="${i<m.score?'on':''}"></i>`).join('')}</div><div class="ml">${labs.map(([k,l])=>`<span class="${m[k]?'on':''}">${m[k]?'✓ ':''}${l}</span>`).join('')}${q&&q.type==='W'?`<span class="${wordHit(ta.value,q.word)?'on':''}">💣 ${esc(q.word)}</span>`:''}</div>`;
 }
 function sRefreshDock(){ST.qKey='';const s=ST.s,me=s&&s.players[ST.me];if(me)sDock(s,me,classOf(me));}
-function sShop(me,c){
+function sShop(me,c){if(ST.lookOpen)return;
   const nextH=me.lv<3?c.hab[me.lv]:null,up=UPGRADE_COST[me.lv],h=c.hab[me.lv-1];
   const item=(key,e,name,desc,cost,dis,big)=>`<div class="it${big?' big':''}"><span class="e">${e}</span><div class="d"><b>${esc(name)}</b><small>${desc}</small></div><button class="btn primary" data-sact="buy" data-item="${key}" ${dis?'disabled':''}>${cost} 🪙</button></div>`;
   $('#s-sheet').innerHTML=`<div class="sh-h"><span class="bag">🎒</span><b>Supplies</b><span class="sp"></span><span class="coins small"><span class="em">🪙</span><b>${me.coins}</b></span><button class="btn" data-sact="shop-close" aria-label="Close">✕</button></div>
@@ -1737,7 +1743,11 @@ function sShop(me,c){
   ${item('heal',c.heal[1],c.heal[0],`Supplies: +4 ❤️ instead of +1 · ${me.inv.heal}/${INV_CAP}`,GEAR_COST,me.coins<GEAR_COST||me.inv.heal>=INV_CAP)}</div>
   <p class="hint">Answer questions to earn more 🪙!</p>`;
 }
-function sOpenShop(open){ST.shopOpen=open;$('#s-sheet').hidden=!open;$('#s-sheet-bg').hidden=!open;const me=ST.s&&ST.s.players[ST.me];if(open&&me)sShop(me,classOf(me));}
+function sLook(){const sh=$('#s-sheet');sh.innerHTML=`<div class="sh-h"><span class="bag">✏️</span><b>My look</b><span class="sp"></span><button class="btn" data-sact="look-cancel" aria-label="Close">✕</button></div>
+  <div class="look-sheet"><div class="acts"><button class="btn" data-sact="look-shuffle">🎲 Surprise me</button><button class="btn primary" data-sact="look-save">✓ Save my look</button></div>
+  <div class="look"><canvas id="l-look" width="248" height="248"></canvas><div class="look-opts">${lookOptsHTML(ST.av,'data-sact="av"')}</div></div></div>`;const c=$('#l-look');drawAvatar(c.getContext('2d'),ST.av,c.width);}
+function sOpenLook(open){if(open){ST.avBak=JSON.parse(JSON.stringify(ST.av));ST.shopOpen=false;}ST.lookOpen=open;$('#s-sheet').hidden=!open;$('#s-sheet-bg').hidden=!open;if(open)sLook();}
+function sOpenShop(open){if(open)ST.lookOpen=false;ST.shopOpen=open;$('#s-sheet').hidden=!open;$('#s-sheet-bg').hidden=!open;const me=ST.s&&ST.s.players[ST.me];if(open&&me)sShop(me,classOf(me));}
 function sShake(){const d=$('#h-dio');if(!d||RM||!d.animate)return;d.animate([{transform:'none'},{transform:'translateX(-6%) rotate(-5deg)'},{transform:'translateX(6%) rotate(5deg)'},{transform:'translateX(-4%) rotate(-3deg)'},{transform:'none'}],{duration:500});const f=document.createElement('div');f.className='hitflash';d.appendChild(f);f.animate([{opacity:0},{opacity:.7},{opacity:0}],{duration:450}).finished.then(()=>f.remove());}
 function sFloat(txt,col){const d=$('#h-dio');if(!d||RM||!d.animate)return;const e=document.createElement('div');e.className='sfloat';e.textContent=txt;e.style.color=col;d.appendChild(e);e.animate([{transform:'translate(-50%,0) scale(.6)',opacity:0},{transform:'translate(-50%,-30px) scale(1.15)',opacity:1,offset:.25},{transform:'translate(-50%,-80px) scale(1)',opacity:0}],{duration:1600,easing:'ease-out'}).finished.then(()=>e.remove());}
 function sGear(emoji,label,toSel){
@@ -1765,7 +1775,10 @@ async function sTransform(oldE,newE,name){
 function sPlayClick(e){
   if(ST.view!=='play')return;const b=e.target.closest('[data-sact]');if(!b||b.disabled)return;const a=b.dataset.sact;
   if(a==='shop'){sOpenShop(true);return;}
-  if(a==='shop-close'){sOpenShop(false);return;}
+  if(a==='shop-close'){if(ST.lookOpen){ST.av=ST.avBak||ST.av;store('habitat-av',ST.av);sOpenLook(false);}else sOpenShop(false);return;}
+  if(a==='look'){sOpenLook(true);return;}if(a==='look-cancel'){ST.av=ST.avBak||ST.av;store('habitat-av',ST.av);sOpenLook(false);return;}
+  if(a==='av'){avClick(b);sLook();return;}if(a==='look-shuffle'){ST.av=randomAv();store('habitat-av',ST.av);sLook();return;}
+  if(a==='look-save'){sOpenLook(false);sSend({t:'look',av:ST.av});toast('Looking good!');return;}
   if(a==='buy'){if(b.dataset.item==='upgrade')sOpenShop(false);sSend({t:'buy',item:b.dataset.item});}
   if(a==='power')sSend({t:'power'});
   if(a==='act'){b.disabled=true;sSend({t:'act',kind:b.dataset.k,target:b.dataset.t});}

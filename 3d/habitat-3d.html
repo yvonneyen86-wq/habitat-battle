@@ -147,9 +147,9 @@ function banner(t,c){const b=document.createElement('div');b.className='banner';
 const EYE_W=GLOSS(0xffffff),EYE_B=GLOSS(0x1e1a18);
 const SKINS=[0xffdcc0,0xf5c9a3,0xd9a27a,0xa8724d];
 /* student look picked on the join screen ({sk,hs,hc,sh,pt,n}); index.html keeps the same tables as CSS colours — change both together */
-const AV={SKIN:SKINS,HAIR:[0x2b1a12,0x5c4030,0xf76707,0xe9c46a,0x845ef7,0x1c7ed6],HS:['boy','part','mop','bob','bun','tails'],SHIRT:[0xe03131,0xf08c00,0xffd43b,0x40c057,0x1c7ed6,0x845ef7,0xf06595,0xf8f9fa],PAT:['plain','stripes','dots','star','num']};
+const AV={SKIN:SKINS,HAIR:[0x2b1a12,0x5c4030,0xf76707,0xe9c46a,0x845ef7,0x1c7ed6],HS:['boy','part','mop','bob','bun','tails','long','braids','buzz'],SHIRT:[0xe03131,0xf08c00,0xffd43b,0x40c057,0x1c7ed6,0x845ef7,0xf06595,0xf8f9fa],PAT:['plain','stripes','dots','star','num']};
 const LEGS=[0x3b5bdb,0x343a40,0xf8f9fa,0x8d6e4a,0x2c3e75,0xe8590c],SHOES=[0xe03131,0xf8f9fa,0x3b2a22,0x1c7ed6];
-function avOpts(av){if(!av)return{};const i=(v,n)=>Number.isInteger(v)&&v>=0&&v<n?v:0;const sh=i(av.sh,8);return{skin:AV.SKIN[i(av.sk,4)],hair:AV.HAIR[i(av.hc,6)],style:AV.HS[i(av.hs,6)],torso:AV.SHIRT[sh],accent:sh===7?0x1c7ed6:0xffffff,pattern:AV.PAT[i(av.pt,5)],num:String(av.n||7),legs:LEGS[(i(av.hs,6)+sh)%LEGS.length],shoes:SHOES[(i(av.hc,6)+i(av.sk,4))%SHOES.length]};}
+function avOpts(av){if(!av)return{};const i=(v,n)=>Number.isInteger(v)&&v>=0&&v<n?v:0;const sh=i(av.sh,8);return{skin:AV.SKIN[i(av.sk,4)],hair:AV.HAIR[i(av.hc,6)],style:AV.HS[i(av.hs,9)],torso:AV.SHIRT[sh],accent:sh===7?0x1c7ed6:0xffffff,pattern:AV.PAT[i(av.pt,5)],num:String(av.n||7),legs:LEGS[(i(av.hs,9)+sh)%LEGS.length],shoes:SHOES[(i(av.hc,6)+i(av.sk,4))%SHOES.length]};}
 const hex6=c=>'#'+(c>>>0).toString(16).padStart(6,'0');
 const rgba=(c,a)=>`rgba(${c>>16&255},${c>>8&255},${c&255},${a})`;
 /* ---- drawn faces: a thin sphere patch on the front of the head carries a canvas face, so expressions can switch instantly ---- */
@@ -216,10 +216,14 @@ function person(o={}){const g=new THREE.Group();const skin=o.skin??SKINS[0],legC
  if(o.glasses){const gm=GLOSS(o.glasses);for(const s of[-1,1]){const rg=mesh(new THREE.TorusGeometry(.17,.025,8,24),gm,s*.24,.05,.66,false);rg.userData.noInk=true;head.add(rg);}head.add(mesh(BOX(.14,.03,.03),gm,0,.08,.7,false));}
  g.userData.top=2.7;return g;}
 function hairdo(h,c,style){const m=GLOSS(c);
+ if(style==='buzz'){h.add(mesh(new THREE.SphereGeometry(.675,28,14,0,6.283,0,1.0),m,0,.02,-.02));return;}
  h.add(mesh(new THREE.SphereGeometry(.71,28,14,0,6.283,0,1.2),m,0,.03,-.03));
  h.add(mesh(new THREE.SphereGeometry(.7,28,14,Math.PI,Math.PI,0,2.05),m,0,0,-.04));
+ if(style==='long'){for(const s of[-1,1]){const p=mesh(SPH(.3,12,10),m,s*.52,-.45,-.15);p.scale.set(.6,1.9,1);h.add(p);}const b=mesh(SPH(.5,14,10),m,0,-.55,-.4);b.scale.set(1.25,1.5,.6);h.add(b);}
+ if(style==='braids'){for(const s of[-1,1]){for(let i=0;i<5;i++){h.add(mesh(SPH(.15,10,8),m,s*(.6+(i%2?.04:0)),.05-i*.24,-.12-i*.02));}h.add(mesh(SPH(.08,8,6),GLOSS(0xffd43b),s*.6,-1.05,-.2));}}
  const bang=(x,y,z,sx,rz)=>{const b=mesh(SPH(.22,10,8),m,x,y,z);b.scale.set(sx,.55,.6);b.rotation.z=rz;h.add(b);};
  if(style==='part'){bang(.16,.44,.5,1.9,-.25);bang(-.36,.36,.48,.9,.4);}
+ else if(style==='braids'){const f=mesh(SPH(.5,16,10),m,0,.4,.35);f.scale.set(1.3,.35,.7);h.add(f);}
  else{bang(-.3,.42,.48,1.1,.35);bang(0,.47,.52,1.2,0);bang(.3,.42,.48,1.1,-.35);}
  if(style==='mop'){for(let i=0;i<9;i++){const an=i/9*6.283,r=i%2?.52:.3;h.add(mesh(SPH(.24,10,8),m,Math.cos(an)*r,.4+(i%2?0:.18),Math.sin(an)*r*.9));}}
  if(style==='bun'){h.add(mesh(SPH(.27,12,10),m,0,.66,-.22));}

@@ -45,7 +45,7 @@
 - `?fast` 網址參數只給截圖測試用（軟體 GL 很慢時讓每幀涵蓋更多時間）。
 
 ## 學生自選外型 `av`（2026-10）
-- 正式遊戲 `index.html` 的加入畫面多了「Design your look」：膚色 4、髮型 6（Short / Side / Curly / Bob / Top knot / Pigtails）、髮色 6、衣服 8 色、圖案 5 種（Plain / Stripes / Dots / Star / Number 1–9），有即時 2D 預覽與 🎲 隨機。資料格式 `{sk,hs,hc,sh,pt,n}`，隨 `join` 送給老師端，存在 `S.players[pid].av`（也存學生平板 `localStorage` `habitat-av`，下次自動帶入）。沒選的（舊存檔、老師手動加的）用名字雜湊 `avFromName()` 給一個固定外型。
+- 正式遊戲 `index.html` 的加入畫面多了「Design your look」：膚色 4、髮型 9（Short / Side / Curly / Bob / Top knot / Pigtails / Long / Braids / Buzz）、髮色 6、衣服 8 色、圖案 5 種（Plain / Stripes / Dots / Star / Number 1–9），有即時 2D 預覽與 🎲 隨機。資料格式 `{sk,hs,hc,sh,pt,n}`，隨 `join` 送給老師端，存在 `S.players[pid].av`（也存學生平板 `localStorage` `habitat-av`，下次自動帶入）。加入後點平板左上角自己的頭像（✏️）可以隨時改，送 `{t:'look',av}` 給老師端。沒選的（舊存檔、老師手動加的）用名字雜湊 `avFromName()` 給一個固定外型。
 - 3D 這邊 `buildChar(id,av)` 會把 `av` 交給人物型 builder：`kid`（新竹）、`astro / rocket / alien / robot`（太空）。`avOpts(av)` 把索引換成顏色與髮型；**`AV` 表在 `chars.js` 與 `index.html` 各一份，改顏色要兩邊一起改**。叢林動物與恐龍不受 `av` 影響。
 - 太空組靠太空衣顏色（= 衣服色）、胸前圖案／號碼、頭盔裡的髮型髮色來分辨，一隊 6–8 個太空人也不會撞臉。
 
