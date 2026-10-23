@@ -22,6 +22,55 @@ P | 🎆🏮🥟🧧 | What festival is this? Tell the story.
 C | Is a festival more fun than a sports game? | A festival | A sports game
 Z | Name three sports with a ball.
 S | Describe your favorite festival in two sentences.
+# words
+festival | fes·ti·val | fes/ti/val | 🎉
+wedding | wed·ding | wed/ding | 💒
+fair | fair | f/air | 🎡
+team | team | t/eam | 👥
+winner | win·ner | win/ner | 🏆
+race | race | r/ace | 🏃
+score | score | sc/ore | 🔢
+player | play·er | play/er | ⚽
+athlete | ath·lete | ath/lete | 🏅
+band | band | b/and | 🎺
+laugh | laugh | l/augh | 😂
+answer | an·swer | an/swer | ✅
+paint | paint | p/aint | 🎨
+place | place | pl/ace | 📍
+# reading
+> Having Fun
+> It's important to have fun if you want a happy and healthy life. Here are some ways people enjoy life all over the world.
+> Festivals: Some people think the Chinese New Year is the most important festival in China. Families clean their homes and then enjoy delicious food. Children often get money in red paper envelopes.
+> In Korea and Japan, Children's Day is on May 5th. Children and their parents spend the day together and go to zoos and parks. Some families fly kites.
+> In India, families enjoy Diwali, the festival of lights. Families light candles and decorate their homes with flowers. People give gifts, and there is dancing and music.
+> Sports: These men are playing an exciting game called soccer. Every four years, people watch their favorite players at the World Cup soccer championships. The team that wins the championship game is the best team in the world!
+> Another popular game is volleyball. People play volleyball in 211 countries. You can play volleyball inside or on the beach. The first team to reach a score of 25 is the winner.
+> Many people watch the summer and winter Olympic Games. Almost every country in the world sends its best athletes to race and play at these games. Some athletes swim, and others run or jump to see which athletes are the best.
+> Family Celebrations: When a girl turns 15 years old in Mexico, her family and friends often celebrate with food and dancing. This also happens in many parts of Central and South America.
+> A wedding is always a big celebration! In Egypt, dancers and musicians gather around the married couple and dance for up to one hour! Then people eat a special dinner.
+> People celebrate family reunions all over the world. Aunts, uncles, cousins, and grandparents come together to eat and have fun.
+> Community Events: Folk dance is popular around the world. In Turkey, folk dancers wear colorful costumes and dance at weddings and festivals. People like to watch folk dances, but they also like to dance themselves!
+> A fair is a great place for people to come together and have fun. Many fairs have farm animals, delicious food, fun games, and bands that play music.
+RC | What do children often get at Chinese New Year? | money in red envelopes | new kites | farm animals
+RC | What score does a volleyball team need to win? | 25 | 15 | 211
+RC | Where do folk dancers wear colorful costumes? | in Turkey | in Egypt | in Mexico
+RT | When is Children's Day in Korea and Japan? | Children's Day is on May 5th.
+RT | What do families do at Diwali? | Families light candles and decorate their homes with flowers.
+RT | Who comes together at a family reunion? | Aunts, uncles, cousins, and grandparents come together to eat and have fun.
+RS | Why is it important to have fun? Tell us what the reading says.
+RS | What happens at a wedding in Egypt? Tell us one thing.
+# grammar
+G | That race was really tiring.
+G | I'm so tired after the race.
+G | The people are excited.
+G | The game is exciting.
+G | Are you interested in soccer?
+G | Animals are very interesting.
+G | Jay thinks races are boring.
+G | We are excited to go to the festival.
+# speak-write
+SP | A: Look at the two weddings. What is the same? | B: Everyone is {dancing} in both pictures. | A: What is different? | B: The colors of the dresses are different. | dancing / eating / smiling / singing / happy / outside
+SW | {Last Saturday}, I went to {a fair} with my family. We {ate delicious food and played fun games}. It was {exciting}! | Write three sentences about a fun event you went to, using a time word and past tense verbs.
 ## U2 | The Red Rubber Ball | How do people have fun?
 # learn
 What does "bounce" mean? | to hit the ground and come back up again
@@ -45,6 +94,49 @@ P | 🔴⚽🏔️🌊 | Where does the red rubber ball fly? Tell the story.
 C | Is a ball game better than a board game? | A ball game | A board game
 Z | Name three things the ball flew over.
 S | Explain the rules of a game you play. Use two sentences.
+# words
+kick | kick | k/ick | 🦵
+tag | tag | t/ag | 🏃
+skip | skip | sk/ip | 🤸
+bounce | bounce | b/ounce | 🏀
+drop | drop | dr/op | ⬇️
+plain | plain | pl/ain | 🌾
+lake | lake | l/ake | 🏞️
+canyon | can·yon | can/yon | 🏜️
+cliff | cliff | cl/iff | 🧗
+stream | stream | str/eam | 💧
+toss | toss | t/oss | 🤾
+balance | bal·ance | bal/ance | ⚖️
+# reading
+> The Red Rubber Ball
+> High up on Antuco Mountain, Carlos kicks his red rubber ball so hard that it flies high in the sky like a shooting star.
+> Far across the world, Ashanti is playing Da Ga with her friends. It's Ashanti's turn to be Da Ga, the boa constrictor, so she goes into the center of the circle. Her friends dance and skip around her while she acts like a snake and tries to tag the next Da Ga. It's fun to catch them. Ashanti is tagging a friend when something red drops out of the sky into the circle. Where did this come from? There is no ball in Da Ga!
+> Ashanti laughs. She bounces the ball as hard as she can. It flies high and fast across the sky until she can't see it anymore. It flies over a forest, white cliffs, and a big blue ocean.
+> Far away, Hyo and his brother are playing Omok. Hyo plays with little dark pebbles, and his brother plays with little white ones. Hyo tries to line up five of his stones to win. Winning isn't easy. Hyo is finding the perfect place to put his stone when something red rolls into the middle of the game. What's this? You don't need a ball to play Omok!
+> Hyo smiles. Then he throws the ball as hard as he can. It flies far into the sky, over plains and seas.
+> The Fernandez family is playing La Thunkuna. Papa draws boxes in the sand. Mama writes names in the boxes, one for each day of the week. Matias tosses a stone, and Maria jumps over it. She lands in the next box without stepping on the line. Maria likes landing on one foot, and she puts her arms out to keep her balance. Something round bounces on her foot. Hey! What's this? There is no ball in this game!
+> Everyone laughs. Maria tosses the ball in the air, and Matias kicks it up into the sky. The whole family watches as the ball goes up and up until they can't see it anymore.
+> High in the sky, the ball flies over lakes, canyons, and streams. Carlos holds out his arms and catches his red rubber ball. He is the only boy playing on Antuco Mountain today, but he is not sad. Carlos has friends all over the world.
+RC | In Da Ga, what does the player in the middle act like? | a snake | a bird | a ball
+RC | How many stones does Hyo need to line up to win Omok? | five | three | ten
+RC | What does Papa draw in the sand for La Thunkuna? | boxes | circles | stars
+RT | Where is Carlos playing with his ball? | Carlos is playing on Antuco Mountain.
+RT | What does Maria do to keep her balance? | She puts her arms out to keep her balance.
+RT | What does the ball fly over at the end of the story? | The ball flies over lakes, canyons, and streams.
+RS | What is the main idea of the story? Tell us in one sentence.
+RS | Why isn't Carlos sad at the end of the story?
+# grammar
+G | Running and jumping are lots of fun.
+G | Do you like to bounce a ball?
+G | Bouncing a ball is lots of fun.
+G | Kicking it high in the sky is fun.
+G | Ashanti's friends like skipping.
+G | Maria likes landing on one foot.
+G | Cleaning is hard work.
+G | I really like cooking.
+# speak-write
+SP | A: I'm worried about {tomorrow's game}. | B: Don't worry. You can do it! | A: I'm afraid I will make a mistake. | B: Don't give up. Just do your best! | tomorrow's game / the race / the test / the show / swimming in the lake / my piano lesson
+SW | {What} is your favorite game? {Where} do you play it? {Why} do you like it? | Write three questions about games, each starting with who, what, when, where, or why.
 ## U3 | Letters to a Friend | Why do people move to new places?
 # learn
 What does "neighbor" mean? | a person who lives next to you or near your house
@@ -68,6 +160,54 @@ P | ✈️🏠❄️💌 | What happened to Sati? Tell the story.
 C | Is it better to live in a quiet town or a big city? | A quiet town | A big city
 Z | Name three things Sati can do at summer camp.
 S | Tell us about something you couldn't do before but can do now.
+# words
+packing | pack·ing | pack/ing | 📦
+moving | mov·ing | mov/ing | 🚚
+shopping | shop·ping | shop/ping | 🛍️
+dancing | danc·ing | danc/ing | 💃
+sledding | sled·ding | sled/ding | 🛷
+fishing | fish·ing | fish/ing | 🎣
+skating | skat·ing | skat/ing | ⛸️
+neighbors | neigh·bors | neigh/bors | 🏘️
+snowballs | snow·balls | snow/balls | ⛄
+unpacked | un·packed | un/packed | 📭
+untied | un·tied | un/tied | 👟
+monsoon | mon·soon | mon/soon | 🌧️
+surgeon | sur·geon | sur/geon | 🩺
+classmate | class·mate | class/mate | 🎒
+# reading
+> Letters to a Friend
+> July 25th. Dear Nisha, Moving is hard work! Mom and I are still unpacking boxes. She and I were packing them just eight weeks ago! Your picture is on my desk. I miss you!
+> Our new house is in a town called St. Cloud, Minnesota. It's very quiet compared to Mumbai. The weather in July is warm and sunny, and there are no rainy monsoons. Sunil and I can play together, but I don't have any friends here. Meeting neighbors isn't easy for me. School starts in September.
+> Dad started his new job as a surgeon at the hospital here. He's happy working here. I'm not happy. I just feel lonely. Please write soon! Your best friend, Sati
+> October 15th. Dear Nisha, I really miss you! The weather is getting much colder. The leaves are falling from the trees. Sunil and I rake leaves every Saturday in our yard. It's hard work.
+> I go to Maple Hill Elementary School. I'm the only student from India in my class. Today a boy said that my lunch smelled funny. It was my Mom's lentil curry, which is my favorite. I couldn't say anything because I was so angry. I DON'T LIKE IT HERE! I want to go back to Mumbai. Your best friend, Sati
+> January 12th. Dear Nisha, It snowed 30 centimeters last night! Today, Sunil and I threw snowballs and went sledding with Emily. Emily is my neighbor and my classmate. We went ice skating last week on a lake. Someone made a hole in the ice and was fishing! It was so cold!
+> Tonight Emily and I watched one of my favorite Bollywood movies. Mom made curry. Emily liked it! Your best friend, Sati
+> April 5th. Dear Nisha, Happy Birthday! I miss you so much! Guess what? I'm taking tap dance lessons with Emily. I'm happy to be dancing again.
+> On Saturday, we went to Minneapolis. Emily came with us. Emily and I went shopping for clothes. We ate at a fun restaurant there. We had so much fun! Emily, Ashli, and Rachel are coming over on Sunday to work on our science project. I'm making some good friends. Your best friend, Sati
+> June 20th. Dear Nisha, School is over, but I'm getting ready to go to summer camp with Emily. We can go fishing, swimming, hiking, and canoeing there. I'm so excited!
+> The weather is warm and sunny again. When can you visit me in Minnesota? There are so many fun things to do here. My new friends want to meet you, too! Please come! Your best friend, Sati
+RC | What is Sati's dad's new job? | a surgeon | a teacher | a dancer
+RC | Who is Emily? | Sati's neighbor and classmate | Sati's sister | Sati's friend in India
+RC | What did Sati and Emily do in Minneapolis? | went shopping | went sledding | went fishing
+RT | Where did Sati live before she moved? | Sati lived in Mumbai, India.
+RT | What do Sati and Sunil do every Saturday in October? | They rake leaves in their yard.
+RT | What lessons is Sati taking with Emily? | Sati is taking tap dance lessons with Emily.
+RS | How did Sati's feelings change through the year?
+RS | Why was Sati angry at school in October?
+# grammar
+G | When I was younger, I couldn't ride a bike.
+G | Now I can ride a bike.
+G | Sati couldn't ice skate before.
+G | Now Sati can ice skate.
+G | Sati could play with Nisha in India.
+G | Sati can't play with Nisha now.
+G | Could you catch a ball when you were five?
+G | I could read short words when I was younger.
+# speak-write
+SP | A: I'm sorry to bother you, but can you help me? | B: Sure. I can help you. What do you need? | A: Can you help me {pack this box}? | B: Yes, I can. Let's do it together! | pack this box / find my book / rake the leaves / carry these bags / unpack the boxes / find the post office
+SW | In {India}, the summers are {rainy}, but in {Minnesota} the summers are {sunny}. | Write two sentences that use but to show how two places or people are different.
 ## U4 | Moving from Here to There | Why do people move to new places?
 # learn
 What does "rural area" mean? | a place in the country with farms and few people
@@ -91,6 +231,50 @@ PT | 📦🚚🏙️🏡 | Why is this family moving? Type one sentence.
 C | Is it better to move for a job or stay near family? | Move for a job | Stay near family
 Z | Name three places in a community.
 S | Give two reasons why people move to new places.
+# words
+country | coun·try | coun/try | 🌏
+suburb | sub·urb | sub/urb | 🏘️
+university | u·ni·ver·si·ty | u/ni/ver/si/ty | 🎓
+hospital | hos·pi·tal | hos/pi/tal | 🏥
+factory | fac·to·ry | fac/to/ry | 🏭
+clinic | clin·ic | clin/ic | 🩺
+rural | ru·ral | ru/ral | 🌾
+urban | ur·ban | ur/ban | 🏙️
+belongings | be·long·ings | be/long/ings | 🧳
+immigrant | im·mi·grant | im/mi/grant | ✈️
+experiences | ex·pe·ri·enc·es | ex/pe/ri/enc/es | 🎢
+services | ser·vic·es | ser/vic/es | 🛎️
+weather | weath·er | weath/er | ☀️
+abroad | a·broad | a/broad | 🌍
+# reading
+> Moving from Here... to There
+> Do you know someone who moved to your city or town? Maybe they came from a rural area, or from another city. Perhaps they came from another country. Every day, people pack their belongings and move to new places. Why do people move? Let's look at three important reasons.
+> Jobs: People move to find jobs and a better life. Sometimes, people move from rural areas to urban areas to get a job. In 1990, about a quarter of the people in China lived in cities. Today, over half of the Chinese people live in cities. People move abroad to find a better way of life, too. For example, immigrants from Europe moved to Brazil in the 1950s to work in factories.
+> "Last year my father moved to the city of Chengdu to find work. My mother and I stayed in our small town. It felt lonely without my father. Now we all live together in an apartment in Chengdu. I'm in a good school, and I really like my new friends."
+> Services: When another city has good services, people want to move there. Sometimes people move from a city to areas called suburbs. Suburbs are near the outside of a city. Suburbs have more space for schools, hospitals, clinics, shopping malls, and zoos. Families with children like to live in suburbs.
+> "When I was three, my parents sold their flat in central London and bought a house in the suburbs. My dad has to drive further to work now, but I can walk to school. There's lots of space to play football with my friends here."
+> New Experiences: Finally, people move when they want a change in their lives, or to find new experiences. Older people often move to places with better weather. If students want to learn about other places, they sometimes go to universities in other countries. As you can see, people move for many reasons. Maybe someday you, or someone you know, will move, too!
+> "My grandparents moved to Portugal when I was five. They visit us here in Stockholm in the summer, but in the winter they stay in Portugal. They love the warm weather there."
+RC | Why did immigrants from Europe move to Brazil in the 1950s? | to work in factories | to study at universities | to find better weather
+RC | Where are suburbs? | near the outside of a city | in the center of a city | far away from any city
+RC | Why do older people often move? | for better weather | to find jobs | to go to school
+RT | Why do people move from rural areas to urban areas? | They move to urban areas to get a job.
+RT | Why do families with children like to live in suburbs? | Suburbs have more space for schools, hospitals, and shopping malls.
+RT | Where did the grandparents move to? | The grandparents moved to Portugal.
+RS | What are the three main reasons people move? Tell us one.
+RS | Why do students sometimes go to universities in other countries?
+# grammar
+G | If I'm sleepy, I run to the park.
+G | When you run, you feel more awake.
+G | When another city has good services, people want to move there.
+G | If ice gets warm, it melts.
+G | If you get sick, you go to the clinic.
+G | When I'm hungry, I have a snack.
+G | When I'm thirsty, I drink a glass of milk.
+G | What do you do when you feel sleepy?
+# speak-write
+SP | A: What kind of community do you like the most? | B: I like {suburban} areas because there is lots of space to play. | A: Not me. I like urban areas because there are many shopping malls. | B: Me too. I also like the big hospitals and universities. | suburban / urban / rural / city / country / quiet
+SW | I want to move to {Australia} because {the weather there is often sunny}. I also like it because {there are beautiful beaches}. | Write two complete sentences with because about a place you want to move to.
 ## U5 | Three Poets | Why do people write poems?
 # learn
 What does "insect" mean? | a small animal with six legs, such as a bee or a beetle
@@ -114,6 +298,52 @@ P | 🍇🏃🦘😲 | What is the dangerous raisin doing? Tell the story.
 C | Are funny poems better than poems about nature? | Funny poems | Nature poems
 Z | Name three insects from the poem "But I Wonder."
 S | Say what you were doing last night at eight o'clock. Use two sentences.
+# words
+ladybug | la·dy·bug | la/dy/bug | 🐞
+cricket | crick·et | crick/et | 🦗
+grasshopper | grass·hop·per | grass/hop/per | 🦗
+beetle | bee·tle | bee/tle | 🪲
+katydid | ka·ty·did | ka/ty/did | 🌿
+bee | bee | b/ee | 🐝
+butterfly | but·ter·fly | but/ter/fly | 🦋
+thicket | thick·et | thick/et | 🌳
+kangaroo | kan·ga·roo | kan/ga/roo | 🦘
+raisin | rai·sin | rai/sin | 🍇
+handle | han·dle | han/dle | 🚪
+gentle | gen·tle | gen/tle | 🤗
+bubble | bub·ble | bub/ble | 🫧
+single | sin·gle | sin/gle | 1️⃣
+# reading
+> Three Poets
+> People write poems to share what they see. They want us to feel the joy or sadness that they feel. The following three poets come from two countries, the United States and the United Kingdom. However, the language they use is the same: English!
+> Michael Rosen is a British children's book writer and poet. He enjoys writing poetry and reading it aloud with his children. One day, Michael Rosen and his daughter are eating at a table. A raisin "escapes." It seems to run away from its jar!
+> A Dangerous Raisin (but my daughter Elsie is helpful) by Michael Rosen: A raisin has escaped from the raisin jar. / It's whooshing across the table like a shooting star. / Now, it's leaping in the air like a kangaroo. / "Look out Dad, it's coming for YOU!"
+> Michael Rosen writes very creative poems. His poem "Colour" encourages children to be creative, too. In the United States, the word is spelled color. In the United Kingdom, the word is spelled colour.
+> Colour by Michael Rosen: Take a brush: / the sky is green / the grass is blue / you are purple / the house is silver / the sun is black / the river is gold / the world has changed. / Did you do that?
+> Aileen Fisher was an award-winning American children's poet, book writer, and playwright. She loved nature and liked to go hiking and mountain climbing. Do you like grasshoppers and beetles? Aileen Fisher loved to write about insects.
+> But I Wonder... by Aileen Fisher: The crickets in the thickets, / and the katydids in trees, / and ants on plants, and butterflies, / and ladybugs and bees / don't smell with little noses / but with feelers, if you please. / They get along quite nicely, / but I wonder how they sneeze.
+> Robert Louis Stevenson was a famous Scottish poet and book writer who lived in the 1800s. He wrote many books, including the famous Treasure Island. Do you notice how winter days are short and summer days are long? Robert Louis Stevenson noticed it, too, and wrote about it in his poem "Bed in Summer."
+> Bed in Summer by Robert Louis Stevenson: In winter I get up at night / And dress by yellow candle-light, / In summer, quite the other way, / I have to go to bed by day. / I have to go to bed and see / The birds still hopping on the tree, / Or hear the grown-up people's feet / Still going past me in the street. / And does it not seem hard to you, / When all the sky is clear and blue, / And I should like so much to play, / To have to go to bed by day?
+RC | In "A Dangerous Raisin," what is the raisin leaping like? | a kangaroo | a shooting star | a butterfly
+RC | In "But I Wonder...," how do insects smell? | with feelers | with little noses | with their wings
+RC | Which famous book did Robert Louis Stevenson write? | Treasure Island | Colour | A Dangerous Raisin
+RT | Which two countries do the three poets come from? | They come from the United States and the United Kingdom.
+RT | What did Aileen Fisher love to write about? | She loved to write about insects.
+RT | In "Bed in Summer," when does the boy have to go to bed in summer? | He has to go to bed by day.
+RS | Why do people write poems? Tell us one reason from the text.
+RS | Why does the boy in "Bed in Summer" think summer bedtime is hard?
+# grammar
+G | The birds were singing this morning.
+G | My dad was frying eggs in the kitchen.
+G | The bus driver was honking his horn.
+G | What were they doing last night?
+G | They were watching television.
+G | What was Sarah doing yesterday afternoon?
+G | She was playing in the park.
+G | I was eating breakfast with my mom.
+# speak-write
+SP | A: Look. There are three {butterflies} in this picture. | B: Yes, I see. In this picture, there are only two. | A: What else is different? | B: The ladybug is red here, but it's green there. | butterflies / beetles / bees / crickets / grasshoppers / ladybugs
+SW | I see a {big green} {grasshopper}. It is {jumping in the thicket}. I wonder {how it sings}. | Write three short lines about an insect, with the size word before the color word.
 ## U6 | You Can Be a Poet | Why do people write poems?
 # learn
 What does "syllable" mean? | one part of a word that has one vowel sound
@@ -137,6 +367,53 @@ PT | ❄️🏔️🌨️🐦 | Write one line of a poem about this picture.
 C | Is a haiku easier to write than an acrostic poem? | A haiku | An acrostic poem
 Z | Name three kinds of poems from the reading.
 S | Describe the sky right now like a poet. Use two sentences.
+# words
+sentence | sen·tence | sen/tence | 📝
+verb | verb | v/erb | 🏃
+syllable | syl·la·ble | syl/la/ble | 🔤
+letter | let·ter | let/ter | 🔡
+noun | noun | n/oun | 🍎
+adjective | ad·jec·tive | ad/jec/tive | 🎨
+robin | rob·in | rob/in | 🐦
+angelfish | an·gel·fish | an/gel/fish | 🐠
+snowflakes | snow·flakes | snow/flakes | ❄️
+television | tel·e·vi·sion | tel/e/vi/sion | 📺
+thermometer | ther·mom·e·ter | ther/mom/e/ter | 🌡️
+calendar | cal·en·dar | cal/en/dar | 📅
+automobile | au·to·mo·bile | au/to/mo/bile | 🚗
+understand | un·der·stand | un/der/stand | 💡
+# reading
+> You Can Be a Poet
+> Poets write about the world in a special way. They want to share the beauty and joy of life. You can be a poet, too. Just remember these three points:
+> 1. A good poet observes things carefully. When you were going to school this morning, what did you notice? Many poets write about the things they see around them. 2. A good poet has a good imagination. When you imagine, you create something in your mind. Then, when you write about it, others can enjoy your imagination, too! 3. A good poet knows how to describe things. How does something look, smell, or feel? Does it make a sound? Writing about these things can make a poem interesting.
+> There are many different kinds of poems. Here are three examples that you can try right away. They are fun to write and fun to read. Try them, and you can become a poet, too.
+> Acrostic: Acrostic is pronounced ah-cross-stick. An acrostic poem uses all the letters of the topic word to describe the topic. How to write an acrostic poem: Find one topic word that is interesting to you. Write the word vertically (up and down). Use each letter as the beginning of a new word. The new words should tell us something about the topic word. They don't have to be rhyming words.
+> Here's an example of an acrostic poem using the topic word "Hawaii": Hot / Aloha / Waves / Angelfish / Interesting / Islands
+> Cinquain: Cinquain is pronounced sing-cane. A cinquain poem has five lines. How to write a cinquain poem: Line 1: One noun for the topic word. Line 2: Two adjectives that describe the topic word. Line 3: Three action verbs that end in -ing. Line 4: A sentence about the topic word. Line 5: One new noun that is similar to the topic word.
+> Snow: Snow / Cold, silent / Falling, dancing, glittering / Tiny snowflakes kiss my nose. / Crystals
+> Haiku: Haiku is pronounced hi-ku. Haiku comes from Japan. Haiku poems use an exact number of syllables in each line. Haiku poems are often about nature and one of the four seasons. How to write a haiku poem: Line 1: Use five syllables. Line 2: Use seven syllables. Line 3: Use five syllables.
+> Summer: Summer sings hello / A robin hops through the grass / Looking for a worm
+> Remember to choose a topic that interests you, and carefully choose your words. Have fun sharing your poems!
+RC | How many lines does a cinquain poem have? | five | three | seven
+RC | Where does haiku come from? | Japan | Hawaii | the United States
+RC | In an acrostic poem, how do you write the topic word? | vertically | in a circle | backwards
+RT | What are haiku poems often about? | Haiku poems are often about nature and the seasons.
+RT | What does a good poet do with the things around them? | A good poet observes things carefully.
+RT | What goes on line 3 of a cinquain poem? | Line 3 has three action verbs that end in -ing.
+RS | What are the three points a good poet remembers? Tell us one.
+RS | How is a haiku different from an acrostic poem?
+# grammar
+G | I was dreaming of the ocean when the rain came down.
+G | I was walking to the circus when I met a funny clown.
+G | I was searching for my sock when I saw my shoe.
+G | I was running in the park when I saw a beautiful blue bird.
+G | Jen was going to the movies when her phone rang.
+G | Mike was reading a book when he fell asleep.
+G | What were you doing when the fire engine went past?
+G | I was walking in the park when I saw a snake.
+# speak-write
+SP | A: Which poem do you like best? | B: I like the {haiku} best. | A: What do you think of the acrostic poem? | B: I think it's fun and easy to write. | haiku / cinquain / acrostic / song / story / rhyme
+SW | The {snow} is {dancing} in the air. The {stars} are {winking} at me. | Write two sentences with action verbs that make nature come to life.
 ## U7 | Time and the Earth | How do we measure time?
 # learn
 What does "orbit" mean? | to travel around something, like the Earth around the sun
@@ -160,6 +437,49 @@ P | 🌍☀️🕛🌙 | Explain why it is day here and night there.
 C | Is it better to measure time with the sun or with a clock? | The sun | A clock
 Z | Name three words for measuring time.
 S | Say what time it is now and what time it will be in ten hours.
+# words
+january | jan·u·ar·y | jan/u/ar/y | 📅
+second | sec·ond | sec/ond | ⏱️
+minute | min·ute | min/ute | ⏲️
+hour | hour | h/our | 🕐
+month | month | m/onth | 🗓️
+year | year | y/ear | 🎆
+noon | noon | n/oon | 🕛
+spin | spin | sp/in | 🔄
+orbit | or·bit | or/bit | 🪐
+multiply | mul·ti·ply | mul/ti/ply | ✖️
+sunrise | sun·rise | sun/rise | 🌅
+sunset | sun·set | sun/set | 🌇
+planet | plan·et | plan/et | 🌍
+axis | ax·is | ax/is | 📏
+# reading
+> Time and the Earth
+> What time is it? That's a very good question! From morning until night, clocks help us to plan our day. They tell us when things begin and when they end.
+> Before clocks, people told time by watching the sun move across the sky. They started work when the sun came up in the east. At noon, when the sun was very high, they ate and rested. When the sun disappeared in the west, they went to bed.
+> Today, we know that the sun doesn't move around the Earth. The Earth turns, or spins, on an imaginary line called an axis. As the Earth turns, the sun seems to be moving across the sky. The time it takes for the Earth to make one complete turn is called a day.
+> A day is divided into hours, minutes, and seconds. There are 24 hours in a day. There are 60 minutes in an hour. How many minutes are there in a day? Multiply 24 hours times 60 minutes to get the answer. 24 x 60 = 1,440. There are 1,440 minutes in one day!
+> The Planets: We measure time by other movements, too. The Earth travels around, or orbits, the sun. The time it takes for the Earth to go around the sun once is called a year. One year is equal to 12 months, or just over 52 weeks. To be very accurate, it takes the Earth 365 days, 5 hours, 49 minutes, and 12 seconds to go around the sun.
+> Time Zones: We divide the Earth into 24 time zones. Each time zone is one hour apart from the next time zone. For example, when it is 10:00 a.m. where you live, it is 10:00 p.m. on the opposite side of the world. In two hours, it will be noon where you live, but on the other side of the world, it will be 12:00 at night!
+> Thanks to clocks and calendars, we can measure time very easily. However, it is the movement of the Earth that really allows us to measure time.
+RC | What is the imaginary line the Earth spins on called? | an axis | an orbit | a time zone
+RC | How many hours are there in a day? | 24 hours | 60 hours | 12 hours
+RC | How long does it take the Earth to go around the sun once? | one year | one day | one month
+RT | How did people tell time before clocks? | People watched the sun move across the sky.
+RT | How many minutes are there in an hour? | There are 60 minutes in an hour.
+RT | What do we call the time it takes the Earth to make one complete turn? | We call it a day.
+RS | Why does the sun seem to move across the sky?
+RS | When it is 10:00 a.m. where you live, what time is it on the opposite side of the world? Why?
+# grammar
+G | In two hours, it will be noon.
+G | It will be 12:00 at night there.
+G | Tomorrow the sun will rise at 6:00.
+G | In four hours, it will be two o'clock.
+G | What time will it be in Tokyo?
+G | It won't be noon on the other side of the world.
+G | The weather tomorrow will be sunny and windy.
+# speak-write
+SP | A: What time will the sun rise tomorrow in {Taipei}? | B: It will rise at 6:00 a.m. and set at 5:30 p.m. | A: What will the weather be like? | B: It will be sunny and windy. | Taipei / Tokyo / London / New York / Sydney / Paris
+SW | In {Taipei}, the sun will rise tomorrow at {6:00 a.m.} and it will set at {5:30 p.m.}. The weather tomorrow will be {sunny and warm}. | Write about the sunrise, the sunset, and the weather tomorrow in a city you choose.
 ## U8 | Doctor Molly | How do we measure time?
 # learn
 What does "passenger" mean? | a person who travels in a plane, bus, or car but does not drive it
@@ -183,6 +503,57 @@ P | 🤒🌡️💊🛏️ | What should this person do? Give advice.
 C | Is it better to call a doctor or rest at home when you have a cold? | Call a doctor | Rest at home
 Z | Name three things you can have when you are sick.
 S | Tell us two plans you have for next summer.
+# words
+airport | air·port | air/port | ✈️
+passenger | pas·sen·ger | pas/sen/ger | 🧳
+passport | pass·port | pass/port | 🛂
+destination | des·ti·na·tion | des/ti/na/tion | 📍
+sick | sick | s/ick | 🤒
+earache | ear·ache | ear/ache | 👂
+headache | head·ache | head/ache | 🤕
+fever | fe·ver | fe/ver | 🌡️
+doctor | doc·tor | doc/tor | 👩‍⚕️
+medicine | med·i·cine | med/i/cine | 💊
+nurse | nurse | n/urse | 🧑‍⚕️
+washcloth | wash·cloth | wash/cloth | 🧼
+forehead | fore·head | fore/head | 🙂
+# reading
+> Doctor Molly
+> Molly's mother was worried. As she packed for her business trip to Japan, Molly stood beside her with a notebook and a pencil.
+> "Do you have your passport, Mom?" she asked. "I do."
+> "Good," said Molly. "Your destination is Tokyo, so you should be at the airport two hours early. Remember, passengers can only check two bags."
+> "Molly, thanks for trying to help, but I'm worried about your father," replied her mother. "He isn't feeling well, and I have to go on this trip. Please take good care of him while I'm gone."
+> "I'll be a good doctor and look after him, Mom. Just like you look after me," Molly said. "Thank you," said her mother. Soon, Molly's mother left for the airport.
+> The next morning, Molly's father came to the breakfast table. He didn't look well. "How do you feel, Dad?" Molly asked. "I have a bad earache. I think I'm sick," her father answered.
+> "Then you should take some medicine and go back to bed," said Molly. "I'm going to take care of you all day." "I don't think so, Molly. I've got things to do," replied her father. "Dad!" said Molly. "Mom put me in charge. I'm the doctor." "OK, you win. Thank you, Molly," replied her father.
+> Molly looked at the kitchen clock. It was 9:00 a.m. Should she call her mom? What time was it in Japan? She remembered what her mother told her the day before. Tokyo is sixteen hours ahead of Los Angeles. Molly added some numbers in her notebook. It was 1:00 in the morning in Tokyo! Her mom was asleep. Molly sent a text message to her mother.
+> Saturday, 9:00 a.m. Hi Mom! Dad is sick now. He has an earache, so I put him to bed and gave him medicine. Don't worry! I know you're sleeping. Love, Doctor Molly
+> Molly's messages continued through the day. Saturday, 11:00 a.m. Hi Mom. Now Dad has a headache and a fever, so I'm giving him LOTS of water to drink. I also put a cold washcloth on his forehead. I know it's 3:00 in the morning in Tokyo. Don't worry! Love, Doctor Molly
+> Saturday, 2:00 p.m. Hi Mom. Dad has a cold now. He's sneezing a lot. He's very noisy. I gave him lots of tissues. It's 2:00 p.m. here, so I know it's 6:00 in the morning in Tokyo. Love, Doctor Molly
+> At 5:00 in the afternoon, the phone rang. Molly picked it up. "Hello. This is Doctor Molly speaking." "Molly, it's Mom. How's your dad?"
+> "He's just fine, Mom. His fever is gone, his headache is gone, his earache is gone, and his sneezing is almost gone. He's watching TV and drinking orange juice."
+> "That's great! I was so worried. Good job, Molly," replied her mother. "You're welcome, Mom. And the cell phone says that it's 5:00 p.m. here, so it's 9:00 a.m. in Tokyo. You should eat some breakfast."
+> "Ha! Thank you, Molly, and maybe you should study for that science test tomorrow," replied her mother.
+RC | Where was Molly's mother going on her business trip? | Tokyo, Japan | Los Angeles | New York
+RC | What was wrong with Molly's father in the morning? | an earache | a broken leg | a toothache
+RC | How many hours ahead of Los Angeles is Tokyo? | sixteen hours | two hours | nine hours
+RT | What did Molly put on her father's forehead? | She put a cold washcloth on his forehead.
+RT | Why did Molly give her father lots of tissues? | She gave him tissues because he was sneezing a lot.
+RT | What was Molly's father doing at 5:00 p.m.? | He was watching TV and drinking orange juice.
+RS | Why didn't Molly call her mother at 9:00 in the morning?
+RS | How did Molly take care of her father? Tell us two things.
+# grammar
+G | I'm going to take care of you all day.
+G | My mom is going to give me a present.
+G | I'm going to call her tonight.
+G | My mom is going to cook tomorrow.
+G | She's going to play soccer again today.
+G | What's your dad going to give you?
+G | I'm going to buy a new pair of shoes.
+G | Are you going to read a good book?
+# speak-write
+SP | A: Excuse me. Which way is the {cafeteria}? | B: It's down the hall, next to the gymnasium. | A: Thank you very much. | B: You're welcome. | cafeteria / library / gym / airport / doctor's office / restroom
+SW | {Tomorrow}, I'm going to {visit my grandmother}. Then I'm going to {play soccer with my friends}. | Write about two plans you have for this weekend using going to.
 ## U9 | Green Energy | Where does energy come from?
 # learn
 What does "pollution" mean? | dirty air, water, or land that is bad for the Earth
@@ -206,6 +577,51 @@ PT | 💨🌬️⚡🏡 | How does this house get energy? Type one sentence.
 C | Is solar power better than wind power? | Solar power | Wind power
 Z | Name three kinds of green energy.
 S | Explain one way you can save energy at home.
+# words
+windmill | wind·mill | wind/mill | 🌬️
+sailboat | sail·boat | sail/boat | ⛵
+turbine | tur·bine | tur/bine | 🌀
+coal | coal | c/oal | ⚫
+oil | oil | o/il | 🛢️
+pollution | pol·lu·tion | pol/lu/tion | 🏭
+electricity | e·lec·tric·i·ty | e/lec/tric/i/ty | ⚡
+energy | en·er·gy | en/er/gy | 🔋
+fuel | fu·el | fu/el | ⛽
+solar | so·lar | so/lar | ☀️
+biomass | bi·o·mass | bi/o/mass | 🌽
+renewable | re·new·a·ble | re/new/a/ble | ♻️
+reduce | re·duce | re/duce | 📉
+increase | in·crease | in/crease | 📈
+# reading
+> Green Energy for Today and Tomorrow
+> Did you know that most of the energy we use comes from the sun? For example, the sun helps plants to grow. Plants that grew millions of years ago turned into coal, oil, and natural gas. We call these fossil fuels. We use fossil fuels to drive our cars and trucks. They are also burned in power plants to make electricity for our homes and schools.
+> However, fossil fuels make pollution. This is bad for the Earth. Fossil fuels are also nonrenewable. Some day they will be gone. So, scientists want people to use green energy.
+> Why is green energy important? First, it is clean. It doesn't hurt the Earth. Next, it is renewable. It won't run out. Green energy gives us almost 25% of the electricity we use today. What are the main sources of green energy?
+> Hydropower: Hydropower uses moving water in rivers and dams. Moving water has energy. This water pushes the blades of a turbine. The blades spin and make electricity. Hydropower makes 16.6% of the electricity we use.
+> Wind Power: Is wind power new? No, it isn't. People used wind power many years ago. Sailboats moved with the wind. Windmills made flour from grain. Today, wind turbines make electricity. Wind farms have many wind turbines in one area. Wind power makes 4% of the electricity we use.
+> Biomass: Biomass is energy that we get from plants around us. For example, dead wood or grass is burned in power plants. This makes electricity. Scientists can also turn corn into fuel for our cars. Biomass is green energy because we plant new trees or crops after we use it. Biomass makes 2% of the electricity we use.
+> Solar Power: Solar power comes from sunlight. The sun shines on solar panels, and electricity is made. Solar power is now as cheap as some fossil fuels. It makes 1.5% of the electricity we use. However, we are building more solar panels each day. If you look carefully, you might see solar panels in your area!
+> New Green Energy: Oceans rise and fall each day. Wind also makes big waves on the ocean. This moving water can make electricity. There is also heat under the Earth's surface. Scientists can use this heat for energy. We may find other sources of green energy in the future.
+> Some day, green energy could make 100% of the electricity we use. It is clean, and it won't run out. That's good news for our Earth!
+RC | What do we call coal, oil, and natural gas? | fossil fuels | green energy | biomass
+RC | What does hydropower use to make electricity? | moving water | sunlight | dead wood
+RC | Where does solar power come from? | sunlight | wind | corn
+RT | Why is green energy important? | Green energy is clean and it is renewable.
+RT | What did windmills do many years ago? | Windmills made flour from grain.
+RT | What is biomass? | Biomass is energy that we get from plants around us.
+RS | Why are fossil fuels bad for the Earth? Tell us one reason.
+RS | What are two sources of green energy? How do they make electricity?
+# grammar
+G | We may find other sources of green energy.
+G | You might see solar panels in your area.
+G | I might visit my aunt on Sunday.
+G | My family may see a movie this weekend.
+G | I may get up early and go jogging.
+G | I might do my homework on Sunday afternoon.
+G | We might have more electric cars soon.
+# speak-write
+SP | A: What will you do after school today? | B: I'll probably {do my homework}. | A: Will you play outside, too? | B: Yes, I'll play soccer with my friends. | do my homework / read a book / watch TV / play soccer / ride my bike / visit my grandma
+SW | This weekend, I may {go to the park}. I might {ride my bike} with {my brother}. | Write two sentences about what you may or might do this weekend.
 ## U10 | Hector the Energy Saver | Where does energy come from?
 # learn
 What does "traffic jam" mean? | a long line of cars that cannot move on the road
@@ -229,6 +645,50 @@ P | 🦸🚲🚁🏥 | What is Hector doing? Tell the story.
 C | Is a subway better than a taxi in a big city? | A subway | A taxi
 Z | Name three kinds of transportation from the unit.
 S | Describe a traffic jam in two sentences.
+# words
+subway | sub·way | sub/way | 🚇
+carpool | car·pool | car/pool | 🚗
+ambulance | am·bu·lance | am/bu/lance | 🚑
+escalator | es·ca·la·tor | es/ca/la/tor | 🏬
+train | train | tr/ain | 🚆
+taxi | tax·i | tax/i | 🚕
+elevator | el·e·va·tor | el/e/va/tor | 🛗
+helicopter | hel·i·cop·ter | hel/i/cop/ter | 🚁
+mask | mask | m/ask | 🎭
+button | but·ton | but/ton | 🔘
+pedal | ped·al | ped/al | 🚲
+blades | blades | bl/ades | 🌀
+recycle | re·cy·cle | re/cy/cle | ♻️
+energy | en·er·gy | en/er/gy | ⚡
+# reading
+> Hector the Energy Saver!
+> Hector Morales was not your normal nine-year-old boy. "Hector, come and eat your breakfast!" said his mom. "But Mom, I have to go out and help people save energy!" said Hector.
+> The phone rang. It was Mr. Big from the Big Company. "Hector, our company needs to find ways to save energy. Can you help us?" "Yes, sir! I'll be there right away." "Eat your breakfast first, young man," said Mom.
+> After breakfast, Hector quickly put on his mask and cape, made from old curtains from Uncle Jack's bedroom. He ran outside to his bicycle, Lightning. Lightning was not an ordinary bicycle. It had bells, recycled whistles, and fancy buttons. It had pedals made out of old potato mashers, and a seat made from an ironing pad. "Let's help Mr. Big save energy, Lightning!" The boy and bicycle sped off into the city.
+> On the way, Hector noticed that something was wrong. A long line of cars, trucks, and taxis stood still on the road. It was a traffic jam! Hector saw an ambulance stuck among the cars. He rode Lightning along the bicycle path and up to the ambulance. "My wife is going to have a baby!" cried a man. "Have no fear! I can help you!"
+> Hector pressed a button on Lightning. Bang! Wham! Lightning was now a helicopter! He connected a cable from Lightning to the ambulance. Hector jumped on the bike and began to pedal. The blades that once held an umbrella together were spinning up in the air. The helicopter went high into the sky, carrying the ambulance with it. As they went over the cars, Hector shouted to the people below, "Carpools reduce traffic jams and save fossil fuels! You can also take the train or the subway!"
+> After he dropped off the ambulance at the hospital, Hector rode Lightning to the Big Company. Elevators and escalators were everywhere, carrying people up and down. "Thank you for coming, Hector. My company needs lights and elevators, but they use a lot of energy." "Let's go to the roof, Mr. Big." "But there's nothing on the roof." "Exactly."
+> The roof was hot and sunny. "The sun gives us lots of heat and energy. You can put solar panels on your roof. They'll make electricity to help run your lights and elevators. Solar water heaters can give your company hot water for washing and cleaning. You can be an energy saver, too." "Excellent ideas, Hector! You're a hero!" "I'm just happy to help our planet. And now I must go to help others save energy. Goodbye, Mr. Big!"
+RC | What was Hector's bicycle called? | Lightning | Thunder | Big
+RC | What did Hector see stuck in the traffic jam? | an ambulance | a fire engine | a train
+RC | What did Hector tell Mr. Big to put on the roof? | solar panels | a wind turbine | an elevator
+RT | What were Hector's mask and cape made from? | They were made from old curtains.
+RT | What did Lightning turn into when Hector pressed the button? | Lightning turned into a helicopter.
+RT | Why does Hector save energy? | He wants to help the planet.
+RS | How do carpools help the city? Tell us one thing.
+RS | Why did Hector take Mr. Big to the roof?
+# grammar
+G | Hector uses a little energy.
+G | There were only a few cars on the road.
+G | Mr. Big uses a lot of energy.
+G | There were lots of cars in the traffic jam.
+G | I have a few pencils and a little paper.
+G | Do you have a lot of books in your bag?
+G | You're going to need a lot of wood.
+G | We only have a little wood and a few nails.
+# speak-write
+SP | A: I see a {bus}. It can carry a lot of people. That saves energy. | B: That's true. What else do you see? | A: I see a train and a subway, too. | B: You're right. They save energy, too. | bus / train / subway / carpool / bicycle / taxi
+SW | I want to be an energy saver like Hector. At home, I can {turn off the lights}. In my city, I can {take the subway} instead of {a taxi}. | Write three ways you can save energy at home and in your city.
 ## U11 | Mystery in the Gym | How do people make music?
 # learn
 What does "conductor" mean? | a person who stands in front of an orchestra and leads the musicians
@@ -252,6 +712,50 @@ P | 🎻🥁🎺🎩 | What is happening in the gym? Tell the story.
 C | Is loud music better than quiet music? | Loud music | Quiet music
 Z | Name three instruments in an orchestra.
 S | Say who is the funniest person you know and why.
+# words
+cello | cel·lo | cel/lo | 🎻
+timpani | tim·pa·ni | tim/pa/ni | 🥁
+trombone | trom·bone | trom/bone | 🎺
+bassoon | bas·soon | bas/soon | 🎶
+orchestra | or·ches·tra | or/ches/tra | 🎼
+conductor | con·duc·tor | con/duc/tor | 🎩
+baton | ba·ton | ba/ton | 🪄
+astronaut | as·tro·naut | as/tro/naut | 🧑‍🚀
+scientist | sci·en·tist | sci/en/tist | 🔬
+mystery | mys·ter·y | mys/ter/y | ❓
+gym | gym | g/ym | 🏀
+deafening | deaf·en·ing | deaf/en/ing | 🔊
+beekeeper | bee·keep·er | bee/keep/er | 🐝
+soprano | so·pran·o | so/pran/o | 🎤
+# reading
+> Mystery in the Gym
+> There is a poster on the wall at school: Surprise Guest Today at 2:00 in the Gym! "Lisa, who do you think it could be? I think it's an astronaut," says Marco. "You don't know who it is," I say. "Nobody knows who it is because it's a mystery."
+> Marco blows bubbles into his milk through a straw. I try hard not to laugh. He makes a face at me, and when I'm sure he is looking, I cross my eyes. "I read in a magazine that if you close your eyes, you can hear things more clearly. If we close our eyes, maybe we can hear things in the next room," I tell Marco. "The gym is next to the lunch room, so I'm going to listen and find out who the special guest is."
+> I close my eyes. I hear a low, deep booming sound, but I have no idea what it could be. "It sounds like thunder," I tell Marco. "Maybe it's a scientific machine for making thunderstorms or something. The mystery guest must be a scientist." "I want to listen," Marco says. He closes his eyes and tries to listen, too.
+> "I hear the sound of a loud trumpet call," Marco tells me with confidence. "There is an elephant in the gym. The mystery guest is obviously a circus trainer." "A trumpeting elephant is more deafening than that," I tell Marco. I like to use big words like trumpeting and deafening in front of Marco. I listen again.
+> There is a humming, buzzing sound that makes me feel warm right down to my toes. "I hear a hum," I exclaim. "It sounds like lots of bees. The mystery guest is a beekeeper!" "No, it isn't," Marco declares. He closes his eyes even tighter. "I'm positive this time," he tells me. "I hear an enormous hungry cow. The mystery guest is a farmer and his giant cow."
+> "What are you talking about? There is no hungry cow noise." "Yes, there is," Marco argues. He takes a deep breath and shouts, "Moooooo!" Suddenly the school bell rings, and we both realize that it is already 2:00. It's time to see the special guest! Marco and I race each other to the gym and look inside the door.
+> "Wow! This is so cool!" Marco yells. "How exciting!" I agree, smiling. There is no machine that makes weather, no elephant, no bees, and no hungry cow. We see a man in a long, fancy black jacket holding a thin white baton. All around him are musicians playing timpani drums, bassoons, cellos, trombones, and many more instruments. "They're musical instruments!" Marco and I say at the same time. The conductor hears us. He turns around and says, "Welcome to the orchestra!"
+RC | Where is the surprise guest at 2:00? | in the gym | in the lunch room | in the library
+RC | What does Lisa hear first? | a low, deep boom | a loud trumpet | a hungry cow
+RC | Who is the mystery guest really? | an orchestra | a scientist | a beekeeper
+RT | Where did Lisa learn about closing your eyes to hear better? | She read it in a magazine.
+RT | What does Marco think the loud trumpet call is? | He thinks it is an elephant in the gym.
+RT | What is the man in the black jacket holding? | He is holding a thin white baton.
+RS | Why does Lisa think the guest is a beekeeper?
+RS | How do Lisa and Marco feel about the orchestra? How do you know?
+# grammar
+G | The trombone is louder than the cello.
+G | A cello is more beautiful than a drum.
+G | The timpani drums are the loudest instruments.
+G | You're funnier than other students.
+G | You're the most interesting person I know.
+G | Is a trumpeting elephant more deafening than a trombone?
+G | The guys in the magazine are smarter than I am.
+G | Being a good friend is more important than those things.
+# speak-write
+SP | A: Is the {trombone} as big as the cello? | B: No, it isn't. It's smaller. | A: Is a soprano voice higher or lower than an alto? | B: It's higher than an alto. | trombone / bassoon / baton / flute / clarinet / trumpet
+SW | My favorite instrument is the {cello}. Its sound is {low and beautiful}. I think it is {more beautiful than} a trombone. | Write about your favorite instrument and compare it with another one.
 ## U12 | The World of Instruments | How do people make music?
 # learn
 What does "vibrate" mean? | to move very quickly from side to side
@@ -275,6 +779,49 @@ P | 🎷🥁🎸🌏 | Which instrument is from which place? Talk about it.
 C | Are string instruments better than drums? | String instruments | Drums
 Z | Name three instruments from around the world.
 S | Describe your favorite instrument in two sentences.
+# words
+zummara | zum·ma·ra | zum/ma/ra | 🎶
+flute | flute | fl/ute | 🪈
+djembe | djem·be | djem/be | 🪘
+tuba | tu·ba | tu/ba | 🎺
+panpipes | pan·pipes | pan/pipes | 🎋
+violin | vi·o·lin | vi/o/lin | 🎻
+didgeridoo | didg·er·i·doo | didg/er/i/doo | 🪵
+erhu | er·hu | er/hu | 🎼
+clarinet | clar·i·net | clar/i/net | 🎷
+drum | drum | dr/um | 🥁
+traditional | tra·di·tion·al | tra/di/tion/al | 🏮
+vibrate | vi·brate | vi/brate | 📳
+material | ma·te·ri·al | ma/te/ri/al | 🧱
+pitch | pitch | p/itch | 🎚️
+# reading
+> The World of Instruments
+> All around the world, people play musical instruments. Some instruments are known everywhere, such as the modern clarinet. Other instruments are known in certain parts of the world, such as the Middle Eastern zummara. One thing is the same for all instruments. They make music!
+> Most instruments fall into one of four families: strings, woodwinds, brass, and percussion. Let's compare instruments from the orchestra with traditional instruments. We will see how they are alike and different.
+> Strings: The Violin and the Erhu. A string instrument makes music when its strings vibrate, or move very quickly from side to side. The violin is in this family. The erhu is also in this family. It is a traditional string instrument from China. The shapes of the violin and the erhu are alike. However, the instruments are different in one way. Most violins have four strings. The erhu only has two strings.
+> Woodwinds: The Flute and the Panpipes. A woodwind instrument makes music when air vibrates in a tube. The flute is a woodwind instrument. So are the panpipes, a traditional instrument played in Peru and other parts of South America. The two instruments make similar sounds, but they are different in other ways. Flutes have one tube, while panpipes have many tubes. Flutes are usually made of metal. Panpipes are usually made of a different material such as bamboo or cane.
+> Brass: The Tuba and the Didgeridoo. Brass players make music by vibrating their lips as they blow air into the instrument. The tuba is a brass instrument. The pitch, or sound, of the tuba is low when you hear it. The didgeridoo is from Australia. The sound of the didgeridoo is as low as the tuba's sound. However, unlike the metal tuba, the didgeridoo is made of wood. Also, the didgeridoo is not as curved as the tuba.
+> Percussion: The Snare Drum and the Djembe. Percussion instruments vibrate and make a sound when something hits them. An orchestra snare drum and the West African djembe are both drums. However, they are different in some ways. Snare drummers use drumsticks to make a sound, but djembe drummers use their hands. An orchestra snare drum is usually 15 centimeters deep, but a djembe can be over 60 centimeters deep.
+RC | How many strings does an erhu have? | two | four | six
+RC | Where are the panpipes traditionally played? | Peru | China | Australia
+RC | What is the didgeridoo made of? | wood | metal | bamboo
+RT | How does a string instrument make music? | It makes music when its strings vibrate.
+RT | What do djembe drummers use to make a sound? | Djembe drummers use their hands.
+RT | What are the four families of instruments? | They are strings, woodwinds, brass, and percussion.
+RS | How are the flute and the panpipes different? Tell us one thing.
+RS | How are the tuba and the didgeridoo alike?
+# grammar
+G | The drum is as loud as the falling rain.
+G | The flute is as sharp as a whistle from a train.
+G | The tuba is as low as the traffic in the street.
+G | The didgeridoo is not as curved as the tuba.
+G | A violin is not as big as a cello.
+G | Is a clarinet as long as a bassoon?
+G | My pencil isn't as long as yours.
+G | I'm as happy as my dancing feet.
+# speak-write
+SP | A: My instrument is shiny. It's as long as my arm. | B: Is it a {flute}? | A: Yes, it is! Now it's your turn. | B: My instrument is round, and you hit it with your hands. | flute / violin / tuba / djembe / clarinet / erhu
+SW | My favorite instrument is the {djembe}. It's a {percussion} instrument. Its sound is {as steady as my heartbeat}. | Write about an instrument using it's and its.
 ## U13 | Simple Machines | How do inventions change our lives?
 # learn
 What does "lever" mean? | a board that rests on a point and lifts things when you push one end
@@ -298,6 +845,47 @@ PT | 🔨🔧🔪🔩 | Which simple machine is each tool? Type one sentence.
 C | Is a ramp more useful than a ladder? | A ramp | A ladder
 Z | Name three simple machines.
 S | Explain how a seesaw works in two sentences.
+# words
+lever | le·ver | le/ver | ⚖️
+ramp | ramp | r/amp | ♿
+wedge | wedge | w/edge | 🔪
+screw | screw | scr/ew | 🔩
+doorknob | door·knob | door/knob | 🚪
+slide | slide | sl/ide | 🛝
+axe | axe | a/xe | 🪓
+seesaw | see·saw | see/saw | 🎠
+crowbar | crow·bar | crow/bar | 🛠️
+wagon | wag·on | wag/on | 🛒
+nails | nails | n/ails | 🔨
+stairs | stairs | st/airs | 🪜
+# reading
+> Simple Machines in Our Daily Lives
+> What are simple machines? They are inventions that people thought of thousands of years ago to make their lives easier. Did you know that we use those same simple machines every day in our modern world? Let's look at some of our modern inventions that are actually simple machines!
+> The Lever: There are many modern inventions that are levers. A hammer is a lever that can pull out nails. A pair of scissors is a lever, too. When you ride on a seesaw in the playground, you're using a lever. The board rests on a point in the middle. When you push down on one end of the board, the other end goes up.
+> The Wheel and Axle: A wheel and axle is a simple machine, but important for many modern inventions. An axle goes into the middle of a wheel, making it easy to turn. Many vehicles use a wheel and axle: cars, trucks, and bicycles. Without the wheel and axle, we wouldn't have Ferris wheels. We wouldn't have doorknobs, either. They both use a wheel and axle.
+> The Wedge: A wedge is like two ramps put together, so that one edge is sharp. You might ask, "When would I need a wedge?" If you enjoy eating, you need one almost every day! A knife and a fork are both wedges which cut into food. So is an axe, which people use for chopping wood. We use the sharp edge to push things apart.
+> The Ramp: A ramp is a flat surface that has one high end and one low end. This simple machine makes it easier and safer to go up or down. People in wheelchairs use ramps to go in and out of buildings. Another example of a ramp is a slide. It allows you to move quickly and safely from a high place to a low place. There are many ramps in nature, too. They are called hills and mountains!
+> The Screw: A screw is a ramp that winds around and around in a circle. When you turn the screw, it moves and pushes against something else. Some light bulbs have screws. You turn the light bulb one way to push it tightly against the lamp, and you turn it the opposite way to remove it. Jar lids and some pens also have screws to keep them in place. Without the screw, it would be very difficult to hold things together tightly.
+RC | What simple machine is a hammer? | a lever | a wedge | a screw
+RC | A knife and a fork are both what? | wedges | ramps | levers
+RC | Which simple machine has one high end and one low end? | a ramp | a screw | a lever
+RT | What happens when you push down on one end of a seesaw? | The other end of the board goes up.
+RT | What do people in wheelchairs use to go in and out of buildings? | They use ramps to go in and out of buildings.
+RT | What simple machine does a doorknob use? | A doorknob uses a wheel and axle.
+RS | Why do you need a wedge almost every day?
+RS | What are the ramps in nature? Tell us one more ramp from the text.
+# grammar
+G | A hammer is a lever.
+G | A seesaw is a lever, too.
+G | The wedge isn't a new invention.
+G | The ramp isn't, either.
+G | Cars use a wheel and axle, and bicycles do, too.
+G | Harry likes the seesaw and Jay does, too.
+G | Harry doesn't fall off and Jay doesn't, either.
+G | Is a slide a ramp, too?
+# speak-write
+SP | A: Airplanes make it easier to travel all around the world. | B: That's true. I was thinking about {cell phones}. We can use them to call our friends. | A: That's a good one. I was also thinking about light bulbs. | B: Yes! They make our nights bright. | cell phones / computers / cars / bicycles / televisions / scissors
+SW | {The screw} and {the lever} are simple machines. I use {a screw} every day when I {turn on a lamp}. | Write about two simple machines you use every day.
 ## U14 | Clara's Invention | How do inventions change our lives?
 # learn
 What does "glassblower" mean? | a person who makes glass items by blowing air into hot glass
@@ -321,6 +909,56 @@ P | 🏺💥👓📖 | What did Clara do? Tell the story.
 C | Are eyeglasses a better invention than the telephone? | Eyeglasses | The telephone
 Z | Name three things made of glass.
 S | Tell us who gets up the earliest in your family and who gets up the latest.
+# words
+eyeglasses | eye·glass·es | eye/glass/es | 👓
+vase | vase | v/ase | 🏺
+furnace | fur·nace | fur/nace | 🔥
+wire | wire | w/ire | 🔌
+workshop | work·shop | work/shop | 🛠️
+frames | frames | fr/ames | 🕶️
+glass | glass | gl/ass | 🪟
+glassblower | glass·blow·er | glass/blow/er | 🫧
+glassware | glass·ware | glass/ware | 🥛
+pitcher | pitch·er | pitch/er | 🫗
+computer | com·put·er | com/put/er | 💻
+airplane | air·plane | air/plane | ✈️
+television | tel·e·vi·sion | tel/e/vi/sion | 📺
+# reading
+> Clara's Invention
+> Many people in Venice knew who Antonio Rossi was. Like his father, Antonio was a very talented glassblower. He made many beautiful glass items such as vases and water pitchers. With his new furnace, Antonio now made his popular glassware faster than before.
+> Antonio's daughter Clara liked her father's workshop. She loved to look at all of the beautiful and colorful items he created. One day, she walked into the workshop and her father was there, standing beside two delicate glass vases.
+> "Do you like them, Clara?" he asked proudly. "I have made them for Mr. Lombardi, the great writer here in Venice."
+> "They're beautiful, Father," Clara said.
+> "I must go and get Mr. Lombardi," said her father. Then, he left the workshop.
+> Clara looked at the vases. Beside them was a note. Clara read the note and smiled. As she turned, she bumped the vases. "No!" she gasped. She tried to catch them, but it was too late. They fell to the ground and broke into many pieces. Only the round bases at the bottom were not broken.
+> Clara reached down and picked up one of the round bases. "What will I tell Father?" she thought. She held the piece in front of her as big wet tears fell down her cheeks.
+> It was then that she saw Mr. Lombardi's note as she looked through the glass. The letters were BIG! Clara looked at the base. It was flat on one side and curved on the other. She picked up the other base and looked through it. It worked, too! The words looked bigger!
+> Clara thought quickly. She found a length of wire and pounded it flat, then carefully wrapped it around the two glass pieces. As Clara finished, she heard footsteps. Mr. Lombardi and her father walked in.
+> "Now let me show you the... Clara!" Clara's father stopped, and stared at the broken vases on the floor. "I'm so sorry, Father," Clara whispered.
+> Mr. Lombardi looked at the two pieces of glass in a wire frame in Clara's hand. "What do you have there?" he asked. "I made it from the broken pieces," said Clara. "Look through them." She held up the note for him to see.
+> Mr. Lombardi's eyes opened wide. "The words! They're big!" He looked at Clara's father. "My wife can't read my books because of her eyes. This will be my gift to her! It will be the greatest gift ever!"
+> Clara's father smiled. "I don't know how you did it, Clara," he said, "but you made something very useful."
+> Clara had made something very useful indeed. She had invented eyeglasses.
+RC | What was Antonio Rossi's job? | glassblower | writer | teacher
+RC | What did Clara see when she looked through the glass base? | big letters | small letters | her father
+RC | What did Clara invent? | eyeglasses | a vase | a furnace
+RT | Who were the two vases for? | They were for Mr. Lombardi, the great writer in Venice.
+RT | What did Clara wrap around the two glass pieces? | She wrapped a flat piece of wire around the two glass pieces.
+RT | Why couldn't Mr. Lombardi's wife read his books? | She couldn't read his books because of her eyes.
+RS | How did Clara turn a problem into something useful?
+RS | How do you think Clara's father felt about the broken vases? Why?
+# grammar
+G | Antonio made his glassware faster than before.
+G | I came earlier than you.
+G | Harry came the earliest.
+G | He ran faster than everyone in the race.
+G | Our class walked more quietly than their class.
+G | Clara worked the most carefully of all.
+G | Who gets up the latest?
+G | I get up later than you in the morning.
+# speak-write
+SP | A: What did you do when you were little? | B: When I was little, I used to {play in the park} with my grandmother. | A: Do you still do that? | B: No, I don't do that anymore. | play in the park / sleep with a teddy bear / color pictures with crayons / watch cartoons / ride a tricycle / sing songs
+SW | Before the invention of {eyeglasses}, {many people couldn't see well}. After the invention of {the airplane}, {the world became a smaller place}. | Write about how life was before and after an invention.
 ## U15 | The Life of a Sunflower | What do plants give us?
 # learn
 What does "sprout" mean? | to begin to grow from a seed
@@ -344,6 +982,48 @@ P | 🌱💧☀️🌻 | How does a sunflower grow? Tell the steps.
 C | Are flowers more important than vegetables? | Flowers | Vegetables
 Z | Name three parts of a plant.
 S | Explain two things plants give us.
+# words
+soil | soil | s/oil | 🟫
+seeds | seeds | s/eeds | 🌰
+roots | roots | r/oots | 🌱
+stem | stem | st/em | 🌿
+leaves | leaves | l/eaves | 🍃
+petals | pet·als | pet/als | 🌸
+nectar | nec·tar | nec/tar | 🍯
+pollen | pol·len | pol/len | 🐝
+oxygen | ox·y·gen | ox/y/gen | 💨
+humans | hu·mans | hu/mans | 🧑
+sunflower | sun·flow·er | sun/flow/er | 🌻
+warmth | warmth | w/armth | ☀️
+strength | strength | str/ength | 💪
+length | length | l/ength | 📏
+# reading
+> The Life of a Sunflower
+> A sunflower's life begins with a seed. To turn that seed into a plant, we first need to fill a pot with a bag of soil. Plant the seed about one or two centimeters under the soil. Moisten the soil with a cup of water. With the right amount of water and warmth, the seed will sprout in about one week.
+> As the sunflower grows up out of the soil, its roots grow down. These roots get water and food from the soil, helping the sunflower to grow. A single smooth stem grows higher and higher above the ground, with wide leaves growing out of the stem along the way. Water and food go up through the roots, through the stem, and into the leaves.
+> Thirty days after the plant comes out of the ground, the flower of the sunflower plant begins to grow. The flower is round and flat, with bright yellow petals that grow around it. When bees come to get nectar from the flower, they bring pollen with them from other flowers. This pollen helps new sunflower seeds to grow in the flat part of the flower.
+> Did you know that a sunflower always turns toward the sun? The sunflower, like all plants, uses sunlight in a special way. The leaves of the sunflower turn sunlight into energy for the plant. When leaves make this energy, they make oxygen, too.
+> As the sunflower comes to the end of its life, the sunflower seeds dry up. Some of them fall into the soil, where they will grow into new sunflowers the next year. Birds eat some of the seeds. People take the sunflower seeds and eat them, too. The seeds also have sunflower oil in them, which people use for cooking.
+> Like all plants, the sunflower is very important for life on Earth. It gives us oxygen, it provides food for humans and animals, and it brings color and beauty to our planet. We must remember to take care of the plants in our world because they take care of us!
+RC | What does a sunflower's life begin with? | a seed | a leaf | a petal
+RC | What do bees bring to the sunflower? | pollen | oxygen | soil
+RC | What do leaves make when they make energy from sunlight? | oxygen | nectar | soil
+RT | Where do the roots get water and food? | The roots get water and food from the soil.
+RT | When does the flower begin to grow? | The flower begins to grow thirty days after the plant comes out of the ground.
+RT | What do people use sunflower oil for? | People use sunflower oil for cooking.
+RS | What happens when you plant and water a sunflower seed?
+RS | Why is the sunflower important for life on Earth? Tell us one reason.
+# grammar
+G | Fill a pot with a bag of soil.
+G | Moisten the soil with a cup of water.
+G | I bought a box of seeds.
+G | I need a loaf of bread and a jar of jam.
+G | What do you have in your shopping bag?
+G | I have a bottle of fresh, cold milk.
+G | We bought a kilogram of apples.
+# speak-write
+SP | A: May I borrow your {pencil}? | B: Sure. Here you are. | A: Thanks! Are you using those scissors? | B: No, I'm not. Here, you can use them. | pencil / eraser / ruler / glue / crayons / notebook
+SW | First, {fill a pot with soil}. Second, {plant the seed under the soil}. Finally, {water the soil and wait for it to sprout}. | Write the steps to grow a plant using first, second, and finally.
 ## U16 | The Garden of Happiness | What do plants give us?
 # learn
 What does "community" mean? | all the people who live in one place
@@ -367,6 +1047,53 @@ P | 🌻🏙️👧🎨 | What happened at the end of the story? Tell it.
 C | Is a community garden better than a park? | A community garden | A park
 Z | Name three vegetables people grew in the garden.
 S | Say what you are happy with and what you are surprised at this week.
+# words
+gardener | gar·den·er | gar/den/er | 👩‍🌾
+beans | beans | b/eans | 🫘
+vines | vines | v/ines | 🌿
+garden | gar·den | gar/den | 🪴
+haze | haze | h/aze | 🌫️
+teenagers | teen·ag·ers | teen/ag/ers | 🧑‍🎤
+community | com·mu·ni·ty | com/mu/ni/ty | 🏘️
+crowd | crowd | cr/owd | 👥
+cotton | cot·ton | cot/ton | 👕
+bamboo | bam·boo | bam/boo | 🎋
+linen | lin·en | lin/en | 🧺
+sunflower | sun·flow·er | sun/flow/er | 🌻
+petals | pet·als | pet/als | 🌸
+empty | emp·ty | emp/ty | 🫙
+# reading
+> The Garden of Happiness
+> A young girl named Marisol plants a single seed in the Garden of Happiness, a small community garden in her city. She waters it daily, and it grows and grows. Marisol is curious about her plant. What kind of plant is it? Meanwhile, a group of teenagers wants to paint a mural nearby. They aren't sure what to paint.
+> One morning, Marisol saw an amazing sight from halfway down the block. She ran the rest of the way. Standing higher than all the plants and vines in the garden was a flower as big as a plate! Her bud had turned into petals of yellow and gold.
+> "A sunflower!" Mrs. Anderson exclaimed as she pushed her shopping cart by. "Reminds me of when I was a girl."
+> The flower was a glowing circle, brighter than a yellow taxi. A flower of sunshine, Marisol thought, the happiest plant in the Garden of Happiness. All summer long, it made the people on the street stop and smile.
+> Soon the air became cool and crisp with autumn. Mr. Castro picked the last of his tomatoes. Mr. Singh carried away a basket full of beans. Mrs. Willie Mae Washington dug up orange potatoes. "I can almost smell my sweet potato pie." She winked at Marisol. "I'm gonna save an extra big slice for a good little gardener I know."
+> But something terrible was happening to Marisol's flower. Its leaves were turning brown and dry. "My flower of sunshine is sick," Marisol cried. "What should I do?"
+> "Oh, child," Mrs. Willie Mae Washington said. "Its season is over. There's a time to bloom and a time to die."
+> "No! I don't want my flower to die!"
+> "My dear, don't cry," Mrs. Rodriguez said. "That's the way of a garden. You must save the seeds and plant again next spring."
+> Marisol was too sad to go to the empty lot anymore. For a whole week, she couldn't even look down the block where her beautiful flower used to be. Then one day, she heard people calling her name.
+> "Marisol! Come quick!" "Marisol! Hurry!" A golden haze shone on the street. There was a big crowd, like on a holiday. Music from the bodega, a small store, was loud and bright. And what she saw made Marisol laugh and dance and clap her hands.
+RC | What kind of flower did Marisol grow? | a sunflower | a rose | a tulip
+RC | Where did Marisol plant her seed? | in a community garden | in a city park | on a farm
+RC | What happened to the flower in autumn? | its leaves turned brown | it grew taller | it turned blue
+RT | How often did Marisol water her plant? | She watered it every day.
+RT | What did Mrs. Rodriguez tell Marisol to do? | She told her to save the seeds and plant again next spring.
+RT | What did Mr. Singh carry away from the garden? | He carried away a basket full of beans.
+RS | Why was Marisol too sad to go to the empty lot?
+RS | What do you think Marisol saw at the end of the story? Why did it make her happy?
+# grammar
+G | Marisol is curious about her plant.
+G | She was surprised at the big sunflower.
+G | She was very happy with the mural.
+G | I'm curious about rain forests.
+G | Are you happy with your painting?
+G | The teacher was surprised at my spelling mistakes.
+G | What are you curious about?
+# speak-write
+SP | A: Which plant is important to you? | B: I chose the {banana} plant because I like it a lot. | A: Nice. My first choice is an oak tree because I like to climb trees. | B: Oh, me too! | banana / apple / rice / tomato / bamboo / cotton
+SW | {Apples} grow {on trees}. {Carrots} grow {in the ground}. | Write two sentences about where plants grow, using in or on.
 ## U17 | My Journey with Captain Magellan | Why do we explore?
 # learn
 What does "explorer" mean? | a person who travels to new places to learn about them
@@ -390,6 +1117,53 @@ P | ⛵🌩️🌊🗺️ | Tell the story of Juan's journey.
 C | Is it braver to explore the ocean or outer space? | The ocean | Outer space
 Z | Name three weather words from the unit.
 S | Describe the weather today and the weather yesterday.
+# words
+island | is·land | is/land | 🏝️
+windy | wind·y | wind/y | 💨
+waterfall | wa·ter·fall | wa/ter/fall | 🏞️
+clouds | clouds | cl/ouds | ☁️
+hail | hail | h/ail | 🧊
+coast | coast | c/oast | 🏖️
+fog | fog | f/og | 🌫️
+storm | storm | st/orm | ⛈️
+lightning | light·ning | light/ning | ⚡
+river | riv·er | riv/er | 🛶
+journey | jour·ney | jour/ney | 🧭
+strait | strait | str/ait | 🗺️
+sail | sail | s/ail | ⛵
+healthy | health·y | health/y | 💪
+# reading
+> My Journey with Captain Magellan
+> Juan is a ten-year-old boy traveling on Ferdinand Magellan's ship, the Trinidad. Magellan is an explorer from Portugal who wants to sail west to find a new route to Indonesia. Europeans go to Indonesia to trade for spices. Juan writes about his trip in his journal.
+> September 20, 1519: We sail from Spain today, with 250 men and five ships! The sky is blue, and the clouds are white. I am not afraid. Captain Magellan is a brave man. I brought him his dinner of salted beef and beans. He gave me a coin.
+> The five ships sail toward South America. The journey is long. There are many storms with thunder and lightning. In November, the ships can't move because there is no wind to fill the sails.
+> November 10, 1519: The ocean is different today. It looks like glass. Every day, Captain Magellan says, "Juan, go up to the deck and check the sails." I always go up and look around and bring back the same news. There is no wind.
+> The ships reach the coast of South America in December 1519. They stay there for one year. Then they sail through a narrow area of water called a strait and reach the Pacific Ocean. They lose one ship in a storm. Another ship sails back to Spain.
+> November 27, 1520: We are in a new ocean! Captain Magellan calls it the Pacific Ocean. I am sad to leave this land. Winter was cold and windy, with fog and hail, but I saw many rivers and beautiful waterfalls. Now it is spring. It is time to sail west again.
+> The trip is long. There is very little food and water. The men are not healthy, and some men die. The three ships reach the island of Guam on March 6, 1521. Then they sail west to other islands.
+> April 27, 1521: Captain Magellan died today in a battle on the island of Mactan. We have lost a great man, but I must be strong. We must get back to Spain.
+> Two ships remain. The men get to Indonesia on November 6, 1521. They fill the ships with spices. The Trinidad is damaged and can't sail. Only one ship sails back to Spain. Over 250 men started the journey, but only 18 men come home.
+> September 6, 1522: We are home today, after three long years. I am now 13 years old. I will never forget Captain Magellan. I really looked up to him. I have sailed around the world. I have seen many new places and learned so much. I'm excited to tell everyone about my travels.
+RC | How many ships left Spain in 1519? | five | three | one
+RC | Why couldn't the ships move in November 1519? | there was no wind | there was a storm | the men were sick
+RC | Where did Captain Magellan die? | on Mactan | in Spain | in Indonesia
+RT | What did Juan bring Captain Magellan for dinner? | He brought him salted beef and beans.
+RT | What did the men fill the ships with in Indonesia? | They filled the ships with spices.
+RT | How many men came home to Spain? | Only 18 men came home to Spain.
+RS | Why did Magellan want to sail west? Tell us.
+RS | How do you think Juan felt when he got home? Why?
+# grammar
+G | Go up to the deck and check the sails.
+G | We sailed down the coast of South America.
+G | Walk down this street and through the park.
+G | First, he gets out of bed.
+G | Then he runs into the kitchen.
+G | The ships sailed through the strait.
+G | How do I get to the Pizza Palace?
+G | She walked around the pond.
+# speak-write
+SP | A: Congratulations on winning the {race}! | B: Thank you! | A: You did a great job! We're very proud of you. | B: Thanks. Great job on your math test, too! | race / contest / game / prize / medal / match
+SW | I {brushed my teeth} before I {went to bed}. I {ate an apple} after I {got home}. | Write two sentences about your day using before and after.
 ## U18 | Jacques Cousteau | Why do we explore?
 # learn
 What does "goggles" mean? | special glasses that let you see underwater
@@ -413,3 +1187,50 @@ P | 🤿🐙🐬🐧 | What did Cousteau see under the sea? Tell the story.
 C | Is it more important to explore the ocean or protect it? | Explore it | Protect it
 Z | Name three sea animals from the unit.
 S | Tell us two things you need to do this week and one thing you want to do.
+# words
+goggles | gog·gles | gog/gles | 🥽
+kelp | kelp | k/elp | 🌿
+penguin | pen·guin | pen/guin | 🐧
+squid | squid | squ/id | 🦑
+otter | ot·ter | ot/ter | 🦦
+coral | cor·al | cor/al | 🪸
+dolphin | dol·phin | dol/phin | 🐬
+octopus | oc·to·pus | oc/to/pus | 🐙
+diver | div·er | div/er | 🤿
+hose | hose | h/ose | 🚿
+seaweed | sea·weed | sea/weed | 🌊
+seagull | sea·gull | sea/gull | 🐦
+swordfish | sword·fish | sword/fish | 🐟
+shipwreck | ship·wreck | ship/wreck | 🚢
+# reading
+> The Fantastic Undersea Life of Jacques Cousteau
+> Jacques Cousteau loved the sea. He spent his whole life exploring it. He wanted to share its beauty with the world. Growing up in France, little Jacques was weak and sick. Doctors encouraged him to swim to build up his strength. He discovered that he loved the water.
+> A friend gave him a pair of goggles so that he could see underwater. Those goggles changed his life forever. "Sometimes we are lucky enough to know that our lives have been changed. It happened to me that summer's day when my eyes opened to the world beneath the surface of the sea."
+> Cousteau wanted to stay underwater longer to see even more. The diving suits of his day were heavy and big. They didn't allow much freedom of movement, and an air hose tethered the diver to a boat.
+> Cousteau and his friend Emile Gagnan created a breathing device they called the Aqua-Lung. It was the first machine that would let a diver breathe underwater for a long time. "I flew without wings." Now Cousteau was free to explore. A silent world opened up to him.
+> Cousteau bought a boat and turned it into a research lab and film studio. He sailed all over the world. "What is a scientist after all? It is a curious man looking through a keyhole, the keyhole of nature, trying to know what's going on."
+> Cousteau explored the freezing waters of Antarctica and found them filled with penguins, humpback whales, and squid.
+> Jacques Cousteau was the world's king of the oceans. He produced fifty books, two encyclopedias, and dozens of documentary films. His TV series, The Undersea World of Jacques Cousteau, brought whales, octopuses, otters, and dolphins right into people's living rooms.
+> While exploring off the coast of Australia, Cousteau and his crew saw coral reefs, kelp forests, and sponge gardens. They came face to face with the leafy sea dragon.
+> Cousteau created the Cousteau Society. This group teaches people about ocean life and protecting our seas from pollution. "We protect what we love."
+> Jacques Cousteau loved the sea. He shared its beauty with the world so that everyone could love and care for it, too.
+RC | What did a friend give young Jacques? | a pair of goggles | a boat | a camera
+RC | What did Cousteau and Emile Gagnan create? | the Aqua-Lung | a diving suit | a TV show
+RC | What did Cousteau find in the freezing waters of Antarctica? | penguins and whales | coral reefs | sponge gardens
+RT | Why did doctors encourage little Jacques to swim? | They wanted him to build up his strength.
+RT | What did Cousteau turn his boat into? | He turned it into a research lab and film studio.
+RT | What does the Cousteau Society teach people? | It teaches people about ocean life and protecting the seas from pollution.
+RS | Why did the goggles change Cousteau's life?
+RS | Cousteau said, "We protect what we love." What do you think he meant?
+# grammar
+G | I want to swim underneath the waves.
+G | Cousteau wanted to stay underwater longer.
+G | He needed to use the Aqua-Lung.
+G | I need to study hard to get good grades.
+G | We have to be on time for school.
+G | What do you want to do?
+G | She wants to take a dolphin ride.
+G | Do you need to clean your room?
+# speak-write
+SP | A: Look! Isabella is on a beach. | B: Now she's in the water. | A: She's looking at {kelp}. | B: Wow! She's a real explorer! | kelp / coral / dolphins / otters / squid / penguins
+SW | Although {it was hot outside}, {I played in the park}. Although {I was tired}, {I finished my homework}. | Write two sentences about yourself using although.
