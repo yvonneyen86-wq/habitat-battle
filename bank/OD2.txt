@@ -166,18 +166,18 @@ icicle | i·ci·cle | i/ci/cle | ❄️
 candle | can·dle | can/dle | 🕯️
 # reading
 > What Is Our World Made Of?
-> Everything in our world is made of matter. Matter comes in three states: solids, liquids, and gases. Look around you. Can you find a solid, a liquid, and a gas?
-> Solids: A solid has its own shape. We can see and feel a solid. Solids can be hard, like a rock or a book, or soft, like a pillow. Ice is a solid.
-> Liquids: A liquid does not have its own shape. A liquid flows and takes the shape of the cup or bottle it is in. Liquids can be thick, like honey, or thin, like water. Water and juice are liquids.
-> Gases: We cannot usually see a gas, but sometimes we can feel it. The air around us is a gas. When you blow up a balloon, you fill it with gas. Steam is a gas, too.
+> Everything in our world comes in three different states: solid, liquid, or gas.
+> Solids: We can see and feel solids. Some solids are hard, and some solids are soft. Trees and feathers are solids. You're a solid, too!
+> Liquids: A liquid is a thing that can flow. Some liquids are thick, and some liquids are thin. Juice and milkshakes are liquids. Can you think of other kinds of liquid?
+> Gases: The air that you breathe is a gas. We can't usually see a gas, but sometimes we can feel it when it moves. On a windy day, we can feel the wind on our bodies.
 > Things can change from one state to another when we make them hot or cold. When we make water very cold, it freezes and changes to ice. When ice or snow heats up, it melts and changes back to water. When we heat water, it boils and changes to steam.
 > Look at these three pictures of things changing from one state to another. The snow was a solid and now it's a liquid. The water was a liquid and now it's a solid. The water was a liquid and now it's a gas.
-RC | What is ice? | a solid | a liquid | a gas
+RC | Which things are solids? | trees and feathers | juice and milkshakes | air and wind
 RC | What happens when we heat water? | it boils | it freezes | it flows
 RC | Which one is a gas? | steam | snow | honey
 RT | What happens when we make water very cold? | It freezes and changes to ice.
 RT | What happens when ice or snow heats up? | It melts and changes back to water.
-RT | What does a liquid do in a cup or bottle? | It flows and takes the shape of the cup or bottle.
+RT | What is a liquid? | A liquid is a thing that can flow.
 RS | What is the cause of the snow melting? What is the effect?
 RS | Tell us one solid, one liquid, and one gas in our classroom.
 # grammar
@@ -190,8 +190,8 @@ G | What is it now?
 G | It was an orange.
 G | Now it's orange juice.
 # speak-write
-SP | A: I see {ice}. What state is it? | B: It's a solid. | A: What was it before? | B: It was a liquid. It was water! | ice / snow / an icicle / an ice pop / steam / popcorn
-SW | Yesterday it was {water}. It was a {liquid}. Now it's {ice}. It's a {solid}. | Write about something that changed from one state to another.
+SP | A: Please pass the {juice}. | B: Sure. Here you go. | A: Thanks. | B: You're welcome. | juice / chips / cookies / popcorn / water / milk
+SW | {Water} is a {liquid}. When it gets very cold, it {freezes} and changes to {ice}. Now it's a solid. | Write about a thing that can change state.
 ## U4 | Let's Make Ice Cream! | How do things change?
 # learn
 What does "mixture" mean? | two or more things mixed together
@@ -371,14 +371,23 @@ sink | sink | s/ink | 🚰
 > "I know," says Grandpa. "It's very different today."
 > "Where did they live?" asks Henry.
 > "They lived with Carlo's uncle in New York," says Grandpa.
+> "What happened at Ellis Island?" asks Henry.
+> "Doctors checked everyone, and Carlo was very scared," says Grandpa.
+> "Why was he scared, Grandpa? Doctors help people," says Henry.
+> "Yes. But people who weren't healthy couldn't enter New York," says Grandpa. "The clerks asked them many questions."
+> "What questions, Grandpa?" asks Henry.
+> "Where are you from? Are you healthy or are you sick?" says Grandpa. "Luckily, Carlo was feeling better so they let him in. And that's why we live here today and not in Italy."
+> "That was a cool story, Grandpa!" says Henry. "I have an idea. Let's take a trip to Italy."
+> "That's a good idea, Henry," says Grandpa. "Let's go next summer."
+> "Awesome, Grandpa! But let's take an airplane, not a ship!"
 RC | How old was Carlo in 1910? | ten | nine | twenty
 RC | How did Carlo's family travel to the United States? | by ship | by airplane | by train
-RC | Where did the ship arrive? | Ellis Island | Italy | London
+RC | How long did the trip on the ship take? | ten days | nine hours | two days
 RT | Why did Carlo's family come to the United States? | They were very poor, so they came for a better life.
-RT | How long did the trip take? | They arrived after ten days.
-RT | Who did they live with in New York? | They lived with Carlo's uncle.
-RS | Why wasn't the trip easy? Tell us one thing.
-RS | How is Henry's life different from Carlo's life?
+RT | Who checked everyone at Ellis Island? | Doctors checked everyone at Ellis Island.
+RT | Where does Henry want to go next summer? | He wants to take a trip to Italy.
+RS | Why couldn't some people enter New York?
+RS | Was it easy going to a new country long ago? Why or why not?
 # grammar
 G | Did they travel by ship?
 G | Yes, they traveled by ship.
@@ -445,13 +454,13 @@ RS | What happens when we subtract things?
 RS | When do people use subtraction every day? Tell us one thing.
 # grammar
 G | Alma bought five cookies.
-G | Her friends ate three cookies.
-G | Olivia had thirty-five grapes.
-G | She gave twenty grapes to her sister.
-G | I ate ten cookies at lunch.
-G | What did you eat for lunch?
-G | Did she give grapes to her sister?
-G | How many cookies were left?
+G | She didn't buy four cookies.
+G | Olivia gave her sister twenty stickers.
+G | She didn't give her twenty-six.
+G | May ate three carrots.
+G | She didn't eat six carrots.
+G | Jay didn't buy four pencils.
+G | How many cookies were left on Billy's plate?
 # speak-write
 SP | A: Would you like some {fruit}? | B: No, thank you. I'm full. | A: How about some water? | B: Yes, please. I'm thirsty. | fruit / pasta / salad / soup / juice / tea
 SW | I had {ten} {cookies}. I ate {four}. Now I have {six} left. | Write an interesting subtraction problem of your own.
@@ -478,6 +487,51 @@ P | 🐒🍪🥕🍬 | Tell the story of Bandar the greedy monkey.
 C | Is Bandar bad or just hungry? | Bad | Just hungry
 Z | Thirty cookies minus fifteen cookies. How many are left?
 S | Tell your partner three things you did last night.
+# words
+greedy | greed·y | greed/y | 🐵
+baker | bak·er | bak/er | 👨‍🍳
+cookies | cook·ies | cook/ies | 🍪
+gardener | gar·den·er | gar/den/er | 🧑‍🌾
+carrots | car·rots | car/rots | 🥕
+cook | cook | c/ook | 🍳
+sausages | sau·sag·es | sau/sag/es | 🌭
+candy | can·dy | can/dy | 🍬
+hand | hand | h/and | ✋
+nose | nose | n/ose | 👃
+face | face | f/ace | 🙂
+arm | arm | a/rm | 💪
+foot | foot | f/oot | 🦶
+knee | knee | kn/ee | 🦵
+# reading
+> Bandar, the Greedy Monkey
+> Bandar was a greedy little monkey. He lived in the woods near a town. One day, Bandar was hungry, so he went into town to look for food.
+> First, he went to the bakery. The baker had thirty cookies on the table. Bandar grabbed fifteen cookies and ran away. The baker saw Bandar and chased him. "You greedy little monkey! Now there are only fifteen cookies!"
+> Next, Bandar went to the garden. The gardener had sixty carrots. Bandar dug up sixteen carrots and ate them. The gardener saw Bandar and chased him. "You greedy little monkey! Now there are only forty-four carrots!"
+> Then Bandar went to the kitchen. The cook had forty-two sausages. Bandar ate twelve sausages. The cook saw Bandar and chased him. "You greedy little monkey! Now there are only thirty sausages!"
+> Bandar stole food all over the town. Everyone was angry. They tried to catch Bandar, but he was too fast. Then the candy maker had an idea.
+> The next day, Bandar went to the candy store. He saw two big jars of candy in every color, and it all looked good! Bandar put his hands in the jars and grabbed twenty pieces of candy. But he couldn't get the candy out of the jars.
+> The candy maker ran in. "You greedy little monkey! Let go of the candy and you can run away!"
+> Did Bandar let go of the candy? No, he didn't, and the candy maker caught him. He took him back to the woods and told him never to come to town again.
+RC | How many cookies did Bandar steal? | fifteen | thirty | twelve
+RC | Who had an idea to catch Bandar? | the candy maker | the baker | the cook
+RC | Where did the candy maker take Bandar? | back to the woods | to the bakery | to the garden
+RT | What did Bandar do with the sausages? | He ate twelve sausages.
+RT | What did Bandar grab in the candy store? | He grabbed twenty pieces of candy.
+RT | Did Bandar let go of the candy? | No, he didn't let go of the candy.
+RS | Why couldn't the people catch Bandar at first?
+RS | What is the lesson of the story? Give one idea.
+# grammar
+G | Did Bandar go to a candy store?
+G | Did he let go of the candy?
+G | No, he didn't let go.
+G | What did Bandar do with the cookies?
+G | He ate them all.
+G | How many balloons did he sell?
+G | He sold fifty-five balloons.
+G | The baker made thirty cookies.
+# speak-write
+SP | A: Twenty {cows} sat in some trees. | B: Five fell down and hurt their knees. | A: How many were left in the trees? | B: Fifteen were left in the trees. | cows / eagles / monkeys / frogs / rabbits / bears
+SW | Last night I {ate dinner with my family}. Then I {did my homework}. After that, I {read a book}. | Write three things you did last night.
 ## U9 | Following Rules | How do people get along with each other?
 # learn
 What does "polite" mean? | kind and showing good manners
@@ -501,6 +555,46 @@ P | 🚦🏊📚🦁 | Say one rule for each place you see.
 C | Are rules at school too strict? | Yes, too strict | No, they help us
 Z | Name three places that have rules.
 S | Tell your partner about one rule at home and one at school.
+# words
+polite | po·lite | po/lite | 🙏
+librarian | li·brar·i·an | li/brar/i/an | 📚
+litter | lit·ter | lit/ter | 🗑️
+principal | prin·ci·pal | prin/ci/pal | 🏫
+lifeguard | life·guard | life/guard | 🏊
+kitchen | kitch·en | kitch/en | 🍳
+cafeteria | caf·e·te·ri·a | caf/e/te/ri/a | 🍽️
+classroom | class·room | class/room | 📝
+crosswalk | cross·walk | cross/walk | 🚸
+rules | rules | r/ules | 📋
+safe | safe | s/afe | 🛡️
+# reading
+> Following Rules
+> We follow rules every day. There are rules for things we do at home, at school, and in a lot of other places.
+> Think about rules at home. Parents usually make these rules, and they make sure we follow them. Parents can ask us to wash our hands and clean up. They make other rules about eating unhealthy food, watching TV, or bedtime. What rules do you follow at home?
+> There are rules at school, too. Teachers and the principal make the school rules. We should always be polite and take turns when we play games. Librarians help us follow the rules in the school library. We can't eat, drink, or be noisy there. Outside school, the crossing guard helps us cross the road safely, and we should pay attention to the traffic light. These rules help keep us happy and safe. Can you think of more rules at school?
+> Zoos and other fun places have rules, too. At the zoo, you can't touch or feed the animals. You should never throw things at the animals.
+> Swimming pools are fun places, too. These rules help make it safe for everyone there. You shouldn't run near the water and you can't eat, drink, or litter near the pool. You must always listen to the lifeguards because lifeguards make sure we follow the rules and that we are safe in and near the water.
+> Rules tell us what we should and shouldn't do, and they help keep us safe, happy, and healthy. What rules do you think are important?
+RC | Who usually makes the rules at home? | parents | librarians | lifeguards
+RC | Who helps us cross the road safely? | the crossing guard | the principal | the cook
+RC | What can't you do at the zoo? | feed the animals | look at the animals | take pictures
+RT | Who makes the school rules? | Teachers and the principal make the school rules.
+RT | What can't we do in the school library? | We can't eat, drink, or be noisy in the library.
+RT | Why should we listen to the lifeguards? | Lifeguards make sure we are safe in and near the water.
+RS | How do rules help us? Tell us one thing.
+RS | What is one rule at the swimming pool?
+# grammar
+G | Those things are yours.
+G | They aren't my toys.
+G | Whose book is this?
+G | This book is hers.
+G | Whose pencils are these?
+G | These pencils are his.
+G | That notebook is mine.
+G | Those are your things.
+# speak-write
+SP | A: It's my turn. | B: No, it isn't. It's {Felix's} turn. | A: Oh, you're right. I'm sorry. | B: That's all right. | Felix's / her / his / our / your / Layla's
+SW | At my house, we {wash our hands before dinner}. We {clean up our toys}. We can't {watch TV after nine}. | Write three rules at your house.
 ## U10 | The Please and Thank You Book of Poems | How do people get along with each other?
 # learn
 What does "thoughtful" mean? | thinking about other people's feelings
@@ -524,6 +618,46 @@ P | 🦝🐻🐂🦍 | Which animal is polite? Which animal is rude? Why?
 C | Is it more important to share or to say please? | To share | To say please
 Z | Say three polite words or phrases.
 S | Ask your partner for something in a polite way.
+# words
+knock | knock | kn/ock | 🚪
+thoughtful | thought·ful | thought/ful | 💭
+rude | rude | r/ude | 😠
+grab | grab | gr/ab | ✊
+pass | pass | p/ass | 🤲
+invite | in·vite | in/vite | 💌
+wash | wash | w/ash | 🧼
+share | share | sh/are | 🤝
+computer | com·put·er | com/put/er | 🖥️
+laptop | lap·top | lap/top | 💻
+camera | cam·er·a | cam/er/a | 📷
+headphones | head·phones | head/phones | 🎧
+tablet | tab·let | tab/let | 📱
+# reading
+> The Please and Thank You Book of Poems
+> Welcome, Ricky Raccoon: When Ricky Raccoon comes over to play, he helps put all of the toys away. He asks his friend what he'd like to do, and is always careful with scissors and glue. He washes before he comes to the table, and helps his host whenever he's able. That's why almost every day, someone invites Ricky over to play.
+> Don't Be Grabby, Gorilla: Gorillas are rude. They grab their food. They never say, "Please pass the peach." They're so anxious, they just reach. They upset others by all they do. And sometimes... they upset the table, too.
+> The Ox Always Knocks: The ox always knocks before opening a door. Because someone behind it might be sleeping, or wrapping a present, or sad or weeping. Then he always asks, "May I come in?" And everyone says, "How thoughtful of him!"
+> Bears Always Share: Bears share their toys. Bears share their honey. Bears share a joke they think is funny. Whatever they do, whatever they wear, they always share it with another bear.
+RC | What does Ricky do before he comes to the table? | washes | eats | plays
+RC | What do the gorillas grab? | their food | their toys | their books
+RC | What does the ox do before opening a door? | knocks | runs | shouts
+RT | What does Ricky help put away? | He helps put all of the toys away.
+RT | What do gorillas never say? | They never say, "Please pass the peach."
+RT | What is one thing that bears share? | Bears share their toys and their honey.
+RS | Why does the ox always knock before opening a door?
+RS | Which animal is rude? Why?
+# grammar
+G | Can I play outside?
+G | Yes, you can play outside.
+G | May I come in?
+G | No, you may not.
+G | May I watch TV?
+G | Can I have some juice?
+G | Yes, you can have some.
+G | Thank you for knocking.
+# speak-write
+SP | A: Are you using that {computer}? | B: Yes, I am. But we can share. | A: Great. Thanks. | B: You're welcome. | computer / laptop / camera / tablet / cell phone
+SW | {My grandma} is a thoughtful person. She always {shares her food}. She {helps me with my homework}. | Write about a thoughtful person you know.
 ## U11 | Natural Resources | Why should we take care of the Earth?
 # learn
 What does "resources" mean? | things from the Earth that we need to live
