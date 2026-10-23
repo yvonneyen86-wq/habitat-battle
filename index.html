@@ -280,6 +280,28 @@ body.sv-on .sv{display:flex;flex-direction:column;gap:8px;min-height:0;backgroun
 .char-pick button small{font-size:.78rem}
 .char-pick button.sel{border-color:var(--scene-deep);background:var(--scene-soft)}
 .join-btn{font-size:1.4rem;padding:16px;font-family:var(--display)}
+/* join wizard */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.steps .stp{display:grid;justify-items:center;gap:2px;padding:8px 4px;background:rgba(255,255,255,.75);border:3px solid transparent;border-radius:16px;font:inherit;color:var(--ink);cursor:pointer}
+.steps .stp .n{width:26px;height:26px;border-radius:50%;background:#dee2e6;color:#495057;display:grid;place-items:center;font-family:var(--display);font-size:.95rem}
+.steps .stp .e{font-family:var(--emoji);font-size:1.7rem;line-height:1.1}.steps .stp small{font-size:.75rem;font-weight:800;color:var(--muted)}
+.steps .stp.cur{background:#fff;border-color:var(--scene-deep)}.steps .stp.cur .n{background:var(--scene-deep);color:#fff}
+.steps .stp.ok .n{background:#40c057;color:#fff}.steps .stp:disabled{opacity:.45;cursor:default}
+.card.jstep h2{display:flex;align-items:center;gap:10px;font-size:1.6rem}.card.jstep h2 .big{font-family:var(--emoji);font-size:2.2rem}
+.card.jstep .name-in{font-size:1.6rem;padding:16px}
+.team-pick.big button{padding:22px 10px;font-size:1.35rem;display:grid;justify-items:center;gap:6px;min-height:110px}
+.team-pick.big .flag{width:38px;height:28px;background:var(--tc);border-radius:4px 10px 10px 4px;border-left:5px solid #6b4f3a;box-shadow:0 2px 0 rgba(0,0,0,.15)}
+.team-pick.big button.sel .flag{background:#fff}
+.char-pick button .e{font-size:3rem}.char-pick button{padding:12px 4px;min-height:96px}
+.jnav{display:flex;justify-content:space-between;gap:10px}.jnav .btn{font-family:var(--display);font-size:1.25rem;padding:14px 22px}.jnav .join-btn{flex:1}.jnav .nxt{margin-left:auto}
+/* tablet: icon-only "what to do now" bar */
+.todo{display:flex;gap:4px;justify-content:center;align-items:stretch}
+.todo span{flex:1;display:grid;justify-items:center;gap:1px;padding:5px 2px;border-radius:12px;background:#f1f3f5;color:#adb5bd;font-size:.7rem;font-weight:800;max-width:110px}
+.todo span i{font-style:normal;font-family:var(--emoji);font-size:1.5rem;line-height:1.1}
+.todo span.cur{background:var(--scene-soft,#fff3bf);color:var(--ink);box-shadow:inset 0 0 0 3px var(--scene-deep)}.todo span.done{background:#d3f9d8;color:#2b8a3e}
+.todo span.cur i{animation:bob2 1.4s ease-in-out infinite}
+.shop .it .e{font-size:2.6rem;width:56px}.shop .it .d small{font-size:1rem;color:var(--ink);white-space:nowrap}.shop .it .d small b{font-size:1.15rem;color:#2b8a3e}
+.answer textarea{font-size:1.3rem}
 .look{display:grid;grid-template-columns:124px 1fr;gap:14px;align-items:start}
 .look canvas{width:124px;height:124px;border-radius:22px;background:#fff;box-shadow:0 3px 0 rgba(0,0,0,.08)}
 .look-opts{display:grid;gap:8px}.look-opts .row{display:flex;align-items:center;gap:6px;flex-wrap:wrap}.look-opts .row b{font-size:.8rem;color:var(--muted);width:66px;flex:0 0 auto}
@@ -1634,29 +1656,39 @@ function sRenderInner(){
     if(!ST.boundPlay){ST.boundPlay=true;document.addEventListener('click',sPlayClick);document.addEventListener('input',e=>{if(e.target.id==='ans'){ST.draft=e.target.value;sMeter();}});}}
   sPlay(s,me);
 }
+/* join screen = 4 big steps (name → team → character → look), one thing per screen so a first grader can do it without help */
+const JSTEPS=[['✏️','My name'],['🚩','My team'],['🐾','My character'],['🎨','My look']];
 function sJoin(app,s){if(ST.mini)ST.mini.stop();
-  if(ST.view!=='join'){ST.view='join';app.innerHTML=`<div class="student"><div class="s-col">
+  if(ST.view!=='join'){ST.view='join';ST.jstep=ST.jstep||0;app.innerHTML=`<div class="student"><div class="s-col">
     <div class="s-head"><span class="brand">⚔️ Habitat Battle</span><span class="sp"></span><span class="chip" id="j-scene"></span></div>
-    <div class="card"><h2>What's your name?</h2><input class="name-in" id="j-name" maxlength="14" autocomplete="off" placeholder="Type your English name"></div>
-    <div class="card"><h2>Pick your team</h2><div class="team-pick" id="j-teams"></div></div>
-    <div class="card"><h2>Pick your character</h2><p class="hint">Each group has its own habitat, gear and power!</p><div id="j-chars" style="display:grid;gap:16px"></div></div>
-    <div class="card"><h2>Design your look</h2><p class="hint">This is you in Hero Town and in space. Pick anything you like!</p><div class="look"><canvas id="j-look" width="248" height="248"></canvas><div class="look-opts" id="j-look-opts"></div></div><button class="btn" id="j-shuffle">🎲 Surprise me</button></div>
-    <button class="btn primary join-btn" id="j-go">Join the game!</button></div></div>`;
-    const n=$('#j-name');n.value=ST.name;n.addEventListener('input',()=>{ST.name=n.value;jUpdate();});
-    if(!app._jb){app._jb=true;app.addEventListener('click',sJoinClick);}}
+    <div class="steps" id="j-steps"></div>
+    <div class="card jstep" id="j-card"></div>
+    <div class="jnav" id="j-nav"></div></div></div>`;
+    if(!app._jb){app._jb=true;app.addEventListener('click',sJoinClick);app.addEventListener('input',e=>{if(e.target.id==='j-name'){ST.name=e.target.value;jNav();}});}}
   $('#j-scene').textContent=`${SCENES[s.scene].icon} ${SCENES[s.scene].name}`;
-  $('#j-teams').innerHTML=s.teams.map((t,i)=>`<button data-team="${i}" class="${ST.team===i?'sel':''}" style="--tc:${t.color}">${esc(t.name)}</button>`).join('');
-  $('#j-chars').innerHTML=Object.entries(CLASSES).map(([k,c])=>`<div class="class-block"><div class="cl"><b>${esc(c.label)}</b><span>Home: ${c.hab.map(h=>h[1]).join(' → ')} · Gear: ${c.atk[1]} ${ico(c.def[1])} ${c.heal[1]} · Power: ${esc(c.power)}</span></div><div class="char-pick">${CHARS.filter(x=>x.c===k).map(x=>`<button data-char="${x.id}" class="${ST.char===x.id?'sel':''}"><span class="e">${x.e}</span><small>${esc(x.n)}</small></button>`).join('')}</div></div>`).join('');
-  jUpdate();jLookOpts();
+  jRender(s);
 }
+function jDone(i){return i===0?!!ST.name.trim():i===1?ST.team!==null:i===2?!!ST.char:true;}
+function jRender(s){const st=ST.jstep;
+  $('#j-steps').innerHTML=JSTEPS.map(([e,t],i)=>`<button class="stp${i===st?' cur':''}${i<st&&jDone(i)?' ok':''}" data-jstep="${i}" ${i>st&&!JSTEPS.slice(0,i).every((_,k)=>jDone(k))?'disabled':''}><span class="n">${i<st&&jDone(i)?'✓':i+1}</span><span class="e">${e}</span><small>${t}</small></button>`).join('');
+  const card=$('#j-card');const h=`<h2><span class="big">${JSTEPS[st][0]}</span> ${JSTEPS[st][1]}</h2>`;
+  if(st===0)card.innerHTML=h+`<input class="name-in" id="j-name" maxlength="14" autocomplete="off" placeholder="Type your English name" value="${esc(ST.name)}">`;
+  else if(st===1)card.innerHTML=h+`<div class="team-pick big" id="j-teams">${s.teams.map((t,i)=>`<button data-team="${i}" class="${ST.team===i?'sel':''}" style="--tc:${t.color}"><span class="flag"></span>${esc(t.name)}</button>`).join('')}</div>`;
+  else if(st===2)card.innerHTML=h+`<p class="hint">Tap one. Each group has its own home and gear.</p>`+Object.entries(CLASSES).map(([k,c])=>`<div class="class-block"><div class="cl"><b>${c.icon} ${esc(c.label)}</b><span>${c.hab.map(h=>h[1]).join(' → ')} · ${c.atk[1]} ${ico(c.def[1])} ${c.heal[1]}</span></div><div class="char-pick">${CHARS.filter(x=>x.c===k).map(x=>`<button data-char="${x.id}" class="${ST.char===x.id?'sel':''}"><span class="e">${x.e}</span><small>${esc(x.n)}</small></button>`).join('')}</div></div>`).join('');
+  else card.innerHTML=h+`<div class="look"><canvas id="j-look" width="248" height="248"></canvas><div class="look-opts" id="j-look-opts"></div></div><button class="btn" id="j-shuffle">🎲 Surprise me</button>`;
+  if(st===0){const n=$('#j-name');if(n&&!ST.embedded)setTimeout(()=>n.focus(),50);}if(st===3)jLookOpts();jNav();}
+function jNav(){const st=ST.jstep,nav=$('#j-nav');if(!nav)return;const ready=JSTEPS.every((_,i)=>jDone(i));
+  nav.innerHTML=`${st>0?'<button class="btn" data-jnav="-1">◀ Back</button>':'<span></span>'}${st<3?`<button class="btn primary nxt" data-jnav="1" ${jDone(st)?'':'disabled'}>Next ▶</button>`:`<button class="btn primary join-btn" id="j-go" ${ready?'':'disabled'}>✅ Join the game!</button>`}`;}
+function jLookOpts(){const o=$('#j-look-opts');if(!o)return;o.innerHTML=lookOptsHTML(ST.av);const c=$('#j-look');if(c)drawAvatar(c.getContext('2d'),ST.av,c.width);}
+function sJoinClick(e){if(ST.view!=='join')return;const t=e.target.closest('[data-team]'),c=e.target.closest('[data-char]'),a=e.target.closest('[data-av]'),nv=e.target.closest('[data-jnav]'),sp=e.target.closest('[data-jstep]');
+  const go=i=>{ST.jstep=Math.max(0,Math.min(3,i));jRender(ST.s);};
+  if(t){ST.team=+t.dataset.team;setTimeout(()=>go(2),250);jRender(ST.s);}if(c){ST.char=c.dataset.char;setTimeout(()=>go(3),250);jRender(ST.s);}
+  if(nv)go(ST.jstep+(+nv.dataset.jnav));if(sp&&!sp.disabled)go(+sp.dataset.jstep);
+  if(a){avClick(a);jLookOpts();}if(e.target.closest('#j-shuffle')){ST.av=randomAv();store('habitat-av',ST.av);jLookOpts();}
+  if(e.target.closest('#j-go')){if(sSend({t:'join',name:ST.name,team:ST.team,char:ST.char,av:ST.av}))toast('Joining…');}}
 function lookOptsHTML(a,x=''){const sw=(k,arr)=>arr.map((c,i)=>`<button class="sw${a[k]===i?' sel':''}" ${x} data-av="${k}" data-v="${i}" style="--c:${c}" aria-label="${k} ${i+1}"></button>`).join('');const tx=(k,arr)=>arr.map((t,i)=>`<button class="${a[k]===i?'sel':''}" ${x} data-av="${k}" data-v="${i}">${k==='pt'&&i===4?'#'+a.n:t}</button>`).join('');
   return `<div class="row"><b>Skin</b>${sw('sk',AV.SKIN)}</div><div class="row"><b>Hair</b>${tx('hs',AV.HS)}</div><div class="row"><b>Hair color</b>${sw('hc',AV.HAIR)}</div><div class="row"><b>Shirt</b>${sw('sh',AV.SHIRT)}</div><div class="row"><b>Pattern</b>${tx('pt',AV.PAT)}${a.pt===4?`<button ${x} data-av="n">Next number ▸</button>`:''}</div>`;}
 function avClick(el){const k=el.dataset.av;if(k==='n')ST.av.n=ST.av.n%9+1;else ST.av[k]=+el.dataset.v;store('habitat-av',ST.av);}
-function jLookOpts(){const o=$('#j-look-opts');if(!o)return;o.innerHTML=lookOptsHTML(ST.av);const c=$('#j-look');if(c)drawAvatar(c.getContext('2d'),ST.av,c.width);}
-function jUpdate(){const b=$('#j-go');if(b)b.disabled=!(ST.name.trim()&&ST.team!==null&&ST.char);}
-function sJoinClick(e){if(ST.view!=='join')return;const t=e.target.closest('[data-team]'),c=e.target.closest('[data-char]'),a=e.target.closest('[data-av]');if(t){ST.team=+t.dataset.team;sRender();}if(c){ST.char=c.dataset.char;sRender();}
-  if(a){avClick(a);jLookOpts();}if(e.target.closest('#j-shuffle')){ST.av=randomAv();store('habitat-av',ST.av);jLookOpts();}
-  if(e.target.closest('#j-go')){if(sSend({t:'join',name:ST.name,team:ST.team,char:ST.char,av:ST.av}))toast('Joining…');}}
 function sSkeleton(app){
   app.innerHTML=`<div class="sv2" id="s-root">
     <div class="s-top"><div class="who"><button class="av" id="t-av" data-sact="look" aria-label="Change my look"></button><div><b id="t-name"></b><small id="t-team"></small></div></div><span class="sp"></span>
@@ -1727,12 +1759,14 @@ function sDock(s,me,c){
   if(key===ST.qKey)return;ST.qKey=key;
   const pop=$('#s-pop'),dock=$('#s-dock');let ph='',pc='',d='';
   const boss=b&&b.boss&&!b.boss.defeated?b.boss:null;
+  const todo=(steps,cur)=>`<div class="todo">${steps.map(([e,t],i)=>`<span class="${i<cur?'done':i===cur?'cur':''}"><i>${e}</i>${t}</span>`).join('')}</div>`;
+  const BT=[['👂','Question'],['✍️','Answer'],['⭐','Teacher'],['⚔️','Action'],['📺','Watch']];
   const msg=(t,sub,pre='')=>`<div class="dock-msg">${pre}<b>${t}</b>${sub?`<span>${sub}</span>`:''}</div>`;
   const hand=(t,sub)=>msg(t,sub,'<span class="hand">✋</span>');
-  const typed=()=>{if(my.sub&&my.sub.ok==null)return `<div class="dock-h">📨 Sent! Wait for your teacher.</div><div class="mine">${esc(my.sub.text)}</div>`;
+  const typed=()=>{if(my.sub&&my.sub.ok==null)return todo(BT,2)+`<div class="dock-h">📨 Sent! Wait for your teacher.</div><div class="mine">${esc(my.sub.text)}</div>`;
     const fix=my.sub&&my.sub.ok===false;if(fix&&!ST.draft)ST.draft=my.sub.text;
-    return `${fix?'<div class="dock-h" style="color:#e8590c">✏️ Try again! Fix your sentence.</div>':''}<div class="answer"><textarea id="ans" maxlength="200" rows="2" placeholder="Write a complete sentence. Start with a capital letter. End with a period." autocapitalize="sentences"></textarea><button class="btn primary send" data-sact="send">Send ➤</button></div><div class="meter" id="meter"></div>`;};
-  if(s.phase==='gather')d=msg('🌱 Learning Time!','Answer questions to earn 🪙 coins. Tap <b>🎒 Supplies</b> to get ready for the battle!');
+    return todo(BT,1)+`${fix?'<div class="dock-h" style="color:#e8590c">✏️ Try again! Fix your sentence.</div>':''}<div class="answer"><textarea id="ans" maxlength="200" rows="2" placeholder="Write a sentence. ✍️  Then tap Send." autocapitalize="sentences"></textarea><button class="btn primary send" data-sact="send">Send ➤</button></div><div class="meter" id="meter"></div>`;};
+  if(s.phase==='gather'){const cs=me.coins>=GEAR_COST?2:me.coins>0?1:0;d=todo([['👂','Listen'],['🙋','Answer'],['🪙','Get coins'],['🎒','Shop']],cs===2?3:cs===1?2:1)+msg('🌱 Learning Time!','Answer questions to earn 🪙. Tap <b>🎒 Supplies</b> to buy things!');}
   else if(s.phase==='end'){const r=s.results;const mine=r?r.teams.findIndex(t=>t.name===s.teams[me.team]?.name):-1;
     d=msg('🏁 The battle is over!',`${mine===0?'🥇 Your team won! Amazing!':mine>0?'Great job! Your team placed #'+(mine+1)+'.':''} You earned 🏆 ${me.pts||0} points.`);if(mine===0)setTimeout(()=>sBurst(dock,['🏆','🎉','⭐'],18),100);}
   else if(b&&b.vote){const v=b.vote,mv=my.vote||{mine:-1,voted:-1};
@@ -1740,13 +1774,13 @@ function sDock(s,me,c){
     d=v.revealed?msg(v.winner===mv.mine?'🏅 Your sentence won! +3 🪙':`🏅 The winner is ${'ABCD'[v.winner]}!`,'Great reading, everyone!'):msg(mv.voted>=0?'✅ Thanks for voting!':'👆 Read them all, then tap the best one!',"You can't vote for your own sentence.");
     if(v.revealed&&v.winner===mv.mine)setTimeout(()=>sBurst(pop,['🏅','🎉','⭐'],18),100);}
   else if(my.spell){ph=`<div class="qtag spellt">🪄 ${esc(c.power)}</div><div class="spell">“${esc(c.spell)}”</div>`;pc='spell';d=msg('📣 Read your spell out loud!','Your teacher will say ✓ to cast it.','<span class="hand">🪄</span>');}
-  else if(!b||!q||b.step==='idle')d=msg(boss?'👹 Boss Battle!':'⚔️ Battle time!','Look at the big screen. The first question is coming!');
+  else if(!b||!q||b.step==='idle')d=todo(BT,0)+msg(boss?'👹 Boss Battle!':'⚔️ Battle time!','Look at the big screen. The first question is coming!');
   else if(b.step==='defense'&&my.defender&&!(my.ok&&!my.act)){ph=`<div class="qtag def">🛡️ DEFENSE! Your team is under attack!</div><div class="qp">${esc(b.def.q)}</div>`;pc='defense';d=my.blocked?msg('🛡️ You will block an attack!','Great job protecting your team!'):hand('Answer out loud to block an attack!','Raise your hand now!');}
-  else if(b.step==='resolving'||b.step==='done')d=msg('👀 Watch the big screen!',b.step==='resolving'?'The battle round is happening now.':'Wait for the next question.');
-  else if(my.act){const a=my.act;d=msg('✅ Ready!',`You chose ${a.kind==='attack'?(a.target==='boss'?'⚔️ Attack the '+esc(boss?boss.name:'Boss'):'⚔️ Attack '+esc(s.teams[a.target]?.name||'')):a.kind==='build'?'🛡️ Build a wall':'❤️ Repair'}. Watch the big screen!`);}
+  else if(b.step==='resolving'||b.step==='done')d=todo(BT,4)+msg('👀 Watch the big screen!',b.step==='resolving'?'The battle round is happening now.':'Wait for the next question.');
+  else if(my.act){const a=my.act;d=todo(BT,4)+msg('✅ Ready!',`You chose ${a.kind==='attack'?(a.target==='boss'?'⚔️ Attack the '+esc(boss?boss.name:'Boss'):'⚔️ Attack '+esc(s.teams[a.target]?.name||'')):a.kind==='build'?'🛡️ Build a wall':'❤️ Repair'}. Watch the big screen!`);}
   else if(my.ok){
     const t=my.ok,m=t>=2?2:1;let dmg=(me.inv.atk>0?3:1)*m;if((me.streak||0)>=2)dmg+=1;if(me.dash)dmg*=2;
-    const head=t===3?'<div class="tiermsg t3">🌟 AMAZING! ×2 and through walls!</div>':t===2?'<div class="tiermsg t2">⭐ GREAT answer! Your action is ×2!</div>':'<div class="dock-h">⚡ Good answer! Choose your action</div>';
+    const head=todo(BT,3)+(t===3?'<div class="tiermsg t3">🌟 AMAZING! ×2 and through walls!</div>':t===2?'<div class="tiermsg t2">⭐ GREAT answer! Your action is ×2!</div>':'<div class="dock-h">⚡ Good answer! Choose your action</div>');
     const atkSub=`${me.inv.atk>0?c.atk[1]+' ':''}${dmg} damage${me.warp||t===3?' · through walls':''}${(me.streak||0)>=2?' · 🔥':''}`;
     d=`${head}<div class="acts3"><div class="att">${boss?`<button style="--tc:#5f3dc4" data-sact="act" data-k="attack" data-t="boss">⚔️ Attack the ${esc(boss.name)} ${boss.e}<small>${atkSub}</small></button>`:s.teams.map((tm,i)=>i===me.team?'':`<button style="--tc:${tm.color}" data-sact="act" data-k="attack" data-t="${i}">⚔️ Attack ${esc(tm.name)}<small>${atkSub}</small></button>`).join('')}</div>
       <div class="two"><button data-sact="act" data-k="build"><img class="wi" src="${WALL_ICO}" alt=""> ${me.down?'Rebuild':'Build'}<small>${me.down?'Rebuild your home':'+'+((me.inv.def>0?3:1)*m)+' wall'}</small></button><button data-sact="act" data-k="repair">❤️ ${me.down?'Rebuild':'Repair'}<small>${me.down?'Rebuild your home':'+'+((me.inv.heal>0?4:1)*m)+' ❤️'}</small></button></div></div>`;
@@ -1756,20 +1790,20 @@ function sDock(s,me,c){
   else{
     const tag=`<div class="qtag k-${q.type}">${TAGS[q.type]} · Round ${b.round}</div>`,qp=`<div class="qp">${esc(q.text)}</div>`;
     switch(q.type){
-      case 'S':ph=tag+qp;d=hand('Raise your hand and answer out loud!','Your teacher will give you ✓ when you answer.');break;
+      case 'S':ph=tag+qp;d=todo(BT,1)+hand('Raise your hand and answer out loud!','Your teacher will give you ✓ when you answer.');break;
       case 'T':ph=tag+qp;d=typed();break;
-      case 'P':ph=tag+`<div class="pic">${esc(q.pic)}</div>`+qp;d=hand('Look at the picture and tell us!','Use full sentences.');break;
+      case 'P':ph=tag+`<div class="pic">${esc(q.pic)}</div>`+qp;d=todo(BT,1)+hand('Look at the picture and tell us!','Use full sentences.');break;
       case 'PT':ph=tag+`<div class="pic">${esc(q.pic)}</div>`+qp;d=typed();break;
       case 'W':ph=tag+`<div class="bomb">💣 ${esc(q.word)}</div>`+qp;d=typed();break;
       case 'F':ph=tag+`<div class="wrong">${esc(q.text)}</div><div class="hint">Find the mistake. Fix the sentence below.</div>`;d=typed();break;
       case 'B':{ph=tag+'<div class="qp">Put the words in order!</div>';const tiles=q.tiles||[],ord=ST.bld.order;
-        d=`<div class="builder"><div class="bline" id="bline">${ord.length?ord.map((ti,pos)=>`<button class="tile" data-sact="tile-rm" data-i="${pos}">${esc(tiles[ti])}</button>`).join(''):'<span class="ph">Tap the words below ⬇️</span>'}</div><div class="bpool">${tiles.map((w,i)=>ord.includes(i)?'':`<button class="tile" data-sact="tile-add" data-i="${i}">${esc(w)}</button>`).join('')}</div><div class="brow"><button class="btn" data-sact="tile-reset">↺ Reset</button><button class="btn primary" data-sact="tile-check" ${ord.length<tiles.length?'disabled':''}>✓ Check</button></div></div>`;break;}
+        d=todo(BT,1)+`<div class="builder"><div class="bline" id="bline">${ord.length?ord.map((ti,pos)=>`<button class="tile" data-sact="tile-rm" data-i="${pos}">${esc(tiles[ti])}</button>`).join(''):'<span class="ph">Tap the words below ⬇️</span>'}</div><div class="bpool">${tiles.map((w,i)=>ord.includes(i)?'':`<button class="tile" data-sact="tile-add" data-i="${i}">${esc(w)}</button>`).join('')}</div><div class="brow"><button class="btn" data-sact="tile-reset">↺ Reset</button><button class="btn primary" data-sact="tile-check" ${ord.length<tiles.length?'disabled':''}>✓ Check</button></div></div>`;break;}
       case 'C':ph=tag+qp;
-        if(my.choice<0)d=`<div class="dock-h">Choose one!</div><div class="choose">${q.opts.map((o,i)=>`<button class="${i?'b':'a'}" data-sact="choose" data-i="${i}">${'AB'[i]}. ${esc(o)}</button>`).join('')}</div>`;
-        else{const n=b.choiceN||[0,0];d=`<div class="dock-h">You chose ${'AB'[my.choice]}: ${esc(q.opts[my.choice])}</div><div class="cbar"><span class="a" style="flex:${n[0]||.01}">A ${n[0]}</span><span class="b" style="flex:${n[1]||.01}">B ${n[1]}</span></div>`+hand('Now tell us WHY!','Start with: “I think … because …”');}
+        if(my.choice<0)d=todo(BT,1)+`<div class="dock-h">Choose one!</div><div class="choose">${q.opts.map((o,i)=>`<button class="${i?'b':'a'}" data-sact="choose" data-i="${i}">${'AB'[i]}. ${esc(o)}</button>`).join('')}</div>`;
+        else{const n=b.choiceN||[0,0];d=todo(BT,2)+`<div class="dock-h">You chose ${'AB'[my.choice]}: ${esc(q.opts[my.choice])}</div><div class="cbar"><span class="a" style="flex:${n[0]||.01}">A ${n[0]}</span><span class="b" style="flex:${n[1]||.01}">B ${n[1]}</span></div>`+hand('Now tell us WHY!','Start with: “I think … because …”');}
         break;
       case 'Z':ph=tag+qp;
-        if(my.buzz<0)d=`<button class="buzzbtn" data-sact="buzz">🔔<br>I KNOW!</button>`;
+        if(my.buzz<0)d=todo(BT,1)+`<button class="buzzbtn" data-sact="buzz">🔔<br>I KNOW!</button>`;
         else if(my.buzz<3)d=msg(`${['🥇','🥈','🥉'][my.buzz]} You're #${my.buzz+1}!`,'Get ready to answer out loud!');
         else d=msg('😅 Too slow this time!','Listen to your classmates. Be faster next time!');
         break;
@@ -1792,10 +1826,10 @@ function sShop(me,c){if(ST.lookOpen)return;
   const nextH=me.lv<3?c.hab[me.lv]:null,up=UPGRADE_COST[me.lv],h=c.hab[me.lv-1];
   const item=(key,e,name,desc,cost,dis,big)=>`<div class="it${big?' big':''}"><span class="e">${e}</span><div class="d"><b>${esc(name)}</b><small>${desc}</small></div><button class="btn primary" data-sact="buy" data-item="${key}" ${dis?'disabled':''}>${cost} 🪙</button></div>`;
   $('#s-sheet').innerHTML=`<div class="sh-h"><span class="bag">🎒</span><b>Supplies</b><span class="sp"></span><span class="coins small"><span class="em">🪙</span><b>${me.coins}</b></span><button class="btn" data-sact="shop-close" aria-label="Close">✕</button></div>
-  <div class="shop">${nextH?item('upgrade',nextH[1],'Upgrade to '+nextH[0],`${h[1]} → ${nextH[1]} · ❤️ ${HPMAX[me.lv]} → ${HPMAX[me.lv+1]}`,up,me.coins<up,true):`<div class="it big"><span class="e">${h[1]}</span><div class="d"><b>${esc(h[0])}</b><small>Your habitat is fully upgraded! ★★★</small></div></div>`}
-  ${item('atk',c.atk[1],c.atk[0],`Attack: 3 damage instead of 1 · ${me.inv.atk}/${INV_CAP}`,GEAR_COST,me.coins<GEAR_COST||me.inv.atk>=INV_CAP)}
-  ${item('def',ico(c.def[1]),c.def[0],`Defense: +3 🛡️ instead of +1 · ${me.inv.def}/${INV_CAP}`,GEAR_COST,me.coins<GEAR_COST||me.inv.def>=INV_CAP)}
-  ${item('heal',c.heal[1],c.heal[0],`Supplies: +4 ❤️ instead of +1 · ${me.inv.heal}/${INV_CAP}`,GEAR_COST,me.coins<GEAR_COST||me.inv.heal>=INV_CAP)}</div>
+  <div class="shop">${nextH?item('upgrade',nextH[1],'Upgrade to '+nextH[0],`${h[1]}➜${nextH[1]} &nbsp; ❤️${HPMAX[me.lv]}➜<b>${HPMAX[me.lv+1]}</b>`,up,me.coins<up,true):`<div class="it big"><span class="e">${h[1]}</span><div class="d"><b>${esc(h[0])}</b><small>Your habitat is fully upgraded! ★★★</small></div></div>`}
+  ${item('atk',c.atk[1],c.atk[0],`⚔️ 1➜<b>3</b> &nbsp; 🎒${me.inv.atk}/${INV_CAP}`,GEAR_COST,me.coins<GEAR_COST||me.inv.atk>=INV_CAP)}
+  ${item('def',ico(c.def[1]),c.def[0],`🛡️ +1➜<b>+3</b> &nbsp; 🎒${me.inv.def}/${INV_CAP}`,GEAR_COST,me.coins<GEAR_COST||me.inv.def>=INV_CAP)}
+  ${item('heal',c.heal[1],c.heal[0],`❤️ +1➜<b>+4</b> &nbsp; 🎒${me.inv.heal}/${INV_CAP}`,GEAR_COST,me.coins<GEAR_COST||me.inv.heal>=INV_CAP)}</div>
   <p class="hint">Answer questions to earn more 🪙!</p>`;
 }
 function sLook(){const sh=$('#s-sheet');sh.innerHTML=`<div class="sh-h"><span class="bag">✏️</span><b>My look</b><span class="sp"></span><button class="btn" data-sact="look-cancel" aria-label="Close">✕</button></div>
