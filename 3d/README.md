@@ -34,6 +34,7 @@
 - **Hsinchu**：新竹市＋新竹縣 15 個區做成六角地圖（海在西邊，東邊是山），先全景再縮到選定的區；每區有地標（城隍廟、科學園區大樓、竹北高鐵、關西茶園、北埔老街、峨眉大佛、新埔柿餅、寶山水庫、海邊風車）。
 - 鏡頭：`overview()` 全景、`focusSite(site)` 飛到基地；HUD 的 🌍 Overview 與點隊伍卡片可切換。
 - HUD：世界切換與隊伍基地收在右上「🗺️ Worlds & Bases」抽屜；攻擊、升級、Boss 時呼叫 `cinema(ms)` 自動隱藏 HUD 並加上電影黑邊，動作結束後恢復。`peek(pos,r,ms)` 讓鏡頭短暫飛近再回原位（升級時使用）。
+- 升級（`levelUp`）是「往外擴建」：院子（`userData.yard`）一圈圈擴大 → 舊家移到旁邊變成附屬建築（`userData.annex`，保留在場上）→ 搭鷹架 → 新家由下往上一塊一塊蓋起來 → 拆鷹架、彈跳、煙火、LEVEL N 星星牌。特寫時鏡頭從廣場那側拍，擋在前面的隔壁玩家與隊旗會暫時隱藏。計時用 `later(fn,ms)`（跟著畫面時鐘，慢機器也不會錯拍）。
 
 ## 隊伍基地（Team bases）
 - 每個場景提供 4 個具名基地：Jungle = Riverside / Big Tree / Waterfall Pool / Flower Meadow；Dino = Lava Cave / Lake Nest / Fern Forest / Bone Yard；Space = Ice / Red / Green / Gold Planet；Town = Fire Station / Library / Bakery / Toy Shop。
