@@ -6,7 +6,7 @@ Live site: https://yvonneyen86-wq.github.io/habitat-battle/ (GitHub Pages, branc
 ## Hard rules
 - **Everything students or the projector can see must be English only.** Chinese is allowed only in `docs/使用說明.md` and in replies to the teacher.
 - The teacher (Yvonne) is the only user who edits this repo; she prefers 中文 replies, bullet points, concrete steps, no filler.
-- Keep the game a **single self-contained `index.html`** (inline CSS/JS). External scripts: only PeerJS (jsDelivr) and qrcodejs (cdnjs), already linked.
+- Keep the game a **single self-contained `index.html`** (inline CSS/JS). External scripts: only PeerJS (jsDelivr), qrcodejs (cdnjs) and — once the 3D stage is wired in — Three.js r128 (cdnjs). Nothing else.
 - Never add logins, accounts, databases or analytics. Students join by scanning the QR code; connections are peer-to-peer (PeerJS); game state lives in the teacher's browser `localStorage`.
 - Do not change the PeerJS id prefix (`habitatbattle-ivan-`) or the URL scheme `?join=CODE`.
 
@@ -17,6 +17,8 @@ Live site: https://yvonneyen86-wq.github.io/habitat-battle/ (GitHub Pages, branc
 - `tools/build_bank.py` — embeds bank files into `index.html`.
 - `tools/mkpreview.py` — builds `preview.html` (teacher screen with sample students, no network) for Claude artifact previews.
 - `docs/使用說明.md` — teacher's manual (Chinese).
+- `3d/` — Three.js 3D stage for the teacher/whiteboard screen (**prototype, not yet wired into `index.html`**). Read `3d/README.md` first. `3d/habitat-3d.html` is the standalone demo; `python3 3d/build.py` rebuilds it from the five `.js` files; `node 3d/stubtest.js` is the no-browser smoke test. Students' tablets stay 2D. When integrating: keep `index.html` single-file, add a `🎮 3D Stage` toggle (default off) and fall back to the 2D canvas if THREE fails to load.
+- `docs/3D整合指令.md` — the teacher's step-by-step prompts for integrating the 3D stage (Chinese).
 
 ## Bank file format
 ```
