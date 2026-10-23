@@ -2,13 +2,13 @@
 const TEAM_DEFS=[{name:'Red',color:0xe03131,css:'#e03131'},{name:'Blue',color:0x3b5bdb,css:'#3b5bdb'},{name:'Green',color:0x2f9e44,css:'#2f9e44'},{name:'Yellow',color:0xf08c00,css:'#f08c00'}];
 let teamCount=2,teamSite=[0,1,2,3];const TEAMS=TEAM_DEFS;
 const HPMAX=[10,15,20];
-const ROSTER=[{name:'Amy',id:'lion',lv:2},{name:'Ben',id:'trex',lv:1},{name:'Cindy',id:'astro',lv:1},{name:'David',id:'chef',lv:3},{name:'Emma',id:'panda',lv:3},{name:'Frank',id:'alien',lv:2},{name:'Leo',id:'wizard',lv:1},{name:'Zoe',id:'robot',lv:2}];
+/* sample students; the creature each one appears as is picked per world (CHAR_SETS) so every scene shows its own inhabitants */
+const ROSTER=[{name:'Amy',i:0,lv:2},{name:'Ben',i:1,lv:1},{name:'Cindy',i:2,lv:1},{name:'David',i:3,lv:3},{name:'Emma',i:0,lv:3},{name:'Frank',i:1,lv:2},{name:'Leo',i:2,lv:1},{name:'Zoe',i:3,lv:2}];
 const SCENE_CLASS={jungle:'animal',dino:'dino',space:'space',town:'hero'};
 let players=[],env=null,boss=null,current='jungle',baseDecos=[];
 function flag(color){const g=new THREE.Group();g.add(mesh(CYL(.07,.07,3,12),GLOSS(0xfff6e0),0,1.5,0));g.add(mesh(SPH(.16,12,8),GLOSS(0xffd43b),0,3.05,0));const geo=new THREE.PlaneGeometry(1.5,.95,10,3);geo.translate(.75,0,0);const f=new THREE.Mesh(geo,GLOSS(color,{side:THREE.DoubleSide}));f.position.set(0,2.5,0);f.castShadow=true;f.userData.base=geo.attributes.position.array.slice();g.add(f);g.userData.cloth=f;return g;}
 function habFor(p){const cls=p.cls||CHAR_CLASS[p.id]||'animal';return HAB[cls][p.lv-1]();}
-function makePlayer(p,site,k,n){const g=new THREE.Group();const t=TEAMS[p.team];const ang=(k/Math.max(1,n))*6.283+.8,rr=n>4?site.slotR+1.2:site.slotR;const dx=Math.cos(ang)*rr,dz=Math.sin(ang)*rr;const y=site.yAt?site.yAt(dx,dz):site.y;g.position.set(site.x+dx,y+.5,site.z+dz);
- g.add(mesh(lathe([[0,.5],[2.4,.5],[2.75,.25],[2.8,0],[0,0]],32),M(current==='space'?0xc3c8de:current==='dino'?0xd9b36b:0x5fd45f,{roughness:.8}),0,0,0,false));
+function makePlayer(p,site,k,n){p.id=(CHAR_SETS[current]||CHAR_SETS.jungle)[p.i%4];const g=new THREE.Group();const t=TEAMS[p.team];const ang=(k/Math.max(1,n))*6.283+.8,rr=n>4?site.slotR+1.2:site.slotR;const dx=Math.cos(ang)*rr,dz=Math.sin(ang)*rr;const y=site.yAt?site.yAt(dx,dz):site.y;g.position.set(site.x+dx,y-.5,site.z+dz);
  const hab=habFor(p);hab.position.y=.5;g.add(hab);g.userData.hab=hab;
  const f=flag(t.color);f.position.set(2.1,.5,-.7);g.add(f);g.userData.flag=f;
  const ch=buildChar(p.id);ch.scale.setScalar(1.05);ch.position.set(-2.3,.5,2);ch.rotation.y=.4;g.add(ch);g.userData.ch=ch;
@@ -16,21 +16,21 @@ function makePlayer(p,site,k,n){const g=new THREE.Group();const t=TEAMS[p.team];
  Object.assign(g.userData,{p,hp0:HPMAX[p.lv-1],hpv:HPMAX[p.lv-1],down:false,shake:0,bob:Math.random()*6});world.add(g);players.push(g);return g;}
 function loadScene(key){current=key;clearWorld();players=[];boss=null;baseDecos=[];env=ENV[key]();
  if(key!=='dino'){sun.color.set(0xfff6e0);}if(key!=='space')sun.intensity=1.5;
- teamSite=teamSite.map((v,i)=>i<env.sites.length?v:i);buildTeams();
+ teamSite=teamSite.map((v,i)=>i<env.sites.length?v:i);buildTeams();overview();
  document.querySelectorAll('.sc button').forEach(b=>b.classList.toggle('sel',b.dataset.s===key));
- const names={jungle:'🌴 Jungle Safari',dino:'🌋 Dino Valley',space:'🪐 Space Quest',town:'🏙️ Hero Town'};document.getElementById('title').textContent=names[key];}
+ const names={jungle:'🌴 Jungle Safari',dino:'🌋 Dino Valley',space:'🪐 Solar System',town:'🏙️ Hsinchu'};document.getElementById('title').textContent=names[key];}
 /* every team lives at the base it picked: flag + coloured name sign at the site, players arranged around it */
 function buildTeams(){players.forEach(g=>world.remove(g));players=[];baseDecos.forEach(d=>world.remove(d));baseDecos=[];
  env.sites.forEach(st=>{st.sign.userData.lab.visible=true;if(st.claim)st.claim(null);});
  for(let i=0;i<teamCount;i++){const t=TEAMS[i],site=siteOf(env.sites,teamSite[i]);if(site.claim)site.claim(t);site.sign.userData.lab.visible=false;
   const deco=new THREE.Group();const f=flag(t.color);f.scale.setScalar(1.7);f.position.set(0,0,0);deco.add(f);const lab=bubbleSprite(t.name+' Base',t.css);lab.position.set(0,6.6,0);lab.scale.set(5.4,1.86,1);deco.add(lab);
-  const sx=site.x+(site.yAt?0:0),sz=site.z;deco.position.set(sx,site.yAt?site.yAt(0,0):site.y,sz);world.add(deco);baseDecos.push(deco);
+  deco.position.set(site.x,site.yAt?site.yAt(0,0):site.y,site.z);world.add(deco);baseDecos.push(deco);
   const mine=ROSTER.filter((p,k)=>k%teamCount===i);mine.forEach((p,k)=>makePlayer(Object.assign({},p,{team:i}),site,k,mine.length));}
  players.forEach(g=>setHp(g,g.userData.hp0));if(boss){world.add(boss);}renderHud();}
 function setTeamCount(n){teamCount=Math.max(2,Math.min(TEAM_DEFS.length,n));const used=new Set();teamSite=teamSite.map((v,i)=>{let s=v%env.sites.length;while(used.has(s))s=(s+1)%env.sites.length;used.add(s);return s;});buildTeams();}
-function chooseSite(team,siteIdx){const other=teamSite.findIndex((v,i)=>i<teamCount&&i!==team&&v===siteIdx);if(other>=0)teamSite[other]=teamSite[team];teamSite[team]=siteIdx;buildTeams();banner(TEAMS[team].name+' → '+env.sites[siteIdx].name,TEAMS[team].css);}
-function renderHud(){const tc=document.getElementById('tcards');if(tc)tc.innerHTML=TEAMS.slice(0,teamCount).map((t,i)=>`<div class="tcard" style="--tc:${t.css}"><b>${t.name} Team</b><small>${siteOf(env.sites,teamSite[i]).name}</small><div class="bar"><i id="hp${i}" style="width:100%"></i></div></div>`).join('');
- const b=document.getElementById('bases');if(b)b.innerHTML=`<div class="row"><b>Teams</b>${[2,3,4].map(n=>`<button data-n="${n}" class="${n===teamCount?'sel':''}" style="--tc:#3b5bdb">${n}</button>`).join('')}</div>`+TEAMS.slice(0,teamCount).map((t,i)=>`<div class="row" style="--tc:${t.css}"><span class="chip">${t.name}</span>${env.sites.map((st,k)=>{const owner=teamSite.findIndex((v,j)=>j<teamCount&&v===k);return `<button data-t="${i}" data-k="${k}" class="${owner===i?'sel':owner>=0?'taken':''}">${st.name}</button>`;}).join('')}</div>`).join('');
+function chooseSite(team,siteIdx){const other=teamSite.findIndex((v,i)=>i<teamCount&&i!==team&&v===siteIdx);if(other>=0)teamSite[other]=teamSite[team];teamSite[team]=siteIdx;buildTeams();focusSite(env.sites[siteIdx]);banner(TEAMS[team].name+' → '+env.sites[siteIdx].name,TEAMS[team].css);}
+function renderHud(){const tc=document.getElementById('tcards');if(tc)tc.innerHTML=TEAMS.slice(0,teamCount).map((t,i)=>`<div class="tcard" style="--tc:${t.css};cursor:pointer;pointer-events:auto" title="Zoom to this base"><b>${t.name} Team</b><small>${siteOf(env.sites,teamSite[i]).name}</small><div class="bar"><i id="hp${i}" style="width:100%"></i></div></div>`).join('');
+ const b=document.getElementById('bases');if(b)b.innerHTML=`<div class="row"><b>Teams</b>${[2,3,4].map(n=>`<button data-n="${n}" class="${n===teamCount?'sel':''}" style="--tc:#3b5bdb">${n}</button>`).join('')}<button data-ov="1" style="--tc:#1f8a4c">🌍 Overview</button></div>`+TEAMS.slice(0,teamCount).map((t,i)=>`<div class="row" style="--tc:${t.css}"><span class="chip">${t.name}</span>${env.sites.map((st,k)=>{const owner=teamSite.findIndex((v,j)=>j<teamCount&&v===k);return `<button data-t="${i}" data-k="${k}" class="${owner===i?'sel':owner>=0?'taken':''}">${st.name}</button>`;}).join('')}</div>`).join('');
  TEAMS.slice(0,teamCount).forEach((t,i)=>setTeamBar(i));}
 function setTeamBar(i){const ps=players.filter(q=>q.userData.p.team===i);const pct=ps.reduce((a,q)=>a+q.userData.hpv,0)/Math.max(1,ps.reduce((a,q)=>a+q.userData.hp0,0));const el=document.getElementById('hp'+i);if(el)el.style.width=Math.round(pct*100)+'%';}
 function setHp(g,v){g.userData.hpv=Math.max(0,Math.min(g.userData.hp0,v));g.userData.hp.userData.draw(g.userData.hpv/g.userData.hp0);
@@ -59,24 +59,29 @@ document.querySelector('.ctr').addEventListener('click',e=>{const b=e.target.clo
  if(a==='heal'){const c=players.filter(p=>p.userData.down||p.userData.hpv<p.userData.hp0);if(!c.length)return;const g=c[Math.floor(Math.random()*c.length)];if(g.userData.down)revive(g);else{setHp(g,g.userData.hpv+4);spawn(g.position.clone().setY(3),0x69db7c,16,4,5,1);ring(g.position,0x51cf66);}}
  if(a==='boss')summonBoss();if(a==='reset')resetAll();if(a==='cheer')players.forEach((g,i)=>setTimeout(()=>jump(g),i*120));});
 document.querySelector('.sc').addEventListener('click',e=>{const b=e.target.closest('button');if(b&&ENV[b.dataset.s])loadScene(b.dataset.s);});
-document.getElementById('bases').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.n)setTeamCount(+b.dataset.n);else chooseSite(+b.dataset.t,+b.dataset.k);});
+document.getElementById('bases').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.ov)overview();else if(b.dataset.n)setTeamCount(+b.dataset.n);else chooseSite(+b.dataset.t,+b.dataset.k);});
+document.getElementById('tcards').addEventListener('click',e=>{const c=e.target.closest('.tcard');if(!c)return;const i=[...c.parentNode.children].indexOf(c);focusSite(siteOf(env.sites,teamSite[i]));});
 /* camera: orbit, drag, pinch */
-let theta=.5,phi=.4,radius=46,shakeCam=0,auto=true,idle=0;const ptrs=new Map();let pinch0=0,rad0=0;
-const target=new THREE.Vector3(0,2,0);
-stage.addEventListener('pointerdown',e=>{ptrs.set(e.pointerId,{x:e.clientX,y:e.clientY});auto=false;idle=0;if(ptrs.size===2){const[a,b]=[...ptrs.values()];pinch0=Math.hypot(a.x-b.x,a.y-b.y);rad0=radius;}});
+let theta=.5,phi=.5,radius=64,shakeCam=0,auto=true,idle=0;const ptrs=new Map();let pinch0=0,rad0=0;
+const target=new THREE.Vector3(0,2,0);const camGoal={t:new THREE.Vector3(0,2,0),r:64,phi:.5};
+/* panorama → zoom: the whole world first, then fly to a base when it is chosen */
+function overview(){const v=(env&&env.view)||{};camGoal.t.set(v.x||0,v.y??2,v.z||0);camGoal.r=v.r||64;camGoal.phi=v.phi||.5;}
+function focusSite(site){if(!site)return;camGoal.t.set(site.x,(site.yAt?site.yAt(0,0):site.y)+1.5,site.z);camGoal.r=(env&&env.focusR)||30;camGoal.phi=.42;}
+stage.addEventListener('pointerdown',e=>{ptrs.set(e.pointerId,{x:e.clientX,y:e.clientY});auto=false;idle=0;camGoal.r=radius;camGoal.phi=phi;if(ptrs.size===2){const[a,b]=[...ptrs.values()];pinch0=Math.hypot(a.x-b.x,a.y-b.y);rad0=radius;}});
 const endPtr=e=>ptrs.delete(e.pointerId);addEventListener('pointerup',endPtr);addEventListener('pointercancel',endPtr);
-addEventListener('pointermove',e=>{const p=ptrs.get(e.pointerId);if(!p)return;if(ptrs.size===1){theta-=(e.clientX-p.x)*.006;phi=Math.max(.2,Math.min(1.05,phi+(e.clientY-p.y)*.004));}p.x=e.clientX;p.y=e.clientY;if(ptrs.size===2){const[a,b]=[...ptrs.values()];const d=Math.hypot(a.x-b.x,a.y-b.y);if(pinch0)radius=Math.max(20,Math.min(90,rad0*pinch0/d));}});
-stage.addEventListener('wheel',e=>{radius=Math.max(20,Math.min(90,radius+e.deltaY*.03));},{passive:true});
+addEventListener('pointermove',e=>{const p=ptrs.get(e.pointerId);if(!p)return;if(ptrs.size===1){theta-=(e.clientX-p.x)*.006;phi=Math.max(.2,Math.min(1.05,phi+(e.clientY-p.y)*.004));camGoal.phi=phi;}p.x=e.clientX;p.y=e.clientY;if(ptrs.size===2){const[a,b]=[...ptrs.values()];const d=Math.hypot(a.x-b.x,a.y-b.y);if(pinch0){radius=Math.max(16,Math.min(190,rad0*pinch0/d));camGoal.r=radius;}}});
+stage.addEventListener('wheel',e=>{radius=Math.max(16,Math.min(190,radius+e.deltaY*.05));camGoal.r=radius;},{passive:true});
 function resize(){const w=innerWidth,h=innerHeight;renderer.setSize(w,h);camera.aspect=w/h;camera.updateProjectionMatrix();}
 addEventListener('resize',resize);resize();
 /* loop */
 const clock=new THREE.Clock();
 function loop(){requestAnimationFrame(loop);const dt=Math.min(.05,clock.getDelta()),t=clock.elapsedTime;
  if(!ptrs.size){idle+=dt;if(idle>5)auto=true;}if(auto&&!RM)theta+=dt*.07;
+ const kk=1-Math.exp(-3*dt);target.lerp(camGoal.t,kk);radius+=(camGoal.r-radius)*kk;phi+=(camGoal.phi-phi)*kk;
  const sh=shakeCam>0?(shakeCam-=dt*1.6,Math.sin(t*60)*shakeCam*.35):0;
  camera.position.set(target.x+Math.sin(theta)*Math.cos(phi)*radius,target.y+Math.sin(phi)*radius+sh,target.z+Math.cos(theta)*Math.cos(phi)*radius);camera.lookAt(target);
  if(!RM){envAnim.trees.forEach(p=>{p.rotation.z=Math.sin(t*1.1+p.userData.sway)*.025;p.rotation.x=Math.cos(t*.9+p.userData.sway)*.02;});
-  envAnim.clouds.forEach(c=>{c.position.x+=c.userData.v*dt;if(c.position.x>60)c.position.x=-60;});envAnim.coins.forEach(c=>{c.rotation.y=t*2.5+c.userData.ph;c.position.y+=Math.sin(t*2+c.userData.ph)*.004;});
+  envAnim.clouds.forEach(c=>{c.position.x+=c.userData.v*dt;if(c.position.x>130)c.position.x=-130;});envAnim.extra.forEach(o=>{if(o.userData&&o.userData.ph!=null&&o.position)o.position.y=.1+Math.sin(t*1.3+o.userData.ph)*.12;});envAnim.coins.forEach(c=>{c.rotation.y=t*2.5+c.userData.ph;c.position.y+=Math.sin(t*2+c.userData.ph)*.004;});
   if(env&&env.tick)env.tick(dt,t);
   players.forEach(g=>{const u=g.userData;if(!u.down){u.hab.position.y=.5+Math.sin(t*1.6+u.bob)*.05;const ch=u.ch;if(!anims.some(a=>a.g===g)){ch.position.y=.5+Math.abs(Math.sin(t*2.4+u.bob))*.18;}u.lab.position.y=4.9+Math.sin(t*2+u.bob)*.12;ch.rotation.y=.35+Math.sin(t*.8+u.bob)*.25;if(ch.userData.head)ch.userData.head.rotation.z=Math.sin(t*1.7+u.bob)*.08;ch.traverse(o=>{if(o.userData.flame)o.scale.y=1+Math.sin(t*25+o.position.x*9)*.4;});}
    const cl=u.flag.userData.cloth,pa=cl.geometry.attributes.position.array,ba=cl.userData.base;for(let i=0;i<pa.length;i+=3){pa[i+2]=Math.sin(t*5+ba[i]*3)*.12*ba[i];}cl.geometry.attributes.position.needsUpdate=true;

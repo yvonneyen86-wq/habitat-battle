@@ -52,7 +52,7 @@ canvas{display:block}
 </head>
 <body>
 <div id="stage"></div>
-<div class="hud"><div class="plate"><h1 id="title">🌴 Jungle Safari</h1><p class="note">3D prototype with sample students · drag to look around · pinch or scroll to zoom</p></div><div class="sc"><button data-s="jungle" class="sel">🌴 Jungle</button><button data-s="dino">🌋 Dino</button><button data-s="space">🪐 Space</button><button data-s="town">🏙️ Town</button></div><div class="bases" id="bases"></div><span class="sp"></span><div class="q"><span class="k">⌨️ TYPE A FULL SENTENCE · ROUND 3</span><div class="t">What did you do last weekend?</div></div></div>
+<div class="hud"><div class="plate"><h1 id="title">🌴 Jungle Safari</h1><p class="note">3D prototype with sample students · drag to look around · pinch or scroll to zoom</p></div><div class="sc"><button data-s="jungle" class="sel">🌴 Jungle</button><button data-s="dino">🌋 Dino</button><button data-s="space">🪐 Solar System</button><button data-s="town">🏙️ Hsinchu</button></div><div class="bases" id="bases"></div><span class="sp"></span><div class="q"><span class="k">⌨️ TYPE A FULL SENTENCE · ROUND 3</span><div class="t">What did you do last weekend?</div></div></div>
 <div class="teams">
   <div class="tcards" id="tcards"></div>
   <div class="ctr"><button class="war" data-a="attack">⚔️ Attack</button><button class="gold" data-a="level">🔨 Level up</button><button class="ok" data-a="heal">❤️ Repair</button><button class="boss" data-a="boss">👹 Boss</button><button data-a="cheer">🎉 Cheer</button><button data-a="reset">↺ Reset</button></div>

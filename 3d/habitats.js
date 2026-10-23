@@ -1,5 +1,5 @@
 /* ===== habitats: HAB[class][level-1]() -> Group (base at y=0) ===== */
-const LEAF=[0x4fcf5c,0x3fbf4d,0x6ee07a];
+/* LEAF palette lives in scenes.js */
 function canopy(g,list){list.forEach(([x,y,z,r],i)=>{const b=mesh(SPH(1,24,16),M(LEAF[i%3],{roughness:.7}),x,y,z);b.scale.setScalar(r);g.add(b);});}
 function window_(g,x,y,z,w=.6,h=.6){g.add(mesh(BOX(w,h,.12),GLOW(0xfff3bf,0xffd43b,.9),x,y,z));}
 const HAB={

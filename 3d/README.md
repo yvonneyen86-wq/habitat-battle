@@ -26,6 +26,14 @@
   - Town：高矮彩色大樓群、鐘樓、斑馬線、路燈
 - 使用場合：教室**電子白板**（非投影），觸控拖曳看鏡頭、雙指縮放。
 
+## 四個世界（2026-10 改版）
+- 風格仿低多邊形桌遊微縮模型：六角島嶼浮在水面、切面幾何、柔和土色調、圓頭小人與原生生物。角色依世界決定：Jungle 是叢林動物（monkey / elephant / tiger / toucan）、Dino 是恐龍（trex / bronto / triceratops / stego）、Space 是太空人／外星人／機器人、Hsinchu 是鎮上的人。
+- **Jungle**：六角島叢林（營火廣場、瀑布山、遺跡、河岸、大樹、花田、蝴蝶與鳥群）。
+- **Dino**：火山是主角（頂點位移岩體、岩漿流、冒煙、噴泉、焦油坑、化石、翼龍）。
+- **Solar System**：先看整個太陽系（太陽、八大行星軌道、小行星帶、彗星），選了星球鏡頭飛過去；每顆行星就是一個基地，隊伍站在球面上。
+- **Hsinchu**：新竹市＋新竹縣 15 個區做成六角地圖（海在西邊，東邊是山），先全景再縮到選定的區；每區有地標（城隍廟、科學園區大樓、竹北高鐵、關西茶園、北埔老街、峨眉大佛、新埔柿餅、寶山水庫、海邊風車）。
+- 鏡頭：`overview()` 全景、`focusSite(site)` 飛到基地；HUD 的 🌍 Overview 與點隊伍卡片可切換。
+
 ## 隊伍基地（Team bases）
 - 每個場景提供 4 個具名基地：Jungle = Riverside / Big Tree / Waterfall Pool / Flower Meadow；Dino = Lava Cave / Lake Nest / Fern Forest / Bone Yard；Space = Ice / Red / Green / Gold Planet；Town = Fire Station / Library / Bakery / Toy Shop。
 - 隊伍數不限（示範 2–4 隊）。每隊 `chooseSite(team, siteIdx)` 選一個基地；同一基地只能一隊，選到別隊的會對調。
