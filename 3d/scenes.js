@@ -3,7 +3,7 @@ let world=null;const envAnim={trees:[],clouds:[],coins:[],extra:[]};
 const randDir=()=>{const u=rnd(-1,1),t=rnd(0,6.283),r=Math.sqrt(1-u*u);return new THREE.Vector3(r*Math.cos(t),u,r*Math.sin(t));};
 function clearWorld(){if(world){scene.remove(world);}world=new THREE.Group();scene.add(world);envAnim.trees=[];envAnim.clouds=[];envAnim.coins=[];envAnim.extra=[];}
 function inst(geo,mat,n,place,opts={}){const im=new THREE.InstancedMesh(geo,mat,n);const d=new THREE.Object3D();for(let i=0;i<n;i++){d.position.set(0,0,0);d.rotation.set(0,0,0);d.scale.set(1,1,1);place(d,i);d.updateMatrix();im.setMatrixAt(i,d.matrix);}im.castShadow=!!opts.shadow;im.receiveShadow=opts.receive!==false;world.add(im);return im;}
-function cloudsAt(colA,n=9,yMin=16,yMax=26){for(let i=0;i<n;i++){const g=new THREE.Group();[[0,0,0,2.2],[-2,-.3,.4,1.6],[2.1,-.2,-.3,1.7],[.6,.9,.2,1.5],[-.9,.8,-.5,1.3]].forEach(([x,y,z,r])=>g.add(mesh(SPH(r,8,6),M(colA),x,y,z,false)));g.position.set(rnd(-120,120),rnd(yMin,yMax),rnd(-120,60));g.scale.setScalar(rnd(1,2.4));g.userData.v=rnd(.6,1.4);envAnim.clouds.push(g);world.add(g);}}
+function cloudsAt(colA,n=9,yMin=16,yMax=26){for(let i=0;i<n;i++){const g=new THREE.Group();[[0,0,0,2.2],[-2,-.3,.4,1.6],[2.1,-.2,-.3,1.7],[.6,.9,.2,1.5],[-.9,.8,-.5,1.3]].forEach(([x,y,z,r])=>g.add(mesh(SPH(r,8,6),M(colA),x,y,z,false)));{const a=rnd(0,6.28),r=rnd(95,170);g.position.set(Math.cos(a)*r,rnd(yMin,yMax)+22,Math.sin(a)*r);}g.scale.setScalar(rnd(1.6,3));g.userData.v=rnd(.6,1.4);envAnim.clouds.push(g);world.add(g);}}
 /* ---- low-poly trees ---- */
 const treeBall=SPH(1,7,5);
 function lollipop(x,z,s,cols,parent){const g=new THREE.Group();g.add(mesh(CYL(.26,.4,2.4,7),GLOSS(0x8d5a2b),0,1.2*s,0)).scale.setScalar(s);[[0,3.2,0,1.7],[1.1,2.6,.4,1.2],[-1,2.8,-.4,1.15],[.3,4.1,-.5,1.1]].forEach(([dx,dy,dz,r],i)=>{const b=mesh(treeBall,M(cols[i%3]),dx*s,dy*s,dz*s);b.scale.setScalar(r*s);b.rotation.set(rnd(0,3),rnd(0,3),0);g.add(b);});g.position.set(x,.6,z);g.userData.sway=Math.random()*6;(parent||world).add(g);envAnim.trees.push(g);return g;}
@@ -11,7 +11,7 @@ function conifer(x,z,s,col=0x4f8a5f,parent){const g=new THREE.Group();g.add(mesh
 function palmTree(x,z,s,leafC=0x6fae5a,parent){const g=new THREE.Group();let y=0;for(let i=0;i<6;i++){const t=mesh(CYL(.18*s,.24*s,.8*s,7),GLOSS(0xa8703a),Math.sin(i*.45)*.3*s,y+.4*s,0);t.rotation.z=.1;g.add(t);y+=.76*s;}
  for(let i=0;i<7;i++){const l=mesh(SPH(.5*s,6,4),M(leafC),0,y,0);l.scale.set(1,.3,3.2);const a=i/7*6.28;l.rotation.y=a;l.position.set(Math.cos(a)*1.2*s,y+.1*s,Math.sin(a)*1.2*s);l.rotation.z=Math.cos(a)*.45;l.rotation.x=Math.sin(a)*.45;g.add(l);}
  g.position.set(x,.6,z);g.userData.sway=Math.random()*6;(parent||world).add(g);envAnim.trees.push(g);return g;}
-const LEAF=[0x7fb069,0x6a9e58,0x8fc06a];
+const LEAF=[0x6fcf4f,0x58b947,0x88dd60];
 function birds(n=12,col=0xffffff){const list=[];for(let i=0;i<n;i++){const b=new THREE.Group();for(const s of[-1,1])b.add(mesh(BOX(1,.06,.32),GLOSS(col),s*.5,0,0,false));b.userData={ph:rnd(0,6),r:rnd(18,44),y:rnd(14,24),sp:rnd(.25,.45)};world.add(b);list.push(b);}
  return(dt,t)=>list.forEach(b=>{const u=b.userData,a=t*u.sp+u.ph;b.position.set(Math.cos(a)*u.r,u.y+Math.sin(t*2+u.ph)*.6,Math.sin(a)*u.r);b.rotation.y=-a;b.children[0].rotation.z=Math.sin(t*9+u.ph)*.6;b.children[1].rotation.z=-Math.sin(t*9+u.ph)*.6;});}
 /* ---- volcano: displaced lathe with vertex-coloured basalt, lava pool, lava ribbons, glowing crater and drifting smoke ---- */
@@ -33,10 +33,19 @@ function volcano(x,z,sc=1,o={}){const g=new THREE.Group();const prof=[[0,0],[15,
 const HEX_R=11,HEX_D=20.6;
 const hexAngle=k=>(30+60*k)*Math.PI/180;
 const hexPos=k=>{const a=hexAngle(k);return{x:Math.sin(a)*HEX_D,z:Math.cos(a)*HEX_D};};
-function ocean(color,y=0){const s=mesh(new THREE.CircleGeometry(340,40),M(color),0,y,0,false);s.rotation.x=-Math.PI/2;s.receiveShadow=true;world.add(s);return s;}
-function hexTile(x,z,top,border,side,R=HEX_R){const g=new THREE.Group();const body=mesh(CYL(R,R*1.05,2.6,6),M(side),0,-.7,0,false);g.add(body);g.add(mesh(CYL(R,R,.1,6),M(border),0,.62,0,false));g.add(mesh(CYL(R-1.3,R-1.3,.08,6),M(top),0,.69,0,false));
- const halo=mesh(CYL(R+1.8,R+2.2,.05,6),M(0xa9dde2,{transparent:true,opacity:.5}),0,.02,0,false);halo.receiveShadow=false;g.add(halo);g.position.set(x,0,z);world.add(g);g.userData.R=R;return g;}
-function hexFence(h,R=HEX_R,colP=0x8d6e4a,colR=0xb48a5a){const r=R-.6;for(let e=0;e<6;e++){const a0=e/6*6.283,a1=(e+1)/6*6.283;const ax=Math.sin(a0)*r,az=Math.cos(a0)*r,bx=Math.sin(a1)*r,bz=Math.cos(a1)*r;const len=Math.hypot(bx-ax,bz-az);const rail=mesh(BOX(.12,.1,len-1),GLOSS(colR),(ax+bx)/2,1.45,(az+bz)/2,false);rail.rotation.y=Math.atan2(bx-ax,bz-az);h.add(rail);
+function ocean(color,y=0){const s=mesh(new THREE.CircleGeometry(340,64),GLOSS(color,{roughness:.35,metalness:.05}),0,y,0,false);s.rotation.x=-Math.PI/2;s.receiveShadow=true;world.add(s);return s;}
+/* rounded hexagon outline (corner pointing +z, same orientation as a 6-sided cylinder) */
+function hexShape(R,c){const P=[];for(let i=0;i<6;i++){const t=i/6*6.2832;P.push(new THREE.Vector2(R*Math.sin(t),-R*Math.cos(t)));}const sh=new THREE.Shape();
+ const lerp=(a,b,d)=>{const v=new THREE.Vector2(b.x-a.x,b.y-a.y);const L=Math.hypot(v.x,v.y)||1;return new THREE.Vector2(a.x+v.x/L*d,a.y+v.y/L*d);};
+ for(let i=0;i<6;i++){const C=P[i],A=P[(i+5)%6],B=P[(i+1)%6];const p0=lerp(C,A,c),p1=lerp(C,B,c);if(i===0)sh.moveTo(p0.x,p0.y);else sh.lineTo(p0.x,p0.y);sh.quadraticCurveTo(C.x,C.y,p1.x,p1.y);}sh.closePath();return sh;}
+const _slab={};function slab(R,c,d,bev){const k=[R,c,d,bev].join(',');if(_slab[k])return _slab[k];const g=new THREE.ExtrudeGeometry(hexShape(R,c),{depth:d,bevelEnabled:true,bevelThickness:bev,bevelSize:bev,bevelSegments:4,curveSegments:8});g.rotateX(-Math.PI/2);g.computeVertexNormals();return _slab[k]=g;}
+/* island tile: earthy cliff with a soft rounded lip, grass on top, a shallow-water ring around it */
+function hexTile(x,z,top,border,side,R=HEX_R){const g=new THREE.Group();
+ const body=mesh(slab(R-.4,2.4,2.4,.5),M(side),0,.3-2.9,0,false);g.add(body);
+ const grass=mesh(slab(R-.55,2.3,.22,.28),M(top),0,.7-.78,0,false);grass.castShadow=false;g.add(grass);
+ const shallow=mesh(new THREE.ShapeGeometry(hexShape(R+2.2,3.4),8),M(0x9fe6e4,{transparent:true,opacity:.55}),0,.04,0,false);shallow.rotation.x=-Math.PI/2;shallow.receiveShadow=false;g.add(shallow);
+ g.position.set(x,0,z);world.add(g);g.userData.R=R;return g;}
+function hexFence(h,R=HEX_R,colP=0xfaf3e6,colR=0xf1e6d2){const r=R-.6;for(let e=0;e<6;e++){const a0=e/6*6.283,a1=(e+1)/6*6.283;const ax=Math.sin(a0)*r,az=Math.cos(a0)*r,bx=Math.sin(a1)*r,bz=Math.cos(a1)*r;const len=Math.hypot(bx-ax,bz-az);const rail=mesh(BOX(.12,.1,len-1),GLOSS(colR),(ax+bx)/2,1.45,(az+bz)/2,false);rail.rotation.y=Math.atan2(bx-ax,bz-az);h.add(rail);
   for(let k=0;k<4;k++){const t=k/4+.125;h.add(mesh(BOX(.18,1,.18),GLOSS(colP),ax+(bx-ax)*t,1.15,az+(bz-az)*t));}}}
 function bridgeTo(k,col=0xc9a070,post=0x9a7048){const a=hexAngle(k);const g=new THREE.Group();g.add(mesh(BOX(3.2,.26,4.6),GLOSS(col),0,.64,0));for(const s of[-1,1]){g.add(mesh(BOX(.14,.9,4.6),GLOSS(post),s*1.5,1.05,0,false));for(const u of[-1,0,1])g.add(mesh(BOX(.2,1.1,.2),GLOSS(post),s*1.5,1.1,u*1.9));}g.position.set(Math.sin(a)*HEX_D/2,0,Math.cos(a)*HEX_D/2);g.rotation.y=a;world.add(g);return g;}
 /* scatter helpers that stay inside a hex */
@@ -46,7 +55,7 @@ function flowersAt(cx,cz,cols,n=14,rMax=8){const petal=SPH(.2,6,4);petal.scale(1
 function rocksAt(cx,cz,col,n,rMin,rMax,sMin=.5,sMax=1.4){inst(new THREE.DodecahedronGeometry(1,0),M(col),n,d=>{inHex(d,cx,cz,rMin,rMax,.9);const s=rnd(sMin,sMax);d.scale.set(s,s*.7,s);d.rotation.set(rnd(0,3),rnd(0,6),0);});}
 function ringTrees(cx,cz,n,kind,R=HEX_R-2.4){for(let i=0;i<n;i++){const a=i/n*6.28+rnd(-.2,.2),r=rnd(R-1.5,R);kind(cx+Math.cos(a)*r,cz+Math.sin(a)*r);}}
 /* islets: little round islands with a thing on them, scattered to the horizon */
-function islet(x,z,r,top,side,deco){const g=new THREE.Group();g.add(mesh(CYL(r,r*1.1,2.2,8),M(side),0,-.5,0,false));g.add(mesh(CYL(r-.7,r-.7,.1,8),M(top),0,.64,0,false));const halo=mesh(CYL(r+1.4,r+1.6,.05,8),M(0xa9dde2,{transparent:true,opacity:.5}),0,.02,0,false);g.add(halo);g.position.set(x,0,z);g.rotation.y=rnd(0,6);world.add(g);deco&&deco(g,r);return g;}
+function islet(x,z,r,top,side,deco){const g=new THREE.Group();g.add(mesh(CYL(r,r*1.08,2.2,24),M(side),0,-.5,0,false));g.add(mesh(CYL(r-.35,r-.25,.3,24),M(top),0,.62,0,false));const halo=mesh(new THREE.CircleGeometry(r+1.8,32),M(0x9fe6e4,{transparent:true,opacity:.55}),0,.03,0,false);halo.rotation.x=-Math.PI/2;g.add(halo);g.position.set(x,0,z);g.rotation.y=rnd(0,6);world.add(g);deco&&deco(g,r);return g;}
 function lighthouse(g){g.add(mesh(CYL(1.1,1.4,6,8),GLOSS(0xf8f9fa),0,3.6,0));for(let i=0;i<3;i++)g.add(mesh(CYL(1.15+i*.04,1.2+i*.04,.7,8),GLOSS(0xe03131),0,1.6+i*1.8,0));g.add(mesh(CYL(1.3,1.3,.3,8),GLOSS(0x495057),0,6.7,0));g.add(mesh(CYL(.7,.7,.8,8),GLOW(0xfff3bf,0xffd43b,1),0,7.2,0));g.add(mesh(CONE(1,.9,8),GLOSS(0xe03131),0,8,0));}
 function boat(x,z,col=0xe8744a){const g=new THREE.Group();g.add(mesh(BOX(3,.7,1.3),GLOSS(col),0,.35,0));g.add(mesh(BOX(2.6,.2,1),GLOSS(0xf2cfa0),0,.75,0));g.add(mesh(CYL(.06,.06,3,5),GLOSS(0x8d6e4a),-.2,2.2,0));const sail=mesh(new THREE.PlaneGeometry(1.8,2.2),M(0xfff6e0,{side:THREE.DoubleSide}),.7,2.4,0,false);g.add(sail);g.position.set(x,.1,z);g.rotation.y=rnd(0,6);g.userData.ph=rnd(0,6);world.add(g);return g;}
 function buoys(n,rMin,rMax){for(let i=0;i<n;i++){const a=rnd(0,6.28),r=rnd(rMin,rMax);const g=new THREE.Group();g.add(mesh(CYL(.35,.45,.9,7),GLOSS(0xe03131),0,.45,0));g.add(mesh(CYL(.36,.36,.3,7),GLOSS(0xf8f9fa),0,.6,0));g.add(mesh(CYL(.08,.08,1.2,5),GLOSS(0x495057),0,1.4,0));g.add(mesh(SPH(.14,6,5),GLOW(0xfff3bf,0xffd43b,.8),0,2,0));g.position.set(Math.cos(a)*r,.1,Math.sin(a)*r);g.userData.ph=rnd(0,6);world.add(g);envAnim.extra.push(g);}}
@@ -68,8 +77,8 @@ const SITE_K=[1,2,4,5],LAND_K=3,PARK_K=0;
 function cluster(top,border,side,fence=true){const tiles=[hexTile(0,0,top,border,side)];for(let k=0;k<6;k++){const p=hexPos(k);const h=hexTile(p.x,p.z,top,border,side);tiles.push(h);if(fence)hexFence(h);bridgeTo(k);}return tiles;}
 
 const ENV={
- jungle(){setSky(0x8fd0e6,0xf0f1dc,0xd4e9ea,45,170);sun.position.set(18,30,14);hemi.color.set(0xe3f1f5);hemi.groundColor.set(0x6f8a4f);ocean(0x4fb0bf);
-  const tiles=cluster(0x8fc06a,0xe3c89c,0xd4b183);const fly=birds(12);const flutter=butterflies(8);
+ jungle(){setSky(0x5fc3ff,0xe9f8ff,0xd8f1ff,70,230);sun.position.set(18,30,14);hemi.color.set(0xe3f1f5);hemi.groundColor.set(0x6f8a4f);ocean(0x4cc9d4);
+  const tiles=cluster(0x6fcf4f,0xf3e2b0,0xb98f63);const fly=birds(12);const flutter=butterflies(8);
   /* centre: campfire arena */ for(let i=0;i<6;i++){const a=i/6*6.28;world.add(mesh(CYL(.5,.6,.5,7),GLOSS(0x9a7048),Math.cos(a)*3.2,.95,Math.sin(a)*3.2));}world.add(mesh(CYL(1.1,1.3,.3,8),M(0x6b6b6b),0,.8,0));for(let i=0;i<3;i++)world.add(mesh(CONE(.35,1.4,5),GLOW(0xffb703,0xff5c1a,1.3),Math.cos(i*2.1)*.3,1.5,Math.sin(i*2.1)*.3));
   ringTrees(0,0,6,(x,z)=>lollipop(x,z,rnd(.7,.95),LEAF));tuftsAt(0,0,0x9fd07a,30);bigLeaves(0,0,6,5.5,8.5);
   /* park hex */{const p=hexPos(PARK_K);const pond=mesh(CYL(4,4,.12,8),GLOSS(0x74c0d6),p.x,.7,p.z,false);world.add(pond);for(let i=0;i<4;i++)world.add(mesh(CYL(.5,.5,.06,6),M(0x6fae5a),p.x+Math.cos(i*1.7)*2.4,.78,p.z+Math.sin(i*1.7)*2.4,false));ruins(p.x,p.z+1);ringTrees(p.x,p.z,7,(x,z)=>lollipop(x,z,rnd(.6,.9),LEAF));flowersAt(p.x,p.z,[0xff8787,0xffd43b,0xff8fb8],10,8);bigLeaves(p.x,p.z,8,5,8.5);}
@@ -84,8 +93,8 @@ const ENV={
   archipelago(12,0x8fc06a,0xd4b183,(g,r)=>{const n=Math.round(r/2.2);for(let i=0;i<n;i++){const a=rnd(0,6.28),rr=rnd(0,r-2.2);(Math.random()<.5?palmTree:lollipop)(Math.cos(a)*rr,Math.sin(a)*rr,rnd(.6,1),Math.random()<.5?LEAF:0x6fae5a,g);}});
   islet(70,-50,7,0xe3c89c,0xd4b183,g=>lighthouse(g));for(let i=0;i<4;i++)boat(rnd(-90,90),rnd(40,100));buoys(10,40,110);cloudsAt(0xffffff,10);
   return{sites,bossAt:{x:0,z:-3},tick(dt,t){fly(dt,t);flutter(dt,t);}};},
- dino(){setSky(0xf2a66a,0xf6ddb6,0xe9d2b3,45,170);sun.position.set(-14,26,18);sun.color.set(0xffe2b8);hemi.color.set(0xf4dcc0);hemi.groundColor.set(0x8a5a2b);ocean(0x5fb5b8);
-  const tiles=cluster(0xdcc08a,0xe8d3a3,0xc9a874,false);
+ dino(){setSky(0xff9e6b,0xffe6bf,0xffe0c2,70,230);sun.position.set(-14,26,18);sun.color.set(0xffe2b8);hemi.color.set(0xf4dcc0);hemi.groundColor.set(0x8a5a2b);ocean(0x55c4c8);
+  const tiles=cluster(0xf0d39a,0xf6e3b8,0xb98a5c,false);
   /* centre: fossil dig */{const skel=new THREE.Group();for(let i=0;i<6;i++){const rib=mesh(new THREE.TorusGeometry(2-i*.22,.16,6,14,Math.PI),GLOSS(0xfff6e0),i*1.1,0,0);rib.rotation.y=Math.PI/2;skel.add(rib);}skel.add(mesh(CYL(.22,.22,7,7),GLOSS(0xfff6e0),3.2,0,0)).rotation.z=Math.PI/2;const skull=mesh(SPH(1.3,8,6),GLOSS(0xfff6e0),-1.5,.3,0);skull.scale.set(1.6,.9,1);skel.add(skull);skel.position.set(0,.9,1);skel.rotation.y=-.6;world.add(skel);rocksAt(0,0,0x8a6a4a,6,5,8.5);tarPit(-5,4);ringTrees(0,0,4,(x,z)=>fernTree(x,z,rnd(.8,1.1)),HEX_R-2.2);}
   /* landmark hex: the volcano */{const p=hexPos(LAND_K);var vol=volcano(p.x,p.z,.72);}
   /* park hex: fern grove */{const p=hexPos(PARK_K);for(let i=0;i<7;i++){const f=new THREE.Group();for(let k=0;k<7;k++){const l=mesh(CONE(.32,2.2,4),M(k%2?0x4e8f3a:0x6aa84f),0,1.1,0);const b=k/7*6.28;l.rotation.set(Math.sin(b)*.9,0,-Math.cos(b)*.9);l.position.set(Math.cos(b)*.7,.8,Math.sin(b)*.7);f.add(l);}const a=i/7*6.28;f.position.set(p.x+Math.cos(a)*6.5,.7,p.z+Math.sin(a)*6.5);f.scale.setScalar(rnd(.9,1.4));f.userData.sway=rnd(0,6);world.add(f);envAnim.trees.push(f);}var geyserTick=geyser(p.x-4,p.z-2);fernTree(p.x+4,p.z-3,1.2);for(let i=0;i<5;i++){const e=mesh(SPH(.8,8,6),GLOSS([0xd3f9d8,0xfff3bf,0xd0ebff,0xffd8a8,0xe5dbff][i]),p.x+Math.cos(i*1.3)*1.5,1.4,p.z+Math.sin(i*1.3)*1.5);e.scale.y=1.3;world.add(e);}}
@@ -119,11 +128,11 @@ const ENV={
   planet('Uranus',126,2.4,6,0x8ecae6,(g,R)=>{const r=mesh(new THREE.TorusGeometry(R*1.6,.18,5,40),M(0xbde0fe),0,0,0,false);r.rotation.z=Math.PI/2.2;g.add(r);});
   planet('Neptune',146,3.9,5.8,0x3d5a99,(g,R)=>{g.add(mesh(SPH(1.1,8,6),M(0x223a70),R*.6,1,R*.7,false)).scale.set(1.3,.8,.5);});
   /* a comet */ const comet=new THREE.Group();comet.add(mesh(SPH(1,7,5),GLOSS(0xe9ecef),0,0,0,false));for(let i=0;i<7;i++)comet.add(mesh(SPH(.8-i*.1,6,5),new THREE.MeshBasicMaterial({color:col(0xa5d8ff),transparent:true,opacity:.5-i*.06}),-(i+1)*1.6,0,0,false));world.add(comet);
-  return{sites,bossAt:{x:0,z:24},view:{r:175,phi:.62,y:0},focusR:24,tick(dt,t){bodies.forEach((b,i)=>{b.rotation.y=t*.08*(1+i*.1);if(b.userData.moon){b.userData.moon.position.set(Math.cos(t*.6)*(b.children[0].geometry.parameters.radius+4),2,Math.sin(t*.6)*(b.children[0].geometry.parameters.radius+4));}});corona.scale.setScalar(1+Math.sin(t*2)*.03);const ca=t*.12;comet.position.set(Math.cos(ca)*120,18+Math.sin(ca*3)*4,Math.sin(ca)*120);comet.rotation.y=-ca+Math.PI;}};},
- town(){setSky(0x9fd3e6,0xf0f1dc,0xd4e9ea,80,260);sun.position.set(18,30,10);hemi.color.set(0xe3f1f5);hemi.groundColor.set(0x8a9a6a);ocean(0x4fb0bf);
+  return{sites,curve:0,bossAt:{x:0,z:24},view:{r:175,phi:.62,y:0},focusR:24,tick(dt,t){bodies.forEach((b,i)=>{b.rotation.y=t*.08*(1+i*.1);if(b.userData.moon){b.userData.moon.position.set(Math.cos(t*.6)*(b.children[0].geometry.parameters.radius+4),2,Math.sin(t*.6)*(b.children[0].geometry.parameters.radius+4));}});corona.scale.setScalar(1+Math.sin(t*2)*.03);const ca=t*.12;comet.position.set(Math.cos(ca)*120,18+Math.sin(ca*3)*4,Math.sin(ca)*120);comet.rotation.y=-ca+Math.PI;}};},
+ town(){setSky(0x5fc3ff,0xe9f8ff,0xd8f1ff,110,320);sun.position.set(18,30,10);hemi.color.set(0xe3f1f5);hemi.groundColor.set(0x8a9a6a);ocean(0x4cc9d4);
   /* Hsinchu City + County as a hex map (pointy-top axial grid; west = sea) */
   const TR=10.3,TS=11.2;const ax=(q,r)=>({x:Math.sqrt(3)*TS*(q+r/2)-14,z:1.5*TS*r+2});
-  const CITY=0xe6dfcf,PLAIN=0xa8c686,HILL=0x7fa66a,MTN=0x5f8a5a,BORDER=0xd9b98a,SIDE=0xc9b08a,SAND=0xe3c89c;
+  const CITY=0xf1e7d0,PLAIN=0x9fdb6e,HILL=0x7fcc5c,MTN=0x63b45c,BORDER=0xf3e2b0,SIDE=0xb98f63,SAND=0xf3e2b0;
   const districts=[
    ['Hukou',2,-2,PLAIN],['Xinfeng',1,-2,PLAIN],
    ['Xinpu',2,-1,PLAIN],['Zhubei',1,-1,CITY],['Guanxi',3,-1,HILL],

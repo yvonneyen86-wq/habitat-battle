@@ -6,12 +6,14 @@ function obj(){const o={position:vec(),rotation:vec(),scale:mkv(1,1,1),children:
   add(...c){c.forEach(x=>{if(!x)throw new Error('add undefined');o.children.push(x);});return o;},clone(){return obj();},remove(c){o.children=o.children.filter(x=>x!==c);return o;},traverse(f){f(o);o.children.forEach(c=>c.traverse&&c.traverse(f));},lookAt(){},rotateX(){},getWorldPosition(v){return v;},updateProjectionMatrix(){},updateMatrix(){},setMatrixAt(){},getY(i){return 0;}};
  return o;}
 function attr(n){return{array:new Float32Array(n*3),count:n,needsUpdate:false,getX(){return 0;},getY(){return 0;},getZ(){return 0;},setXYZ(){}};}
-function geo(){const g=obj();g.type='BufferGeometry';g.uuid=Math.random().toString(36);g.attributes={position:attr(10),normal:attr(10),uv:{array:new Float32Array(48),count:24,needsUpdate:false}};g.translate=()=>g;g.scale=(a,b,c)=>g;g.setAttribute=()=>g;g.clone=()=>geo();g.computeVertexNormals=()=>{};g.computeBoundingSphere=()=>{g.boundingSphere={radius:1};};g.boundingSphere={radius:1};g.parameters={radius:1,height:1};return g;}
+function geo(){const g=obj();g.type='BufferGeometry';g.uuid=Math.random().toString(36);g.attributes={position:attr(10),normal:attr(10),uv:{array:new Float32Array(48),count:24,needsUpdate:false}};g.translate=()=>g;g.scale=(a,b,c)=>g;g.setAttribute=()=>g;g.clone=()=>geo();g.rotateX=()=>g;g.computeVertexNormals=()=>{};g.computeBoundingSphere=()=>{g.boundingSphere={radius:1};};g.boundingSphere={radius:1};g.parameters={radius:1,height:1};return g;}
 const THREE=new Proxy({},{get(t,name){
  if(name==='Vector3')return function(x=0,y=0,z=0){return mkv(x,y,z);};
  if(name==='Vector2')return function(x,y){return{x,y};};
  if(name==='Color')return function(c){const o={r:1,g:1,b:1,set(){return o;},clone(){return o;},lerp(){return o;},convertSRGBToLinear(){return o;}};return o;};
  if(name==='BufferGeometry')return function(){return geo();};
+ if(name==='Shape')return function(){const o={moveTo(){return o;},lineTo(){return o;},quadraticCurveTo(){return o;},closePath(){return o;}};return o;};
+ if(name==='ShaderChunk')return {project_vertex:'mvPosition = modelViewMatrix * mvPosition;'};
  if(name==='Object3D'||name==='Group'||name==='Scene'||name==='Sprite'||name==='Points'||name==='PerspectiveCamera')return function(){const o=obj();o.matrix={};if(name==='Sprite'){o.material=arguments[0]||{};}return o;};
  if(name==='Mesh'||name==='InstancedMesh')return function(g,m,n){const o=obj();o.isMesh=true;o.isInstancedMesh=name==='InstancedMesh';o.count=n;o.geometry=g;o.material=m;o.instanceMatrix={copy(){}};return o;};
  if(name==='DataTexture')return function(){return{minFilter:0,magFilter:0,needsUpdate:false};};

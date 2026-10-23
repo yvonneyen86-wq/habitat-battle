@@ -26,6 +26,12 @@
   - Town：高矮彩色大樓群、鐘樓、斑馬線、路燈
 - 使用場合：教室**電子白板**（非投影），觸控拖曳看鏡頭、雙指縮放。
 
+## 風格：療癒島嶼風（2026-10 老師要求「像動物森友會」，原創、不用任何 IP 素材）
+- 材質改成平滑 `MeshStandardMaterial`（不再 flatShading），幾何細分提高（球 ≥18×12、圓柱 ≥20、圓錐 ≥16、lathe ≥40），看起來圓潤。
+- **捲動地平線**：`core.js` 的 `BEND` uniform 透過 `bendMat()/bendTree()` 在 vertex shader 把遠處往下彎（像滾筒）；強度依鏡頭距離自動調整，太陽系 `curve:0` 不彎。新加的物件要記得 `bendTree(obj)`。
+- 六角地塊改為圓角擠出（`hexShape / slab`）：土色懸崖＋草地頂＋淺水環；白色木柵欄；亮青綠海面；粉嫩天空；雲移到遠方高空繞圈，不擋畫面。
+- 光線偏暖（太陽 `0xfff0d0`、曝光 1.12、柔影 radius 4）。
+
 ## 四個世界（2026-10 改版）
 - 風格仿低多邊形桌遊微縮模型：六角島嶼浮在水面、切面幾何、柔和土色調、圓頭小人與原生生物。角色依世界決定：Jungle 是叢林動物（monkey / elephant / tiger / toucan）、Dino 是恐龍（trex / bronto / triceratops / stego）、Space 是太空人／外星人／機器人、Hsinchu 是一般市民（kid / teen / adult / grandma，沒有職業制服）。
 - **Jungle**：六角島叢林（營火廣場、瀑布山、遺跡、河岸、大樹、花田、蝴蝶與鳥群）。
