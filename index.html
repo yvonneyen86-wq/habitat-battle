@@ -694,12 +694,13 @@ const escRe=t=>t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
 const wordHit=(text,w)=>!!w&&new RegExp('\\b'+escRe(String(w).toLowerCase().trim()),'i').test(String(text||''));
 function shuffleWords(sent){const w=String(sent).replace(/\s+/g,' ').trim().split(' ');let out=w,n=0;do{out=w.slice().sort(()=>Math.random()-.5);n++;}while(out.join(' ')===w.join(' ')&&n<12&&w.length>1);return out;}
 function parseQ(l){const q=parseQ0(l);if(q)q.src=l;return q;}
-function parseQ0(l){const parts=l.split('|').map(x=>x.trim());const type=(parts[0]||'').toUpperCase();
+function parseQ0(l){let parts=l.split('|').map(x=>x.trim());const type=(parts[0]||'').toUpperCase();
   if(!QTYPES[type])return parts[0]?{type:'T',text:parts[0],model:parts[1]||''}:null;
+  if(/^U\d{1,2}$/i.test(parts[1]||'')&&parts.length>2)parts=[parts[0],...parts.slice(2)];
   const a=parts[1]||'',b=parts[2]||'',c=parts[3]||'';if(!a)return null;
   switch(type){
     case 'S':case 'T':case 'Z':return{type,text:a,model:b};
-    case 'B':return{type,text:'Put the words in order.',model:a,tiles:shuffleWords(a)};
+    case 'B':{if(b&&a.includes(' / ')){const ch=a.split(/\s*\/\s*/).filter(Boolean);let t=ch,n=0;do{t=ch.slice().sort(()=>Math.random()-.5);n++;}while(t.join(' ')===ch.join(' ')&&n<12&&ch.length>1);return{type,text:'Put the words in order.',model:b,tiles:t};}return{type,text:'Put the words in order.',model:b||a,tiles:shuffleWords(b||a)};}
     case 'F':return{type,text:a,model:b};
     case 'W':return{type,word:a,text:b||`Make a sentence with the word "${a}".`,model:''};
     case 'P':case 'PT':return{type,pic:a,text:b||'What do you see? What is happening?',model:''};
@@ -1025,7 +1026,7 @@ const teamName=ti=>S.teams[ti]?.name||'Team';
 const teamColor=ti=>S.teams[ti]?.color||'#888';
 function log(t){S.log.push(t);if(S.log.length>40)S.log.splice(0,S.log.length-40);}
 function lines(txt){return String(txt||'').split('\n').map(l=>l.trim()).filter(Boolean).slice(0,400);}
-function gatherQs(){return lines(S.qText).map(l=>{const k=l.indexOf('|');const o=k<0?{q:l,a:''}:{q:l.slice(0,k).trim(),a:l.slice(k+1).trim()};o.src=l;return o;}).filter(x=>x.q);}
+function gatherQs(){return lines(S.qText).map(l=>{let t=l;const m=/^\s*U\d{1,2}\s*\|/i.exec(t);if(m)t=t.slice(m[0].length);const k=t.indexOf('|');const o=k<0?{q:t.trim(),a:''}:{q:t.slice(0,k).trim(),a:t.slice(k+1).trim()};o.src=l;return o;}).filter(x=>x.q);}
 function battleQs(){return lines(S.bText).map(parseQ).filter(Boolean);}
 function pick(listFn,orderKey,ptrKey){const qs=listFn();if(!qs.length)return null;if(!S[orderKey].length||S[ptrKey]>=S[orderKey].length||S[orderKey].length!==qs.length){S[orderKey]=qs.map((_,i)=>i).sort(()=>Math.random()-.5);S[ptrKey]=0;}return qs[S[orderKey][S[ptrKey]++]]||qs[0];}
 function skey(){return CR.inRunner&&CR.init&&CR.init.session?'habitat-cr-'+CR.init.session.id:'habitat-host';}
@@ -1561,7 +1562,7 @@ function addRoster(text){H.rosterDraft='';const groups=String(text||'').split(/\
     const char=CHARS[rnd(CHARS.length)].id;const pid=newPlayer(name,char,team);const p=S.players[pid];p.pre=true;p.online=false;p.av=avFromName(name);n++;}));
   if(n){log(`📋 ${n} student${n>1?'s':''} added. They can tap their name to join.`);chime();}changed();return n;}
 /* ===== classroom runner — inside the runner the board gets the roster and this lesson's questions from cr:init and reports grades/points/finish (teacher notes in docs/) ===== */
-function crIndex(src){const L=S&&S.crLines;if(!L||src==null)return undefined;const i=L.indexOf(src);return i<0?undefined:i;}
+function crIndex(src){const L=S&&S.crLines;if(!L||src==null)return undefined;let i=L.indexOf(src);if(i<0&&S.crLearnSrc&&S.crLearnSrc[src])i=L.indexOf(S.crLearnSrc[src]);return i<0?undefined:i;}
 function crId(pid){const p=P(pid);return p&&p.crId||undefined;}
 function crEvent(kind,data){if(CR.inRunner)try{CR.event(kind,data);}catch(e){}}
 function crStart(){if(CR.inRunner&&S&&!S.crStarted){S.crStarted=true;crEvent('start',{});}}
@@ -1570,7 +1571,8 @@ function crHostSetup(){const init=CR.init;const sess=init.session||{};
   if(S.crSession!==sess.id){S=newState({scene:S.scene,teamCount:S.teamCount,teams:S.teams,battleMin:(init.card&&init.card.minutes)||S.battleMin});S.crSession=sess.id;}
   S.showQR=false;
   const qs=init.questions&&Array.isArray(init.questions.lines)?init.questions.lines.map(String):null;
-  if(qs){S.crLines=qs;const{L,B}=crSplitLines(qs);if(L.length)S.qText=L.join('\n');if(B.length)S.bText=B.join('\n');S.qOrder=[];S.bOrder=[];S.bankSel=null;}
+  if(qs){S.crLines=qs;const{L,B}=crSplitLines(qs);S.crLearnSrc={};if(!L.length&&B.length){B.forEach(l=>{const q=parseQ(l);if(!q||!q.text)return;const card=q.type==='B'?`Say this sentence: ${q.model}`:q.type==='W'?`Make a sentence with "${q.word}".`:q.text;const line=q.model&&q.type!=='B'?`${card} | ${q.model}`:card;L.push(line);S.crLearnSrc[line]=l;});}
+    if(L.length)S.qText=L.join('\n');if(B.length)S.bText=B.join('\n');S.qOrder=[];S.bOrder=[];S.bankSel=null;}
   const studs=Array.isArray(init.students)?init.students:[];const counts=S.teams.slice(0,S.teamCount).map((_,i)=>Object.values(S.players).filter(p=>p.team===i).length);
   studs.forEach(st=>{if(!st||!st.id)return;const name=String(st.name||st.id).replace(/\s+/g,' ').trim().slice(0,14)||String(st.id).slice(0,14);let p=Object.values(S.players).find(x=>x.crId===st.id);
     if(!p){const team=counts.indexOf(Math.min(...counts));counts[team]++;const pid=newPlayer(name,CHARS[rnd(CHARS.length)].id,team);p=S.players[pid];p.crId=st.id;p.pre=true;p.online=false;p.av=avFromName(name);}else p.name=name;});
