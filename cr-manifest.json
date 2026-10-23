@@ -1,0 +1,9 @@
+{
+  "name": "Habitat Battle",
+  "version": "1",
+  "screens": ["board", "tablet"],
+  "questions": "bank",
+  "minutes": 20,
+  "teacherGrades": true,
+  "points": false
+}

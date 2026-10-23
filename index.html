@@ -590,6 +590,35 @@ body.nofx *,body.nofx *::before,body.nofx *::after{animation:none!important}
 <div id="toast" class="toast" hidden></div>
 
 <script>
+/* 課堂導航・橋 v1 —— 不要改這段 */
+(function () {
+  var CR = window.CR = { inRunner: false, origin: null, init: null, screen: null, handlers: {} };
+  CR.screen = new URLSearchParams(location.search).get('screen'); // 'board' | 'tablet' | null
+  function target() { return (CR.origin && CR.origin !== 'null') ? CR.origin : '*'; }
+  function post(msg) { if (window.parent !== window) window.parent.postMessage(msg, target()); }
+  window.addEventListener('message', function (e) {
+    var m = e.data;
+    if (!m || typeof m.type !== 'string' || m.type.indexOf('cr:') !== 0) return;
+    if (m.type === 'cr:init') { CR.inRunner = true; CR.origin = e.origin; CR.init = m; }
+    var h = CR.handlers[m.type]; if (h) h(m);
+  });
+  /* 收課堂導航的訊息:CR.on('cr:init', fn)、CR.on('cr:end', fn) */
+  CR.on = function (type, fn) { CR.handlers[type] = fn; };
+  /* 白板載好、可以讓平板連進來了;join = 平板要用的連線資訊(字串,內容你決定) */
+  CR.ready = function (join) { post({ type: 'cr:ready', join: join == null ? null : String(join) }); };
+  /* 回報一件事:CR.event('answer', {...}) */
+  CR.event = function (kind, data) { post(Object.assign({ type: 'cr:event', kind: kind, at: Date.now() }, data || {})); };
+  /* 啟動:在課堂導航裡會收到 init 再呼叫 onRunner(init);單獨打開就呼叫 onStandalone() */
+  CR.start = function (onRunner, onStandalone) {
+    if (window.parent === window) { onStandalone(); return; }
+    var done = false;
+    CR.on('cr:init', function (m) { if (!done) { done = true; onRunner(m); } });
+    post({ type: 'cr:hello', screen: CR.screen || 'board' });
+    setTimeout(function () { if (!done) { done = true; onStandalone(); } }, 2000);
+  };
+})();
+</script>
+<script>
 /* ============================================================
    GAME DATA
    ============================================================ */
@@ -663,7 +692,8 @@ const norm=t=>String(t||'').toLowerCase().replace(/[’']/g,"'").replace(/[^a-z0
 const escRe=t=>t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
 const wordHit=(text,w)=>!!w&&new RegExp('\\b'+escRe(String(w).toLowerCase().trim()),'i').test(String(text||''));
 function shuffleWords(sent){const w=String(sent).replace(/\s+/g,' ').trim().split(' ');let out=w,n=0;do{out=w.slice().sort(()=>Math.random()-.5);n++;}while(out.join(' ')===w.join(' ')&&n<12&&w.length>1);return out;}
-function parseQ(l){const parts=l.split('|').map(x=>x.trim());const type=(parts[0]||'').toUpperCase();
+function parseQ(l){const q=parseQ0(l);if(q)q.src=l;return q;}
+function parseQ0(l){const parts=l.split('|').map(x=>x.trim());const type=(parts[0]||'').toUpperCase();
   if(!QTYPES[type])return parts[0]?{type:'T',text:parts[0],model:parts[1]||''}:null;
   const a=parts[1]||'',b=parts[2]||'',c=parts[3]||'';if(!a)return null;
   switch(type){
@@ -706,8 +736,8 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 const rnd=n=>Math.floor(Math.random()*n);
 const params=new URLSearchParams(location.search);
-const JOIN=(params.get('join')||'').toUpperCase().replace(/[^A-Z0-9]/g,'').slice(0,8);
-const MODE=JOIN?'student':'host';
+let JOIN=(params.get('join')||'').toUpperCase().replace(/[^A-Z0-9]/g,'').slice(0,8);
+let MODE=JOIN||CR.screen==='tablet'?'student':'host';
 const PEER_PARAMS=['ph','pp','ppath','ps'];
 function peerOpts(){
   const o={debug:1,config:{iceServers:[{urls:'stun:stun.l.google.com:19302'},{urls:'stun:stun1.l.google.com:19302'}]}};
@@ -994,16 +1024,17 @@ const teamName=ti=>S.teams[ti]?.name||'Team';
 const teamColor=ti=>S.teams[ti]?.color||'#888';
 function log(t){S.log.push(t);if(S.log.length>40)S.log.splice(0,S.log.length-40);}
 function lines(txt){return String(txt||'').split('\n').map(l=>l.trim()).filter(Boolean).slice(0,400);}
-function gatherQs(){return lines(S.qText).map(l=>{const k=l.indexOf('|');return k<0?{q:l,a:''}:{q:l.slice(0,k).trim(),a:l.slice(k+1).trim()};}).filter(x=>x.q);}
+function gatherQs(){return lines(S.qText).map(l=>{const k=l.indexOf('|');const o=k<0?{q:l,a:''}:{q:l.slice(0,k).trim(),a:l.slice(k+1).trim()};o.src=l;return o;}).filter(x=>x.q);}
 function battleQs(){return lines(S.bText).map(parseQ).filter(Boolean);}
 function pick(listFn,orderKey,ptrKey){const qs=listFn();if(!qs.length)return null;if(!S[orderKey].length||S[ptrKey]>=S[orderKey].length||S[orderKey].length!==qs.length){S[orderKey]=qs.map((_,i)=>i).sort(()=>Math.random()-.5);S[ptrKey]=0;}return qs[S[orderKey][S[ptrKey]++]]||qs[0];}
-function save(){store('habitat-host',S);}
+function skey(){return CR.inRunner&&CR.init&&CR.init.session?'habitat-cr-'+CR.init.session.id:'habitat-host';}
+function save(){store(skey(),S);}
 let bcastT=null;
 function changed(){render();save();clearTimeout(bcastT);bcastT=setTimeout(broadcast,40);}
 function pub(){
   const b=S.battle;let bp=null;
   if(b){const q=b.q;bp={round:b.round,step:b.step,qid:b.qid,endsIn:b.endsAt-Date.now(),
-    q:q?{type:q.type,text:q.text,word:q.word||'',pic:q.pic||'',opts:q.opts||null,tiles:q.tiles||null}:null,
+    q:q?{type:q.type,text:q.text,word:q.word||'',pic:q.pic||'',opts:q.opts||null,tiles:q.tiles||null,ci:q.ci}:null,
     choiceN:[0,1].map(i=>Object.values(b.choice||{}).filter(v=>v===i).length),buzz:(b.buzz||[]).slice(0,3),
     def:b.def?{teams:b.def.teams,q:b.def.q}:null,
     boss:b.boss?{name:b.boss.name,e:b.boss.e,hp:b.boss.hp,max:b.boss.max,defeated:!!b.boss.defeated}:null,
@@ -1025,15 +1056,15 @@ function giveCoins(pid,n,why){const p=P(pid);if(!p)return;p.coins=Math.max(0,p.c
 function greatJob(pid){const p=P(pid);if(!p)return;const c=classOf(p);p.coins++;p.items++;let m=`${p.name}: Great job! +1 🪙 +1 ${c.icon}`;
   if(p.items>=3){p.items=0;p.powers++;m+=` — ${c.power} charged!`;chime();burst(pid,['⚡','✨',c.icon],20,{ring:true,g:0,speed:20,drag:.96});}else beep(760);
   floatText(pid,`+1 🪙 ${c.icon}`);log(m);flashRow(pid);changed();}
-function teamCoins(ti){Object.values(S.players).filter(p=>p.team===ti).forEach(p=>{p.coins++;floatText(p.pid,'+1 🪙');});log(`${teamName(ti)}: everyone +1 🪙`);chime();changed();}
-function allCoins(){Object.values(S.players).forEach(p=>{p.coins++;floatText(p.pid,'+1 🪙');});log('Everyone gets +1 🪙!');chime();changed();}
+function teamCoins(ti){Object.values(S.players).filter(p=>p.team===ti).forEach(p=>{p.coins++;if(p.crId)crEvent('points',{student:p.crId,delta:1,reason:'team bonus'});floatText(p.pid,'+1 🪙');});log(`${teamName(ti)}: everyone +1 🪙`);chime();changed();}
+function allCoins(){Object.values(S.players).forEach(p=>{p.coins++;if(p.crId)crEvent('points',{student:p.crId,delta:1,reason:'class bonus'});floatText(p.pid,'+1 🪙');});log('Everyone gets +1 🪙!');chime();changed();}
 function buy(pid,item){
   const p=P(pid);if(!p)return;const c=classOf(p);
   if(item==='upgrade'){if(p.lv>=3)return sendErr(pid,'Your habitat is already the biggest!');const cost=UPGRADE_COST[p.lv];if(p.coins<cost)return sendErr(pid,`You need ${cost} 🪙.`);
-    p.coins-=cost;p.lv++;p.hp=HPMAX[p.lv];p.down=false;const h=habOf(p);log(`${p.name} built a ${h[0]}! ${h[1]} (❤️ ${HPMAX[p.lv]})`);chime();
+    p.coins-=cost;p.lv++;p.hp=HPMAX[p.lv];p.down=false;if(p.crId)crEvent('points',{student:p.crId,delta:-cost,reason:'upgrade'});const h=habOf(p);log(`${p.name} built a ${h[0]}! ${h[1]} (❤️ ${HPMAX[p.lv]})`);chime();
     setTimeout(()=>{popHab(pid);burst(pid,['🔨','✨',h[1]],16,{ring:true,g:0,speed:18,drag:.95});confetti(pid,[teamColor(p.team),'#ffd43b'],24);},60);}
   else if(['atk','def','heal'].includes(item)){if(p.inv[item]>=INV_CAP)return sendErr(pid,`You can carry ${INV_CAP} at most.`);if(p.coins<GEAR_COST)return sendErr(pid,`You need ${GEAR_COST} 🪙.`);
-    p.coins-=GEAR_COST;p.inv[item]++;const g=c[item];log(`${p.name} got a ${g[0]} ${g[1]}`);beep(880);setTimeout(()=>burst(pid,[g[1]],6,{speed:18}),60);}
+    p.coins-=GEAR_COST;p.inv[item]++;if(p.crId)crEvent('points',{student:p.crId,delta:-GEAR_COST,reason:'gear:'+item});const g=c[item];log(`${p.name} got a ${g[0]} ${g[1]}`);beep(880);setTimeout(()=>burst(pid,[g[1]],6,{speed:18}),60);}
   else return;
   changed();
 }
@@ -1044,7 +1075,7 @@ function freshBattle(){return{round:0,step:'idle',q:null,qid:0,ok:{},subs:{},act
 function ensureBattle(b){const f=freshBattle();for(const k in f)if(b[k]===undefined)b[k]=f[k];return b;}
 function startBattle(){
   if(!Object.keys(S.players).length)return toast('Add players first.');
-  S.phase='battle';S.showQR=false;S.card=null;S.results=null;S.battle=freshBattle();
+  S.phase='battle';S.showQR=false;S.card=null;S.results=null;S.battle=freshBattle();crStart();
   Object.values(S.players).forEach(p=>{p.hp=maxHp(p);p.down=false;p.pts=0;p.streak=0;});
   log(`⚔️ Battle start! ${S.battleMin} minutes. Answer to attack, build or repair!`);
   changed();fanfare();banner('BATTLE START!',`${S.battleMin} minutes · Team vs Team`);
@@ -1055,7 +1086,7 @@ async function nextRound(custom){
   const q=custom||pick(battleQs,'bOrder','bPtr');if(!q)return toast('Add battle questions in Setup.');
   H.busy=true;
   if(b.round>0)Object.values(S.players).forEach(p=>{p.streak=b.ok[p.pid]?(p.streak||0)+1:0;});
-  b.round++;b.qid++;b.q=q;Object.assign(b,{ok:{},subs:{},acts:{},choice:{},buzz:[],tries:{},def:null,vote:null,spells:{}});b.step='question';H.showModel=false;
+  q.ci=crIndex(q.src);b.round++;b.qid++;b.q=q;crStart();Object.assign(b,{ok:{},subs:{},acts:{},choice:{},buzz:[],tries:{},def:null,vote:null,spells:{}});b.step='question';H.showModel=false;
   const revived=Object.values(S.players).filter(p=>p.down);
   revived.forEach(p=>{p.down=false;p.hp=Math.ceil(maxHp(p)/2);p.armor=0;});
   let drop=null;
@@ -1067,8 +1098,9 @@ async function nextRound(custom){
   if(drop){await sleep(700);Object.values(S.players).filter(p=>p.team===drop.ti).forEach(p=>{burst(p.pid,['📦','🛡️'],6,{speed:16});floatText(p.pid,'+2 🛡️','#495057');});}
   H.busy=false;
 }
-function markCorrect(pid,tier=1){
+function markCorrect(pid,tier=1,auto=false){
   const b=S.battle,p=P(pid);if(!b||!['question','defense'].includes(b.step)||!p)return;
+  if(tier&&(b.ok[pid]||0)!==tier&&p.crId)crEvent('grade',{student:p.crId,question:b.q&&b.q.ci,level:['','good','great','amazing'][tier],points:0,auto:!!auto});
   if(tier){const prev=b.ok[pid]||0;b.ok[pid]=tier;
     if(b.subs[pid]){b.subs[pid].ok=tier;if(!prev&&b.q&&TYPED.has(b.q.type)){b.approved.push({pid,text:b.subs[pid].text,round:b.round});if(b.approved.length>40)b.approved.shift();}}
     if(prev!==tier){beep(tier===3?990:820);floatText(pid,tier===3?'🌟 AMAZING!':tier===2?'⭐ GREAT!':'✓',tier===3?'#e8590c':tier===2?'#f08c00':'#2f9e44');burst(pid,tier===3?['🌟','✨','⚡']:tier===2?['⭐','⚡']:['⚡'],tier===3?18:tier===2?10:5,{speed:18});
@@ -1082,13 +1114,13 @@ function onAnswer(pid,text){
   if(b.ok[pid])return;text=String(text||'').replace(/\s+/g,' ').trim().slice(0,200);if(!text)return;
   const sub={text,ok:null,at:Date.now(),meter:meter(text).score};if(b.q.type==='W')sub.word=wordHit(text,b.q.word);
   b.subs[pid]=sub;beep(600,.05);
-  if(b.q.type==='F'&&b.q.model&&b.q.model.split(/\s+\/\s+/).some(x=>norm(x)===norm(text))){sub.auto=true;log(`${p.name} fixed the mistake! 🔍`);markCorrect(pid,2);return;}
+  if(b.q.type==='F'&&b.q.model&&b.q.model.split(/\s+\/\s+/).some(x=>norm(x)===norm(text))){sub.auto=true;log(`${p.name} fixed the mistake! 🔍`);markCorrect(pid,2,true);return;}
   changed();
 }
 function onBuild(pid,words){
   const b=S.battle,p=P(pid);if(!b||b.step!=='question'||!b.q||b.q.type!=='B'||!p||b.ok[pid])return;
   const ans=(Array.isArray(words)?words:[]).slice(0,40).map(String).join(' ');
-  if(norm(ans)===norm(b.q.model)){const t=b.tries[pid]?1:2;log(`${p.name} built the sentence${t===2?' on the first try':''}! 🧩`);sendTo(pid,{t:'fx',k:'right'});markCorrect(pid,t);}
+  if(norm(ans)===norm(b.q.model)){const t=b.tries[pid]?1:2;log(`${p.name} built the sentence${t===2?' on the first try':''}! 🧩`);sendTo(pid,{t:'fx',k:'right'});markCorrect(pid,t,true);}
   else{b.tries[pid]=(b.tries[pid]||0)+1;sendTo(pid,{t:'fx',k:'wrong'});changed();}
 }
 function onChoose(pid,i){const b=S.battle;if(!b||b.step!=='question'||!b.q||b.q.type!=='C'||!P(pid))return;if(b.choice[pid]!==undefined)return;b.choice[pid]=+i?1:0;beep(700,.05);changed();}
@@ -1189,7 +1221,7 @@ async function bossAttack(blocks){
 }
 async function bossDefeated(){
   const b=S.battle;b.boss.defeated=true;b.boss.hp=0;const pt=bossPt();if(ui3d())H.hb3d.bossDefeated();
-  Object.values(S.players).forEach(p=>{p.pts+=2;p.coins+=2;});
+  Object.values(S.players).forEach(p=>{p.pts+=2;p.coins+=2;if(p.crId)crEvent('points',{student:p.crId,delta:2,reason:'boss defeated'});});
   log(`🎉 The ${b.boss.name} is defeated! Everyone gets +2 🏆 and +2 🪙!`);
   burst(pt,['💥','⭐','✨','🎉'],40,{ring:true,g:10,speed:40});fanfare();banner('BOSS DEFEATED!','Amazing teamwork, everyone!','#5f3dc4');
   confetti({x:FX.w*.3,y:FX.h*.6},PARTY,60,{speed:55});confetti({x:FX.w*.7,y:FX.h*.6},PARTY,60,{speed:55});
@@ -1227,7 +1259,7 @@ function openVote(){
 function voteCounts(){const v=S.battle.vote;const c=v.items.map(()=>0);Object.values(v.votes).forEach(i=>{if(c[i]!==undefined)c[i]++;});return c;}
 function onVote(pid,i){const v=S.battle&&S.battle.vote;if(!v||v.revealed||!P(pid))return;i=+i;if(!(i>=0&&i<v.items.length))return;if(v.items[i].pid===pid)return sendErr(pid,"You can't vote for your own sentence!");v.votes[pid]=i;beep(800,.04);changed();}
 function revealVote(){const v=S.battle&&S.battle.vote;if(!v||v.revealed)return;const c=voteCounts();let w=0;c.forEach((n,i)=>{if(n>c[w])w=i;});v.revealed=true;v.winner=w;const p=P(v.items[w].pid);
-  if(p){p.coins+=3;p.pts+=3;log(`🏅 Best sentence: ${p.name} — “${v.items[w].text}” (+3 🪙 +3 🏆)`);}changed();fanfare();banner('BEST SENTENCE!',p?p.name:'','#0c8599');if(ui3d()&&p)H.hb3d.cheer(p.pid);setTimeout(()=>confetti(stageMid(),PARTY,70,{speed:55}),200);}
+  if(p){p.coins+=3;p.pts+=3;if(p.crId)crEvent('points',{student:p.crId,delta:3,reason:'best sentence'});log(`🏅 Best sentence: ${p.name} — “${v.items[w].text}” (+3 🪙 +3 🏆)`);}changed();fanfare();banner('BEST SENTENCE!',p?p.name:'','#0c8599');if(ui3d()&&p)H.hb3d.cheer(p.pid);setTimeout(()=>confetti(stageMid(),PARTY,70,{speed:55}),200);}
 function closeVote(){if(S.battle){S.battle.vote=null;changed();}}
 function endBattle(){
   if(!S.battle)return;
@@ -1242,11 +1274,11 @@ function backToGather(){S.phase='gather';S.battle=null;S.results=null;Object.val
 
 /* ----- connections ----- */
 function startHost(){
-  if(typeof Peer==='undefined'){H.status='off';H.statusText='Offline mode (no internet)';renderHeader();return;}
+  if(typeof Peer==='undefined'){H.status='off';H.statusText='Offline mode (no internet)';renderHeader();if(CR.inRunner&&!H.crReady){H.crReady=true;CR.ready(null);}return;}
   try{H.peer&&H.peer.destroy();}catch(e){}
   H.status='wait';H.statusText='Connecting…';renderHeader();
   const peer=new Peer(peerIdFor(S.code),peerOpts());H.peer=peer;
-  peer.on('open',()=>{H.status='on';H.statusText='Ready for players';H.retries=0;renderHeader();});
+  peer.on('open',()=>{H.status='on';H.statusText='Ready for players';H.retries=0;renderHeader();if(CR.inRunner&&!H.crReady){H.crReady=true;CR.ready(S.code);}});
   peer.on('connection',conn=>{H.conns.set(conn,{pid:null,cid:null});conn.on('data',m=>{try{onStudent(conn,m);}catch(e){console.error(e);}});conn.on('close',()=>dropConn(conn));conn.on('error',()=>dropConn(conn));});
   peer.on('disconnected',()=>{if(!peer.destroyed){H.status='wait';H.statusText='Reconnecting…';renderHeader();setTimeout(()=>{try{peer.reconnect();}catch(e){}},1500);}});
   peer.on('error',e=>{if(['unavailable-id','network','server-error','socket-error','socket-closed'].includes(e.type)){H.status='wait';H.statusText=e.type==='unavailable-id'?'Re-opening the room…':'Network problem, retrying…';renderHeader();H.retries=(H.retries||0)+1;clearTimeout(H.rt);H.rt=setTimeout(startHost,Math.min(10000,2000+H.retries*1000));}});
@@ -1265,6 +1297,7 @@ function onStudent(conn,m){
     S.players[pid].av=cleanAv(m.av,name);
     info.pid=pid;changed();return;
   }
+  if(m.t==='claim'&&m.crId){const p=Object.values(S.players).find(x=>x.crId===m.crId);if(!p)return conn.send({t:'toast',msg:'Your name is not in this class. Ask your teacher.'});p.pre=false;p.online=true;p.av=cleanAv(m.av,p.name);S.cidMap[info.cid]=p.pid;info.pid=p.pid;if(!S.crSeen)S.crSeen={};if(!S.crSeen[p.pid]){S.crSeen[p.pid]=1;log(`${p.name} is here! ${charById(p.char).e}`);chime();}changed();return;}
   if(m.t==='claim'){const p=S.players[m.pid];if(!p||!p.pre)return conn.send({t:'toast',msg:'That name is already taken. Ask your teacher.'});
     const old=S.cidMap[info.cid];if(old&&old!==m.pid&&S.players[old]&&S.players[old].pre===false&&![...H.conns.values()].some(x=>x!==info&&x.pid===old))S.players[old].online=false;
     p.pre=false;p.online=true;p.av=cleanAv(m.av,p.name);S.cidMap[info.cid]=m.pid;info.pid=m.pid;log(`${p.name} joined ${teamName(p.team)}! ${charById(p.char).e}`);chime();setTimeout(()=>{popHab(m.pid);burst(m.pid,['✨','🎉'],12,{ring:true,g:0,speed:16,drag:.95});},120);changed();return;}
@@ -1526,6 +1559,26 @@ function addRoster(text){H.rosterDraft='';const groups=String(text||'').split(/\
   groups.forEach((g,gi)=>g.forEach(name=>{if(taken.has(name.toLowerCase()))return;taken.add(name.toLowerCase());let team;if(byGroup)team=gi;else{team=counts.indexOf(Math.min(...counts));}counts[team]++;
     const char=CHARS[rnd(CHARS.length)].id;const pid=newPlayer(name,char,team);const p=S.players[pid];p.pre=true;p.online=false;p.av=avFromName(name);n++;}));
   if(n){log(`📋 ${n} student${n>1?'s':''} added. They can tap their name to join.`);chime();}changed();return n;}
+/* ===== classroom runner — inside the runner the board gets the roster and this lesson's questions from cr:init and reports grades/points/finish (teacher notes in docs/) ===== */
+function crIndex(src){const L=S&&S.crLines;if(!L||src==null)return undefined;const i=L.indexOf(src);return i<0?undefined:i;}
+function crId(pid){const p=P(pid);return p&&p.crId||undefined;}
+function crEvent(kind,data){if(CR.inRunner)try{CR.event(kind,data);}catch(e){}}
+function crStart(){if(CR.inRunner&&S&&!S.crStarted){S.crStarted=true;crEvent('start',{});}}
+function crSplitLines(ls){const L=[],B=[];let mode=null;for(const raw of ls){const l=String(raw).trim();if(l==='# learn'){mode='L';continue;}if(l==='# battle'){mode='B';continue;}if(!l||l.startsWith('//')||l.startsWith('##')||l.startsWith('==='))continue;const t=l.split('|')[0].trim().toUpperCase();const isB=mode==='B'||(mode==null&&!!QTYPES[t]&&l.includes('|'));(isB?B:L).push(l);}return{L,B};}
+function crHostSetup(){const init=CR.init;const sess=init.session||{};
+  if(S.crSession!==sess.id){S=newState({scene:S.scene,teamCount:S.teamCount,teams:S.teams,battleMin:(init.card&&init.card.minutes)||S.battleMin});S.crSession=sess.id;}
+  S.showQR=false;
+  const qs=init.questions&&Array.isArray(init.questions.lines)?init.questions.lines.map(String):null;
+  if(qs){S.crLines=qs;const{L,B}=crSplitLines(qs);if(L.length)S.qText=L.join('\n');if(B.length)S.bText=B.join('\n');S.qOrder=[];S.bOrder=[];S.bankSel=null;}
+  const studs=Array.isArray(init.students)?init.students:[];const counts=S.teams.slice(0,S.teamCount).map((_,i)=>Object.values(S.players).filter(p=>p.team===i).length);
+  studs.forEach(st=>{if(!st||!st.id)return;const name=String(st.name||st.id).replace(/\s+/g,' ').trim().slice(0,14)||String(st.id).slice(0,14);let p=Object.values(S.players).find(x=>x.crId===st.id);
+    if(!p){const team=counts.indexOf(Math.min(...counts));counts[team]++;const pid=newPlayer(name,CHARS[rnd(CHARS.length)].id,team);p=S.players[pid];p.crId=st.id;p.pre=true;p.online=false;p.av=avFromName(name);}else p.name=name;});
+  Object.values(S.players).forEach(p=>{if(p.crId&&!studs.some(st=>st&&st.id===p.crId))delete S.players[p.pid];});
+  S.log=[`📋 ${sess.className||'Class'} · ${studs.length} students. Tablets join by themselves.`];
+  CR.on('cr:end',crFinish);}
+function crFinish(){if(!CR.inRunner||H.crFinished)return;H.crFinished=true;try{if(S.phase==='battle'&&S.battle){H.hideResults=false;endBattle();}}catch(e){}
+  const ps=Object.values(S.players).filter(p=>p.crId).sort((a,b)=>(b.pts||0)-(a.pts||0)||b.coins-a.coins);
+  crEvent('finish',{results:ps.map((p,i)=>({student:p.crId,score:p.pts||0,points:p.coins||0,rank:i+1,team:teamName(p.team)}))});}
 function addPlayer(name,team,char){name=String(name||'').replace(/\s+/g,' ').trim().slice(0,14);if(!name)return false;const pid=newPlayer(name,char,team,true);log(`${name} joined ${teamName(team)}! ${charById(char).e}`);chime();changed();setTimeout(()=>popHab(pid),100);return true;}
 function openManualAct(pid){const p=P(pid);if(!p)return;$('#modal-root').innerHTML=`<div class="modal-bg"><div class="modal"><h2>${charById(p.char).e} ${esc(p.name)}: choose an action</h2><div class="seg">${bossOn()?`<button data-act="m-act" data-pid="${pid}" data-k="attack" data-t="boss" style="background:#5f3dc4;color:#fff;border-color:#5f3dc4">⚔️ Attack the ${esc(S.battle.boss.name)}</button>`:''}${S.teams.slice(0,S.teamCount).map((t,i)=>i===p.team||bossOn()?'':`<button data-act="m-act" data-pid="${pid}" data-k="attack" data-t="${i}" style="background:${t.color};color:#fff;border-color:${t.color}">⚔️ Attack ${esc(t.name)}</button>`).join('')}<button data-act="m-act" data-pid="${pid}" data-k="build">🛡️ Build</button><button data-act="m-act" data-pid="${pid}" data-k="repair">❤️ Repair</button></div><div class="mrow"><button class="btn" data-act="m-close">Cancel</button></div></div></div>`;}
 
@@ -1540,14 +1593,14 @@ function onHostClick(e){
     case 'island':if(ui3d())H.hb3d.overview();break;
     case 'bases':{const pop=$('#p3d-pop');pop.hidden=!pop.hidden;if(!pop.hidden&&ui3d())H.hb3d.renderBases();break;}
     case 'qr-big':openBigQR();break;
-    case 'card':{const q=pick(gatherQs,'qOrder','qPtr');S.card=q||{q:'Ask your own question!',a:''};H.showAns=false;changed();break;}
+    case 'card':{const q=pick(gatherQs,'qOrder','qPtr');S.card=q||{q:'Ask your own question!',a:''};S.card.ci=crIndex(S.card.src);H.showAns=false;crStart();changed();break;}
     case 'card-close':S.card=null;changed();break;
     case 'show-ans':H.showAns=!H.showAns;renderOverlay();break;
     case 'all-coin':allCoins();break;
     case 'team-coin':teamCoins(team);break;
-    case 'coin':giveCoins(pid,CORRECT_COINS,'answered correctly');break;
-    case 'coin-minus':giveCoins(pid,-1);break;
-    case 'great':greatJob(pid);break;
+    case 'coin':giveCoins(pid,CORRECT_COINS,'answered correctly');if(crId(pid))crEvent('grade',{student:crId(pid),question:S.card&&S.card.ci,level:'good',points:CORRECT_COINS,auto:false});break;
+    case 'coin-minus':giveCoins(pid,-1);if(crId(pid))crEvent('points',{student:crId(pid),delta:-1,reason:'teacher'});break;
+    case 'great':greatJob(pid);if(crId(pid))crEvent('grade',{student:crId(pid),question:S.card&&S.card.ci,level:'great',points:1,auto:false});break;
     case 'start-battle':startBattle();break;
     case 'end-battle':H.hideResults=false;endBattle();break;
     case 'back-gather':backToGather();break;
@@ -1614,8 +1667,9 @@ function openStudentView(pid){
 }
 function closeStudentView(){if(H.svConn){dropConn(H.svConn);H.svConn=null;}ST.root=null;ST.view='';document.body.classList.remove('sv-on');$('#sv-app').innerHTML='';requestAnimationFrame(fxResize);}
 function initHost(){
-  S=store('habitat-host');
+  S=store(skey());
   if(!S||!S.code||!S.players||!S.bText)S=newState();
+  if(CR.inRunner)crHostSetup();
   if(S.battle){ensureBattle(S.battle);if(S.battle.step==='resolving')S.battle.step='done';}
   Object.values(S.players).forEach(p=>p.online=!!p.manual);
   applyScene(S.scene);hostShell();render();startHost();loadLiveBank();
@@ -1624,6 +1678,7 @@ function initHost(){
 /* ============================================================
    STUDENT (tablet)
    ============================================================ */
+function avKey(){return CR.inRunner&&CR.init&&CR.init.me?'habitat-av-'+CR.init.me.id:'habitat-av';}
 const ST={s:null,me:null,my:null,view:'',team:null,char:null,name:'',av:store('habitat-av')?cleanAv(store('habitat-av')):randomAv(),peer:null,conn:null,status:'Connecting to the game…',retry:null,qKey:'',draft:'',prev:null};
 function cid(){let c=store('habitat-cid-'+JOIN);if(!c){c=Math.random().toString(36).slice(2)+Date.now().toString(36);store('habitat-cid-'+JOIN,c);}return c;}
 function sSend(m){if(ST.conn&&ST.conn.open){try{ST.conn.send(m);return true;}catch(e){}}toast('Not connected. Trying again…');return false;}
@@ -1640,7 +1695,8 @@ function studentConnect(){
   });
   peer.on('error',e=>{ST.status=e.type==='peer-unavailable'?`Game ${JOIN} is not open yet. Waiting for the teacher…`:'Connection problem. Retrying…';sRender();retrySoon();});
 }
-function sRecv(m){if(!m)return;if(m.t==='state'){ST.s=m.s;ST.me=m.me;ST.my=m.my;if(m.s.battle)ST.deadline=Date.now()+m.s.battle.endsIn;sRender();}if(m.t==='toast')toast(m.msg);if(m.t==='fx'){if(m.k==='wrong'){toast('Not quite! Try again.');const l=$('#bline');if(l&&!RM){l.classList.remove('shake');void l.offsetWidth;l.classList.add('shake');}}if(m.k==='right')sBurst($('#s-dock'),['🧩','✨','⭐'],14);if(m.k==='cheer'&&ST.mini)ST.mini.react('happy',m.tier);}}
+function crTabletAnswer(answer){const s=ST.s,b=s&&s.battle;if(!CR.inRunner||!CR.init.me)return;crEvent('answer',{student:CR.init.me.id,question:b&&b.q?b.q.ci:undefined,answer:String(answer).slice(0,300),correct:null,auto:false});}
+function sRecv(m){if(!m)return;if(m.t==='state'){ST.s=m.s;ST.me=m.me;ST.my=m.my;if(CR.inRunner&&CR.init.me&&!ST.me&&!ST.claimSent){ST.claimSent=true;sSend({t:'claim',crId:CR.init.me.id,av:ST.av});setTimeout(()=>{ST.claimSent=false;},4000);}if(m.s.battle)ST.deadline=Date.now()+m.s.battle.endsIn;sRender();}if(m.t==='toast')toast(m.msg);if(m.t==='fx'){if(m.k==='wrong'){toast('Not quite! Try again.');const l=$('#bline');if(l&&!RM){l.classList.remove('shake');void l.offsetWidth;l.classList.add('shake');}}if(m.k==='right')sBurst($('#s-dock'),['🧩','✨','⭐'],14);if(m.k==='cheer'&&ST.mini)ST.mini.react('happy',m.tier);}}
 function retrySoon(){clearTimeout(ST.retry);ST.retry=setTimeout(studentConnect,3000);}
 function sBgHost(){return ST.embedded?$('#sv-app'):null;}
 function sBackground(scene){
@@ -1675,7 +1731,7 @@ function sRenderInner(){
   if(s&&!ST.embedded)applyScene(s.scene);
   if(!s){ST.view='conn';app.innerHTML=`<div class="student"><div class="s-col"><div class="s-head"><span class="brand">⚔️ Habitat Battle</span></div><div class="card conn"><div class="e">📡</div><h2>${esc(ST.status)}</h2><p class="hint">Game code: <b>${esc(JOIN)}</b></p></div></div></div>`;return;}
   const me=ST.me&&s.players[ST.me];
-  if(!me)return sJoin(app,s);
+  if(!me){if(CR.inRunner&&CR.init.me){if(ST.view!=='crwait'){ST.view='crwait';app.innerHTML=`<div class="student"><div class="s-col"><div class="s-head"><span class="brand">⚔️ Habitat Battle</span></div><div class="card conn"><div class="e">${esc(SCENES[s.scene].icon)}</div><h2>Hi ${esc(CR.init.me.name||'')}!</h2><p class="hint">Joining ${esc(SCENES[s.scene].name)}…</p></div></div></div>`;}return;}return sJoin(app,s);}
   if(ST.view!=='play'){ST.view='play';ST.qKey='';ST.prev=null;ST.shopOpen=false;ST.popQid=null;sSkeleton(app);
     if(!ST.boundPlay){ST.boundPlay=true;document.addEventListener('click',sPlayClick);document.addEventListener('input',e=>{if(e.target.id==='ans'){ST.draft=e.target.value;sMeter();}});}}
   sPlay(s,me);
@@ -1714,11 +1770,11 @@ function sJoinClick(e){if(ST.view!=='join')return;const t=e.target.closest('[dat
   if(e.target.id==='j-name')return;
   if(t){ST.team=+t.dataset.team;ST.claim=null;setTimeout(()=>go(2),250);jRender(ST.s);}if(c){ST.char=c.dataset.char;setTimeout(()=>go(3),250);jRender(ST.s);}
   if(nv)go(ST.jstep+(+nv.dataset.jnav));if(sp&&!sp.disabled)go(+sp.dataset.jstep);
-  if(a){avClick(a);jLookOpts();}if(e.target.closest('#j-shuffle')){ST.av=randomAv();store('habitat-av',ST.av);jLookOpts();}
+  if(a){avClick(a);jLookOpts();}if(e.target.closest('#j-shuffle')){ST.av=randomAv();store(avKey(),ST.av);jLookOpts();}
   if(e.target.closest('#j-go')){if(sSend(ST.claim?{t:'claim',pid:ST.claim,av:ST.av}:{t:'join',name:ST.name,team:ST.team,char:ST.char,av:ST.av}))toast('Joining…');}}
 function lookOptsHTML(a,x=''){const sw=(k,arr)=>arr.map((c,i)=>`<button class="sw${a[k]===i?' sel':''}" ${x} data-av="${k}" data-v="${i}" style="--c:${c}" aria-label="${k} ${i+1}"></button>`).join('');const tx=(k,arr)=>arr.map((t,i)=>`<button class="${a[k]===i?'sel':''}" ${x} data-av="${k}" data-v="${i}">${k==='pt'&&i===4?'#'+a.n:t}</button>`).join('');
   return `<div class="row"><b>Skin</b>${sw('sk',AV.SKIN)}</div><div class="row"><b>Hair</b>${tx('hs',AV.HS)}</div><div class="row"><b>Hair color</b>${sw('hc',AV.HAIR)}</div><div class="row"><b>Shirt</b>${sw('sh',AV.SHIRT)}</div><div class="row"><b>Pattern</b>${tx('pt',AV.PAT)}${a.pt===4?`<button ${x} data-av="n">Next number ▸</button>`:''}</div>`;}
-function avClick(el){const k=el.dataset.av;if(k==='n')ST.av.n=ST.av.n%9+1;else ST.av[k]=+el.dataset.v;store('habitat-av',ST.av);}
+function avClick(el){const k=el.dataset.av;if(k==='n')ST.av.n=ST.av.n%9+1;else ST.av[k]=+el.dataset.v;store(avKey(),ST.av);}
 function sSkeleton(app){
   app.innerHTML=`<div class="sv2" id="s-root">
     <div class="s-top"><div class="who"><button class="av" id="t-av" data-sact="look" aria-label="Change my look"></button><div><b id="t-name"></b><small id="t-team"></small></div></div><span class="sp"></span>
@@ -1894,9 +1950,9 @@ async function sTransform(oldE,newE,name){
 function sPlayClick(e){
   if(ST.view!=='play')return;const b=e.target.closest('[data-sact]');if(!b||b.disabled)return;const a=b.dataset.sact;
   if(a==='shop'){sOpenShop(true);return;}
-  if(a==='shop-close'){if(ST.lookOpen){ST.av=ST.avBak||ST.av;store('habitat-av',ST.av);sOpenLook(false);}else sOpenShop(false);return;}
-  if(a==='look'){sOpenLook(true);return;}if(a==='look-cancel'){ST.av=ST.avBak||ST.av;store('habitat-av',ST.av);sOpenLook(false);return;}
-  if(a==='av'){avClick(b);sLook();return;}if(a==='look-shuffle'){ST.av=randomAv();store('habitat-av',ST.av);sLook();return;}
+  if(a==='shop-close'){if(ST.lookOpen){ST.av=ST.avBak||ST.av;store(avKey(),ST.av);sOpenLook(false);}else sOpenShop(false);return;}
+  if(a==='look'){sOpenLook(true);return;}if(a==='look-cancel'){ST.av=ST.avBak||ST.av;store(avKey(),ST.av);sOpenLook(false);return;}
+  if(a==='av'){avClick(b);sLook();return;}if(a==='look-shuffle'){ST.av=randomAv();store(avKey(),ST.av);sLook();return;}
   if(a==='look-save'){sOpenLook(false);sSend({t:'look',av:ST.av});toast('Looking good!');return;}
   if(a==='buy'){if(b.dataset.item==='upgrade')sOpenShop(false);sSend({t:'buy',item:b.dataset.item});}
   if(a==='power')sSend({t:'power'});
@@ -1905,17 +1961,20 @@ function sPlayClick(e){
   if(a==='tile-add'&&ST.bld){ST.bld.order.push(+b.dataset.i);sRefreshDock();}
   if(a==='tile-rm'&&ST.bld){ST.bld.order.splice(+b.dataset.i,1);sRefreshDock();}
   if(a==='tile-reset'&&ST.bld){ST.bld.order=[];sRefreshDock();}
-  if(a==='tile-check'&&ST.bld&&q&&q.tiles)sSend({t:'build',words:ST.bld.order.map(i=>q.tiles[i])});
-  if(a==='choose'){b.disabled=true;sSend({t:'choose',i:+b.dataset.i});}
-  if(a==='buzz'){b.disabled=true;sSend({t:'buzz'});}
+  if(a==='tile-check'&&ST.bld&&q&&q.tiles){const w=ST.bld.order.map(i=>q.tiles[i]);if(sSend({t:'build',words:w}))crTabletAnswer(w.join(' '));}
+  if(a==='choose'){b.disabled=true;if(sSend({t:'choose',i:+b.dataset.i}))crTabletAnswer('AB'[+b.dataset.i]+'. '+(q&&q.opts?q.opts[+b.dataset.i]:''));}
+  if(a==='buzz'){b.disabled=true;if(sSend({t:'buzz'}))crTabletAnswer('buzz');}
   if(a==='vote')sSend({t:'vote',i:+b.dataset.i});
-  if(a==='send'){const t=($('#ans')?.value||'').trim();if(t.split(/\s+/).length<2)return toast('Write a complete sentence, please!');if(sSend({t:'answer',text:t})){ST.draft='';}}
+  if(a==='send'){const t=($('#ans')?.value||'').trim();if(t.split(/\s+/).length<2)return toast('Write a complete sentence, please!');if(sSend({t:'answer',text:t})){ST.draft='';crTabletAnswer(t);}}
 }
 
 /* ============================================================
    BOOT
    ============================================================ */
-if(MODE==='host')initHost();else{sRender();studentConnect();}
+CR.start(function(init){/* inside the classroom runner: roster + questions come from init, no name/QR screens */
+  if(CR.screen==='tablet'||init.screen==='tablet'){MODE='student';JOIN=String(init.join||'').toUpperCase().replace(/[^A-Z0-9]/g,'').slice(0,8);const a=store(avKey());ST.av=a?cleanAv(a,init.me&&init.me.name):avFromName(init.me&&init.me.name);if(!JOIN){ST.status='Waiting for the big screen…';sRender();return;}sRender();studentConnect();}
+  else{MODE='host';initHost();}
+},function(){if(MODE==='host')initHost();else{sRender();studentConnect();}});
 
 /*3D-BUNDLE-BEGIN*/
 window.HB3D_INIT=function(){
