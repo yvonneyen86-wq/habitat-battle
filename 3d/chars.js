@@ -1,6 +1,10 @@
 /* ===== characters: big-head island villagers with hand-drawn faces, cute jungle animals, film-style dinosaurs; ~2.9 units tall, facing +z ===== */
 const EYE_W=GLOSS(0xffffff),EYE_B=GLOSS(0x1e1a18);
 const SKINS=[0xffdcc0,0xf5c9a3,0xd9a27a,0xa8724d];
+/* student look picked on the join screen ({sk,hs,hc,sh,pt,n}); index.html keeps the same tables as CSS colours — change both together */
+const AV={SKIN:SKINS,HAIR:[0x2b1a12,0x5c4030,0xf76707,0xe9c46a,0x845ef7,0x1c7ed6],HS:['boy','part','mop','bob','bun','tails'],SHIRT:[0xe03131,0xf08c00,0xffd43b,0x40c057,0x1c7ed6,0x845ef7,0xf06595,0xf8f9fa],PAT:['plain','stripes','dots','star','num']};
+const LEGS=[0x3b5bdb,0x343a40,0xf8f9fa,0x8d6e4a,0x2c3e75,0xe8590c],SHOES=[0xe03131,0xf8f9fa,0x3b2a22,0x1c7ed6];
+function avOpts(av){if(!av)return{};const i=(v,n)=>Number.isInteger(v)&&v>=0&&v<n?v:0;const sh=i(av.sh,8);return{skin:AV.SKIN[i(av.sk,4)],hair:AV.HAIR[i(av.hc,6)],style:AV.HS[i(av.hs,6)],torso:AV.SHIRT[sh],accent:sh===7?0x1c7ed6:0xffffff,pattern:AV.PAT[i(av.pt,5)],num:String(av.n||7),legs:LEGS[(i(av.hs,6)+sh)%LEGS.length],shoes:SHOES[(i(av.hc,6)+i(av.sk,4))%SHOES.length]};}
 const hex6=c=>'#'+(c>>>0).toString(16).padStart(6,'0');
 const rgba=(c,a)=>`rgba(${c>>16&255},${c>>8&255},${c&255},${a})`;
 /* ---- drawn faces: a thin sphere patch on the front of the head carries a canvas face, so expressions can switch instantly ---- */
@@ -164,31 +168,31 @@ const CHAR_BUILDERS={
   for(const s of[-1,1])for(const [z,y] of[[-2.55,1.25],[-2.85,1.08]]){const k=mesh(CONE(.06,.6,8),GLOSS(0xf1e4c6),s*.28,y+.18,z);k.rotation.z=-s*.9;k.rotation.x=-.3;g.add(k);}
   const head=new THREE.Group();head.position.set(0,.98,1.5);g.add(head);g.userData.head=head;loft([[0,0,-.12,.16,.16],[0,-.02,.15,.15,.14],[0,-.07,.4,.09,.08]],head);for(const s of[-1,1])eye(head,s*.13,.05,.06,.035);
   g.userData.top=2.9;return inkify(g);},
- /* ---- space crew ---- */
- astro(){const g=person({torso:0xf8f9fa,legs:0xdee2e6,longPants:true,pattern:'star',accent:0x4dabf7,shoes:0x868e96,hair:0x5c4030,style:'boy',iris:'#2c5aa0'});const h=g.userData.head;
+ /* ---- space crew: every student keeps their own look (suit colour, hair, number) so a whole team of astronauts stays tellable apart ---- */
+ astro(av){const o=avOpts(av),suit=o.torso??0xf8f9fa;const g=person(Object.assign({torso:0xf8f9fa,legs:0xdee2e6,longPants:true,pattern:'star',accent:0x4dabf7,shoes:0x868e96,hair:0x5c4030,style:'boy',iris:'#2c5aa0'},o,{torso:suit,legs:suit,accent:suit===0xf8f9fa?0x4dabf7:0xffffff,pattern:o.pattern==='plain'?'star':o.pattern}));const h=g.userData.head;
   const hel=mesh(SPH(.82,16,12),new THREE.MeshStandardMaterial({color:0xcfeaff,transparent:true,opacity:.22,roughness:.05,depthWrite:false}),0,.05,0,false);bendMat(hel.material);hel.renderOrder=3;hel.userData.noInk=true;h.add(hel);
   h.add(tw(mesh(new THREE.TorusGeometry(.72,.1,10,32),GLOSS(0xf8f9fa),0,-.62,0),o=>o.rotation.x=Math.PI/2));g.add(mesh(BOX(.7,.8,.36),GLOSS(0xdee2e6),0,1.15,-.42));return g;},
- rocket(){const g=person({skin:SKINS[2],torso:0xff6b6b,legs:0xf8f9fa,longPants:true,pattern:'stripes',accent:0xffffff,shoes:0xf8f9fa,hair:0x1e1a18,style:'bob',iris:'#3b2414'});const h=g.userData.head;
-  h.add(mesh(CYL(.5,.66,.34,16),GLOSS(0xf8f9fa),0,.66,-.02));h.add(mesh(CONE(.5,.75,16),GLOSS(0xff6b6b),0,1.2,-.02));h.add(mesh(SPH(.12,10,8),GLOW(0x74c0fc,0x4dabf7,.8),0,.7,.55));
+ rocket(av){const o=avOpts(av),c=o.torso??0xff6b6b;const g=person(Object.assign({skin:SKINS[2],torso:0xff6b6b,legs:0xf8f9fa,longPants:true,pattern:'stripes',accent:0xffffff,shoes:0xf8f9fa,hair:0x1e1a18,style:'bob',iris:'#3b2414'},o));const h=g.userData.head;
+  h.add(mesh(CYL(.5,.66,.34,16),GLOSS(0xf8f9fa),0,.66,-.02));h.add(mesh(CONE(.5,.75,16),GLOSS(c),0,1.2,-.02));h.add(mesh(SPH(.12,10,8),GLOW(0x74c0fc,0x4dabf7,.8),0,.7,.55));
   const pack=new THREE.Group();pack.position.set(0,1.15,-.42);g.add(pack);pack.add(mesh(CYL(.2,.2,.8,14),GLOSS(0xf8f9fa),-.18,0,0));pack.add(mesh(CYL(.2,.2,.8,14),GLOSS(0xf8f9fa),.18,0,0));
   for(const s of[-1,1]){const f=mesh(CONE(.15,.5,10),GLOW(0xffb703,0xff922b,1.1),s*.18,-.66,0,false);f.rotation.x=Math.PI;f.userData.flame=true;f.userData.noInk=true;pack.add(f);}return g;},
- alien(){const g=person({skin:0x7bdc7f,torso:0xb197fc,legs:0x5f3dc4,pattern:'dots',accent:0xe5dbff,shoes:0x5f3dc4,hair:null,face:'alien'});const h=g.userData.head;
+ alien(av){const o=avOpts(av);const g=person(Object.assign({torso:0xb197fc,legs:0x5f3dc4,pattern:'dots',accent:0xe5dbff,shoes:0x5f3dc4},o,{skin:0x7bdc7f,hair:null,face:'alien'}));const h=g.userData.head;
   for(const s of[-1,1]){const a=mesh(CYL(.035,.035,.6,6),GLOSS(0x7bdc7f),s*.25,.86,0);a.rotation.z=s*-.4;h.add(a);h.add(mesh(SPH(.11,8,6),GLOW(0xffd43b,0xffd43b,.9),s*.38,1.15,0));}return g;},
- robot(){const g=person({torso:0x74c0fc,legs:0x495057,pattern:'num',num:'R2',accent:0xffffff,shoes:0x343a40,skin:0xadb5bd,robot:true});const h=g.userData.head;
+ robot(av){const o=avOpts(av),lamp=o.hair??0xff6b6b;const g=person(Object.assign({torso:0x74c0fc,legs:0x495057,accent:0xffffff,shoes:0x343a40},o,{skin:0xadb5bd,robot:true,pattern:'num',num:av?String(av.n||7):'R2'}));const h=g.userData.head;
   h.add(mesh(new THREE.BoxGeometry(1.15,.95,.95,4,4,4),GLOSS(0xced4da),0,0,0));h.add(mesh(BOX(.95,.55,.06),GLOSS(0x1e2433),0,.02,.48));
-  const eyes=[];for(const s of[-1,1]){const e=mesh(SPH(.1,10,8),GLOW(0x74c0fc,0x4dabf7,1.4),s*.22,.06,.5,false);e.scale.z=.4;h.add(e);eyes.push(e);}h.add(mesh(BOX(.3,.05,.03),GLOW(0x74c0fc,0x4dabf7,1.2),0,-.14,.52,false));
-  h.add(mesh(CYL(.04,.04,.4,6),GLOSS(0xadb5bd),0,.66,0));h.add(mesh(SPH(.1,8,6),GLOW(0xff6b6b,0xff6b6b,1),0,.9,0));for(const s of[-1,1])h.add(tw(mesh(CYL(.12,.12,.12,12),GLOSS(0x868e96),s*.62,0,0),o=>o.rotation.z=Math.PI/2));
+  for(const s of[-1,1]){const e=mesh(SPH(.1,10,8),GLOW(0x74c0fc,0x4dabf7,1.4),s*.22,.06,.5,false);e.scale.z=.4;h.add(e);}h.add(mesh(BOX(.3,.05,.03),GLOW(0x74c0fc,0x4dabf7,1.2),0,-.14,.52,false));
+  h.add(mesh(CYL(.04,.04,.4,6),GLOSS(0xadb5bd),0,.66,0));h.add(mesh(SPH(.1,8,6),GLOW(lamp,lamp,1),0,.9,0));for(const s of[-1,1])h.add(tw(mesh(CYL(.12,.12,.12,12),GLOSS(0x868e96),s*.62,0,0),o=>o.rotation.z=Math.PI/2));
   g.userData.top=2.7;return g;},
- /* ---- Hsinchu: four students, deliberately gender-neutral (different hair, skin tone and outfit; no dresses, no grown-ups) ---- */
- kidA(){const g=person({skin:SKINS[1],torso:0xffd43b,accent:0x40c057,pattern:'stripes',legs:0x3b5bdb,shoes:0xe03131,hair:0x4a2c1a,style:'boy',iris:'#3b2414'});const h=g.userData.head;
-  h.add(mesh(new THREE.SphereGeometry(.74,28,12,0,6.283,0,1.05),GLOSS(0x339af0),0,.08,-.02));h.add(tw(mesh(CYL(.4,.4,.05,20),GLOSS(0x339af0),0,.52,.42),o=>o.scale.set(1,1,.8)));
-  g.add(mesh(BOX(.6,.7,.3),GLOSS(0xff922b),0,1.12,-.42));return g;},
- kidB(){const g=person({skin:SKINS[0],torso:0x845ef7,accent:0xffffff,pattern:'num',num:'7',legs:0x343a40,longPants:true,shoes:0xf8f9fa,hair:0xf76707,style:'mop',iris:'#1c4fa0',brow:'#b84a0e'});
-  g.add(mesh(new THREE.TorusGeometry(.3,.09,10,24,Math.PI),GLOSS(0x845ef7),0,1.42,-.12));return g;},
- kidC(){const g=person({skin:SKINS[2],torso:0x20c997,accent:0xffffff,pattern:'dots',legs:0x3b5bdb,shoes:0x3b2a22,hair:0x1e1a18,style:'bob',glasses:0x1e2433,iris:'#2b6a4a',brow:'#333'});return g;},
- kidD(){const g=person({skin:SKINS[3],torso:0xe03131,accent:0xffffff,pattern:'star',legs:0xf8f9fa,shoes:0x3b2a22,hair:0x1e1a18,style:'bun',iris:'#2a1a10',brow:'#222'});g.add(mesh(BOX(.6,.7,.3),GLOSS(0x40c057),0,1.12,-.42));return g;}
+ /* ---- Hsinchu: students; without a chosen look the four slots fall back to neutral presets ---- */
+ kid(av,x={}){const g=person(Object.assign({skin:SKINS[1],torso:0xffd43b,accent:0x40c057,pattern:'stripes',legs:0x3b5bdb,shoes:0xe03131,hair:0x4a2c1a,style:'boy',iris:'#3b2414'},avOpts(av),x.glasses&&!av?{glasses:0x1e2433}:{}));const h=g.userData.head;
+  if(x.cap&&!av){h.add(mesh(new THREE.SphereGeometry(.74,28,12,0,6.283,0,1.05),GLOSS(x.cap),0,.08,-.02));h.add(tw(mesh(CYL(.4,.4,.05,20),GLOSS(x.cap),0,.52,.42),o=>o.scale.set(1,1,.8)));}
+  if(x.bag)g.add(mesh(BOX(.6,.7,.3),GLOSS(x.bag),0,1.12,-.42));return g;},
+ kidA(av){return CHAR_BUILDERS.kid(av||{sk:1,hs:0,hc:1,sh:2,pt:1,n:1},{cap:0x339af0,bag:0xff922b});},
+ kidB(av){return CHAR_BUILDERS.kid(av||{sk:0,hs:2,hc:2,sh:5,pt:4,n:7},{});},
+ kidC(av){return CHAR_BUILDERS.kid(av||{sk:2,hs:3,hc:0,sh:3,pt:2,n:3},{glasses:true});},
+ kidD(av){return CHAR_BUILDERS.kid(av||{sk:3,hs:4,hc:0,sh:0,pt:3,n:5},{bag:0x40c057});}
 };
 const CHAR_CLASS={monkey:'animal',elephant:'animal',tiger:'animal',toucan:'animal',trex:'dino',bronto:'dino',triceratops:'dino',stego:'dino',astro:'space',rocket:'space',alien:'space',robot:'space',kidA:'hero',kidB:'hero',kidC:'hero',kidD:'hero'};
 /* who lives where: the stage shows scene-native creatures, 4 per world */
 const CHAR_SETS={jungle:['monkey','elephant','tiger','toucan'],dino:['trex','bronto','triceratops','stego'],space:['astro','rocket','alien','robot'],town:['kidA','kidB','kidC','kidD']};
-function buildChar(id){const g=(CHAR_BUILDERS[id]||CHAR_BUILDERS.monkey)();g.traverse(o=>{if(o.isMesh&&!o.userData.noShadow){o.castShadow=true;o.receiveShadow=true;}});return g;}
+function buildChar(id,av){const g=(CHAR_BUILDERS[id]||CHAR_BUILDERS.monkey)(av);g.traverse(o=>{if(o.isMesh&&!o.userData.noShadow){o.castShadow=true;o.receiveShadow=true;}});return g;}

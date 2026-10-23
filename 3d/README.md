@@ -44,6 +44,11 @@
   - `faceTick()` 每幀決定表情：倒地 ko、短暫反應（`setFace(ch,expr,ms)`）、否則 smile 並隨機眨眼；暴龍下顎跟著表情開合。
 - `?fast` 網址參數只給截圖測試用（軟體 GL 很慢時讓每幀涵蓋更多時間）。
 
+## 學生自選外型 `av`（2026-10）
+- 正式遊戲 `index.html` 的加入畫面多了「Design your look」：膚色 4、髮型 6（Short / Side / Curly / Bob / Top knot / Pigtails）、髮色 6、衣服 8 色、圖案 5 種（Plain / Stripes / Dots / Star / Number 1–9），有即時 2D 預覽與 🎲 隨機。資料格式 `{sk,hs,hc,sh,pt,n}`，隨 `join` 送給老師端，存在 `S.players[pid].av`（也存學生平板 `localStorage` `habitat-av`，下次自動帶入）。沒選的（舊存檔、老師手動加的）用名字雜湊 `avFromName()` 給一個固定外型。
+- 3D 這邊 `buildChar(id,av)` 會把 `av` 交給人物型 builder：`kid`（新竹）、`astro / rocket / alien / robot`（太空）。`avOpts(av)` 把索引換成顏色與髮型；**`AV` 表在 `chars.js` 與 `index.html` 各一份，改顏色要兩邊一起改**。叢林動物與恐龍不受 `av` 影響。
+- 太空組靠太空衣顏色（= 衣服色）、胸前圖案／號碼、頭盔裡的髮型髮色來分辨，一隊 6–8 個太空人也不會撞臉。
+
 ## 四個世界（2026-10 改版）
 - 風格仿低多邊形桌遊微縮模型：六角島嶼浮在水面、切面幾何、柔和土色調、圓頭小人與原生生物。角色依世界決定：Jungle 是叢林動物（monkey / elephant / tiger / toucan）、Dino 是恐龍（trex / bronto / triceratops / stego）、Space 是太空人／外星人／機器人、Hsinchu 是四個中性打扮的學生（kidA–kidD：不同髮型、膚色、衣服；沒有裙子、沒有大人）。
 - **Jungle**：六角島叢林（營火廣場、瀑布山、遺跡、河岸、大樹、花田、蝴蝶與鳥群）。

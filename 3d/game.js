@@ -3,7 +3,7 @@ const TEAM_DEFS=[{name:'Red',color:0xe03131,css:'#e03131'},{name:'Blue',color:0x
 let teamCount=2,teamSite=[0,1,2,3];const TEAMS=TEAM_DEFS;
 const HPMAX=[10,15,20];
 /* sample students; the creature each one appears as is picked per world (CHAR_SETS) so every scene shows its own inhabitants */
-const ROSTER=[{name:'Amy',i:0,lv:2},{name:'Ben',i:1,lv:1},{name:'Cindy',i:2,lv:1},{name:'David',i:3,lv:3},{name:'Emma',i:0,lv:3},{name:'Frank',i:1,lv:2},{name:'Leo',i:2,lv:1},{name:'Zoe',i:3,lv:2}];
+const ROSTER=[{name:'Amy',i:0,lv:2,av:{sk:1,hs:5,hc:1,sh:0,pt:4,n:7}},{name:'Ben',i:1,lv:1,av:{sk:0,hs:0,hc:3,sh:4,pt:1,n:2}},{name:'Cindy',i:2,lv:1,av:{sk:2,hs:3,hc:0,sh:6,pt:2,n:3}},{name:'David',i:3,lv:3,av:{sk:3,hs:2,hc:0,sh:2,pt:3,n:4}},{name:'Emma',i:0,lv:3,av:{sk:0,hs:4,hc:2,sh:5,pt:0,n:5}},{name:'Frank',i:1,lv:2,av:{sk:1,hs:1,hc:5,sh:7,pt:4,n:9}},{name:'Leo',i:2,lv:1,av:{sk:2,hs:0,hc:4,sh:3,pt:1,n:1}},{name:'Zoe',i:3,lv:2,av:{sk:3,hs:5,hc:1,sh:1,pt:4,n:8}}];
 const SCENE_CLASS={jungle:'animal',dino:'dino',space:'space',town:'hero'};
 let players=[],env=null,boss=null,current='jungle',baseDecos=[];
 function flag(color){const g=new THREE.Group();g.add(mesh(CYL(.07,.07,3,12),GLOSS(0xfff6e0),0,1.5,0));g.add(mesh(SPH(.16,12,8),GLOSS(0xffd43b),0,3.05,0));const geo=new THREE.PlaneGeometry(1.5,.95,10,3);geo.translate(.75,0,0);const f=new THREE.Mesh(geo,GLOSS(color,{side:THREE.DoubleSide}));f.position.set(0,2.5,0);f.castShadow=true;f.userData.base=geo.attributes.position.array.slice();g.add(f);g.userData.cloth=f;return g;}
@@ -13,7 +13,7 @@ function makePlayer(p,site,k,n){p.id=(CHAR_SETS[current]||CHAR_SETS.jungle)[p.i%
  const hab=habFor(p);hab.position.y=.5;g.add(hab);g.userData.hab=hab;const yard=mesh(new THREE.CircleGeometry(1,24),M(0xe9dcc0),0,.52,0,false);yard.rotation.x=-Math.PI/2;yard.scale.setScalar(YARD[p.lv]);g.add(yard);g.userData.yard=yard;
  if(p.lv>1){const an=habFor(Object.assign({},p,{lv:p.lv-1}));an.position.set(ANNEX.x,.5,ANNEX.z);an.scale.setScalar(.62);g.add(an);g.userData.annex=an;}
  const f=flag(t.color);f.position.set(2.1,.5,-.7);g.add(f);g.userData.flag=f;
- const ch=buildChar(p.id);ch.scale.multiplyScalar(1.05);ch.position.set(-2.3,.5,2);ch.rotation.y=.4;g.add(ch);g.userData.ch=ch;
+ const ch=buildChar(p.id,p.av);ch.scale.multiplyScalar(1.05);ch.position.set(-2.3,.5,2);ch.rotation.y=.4;g.add(ch);g.userData.ch=ch;
  const top=(ch.userData.top||2.7)*ch.scale.y,home={x:-2.3,y:.5,z:2};Object.assign(g.userData,{top,home,at:Object.assign({},home),site,look:null,ry:.4});
  const lab=bubbleSprite(p.name,t.css);lab.position.set(-2.3,.5+top+1.3,2);g.add(lab);g.userData.lab=lab;const hp=hpSprite();hp.position.set(0,5.6,0);g.add(hp);g.userData.hp=hp;
  Object.assign(g.userData,{p,hp0:HPMAX[p.lv-1],hpv:HPMAX[p.lv-1],down:false,shake:0,bob:Math.random()*6});world.add(g);players.push(g);return g;}

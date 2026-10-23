@@ -267,6 +267,15 @@ body.sv-on .sv{display:flex;flex-direction:column;gap:8px;min-height:0;backgroun
 .char-pick button small{font-size:.78rem}
 .char-pick button.sel{border-color:var(--scene-deep);background:var(--scene-soft)}
 .join-btn{font-size:1.4rem;padding:16px;font-family:var(--display)}
+.look{display:grid;grid-template-columns:124px 1fr;gap:14px;align-items:start}
+.look canvas{width:124px;height:124px;border-radius:22px;background:#fff;box-shadow:0 3px 0 rgba(0,0,0,.08)}
+.look-opts{display:grid;gap:8px}.look-opts .row{display:flex;align-items:center;gap:6px;flex-wrap:wrap}.look-opts .row b{font-size:.8rem;color:var(--muted);width:66px;flex:0 0 auto}
+.look-opts button{padding:6px 10px;font-size:.85rem;border:3px solid transparent;background:#fff;box-shadow:0 2px 0 rgba(0,0,0,.08)}.look-opts button.sel{border-color:var(--scene-deep);background:var(--scene-soft)}
+.look-opts .sw{width:30px;height:30px;padding:0;border-radius:50%;background:var(--c)}.look-opts .sw.sel{border-color:var(--ink);transform:scale(1.12)}
+@media (max-width:430px){.look{grid-template-columns:1fr;justify-items:center}}
+.avimg{border-radius:50%;display:block;background:#fff}
+.prow .av{position:relative;display:grid;place-items:center}.prow .av .avimg{width:44px;height:44px}.prow .av i{position:absolute;right:-9px;bottom:-5px;font-style:normal;font-size:1.05rem;font-family:var(--emoji)}
+.s-top .who .av .avimg{width:100%;height:100%}
 .me{display:flex;align-items:center;gap:14px}
 .me .home{position:relative;width:118px;height:118px;border-radius:26px;display:grid;place-items:center;background:linear-gradient(var(--sky1),var(--sky2) 58%,var(--mound) 58%,var(--mound2));border:5px solid var(--tc);flex:0 0 auto;font-size:3.9rem;overflow:visible}
 .me .home .he{filter:drop-shadow(0 4px 3px rgba(0,0,0,.25))}
@@ -671,6 +680,33 @@ const charById=id=>CHARS.find(c=>c.id===id)||CHARS[0];
 const classOf=p=>CLASSES[charById(p.char).c];
 const habOf=p=>classOf(p).hab[(p.lv||1)-1];
 const maxHp=p=>HPMAX[p.lv||1];
+/* ===== student look (avatar): chosen on the join screen, drawn here as a 2D bust and on the 3D stage as a villager (3d/chars.js keeps the same tables) ===== */
+const AV={SKIN:['#ffdcc0','#f5c9a3','#d9a27a','#a8724d'],HAIR:['#2b1a12','#5c4030','#f76707','#e9c46a','#845ef7','#1c7ed6'],HS:['Short','Side','Curly','Bob','Top knot','Pigtails'],SHIRT:['#e03131','#f08c00','#ffd43b','#40c057','#1c7ed6','#845ef7','#f06595','#f8f9fa'],PAT:['Plain','Stripes','Dots','Star','Number']};
+function randomAv(){const r=n=>Math.floor(Math.random()*n);return{sk:r(4),hs:r(6),hc:r(6),sh:r(8),pt:r(5),n:1+r(9)};}
+function avFromName(name){let h=7;for(const ch of String(name||''))h=(h*31+ch.charCodeAt(0))>>>0;return{sk:h%4,hs:(h>>2)%6,hc:(h>>5)%6,sh:(h>>8)%8,pt:(h>>11)%5,n:1+(h>>14)%9};}
+function cleanAv(a,name){const d=avFromName(name);if(!a||typeof a!=='object')return d;const c=(v,n,f)=>Number.isInteger(v)&&v>=0&&v<n?v:f;return{sk:c(a.sk,4,d.sk),hs:c(a.hs,6,d.hs),hc:c(a.hc,6,d.hc),sh:c(a.sh,8,d.sh),pt:c(a.pt,5,d.pt),n:c(a.n-1,9,d.n-1)+1};}
+function drawAvatar(x,av,S){x.clearRect(0,0,S,S);x.save();x.scale(S/100,S/100);x.lineCap='round';x.lineJoin='round';const skin=AV.SKIN[av.sk],hair=AV.HAIR[av.hc],shirt=AV.SHIRT[av.sh],hs=av.hs,pt=av.pt,ink='#2a1a12';
+  x.fillStyle=shirt;x.beginPath();x.moveTo(12,100);x.lineTo(12,86);x.quadraticCurveTo(12,70,30,69);x.lineTo(70,69);x.quadraticCurveTo(88,70,88,86);x.lineTo(88,100);x.closePath();x.fill();
+  x.save();x.clip();x.fillStyle=av.sh===7?'#1c7ed6':'rgba(255,255,255,.92)';
+  if(pt===1){for(let y=73;y<100;y+=9)x.fillRect(8,y,84,4);}else if(pt===2){for(let r=0;r<4;r++)for(let c=0;c<7;c++){x.beginPath();x.arc(12+c*13+(r%2?6:0),75+r*8,2.4,0,6.283);x.fill();}}
+  else if(pt===3){x.font='900 22px sans-serif';x.textAlign='center';x.textBaseline='middle';x.fillText('★',50,86);}else if(pt===4){x.font='900 24px Nunito,"Baloo 2",sans-serif';x.textAlign='center';x.textBaseline='middle';x.fillText(String(av.n),50,86);}
+  x.restore();x.fillStyle=skin;x.fillRect(44,58,12,13);x.fillStyle=hair;
+  if(hs===3){x.beginPath();x.ellipse(50,46,34,34,0,0,6.283);x.fill();x.fillRect(16,46,68,18);}
+  if(hs===5){for(const s of[-1,1]){x.beginPath();x.ellipse(50+s*34,54,9,13,0,0,6.283);x.fill();}}
+  if(hs===4){x.beginPath();x.arc(50,13,9,0,6.283);x.fill();}
+  x.fillStyle=skin;x.beginPath();x.arc(50,43,30,0,6.283);x.fill();for(const s of[-1,1]){x.beginPath();x.ellipse(50+s*30,45,5,6,0,0,6.283);x.fill();}
+  x.fillStyle=hair;x.beginPath();x.arc(50,42,31.5,Math.PI,0);x.closePath();x.fill();
+  const bump=(cx,cy,rx,ry)=>{x.beginPath();x.ellipse(cx,cy,rx,ry,0,0,6.283);x.fill();};
+  if(hs===0||hs===5){bump(36,43,10,8);bump(50,45,10,8);bump(64,43,10,8);}else if(hs===1){x.save();x.translate(55,42);x.rotate(-.18);bump(0,0,26,8);x.restore();bump(26,42,7,8);}
+  else if(hs===2){for(let i=0;i<=6;i++){const a=Math.PI+i/6*Math.PI;bump(50+Math.cos(a)*30,42+Math.sin(a)*30,7.5,7.5);}bump(40,46,8,7);bump(58,46,8,7);}
+  else if(hs===3){x.fillRect(18.5,38,63,10);}else if(hs===4){bump(42,44,10,7);bump(58,44,10,7);}
+  if(hs===5){x.fillStyle='#ff6b9d';for(const s of[-1,1]){x.beginPath();x.arc(50+s*32,43,3.5,0,6.283);x.fill();}}
+  x.fillStyle='rgba(255,120,140,.45)';bump(31,61,6,3.5);bump(69,61,6,3.5);
+  for(const s of[-1,1]){const ex=50+s*12,ey=54;x.fillStyle='#fff';bump(ex,ey,6.5,8.5);x.strokeStyle=ink;x.lineWidth=1.2;x.stroke();x.fillStyle='#3b2414';bump(ex,ey+1,4.6,6.6);x.fillStyle=ink;bump(ex,ey+1.5,2.6,3.6);x.fillStyle='#fff';bump(ex-1.8,ey-2.2,2,2);x.strokeStyle='#5a3a22';x.lineWidth=1.6;x.beginPath();x.moveTo(ex-5,ey-11.5);x.quadraticCurveTo(ex,ey-14,ex+5,ey-11.5);x.stroke();}
+  x.fillStyle='#8a2b2b';x.beginPath();x.moveTo(44,65);x.quadraticCurveTo(50,72,56,65);x.closePath();x.fill();x.fillStyle=skin;bump(50,43,2.4,1.8);x.restore();}
+const AV_CACHE={};
+function avURL(av,name,S=96){av=cleanAv(av,name);const k=[av.sk,av.hs,av.hc,av.sh,av.pt,av.n,S].join();if(AV_CACHE[k])return AV_CACHE[k];const c=document.createElement('canvas');c.width=c.height=S;drawAvatar(c.getContext('2d'),av,S);return AV_CACHE[k]=c.toDataURL();}
+function avImg(av,name,px){return `<img class="avimg" src="${avURL(av,name,px*2)}" width="${px}" height="${px}" alt="">`;}
 function toast(msg){const t=$('#toast');t.textContent=msg;t.hidden=false;clearTimeout(toast._t);toast._t=setTimeout(()=>t.hidden=true,2600);}
 function applyScene(key){const sc=SCENES[key]||SCENES.jungle;const r=document.documentElement.style;r.setProperty('--scene-bg',sc.bg);r.setProperty('--scene-deep',sc.deep);r.setProperty('--scene-soft',sc.soft);['sky1','sky2','mound','mound2'].forEach(k=>r.setProperty('--'+k,sc[k]));document.documentElement.dataset.scene=key;}
 function sentenceCheck(t){t=String(t||'').trim();const words=t.split(/\s+/).filter(w=>/[A-Za-z]/.test(w)).length;return{cap:/^[A-Z]/.test(t),end:/[.!?]["')]?$/.test(t),len:words>=4,words};}
@@ -1183,6 +1219,7 @@ function onStudent(conn,m){
     let pid=S.cidMap[info.cid];
     if(!pid||!S.players[pid]){pid=newPlayer(name,m.char,team);S.cidMap[info.cid]=pid;log(`${name} joined ${teamName(team)}! ${charById(m.char).e}`);chime();setTimeout(()=>{popHab(pid);burst(pid,['✨','🎉'],12,{ring:true,g:0,speed:16,drag:.95});},120);}
     else Object.assign(S.players[pid],{name,char:m.char,team,online:true});
+    S.players[pid].av=cleanAv(m.av,name);
     info.pid=pid;changed();return;
   }
   const pid=info.pid;if(!pid||!S.players[pid])return;
@@ -1343,7 +1380,7 @@ function renderConsole(){
     const canBlk=b&&b.step==='defense'&&b.def&&b.def.teams.includes(p.team);
     const btns=ph==='battle'?`${[1,2,3].map(t=>`<button class="btn tier t${t}${isOk===t?' on':''}" data-act="tier" data-t="${t}" data-pid="${p.pid}" ${live?'':'disabled'} title="${['','Good','Great: ×2','Amazing: ×2 + through walls'][t]}">${['','✓','⭐','🌟'][t]}</button>`).join('')}${isOk?`<button class="btn" data-act="no" data-pid="${p.pid}" title="Undo">↺</button>`:''}${canBlk?`<button class="btn blk${b.def.blocks[p.pid]?' on':''}" data-act="block" data-pid="${p.pid}">🛡️ Block</button>`:''}<button class="btn star" data-act="great" data-pid="${p.pid}" title="+1 🪙 and a class item">🎁</button>`
       :`<button class="btn coin" data-act="coin" data-pid="${p.pid}">✓ +${CORRECT_COINS} 🪙</button><button class="btn star" data-act="great" data-pid="${p.pid}">⭐ Great job</button><button class="btn" data-act="coin-minus" data-pid="${p.pid}">−🪙</button>`;
-    return `<div class="prow${p.online?'':' off'}" id="row-${p.pid}" style="--tc:${teamColor(p.team)}"><span class="av">${ch.e}</span>
+    return `<div class="prow${p.online?'':' off'}" id="row-${p.pid}" style="--tc:${teamColor(p.team)}"><span class="av">${avImg(p.av,p.name,44)}<i>${ch.e}</i></span>
     <div class="nm"><span>${esc(p.name)}</span><small>${h[1]} ${esc(h[0])}${p.online?'':' · offline'}</small>${stt}</div>
     <div class="stats"><span>🪙 <b>${p.coins}</b></span><span>${p.down?'💤':'❤️'} <b>${p.down?0:p.hp}/${maxHp(p)}</b></span>${p.armor?`<span>🛡️ <b>${p.armor}</b></span>`:''}<span>${c.atk[1]}${p.inv.atk} ${ico(c.def[1])}${p.inv.def} ${c.heal[1]}${p.inv.heal}</span><span>${items}</span>${flags?`<b>${flags}</b>`:''}</div>
     <div class="acts">${btns}<button class="btn x" data-act="remove" data-pid="${p.pid}">${H.confirm==='rm-'+p.pid?'Remove?':'✕'}</button></div></div>`;}).join('')
@@ -1493,7 +1530,7 @@ function initHost(){
 /* ============================================================
    STUDENT (tablet)
    ============================================================ */
-const ST={s:null,me:null,my:null,view:'',team:null,char:null,name:'',peer:null,conn:null,status:'Connecting to the game…',retry:null,qKey:'',draft:'',prev:null};
+const ST={s:null,me:null,my:null,view:'',team:null,char:null,name:'',av:store('habitat-av')?cleanAv(store('habitat-av')):randomAv(),peer:null,conn:null,status:'Connecting to the game…',retry:null,qKey:'',draft:'',prev:null};
 function cid(){let c=store('habitat-cid-'+JOIN);if(!c){c=Math.random().toString(36).slice(2)+Date.now().toString(36);store('habitat-cid-'+JOIN,c);}return c;}
 function sSend(m){if(ST.conn&&ST.conn.open){try{ST.conn.send(m);return true;}catch(e){}}toast('Not connected. Trying again…');return false;}
 function studentConnect(){
@@ -1555,16 +1592,22 @@ function sJoin(app,s){
     <div class="card"><h2>What's your name?</h2><input class="name-in" id="j-name" maxlength="14" autocomplete="off" placeholder="Type your English name"></div>
     <div class="card"><h2>Pick your team</h2><div class="team-pick" id="j-teams"></div></div>
     <div class="card"><h2>Pick your character</h2><p class="hint">Each group has its own habitat, gear and power!</p><div id="j-chars" style="display:grid;gap:16px"></div></div>
+    <div class="card"><h2>Design your look</h2><p class="hint">This is you in Hero Town and in space. Pick anything you like!</p><div class="look"><canvas id="j-look" width="248" height="248"></canvas><div class="look-opts" id="j-look-opts"></div></div><button class="btn" id="j-shuffle">🎲 Surprise me</button></div>
     <button class="btn primary join-btn" id="j-go">Join the game!</button></div></div>`;
     const n=$('#j-name');n.value=ST.name;n.addEventListener('input',()=>{ST.name=n.value;jUpdate();});
     if(!app._jb){app._jb=true;app.addEventListener('click',sJoinClick);}}
   $('#j-scene').textContent=`${SCENES[s.scene].icon} ${SCENES[s.scene].name}`;
   $('#j-teams').innerHTML=s.teams.map((t,i)=>`<button data-team="${i}" class="${ST.team===i?'sel':''}" style="--tc:${t.color}">${esc(t.name)}</button>`).join('');
   $('#j-chars').innerHTML=Object.entries(CLASSES).map(([k,c])=>`<div class="class-block"><div class="cl"><b>${esc(c.label)}</b><span>Home: ${c.hab.map(h=>h[1]).join(' → ')} · Gear: ${c.atk[1]} ${ico(c.def[1])} ${c.heal[1]} · Power: ${esc(c.power)}</span></div><div class="char-pick">${CHARS.filter(x=>x.c===k).map(x=>`<button data-char="${x.id}" class="${ST.char===x.id?'sel':''}"><span class="e">${x.e}</span><small>${esc(x.n)}</small></button>`).join('')}</div></div>`).join('');
-  jUpdate();
+  jUpdate();jLookOpts();
 }
+function jLookOpts(){const o=$('#j-look-opts');if(!o)return;const a=ST.av;const sw=(k,arr)=>arr.map((c,i)=>`<button class="sw${a[k]===i?' sel':''}" data-av="${k}" data-v="${i}" style="--c:${c}" aria-label="${k} ${i+1}"></button>`).join('');const tx=(k,arr)=>arr.map((t,i)=>`<button class="${a[k]===i?'sel':''}" data-av="${k}" data-v="${i}">${k==='pt'&&i===4?'#'+a.n:t}</button>`).join('');
+  o.innerHTML=`<div class="row"><b>Skin</b>${sw('sk',AV.SKIN)}</div><div class="row"><b>Hair</b>${tx('hs',AV.HS)}</div><div class="row"><b>Hair color</b>${sw('hc',AV.HAIR)}</div><div class="row"><b>Shirt</b>${sw('sh',AV.SHIRT)}</div><div class="row"><b>Pattern</b>${tx('pt',AV.PAT)}${a.pt===4?'<button data-av="n">Next number ▸</button>':''}</div>`;
+  const c=$('#j-look');if(c)drawAvatar(c.getContext('2d'),a,c.width);}
 function jUpdate(){const b=$('#j-go');if(b)b.disabled=!(ST.name.trim()&&ST.team!==null&&ST.char);}
-function sJoinClick(e){if(ST.view!=='join')return;const t=e.target.closest('[data-team]'),c=e.target.closest('[data-char]');if(t){ST.team=+t.dataset.team;sRender();}if(c){ST.char=c.dataset.char;sRender();}if(e.target.closest('#j-go')){if(sSend({t:'join',name:ST.name,team:ST.team,char:ST.char}))toast('Joining…');}}
+function sJoinClick(e){if(ST.view!=='join')return;const t=e.target.closest('[data-team]'),c=e.target.closest('[data-char]'),a=e.target.closest('[data-av]');if(t){ST.team=+t.dataset.team;sRender();}if(c){ST.char=c.dataset.char;sRender();}
+  if(a){const k=a.dataset.av;if(k==='n')ST.av.n=ST.av.n%9+1;else ST.av[k]=+a.dataset.v;store('habitat-av',ST.av);jLookOpts();}if(e.target.closest('#j-shuffle')){ST.av=randomAv();store('habitat-av',ST.av);jLookOpts();}
+  if(e.target.closest('#j-go')){if(sSend({t:'join',name:ST.name,team:ST.team,char:ST.char,av:ST.av}))toast('Joining…');}}
 function sSkeleton(app){
   app.innerHTML=`<div class="sv2" id="s-root">
     <div class="s-top"><div class="who"><span class="av" id="t-av"></span><div><b id="t-name"></b><small id="t-team"></small></div></div><span class="sp"></span>
@@ -1586,7 +1629,7 @@ function sSkeleton(app){
 function sPlay(s,me){
   const ch=charById(me.char),c=CLASSES[ch.c],team=s.teams[me.team]||{name:'Team',color:'#888'},h=c.hab[me.lv-1],mx=HPMAX[me.lv];
   $('#s-root').style.setProperty('--tc',team.color);
-  $('#t-av').textContent=ch.e;$('#t-name').textContent=me.name;$('#t-team').textContent=team.name;$('#t-coin-n').textContent=me.coins;
+  {const el=$('#t-av'),k=JSON.stringify(me.av||0)+me.name;if(el.dataset.k!==k){el.dataset.k=k;el.innerHTML=avImg(me.av,me.name,44);}}$('#t-name').textContent=me.name;$('#t-team').textContent=team.name;$('#t-coin-n').textContent=me.coins;
   const afford=(me.lv<3&&me.coins>=UPGRADE_COST[me.lv]?1:0)+['atk','def','heal'].filter(k=>me.coins>=GEAR_COST&&me.inv[k]<INV_CAP).length;
   const bd=$('#t-badge');bd.hidden=!afford;bd.textContent=afford;$('#t-supply').classList.toggle('has',afford>0);
   const ts=teamStats(s);$('#t-teams').innerHTML=ts.map(t=>`<span style="--tc:${t.color}">${esc(t.name)} <b>${s.phase==='gather'?'🪙 '+t.coins:'🏆 '+t.pts}</b></span>`).join('');
