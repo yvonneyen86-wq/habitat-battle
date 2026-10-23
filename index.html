@@ -464,6 +464,10 @@ button.av{border:0;padding:0;cursor:pointer;position:relative;overflow:visible}b
 .gearfly span{font-family:var(--emoji);font-size:64px;line-height:1;filter:drop-shadow(0 6px 4px rgba(0,0,0,.3))}
 .gearfly small{font-family:var(--body);font-weight:900;font-size:13px;background:#fff;border-radius:99px;padding:2px 8px;white-space:nowrap;box-shadow:0 2px 0 rgba(0,0,0,.15)}
 body.nofx *,body.nofx *::before,body.nofx *::after{animation:none!important}
+/* lite: drop the GPU-heavy bits (blur, drop-shadow, row flash) — auto on PCs without graphics acceleration */
+body.lite .infocard,body.lite .qbar,body.lite .foot,body.lite .overlay,body.lite .card,body.lite .glass,body.lite .plate{backdrop-filter:none!important}
+body.lite .hab .he,body.lite .hab .av,body.lite .boss .be,body.lite .hab.flame .he,body.lite .dio .hab-e,body.lite .dio .char,body.lite .gearfly span{filter:none!important}
+body.lite .prow.flash{animation:none}body.lite .amb-canvas{display:none}
 /* textbook bank */
 .modal.bank{max-width:820px}
 .seg.lv button{font-family:var(--display);font-size:1.1rem;padding:8px 18px}
@@ -899,8 +903,9 @@ function makeBG(w,h,key){const d=Math.min(2,window.devicePixelRatio||1),cv=docum
    ============================================================ */
 const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const EMOJI_FONT='"Noto Color Emoji","Apple Color Emoji","Segoe UI Emoji",sans-serif';
-const FX={on:store('habitat-fx')!==false,parts:[],projs:[],amb:[],last:0,t:0,w:0,h:0,stars:[],timers:[]};
+const FX={on:store('habitat-fx')!==false,lite:store('habitat-fx')==='lite',parts:[],projs:[],amb:[],last:0,t:0,w:0,h:0,stars:[],timers:[],slow:0,frames:0};
 const fxOn=()=>FX.on&&!RM;
+function setLite(on,why){FX.lite=!!on;document.body.classList.toggle('lite',FX.lite);FX.parts=FX.parts.slice(-30);FX.amb=[];if(why)toast(why);renderHeader();}
 const AMB={
   jungle:[{e:['🍃','🌿','🍂'],every:1.1,kind:'fall'},{e:['🦋'],every:5,kind:'flutter',max:3},{e:['🐦','🦜'],every:8,kind:'cross',max:1}],
   dino:[{e:['☁️'],every:1.8,kind:'rise'},{e:['☄️'],every:6,kind:'meteor'},{e:['🦕','🦖'],every:10,kind:'walk',max:1},{e:['🦅'],every:13,kind:'cross',max:1}],
@@ -912,7 +917,7 @@ function fxSetup(){
   FX.av=document.createElement('canvas');FX.av.className='amb-canvas';st.prepend(FX.av);FX.ax=FX.av.getContext('2d');
   FX.cv=document.createElement('canvas');FX.cv.className='fx-canvas';st.appendChild(FX.cv);FX.cx=FX.cv.getContext('2d');
   try{new ResizeObserver(fxResize).observe(st);}catch(e){}
-  fxResize();document.body.classList.toggle('nofx',!fxOn());requestAnimationFrame(fxLoop);
+  fxResize();document.body.classList.toggle('nofx',!fxOn());if(!FX.lite&&typeof hasWebGL==='function'&&!hasWebGL())FX.lite=true;document.body.classList.toggle('lite',FX.lite);requestAnimationFrame(fxLoop);
 }
 function fxResize(){
   if(!FX.cv)return;const d=Math.min(2,window.devicePixelRatio||1),r=$('#stage').getBoundingClientRect();
@@ -921,7 +926,10 @@ function fxResize(){
   FX.stars=Array.from({length:90},()=>({x:Math.random(),y:Math.random(),p:Math.random()*6.3,r:.6+Math.random()*1.8}));
 }
 function fxLoop(ts){
-  const dt=Math.min(.05,(ts-(FX.last||ts))/1000);FX.last=ts;FX.t+=dt;
+  const raw=(ts-(FX.last||ts))/1000,dt=Math.min(.05,raw);FX.last=ts;FX.t+=dt;
+  if(!FX.lite&&FX.on&&(FX.parts.length||FX.projs.length)){FX.frames++;if(raw>.07)FX.slow++;if(FX.frames>=90){if(FX.slow>=45)setLite(true,'Animations reduced to keep the screen smooth. (✨ button changes this)');FX.frames=0;FX.slow=0;}}
+  const st3=$('#stage');if(st3&&st3.classList.contains('is3d')){if(FX.parts.length||FX.projs.length){FX.projs.forEach(p=>p.res());FX.projs=[];FX.parts=[];FX.cx.clearRect(0,0,FX.w,FX.h);FX.ax&&FX.ax.clearRect(0,0,FX.w,FX.h);}requestAnimationFrame(fxLoop);return;}
+  if(FX.parts.length>90)FX.parts.splice(0,FX.parts.length-90);
   const c=FX.cx;c.clearRect(0,0,FX.w,FX.h);
   FX.projs=FX.projs.filter(p=>{p.t+=dt;const k=Math.min(1,p.t/p.dur),x=p.x0+(p.x1-p.x0)*k,y=p.y0+(p.y1-p.y0)*k-Math.sin(k*Math.PI)*p.arc;
     for(let j=1;j<=4;j++){const kk=Math.max(0,k-j*.04),xx=p.x0+(p.x1-p.x0)*kk,yy=p.y0+(p.y1-p.y0)*kk-Math.sin(kk*Math.PI)*p.arc;c.globalAlpha=.25/j;c.font=`${p.s}px ${EMOJI_FONT}`;c.textAlign='center';c.textBaseline='middle';c.fillText(p.e,xx,yy);}
@@ -945,7 +953,7 @@ function ambient(dt){
   if(!S)return;
   if(!FX.bg||FX.bg.key!==S.scene||FX.bg.w!==W||FX.bg.h!==Hh)FX.bg=makeBG(W,Hh,S.scene);
   c.drawImage(FX.bg.cv,0,0,W,Hh);
-  if(!fxOn()){FX.amb=[];return;}
+  if(!fxOn()||FX.lite){FX.amb=[];return;}
   paintDynamic(c,W,Hh,S.scene,FX.t,FX.bg.data);
   const sc=S.scene,u=Math.min(W,Hh)/100,t=FX.t;
   if(FX.ambScene!==sc){FX.ambScene=sc;FX.amb=[];FX.timers=(AMB[sc]||[]).map(()=>Math.random()*1.5);}
@@ -983,16 +991,16 @@ function elCenter(el){const st=$('#stage');if(!el||!st)return{x:FX.w/2,y:FX.h/2}
 const habPt=pid=>elCenter($('#hab-'+pid));
 const stageMid=()=>({x:FX.w/2,y:FX.h/2});
 function burst(at,emojis,n=14,o={}){
-  if(!fxOn())return;const c=typeof at==='string'?habPt(at):at,u=Math.min(FX.w,FX.h)/100;
+  if(!fxOn())return;const c=typeof at==='string'?habPt(at):at,u=Math.min(FX.w,FX.h)/100;if(FX.lite)n=Math.max(3,Math.ceil(n/2));const life=(o.life||1.0)*(FX.lite?.7:1);
   for(let k=0;k<n;k++){const a=o.ring?k/n*6.283:(-Math.PI/2+(Math.random()-.5)*2.4);const sp=(o.speed||30)*u*(.55+Math.random()*.7);
-    FX.parts.push({x:c.x,y:c.y,vx:Math.cos(a)*sp,vy:Math.sin(a)*sp,g:o.g??45*u,drag:o.drag,life:o.life||1.3,max:o.life||1.3,rot:0,vr:(Math.random()-.5)*5,s:(o.size||3.6)*u*(.8+Math.random()*.5),e:Array.isArray(emojis)?emojis[rnd(emojis.length)]:emojis});}
+    FX.parts.push({x:c.x,y:c.y,vx:Math.cos(a)*sp,vy:Math.sin(a)*sp,g:o.g??45*u,drag:o.drag,life,max:life,rot:0,vr:(Math.random()-.5)*5,s:(o.size||3.6)*u*(.8+Math.random()*.5),e:Array.isArray(emojis)?emojis[rnd(emojis.length)]:emojis});}
 }
-function confetti(at,cols,n=40,o={}){
+function confetti(at,cols,n=40,o={}){if(FX.lite)n=Math.ceil(n/2);
   if(!fxOn())return;const c=typeof at==='string'?habPt(at):at,u=Math.min(FX.w,FX.h)/100;
   for(let k=0;k<n;k++){const a=-Math.PI/2+(Math.random()-.5)*(o.spread||2.8),sp=(o.speed||45)*u*(.4+Math.random()*.8);
     FX.parts.push({x:c.x,y:c.y,vx:Math.cos(a)*sp,vy:Math.sin(a)*sp,g:50*u,drag:.985,life:2,max:2,rot:Math.random()*6,vr:(Math.random()-.5)*14,s:(1.3+Math.random()*1.3)*u,col:cols[rnd(cols.length)]});}
 }
-function floatText(at,txt,col){if(!fxOn())return;const c=typeof at==='string'?habPt(at):at,u=Math.min(FX.w,FX.h)/100;FX.parts.push({x:c.x,y:c.y-3*u,vx:0,vy:-9*u,g:0,life:1.7,max:1.7,rot:0,vr:0,s:3.8*u,txt,col});}
+function floatText(at,txt,col){if(!fxOn())return;const c=typeof at==='string'?habPt(at):at,u=Math.min(FX.w,FX.h)/100;FX.parts.push({x:c.x,y:c.y-3*u,vx:0,vy:-9*u,g:0,life:1.3,max:1.3,rot:0,vr:0,s:3.8*u,txt,col});}
 function projectile(fromPid,toPid,e){return projectileP(habPt(fromPid),habPt(toPid),e);}
 function projectileP(a,b,e){
   if(!fxOn())return sleep(150);const u=Math.min(FX.w,FX.h)/100;
@@ -1395,7 +1403,7 @@ function renderHeader(){
   <button class="btn" data-act="sv-open">📱 Student view</button>
   <button class="btn${S.ui3d?' war':''}" data-act="3d" title="3D stage on/off">🎮 3D${S.ui3d?' on':''}</button>
   <button class="btn" data-act="setup">⚙️ Setup</button>
-  <button class="btn" data-act="fx" aria-label="Animations" title="Animations on/off">${FX.on?'✨':'✨ off'}</button>
+  <button class="btn" data-act="fx" aria-label="Animations" title="Animations: full → lite → off">${!FX.on?'✨ off':FX.lite?'✨ lite':'✨'}</button>
   <button class="btn" data-act="sound" aria-label="Sound">${H.sound?'🔊':'🔇'}</button>`;
 }
 function renderStage(){
@@ -1642,7 +1650,8 @@ function onHostClick(e){
     case 'no':markCorrect(pid,0);break;
     case 'approve-good':approveAllGood();break;
     case 'm-act':onAct(pid,b.dataset.k,b.dataset.t);$('#modal-root').innerHTML='';break;
-    case 'fx':FX.on=!FX.on;store('habitat-fx',FX.on);FX.parts=[];FX.amb=[];FX.projs.forEach(p=>p.res());FX.projs=[];document.body.classList.toggle('nofx',!fxOn());renderHeader();break;
+    case 'fx':{if(FX.on&&!FX.lite){FX.lite=true;store('habitat-fx','lite');}else if(FX.on&&FX.lite){FX.on=false;FX.lite=false;store('habitat-fx',false);}else{FX.on=true;FX.lite=false;store('habitat-fx',true);}
+      FX.parts=[];FX.amb=[];FX.projs.forEach(p=>p.res());FX.projs=[];document.body.classList.toggle('nofx',!fxOn());document.body.classList.toggle('lite',FX.lite);renderHeader();break;}
     case 'sound':H.sound=!H.sound;renderHeader();break;
     case 'sv-open':openStudentView(Object.values(S.players).find(p=>!p.pre)?.pid||'new');break;
     case 'sv-close':closeStudentView();break;
