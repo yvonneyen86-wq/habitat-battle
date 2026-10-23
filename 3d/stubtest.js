@@ -5,18 +5,18 @@ function mkv(x,y,z){const p=vec();p.set(x,y,z);return p;}
 function obj(){const o={position:vec(),rotation:vec(),scale:mkv(1,1,1),children:[],userData:{},material:null,geometry:null,castShadow:false,receiveShadow:false,isMesh:false,
   add(...c){c.forEach(x=>{if(!x)throw new Error('add undefined');o.children.push(x);});return o;},remove(c){o.children=o.children.filter(x=>x!==c);return o;},traverse(f){f(o);o.children.forEach(c=>c.traverse&&c.traverse(f));},lookAt(){},updateProjectionMatrix(){},updateMatrix(){},setMatrixAt(){},getY(i){return 0;}};
  return o;}
-function geo(){const g=obj();g.attributes={position:{array:new Float32Array(30),count:10,needsUpdate:false,getY(){return 0;}}};g.translate=()=>g;g.scale=(a,b,c)=>g;g.setAttribute=()=>g;return g;}
+function geo(){const g=obj();g.attributes={position:{array:new Float32Array(30),count:10,needsUpdate:false,getY(){return 0;}},uv:{array:new Float32Array(48),count:24,needsUpdate:false}};g.translate=()=>g;g.scale=(a,b,c)=>g;g.setAttribute=()=>g;return g;}
 const THREE=new Proxy({},{get(t,name){
  if(name==='Vector3')return function(x=0,y=0,z=0){return mkv(x,y,z);};
  if(name==='Vector2')return function(x,y){return{x,y};};
- if(name==='Color')return function(c){const o={r:1,g:1,b:1,set(){return o;},clone(){return o;},lerp(){return o;}};return o;};
+ if(name==='Color')return function(c){const o={r:1,g:1,b:1,set(){return o;},clone(){return o;},lerp(){return o;},convertSRGBToLinear(){return o;}};return o;};
  if(name==='Object3D'||name==='Group'||name==='Scene'||name==='Sprite'||name==='Points'||name==='PerspectiveCamera')return function(){const o=obj();o.matrix={};if(name==='Sprite'){o.material=arguments[0]||{};}return o;};
  if(name==='Mesh'||name==='InstancedMesh')return function(g,m){const o=obj();o.isMesh=true;o.geometry=g;o.material=m;o.instanceMatrix={};return o;};
  if(/Geometry$/.test(name))return function(){return geo();};
  if(/Material$/.test(name))return function(p){const o=Object.assign({color:{set(){}},emissive:{set(){}},opacity:1},p||{});return o;};
  if(/Light$/.test(name))return function(){const o=obj();o.color={set(){}};o.groundColor={set(){}};o.intensity=1;o.shadow={mapSize:{set(){}},camera:{updateProjectionMatrix(){}},bias:0,normalBias:0};return o;};
  if(name==='WebGLRenderer')return function(){return{domElement:{},setPixelRatio(){},setSize(){},render(){},shadowMap:{},outputEncoding:0,toneMapping:0,toneMappingExposure:1};};
- if(name==='CanvasTexture')return function(){return{needsUpdate:false,anisotropy:1,encoding:0};};
+ if(name==='CanvasTexture')return function(){return{needsUpdate:false,anisotropy:1,encoding:0,wrapS:0,wrapT:0,repeat:{set(){}}};};
  if(name==='Float32BufferAttribute')return function(){return{};};
  if(name==='Fog')return function(){return{};};
  if(name==='Clock')return function(){let t=0;return{getDelta(){t+=.016;return .016;},get elapsedTime(){return t;}};};
