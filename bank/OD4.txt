@@ -21,6 +21,54 @@ P | 🔭🌙⭐🚀 | A girl looks through a telescope. Tell her story.
 C | Is Earth a big place or a tiny speck in the universe? | A big place | A tiny speck
 Z | Name three things that circle the sun.
 S | Explain why Charles wrote the poem "Bella's Home" for his daughter.
+# words
+moon | moon | m/oon | 🌙
+asteroid | as·ter·oid | as/ter/oid | 🪨
+comet | com·et | com/et | ☄️
+meteorite | me·te·or·ite | me/te/or/ite | 🌠
+star | star | st/ar | ⭐
+galaxy | gal·ax·y | gal/ax/y | 🌌
+universe | u·ni·verse | u/ni/verse | ✨
+spacecraft | space·craft | space/craft | 🚀
+telescope | tel·e·scope | tel/e/scope | 🔭
+observatory | ob·ser·va·to·ry | ob/ser/va/to/ry | 🏛️
+vast | vast | v/ast | 🌍
+speck | speck | sp/eck | 🔸
+disk | disk | d/isk | 💿
+sleigh | sleigh | sl/eigh | 🛷
+# reading
+> Bella's Home
+> Charles Kunayak was a high school science teacher who lived with his family in a quiet neighborhood in Nome, Alaska. In his free time, he studied the secrets of the universe. Charles had a powerful telescope, and he often visited observatories, so he learned more and more about the universe. It was an amazing universe!
+> Yet how could Charles help his daughter Bella understand that our sun was just one of billions of stars? How could she realize that the small meteorite on display in his classroom traveled to Earth from beyond Mars? How could he explain that we live in a universe so vast, it would take a spacecraft 100,000 years to cross our Milky Way galaxy while traveling at the speed of light!
+> Charles decided that the best way to show Bella was not through numbers and charts, but through a poem. He sat down and wrote what he knew about the universe. He called it "Bella's Home."
+> Bella lived in a white wooden house on a street in the city of Nome. Bella sat in her bedroom and thought to herself, Where in the world is my home?
+> What I need, she thought, is a spacecraft to give me a better view. So in her mind, she climbed inside and up in the sky she flew.
+> Her white wooden house was tiny indeed, and Nome was as small as a pie. As Bella flew up, she saw that Alaska looked like a bear from the sky.
+> Higher she flew, and Alaska, too, became part of something so grand. She saw islands, countries, and continents with blue oceans around the land.
+> Bella now saw her beautiful planet, a blue ball floating in space, and a shining moon that circled the Earth with the light of the sun on its face.
+> She noticed the Earth was not alone; with seven more planets it dwelled. In a great solar system, they circled the sun with asteroids and comets as well.
+> Bella's spacecraft flew higher and higher. Now the sun was a speck of bright light in the Milky Way galaxy shaped like a disk. Bella thought, what a wondrous sight!
+> Then billions of galaxies appeared everywhere, each one filled with billions of stars! What Bella observed was the vast universe. Her spacecraft had taken her far.
+> Suddenly Bella was back in her room in her white wooden house in Nome. I will visit those places again, Bella thought, for wherever I go is my home!
+RC | Where did Charles and his family live? | Nome, Alaska | Mars | the moon
+RC | What looked like a bear from the sky? | Alaska | the moon | Nome
+RC | What was shaped like a disk? | the Milky Way galaxy | the Earth | the sun
+RT | What did Charles write to help Bella understand the universe? | He wrote a poem called "Bella's Home."
+RT | How many more planets circle the sun with the Earth? | Seven more planets circle the sun with the Earth.
+RT | What did Bella see at the end of her journey? | She saw billions of galaxies filled with billions of stars.
+RS | Why did Charles write a poem instead of using numbers and charts?
+RS | How did Bella's house and Nome look from the sky? Tell us one thing.
+# grammar
+G | I will visit those places again.
+G | Scientists will send a person to Mars someday.
+G | She will become an astronaut when she grows up.
+G | I think scientists will find new solar systems in our galaxy.
+G | I will miss my bed too much.
+G | Do you want to sleep under the stars tonight?
+G | People will travel through the universe one day.
+# speak-write
+SP | A: Look at the two pictures. What do you see? | B: In the first picture, I see the Milky Way. | A: What about the second picture? | B: The second picture doesn't have the Milky Way, but it has {the moon}. | the moon / a comet / a telescope / a spacecraft / many stars / an observatory
+SW | The universe is {a beautiful place}. It has {more stars than we can count}. Look in the sky and you will see {the Milky Way}. | Write three complete sentences about the universe.
 ## U2 | Traveling Together Around the Sun | Where are we in the universe?
 # learn
 What does "orbit" mean? | a planet's path around the sun
@@ -43,6 +91,50 @@ PT | 🪐🌍☀️🛰️ | Type two sentences about our solar system.
 C | Which planet is more interesting to explore, Mars or Saturn? | Mars | Saturn
 Z | Name three bodies that travel around the sun besides planets.
 F | Jupiter is the bigger planet in the solar system. | Jupiter is the biggest planet in the solar system.
+# words
+astronomer | as·tron·o·mer | as/tron/o/mer | 🔭
+core | core | c/ore | 🌋
+gravity | grav·i·ty | grav/i/ty | 🍎
+orbit | or·bit | or/bit | 🪐
+matter | mat·ter | mat/ter | 🧱
+distance | dis·tance | dis/tance | 📏
+diameter | di·am·e·ter | di/am/e/ter | ⭕
+surface | sur·face | sur/face | 🌍
+crater | cra·ter | cra/ter | 🌑
+unique | u·nique | u/nique | 🌟
+explore | ex·plore | ex/plore | 🧭
+inner | in·ner | in/ner | 🔘
+outer | out·er | out/er | 🔵
+distant | dis·tant | dis/tant | 🛸
+# reading
+> Traveling Together Around the Sun
+> The sun is a star, and it is very important for our planet Earth. It gives us light and heat. However, Earth is not alone. It shares the sun with seven other planets. Together, these planets revolve around the sun in a solar system. Other bodies travel in this solar system, such as moons, asteroids, and comets. They all move around the sun because the sun's gravity is very strong.
+> Each planet's path around the sun is called an orbit. The planets that are closer to the sun have smaller orbits, so they take less time to go around it. Mercury takes 88 days to complete one orbit. Earth completes one orbit in 365 days, or one year. Neptune's orbit takes 60,200 days, or almost 165 years! Each planet in our solar system is unique. For example, Mercury is the smallest planet. It has lots of craters, just like our moon. Jupiter is the biggest planet. Its diameter is eleven times bigger than Earth's. Saturn has giant rings of matter around it. Neptune is the farthest planet from the sun.
+> Mars is a neighboring planet, and scientists are learning a lot about it. They send many space probes to Mars. A space probe called Curiosity landed on Mars on August 6, 2012. Curiosity is as big as a car, and it moves over the surface of Mars. It recently found rocks that had strange shapes. Running water made these shapes. This is an important discovery. Space probes like Curiosity continue to explore the planets, moons, and other bodies in our solar system. If technology continues to grow, we will travel to these places ourselves.
+> Iron and rock make up most of the four smaller inner planets of our solar system. Gas and water make up most of the four larger outer planets. This means that you can stand on the surface of Earth, but you can't stand on Saturn. In fact, if you tried to stand on Saturn, you would sink down to the core of the planet.
+> Drawings of our solar system show the planets close to the sun. However, the distance between the planets and the sun is very far. For example, it would take 176 years to drive a car from Earth to the sun. It would take 5,300 years to drive from Neptune to the sun!
+> Astronomers think that there are many solar systems in our Milky Way galaxy. However, our solar system is special to us. It is our home.
+> The Asteroid Belt: An asteroid belt runs between the inner and outer planets. Scientists have discovered over 7,000 asteroids there, and there may be millions more. Asteroids travel around the sun, just like planets.
+> The Sister Planets: Did you know that Earth and Venus are called "sister planets"? This is because they are almost the same size, and Venus is the closest planet to Earth. However, Venus is much hotter than Earth, and it is always covered in thick clouds.
+RC | How many other planets share the sun with Earth? | seven | eight | eleven
+RC | Which planet is the biggest? | Jupiter | Mercury | Neptune
+RC | What landed on Mars on August 6, 2012? | a space probe | an astronaut | a comet
+RT | Why do all the bodies in the solar system move around the sun? | They move around the sun because the sun's gravity is very strong.
+RT | How long does Earth take to complete one orbit? | Earth completes one orbit in 365 days, or one year.
+RT | What makes up most of the four inner planets? | Iron and rock make up most of the inner planets.
+RS | Why can't you stand on the surface of Saturn?
+RS | How are Earth and Venus alike and different? Tell us one thing.
+# grammar
+G | If I become an astronaut, I will go to Mars.
+G | If technology continues to grow, we will travel to these places ourselves.
+G | Wendy will search the sky if she gets a telescope.
+G | If we study hard, the teacher will show us a video.
+G | If I study hard, I will get good grades.
+G | I will explore the planet's surface if I go into space.
+G | If you look through a telescope, you will see the moon's craters.
+# speak-write
+SP | A: How many {planets} are in our solar system? | B: I'm not sure, but I think there are a lot. | A: How much water is on Jupiter? | B: I don't know. Let's look it up! | planets / moons / stars / asteroids / comets / space probes
+SW | Is {Mars} a moon or a planet? It's {a planet}. Is {Jupiter} bigger or smaller than Earth? It's {bigger}. | Write two choice questions about the solar system and answer them.
 ## U3 | Hidden Army: Clay Soldiers of Ancient China | How do we know what happened long ago?
 # learn
 What does "archaeologist" mean? | a scientist who digs up and studies things from the past
@@ -65,6 +157,54 @@ P | 🏺⚔️🏛️🔍 | An archaeologist finds something amazing. Tell the s
 C | Which is more exciting to find, an ancient tomb or a dinosaur bone? | An ancient tomb | A dinosaur bone
 Z | Name three things a soldier wears or carries.
 S | Explain why the generals had the most elegant uniforms.
+# words
+army | ar·my | ar/my | 🪖
+soldier | sol·dier | sol/dier | 💂
+uniform | u·ni·form | u/ni/form | 👔
+emperor | em·per·or | em/per/or | 👑
+armor | ar·mor | ar/mor | 🛡️
+treasure | trea·sure | trea/sure | 💰
+archaeologist | ar·chae·ol·o·gist | ar/chae/ol/o/gist | ⛏️
+tomb | tomb | t/omb | 🪦
+jade | jade | j/ade | 💚
+clay | clay | cl/ay | 🏺
+battle | bat·tle | bat/tle | ⚔️
+general | gen·er·al | gen/er/al | 🎖️
+coffin | cof·fin | cof/fin | ⚰️
+tourist | tour·ist | tour/ist | 🧳
+# reading
+> Hidden Army: Clay Soldiers of Ancient China
+> It is 210 BC and the moment before battle. The Chinese emperor's army is ready to charge. The soldiers, thousands of them, are lined up, row after row, as far as the eye can see. However, the army will never attack.
+> The soldiers are not real. They are the size of real soldiers. But they are made of terracotta, a strong kind of clay. They are more than 2,000 years old.
+> Amazingly, no two soldiers are alike. Their faces are different. Some are old; some are young. Some look tired; some look like they can't wait for the battle to start.
+> Their uniforms are different. The uniforms are exact copies of what real soldiers wore. The archers and foot soldiers were the lowest-ranking soldiers, so they have the plainest uniforms.
+> The generals, of course, wore the most elegant uniforms. Some of their caps had feathers. Sometimes their shoes turned up at the toes. Their armor had small iron rings that look like fish scales.
+> Every single soldier in the emperor's army was painted with bright colors. So were the terracotta horses. Now most of the soldiers have only tiny traces of paint left. Scientists are trying to create a special varnish to brush over painted figures to hold the paint in place.
+> Today, craftsmen near the pits where the soldiers were found make copies of the soldiers. This helps archaeologists learn more about how people made the original army. Modern craftsmen have much better kilns than those in ancient times. Kilns are ovens that bake clay until it hardens. Yet no copies ever come out as hard or shiny as the originals. Why? Nobody knows. It is a mystery.
+> An even bigger mystery is what lies inside the emperor's tomb. Nobody knows the answer because the tomb has never been opened. The Chinese government plans to keep it closed for now. Work will not start until archaeologists are sure the tomb can be opened without damaging any of the treasures inside.
+> As for the emperor's body, according to historical records, it rests in a heavy, bronze coffin. In ancient times, the custom was to dress the dead body of someone important in a suit the Chinese made from hundreds of pieces of thin jade. At that time, jade was more precious than gold.
+> The emperor died when he was 49 years old. Three years after his death, peasants rose up against the empire. One of their leaders started a new royal family.
+> Yet now, millions of people come to the emperor's burial place. They visit the covered pits to see the clay soldiers. The emperor lives on in the memory of all who see his amazing hidden army.
+RC | What are the soldiers made of? | terracotta clay | iron | jade
+RC | Who wore the most elegant uniforms? | the generals | the archers | the foot soldiers
+RC | What was more precious than gold at that time? | jade | bronze | paint
+RT | How old are the clay soldiers? | They are more than 2,000 years old.
+RT | Why does nobody know what is inside the emperor's tomb? | Nobody knows because the tomb has never been opened.
+RT | How old was the emperor when he died? | The emperor died when he was 49 years old.
+RS | How are the clay soldiers different from each other? Tell us one thing.
+RS | Why do modern craftsmen make copies of the soldiers?
+# grammar
+G | The Chinese government plans to keep it closed for now.
+G | All the students promised to study hard for the history test.
+G | The archaeologists tried to find more terracotta soldiers.
+G | The emperor decided to build the clay army.
+G | I forgot to pack my lunch today.
+G | I promise to share my treasures with you.
+G | Do you want to visit the clay soldiers?
+G | I love to study the past.
+# speak-write
+SP | A: If you had a time machine, where would you go? | B: I'd like to go back to {ancient China}. | A: Why would you choose that place? | B: I'd like to see how people lived there. What about you? | ancient China / ancient Greece / ancient Egypt / ancient Rome / the dinosaur age / my grandparents' village
+SW | Last year, {a farmer} found {an old coin} in {his garden}. It was over {600} years old. He took it to a museum. | Write three sentences in the past tense about someone who found something old.
 ## U4 | Stumbling upon the Past | How do we know what happened long ago?
 # learn
 What does "paleontologist" mean? | a scientist who studies dinosaurs and fossils
@@ -87,6 +227,59 @@ P | 🦕🦴⛏️🪁 | A boy is flying a kite and trips on something. What hap
 C | Is it better to pull a bone out of the ground or leave it for scientists? | Pull it out | Leave it for scientists
 Z | Name three things a paleontologist might find in the ground.
 PT | 🔬🗿📜 | Type one sentence about how we learn about the past.
+# words
+dinosaur | di·no·saur | di/no/saur | 🦖
+skull | skull | sk/ull | 💀
+ravine | ra·vine | ra/vine | 🏞️
+examine | ex·am·ine | ex/am/ine | 🔍
+discover | dis·cov·er | dis/cov/er | 💡
+excavate | ex·ca·vate | ex/ca/vate | ⛏️
+layers | lay·ers | lay/ers | 🧅
+paleontologist | pa·le·on·tol·o·gist | pa/le/on/tol/o/gist | 🦴
+ash | ash | a/sh | 🌋
+pastime | pas·time | pas/time | 🪁
+determine | de·ter·mine | de/ter/mine | 🧐
+tripped | tripped | tr/ipped | 🤕
+piece | piece | p/iece | 🧩
+# reading
+> Stumbling upon the Past
+> Javier was a nine-year-old boy who lived with his parents in the hillside town of Ademuz in the province of Valencia, in Spain. Javier was a curious and energetic boy. His favorite pastime was to explore the hills and open fields around his town. The neighboring village of Riodeva, just 26 kilometers away from Ademuz, was famous because of a great discovery there. In 2003, paleontologists found the bones of the largest dinosaur in Europe in a wheat field near the little village. When it was alive, this animal was over 38 meters long and had the weight of seven elephants.
+> Javier liked dinosaurs more than anything else in the world. He also believed that there was an amazing dinosaur bone buried somewhere near his own town of Ademuz. His dream was to be the first person to find it.
+> One summer morning, Javier was exploring in a field near a ravine just outside of the town. He looked up to see his two friends, Fernando and Pepe, running toward him with a colorful kite.
+> "Let's fly it, Javier!" they shouted.
+> Javier enjoyed playing with his friends. He quickly forgot about his exploring and grabbed the string of the kite. As he ran, the kite lifted into the sky. The boys cheered. Suddenly the kite spun around and dove into the ravine.
+> "I'll get it," shouted Javier. He ran down into the ravine. As he reached for the kite, his foot caught on something. He fell to the rocky ground with a crash. His two friends ran up as he rubbed his head. "Are you okay?" Pepe asked.
+> "I think so," said Javier. He looked down at a rough, gray object sticking out of the ground. "I tripped on that," he said.
+> "It looks like a rock," said Fernando.
+> Javier looked carefully at the object. "I don't think it's a rock," he said excitedly. "I think it's something else!" "Let's pull it out," said Pepe.
+> "No," said Javier. "It's better to leave it right here."
+> Javier and the boys ran home to tell Javier's parents. Javier's father spoke to the mayor of the town, who contacted the Paleontology Foundation. The next day, a paleontologist from the foundation came to the town. He followed Javier to the ravine and examined the boy's discovery.
+> "It could be a dinosaur bone," he said. "If it is, we'll need to determine how old it is."
+> "How do you do that?" asked Javier.
+> "This bone was buried in sedimentary rock, which lies in layers under the ground. We'll look for volcanic ash below and above this rock layer. Through a special process, we can find out the ages of those layers of ash. Then we'll know that the dinosaur died sometime between those two ages."
+> Soon, many paleontologists began excavating the area around the bone. They found more bones, as well as a skull. It was a unique dinosaur they didn't know about. Television reporters came to the town and spoke to Javier about the bone he discovered.
+> "This dinosaur will need a name," said one reporter. "What do you think it should be called?"
+> "That's easy," said the man from the Paleontology Foundation. "We'll call it the Javiersaurus!"
+RC | Where did Javier live? | Ademuz | Riodeva | Madrid
+RC | What did Javier trip on in the ravine? | a dinosaur bone | a rock | a kite
+RC | What did the paleontologists find next to the bone? | a skull | a gold ring | a dinosaur egg
+RT | How was the dinosaur in Riodeva special? | It was the largest dinosaur in Europe.
+RT | Why was Javier in the field when Fernando and Pepe ran up to him? | He was exploring in a field near a ravine.
+RT | What do paleontologists look for above and below sedimentary rock? | They look for volcanic ash above and below the rock layer.
+RS | What was Javier's dream? Did it come true?
+RS | Why did they call the dinosaur the Javiersaurus?
+# grammar
+G | Javier enjoyed playing with his friends.
+G | I don't like getting my hands dirty.
+G | Now they enjoy digging in the garden.
+G | The museum staff finished cleaning the dinosaur bones.
+G | Thomas liked examining fossils as a pastime.
+G | The paleontologist doesn't like working in the rain.
+G | Do you enjoy exploring the hills?
+G | When it began raining, the team went inside.
+# speak-write
+SP | A: What did {dinosaurs} sound like? | B: They probably sounded very loud. | A: What do you think they looked like? | B: I think they looked big and scary. | dinosaurs / elephants / lions / volcanoes / airplanes / big trucks
+SW | {The skull} is very old. {Many bones} are buried under the ground. {A little water} is in the ravine. | Write three sentences about a discovery, using count and noncount nouns with the correct verb.
 ## U5 | The Breakfast Quest | Where does our food come from?
 # learn
 What does "ingredients" mean? | the foods you mix together to make a dish
@@ -109,6 +302,59 @@ P | 🥚🧈🌾🥐 | Tell the story of the breakfast quest with these ingredie
 C | Which ingredient is more important for cinnamon buns, butter or cinnamon? | Butter | Cinnamon
 Z | Name three ingredients in Granny's Famous Cinnamon Buns.
 S | Explain why the farmers travel to so many countries in the story.
+# words
+wheat | wheat | wh/eat | 🌾
+cinnamon | cin·na·mon | cin/na/mon | 🟤
+butter | but·ter | but/ter | 🧈
+vanilla | va·nil·la | va/nil/la | 🍦
+ingredients | in·gre·di·ents | in/gre/di/ents | 🥣
+bark | bark | b/ark | 🌳
+plantation | plan·ta·tion | plan/ta/tion | 🌱
+steamship | steam·ship | steam/ship | 🚢
+spoil | spoil | sp/oil | 🤢
+leopard | leop·ard | leop/ard | 🐆
+gather | gath·er | gath/er | 🧺
+peel | peel | p/eel | 🍌
+introduce | in·tro·duce | in/tro/duce | 🤝
+# reading
+> The Breakfast Quest
+> I'm making a special breakfast today: Granny's Famous Cinnamon Buns. "To make the best buns, you need the best ingredients," I tell my sister Sam. So we hop on my bike and ride across town to Farmer Ray's.
+> "You've come to the right place," says the farmer, pulling on his bushy beard. "My chickens lay wonderful eggs."
+> At the chicken coop, I gather two smooth, brown eggs and a nervous chicken.
+> "Cinnamon buns, you say?" Farmer Ray smiles slyly. "If it's butter you're after, you'll need to pack your bags. The best butter I know comes from Denmark."
+> We all hop on his tractor, catch a plane, and watch as we zoom over the Atlantic Ocean.
+> In Denmark, we head to rolling green fields where we find an enormous, sleepy cow. I introduce myself, my sister Sam, Farmer Ray, and the chicken to the cow's owner, explaining that my grandmother's cinnamon buns are not to be missed.
+> "Well, you've come to the right place," says Farmer Lena, spilling some milk from a pail. "My butter is the creamiest in the world. Cinnamon buns, you say?" She pauses. "If it's flour you need, the heartiest wheat I know comes from France."
+> We all ride the cow to the train to France, where we find an amber field of warm, dry grain and meet a French farmer who listens very closely to our plan.
+> "Well, you've come to the right place," says Farmer Francois, twirling his mustache. "My wheat makes the very best flour in the entire world!" I grab two armfuls. "Cinnamon buns, you say? If it's vanilla you need, the finest vanilla in all the world comes from Madagascar. Come with me!"
+> We all hop in his hot air balloon and set off over Africa, looking down on a magnificent leopard roaming the plains.
+> In Madagascar, we march through the lush hills. There we meet Sabine, a vanilla grower, and I tell her the plan.
+> "Well, if you're making famous cinnamon buns, you've come to the right place," says Farmer Sabine, her eyes sparkling. "My vines produce the most fragrant vanilla beans in all the world!"
+> I scoop up a handful of the heavy, brown vanilla beans. "Madagascar grows sugar cane and cinnamon, too," says Farmer Sabine. "Let me take you to my friend Patrick's plantation." Patrick listens to the plan.
+> "True, I have the sweetest sugar cane and the very best cinnamon in the world," he says. "Sugar cane I can give you, but..." He looks sad. "I'm afraid I can't help you with cinnamon. I'm all out! We harvested it yesterday." "No cinnamon for the cinnamon buns!" we cry. "Now what?"
+> Something high atop a tree catches my eye: a small area of bark. I climb the tree and peel some off. "This will do," I say, grinning at the relieved crowd. We coax the cow and the chicken onto a steamship and head home before the ingredients spoil, mixing up a batch of Granny's Famous Cinnamon Buns along the way.
+> "Well?" I ask as everyone chews and smiles.
+> "You were right!" say the farmers. "These are truly the very best cinnamon buns in all the world!" Now, what should I make for lunch?
+RC | What is the boy making for breakfast? | cinnamon buns | vanilla pudding | apple pie
+RC | Where does the best butter come from? | Denmark | France | Madagascar
+RC | What does the boy peel off the tree in Madagascar? | bark | vanilla beans | sugar cane
+RT | Why does the boy go to so many different places? | He wants the best ingredients for the cinnamon buns.
+RT | How did everyone get from Denmark to France? | They rode the cow to the train to France.
+RT | Why did the boy climb a tree in Madagascar? | He climbed the tree to peel off some cinnamon bark.
+RS | Why can't Patrick give the boy any cinnamon?
+RS | How do they all get home? Why do they hurry?
+# grammar
+G | I'm making a special breakfast today.
+G | We're making vanilla pudding tomorrow.
+G | We're playing soccer after school today.
+G | My parents are having dinner at a French restaurant tomorrow.
+G | I'm meeting my friends at the station tomorrow.
+G | Carol and I are baking cinnamon cookies next week.
+G | I'm cleaning my bedroom on Saturday morning.
+G | Are you visiting your grandmother this weekend?
+# speak-write
+SP | A: Do you want some fruit? | B: Sure. I love fruit. Thank you. | A: I have oranges or bananas. Which one do you like? | B: I like oranges, but I prefer {bananas} because they are sweeter. | bananas / apples / grapes / strawberries / pears / mangoes
+SW | My chickens lay {wonderful} eggs. The pumpkins in my garden are {enormous}. I put {creamy} butter on my toast. | Write three sentences about food, using interesting adjectives instead of good, big, or nice.
 ## U6 | From the World to Your Table | Where does our food come from?
 # learn
 What does "export" mean? | to send food or goods to another country to sell
@@ -131,6 +377,46 @@ P | 🍎🚢✈️🛒 | Tell the story of an apple traveling from a farm to a s
 C | Which is better, a small family farm or a large corporate farm? | A small family farm | A large corporate farm
 Z | Name three foods and the countries they come from.
 PT | 🥝🇯🇵🇳🇿 | Type a sentence about food miles.
+# words
+convenient | con·ven·ient | con/ven/ient | 🏪
+agriculture | ag·ri·cul·ture | ag/ri/cul/ture | 🚜
+export | ex·port | ex/port | 🚢
+local | lo·cal | lo/cal | 📍
+process | proc·ess | proc/ess | ⚙️
+package | pack·age | pack/age | 📦
+decrease | de·crease | de/crease | 📉
+century | cen·tu·ry | cen/tu/ry | 💯
+chemical | chem·i·cal | chem/i/cal | 🧪
+organic | or·gan·ic | or/gan/ic | 🥬
+environment | en·vi·ron·ment | en/vi/ron/ment | 🌍
+geography | ge·og·ra·phy | ge/og/ra/phy | 🗺️
+# reading
+> From the World to Your Table
+> The next time you eat dinner, look closely at the food on your plate. If you are eating in the summertime, it's possible that some of the food comes from your own garden. Some might come from the local farmer's market. However, most of your food probably comes from far away.
+> For centuries, people grew their own food and ate it themselves, keeping some for the long winter. In some countries, people continue to do this. However, agriculture has changed a great deal in the last 100 years. Most people no longer grow their own food. They buy it in supermarkets and grocery stores. Some of the food they buy comes from small family farms, but much of it comes from large corporate farms. Companies process and package most of this food before it gets to the supermarket. For example, they make orange juice from oranges. They also make flour from wheat, and then they make bread from the flour!
+> Would you like to know where your food comes from? You can check yourself. Most food labels give this information. You may be surprised at what you discover. Many countries export food to places around the world. Thanks to modern agriculture, people around the world can enjoy apples from South Africa, pineapples from Costa Rica, and tomatoes from Mexico. They can eat pasta from Italy, kimchi from Korea, and cheese from Holland. They can enjoy this food without traveling to these places. Instead, the food travels to them.
+> "Food miles" is the distance that food travels to get to us. For example, a person who lives in Japan may buy kiwi fruit that comes from New Zealand. This kiwi fruit has to travel 5,800 miles (9,300 kilometers) to get to this person. Airplanes, ships, trains, and trucks may bring this food. This transportation uses a lot of fuel that can cause pollution. When food travels, some of it needs to stay cool, which takes more energy and fuel. Also, companies put chemicals on food to help it last longer while it travels. These chemicals may not be good for our health.
+> In our modern world, most people can't grow all the food they need. However, there are four things you can do to help decrease energy and keep food healthy and delicious. First, buy food that farmers grow in your area. Second, buy organic food, which doesn't have chemicals on it. Third, buy whole food with less processing and packaging. Fourth, try to grow more of your own food!
+> It's convenient to buy food from all around the world. However, there may be farmers very close to you who grow the same food. By choosing local food, you can save energy, improve your health, and help local businesses. As people say, "Eat locally, think globally!"
+RC | Where does most of our food probably come from? | far away | our own garden | the farmer's market
+RC | What are "food miles"? | the distance food travels | the price of food | the weight of food
+RC | Which food doesn't have chemicals on it? | organic food | processed food | packaged food
+RT | What is a quick way to find out where food in a supermarket comes from? | You can read the food labels.
+RT | Why don't people have to travel to other countries to get the food they want? | The food travels to them instead.
+RT | Why do companies put chemicals on food? | They put chemicals on food to help it last longer while it travels.
+RS | Why can food miles be bad for the Earth? Tell us one reason.
+RS | Why is buying food from local farmers a good idea?
+# grammar
+G | Would you like to try my cheesecake?
+G | Would you like strawberries on top?
+G | Would you like me to call Harry?
+G | Would you like to know where your food comes from?
+G | Would you like a delicious apple from South Africa?
+G | Would you like to bake a cake with me?
+G | Would you like a piece of apple pie?
+# speak-write
+SP | A: People often grow {tomatoes} where I live. | B: What do people make with them? | A: Many people make soup or salad. | B: I like both, but I really like soup. | tomatoes / rice / corn / strawberries / potatoes / apples
+SW | The {garden} is {behind the house}. The {asparagus} is {near the carrots}. | Write two sentences that tell where food or plants are, using prepositional phrases of location.
 ## U7 | Art Through New Eyes | Why do we make art?
 # learn
 What does "sculptor" mean? | an artist who makes three-dimensional art from wood, stone, or other materials
@@ -153,6 +439,51 @@ P | 🎨🖌️🧵🌳 | An artist makes something new. Tell the story.
 C | Is street art real art? | Yes, it is real art | No, it is not real art
 Z | Name three things an artist uses to make art.
 S | Explain why Sung Hee Cho glues thousands of paper pieces onto her canvas.
+# words
+sketch | sketch | sk/etch | ✏️
+pastels | pas·tels | pas/tels | 🖍️
+canvas | can·vas | can/vas | 🖼️
+paintbrushes | paint·brush·es | paint/brush/es | 🖌️
+shapes | shapes | sh/apes | 🔷
+string | string | str/ing | 🧵
+prodigy | prod·i·gy | prod/i/gy | 🌟
+carpenter | car·pen·ter | car/pen/ter | 🔨
+sculptor | sculp·tor | sculp/tor | 🗿
+complex | com·plex | com/plex | 🧩
+washable | wash·a·ble | wash/a/ble | 🧼
+fascination | fas·ci·na·tion | fas/ci/na/tion | ✨
+disorganized | dis·or·gan·ized | dis/or/gan/ized | 🗂️
+dishonest | dis·hon·est | dis/hon/est | 🤥
+# reading
+> Art Through New Eyes
+> Can anyone make art? Can artists make art from anything? Let's look at art through the eyes of some very inspiring modern artists to answer these questions.
+> The Painting Prodigy: When Kieron Williamson was five years old, he went with his family on a trip to Cornwall, England. He drew sketches of the boats he saw there. This was the start of Kieron's love of drawing. The more he drew, the more complex his drawings became. Kieron wanted to learn more about art, so he spent time with local artists in his home county of Norfolk, England. They helped him build his skills in drawing and painting. He started to create paintings using oil paints, pastels, and watercolors. By the age of nine, Kieron was considered to be a child prodigy.
+> Today, seventeen-year-old Kieron continues to create beautiful paintings. People around the world admire his artwork. Kieron says, "The things that inspire me include nature, big skies, and different cultures."
+> Art Under Your Feet: The next time you walk outside, you may discover that you are part of Edgar Mueller's art. Edgar is an expert street painter from Germany. "I always have the wish to create something new," he says. You can find his paintings all around the world at festivals and on public walkways. His three-dimensional paintings include waterfalls, canyons, and more. Mueller uses washable paint or chalk, a variety of paintbrushes, and string. His work helps people to look at a place differently. When people step onto one of Mueller's paintings, like The Crevasse, they become part of it. "I absolutely fell in love with painting on the street," Mueller says.
+> Stick Sculptures: Patrick Dougherty is a unique sculptor. He combines his love of nature with his skills as a carpenter. His goal is "to build a great sculpture that excites people's imaginations." You can see his large-scale sculptures in many places around the world.
+> Dougherty's sculptures are made of young trees, or saplings. The saplings are flexible, so he can bend them into rounded shapes. He keeps them together by weaving the saplings around each other. Building the sculpture is a big job, so the local community helps Dougherty with his project. Many volunteers help to collect the saplings, mark out the space, and build the sculpture. The sculptures are temporary. They will decompose, or break down, over time. "Sticks are something we all have in common," Dougherty says.
+> Painting the Universe: When you look at the artwork of Korean artist Sung Hee Cho up close, you see small pieces of brightly colored paper on a large canvas. It may seem disorderly with colors scattered around. However, as you step back, you can imagine the stars, galaxies, and the beauty of the universe. Cho combines hanji, traditional Korean paper, with paint. First, she paints the canvas. Then, she cuts out pieces of hanji into small shapes, such as flower petals. Next, she dyes and paints the small pieces of paper in a different color. Then she glues thousands of them onto the canvas in layers to capture the glimmer of light. She repeats this process over and over again. She wants to create artwork that is as magical as stars. Cho wants to share her fascination with the universe through her artwork.
+> Inspiring artists come from every part of the world. Each one inspires us in a different way. By creating and sharing their art, they help us appreciate and understand the world around us.
+RC | Who helped Kieron Williamson build his skills in drawing and painting? | local artists | his mother | a street painter
+RC | What are Patrick Dougherty's sculptures made of? | young trees | old lamps | colored paper
+RC | What is the Korean name for the paper Sung Hee Cho uses? | hanji | canvas | pastels
+RT | How do people become a part of an Edgar Mueller painting? | They step onto one of his paintings.
+RT | Who helps Patrick Dougherty build his sculptures? | The local community and many volunteers help him.
+RT | What does Sung Hee Cho glue onto the canvas? | She glues thousands of small pieces of paper onto the canvas.
+RS | Why are Patrick Dougherty's sculptures temporary?
+RS | How does Sung Hee Cho make her artwork? Tell us two steps.
+# grammar
+G | Anyone can be an artist.
+G | Can anyone make art from anything?
+G | I want to paint something in this room.
+G | Everyone worked on the sculpture.
+G | Did you meet anyone at the art gallery?
+G | The art teacher helps everyone with their drawings.
+G | There is something I like about this sculpture.
+G | I am thinking of someone with a green pencil case.
+# speak-write
+SP | A: What are the children doing? | B: They're {painting}. | A: Does it look hot or cold outside? | B: It looks warm and sunny. | painting / drawing / sketching / making art / playing / singing
+SW | We make art because {it's fun}. Yesterday I {drew a picture of my cat} and {colored it with pastels}. | Write two sentences about why you make art and what you did, joining two actions with and.
 ## U8 | Sketches in a Gallery | Why do we make art?
 # learn
 What does "exhibition" mean? | a show of art in a gallery or museum
@@ -175,6 +506,52 @@ P | 🖼️✏️⛰️😊 | A boy meets a famous artist in a gallery. Tell the
 C | Is a painting of a mountain better than a photo of a mountain? | A painting | A photo
 Z | Name three things you can see in an art gallery.
 F | I will carrying your bag for you. | I will carry your bag for you.
+# words
+exhibition | ex·hi·bi·tion | ex/hi/bi/tion | 🖼️
+frame | frame | fr/ame | 🔲
+landscape | land·scape | land/scape | 🏔️
+texture | tex·ture | tex/ture | 🧶
+shading | shad·ing | shad/ing | 🌗
+perspective | per·spec·tive | per/spec/tive | 🛣️
+contrast | con·trast | con/trast | 🐼
+space | space | sp/ace | 🌌
+stained | stained | st/ained | 🎨
+brilliant | bril·liant | bril/liant | ✨
+pale | pale | p/ale | 🌫️
+famous | fa·mous | fa/mous | ⭐
+speechless | speech·less | speech/less | 😶
+talented | tal·ent·ed | tal/ent/ed | 🏆
+# reading
+> Sketches in a Gallery
+> Each day after school when other boys play soccer, practice for the school play, or ride bikes, Theo goes to the art museum. Everyone he knows thinks this is strange, even his own family.
+> "Don't you want to play a sport or be in the play with all of your friends? I will sign you up for something," his mother offers.
+> Theo does not tell his mother that he has no friends at school. His friends are all here in the museum. They are on every wall, in brilliant colors and oil paints and pastels. The paintings are Theo's friends. Today, Theo rushes to get to the museum after school because he will be meeting some new friends. An exhibition is opening: The Mountain Landscapes of Zayan Khan.
+> Inside the brightly lit gallery, there are ten new paintings, each in a wooden frame. Each painting features a different mountain. Some of the mountains are covered in snow, while others are green or rocky. Theo sits on a bench and looks at one painting for a very long time. He likes the contrast of the heavy black lines of the mountain and the pale blue sky. Theo takes out his notebook and his pencil and begins to make a sketch.
+> People come and go from the small gallery, but Theo sits for a long time, making sketch after sketch. After a while, there is only one other person left in the gallery. He is sitting on a bench on the other side of the little room. Theo decides to ignore the man. I don't want to talk to him, Theo thinks. The man stands and walks toward the exit, but he stops next to Theo. Theo's sketch is of a mountain from very far away. The mountain is small and surrounded by space.
+> "That's an interesting perspective," the man comments. Theo is shocked. He never shows his artwork to anyone because he worries that it isn't any good. "Shall I show you some more sketches?" he asks. The man smiles and nods. Theo hands the man his notebook and sits quietly as the man turns the pages.
+> "I like the way you create texture with shading," the man remarks. "I like to do that, too." Theo notices the man's hands and fingers are stained with paint. In his jacket pocket, there are several colored pencils and a paintbrush. He is holding an old, tattered sketchbook with his name written on the front.
+> "You are Zayan Khan!" Theo exclaims, astounded that he is talking to the famous artist. Zayan Khan looks so much younger than Theo imagined, and he is so kind and friendly. "That's right," Zayan Khan replies. "I'm Theo. One day, I want to be an artist like you," Theo tells him. Zayan Khan shakes his head. "No, don't say that," he says. Theo looks down. "Oh," he says. Zayan Khan points to Theo's notebook. "You are already an artist, Theo," he says.
+> Theo is speechless with happiness. He does not say anything else, and neither does Zayan Khan. They just sit quietly in the room, sketching, two artists surrounded by friends.
+RC | Where does Theo go each day after school? | the art museum | the soccer field | the school play
+RC | What does each new painting in the exhibition show? | a mountain | a river | a city
+RC | What is on the man's hands and fingers? | paint | chalk | ink
+RT | What would Theo's mother like him to do? | She would like him to play a sport or be in the play.
+RT | Why doesn't Theo usually show his sketches to anyone? | He worries that his sketches aren't any good.
+RT | What does Zayan Khan tell Theo at the end? | He tells Theo that he is already an artist.
+RS | How does Theo know that the man is Zayan Khan? Tell us one clue.
+RS | Why are Theo and Zayan Khan silent at the end of the story?
+# grammar
+G | Shall I show you some more sketches?
+G | I will sign you up for something.
+G | I'll bring you some ice cream.
+G | Shall I frame the painting for you?
+G | I'll carry that heavy bag for you.
+G | Shall I bring you a cold drink?
+G | You look cold, so I'll close the window.
+G | Shall I get your kite down from the tree?
+# speak-write
+SP | A: Do you have a wish? | B: Yes. I wish I could {paint like Claude Monet}. | A: Why do you want to do that? | B: Because his paintings are so beautiful. | paint like Claude Monet / go to Paris / be a famous painter / have more time to paint / draw mountains / visit an art museum
+SW | Yesterday I went to {an art gallery}. I saw {a painting of a mountain}. The {painting} was {brilliant}. | Write three sentences about a visit to a gallery or museum, using a, an, and the.
 ## U9 | Jakarta: A Big-City Snapshot | What is a city?
 # learn
 What does "port" mean? | a place on the coast where ships load and unload goods
@@ -197,6 +574,52 @@ P | 🏙️🚢🍛🛵 | Describe a busy day in a big city.
 C | Which is better, living in a big city or a quiet town? | A big city | A quiet town
 Z | Name three things you can buy at a market in Jakarta.
 PT | 🌆🚗🚗🚗 | Type one sentence about traffic in a congested city.
+# words
+canal | ca·nal | ca/nal | 🚤
+port | port | p/ort | ⚓
+architecture | ar·chi·tec·ture | ar/chi/tec/ture | 🏛️
+rickshaw | rick·shaw | rick/shaw | 🛺
+antiques | an·tiques | an/tiques | 🏺
+souvenirs | sou·ve·nirs | sou/ve/nirs | 🎁
+batik | ba·tik | ba/tik | 👘
+tuna | tu·na | tu/na | 🐟
+shrimp | shrimp | shr/imp | 🦐
+countless | count·less | count/less | 🔢
+congested | con·gest·ed | con/gest/ed | 🚗
+haggle | hag·gle | hag/gle | 💰
+cinema | cin·e·ma | cin/e/ma | 🎬
+castle | cas·tle | cas/tle | 🏰
+# reading
+> Jakarta: A Big-City Snapshot
+> Do you live in a city and have nothing to do? Just step outside! A city has fascinating things to see and interesting places to explore. No one could see everything in one day. This brief look at Jakarta, the capital city of Indonesia, is a good example of what a city has to offer.
+> Jakarta is a busy port city on the Java Sea. It is filled with more than 10 million people. That's more people than in New York City. Its area is also huge: 250 square miles (646 square kilometers).
+> This Southeast-Asian city stretches high into the sky. Countless skyscrapers give the city a futuristic feel. When you first arrive, it feels like you just stepped off a spaceship.
+> Jakarta is one of the most congested cities in the world. You might even say they invented the traffic jam. Jakarta is also highly polluted. With so many trains, cars, and motorcycles, it is no wonder.
+> A Visit to the Old City: Parts of the original Dutch city can still be found in the area called Kota. Kota is located on the north side of the city. It is a great place to wander around. It has old canals and classical architecture.
+> The port of Sunda Kelapa is near Kota. Thousands of boats dock here every year. They transport things like coffee, tuna, and exotic fruits. After watching the ships come and go, check out the Pasar Ikan fish market. It is a great place to inspect strange and exotic fish. It is also a great place to watch people as they shop for dinner and haggle over the price of shrimp.
+> Modern Culture: Do you want to learn more about the culture of the Indonesian people? Then check out the National Museum. Located in the heart of town, the National Museum is packed with art, historical items, and great displays of Indonesian culture. You should also head to the Jalan Surabaya antiques market. This is a great spot to pick up souvenirs. You'll find such things as handmade drums, batik-dyed clothing, and jewelry.
+> Getting Around: Indonesia is famous for its rickshaws. These were small, one-passenger carriages that were pulled by a bicycle. Now, they are banned in Jakarta. They were too slow and held up traffic. They have been replaced by the bajaj, which is a motorized rickshaw. A bajaj is a big seat on wheels pulled around by a moped, a motorized bicycle. Hire a bajaj to take you around the city.
+> Top 3 Things To Do in Jakarta: Buy chicken curry from a street vendor. People-watch in the fancy "Golden Triangle" shopping district. Take a trip to the top of the Monas, the National Monument of Indonesia.
+RC | Which city has more people, Jakarta or New York City? | Jakarta | New York City | Surabaya
+RC | What gives Jakarta a futuristic feel? | countless skyscrapers | old canals | small boats
+RC | What is a bajaj? | a motorized rickshaw | a fish market | an old canal
+RT | How is Kota different from other parts of Jakarta? | Kota has old canals and classical architecture.
+RT | What can you do at the Pasar Ikan fish market? | You can inspect exotic fish and watch people haggle over shrimp.
+RT | Why were rickshaws banned in Jakarta? | They were too slow and held up traffic.
+RS | Why is Jakarta so congested and polluted?
+RS | What can you buy at the Jalan Surabaya antiques market? Tell us two things.
+# grammar
+G | Nobody is ever bored in the city.
+G | Nothing can beat the city for me.
+G | No one could see everything in one day.
+G | Nobody can enter the city zoo after five.
+G | There was nothing to do at home.
+G | Nobody sat next to me on the bus.
+G | There is nothing in my pocket.
+G | Do you have nothing to do?
+# speak-write
+SP | A: Why did your city grow where it is today? | B: My city grew because it is next to {a river}. | A: How did that help? | B: It helped my city grow because it provided transportation. | a river / the sea / a lake / a port / a big road / a mountain
+SW | My city is near {the Pacific Ocean}. People use the water for {fishing}. Ships can travel from {our port} to {other countries}. | Write three sentences about a body of water near your city, with a capital letter for its name.
 ## U10 | Mayor for a Day | What is a city?
 # learn
 What does "mayor" mean? | the leader of a city
@@ -219,6 +642,61 @@ P | 🏛️🎀📣🍦 | A girl is mayor for one day. Tell the story.
 C | Should citizens volunteer to clean parks, or should the city pay workers? | Citizens should volunteer | The city should pay workers
 Z | Name three jobs people do in a city.
 F | Hilda will build a factory, will she? | Hilda will build a factory, won't she?
+# words
+citizens | cit·i·zens | cit/i/zens | 🏙️
+volunteers | vol·un·teers | vol/un/teers | 🙋
+mayor | may·or | may/or | 🎩
+assistant | as·sis·tant | as/sis/tant | 🧑‍💼
+president | pres·i·dent | pres/i/dent | 🏛️
+council | coun·cil | coun/cil | 🗳️
+equipment | e·quip·ment | e/quip/ment | 🛠️
+playground | play·ground | play/ground | 🛝
+garbage | gar·bage | gar/bage | 🗑️
+contest | con·test | con/test | 🏆
+ribbon | rib·bon | rib/bon | 🎀
+speech | speech | sp/eech | 🎤
+members | mem·bers | mem/bers | 👥
+# reading
+> Mayor for a Day
+> Marcy was nervous. She was the winner of the Mayor for a Day contest at her school. For one day, she would be the mayor of her city. Marcy's mother drove her to the Glenview City Hall.
+> "You'll probably walk around with the mayor," her mother said. "Watch what he does and take notes. You'll learn a lot!"
+> Outside City Hall, Marcy met Mayor Wilson. To her surprise, he was holding a beach ball. "Congratulations, Marcy!" he said. "Keep the city running smoothly. You'll work hard, won't you?"
+> Marcy nodded nervously. "I'll do my best, sir."
+> "Then I'm going to the beach. Mr. Clark will be your assistant today. Goodbye!"
+> It was a busy morning. Mr. Clark took Marcy to the new city library, which was about to open for the first time. Marcy cut a celebration ribbon and made a short speech. "Citizens of Glenview, read books every day," she declared. "Reading makes you smarter!"
+> As the crowd clapped, Mr. Clark tapped on his watch. "You have a meeting in ten minutes with the president of the Terrific Toy Company. We want them to build a factory here in Glenview. Many people could get jobs there."
+> "Let's go," said Marcy.
+> In the mayor's office, Marcy spent one hour talking to Hilda Hanson, the president of Terrific Toys. "I promise you that the people of Glenview will build interesting and creative toys," Marcy said.
+> "For such a young mayor, you impress me!" said Hilda. "We'll start building our factory here tomorrow."
+> As Hilda drove away, Mr. Clark ran up to Marcy. "The garbage collectors are unhappy!" he exclaimed. "There is too much garbage to pick up. They want more workers. What will we do?"
+> Marcy realized that she wasn't nervous anymore. She thought for a moment and then snapped her fingers. "We'll start a recycling program," she said. "That will reduce garbage. They won't need more workers." "Great idea!" said Mr. Clark.
+> After lunch, Mr. Clark ran into Marcy's office. "You have a city council meeting in five minutes!" he shouted.
+> At the meeting, the head of the city council looked worried. "The playground equipment at the city park needs fresh paint," she said. "The park needs new flowers. But we have no money for extra workers."
+> "Do we have money for ice cream?" Marcy asked. The city council members looked confused. "I will have a news conference today," Marcy explained. "Next Saturday will be our first Glenview Volunteer Day. People can volunteer at the park and enjoy free ice cream. The citizens of our city will paint and plant and get the job done!"
+> "Wonderful idea, Mayor Marcy!" the members cheered.
+> At 5:30, Mr. Clark thanked Marcy for her hard work. They walked to the front of City Hall, where Marcy's mother was waiting. Marcy got in the car and stretched her legs.
+> "Did you have fun, Marcy?" asked her mother. "I did," said Marcy. "Who knows?" said her mother. "Maybe you'll be a real mayor someday."
+> Marcy smiled. "Maybe I will," she said.
+RC | How did Marcy become mayor for a day? | she won a contest | her mother asked | the council voted
+RC | What was Mayor Wilson holding outside City Hall? | a beach ball | a toy factory | a ribbon
+RC | Who was Marcy's assistant for the day? | Mr. Clark | Mayor Wilson | Hilda Hanson
+RT | What did Marcy do at the new city library? | She cut a ribbon and made a short speech.
+RT | Why were the garbage collectors unhappy? | There was too much garbage to pick up.
+RT | What was Marcy's idea for the city park? | She planned a Volunteer Day with free ice cream.
+RS | Why do you think Mr. Clark was always running? Tell us one reason.
+RS | How did Marcy change during the day? Tell us one thing.
+# grammar
+G | You'll work hard, won't you?
+G | Marcy wasn't nervous, was she?
+G | Mayors are hard workers, aren't they?
+G | Mr. Clark isn't the mayor, is he?
+G | Hilda Hanson will build a factory, won't she?
+G | Ann is the youngest student, isn't she?
+G | You studied last night, didn't you?
+G | You're ready for the test, aren't you?
+# speak-write
+SP | A: What does a {mayor} have to do? | B: A mayor has to go to many meetings. | A: Does a mayor have to work hard? | B: Yes, I think a mayor has to work very hard. | mayor / teacher / doctor / garbage collector / volunteer / president
+SW | I want to visit {the new library} and {the city park}. Cities are {noisy}, but they are also {exciting}. | Write two sentences about your city using and, but, or or.
 ## U11 | Understanding Viruses | How do our bodies work?
 # learn
 What does "virus" mean? | a very tiny thing that can cause diseases like the flu
@@ -241,6 +719,52 @@ P | 🦠🤧🛡️🔬 | A virus enters the body. Tell what happens.
 C | Which is worse, the common cold or the flu? | The common cold | The flu
 Z | Name three ways your body defends itself against viruses.
 PT | 🧫🔬👨‍🔬 | Type a sentence with two adjectives in the correct order.
+# words
+cells | cells | c/ells | 🧫
+microscope | mi·cro·scope | mi/cro/scope | 🔬
+virus | vi·rus | vi/rus | 🦠
+bacteria | bac·te·ri·a | bac/te/ri/a | 🧫
+disease | dis·ease | dis/ease | 🤒
+influenza | in·flu·en·za | in/flu/en/za | 🤧
+mucus | mu·cus | mu/cus | 👃
+immune | im·mune | im/mune | 🛡️
+paralyze | par·a·lyze | par/a/lyze | ♿
+infect | in·fect | in/fect | 🤢
+fluid | flu·id | flu/id | 💧
+scrape | scrape | scr/ape | 🩹
+inhale | in·hale | in/hale | 🌬️
+exhale | ex·hale | ex/hale | 😮‍💨
+# reading
+> Understanding Viruses with Max Axiom, Super Scientist
+> Viruses may be small, but they can cause many kinds of diseases and illnesses in the human body. Today, super scientist Max Axiom hopes to get a better understanding of these fascinating, tiny visitors.
+> Viruses cause many diseases in plants, animals, and people. I'll shrink down to their size to take a closer look. I'll need to get smaller than cells and bacteria for a good view of viruses.
+> Viruses are much smaller than bacteria. They're so small that you can't see them with a regular microscope. You need a powerful electron microscope like this one to see them. Just like bacteria, viruses come in many different shapes, like balls, bullets, and rods.
+> Here's a virus that causes the common cold. Here's the influenza virus, which causes the flu. This is polio, a virus that can paralyze people it infects.
+> Later that day: Thank goodness the body has an immune system to fight viruses. Let's look at how our bodies defend themselves.
+> Your skin acts like a suit of armor. Its top layer is made of dead cells, so viruses can't find live cells to infect. But if you have a cut or scrape, viruses may get in. They can infect the live cells underneath your skin.
+> Your body fights viruses in other ways as well. When you breathe in viruses, some of them get trapped in your nose hairs. Some of the viruses that make it past the hairs get trapped in a slimy fluid called mucus. Mucus carries the viruses to the back of the throat, where they are swallowed. When the viruses reach your stomach, they're usually destroyed by stomach acids.
+> But sometimes a few viruses get past these first defenses. Then they are able to infect cells. But our bodies have yet another defense against viruses. Let's enter the bloodstream for a closer look at a cell under attack.
+> We fight back with white blood cells in our bloodstream. When our cells are under attack, white blood cells come to their aid. White blood cells can kill the virus or the infected cell.
+> At one time, people knew very little about viruses. Thanks to scientists like Max Axiom, humans can know much more about these viruses and how to stay healthy when they attack.
+RC | What do you need to see a virus? | an electron microscope | a regular microscope | just your eyes
+RC | Which virus can paralyze people? | polio | influenza | the common cold
+RC | What is the top layer of your skin made of? | dead cells | live cells | mucus
+RT | Why can't viruses infect the top layer of your skin? | The top layer of skin is made of dead cells.
+RT | What happens to viruses that reach your stomach? | Stomach acids usually destroy the viruses.
+RT | What can white blood cells do? | White blood cells can kill the virus or the infected cell.
+RS | How does mucus help your body fight viruses? Tell us one thing.
+RS | How are viruses different from bacteria?
+# grammar
+G | It's a nice, warm, and sunny day.
+G | Max Axiom studies these fascinating, tiny visitors.
+G | The doctor washed his new, white lab coat.
+G | Max saw large, round, red viruses.
+G | It's an ugly, tiny, gray polio virus.
+G | There is a long, white, plastic ruler on my desk.
+G | I need more soft, white paper tissues.
+# speak-write
+SP | A: What do you do when you catch a cold? | B: I {drink a lot of water} and stay in bed. | A: How do you stay healthy? | B: I try to wash my hands often. What about you? | drink a lot of water / drink hot tea / eat soup / sleep a lot / see a doctor / take medicine
+SW | {Wash your hands} every day. Don't {touch your eyes} with your fingers. {Eat healthy food} to stay strong. | Write three commands that give advice on how to stay healthy.
 ## U12 | The Human Body: Systems at Work | How do our bodies work?
 # learn
 What does "arteries" mean? | thick tubes that carry blood from the heart to the body
@@ -263,6 +787,49 @@ P | 🩺❤️🩸💨 | Describe how oxygen travels through the body.
 C | Is it more important to exercise your heart or your lungs? | Your heart | Your lungs
 Z | Name three parts of the circulatory system.
 F | Last week, I used to think about the circulatory system. | Last week, I thought about the circulatory system.
+# words
+system | sys·tem | sys/tem | ⚙️
+blood | blood | bl/ood | 🩸
+heart | heart | h/eart | ❤️
+arteries | ar·ter·ies | ar/ter/ies | 🫀
+veins | veins | v/eins | 💙
+capillary | cap·il·lar·y | cap/il/lar/y | 🔬
+lungs | lungs | l/ungs | 🫁
+trachea | tra·che·a | tra/che/a | 🌬️
+diaphragm | di·a·phragm | di/a/phragm | 💨
+pulse | pulse | p/ulse | 💓
+oxygen | ox·y·gen | ox/y/gen | 🫧
+pump | pump | p/ump | 🚒
+squeeze | squeeze | squ/eeze | 🤏
+estimate | es·ti·mate | es/ti/mate | 🔢
+# reading
+> The Human Body: Systems at Work
+> The human body is amazing for many reasons. First of all, it is made up of many parts. Each part is special and has an important job to do. Secondly, all of the parts work together in systems that do even bigger jobs. In addition, all of those systems work together as one unit, so that you can live a happy and healthy life.
+> In ancient times, people used to think differently about the human body. Today, we know that there are over ten major systems in the human body. Let's look at how two of these systems work together for your good health.
+> The Respiratory System: This system first brings oxygen into your lungs. It takes carbon dioxide out of your lungs. The respiratory system has three major parts: the trachea, the lungs, and the diaphragm.
+> The Circulatory System: This system first carries blood containing oxygen and nutrients to all of the cells in your body. It then removes carbon dioxide and other waste products from those cells. The circulatory system has four major parts: the heart, the arteries, the veins, and the capillaries. Blood moves through these parts.
+> Two Systems Working Together as One: When you breathe in, your diaphragm first moves down so your lungs can get bigger. As a result, air flows into your nose or mouth, through your trachea, and into your lungs. This air has oxygen in it, which your body needs to live. Next, this oxygen goes into the blood of the capillaries inside your lungs. The capillaries carry this oxygen-rich blood to the pulmonary veins. These veins then take this blood to the left side of your heart.
+> Next, your heart pumps this blood into thick tubes called arteries. The arteries then carry this blood to all of the cells in your body. The cells use the oxygen in this blood to keep your body healthy. While your cells use the oxygen, they also create carbon dioxide. Your body doesn't need carbon dioxide, so the blood in your veins carries the carbon dioxide back to the right side of your heart. The heart then pumps this blood into your lungs. After this happens, the carbon dioxide in this blood goes back into the air in your lungs. Finally, your diaphragm moves up and squeezes your lungs, and the air in your lungs goes out of your nose or mouth.
+> These two systems work well together. They bring oxygen-rich blood to every part of your body within one minute. They do this 24 hours a day, while you sleep, eat, study, and play. It is easy to see why the human body is called the most amazing machine in the world.
+RC | How many major parts does the respiratory system have? | three | four | ten
+RC | What carries blood from the heart to all the cells? | arteries | veins | the trachea
+RC | What waste product do you breathe out? | carbon dioxide | oxygen | nutrients
+RT | What are the four parts of the circulatory system? | They are the heart, the arteries, the veins, and the capillaries.
+RT | What happens when your diaphragm moves down? | Your lungs get bigger and air flows into them.
+RT | What do your cells create after they use oxygen? | The cells create carbon dioxide.
+RS | What two things does your diaphragm do?
+RS | Why is the human body called the most amazing machine? Tell us one reason.
+# grammar
+G | People used to think differently about the human body.
+G | My sister used to go to the swimming pool often.
+G | My father used to play games with his friends.
+G | I used to take the bus to school.
+G | I took the subway to school on Friday.
+G | When I was young, I used to ride my bike.
+G | Sandra went to the store yesterday.
+# speak-write
+SP | A: What is the {heart}? | B: It's the part of the body that pumps blood. | A: And what is the stomach? | B: It's the part of your body where food goes. | heart / stomach / lungs / trachea / brain / skin
+SW | Everyone needs to {exercise} to keep their body strong. Nobody wants to {get sick}. Anything is possible when you {work hard}. | Write three sentences with everyone, nobody, or anything about staying healthy.
 ## U13 | From Newspapers to Smartphones: The Rise of the Mass Media | What is the mass media?
 # learn
 What does "mass media" mean? | ways of bringing news and information to many people quickly
@@ -285,6 +852,62 @@ P | 📰📻📺📱 | Tell the story of the mass media from old to new.
 C | Is the Web a better place for news than newspapers? | The Web | Newspapers
 Z | Name three kinds of mass media.
 PT | 🖨️📚1440 | Type a sentence about the printing press.
+# words
+broadcast | broad·cast | broad/cast | 📡
+newspaper | news·pa·per | news/pa/per | 📰
+magazine | mag·a·zine | mag/a/zine | 📖
+publisher | pub·lish·er | pub/lish/er | 🏢
+advertising | ad·ver·tis·ing | ad/ver/tis/ing | 📣
+smartphone | smart·phone | smart/phone | 📱
+blog | blog | bl/og | 💻
+journalist | jour·nal·ist | jour/nal/ist | 🎤
+newsreels | news·reels | news/reels | 🎞️
+latest | lat·est | lat/est | 🆕
+knowledge | knowl·edge | knowl/edge | 🧠
+knight | knight | kn/ight | 🛡️
+knit | knit | kn/it | 🧶
+kneel | kneel | kn/eel | 🧎
+# reading
+> From Newspapers to Smartphones: The Rise of the Mass Media
+> Thanks to the mass media, information travels fast. Journalist Megan Michaels interviews Dr. Philip Kendall, a mass media expert.
+> Megan: Good morning, Dr. Kendall. People like to share information, don't they?
+> Dr. Kendall: Yes. Long ago, when early humans made a discovery, they told their friends. Information spread from person to person. However, mass media is different. It brings news and information to many people very quickly.
+> Megan: When did mass media begin?
+> Dr. Kendall: In 1440, Johannes Gutenberg changed the way information was shared. He invented the printing press. Before the printing press, people had to make books by hand. This was a slow process. His invention could quickly print many copies of a book. Then, about 150 years later, people printed the first newspapers in Europe. Today, millions of people around the world read newspapers every day.
+> Megan: How many newspapers are there?
+> Dr. Kendall: There are over 6,000 daily newspapers in the world today. Publishers print over 700 million copies each day. Magazines are also popular because they focus on one subject, such as news, movies, fashion, or sports. Advertising helps to pay for the cost of publishing newspapers and magazines.
+> Megan: So what happened next in the history of mass media?
+> Dr. Kendall: Movies, or "moving pictures," were invented over 100 years ago. At that time, people started to film news and events from around the world. These short news films were called newsreels. When people went to the theater to watch a movie, they could also watch the news.
+> Megan: And then the television came next, right?
+> Dr. Kendall: Actually the radio came next. It began about the same time as movies, but the first radio station didn't broadcast until 1920. Today, there are over 44,000 radio stations around the world.
+> Megan: Do people still get their news from the radio?
+> Dr. Kendall: Yes, they do. Many radio stations report the news every hour. Some stations broadcast the news all the time. People can listen to the news while they drive or work.
+> Megan: When did television broadcasting start?
+> Dr. Kendall: It started in the 1930s. Now, television is everywhere, bringing news and entertainment to people around the world. Some events are broadcast live, while they are happening.
+> Megan: So people have a lot of choices for their news, don't they?
+> Dr. Kendall: They do, but you mustn't forget the latest choice - the Web! Today around 40% of the people in the world use the Web. The Web uses the Internet to give us 24-hour news, and people can share information through social networks and blogs. Also, over two billion people now have smartphones. They can access the Web wherever they go.
+> Megan: We live in very interesting times.
+> Dr. Kendall: That's true. It will be exciting to see what's next in the world of mass media.
+RC | Who invented the printing press? | Johannes Gutenberg | Megan Michaels | Dr. Kendall
+RC | When did the first radio station broadcast? | in 1920 | in 1440 | in the 1930s
+RC | What were the short news films in theaters called? | newsreels | blogs | magazines
+RT | How many daily newspapers are there in the world today? | There are over 6,000 daily newspapers in the world today.
+RT | When did television broadcasting start? | Television broadcasting started in the 1930s.
+RT | What helps to pay for the cost of publishing newspapers and magazines? | Advertising helps to pay for the cost of publishing newspapers and magazines.
+RS | How is mass media different from telling your friends? Tell us one thing.
+RS | Why are magazines popular?
+# grammar
+G | You must pay for the Internet to use it at home.
+G | You mustn't take a newspaper without paying for it.
+G | You don't have to carry a computer to check the news.
+G | I must buy a newspaper today.
+G | I mustn't miss the news tonight.
+G | You mustn't bring your smartphone into class.
+G | We have to study harder for the test.
+G | Do you have to pay for the Internet at home?
+# speak-write
+SP | A: How do people in your family get the news? | B: My dad gets news from {the newspaper}. | A: That's interesting. My mom prefers to get news from the radio. | B: My grandma usually watches the news on TV. | the newspaper / the radio / a smartphone / a blog / a social network / the Web
+SW | My {dad} gets news from {the newspaper}. {He} reads it every morning because {it is easy}. | Write three sentences about how someone in your family gets the news, using pronouns.
 ## U14 | From the Blog of Elsa B. Garcia, Kid Reporter | What is the mass media?
 # learn
 What does "headline" mean? | the big title at the top of a news story
@@ -307,6 +930,51 @@ P | 💻🏠🔥👵 | A kid reporter investigates an old house. Tell the story.
 C | Should the city tear down old houses to build new things? | Yes, build new things | No, keep old houses
 Z | Name three things a reporter does.
 F | Smartphones has changed the news business. | Smartphones have changed the news business.
+# words
+reporter | re·port·er | re/port/er | 🎤
+editor | ed·i·tor | ed/i/tor | ✏️
+interview | in·ter·view | in/ter/view | 🗣️
+mistake | mis·take | mis/take | ❌
+decide | de·cide | de/cide | 🤔
+discuss | dis·cuss | dis/cuss | 💬
+headline | head·line | head/line | 📰
+hero | he·ro | he/ro | 🦸
+website | web·site | web/site | 🌐
+investigate | in·ves·ti·gate | in/ves/ti/gate | 🔍
+search | search | s/earch | 🔎
+mansion | man·sion | man/sion | 🏰
+terrible | ter·ri·ble | ter/ri/ble | 😱
+entire | en·tire | en/tire | 🔵
+# reading
+> From the Blog of Elsa B. Garcia, Kid Reporter
+> July 5. I have decided to keep a blog so the world can read about all the things I investigate. Today, I heard that they are going to tear down the old stone house across the street. The newspaper says the city government owns the house, and just one person lives there. Why does the city government own an old house? Who lives there? I have decided to find out because I want to save the house.
+> July 6. I used the Internet to search for articles about old houses on my street. I found an entire website called The Lost History of Stone House. It said the stone building was once the gatehouse of a huge mansion. A family called the Martins lived there until one night a terrible fire burned the mansion down. The young daughter of a maid smelled the smoke and woke up every single person in the house. Everyone got out safely that night. The website showed the front page of an old newspaper with a story about the fire. The headline said: "Young Girl, 9, Saves Seven People in Mysterious Fire." She was the same age as me!
+> July 7. I am going to visit the house to see if I can talk to the person who lives there. I have never done an interview before, and I'm very nervous. What if I make a mistake?
+> July 7, Part 2. I did it! A woman who looks like my grandmother answered the door. She said her name was Miss Lu, and that she would be happy to answer my questions. She knew all about the mansion and the fire. I learned that the Martin family donated a lot of money to the city to help build the library and the hospital. After the fire, they decided to move away and let the city have their land. I asked Miss Lu if she knew the Martins. She smiled and said no one had ever asked her that before. When she told me the answer, I couldn't believe it. My mom says I have to go to sleep now, so read my blog tomorrow for the rest of the story!
+> July 8. I'm back! Miss Lu knew the Martins because she lived in the mansion, too. Yes, readers, Miss Lu was the little girl who saved the family that night! I am writing a letter to the editor of our newspaper asking the mayor not to destroy the house. Miss Lu is a hero, and it isn't fair to take away her home!
+> July 10. Today, a television reporter came to interview me. You can watch it on Channel 7 tonight!
+> July 11. I have more wonderful news. My story will be on a radio show that will be broadcast to the entire city tonight!
+> July 15. Today, I got an e-mail from the mayor. He said there will be a special meeting to discuss the house. I'm amazed that he took the time to write to me!
+> August 1. Awesome news! The mayor decided not to tear down the old house! He agrees that Miss Lu is a hero and should be able to live there as long as she likes. This is the first news story I have ever investigated. I love being a reporter, and I can't wait to find more stories!
+RC | Who owns the old stone house? | the city government | the Martins | Miss Lu
+RC | What was the stone building long ago? | the gatehouse of a mansion | a library | a hospital
+RC | Who saved seven people in the fire? | Miss Lu | Elsa | the mayor
+RT | Why did Elsa decide to keep a blog? | She wanted the world to read about all the things she investigates.
+RT | How did Elsa help Miss Lu? | She wrote a letter to the editor asking the mayor not to destroy the house.
+RT | What did the mayor decide on August 1? | The mayor decided not to tear down the old house.
+RS | Why is Miss Lu a hero?
+RS | How did Elsa find out about the history of the house? Tell us one thing.
+# grammar
+G | I have decided to keep a blog.
+G | He hasn't written a blog before.
+G | The reporter has done many interviews.
+G | She hasn't met the newspaper editor.
+G | Smartphones have changed the news business.
+G | I haven't met a reporter before.
+G | He has bought a news magazine many times.
+# speak-write
+SP | A: I think {reporters have a difficult job}. | B: Why do you think that? | A: I think that because I have read about it. | B: Yes, that's true. I think so, too. | reporters have a difficult job / nature blogs are interesting / the news is important / smartphones are useful / some blogs are boring / newspapers are fun to read
+SW | I have {written} a blog about {my school}. I have also {investigated} {a news story}. | Write two sentences about things you have done, using the present perfect.
 ## U15 | Forces of Nature | What can we learn from nature's power?
 # learn
 What does "tsunami" mean? | a huge wave caused by an earthquake under the ocean
@@ -329,6 +997,50 @@ P | 🌪️🌊❄️⚡ | Describe a force of nature and what people do to stay
 C | Which is more frightening, an earthquake or a hurricane? | An earthquake | A hurricane
 Z | Name three forces of nature.
 PT | 📱⚠️🏃 | Type a sentence about a warning system.
+# words
+flood | flood | fl/ood | 💦
+earthquake | earth·quake | earth/quake | 🌍
+tsunami | tsu·na·mi | tsu/na/mi | 🌊
+hurricane | hur·ri·cane | hur/ri/cane | 🌀
+tornado | tor·na·do | tor/na/do | 🌪️
+blizzard | bliz·zard | bliz/zard | ❄️
+thunderstorm | thun·der·storm | thun/der/storm | ⛈️
+victim | vic·tim | vic/tim | 🤕
+collapse | col·lapse | col/lapse | 🏚️
+funnel | fun·nel | fun/nel | 🔻
+snowfall | snow·fall | snow/fall | 🌨️
+raindrop | rain·drop | rain/drop | 💧
+landslide | land·slide | land/slide | ⛰️
+vertically | ver·ti·cal·ly | ver/ti/cal/ly | ↕️
+# reading
+> Forces of Nature
+> Earth is a beautiful planet. Its oceans and lakes, blue skies, and rich land give us what we need to live. However, nature also has a very powerful side. It creates forces that can cause great harm to human life and property.
+> Earthquakes: The outside part of Earth is the crust. Under the crust are many pieces called plates. The plates create energy when they move against each other. In an earthquake, the plates release this energy quickly. This energy moves the ground. In strong earthquakes, objects and even buildings can collapse.
+> When an earthquake happens under the ocean, parts of the ocean floor may rise or fall suddenly. This can create a tsunami. A tsunami travels very fast through the water. When it reaches a coast, it pushes huge amounts of water onto the land. This water can destroy everything in its path. In 2011, many people died on the coast of eastern Japan in a large tsunami. Many rescue workers helped the victims of this disaster.
+> Hurricanes: A hurricane is a large, violent storm. It forms over warm ocean water and can grow to over 500 kilometers wide. Hurricane winds can blow from 100 to 250 kilometers per hour. When a large hurricane reaches land, it can destroy buildings and homes. The ocean water can rise and create floods. A large hurricane can knock down many trees and hurt plants, fish, and coral along a coast.
+> Tornadoes: Have you ever seen a real tornado? A tornado often looks like a funnel, and has strong spinning winds of up to 400 kilometers per hour. These winds can easily destroy homes and trees. An average tornado is about 75 meters wide near the ground, but some can be much larger. Tornadoes often form before a thunderstorm, when warm air in the atmosphere starts to spin horizontally across the sky and then vertically toward the ground. North America has more tornadoes than any other place in the world.
+> Blizzards: In cold climates, snowy days are common. However, sometimes blizzards completely cover an area. Blizzards are very dangerous to drive in because drivers can't see far away and may lose control of their cars on the snowy roads. Heavy snow can also break power lines and the roofs of homes. People who are outside in a blizzard can get lost, and the cold, windy air can freeze skin that isn't covered up. Blizzards can go on for days, which is dangerous for people who run out of food or need medical care.
+> Luckily, there are warning systems for these natural disasters. People in some countries can receive a message on their cell phones seconds before an earthquake strikes. Tsunami warning systems can give people time to leave the coast and move to a safe place. Modern weather systems warn people about weather conditions that may create tornadoes and blizzards. All of these systems help us prepare for nature's power.
+RC | Where does a hurricane form? | over warm ocean water | over cold land | under the ground
+RC | What does a tornado often look like? | a funnel | a plate | a wave
+RC | Which place has more tornadoes than any other? | North America | Japan | Europe
+RT | Why is a tsunami so dangerous? | A tsunami pushes huge amounts of water onto the land and destroys everything in its path.
+RT | Which has stronger winds, a hurricane or a tornado? | A tornado has stronger winds than a hurricane.
+RT | What is under Earth's crust? | Under the crust are many pieces called plates.
+RS | Why are blizzards dangerous to drive in?
+RS | What kinds of warnings can people receive? Tell us one.
+# grammar
+G | Have you ever seen a real tornado?
+G | I've never seen a real tornado.
+G | Have you ever experienced an earthquake?
+G | I have never felt an earthquake.
+G | Have you ever escaped from a hurricane?
+G | Has your teacher ever driven in a blizzard?
+G | Have you ever watched a scary movie?
+G | Yes, I have seen a tornado on TV.
+# speak-write
+SP | A: What will the weather be like today? | B: There might be {a lot of rain}. | A: Oh, no! Could it be dangerous? | B: It may come close to our city, so stay inside. | a lot of rain / a thunderstorm / a tornado / a blizzard / strong winds / a flood
+SW | I've experienced {a thunderstorm} in {my town}. My family has never been in {a blizzard}. We've usually been safe! | Write three sentences about forces of nature you have or have never experienced.
 ## U16 | Staying Calm Before the Storm | What can we learn from nature's power?
 # learn
 What does "emergency" mean? | a dangerous situation that needs quick action
@@ -351,6 +1063,57 @@ P | 🌀🎒🔦🥫 | A family gets ready for a storm. Tell the story.
 C | In a storm, is it better to leave the city or stay at home with supplies? | Leave the city | Stay at home with supplies
 Z | Name three things on an emergency list.
 F | Have you packed your sleeping bag already? No, I haven't packed it already. | Have you packed your sleeping bag yet? No, I haven't packed it yet.
+# words
+emergency | e·mer·gen·cy | e/mer/gen/cy | 🚨
+cash | cash | c/ash | 💵
+flashlight | flash·light | flash/light | 🔦
+batteries | bat·ter·ies | bat/ter/ies | 🔋
+supplies | sup·plies | sup/plies | 📦
+hurricane | hur·ri·cane | hur/ri/cane | 🌀
+shelter | shel·ter | shel/ter | 🏠
+shutters | shut·ters | shut/ters | 🪟
+inland | in·land | in/land | 🏞️
+destroyed | de·stroyed | de/stroyed | 💥
+trunk | trunk | tr/unk | 🚗
+landfall | land·fall | land/fall | 🌊
+bravely | brave·ly | brave/ly | 🦁
+# reading
+> Staying Calm Before the Storm
+> The state of Quintana Roo in Mexico's Yucatan Peninsula has experienced many hurricanes. Luis Sandoval lived in the capital city of Chetumal when Hurricane Dean hit the coast. He was nine years old.
+> On August 17, 2007, Luis Sandoval was eating a sandwich after school when the phone rang. It was his father, who worked for the city government in Chetumal.
+> "Luis, is your mother there?" he asked. "No, Papa. She went to the supermarket with Pablo and Alex."
+> "Please listen carefully. Hurricane Dean is moving in our direction. It will reach our coast in three or four days. The government has declared a state of emergency."
+> Luis's heart started to beat quickly. "Are we in danger, Papa?"
+> "Not if we prepare. It may be as bad as Hurricane Wilma. Do you remember what we did then?" "Yes, Papa."
+> "Then start preparing. All of you need to leave Chetumal and go further inland tomorrow morning. I will have to stay here." His father hung up.
+> Luis remembered Hurricane Wilma very well. A rise in the ocean, called a storm surge, flooded large areas along the coast. Almost 600 millimeters of rain fell in many places. Waves as high as eight meters smashed violently into the third floors of hotels. Winds up to 240 kilometers per hour destroyed homes.
+> Now the state of Quintana Roo was prepared for Hurricane Dean. The government was ready to help people leave the area. For those who couldn't leave, there were 530 local storm shelters with food, blankets, and medicine. However, families also had to protect themselves. Luis checked the emergency list in the storage room and gathered the following items: 20 liters of bottled water, 1 large box of dry and canned food, 1 small radio with batteries, 1 first-aid kit, 2 flashlights, 3 boxes of tissue paper, 4 sleeping bags, and emergency cash.
+> Luis took out two small backpacks for his little brothers. They contained some clothes and were easy to carry. He took out two large backpacks for his mother and himself. He put some of the food, water, and supplies in each one. The rest of the supplies would go in the trunk of the car.
+> Suddenly, Luis's mother appeared in the doorway. His little brothers, Pablo and Alex, were holding her hands tightly. "Your father called me," his mother said. "I tried to buy food and water, but they turned us away at the supermarket. There were too many people there."
+> "Don't worry, Mama," said Luis. "I've already packed everything we need."
+> "Good," said his mother. "We have storm shutters, but you and I have to help Aunt Alma put boards over her windows tonight. We'll leave early tomorrow morning."
+> The next morning, Luis, his mother, his aunt, and his brothers left the city. They drove many kilometers inland and stayed at a storm shelter. They would be safe from the hurricane there. Luis's father remained in Chetumal, helping those who could not leave the city.
+> Hurricane Dean made landfall near the town of Majahual on Tuesday, August 21, 2007. It was a Category 5 storm, with winds as high as 320 kilometers per hour. The high winds and water destroyed Majahual. Parts of Chetumal, 65 kilometers south, had floods. However, thanks to excellent preparations by the government and the people of Quintana Roo, not one life was lost on the Yucatan Peninsula.
+RC | How old was Luis when Hurricane Dean hit the coast? | nine years old | seven years old | twelve years old
+RC | Where did Luis put the rest of the supplies? | in the car trunk | in the basement | at the supermarket
+RC | Why did the supermarket turn Luis's mother away? | too many people | she had no cash | it was closed
+RT | What did Luis's father ask the family to do? | He asked them to leave Chetumal and go further inland.
+RT | Where did the family stay after they left the city? | They stayed at a storm shelter many kilometers inland.
+RT | Why was not one life lost on the Yucatan Peninsula? | The government and the people made excellent preparations.
+RS | How is Luis different from his younger brothers?
+RS | What did Luis do to prepare for the storm? Tell us two things.
+# grammar
+G | I've already packed everything we need.
+G | I've just put batteries in my flashlight.
+G | Have you cleaned your room yet?
+G | No, I haven't cleaned it yet.
+G | Emma has just left for work.
+G | Has Vince washed the car yet?
+G | We have already bought bottled water and canned food.
+G | I've just eaten dinner.
+# speak-write
+SP | A: A hurricane is coming. What will we need? | B: We need to get {bottled water}. | A: I think we already have a flashlight. | B: OK, we still need batteries. I'll get them. | bottled water / canned food / a first-aid kit / sleeping bags / a small radio / emergency cash
+SW | My {sister} is {brave}. She walked {bravely} into the dark storm shelter. | Write about a person with an adjective and then its -ly adverb.
 ## U17 | The Natural Communities of Earth | Why are biomes important?
 # learn
 What does "biome" mean? | a community of plants and animals that live together in the same area
@@ -373,6 +1136,52 @@ P | 🌵🐍🌧️🌴 | Compare two biomes.
 C | Which biome is more important, the ocean or the rainforest? | The ocean | The rainforest
 Z | Name three animals that live in the taiga or the tundra.
 PT | 🐻‍❄️🦅🐆 | Type a sentence about one biome and one animal that lives there.
+# words
+biome | bi·ome | bi/ome | 🌍
+desert | des·ert | des/ert | 🏜️
+grassland | grass·land | grass/land | 🌾
+taiga | tai·ga | tai/ga | 🌲
+tundra | tun·dra | tun/dra | 🧊
+freshwater | fresh·wa·ter | fresh/wa/ter | 🏞️
+equator | e·qua·tor | e/qua/tor | 🌐
+sloth | sloth | sl/oth | 🦥
+cactus | cac·tus | cac/tus | 🌵
+hatches | hatch·es | hatch/es | 🐣
+glides | glides | gl/ides | 🐍
+scenes | scenes | sc/enes | 🖼️
+catch | catch | c/atch | 🥎
+# reading
+> The Natural Communities of Earth
+> A polar bear hunts for seals in the Arctic winter. A baby eagle hatches from an egg high up in a forest tree. A sidewinder rattlesnake glides across the hot desert sand. What do these three scenes have in common? They are all examples of Earth's unique biomes. A biome is a community of plants and animals that live together in the same area. There are eight major biomes on Earth.
+> Oceans cover 75 percent of Earth, and many plants and animals fill this watery biome. Most of this ocean life lives near the surface, where there is sunlight and warm water. Near the coasts, coral reefs are part of this biome. Whales, dolphins, sea turtles, and many kinds of fish occupy the ocean.
+> Freshwater biomes include rivers and streams, ponds and lakes, and wetlands. Only three percent of all water on our planet is fresh water. Unlike ocean water, fresh water has less than one percent salt. Fish, frogs, and pelicans live in or near freshwater biomes.
+> The tropical rainforest is a very important biome. Half of all the animal and plant species on Earth live there. Tropical rainforests are near the equator. Over two meters of rain falls there each year. The Amazon rainforest in South America is the largest tropical rainforest. Animals such as jaguars, spider monkeys, and sloths live there. Otters, which live near freshwater rivers and streams, are also part of this biome.
+> In temperate forests, new leaves grow on the trees in the spring. These leaves stay green until the autumn days arrive. Then they change color and fall to the ground. Squirrels, deer, foxes and bears reside here. There are temperate forests in eastern North America, Europe, Russia, China, and Japan.
+> The taiga is a forest biome with evergreen trees. It is usually north of temperate forests. Winter days are short and cold, with lots of snow. Summer days are long and warm. Moose, foxes, and wolves all dwell in the taiga. Large areas of this biome are in northern Canada and Russia.
+> Grasslands cover 25 percent of the land on Earth. They have rich soil and plants with deep roots. There are almost no trees in this biome. Because of this, people have turned many grasslands into farms. In Africa, grasslands are known as savannas. Gazelles, zebras, rhinoceroses, and many other animals roam these savannas.
+> The tundra is always frozen. This biome is north of the taiga. Very little rain falls here, and temperatures in the winter drop below -50 degrees Celsius. In the summer, over 1,700 kinds of small plants grow. Caribou, musk ox, and polar bears all live in this icy area.
+> The desert is the driest biome on Earth. Less than 25 centimeters of rain falls each year. Plants that can live without much water, like the cactus, grow well here. Animals such as snakes and lizards also make their home in deserts.
+> Together, these eight biomes have provided a safe home for Earth's plants and animals for a very long time. By protecting our planet and its biomes, we can make sure that Earth's plants and animals continue to live in their natural, beautiful homes.
+RC | How many major biomes are there on Earth? | eight | three | twelve
+RC | Which biome is the driest on Earth? | the desert | the tundra | the taiga
+RC | Where are tropical rainforests? | near the equator | north of the taiga | in northern Canada
+RT | Why have people turned many grasslands into farms? | Grasslands have rich soil and almost no trees.
+RT | What happens to the leaves in a temperate forest in autumn? | They change color and fall to the ground.
+RT | How much of Earth do oceans cover? | Oceans cover 75 percent of Earth.
+RS | How are the taiga and the tundra different? Tell us one thing.
+RS | Why is the tropical rainforest a very important biome?
+# grammar
+G | I've lived here since I was born.
+G | These biomes have provided a home for animals for a long time.
+G | I have studied biomes since February.
+G | My dad has studied mammals for twenty years.
+G | The government has protected this forest since 1998.
+G | How long have you gone to school?
+G | I've gone to school for five years.
+G | Scientists have lived in the Arctic since last year.
+# speak-write
+SP | A: What happens to the trees through the seasons? | B: In the spring, the trees are full of {small leaves}. | A: What happens next? | B: In the summer the leaves grow big and green, and in the fall they change color. | small leaves / new buds / white flowers / green leaves / baby birds / little fruits
+SW | The {polar bear} hunted for {seals} until it {caught one}. I will stay in the {taiga} until the snow falls. | Write two sentences about animals or biomes with until.
 ## U18 | Camila's Journey | Why are biomes important?
 # learn
 What does "petition" mean? | a letter that many people sign to ask for a change
@@ -395,3 +1204,51 @@ P | 🐠🤿🐢📝 | A girl snorkels at a coral reef and decides to help. Tell
 C | Should speedboats be allowed near coral reefs? | Yes, they should | No, they should not
 Z | Name three animals that live in a coral reef.
 F | When she got home, Camila has created a petition. | When she got home, Camila created a petition.
+# words
+seahorse | sea·horse | sea/horse | 🐴
+snorkel | snor·kel | snor/kel | 🤿
+speedboat | speed·boat | speed/boat | 🚤
+border | bor·der | bor/der | 🗺️
+petition | pe·ti·tion | pe/ti/tion | 📝
+law | law | l/aw | ⚖️
+astonish | as·ton·ish | as/ton/ish | 😲
+manage | man·age | man/age | 👔
+invited | in·vit·ed | in/vit/ed | 💌
+signed | signed | s/igned | ✍️
+difference | dif·fer·ence | dif/fer/ence | 🔀
+intelligent | in·tel·li·gent | in/tel/li/gent | 🧠
+absent | ab·sent | ab/sent | 🚫
+# reading
+> Camila's Journey
+> Camila lived in Belize City on the coast of Belize in Central America. Her father worked for the government's fisheries department, and he helped to manage the seven marine parks off the coast of the country. One day, Camila's father invited her to visit one of the parks with him.
+> "I'm going to Glover's Reef this weekend," he explained. "Would you like to join me?" "Of course!" she said.
+> During their flight to the coastal town of Dangriga, Camila's father explained that Glover's Reef was on the edge of the Belize Barrier Reef, one of the largest coral reef systems in the world. Hundreds of fish and coral species lived in these reefs. He said that many coral reefs around the world were dying from pollution and overfishing.
+> From Dangriga, Camila and her father took a two-hour boat ride to Glover's Reef. Camila's excitement grew as they neared a small island with its beautiful coastline and turquoise water. "We'll snorkel through the park tomorrow," her father said.
+> The next morning, Camila and her father put on their goggles and entered the blue waters of the park. The beauty and variety of the underwater world astonished Camila. Hundreds of butterfly fish, parrot fish, and seahorses darted around her. She watched sea turtles and manta rays glide among the rainbow-colored coral. Camila saw how the plants and animals of the reef lived together perfectly. She took many pictures with her father's underwater camera. It was the most exciting experience of her life.
+> As they left the water, Camila and her father heard a loud noise. They turned and saw a large speedboat filled with tourists racing toward the reef area. "They'll scare the fish!" shouted Camila.
+> "There's nothing we can do," said her father. "They're just outside of the park border." Camila watched the boat continue along the border and then speed away. She was angry and upset.
+> At lunch, Camila was very quiet. When she finished eating, she turned to her father. "I'm going to do something for our planet's coral reefs," she said. "We need to help them."
+> Back in Belize City, Camila spoke to her class about coral reefs. "In Glover's Reef, I learned that coral reefs are an important part of our ocean biome because they are homes for hundreds of kinds of animals and plants. They are wonderful places to see the beauty of our oceans close up. My father taught me that coral reefs keep our shores safe from powerful waves, and that scientists can find new medicines from plants and animals that live there."
+> When she got home, Camila created a petition on the Internet. It read: Governments of the world, please help the ocean's coral reefs. Keep our coral reefs safe and healthy for everyone.
+> In three weeks, 20,000 people in 38 countries signed Camila's petition. Within one year, three countries passed laws to protect their coral reefs.
+> "You have made a difference, Camila," said her father. "Thank you! The coral reefs of the world thank you, too."
+RC | Where did Camila live? | Belize City | Dangriga | Glover's Reef
+RC | How did Camila and her father get from Dangriga to Glover's Reef? | by boat | by plane | by car
+RC | How many people signed Camila's petition in three weeks? | 20,000 people | 38 people | 3,000 people
+RT | What did Camila's father do for the government? | He helped to manage the seven marine parks off the coast.
+RT | Why was Camila angry and upset? | A speedboat full of tourists raced toward the reef and scared the fish.
+RT | What happened within one year of the petition? | Three countries passed laws to protect their coral reefs.
+RS | Why are coral reefs important? Tell us one reason from Camila's talk.
+RS | How did Camila make a difference for the coral reefs?
+# grammar
+G | Camila has created a petition.
+G | When she got home, Camila created a petition.
+G | We've written a petition, so stay away!
+G | They snorkeled this morning.
+G | He went to the Arctic last year.
+G | The explorer has seen a manta ray before.
+G | Have you ever run in a race?
+G | I ran in a race last summer.
+# speak-write
+SP | A: We're going to the {tundra}. What will we need? | B: We'll need warm clothes and boots. | A: What will we need to do? | B: We'll need to take pictures of the polar bears. | tundra / desert / tropical rainforest / taiga / ocean / grassland
+SW | I want to live in the {taiga} because I like {cool weather}. Since {rainforests} have many plants and animals, we must {keep them safe}. | Write two sentences with because and since about a biome you like.

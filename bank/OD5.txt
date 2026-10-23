@@ -22,6 +22,69 @@ P | 🦏🐘🌲❌ | What is happening to these animals? Tell the story.
 C | Is it more important to save wild animals or to grow more crops for people? | Save wild animals | Grow more crops
 Z | Name three extinct animals from the story.
 S | Why do we protect animals? Give two reasons.
+# words
+dodo | do·do | do/do | 🦤
+quagga | quag·ga | quag/ga | 🦓
+mammoth | mam·moth | mam/moth | 🦣
+tiger | ti·ger | ti/ger | 🐯
+extinct | ex·tinct | ex/tinct | 🦖
+survive | sur·vive | sur/vive | 💪
+exploit | ex·ploit | ex/ploit | ⚠️
+endangered | en·dan·gered | en/dan/gered | 🐼
+habitat | hab·i·tat | hab/i/tat | 🌳
+species | spe·cies | spe/cies | 🐾
+sanctuary | sanc·tu·ar·y | sanc/tu/ar/y | 🏞️
+mammals | mam·mals | mam/mals | 🐘
+atmosphere | at·mos·phere | at/mos/phere | 🌫️
+rare | rare | r/are | 💎
+# reading
+> Dreaming of Dodos
+> Mina was in bed, feeling sleepy. She read the first few words of her book. "The dodo was a bird that couldn't fly..."
+> Whoosh! The window flew wide open. Mina sat up, and through the window she saw a dodo, a real live dodo, right there in her yard!
+> "I existed over four hundred years ago," the dodo said. "But then terrible things happened. Sailors arrived. They cut down the forests, so there was nothing for us to eat, and they had cats that killed us. Dodos didn't survive. We all died." The dodo made a sniffing noise and sat down.
+> There was a sound of hooves, and into the yard galloped a quagga, missing the dodo's head by a centimeter.
+> "I existed 150 years ago," said the quagga, with a tear in its eye. "Quaggas were a species of zebra, but hunters killed us and made our skins into bags, and farmers ate us. These humans exploited us. Eventually, we all became extinct."
+> The quagga stood by Mina's swing, swishing its tail.
+> Soon came a sound of water gushing and a flip-flap of flippers. From the bottom of Mina's pool emerged a sea wolf. It looked like a big seal.
+> "I've been looking for you!" said the sea wolf to the dodo. "Sea wolves haven't existed for almost 70 years."
+> "Why's that?" asked the dodo.
+> The sea wolf flopped out of the pool. A puddle of water spread across the grass.
+> "We were hunted by explorers, fishermen, and hunters who killed and ate us. They made shoes and boots from our skin, and used our fat to cook with. That's why!"
+> "I'm very sorry," said the dodo. The dodo felt bad that these sea mammals had suffered so much.
+> Suddenly, a crashing noise made Mina jump. There at the gate was a woolly mammoth. With one big push, it stumbled into the yard.
+> "Sorry about the noise," it said. "I've been looking for you! I lived thousands of years ago, but now I'm extinct."
+> "Why's that?" asked the quagga.
+> "No one is sure," replied the mammoth. "Scientists think the weather changed, changing our habitat. We ate grass, but as the atmosphere grew warmer, forests spread and there was less grass to eat."
+> Mina heard wings flapping. Seconds later, an elephant bird came crashing through the trees and landed beside the pool, splashing water over the dodo.
+> "I weigh half a ton," the elephant bird said proudly. "I'm the heaviest bird that's ever existed. You could make 30 omelets from one of my eggs! But I've been extinct for over a thousand years."
+> Well, the animals all looked miserable, but before they had time to say another word, a tiger came roaring in.
+> "Ah-hah!" it said, peering around with its bright, fiery eyes. "I have many friends here."
+> "Are you extinct, too?" asked the elephant bird.
+> "Not yet," replied the tiger, flashing its shiny teeth. "But I'm rare and endangered! Tigers are lucky. They have sanctuaries where they can live."
+> The dodo, the quagga, the sea wolf, the woolly mammoth, and the elephant bird all stared at the tiger. "Sanctuaries?" they asked.
+> "Yes, sanctuaries," replied the tiger. "They are places where no one can hurt you."
+> "What a great idea!" thought Mina. "Maybe if we have sanctuaries, fewer animals will become extinct."
+> The window blew shut, and Mina woke up with a start. There was no one and nothing to see, except the book by her bed.
+RC | Where was Mina at the start of the story? | in bed | in the yard | at the gate
+RC | Why are tigers lucky? | they have sanctuaries | they have shiny teeth | they can fly
+RC | Why did the woolly mammoth become extinct? | the weather changed | sailors cut down forests | hunters wanted its skin
+RT | Why did the dodos have nothing to eat? | Sailors cut down the forests, so there was nothing for the dodos to eat.
+RT | What did hunters make from the quaggas' skins? | Hunters made the quaggas' skins into bags.
+RT | What is a sanctuary? | A sanctuary is a place where no one can hurt you.
+RS | Why did the sea wolves become extinct? Tell us one reason.
+RS | What does the author want you to learn from this story?
+# grammar
+G | I have read books about dodos.
+G | I have been reading this book for an hour.
+G | They've been playing basketball since three o'clock.
+G | We've read books about mountains and oceans.
+G | Have you been to the new store yet?
+G | I've been learning English for four years.
+G | Sea wolves haven't existed for almost 70 years.
+G | I've been looking for you!
+# speak-write
+SP | A: In my opinion, the most interesting animal is the {Goliath frog}. | B: Why do you say that? | A: I say that because it is very big and very rare. | B: I agree. In my opinion, it is a very interesting animal. | Goliath frog / tiger / dodo / elephant bird / polar bear / panda
+SW | The {tiger} is an endangered animal. It lives in {the jungle}. We can protect it by {building sanctuaries}. | Write three sentences about an endangered animal and how we can protect it.
 ## U2 | Save Our Tigers! | Why do we protect animals?
 # learn
 What does "poaching" mean? | hunting animals illegally
@@ -45,6 +108,49 @@ PT | 🐯🏞️🔫🚫 | Write a sentence about what is happening in this pict
 C | Should hunting wild animals be against the law everywhere? | Yes, always | No, sometimes it is needed
 Z | Name three animals that used to live in the foothills of the Himalayas.
 S | How can students help protect endangered animals? Give two ideas.
+# words
+diverse | di·verse | di/verse | 🌈
+damaged | dam·aged | dam/aged | 💥
+identify | i·den·ti·fy | i/den/ti/fy | 🔍
+conservation | con·ser·va·tion | con/ser/va/tion | 🌱
+tracker | track·er | track/er | 👣
+protect | pro·tect | pro/tect | 🛡️
+naturalist | nat·u·ral·ist | nat/u/ral/ist | 🔬
+poaching | poach·ing | poach/ing | 🚫
+preservation | pres·er·va·tion | pres/er/va/tion | 🏞️
+inspire | in·spire | in/spire | ✨
+population | pop·u·la·tion | pop/u/la/tion | 📊
+reserve | re·serve | re/serve | 🌳
+wildlife | wild·life | wild/life | 🦌
+jungle | jun·gle | jun/gle | 🌴
+# reading
+> Save Our Tigers!
+> The Foothills of the Himalayas: The Himalayas are the highest range of mountains on Earth. Below this range, there are foothills containing jungles, forests, rivers, and lakes. These hills once provided a home to many diverse types of wildlife: tigers, leopards, rhinoceroses, and deer. In the last 75 years, however, many of those animals have disappeared. People have cleared the forests to grow crops, and the animals' habitat has suffered.
+> Man-Eaters: Usually, it's humans who scare and kill animals, but it can be the other way around. About a hundred years ago, a few starving tigers and leopards terrified the people who lived in the foothills. Instead of eating other animals, like buffalo and antelopes, some of these big cats started killing and eating people! The cats had names like the Tiger of Chowgarh, the Thak Man-Eater, the Champawat Tigress, and the Panard Leopard.
+> Corbett, the Hunter: As a small boy, Jim Corbett was fascinated by wildlife. He taught himself to identify animals and birds by the sounds they made. Later, Jim became a tracker and hunter. The government asked him to track and shoot the man-eating tigers to protect people. Between 1907 and 1938, Corbett shot and killed nineteen tigers and fourteen leopards. He did this on foot, sometimes accompanied by his dog, and he took many risks to save people's lives. The first tiger he shot was the Champawat Tiger, a tiger that killed more than 436 people. Jim was a hero!
+> Corbett, the Naturalist: Jim wondered why the tigers and leopards were killing people. When he examined the cats that he had shot, he made an important discovery. They all had injuries. Some had gunshot wounds from poachers who hunted them illegally. Poaching was common because people could sell tiger skins for decoration and tiger bones for medicine. One tiger had a gunshot wound in its mouth, and its teeth were damaged. It could no longer attack buffalo and antelopes. Other tigers had injuries and infections from porcupine quills getting stuck in their skin. The reason they were eating people was that they couldn't hunt other animals.
+> Corbett National Park and Corbett's Tiger: After his discoveries, Jim became interested in conservation. He had a new mission: the preservation of tigers. He gave lectures and inspired people to respect wildlife, especially the big cats, which he loved and respected. Two years after he died in 1955, the oldest national park in India got a new name: Corbett National Park. It's a sanctuary for tigers, leopards, and other endangered animals. There's even a species of tiger named after Jim, called Corbett's Tiger. No one is sure what the total population of Corbett's Tigers is, but there may only be 350 worldwide.
+> Saving the Tiger: In the early 20th century, there were about 40,000 tigers in India. Now there may be as few as 2,000. But thanks to conservationists like Jim Corbett, there are now more than 35 tiger reserves in India. Saving the tiger means preserving the entire food chain. First, we need to save the tigers' food, and that means protecting deer and other animals. Next, we need to save plants, trees, and grasses so that these animals can eat. By saving the plants, trees, and grasses, we protect our forests and rivers and all the birds, animals, and insects that live there. Very importantly, this means we are saving our water because, as you know, nothing on Earth can live without water.
+RC | Why have many animals disappeared from the foothills? | people cleared the forests | the weather got colder | tigers ate them all
+RC | Why did the government ask Jim Corbett to shoot tigers? | to protect people | to sell tiger skins | to make medicine
+RC | What did Corbett discover about the man-eating cats? | they all had injuries | they were very young | they had no homes
+RT | What did the starving big cats start eating instead of buffalo and antelopes? | They started killing and eating people.
+RT | Why was poaching common? | People could sell tiger skins for decoration and tiger bones for medicine.
+RT | How many tiger reserves are there in India now? | There are now more than 35 tiger reserves in India.
+RS | Why did Jim Corbett change from a hunter into a conservationist?
+RS | Why is it important to save tigers? Tell us one reason.
+# grammar
+G | Tigers go to the river every day.
+G | Tigers are going to the river to drink.
+G | Tigers went to the river yesterday.
+G | People have cleared forests to grow crops.
+G | The animals' habitat has suffered.
+G | Tigers have always lived in thick jungles.
+G | How long have you lived here?
+G | I have studied English for five years.
+# speak-write
+SP | A: Do you think tigers will survive? | B: Yes, I think tigers will survive. | A: Why do you say that? | B: I think it's because {people protect them in reserves}. | people protect them in reserves / poaching is illegal now / there are many sanctuaries / naturalists study them / people respect wildlife
+SW | We should protect {tigers}. They are endangered because {poachers hunt them}. We can help by {making more reserves}. | Write three sentences about an animal we should protect and why.
 ## U3 | Teeth: The Cavity and Have You Any Idea? | What are teeth for?
 # learn
 What does "carnivore" mean? | an animal that eats meat
@@ -68,6 +174,64 @@ P | 🦷🍰😖🩺 | What happened to the boy? Tell the story.
 C | Which is more useful for a human, incisors or molars? | Incisors | Molars
 Z | Name the three kinds of teeth in a human mouth.
 S | Say three things you could not do five years ago but can do now.
+# words
+incisor | in·ci·sor | in/ci/sor | 🦷
+canine | ca·nine | ca/nine | 🐺
+molar | mo·lar | mo/lar | 🦷
+carnivore | car·ni·vore | car/ni/vore | 🦁
+herbivore | her·bi·vore | her/bi/vore | 🐄
+omnivore | om·ni·vore | om/ni/vore | 🐻
+slice | slice | sl/ice | 🔪
+grip | grip | gr/ip | ✊
+crush | crush | cr/ush | 🧊
+cavity | cav·i·ty | cav/i/ty | 🕳️
+gums | gums | g/ums | 👄
+jaw | jaw | j/aw | 🐊
+filling | fill·ing | fill/ing | 🩹
+detective | de·tec·tive | de/tec/tive | 🕵️
+# reading
+> The Cavity
+> It started late one night. / I felt a nasty ache / Just after a big bite / Of yummy chocolate cake.
+> "It's dentist time for you," / Dad told me the next day. / And since I couldn't chew, / I said, "I guess, OK."
+> My canines are bright white / Like tigers' teeth, I'd say. / I scrub my gums noon and night / And at the break of day!
+> My molars are all shiny. / I brush them hard and long! / Maybe the hole is tiny. / Maybe Dad is wrong.
+> I sat in the big chair. / My jaws were open wide. / I told the dentist where / I had a pain inside.
+> Is my tooth defective? / Dear dentist, please explain! / You are the great detective / Who cures all dental pain.
+> He said I had a cavity / Right inside my tooth. / He said so with such gravity / It had to be the truth!
+> "Is it in my incisor?" / I asked him with a smile. / I should have been much wiser / And kept quiet for a while.
+> "You'll need a little filling," / The dentist softly said, / And then he started drilling / Right inside my head!
+> I heard a funny buzz, / Like an angry bee, / But that's what the drill does. / It didn't worry me!
+> And when the hole was filled, / I jumped down off the chair, / For I was really thrilled / To get right out of there!
+> Have You Any Idea?
+> Have you any idea / What the carnivore saw / Scurrying through the trees? / A snack, a snack, a snack, a snack / That's tastier than cheese!
+> Have you any idea / What the carnivore did / When it gripped its prey? / Attack, attack, attack, attack / Before the prey could stray!
+> "I have canine teeth, you see, dear prey, / And they will tear you up!"
+> Have you any idea / What the herbivore saw / Growing towards the sun? / A treat, a treat, a treat, a treat, / Big and green and fun!
+> Have you any idea / What the herbivore said / When it saw the grass? / "No meat, no meat, no meat, no meat, / Just grass that is first class!"
+> "I have incisor teeth, you see, dear grass, / And they will slice you up!"
+> Have you any idea / What the omnivore saw / Reaching up to the skies? / A lunch, a lunch, a lunch, a lunch, / A mountain of tasty pies!
+> Have you any idea / What the omnivore said / When it saw all kinds of food? / "I'll munch, I'll munch, I'll munch, I'll munch / Because I'm in the mood!"
+> "I have molar teeth, you see, dear food, / And they will crush you up!"
+RC | What did the boy eat before the ache started? | chocolate cake | an apple | hard candy
+RC | What did the dentist say the boy needed? | a little filling | a new tooth | a big bandage
+RC | Who finds food growing towards the sun? | the herbivore | the carnivore | the omnivore
+RT | Why did the boy agree to go to the dentist? | He agreed because he couldn't chew.
+RT | What did the drill sound like? | The drill sounded like an angry bee.
+RT | What does the carnivore do with its canine teeth? | The carnivore tears up its prey with its canine teeth.
+RS | How did the boy feel at the end of the poem? Why?
+RS | Which teeth does the omnivore use, and what do they do to food?
+# grammar
+G | I could read by the time I was four.
+G | I couldn't chew after I got a cavity.
+G | Next year, I will be able to ride my bike to school.
+G | I won't be able to drive a car.
+G | Could you use a computer when you were four?
+G | Last year, my sister couldn't ride a bike.
+G | We won't be able to go to the party tomorrow.
+G | Ten years ago, I could crawl, but I couldn't walk.
+# speak-write
+SP | A: Is it important to take care of your teeth? | B: Yes. It's important to {brush your teeth} every day. | A: What could happen if you don't take care of your teeth? | B: If we don't take care of our teeth, we could get cavities. | brush your teeth / go to the dentist / use toothpaste / floss your teeth / eat healthy food / drink less soda
+SW | I'm good at {math}. I'm interested in {animals}. I'm afraid of {spiders}. | Write three sentences about you using an adjective and a preposition.
 ## U4 | Teeth: Not Just for Eating | What are teeth for?
 # learn
 What does "fang" mean? | a long, sharp front tooth
@@ -91,6 +255,52 @@ P | 🦈🦷🦷🦷 | What is special about a shark's teeth? Explain.
 C | Which is more important for an animal, sharp teeth or strong jaws? | Sharp teeth | Strong jaws
 Z | Name three ways animals use their teeth besides eating.
 S | Describe an animal and let your team guess it. Use must, might and can't.
+# words
+fang | fang | f/ang | 🐍
+tusk | tusk | t/usk | 🐘
+venom | ven·om | ven/om | ☠️
+shelter | shel·ter | shel/ter | 🏠
+dam | dam | d/am | 🦫
+prey | prey | pr/ey | 🦌
+gnaw | gnaw | gn/aw | 🐭
+pierce | pierce | p/ierce | 📌
+create | cre·ate | cre/ate | 🎨
+powerful | pow·er·ful | pow/er/ful | 💪
+intruder | in·trud·er | in/trud/er | 🚷
+supply | sup·ply | sup/ply | 📦
+lodge | lodge | l/odge | 🪵
+achievement | a·chieve·ment | a/chieve/ment | 🏆
+# reading
+> Teeth: Not Just for Eating
+> What are teeth used for? "That's easy," you say. "Teeth are for eating." You're partially right. For people, that's the purpose of teeth: biting off and chewing food (and occasionally ripping into that package of cookies). For animals, teeth are good for more than just eating. They might be used for fighting, communicating, or even building a home.
+> Some animals have a continuous supply of teeth. The shark has two sets of teeth, so a missing tooth is automatically replaced. Many reptiles, like lizards, also have a constant supply of new teeth replacing the old ones.
+> Many animals use their teeth to battle. Walruses have two ivory teeth called tusks that can grow up to almost a meter long. Male walruses fight each other over females, and the one with the longest tusks usually wins. Elephants also have tusks, though theirs can grow to be over three meters long! They use them to protect mates and young, even fending off lions if necessary.
+> Other animals may attack prey with their teeth. Alligators and crocodiles don't use their teeth to chew, but to seize prey, which they swallow whole. They may lose teeth, but backups are waiting to move up and fill the empty spots.
+> Some animals have sharp front teeth called fangs, which kill. A poisonous snake can push venom through its fangs, leaving its victim helpless. Vampire bats use fangs to pierce holes in their prey's fur and skin. Then they lap up the blood (their food) with their tongues. Hyenas' small teeth are set in powerful jaws that can crush the bones of a much larger animal.
+> Some animals use their teeth to send a message. Horses show teeth to express different feelings. They might talk tough, welcome others, or show respect. Porcupines click their teeth to warn others to stay away, while hippos yawn to threaten. Baboons scream and show a mouth full of huge, pointed teeth to both frighten intruders and make their young behave. Angry bison grind their teeth, making a squeaky sound. Stay away!
+> A few animals use their teeth to supply shelter. Naked mole rats use four razor-sharp teeth to dig tunnels, which serve as a home. (Their lips seal behind their teeth so that soil doesn't enter their mouths.) Their teeth are constantly growing, but wear down as the top and bottom teeth scrape together while digging through hard soil. Beavers also have four front teeth that continually grow. These teeth wear down from gnawing through trees. After toppling a tree, beavers use their teeth to drag logs to the water. They use these logs to build a home, or lodge, and also to create a dam, which protects the lodge.
+> Some animals also use their teeth to groom, or clean, themselves. For example, there is a group of animals called prosimians, which means "before the monkeys." They're monkey-like creatures, but they aren't monkeys. There are about 50 animals in this group, including lemurs, aye-ayes, and lorises. The type of teeth and the way they use them tell us that they must be prosimians. Almost all prosimians have comb-like lower front teeth that they use to clean the fur on their bodies.
+> So, as you can see, teeth are not only used for eating. They're also useful for building shelters, digging holes, warning off predators, catching and killing prey, fighting, and keeping clean!
+RC | Which animal has two sets of teeth, so a missing tooth is replaced? | the shark | the horse | the beaver
+RC | What do walruses and elephants fight with? | tusks | fangs | claws
+RC | What do beavers build with logs? | a lodge and a dam | a nest | a tunnel
+RT | How do alligators and crocodiles use their teeth? | They use their teeth to seize prey, which they swallow whole.
+RT | What do porcupines do to warn others to stay away? | Porcupines click their teeth to warn others to stay away.
+RT | What do naked mole rats use their teeth for? | They use four razor-sharp teeth to dig tunnels, which serve as a home.
+RS | How do vampire bats get their food? Tell us the steps.
+RS | How do prosimians use their teeth? Why is this useful?
+# grammar
+G | It must be a giraffe.
+G | It has to be a spider.
+G | That can't be a spider!
+G | It might be a snake, but I'm not sure.
+G | It has long, poisonous fangs.
+G | It can't be an ostrich because it doesn't have feathers.
+G | Is it a zebra?
+G | This animal must be a beaver.
+# speak-write
+SP | A: Which animal is more dangerous? | B: I think {snakes} are more dangerous than lions. | A: Why do you think so? | B: Because they have sharp teeth and powerful jaws. | snakes / killer whales / alligators / hyenas / walruses / baboons
+SW | I enjoy {swimming}, {reading}, and {drawing}. I don't like {waiting} or cleaning. | Write two sentences about what you like and don't like, using a list of -ing words.
 ## U5 | A Revolution in History: Wheels | Why are wheels important?
 # learn
 What does "rotate" mean? | to turn around a center point
@@ -114,6 +324,50 @@ P | ⚙️🚲🏺🚗 | Which things use wheels? Explain how.
 C | Would life be better without wheels? | Yes, simpler | No, much harder
 Z | Name three things in your house that have wheels.
 S | What are you going to do this weekend? Say three plans.
+# words
+transportation | trans·por·ta·tion | trans/por/ta/tion | 🚌
+transfer | trans·fer | trans/fer | 🔁
+haul | haul | h/aul | 🚚
+axle | ax·le | ax/le | 🛞
+rotate | ro·tate | ro/tate | 🔄
+spoke | spoke | sp/oke | 🚲
+rim | rim | r/im | ⭕
+traction | trac·tion | trac/tion | 🏎️
+gear | gear | g/ear | ⚙️
+grind | grind | gr/ind | 🌾
+technology | tech·nol·o·gy | tech/nol/o/gy | 💻
+rod | rod | r/od | 📏
+vehicle | ve·hi·cle | ve/hi/cle | 🚗
+durable | du·ra·ble | du/ra/ble | 🧱
+# reading
+> A Revolution in History
+> What would your world be like without wheels? Think of all the things you do every day that use a wheel or wheels. Wheels help you get to many places where you want to go. But did you know that we depend on wheels for much more than just transportation? We need wheels for the presses that print our magazines and books. We need them for the washers and driers that clean our clothes, the mills that make flour for our bread. And of course, we need them to have fun on skateboards and roller coasters.
+> The oldest wheels that we know about are potter's wheels. A potter's wheel looks like a small, round table without legs. To make a pot, a piece of clay is placed on the center of the wheel. The potter rotates the wheel while the clay is shaped. Potter's wheels make it easier and faster to shape the round objects that you use every day, such as bowls, plates, and vases.
+> Before the invention of the wheel, it was difficult to transport heavy things, such as building stones. These stones had to be hauled on a platform. The platform was rolled forward on top of logs. It was hard work, and it took a long time. However, about 5,000 years ago, someone living in Sumer, which is the place we now call southern Iraq, had a great idea. What if pegs were used to hold the rolling logs in place? And what if wooden disks were fastened to the end of each log to make them stronger? That way, animals such as oxen could easily pull a heavy load on the new wheeled cart. Today, we call this a wheel and axle system, and it works really well.
+> Early wheels were made out of solid disks of wood. They were heavy and didn't turn fast. Then the Egyptians found a solution to this problem by making ring-shaped wheels, which were lighter and turned faster. They discovered that adding metal to the rim made the wheel more durable and gave it better traction. They attached straight rods called spokes to the center of the wheel to make it strong. These new wheels were used in light horse-drawn carts called chariots. Chariots were like the first cars. People used them to get around, but they also became popular for racing.
+> The wheel didn't just change the way people got from place to place. In Syria and Asia, people started using the running water of a river to turn large water wheels. When the wheel turned, it created the power to operate a simple machine called a mill. A water mill could grind wheat into flour much faster than a person could. This invention means that millions of loaves of bread are made all around the world every single day!
+> Lots of machines of every size and shape, from watches to printing presses, wouldn't work without wheels. Many machines depend on small wheels that fit together, called gears. This is great because when one wheel turns, the next wheel turns. The energy is transferred from one gear to another. That is the same mechanical movement that keeps a watch ticking, a car engine running, a bicycle's wheels turning, and a press printing.
+> Even today, the wheel is still inspiring new technology. Did you know that there's an electric unicycle and an automatic suitcase that will move by itself? There's even a new metal wheel that is designed especially for vehicles that are going to explore the surface of the planet Mars. Wheels will always be a central part of life, and the need for them is going to grow as long as humans think, invent, and change.
+RC | What are the oldest wheels that we know about? | potter's wheels | water wheels | chariot wheels
+RC | Where was the first wheel and axle system invented? | in Sumer | in Egypt | in Syria
+RC | What do we call small wheels that fit together? | gears | spokes | rims
+RT | What change did the Egyptians make to the wheel? | The Egyptians made ring-shaped wheels, which were lighter and turned faster.
+RT | What could a water mill do? | A water mill could grind wheat into flour much faster than a person could.
+RT | What new technology can move by itself? | An automatic suitcase can move by itself.
+RS | How were heavy stones transported before the wheel was invented?
+RS | What is the most important use of wheels? Give your reasons.
+# grammar
+G | The sun will rise at 6:05 tomorrow.
+G | Wheels will always be a central part of life.
+G | I'm going to visit my uncle next week.
+G | Look at those big, black clouds.
+G | It's going to rain tonight.
+G | Someone will find a cure for cancer someday.
+G | He's going to travel to Spain this summer.
+G | Who do you think will win the race?
+# speak-write
+SP | A: Where are you going on your trip? | B: We're going to {the beach}. | A: How will you get there? | B: First, we'll take the bus. Then we'll take the train. | the beach / another country / the mountains / the zoo / the city / the museum
+SW | This summer, I plan {to visit my grandma}. I hope {to swim in the sea}. I promise {to study English every day}. | Write three sentences about your plans using a verb followed by to.
 ## U6 | Planet SinRota | Why are wheels important?
 # learn
 What does "tedious" mean? | boring and taking a long time
@@ -137,6 +391,52 @@ P | 🔭🪐🛹🚂 | What did Zoog discover? Tell the story.
 C | Is a pogo stick or a bicycle better for getting to school? | A pogo stick | A bicycle
 Z | Name three machines with wheels that Zoog drew.
 S | What are you doing after school tomorrow? Say two arrangements.
+# words
+obedient | o·be·di·ent | o/be/di/ent | 🐕
+fortunate | for·tu·nate | for/tu/nate | 🍀
+tedious | te·di·ous | te/di/ous | 😴
+exciting | ex·cit·ing | ex/cit/ing | 🎢
+fragile | frag·ile | frag/ile | 🥚
+determined | de·ter·mined | de/ter/mined | 💪
+daring | dar·ing | dar/ing | 🪂
+foolish | fool·ish | fool/ish | 🤪
+thrilling | thrill·ing | thrill/ing | 🎉
+courageous | cou·ra·geous | cou/ra/geous | 🦁
+risky | risk·y | risk/y | ⚠️
+fascinated | fas·ci·nat·ed | fas/ci/nat/ed | 🔭
+settlement | set·tle·ment | set/tle/ment | 🏘️
+blurry | blur·ry | blur/ry | 🌫️
+# reading
+> Planet SinRota
+> "Zoog, hurry!" yelled Zoog's dad. "Your grandmother is sick. She has a fever and purple spots. Take your pogo stick and fetch Doctor P721."
+> The obedient Zoog bounced off to the doctor's house as fast as his pogo stick would carry him. The doctor and his four assistants came and carried Zoog's fragile grandmother away on a special bed to make her better. Fortunately, people always got better on planet SinRota, where illness rarely lasted more than 15 hours.
+> Zoog was tired. Earlier, he'd taken his pogo stick and hopped to school and back, a distance of 5.36 kilometers each way. He went up to his bedroom and looked through the brand-new telescope he'd received for his birthday the previous week. Zoog's life was tedious. His planet had no books, no clocks, no computers, and no TV. Far away in another settlement, Zoog had cousins, but there was no mail, so he couldn't communicate with them. Although he longed for a more exciting life, he felt fortunate that he had good friends and no serious problems.
+> It was dark 17.7 hours a day on SinRota. Zoog searched the night sky. He was determined to find the magical planet he'd seen many nights in a row. Suddenly, there it was! The blue planet! Zoog gazed at it. The picture was blurry, but he could see areas of water, distant mountains, and patches of bright light. "Who lives there," he wondered, "and what do they do?" If he looked hard at one spot for a long time, he occasionally glimpsed small figures with strange, circular objects propelling them along.
+> Not only did Zoog have to go to school on a pogo stick, but it was also his job to do the shopping for his parents every evening. This meant dragging a heavy sled behind him to and from the store. At the store, he stacked up delicious orange munchballs and green yumsters on the sled and pulled it home before darkness fell. Everything he bought was grown in his settlement because it was too risky to bring food from other parts of Planet SinRota. Nobody could drag sleds further than a few kilometers, and the food would be spoiled long before it could reach another settlement. Even the animoogs couldn't drag sleds very far, so it was foolish to attempt long journeys. Zoog had never left the area he lived in: 5.36 kilometers was his limit, but he was courageous, and dreamed of exploring further.
+> Zoog looked through his telescope again. He adjusted it slightly, and he was fascinated to see activity on the blue planet. The blurry figures he'd seen before suddenly came into sharp focus! There were figures driving around in vehicles of all shapes, sizes, and colors. There were figures riding bicycles. There were huge airplanes zooming fast up runways and flying into the air. It was thrilling! He also saw figures sitting on buses and trains, moving fast from one city to another. In a park, he could see small figures, children, playing on skateboards and in-line skates. They were leaping through the air. It looked incredibly daring. It was then that he had his big idea.
+> "I know what I'm going to do!" said Zoog. He began to draw pictures of everything he could see, these wonderful machines with circles that made them move! Trains, planes, bicycles, skateboards, cars, buses, wheelchairs, ambulances, taxis, carts, wheelbarrows, motorcycles, trucks, roller coasters, Ferris wheels, helicopters, strollers, windmills... Zoog drew all night long.
+> In the morning, Zoog ran downstairs and showed his parents the pictures. And in just a few short days, the history of SinRota changed completely and forever.
+> Thanks to Zoog and his telescope, planet SinRota now has wheels! Things will never be the same again.
+RC | How does Zoog go to school? | on a pogo stick | by bus | in his dad's car
+RC | Why does SinRota's history change? | Zoog sees wheels | Zoog has a pogo stick | Zoog sees oceans
+RC | What is the blue planet? | Earth | Mars | Jupiter
+RT | Why was Zoog's life tedious? | His planet had no books, no clocks, no computers, and no TV.
+RT | How does Zoog bring the groceries home? | He drags a heavy sled behind him to and from the store.
+RT | What did Zoog do all night long? | Zoog drew pictures of the machines with circles all night long.
+RS | Why was it too risky to bring food from other parts of SinRota?
+RS | What did Zoog see on the blue planet? Tell us two things.
+# grammar
+G | We are meeting our friends at 2:00 on Friday.
+G | I'm seeing a movie on Tuesday afternoon.
+G | The moon will rise at ten o'clock tonight.
+G | Things will never be the same again.
+G | I'm going to take a music class next year.
+G | What are you doing after school?
+G | How old will you be in five years?
+G | I'm meeting my friends at the pizza place tomorrow.
+# speak-write
+SP | A: Oh, no! {I missed the bus}. What should I do? | B: Why don't you ask your dad for help? | A: Good idea. Anything else? | B: You should tell your teacher what happened. | I missed the bus / My bicycle has a flat tire / I forgot my homework / I lost my key / I broke my skateboard / I'm late for school
+SW | Last week, I {drew a picture of a car}. Yesterday, I {felt very happy} because {my team won the game}. | Write three sentences about last week using past tense verbs like drew, felt, became, dug, gave, and lit.
 ## U7 (partial) | Magdi and the Dolphin | How do animals communicate?
 # learn
 What does "glide" mean? | to move smoothly and quietly through water or air
@@ -160,6 +460,56 @@ P | 🐬🌊👦🎣 | What is happening? Tell the story in your own words.
 C | Which is more fun, swimming in the sea or jogging on the beach? | Swimming | Jogging
 Z | Name three ways to move in water.
 S | Tell us something your friend said yesterday. Use said that.
+# words
+race | race | r/ace | 🏁
+drift | drift | dr/ift | ☁️
+glide | glide | gl/ide | 🐟
+wade | wade | w/ade | 🚶
+paddle | pad·dle | pad/dle | 🛶
+dive | dive | d/ive | 🤿
+splash | splash | spl/ash | 💦
+propel | pro·pel | pro/pel | 🐋
+float | float | fl/oat | 🛟
+sprint | sprint | spr/int | 🏃
+jog | jog | j/og | 👟
+plod | plod | pl/od | 🐴
+hook | hook | h/ook | 🪝
+rough | rough | r/ough | 🌊
+# reading
+> Magdi and the Dolphin
+> Magdi looked out of the window and saw clear blue skies. "Yes!" he shouted. "It's a beautiful day! I can go fishing." "Hi, Dad! Bye, Dad! It's a beautiful day! See you later!" shouted Magdi. He was so excited that he was speaking very, very fast. He sprinted out of the house with his fishing rod.
+> "What did he say?" asked his sister as she plodded slowly towards the window to look out at him.
+> "He said that it was a beautiful day for fishing," chuckled Magdi's dad with a big smile on his face. "He's always happy when he goes fishing."
+> Magdi raced to the beach and untied his little red fishing boat. Maybe today I'll catch a fish for dinner! he thought. He waded out into the warm, blue water, pushing the boat until it floated. Then he jumped into it and paddled toward some rocks.
+> Magdi looked over the side of the boat and saw a lion fish. He knew that lion fish were very dangerous; they could sting you. Magdi sat and watched quietly as it dove under the boat and disappeared under a rock. Next, he saw a parrot fish, with its shiny blue, purple, and green scales, gliding through the water. Parrot fish are tasty, he thought. Maybe today I'll catch a parrot fish. Magdi put a piece of bread on the hook of his fishing rod and threw the fishing line into the water. Then he threw more bread into the water to attract the fish. Suddenly, hundreds of fish swam up to the boat. There were bright yellow fish, black-and-white fish that looked like zebras, fish with long noses, and big, fat puffer fish. Magdi knew all their names. He beamed with delight. Maybe I won't catch any fish today, he thought. They're beautiful! Maybe today I'll just watch them. Magdi pulled his paddles into the boat, turned onto his stomach to watch the fish, and fell asleep in the warm sun.
+> Magdi woke up feeling chilly. Looking up, he saw black skies. Big waves were shaking his little red fishing boat, and it was drifting out to sea.
+> Two of Magdi's friends, Malik and Ali, were jogging along the beach. They looked scared. "Hey, Magdi! Magdi!" they shouted. "Come back! There's a storm!" Their words floated across the water, carried by the wind.
+> "What did you say?" Magdi yelled.
+> "We said that there was a storm!" shouted Malik and Ali. "Come back!"
+> Uh-oh! thought Magdi. He tried to paddle towards the beach, but the waves pushed him further away. A huge wave crashed onto his boat, throwing him into the water.
+> "Oh, no! Help! Help!" Magdi cried. But just at that moment, he felt something under the water. A very big something! Then, to his surprise, he was moving through the waves at high speed, heading straight for the beach. He looked down and saw a beautiful, grinning face. It was a dolphin! The dolphin splashed and jumped through the water, carrying Magdi on its back. The dolphin used its powerful tail to propel its body through the water.
+> When they got to the shallow water, the dolphin dropped Magdi on the sand and then swam up and down in front of him.
+> "Thank you, my friend," whispered Magdi. Every day afterward, Magdi and the dolphin played in the ocean. The dolphin taught Magdi tricks, such as how to dive deep down to the ocean floor, how to float, how to glide through the water, and how to stay away from a storm!
+RC | What did Magdi see when he looked out of the window? | clear blue skies | black skies | a big storm
+RC | What did Magdi put on the hook of his fishing rod? | bread | a worm | a small fish
+RC | Who carried Magdi back to the beach? | a dolphin | his friends | a parrot fish
+RT | Why was Magdi chilly when he woke up in the boat? | A storm was coming and the skies were black.
+RT | What did Malik and Ali shout to Magdi? | They said that there was a storm.
+RT | How did the dolphin move through the water? | The dolphin used its powerful tail to propel its body.
+RS | Why did Magdi whisper "thank you" to the dolphin?
+RS | What tricks did the dolphin teach Magdi? Tell us two.
+# grammar
+G | Magdi said that it was a beautiful day.
+G | Tom said that he was working.
+G | He said that he was going fishing.
+G | She said that she didn't like cats.
+G | They said that there was a storm.
+G | His dad said that Magdi was always happy.
+G | What did he say to his sister?
+G | My friend said that she liked dolphins.
+# speak-write
+SP | A: When I was five, I {fell out of a tree}. | B: How did that happen? | A: I was climbing with my brother. Suddenly, I slipped! | B: Oh, no! What happened next? | fell out of a tree / fell off my bike / got lost at the beach / broke my arm / fell into a pool / lost my dog
+SW | We had a big storm last night, but {it cleared up this morning}. {Magdi} went fishing; {a dolphin} saved him. | Write two sentences that join two ideas with a comma and a conjunction or with a semicolon.
 ## U8 | Chatterboxes: Animal Communication | How do animals communicate?
 # learn
 What does "communicative" mean? | willing and able to share information with others
@@ -183,6 +533,52 @@ P | 🐝💃🌸📍 | What are the bees doing? Explain the waggle dance.
 C | Which is the better way to communicate, sounds or body movements? | Sounds | Body movements
 Z | Name three reasons that animals communicate.
 S | Tell us what your teacher told you to do today. Use told that.
+# words
+communicative | com·mu·ni·ca·tive | com/mu/ni/ca/tive | 🗣️
+locate | lo·cate | lo/cate | 📍
+collaborate | col·lab·o·rate | col/lab/o/rate | 🤝
+attract | at·tract | at/tract | 🧲
+threaten | threat·en | threat/en | 🐍
+defend | de·fend | de/fend | 🛡️
+imitate | im·i·tate | im/i/tate | 🦜
+behave | be·have | be/have | 😇
+indicate | in·di·cate | in/di/cate | 👉
+approach | ap·proach | ap/proach | 🦁
+express | ex·press | ex/press | 😊
+produce | pro·duce | pro/duce | 🐯
+territory | ter·ri·to·ry | ter/ri/to/ry | 🗺️
+signal | sig·nal | sig/nal | 🚨
+# reading
+> Chatterboxes
+> Do you think animals can communicate? No? Think again! There are three main types of animal communication, and they all happen for different reasons.
+> Communication Between Animals of the Same Species. Defending Territory and Attracting a Mate: Many animals are communicative. Hippos, for example, communicate underwater and on land, but mostly they communicate underwater, by making noises called grunts and bellows. On land, the volume of their bellows can reach 115 decibels. That's as loud as thunder or a jet plane! They communicate with each other to defend their territory, which is their own space. Hippos bellow when they fight other hippos and when they want to attract a mate.
+> Food: Honeybees do a special kind of dance called the waggle dance when they find nectar, water, or pollen. The dance is like a map of their journey. The dance helps other bees locate the nectar, water, or pollen.
+> Danger! Most animals have predators that want to kill and eat them. Lions, cheetahs, and eagles prey on vervet monkeys, so the monkeys have alarm signals for each predator. When vervet monkeys hear the lion or cheetah signal, they climb trees to protect themselves. When they hear the eagle signal, they hide on the forest floor. Rabbits thump their powerful back paws on the ground to warn other rabbits of danger. Beavers slap their tails hard against the water to scare away any foxes and alligators that approach.
+> Communication Between Animals of Different Species. Warning! Predators threaten their prey, so what animals need is a warning sign. Rattlesnakes have a rattle on the end of their bodies that they shake when they feel threatened. The loud noise scares away predators. Similarly, wolves growl and show their teeth to warn enemies that they will fight.
+> Food: A type of lizard, called a gecko, and an insect, called a treehopper, cooperate with each other. They both eat honeydew, a sweet, sticky liquid that trees produce. The gecko sees the treehopper vibrating its stomach, so it knows that the treehopper is eating honeydew. The gecko shakes its head to indicate to the treehopper that it wants honeydew. The treehopper throws honeydew toward the gecko, which catches it in its mouth. Why does the hopper behave like this? It's possible that the gecko protects the hopper from predators.
+> The honeyguide is a bird that eats beeswax and helps honey badgers find honey. Although it is good at finding beehives, the honeyguide has difficulty getting into the hives. The honey badger eats honey, but it has trouble finding hives, and so these two animals collaborate. The honeyguide expresses itself by making noises and flapping its wings to attract a honey badger. Once the honey badger has climbed a tree and broken open the hive, it eats the honey, and the honeyguide gets to eat, too!
+> Communication Between Humans and Animals: Dolphins, apes, and parrots are the animals that have communicated the most with humans. A famous bonobo ape, Kanzi, was the first non-human to learn language the way a child does, by listening and observing. A scientist said that Kanzi had learned 450 words using a keyboard. He also told us that Kanzi was learning new things every day.
+> Alex was a grey parrot who, like most parrots, could imitate words, but he could also identify objects, colors, and shapes. He died when he was 31. His last words to his trainer, Dr. Pepperberg, were: "You be good. I love you." Dr. Pepperberg said Alex had started to learn the alphabet. Every time Alex got a letter right, he told Dr. Pepperberg that he wanted a nut!
+RC | Where do hippos mostly communicate? | underwater | in trees | on the sand
+RC | How do honeybees communicate? | with a dance | with grunts | with a song
+RC | What do vervet monkeys' alarm signals warn about? | danger | food | the weather
+RT | Why do hippos bellow? | Hippos bellow to defend their territory and to attract a mate.
+RT | What do rabbits do to warn other rabbits of danger? | Rabbits thump their powerful back paws on the ground.
+RT | How many words did Kanzi learn using a keyboard? | Kanzi learned 450 words using a keyboard.
+RS | How do the honeyguide and the honey badger collaborate?
+RS | What could Alex the parrot do? Tell us two things.
+# grammar
+G | He told us that Kanzi was learning new things.
+G | A classmate asked the scientist what Kanzi was learning.
+G | She said that she was learning about animal communication.
+G | He told me that he was studying about crocodiles.
+G | I asked my father what time it was.
+G | Wei told me that he was interested in wild animals.
+G | Alex told Dr. Pepperberg that he wanted a nut.
+G | How many words do you know?
+# speak-write
+SP | A: What did you learn about animals? | B: I learned that {honeybees communicate by dancing}. | A: What else did you learn? | B: I learned that hippos bellow to defend their territory. | honeybees communicate by dancing / hippos bellow underwater / rabbits thump their back paws / rattlesnakes shake their rattles / wolves growl and show their teeth / parrots imitate words
+SW | {Dolphins} are communicative animals. {They} use sounds and movement. Everybody {likes} dolphins. | Write three sentences about an animal, and make sure each pronoun and verb matches its noun.
 ## U9 (partial) | Journey Back in Time: Ancient Civilizations | What can we learn from ancient civilizations?
 # learn
 What does "civilization" mean? | a society with its own culture, cities and way of life
@@ -206,6 +602,50 @@ PT | 🏛️📜⚱️🏺 | Write a question about this ancient civilization.
 C | Is it better to keep old traditions or to make new ones? | Keep old traditions | Make new ones
 Z | Name three question words.
 S | Ask your partner three questions about what they did yesterday.
+# words
+culture | cul·ture | cul/ture | 🎭
+civilization | civ·i·li·za·tion | civ/i/li/za/tion | 🏛️
+contribution | con·tri·bu·tion | con/tri/bu/tion | 🎁
+process | proc·ess | proc/ess | ⚙️
+tradition | tra·di·tion | tra/di/tion | 🎎
+development | de·vel·op·ment | de/vel/op/ment | 🌱
+achievement | a·chieve·ment | a/chieve/ment | 🏆
+device | de·vice | de/vice | 🧭
+custom | cus·tom | cus/tom | 👘
+benefit | ben·e·fit | ben/e/fit | 👍
+ceremony | cer·e·mo·ny | cer/e/mo/ny | 💒
+product | prod·uct | prod/uct | 📦
+voyage | voy·age | voy/age | ⛵
+ancient | an·cient | an/cient | 🏺
+# reading
+> Journey Back in Time
+> Imagine traveling back in time! Who do you see? Who sees you? Where would you go? What amazing things might you discover there? Many countries have made contributions to our modern life. Some have invented things; others have given us art, music, and stories.
+> Mesopotamia: You start your journey in ancient Mesopotamia. That's a place we now call Iraq. Mesopotamia was between two huge rivers: the Euphrates and the Tigris. The people there needed good boats to travel on these rivers so they could explore and trade. So, five thousand years ago, the Mesopotamians invented a new type of sailboat. Their design is still being used today!
+> One of these sailboats can take you to many different places along the route of your journey. Before you leave Mesopotamia, be sure to visit a city called Sumer. Many things were invented there. What Sumerian invention can you take on your journey? Their most important invention was something you can take with you anywhere: writing! The Mesopotamians in Sumer found a way to make pictures on clay tablets (flat pieces of clay) to tell a story.
+> Egypt: From the Tigris River, you sail all the way to the Mediterranean Sea. Now you can see the coast of Egypt. The Egyptians were very good at math, medicine, architecture, and sculpture. They had a rich culture of art, music, and a form of writing called hieroglyphics. They learned to make paper from a plant called papyrus. This development means that today, we benefit from the invention of paper in books, magazines, and newspapers.
+> China: The next country you visit cannot be reached by sailboat. China is over 5,000 miles away from Egypt. You will be tired when you reach China, but your trip is not finished. You have one more long voyage to make, across the Pacific Ocean. Luckily, the Chinese have invented a device called a compass. This is a very important invention. It helps you find your way on land or sea by always pointing to the north. It was originally invented to help Chinese sailors navigate. Now we have compasses in many products we use, like our cell phones and in our cars, so no one needs to get lost.
+> Mexico: Using your compass, you can sail all the way across the Pacific Ocean to Mexico. Take a look at a map. That's quite an achievement! There, you will explore another ancient civilization: the Maya. This was a very advanced civilization, with many interesting customs and traditions. The Maya created and discovered many important things using only very simple tools. They were excellent astronomers and mathematicians. They developed a written language using hieroglyphs, and they built huge pyramids and sculptures. The Maya produced many different goods, including tools, jewelry, and cloth. They also made a new kind of drink by mixing cocoa beans with spices, water, and chilies. They used the drink in special ceremonies and to make people healthy. Though the special Mayan drink tasted bitter, what they made using this process was actually a kind of chocolate. Until the Maya made this contribution, no one had ever tasted chocolate before.
+> You have sailed on a Sumerian boat, found your way with a Chinese compass, and you can write all about your journey on some Egyptian papyrus!
+RC | What did the Mesopotamians invent five thousand years ago? | a sailboat | a compass | paper
+RC | Where was paper invented? | Egypt | China | Mexico
+RC | Which device always points to the north? | a compass | a clay tablet | a telescope
+RT | What two things did the ancient Mesopotamians invent? | They invented a new type of sailboat and writing.
+RT | Why is a compass important? | It helps you find your way on land or sea by always pointing to the north.
+RT | What did the Maya mix to make their chocolate drink? | They mixed cocoa beans with spices, water, and chilies.
+RS | What were the Egyptians good at? Tell us two things.
+RS | Which invention in the narrative do you think is the most important? Why?
+# grammar
+G | Who did Finn see?
+G | Who saw Finn at home?
+G | Who did you write to?
+G | What are you watching?
+G | Who helped you with your homework?
+G | Who are you traveling with?
+G | Where are you going tomorrow?
+G | Who did you see yesterday?
+# speak-write
+SP | A: What invention do you think is important? | B: I think the {compass} is a very important invention. | A: Who invented it? | B: It was invented a long time ago, and we still use it today. | compass / sailboat / paper / whiteboard / telephone / computer
+SW | {Madrid} ({the capital of Spain}) is a beautiful city. {Mr. Sonn} ({my math teacher}) lives near my house. | Write two sentences that use parentheses to give extra information.
 ## U10 (partial) | Choco Choco Boom Boom! | What can we learn from ancient civilizations?
 # learn
 What does "creamy" mean? | smooth and thick like cream
@@ -229,6 +669,59 @@ P | 🚂🍫🏰🇧🇪 | Where is Akiko going? Tell the story.
 C | Which is better, crunchy chocolate or smooth chocolate? | Crunchy | Smooth
 Z | Name three words that describe how food tastes.
 S | Ask your partner two yes or no questions about food and get short answers.
+# words
+delicious | de·li·cious | de/li/cious | 😋
+creamy | cream·y | cream/y | 🍦
+spicy | spic·y | spic/y | 🌶️
+nutty | nut·ty | nut/ty | 🥜
+ladle | la·dle | la/dle | 🥄
+sticky | stick·y | stick/y | 🍯
+crunchy | crunch·y | crunch/y | 🍎
+runny | run·ny | run/ny | 🧈
+smooth | smooth | sm/ooth | 🍫
+whirring | whir·ring | whir/ring | 🌀
+booming | boom·ing | boom/ing | 📢
+spot | spot | sp/ot | 👀
+dizzy | diz·zy | diz/zy | 😵
+famous | fa·mous | fa/mous | ⭐
+# reading
+> Choco Choco Boom Boom!
+> The wheels on the train seemed to be talking to Akiko. They made a rhythmic, whirring noise: choco boom boom, choco choco boom boom, choco boom boom.
+> "Brussels. Capital of Belgium. Next stop!" said the guard in a booming voice. "Is this your stop?" he asked.
+> "Yes, it is," replied Akiko excitedly. "Chocolate City!" Akiko loved chocolate, but what she wanted to taste most of all was Belgian chocolate. Everyone said that it was the best chocolate in the world.
+> Akiko glanced quickly at her map and ran down a long street. The air was full of delicious smells, creamy, nutty smells. Akiko breathed deeply. Soon, she thought, she would find a store and she would buy a selection of Belgian chocolates. Akiko turned a corner. In front of her, there was a palace belonging to the King and Queen of Belgium. Looking up at the roof, Akiko spotted a black, yellow, and red flag, and beyond the palace, a big town square. Maybe I'll find my chocolate there, she thought.
+> As Akiko skidded into the square, she couldn't believe her eyes. All around her, there were massive buildings decorated with statues, and flower sellers were selling red, yellow, and white flowers.
+> "Excuse me," Akiko said to a man selling French fries and spicy sausages. "Is there a chocolate store near here?"
+> "Yes, there is," laughed the man. "There's one right down that street. It makes crunchy chocolate, smooth chocolate - all kinds of chocolate!"
+> Akiko zoomed straight into the store. Her heart was pounding: choco boom boom, choco choco boom boom.
+> "May I please have five of your best chocolates?" Akiko asked the man behind the counter.
+> "Of course," he replied, selecting the chocolates. "And this extra one," he said, handing her a perfectly round chocolate, "is extremely special. It's called a praline." Akiko closed her eyes and bit the chocolate exactly in half. Everything went dark and she felt slightly dizzy. Her heart was racing again: choco boom boom, choco choco boom boom. She opened her eyes, and to her astonishment, she saw a strange kitchen with a large stove, a wooden table, and shiny pots and pans everywhere. Stirring hot, sticky, runny chocolate in one of the pots was a man who looked just like the man in the store, but he was wearing strange, old-fashioned clothes. "Welcome," he said softly. "I've been expecting you."
+> Akiko approached the man, sniffing the delicious smells around her.
+> "Do you smell that?" he whispered. "It's a praline, my latest invention. People will love it!"
+> Akiko was confused. Pralines had been invented in 1912 by someone called Jean Neuhaus. Unless ... that was it! The special praline she'd bitten in half had taken her back in time! And the man standing before her was the famous Jean Neuhaus.
+> "Let's make some," said Jean. Together, Jean and Akiko mixed butter, sugar, chocolate, and almonds, and ladled it into small molds to set. Akiko was the happiest she'd been in her life. Not only had she tasted Belgian chocolates, but now she knew the recipe for pralines.
+> "Time to go now," said Jean as he poured out the last drop of chocolate. "You know what to do, don't you?" "Yes, I do," said Akiko. And she swallowed the other half of the praline she'd been given.
+> Everything went dark again, and the dizziness Akiko had felt earlier returned. Choco boom boom, choco choco boom boom went her heart, and suddenly there she was, back in the store. The man behind the counter winked at her, and with a big smile, he said, "Never forget. Belgian chocolate is the very best in the world."
+RC | How does Akiko travel to Belgium? | by train | by bus | by plane
+RC | Where does Akiko find chocolate? | in a store | in a palace | in a square
+RC | How did Akiko feel when she bit the praline in half? | dizzy | sick | hungry
+RT | Who invented pralines, and when? | Jean Neuhaus invented pralines in 1912.
+RT | What did Jean and Akiko mix to make pralines? | They mixed butter, sugar, chocolate, and almonds.
+RT | What did Akiko spot on the roof of the palace? | She spotted a black, yellow, and red flag.
+RS | How did Akiko go back in time? Tell us what happened.
+RS | Why was Akiko the happiest she'd been in her life?
+# grammar
+G | Is there a chocolate store near here? Yes, there is.
+G | Do you like my new sneakers? Yes, I do!
+G | Has it stopped raining? No, it hasn't.
+G | Did you have pizza for dinner last night?
+G | Can you snowboard? No, I can't.
+G | Are you fifteen years old? No, I'm not!
+G | Have you ever made chocolate? Yes, I have.
+G | Did your family ever go to Belgium?
+# speak-write
+SP | A: How about we {go to a movie} together? | B: That's a great idea! | A: Should we have a snack first? | B: OK, let's do that. | go to a movie / have a snack / watch a TV show / go to the mall / study for the test / make chocolate
+SW | I like many different foods, for example, {chocolate}, {apples}, and {pizza}. I can do several things well, such as {swimming} and {drawing}. | Write two sentences that give examples with for example, for instance, or such as.
 ## U11 | What's So Good About Mountains? | Why are mountains important?
 # learn
 What does "glacier" mean? | a very large, slow-moving river of ice
@@ -252,6 +745,52 @@ P | 🏔️❄️💧🌾 | How do mountains give us water and food? Explain.
 C | Which is more important, mountains for water or mountains for food? | Water | Food
 Z | Name three animals that live in the mountains.
 S | Describe the water cycle in three sentences.
+# words
+glacier | gla·cier | gla/cier | 🧊
+peak | peak | p/eak | ⛰️
+altitude | al·ti·tude | al/ti/tude | 🏔️
+valley | val·ley | val/ley | 🏞️
+steep | steep | st/eep | 🧗
+slope | slope | sl/ope | ⛷️
+hill | hill | h/ill | 🌄
+terrace | ter·race | ter/race | 🌾
+effective | ef·fec·tive | ef/fec/tive | ✅
+vapor | va·por | va/por | 💨
+resources | re·sourc·es | re/sourc/es | 🪵
+condenses | con·dens·es | con/dens/es | 💧
+impossible | im·pos·si·ble | im/pos/si/ble | 🚫
+impatient | im·pa·tient | im/pa/tient | ⏳
+# reading
+> What's So Good About Mountains?
+> Water! When you're thirsty, you drink water. When you want to take a shower, you turn on a faucet. But did you ever think about where all the water comes from? One reason mountains are important is that they provide fresh water for over half of all the people in the world. That's about three-and-a-half billion people! Can you imagine how much water is used by all those people?
+> When the sun warms water in rivers and oceans, the liquid is transformed into water vapor that rises into the air. When enough water vapor cools, it condenses, and small drops of water are formed. The drops of water turn into clouds. In the clouds, small drops of water join to make larger drops. When those drops become too heavy, they are released as rain or snow. Some rain soaks into the ground, and some of the rain runs over the ground into streams, rivers, lakes, and the ocean. This process is called the water cycle.
+> Mountains can affect the water cycle. The size and shape of a mountain pushes the water vapor up toward the mountaintop. When water drops fall on mountains, most of the water is stored as snow, and as ice in glaciers. When the snow melts in the spring, the water flows down the slopes into streams, waterfalls, and rivers. Mountains are effective in storing water and are sometimes called the "water towers" of the world.
+> All of the big rivers on Earth start in the mountains. For example, in India, the Ganges River starts in the Himalayan mountain range and flows for 2,500 kilometers into the Bay of Bengal and the Indian Ocean. Another example is the Rio Grande, which begins in the Rocky Mountains in the United States and flows all the way down to the Gulf of Mexico.
+> Animals! Mountains are also important because they provide homes to many animals that don't exist anywhere else on Earth. You can find mountain gorillas in the mountains of East Africa and special bears called spectacled bears in the Andes. There are also snow leopards in the Himalayas.
+> Mount Cameroon is a mountain that is also one of Africa's largest active volcanoes, rising to more than 4,000 meters at its peak. It has 210 different species of birds and 70 species of butterflies. Mountains are home to many amazing animals and birds. Unfortunately, some of these animals are becoming rare. This is happening because people are taking more land and using more resources, such as water and wood. They are building farms and roads in the mountains. This means animals have less space to make their homes and find food.
+> Food! Did you know that 80 percent of the food we eat comes from just 20 types of plants? Six of these plants are found in the mountains! Do you like French fries? Well, guess what? Potatoes first came from the Andes, the world's longest mountain range, which stretches 7,000 kilometers through South America. Today, farmers in the Andes grow 2,000 different types of potatoes.
+> In the mountains of Nepal, about 2,000 different types of rice are farmed. Corn is found in the Sierra Mountains of Mexico. And the best quality tea and coffee are grown at an altitude of about 1,500 meters. Farmers sometimes build terraces into steep mountainsides and hills to grow crops and help control the flow of water. The terraces made by Inca Indians 500 years ago are still used by farmers in the Andes Mountains in Peru.
+> Remember how water from rain and snow flows down mountains? With rich soil and a lot of water, mountain valleys are often good places to grow fruits, vegetables, and other crops.
+RC | In the mountains, where is most of the water stored? | in snow and ice | in the trees | in rocks
+RC | How many species of birds live on Mount Cameroon? | 210 | 70 | 2,000
+RC | Which food first came from the Andes? | potatoes | oranges | seaweed
+RT | Why are mountains called the water towers of the world? | Mountains are effective in storing water.
+RT | Where does the Ganges River start? | The Ganges River starts in the Himalayan mountain range.
+RT | Why do farmers build terraces into steep mountainsides? | They build terraces to grow crops and help control the flow of water.
+RS | Why are some mountain animals becoming rare?
+RS | Why are mountains important? Tell us two reasons.
+# grammar
+G | People find corn in the mountains.
+G | Corn is found in the mountains.
+G | Are potatoes grown in the Andes?
+G | Potatoes are eaten all over the world.
+G | Pizza is eaten in many countries.
+G | Mountains are called the water towers of the world.
+G | Rice is not grown in England.
+G | French fries are made from potatoes.
+# speak-write
+SP | A: Where would you like to live? | B: I'd like to live {at the top of the mountain}. | A: Why would you like to live there? | B: Because if I lived there, I could ski down the slopes every day. | at the top of the mountain / at the bottom of the mountain / in a valley / on a hill / near a glacier / on a steep slope
+SW | Mountains give us many things: {water}, {food}, and {homes for animals}. I like to do these activities in the mountains: {hiking, skiing, and camping}. | Write two sentences with a colon and a list of at least three things.
 ## U12 | The Lost Explorer | Why are mountains important?
 # learn
 What does "jagged" mean? | with sharp, uneven points
@@ -275,6 +814,68 @@ P | ⛰️🗼⛈️☕ | What happened to Samantha and Robert? Tell the story.
 C | Is a weather station or a secret fort more exciting? | A weather station | A secret fort
 Z | Name three things you can find on a mountain.
 S | Tell us about a party using the past passive. Say three sentences.
+# words
+endless | end·less | end/less | ♾️
+stammer | stam·mer | stam/mer | 😰
+awestruck | awe·struck | awe/struck | 😮
+jagged | jag·ged | jag/ged | 🪨
+pointy | point·y | point/y | 🦊
+miniature | min·i·a·ture | min/i/a/ture | 🐜
+stern | stern | st/ern | 😠
+arch | arch | ar/ch | 🌉
+mutter | mut·ter | mut/ter | 🤫
+squirm | squirm | squ/irm | 🪱
+scowl | scowl | sc/owl | 😡
+stretch | stretch | str/etch | 🙆
+silhouette | sil·hou·ette | sil/hou/ette | 👤
+distant | dis·tant | dis/tant | 🔭
+# reading
+> The Lost Explorer
+> "Listen, a waterfall!" Samantha said.
+> Her brother Robert listened. There was the tinkling, musical sound of water from somewhere up the path. The dark silhouette of Entwhistle Peak, a jagged mountain in the Andes range, towered above them against the sky.
+> Samantha looked for her parents, who were picnicking in the field below, and then dashed off after Robert. They stopped beside an outcrop of pointy rocks and a beautiful, deep pool. From high above, a thin stream of water tumbled, catching the light.
+> "It's so beautiful here," Samantha sighed. Robert shielded his eyes, scanning the sky. Miniature birds circled the summit of the mountain.
+> "There's an old stone tower up there," Robert said. "I bet it's Sir Geoffrey Entwhistle's secret fort."
+> Samantha knew the mountain was named for the famous explorer, but she also had read her nature guide back at the lodge.
+> "It's hardly a secret on top of the mountain," Samantha said, teasing. "Besides, it's an old weather station." "We'll see about that," Robert muttered. "Wait!" she called, but he was gone.
+> The thin path disappeared around a rocky bend, and when Samantha finally scrambled up, her brother was nowhere to be seen. The open sky was slate gray and filled with clouds; a storm was rolling in. Behind her, the descent to the valley was very steep.
+> My brother and his crazy ideas, she thought.
+> A stick snapped and Samantha jumped. Robert was bounding out from beneath some trees.
+> She scowled at her brother and folded her arms across her chest. "You scared me!"
+> "I told you it was his secret fort!" Robert said, pointing.
+> A set of stone stairs was carved into the side of the mountain beneath a gated arch. The steps twisted around the peak.
+> "This is it!" he called over his shoulder. Samantha scrambled after him, and they emerged before a stern-looking tower. "The explorer's hiding place!" Robert said, triumphant.
+> "The weather station," Samantha corrected. As she spoke, the tower door swung open, and a kind-looking old man stood in the doorway. "Hello there," the man said. "It's not often I get visitors."
+> "Who ... who are you?" Robert stammered.
+> "I am a scientist. The mountain is a great place to observe nature and weather patterns. For over twenty years, the weather forecasts that were shown on TV were mine." He smiled at the pair. "And who are you?"
+> "I am Samantha," she said. "And this is my brother Robert."
+> Robert scowled; his face was flushed and embarrassed.
+> "Don't mind him. He thought you were a lost explorer. Sir Geoffrey Entwhistle."
+> "Lost, is he? He must not be a very good explorer," the old man said. "Well, Samantha and Robert, come in for a cup of hot cocoa. The storm will clear soon." Inside there was a crackling fire, and shelves held old books and strange metal objects.
+> "I have the best job in the world," the old man said. "This mountain is not only a scientific outpost, it is a place of great beauty. I've been here for many years." Just then, the sun peeked out from behind the storm clouds. The view was breathtaking; the mountain range stretched out in all directions and the sky was reflected in a distant lake. Samantha and Robert marveled at the sight.
+> "I'll show you the way home," the old man said, opening the door. "If you trust me to not get lost." He winked at Robert.
+> "Wait," Samantha said. "We haven't learned your name!"
+> "Ah," he said. "My friends call me Geoffrey."
+RC | What did Robert think the old stone tower was? | a secret fort | a weather station | a hotel
+RC | Where were Samantha and Robert's parents? | having a picnic | at the lodge | at home
+RC | What is the old man's job? | a scientist | a doctor | a teacher
+RT | Why did Robert's face flush when Samantha introduced him? | His face flushed because he was embarrassed.
+RT | What did the old man offer the children? | He offered them a cup of hot cocoa.
+RT | Who was Entwhistle Peak named for? | It was named for the famous explorer Sir Geoffrey Entwhistle.
+RS | Why is the mountain a good place for the scientist to work? Tell us one reason.
+RS | What did Samantha and Robert see from the tower when the sun came out?
+# grammar
+G | Mount Everest was climbed in 1953.
+G | Sir Edmund Hillary and Tenzing Norgay climbed Mount Everest.
+G | My mom's favorite vase was broken.
+G | The weather forecasts were shown on TV.
+G | Last year, a big party was organized in my town.
+G | A lot of candy and cakes were eaten.
+G | Was the mountain named for a famous explorer?
+G | The stone stairs were carved into the mountain.
+# speak-write
+SP | A: I'm going to the mountains on a cold and snowy day. Do you think I should {take a warm coat}? | B: Yes, I think you should. | A: Would it be a good idea to take some climbing equipment? | B: Yes, that sounds like a good idea. | take a warm coat / wear boots / take a map / bring hot cocoa / take an umbrella / go hiking
+SW | A book was {written} about {the mountain climber}. After many years, the name of the explorer was {known} all over the world. | Write two sentences in the past passive using irregular past participles.
 ## U13 | The Sound of Money and the Smell of Soup | Why do we use money?
 # learn
 What does "greedy" mean? | always wanting more of everything
@@ -298,6 +899,68 @@ P | 🍲👃💰⚖️ | What is the problem in this story? Explain.
 C | Should people pay for smells and sounds? | Yes | No
 Z | Give the adverb for these adjectives: polite, brave, calm.
 S | Describe a person you know using two adjectives and two adverbs.
+# words
+terrifying | ter·ri·fy·ing | ter/ri/fy/ing | 😱
+nervously | ner·vous·ly | ner/vous/ly | 😰
+rudely | rude·ly | rude/ly | 😠
+politely | po·lite·ly | po/lite/ly | 🙏
+fierce | fierce | f/ierce | 🦁
+aggressively | ag·gres·sive·ly | ag/gres/sive/ly | 👊
+delicate | del·i·cate | del/i/cate | 🏺
+bravely | brave·ly | brave/ly | 🦸
+greedy | greed·y | greed/y | 🤑
+shyly | shy·ly | shy/ly | 😳
+wise | wise | w/ise | 🦉
+calmly | calm·ly | calm/ly | 😌
+muscles | mus·cles | mus/cles | 💪
+tempting | tempt·ing | tempt/ing | 🍲
+# reading
+> The Sound of Money and the Smell of Soup
+> Many more years ago than anyone can remember, there was a young man named Erman who lived in a village in the Kingdom of Atinka, a country far away from everywhere.
+> Erman had little money. In fact, he only had three gold coins. One day, Erman went on a journey to find a job. He traveled over land and sea, through deserts and forests, across rivers and mountains, until he arrived in a city. As he looked around, he was fascinated by the sights, sounds, and smells of the market. There were people selling jewels, spices, leather, delicate vases, and clothes. There were donkeys, sheep, goats, and camels. There were musicians banging drums and playing flutes. Surely here Erman would find a job!
+> Erman saw a sign: ROOM TO RENT. Very nervously, he knocked at the door. A terrifying man with huge muscles opened it.
+> "What do you want?" the man hollered rudely.
+> "A room, please, sir," answered Erman politely.
+> "Three gold coins!" replied the man. He looked fierce. Erman began to shake.
+> "But, but...," said Erman.
+> "Three gold coins!" repeated the man aggressively. Erman had no choice. Handing the man the only three coins he had, he went up to his room.
+> The next morning, Erman woke up early. He was starving! What was that delicious smell? It was a tasty mixture of chicken, carrots, spices, herbs, and garlic. Erman's stomach made a growling noise like a tiger. He galloped down the staircase, following the smell with his nose in the air.
+> In the kitchen, the rude man was stirring a pot of soup as big as a bathtub with a wooden spoon. Several people were waiting to pay for their lunches. Erman turned to the man bravely and said, "May I have some of that mouth-watering soup?"
+> "Three gold coins," yelled the man threateningly.
+> "But, but...," said Erman. He didn't have any gold coins left, so he went back up to his room. He pulled a chair onto his balcony. From there, he could smell the soup with all its tempting flavors.
+> Sniff, sniff, sniff. Erman sucked in the air and imagined he was eating the greedy man's soup.
+> "What are you doing?" yelled the man. He was standing on the street, staring up at Erman. "Nothing," said Erman shyly. "I was just smelling your delicious soup."
+> "You are a thief!" screamed the man. "You have stolen my smells! I will take you to court and make you pay for the smell of my soup!"
+> He dragged Erman down the staircase, along the street, and straight into the law court.
+> In the court, the Hodja, who was a wise man and a judge, was reading a newspaper, as he often did. Everybody asked him to decide who was right and who was wrong. That was the Hodja's job. The Hodja looked at Erman, and then he looked at the terrifying man. "What's the problem?" he asked.
+> "This boy has stolen my smells!" screamed the man. His face was purple with anger.
+> "And you want to be paid for the smells?" asked the Hodja.
+> "Yes, I do!" bellowed the man.
+> "Then I will pay you," said the Hodja calmly. He took three gold coins from his pocket and, one by one, he threw them into a metal bowl.
+> CLANG! CLANG! CLANG!
+> "There you are," said the Hodja, returning to his newspaper. "You can leave now."
+> "But... but... where's my money?" cried the man. The Hodja looked at the man over the top of his newspaper.
+> "I have paid you for the smell of soup with the sound of money," the Hodja said fiercely. "Now, go away!"
+RC | How much money did Erman have when he left home? | three gold coins | a bag of jewels | no money at all
+RC | What did the rude man say Erman had stolen? | his smells | his soup | his gold coins
+RC | Who was the Hodja? | a wise judge | a soup maker | a musician
+RT | Why did Erman go on a journey? | Erman went on a journey to find a job.
+RT | What was the rude man doing in the kitchen? | He was stirring a big pot of soup with a wooden spoon.
+RT | How did the Hodja pay the man? | He paid for the smell of soup with the sound of money.
+RS | Why did Erman sit on his balcony and sniff the air?
+RS | What lesson can we learn from this folk tale? Tell us your idea.
+# grammar
+G | A terrifying man with huge muscles opened the door.
+G | The man repeated the price aggressively.
+G | The Hodja often read a newspaper in court.
+G | Erman knocked at the door very nervously.
+G | The little boy greedily ate all the grapes.
+G | My sister can paint beautiful pictures.
+G | Police officers often chase thieves quickly.
+G | May I have some of your delicious soup, please?
+# speak-write
+SP | A: What do you want right now? | B: Now, I want to save for a {game}. What about you? | A: I want to save for a magazine. What about the future? | B: I need to invest money for a computer. | game / magazine / pair of sneakers / T-shirt / bike / book
+SW | My {brother} is {extremely} {funny}. He tells jokes {really} well. | Write two sentences about a person you know, using adverbs of degree like very, really, or extremely.
 ## U14 | The History of Money | Why do we use money?
 # learn
 What does "barter" mean? | to exchange one thing for another thing without money
@@ -321,6 +984,51 @@ P | 🐄🌾🐚🪙 | How did money change over time? Explain the pictures.
 C | Is paper money or electronic money better? | Paper money | Electronic money
 Z | Name three things people used as money before coins.
 S | What would you do if you had a million dollars? Say two sentences.
+# words
+bank | bank | b/ank | 🏦
+currency | cur·ren·cy | cur/ren/cy | 💱
+coins | coins | c/oins | 🪙
+barter | bar·ter | bar/ter | 🔄
+copy | cop·y | cop/y | 📄
+bill | bill | b/ill | 💵
+spend | spend | sp/end | 🛍️
+pay | pay | p/ay | 💳
+borrow | bor·row | bor/row | 🤝
+exchange | ex·change | ex/change | ↔️
+owe | owe | o/we | 🧾
+lend | lend | l/end | 💸
+shells | shells | sh/ells | 🐚
+valuable | val·u·a·ble | val/u/a/ble | 💎
+# reading
+> The History of Money
+> When Did It All Start? Between 11,000 and 6,000 years ago (no one is completely sure when), people started exchanging cows, sheep, camels, and crops to get the things they needed. This is called bartering. People barter one thing for another thing. Here's how it worked in the beginning:
+> "Hi. I need some flour to make bread. You have wheat. Hmm! What can we exchange?" "Well, I have cows. How about I give you a cow for a field of wheat?" "It's a deal!"
+> From Shells and Feathers to Coins: Around 3,000 years ago, people decided that shells were a good form of money. But why? The answer is simple. Shells are beautiful, they're hard, and they don't break easily, so they last a long time. You can't find shells everywhere, and that makes them precious, so shells became valuable. If people wanted something, they would give shells for it. Other people did the same thing with feathers.
+> Next, about two hundred years later, the first coin was invented in China. The coins were made out of metal. Nowadays, we have small, round coins, but back then, they were made into different shapes in different countries.
+> Later, people used precious metals, like gold and silver, to make coins. In Lydia, which is now part of the country we call Turkey, a mixture of silver and gold was used to make coins. But guess what? Coins are heavy! If you had a lot of coins in your pocket all the time, they would make a hole!
+> Printed Money and Paper Money: About 1,200 years ago, the Chinese started to print money, but it wasn't paper money. They used leather from animals' skins. It wasn't until the seventh century that they decided to use paper. At last the world had its first paper currency. Paper is light and easy to carry. If you had paper money, you wouldn't need so many coins. Strangely enough, it took many more centuries for other countries around the world to start using paper money.
+> One of the problems with paper money was that it was easy to copy. Early banknotes, or bills, were printed in black and white. People who could draw well could easily copy them. Now bills are colorful. They have complicated designs, which are often pictures or portraits of people, and metal threads - long, thin lines that go across the bill. That makes them very difficult for anyone to copy.
+> Invisible Money: We still have paper money and coins, but now we also pay for things electronically. Many people do their shopping online because now you can buy almost anything you want on the Internet. To spend money electronically, we can use cell phones and plastic cards, such as credit and debit cards. Using one of these ways tells the bank to pay another person, store, or restaurant for goods or services. We can borrow money from the bank this way, too. The bank lends us money for a certain amount of time, and we pay back what we owe them later. Maybe one day we won't need coins and bills at all!
+RC | What were the first coins made out of? | metal | paper | leather
+RC | Where was a mixture of silver and gold used to make coins? | in Lydia | in China | in Peru
+RC | What did the Chinese first print money on? | leather | paper | shells
+RT | Why did shells become valuable? | You can't find shells everywhere, so they became precious and valuable.
+RT | Why was early paper money easy to copy? | Early bills were printed in black and white.
+RT | What can we use to spend money electronically? | We can use cell phones and plastic cards.
+RS | What is bartering? Give an example from the text.
+RS | Why is paper money better than coins? Tell us one reason.
+# grammar
+G | If I had a plane, I would fly to Peru.
+G | If I had a bike, I would get to school quicker.
+G | If my friend could fly a plane, we would go to the North Pole.
+G | If I won a prize, I would be very happy.
+G | If I could drive a car, I would drive around the world.
+G | If I had some money, I would buy a new game.
+G | What would you do if you met someone famous?
+G | If you had a plane, I would go with you.
+# speak-write
+SP | A: You have 100 dollars to donate. Who would you help? | B: I would donate the money to a {hospital}. | A: Who would the money help? | B: It would help sick people. What about you? | hospital / school / children's charity / animal clinic / library / zoo
+SW | My {bedroom} is like {a nest}, all cozy and warm. I am as {happy} as {a puppy}. | Write two sentences with similes using as ... as and like.
 ## U15 | One Man's Self-Expression: Underwater Sculptures | How do we express ourselves?
 # learn
 What does "artificial" mean? | made by people, not natural
@@ -344,6 +1052,51 @@ P | 🗿🌊🐠🐚 | What is this art? Describe what you see.
 C | Which is better for art, a gallery or the ocean? | A gallery | The ocean
 Z | Name the five sense verbs.
 S | Describe your favorite food using three sense verbs.
+# words
+design | de·sign | de/sign | ✏️
+innovative | in·no·va·tive | in/no/va/tive | 💡
+remarkable | re·mark·a·ble | re/mark/a/ble | 🌟
+ambitious | am·bi·tious | am/bi/tious | 🏆
+permanent | per·ma·nent | per/ma/nent | 🗿
+settle | set·tle | set/tle | 🏡
+emerge | e·merge | e/merge | 🌱
+artificial | ar·ti·fi·cial | ar/ti/fi/cial | 🤖
+promote | pro·mote | pro/mote | 📣
+enclose | en·close | en/close | 🔒
+suitable | suit·a·ble | suit/a/ble | ✅
+beneficial | ben·e·fi·cial | ben/e/fi/cial | 💚
+algae | al·gae | al/gae | 🟢
+crustaceans | crus·ta·ceans | crus/ta/ceans | 🦀
+# reading
+> One Man's Self-Expression: The Mysterious Underwater World of Jason deCaires Taylor
+> Humans never cease to find innovative ways of expressing themselves. From the early cave paintings that our ancestors drew to the present day, there are millions of examples of self-expression, ranging from music to painting, poetry to dance. They express our feelings as we explore what it means to be human.
+> Imagine swimming in the sea and suddenly, beneath you, seeing a sculpture of a man sitting at a desk with a typewriter! If you went to Grenada, in the West Indies, that's exactly what you'd see. It's just one of the remarkable ideas that has come out of the mind of Jason deCaires Taylor.
+> Taylor is a sculptor, but a sculptor with a difference. Instead of putting his sculptures in a park or an art gallery, he puts them underwater and creates "living" sculptures. Taylor chooses areas of the world where there is clear, shallow water. His underwater exhibitions can be seen in Mexico, Grenada, and the United Kingdom. Scuba divers, snorkelers, swimmers, and tourists in glass-bottomed boats can all see this mysterious world that Taylor has created. Underwater, everything is magnified (it looks bigger) and colors change because the only light underwater is from the surface.
+> One of Taylor's most ambitious exhibitions is The Silent Evolution, a permanent artificial reef in Mexico that occupies an underwater space of 420 square meters. It's made up of 400 life-size sculptures of people.
+> The amazing thing about Taylor's work is that, over time, his sculptures become "living." Algae, a type of ocean plant, begins to grow on the figures, as does coral. Fish swim in between the sculptures; starfish cling to them. The surface of the sculptures changes. At first they look smooth, but later they look bumpy and rough. Different colors emerge as the marine plants settle on their new, man-made habitat. Effectively, the exhibition turns into an artificial coral reef.
+> Taylor's art is a combination of art and science. He works with marine biologists to create habitats for specific species of marine animals. Each sculpture is made from environmentally friendly materials that promote coral growth, and is designed to last for hundreds of years. In an interview, Taylor said, "The coral applies the paint. The fish supply the atmosphere. The water provides the mood. People ask me when it's going to be finished. This is just the beginning."
+> So, what is Taylor's self-expression? His work looks at humans and nature, loss, and hope. Human activity has destroyed some of the largest, most beautiful coral reefs in the world. In just a few decades, 40 percent of them have disappeared, and scientists predict that 80 percent will have vanished by 2050. By creating artificial reefs, Taylor hopes to draw people away from the natural ones and save them. Taylor also feels that modern technology has meant we have lost things that will never return, like the typewriter, which no one uses anymore because we have computers. His Lost Correspondent exhibit expresses this loss.
+> In his exhibition The Anthropocene, which lies on the seabed at a depth of eight meters, Taylor used materials to attract crustaceans such as lobsters, crabs, and shrimp. A life-size copy of a Volkswagen Beetle car encloses a "lobster city." The holes in the bottom part of the car act as doors for the lobsters to swim through, while the holes in the windows are suitable for small fish species to enter the car to hide and to breed. Inside the car, there are living spaces for lobsters. And so, this innovative example of human art turns into something that is positive and beneficial to marine life.
+RC | Where does Taylor put his sculptures? | underwater | in a park | in an art gallery
+RC | What begins to grow on the sculptures over time? | algae and coral | grass and flowers | moss and mushrooms
+RC | What does the Volkswagen Beetle car enclose? | a lobster city | a typewriter | a starfish garden
+RT | What kind of water does Taylor choose for his exhibitions? | He chooses areas with clear, shallow water.
+RT | How many sculptures are in The Silent Evolution? | It is made up of 400 life-size sculptures of people.
+RT | Why does Taylor create artificial reefs? | He hopes to draw people away from the natural reefs and save them.
+RS | How do the sculptures change over time? Tell us two things.
+RS | What does the Lost Correspondent exhibit express? Why?
+# grammar
+G | The sculptures look bumpy and rough.
+G | I felt sick this morning, but I'm OK now.
+G | This lemon smells good, but it tastes bitter.
+G | Your new song sounds fantastic!
+G | That machine sounds like a plane taking off.
+G | The pillow feels very soft.
+G | Why do you look so angry today?
+G | That chocolate cake tastes delicious!
+# speak-write
+SP | A: What kind of self-expression do you think is the most important? | B: I think {art} is the most important form of self-expression. | A: Why do you say that? | B: I think it's important because it shows our feelings. | art / music / poetry / dance / painting / singing
+SW | Most of my {friends} live in {an apartment}. Many of my classmates {play soccer}. There are several {big buildings} in my town. | Write three sentences about people and places you know, using most, many, and several.
 ## U16 | The Tempest | How do we express ourselves?
 # learn
 What does "playwright" mean? | a person who writes plays
@@ -367,6 +1120,65 @@ P | ⛵🌩️👑😱 | What is happening on the ship? Tell the story.
 C | Is it better to watch a play or a movie? | A play | A movie
 Z | Name three people who help make a play happen.
 S | Say three opinions using "It's easy to" or "It's difficult to".
+# words
+cabin | cab·in | cab/in | 🛏️
+advisor | ad·vi·sor | ad/vi/sor | 🧑‍💼
+deck | deck | d/eck | 🚢
+grateful | grate·ful | grate/ful | 🙏
+tempest | tem·pest | tem/pest | ⛈️
+save | save | s/ave | 🛟
+react | re·act | re/act | 😮
+villain | vil·lain | vil/lain | 😈
+stage | stage | st/age | 🎭
+playwright | play·wright | play/wright | ✍️
+massive | mas·sive | mas/sive | 🐘
+petrified | pet·ri·fied | pet/ri/fied | 😱
+crew | crew | cr/ew | ⚓
+elderly | el·der·ly | el/der/ly | 👴
+# reading
+> The Tempest
+> Drama is another form of self-expression, but it can only happen with the aid of different people. First, a playwright writes a play. A play expresses the playwright's feelings about a topic or about life in general. Next, actors perform the play. They bring the playwright's words to life. Actors perform on a stage, and set designers decide how the stage will look. Finally, an audience watches the play. The audience reacts to the words the playwright has written, but also to the way the actors are performing the play.
+> One man, who was both a poet and playwright, became the most famous writer in the English language: William Shakespeare. His plays have been performed all over the world, and in many languages.
+> One of Shakespeare's plays is called The Tempest. A tempest is a violent storm. At the beginning of the play, a ship is sailing from Tunis, in North Africa, to Italy. The ship is carrying some extremely important people. When a massive storm starts at sea, everybody on board is petrified that the waves and wind will break up the ship and throw the passengers and crew into the water. The captain and all the sailors are doing their very best to save the ship and its passengers from the storm.
+> Cast of The Tempest: Alonso, King of Naples (a city in Italy). Ferdinand, Alonso's son. Sebastian, Alonso's son and brother of Ferdinand. Antonio, Duke of Milan (another city in Italy). Gonzalo, an elderly man who is an advisor to the king. Sailors.
+> Act 1, Scene 1. Loud noises of thunder and lightning can be heard because of the terrible storm. A ship's captain and a sailor walk onto the stage.
+> CAPTAIN: Sailor!
+> SAILOR: I'm here, captain. How can I help you?
+> CAPTAIN: Oh, good! Please go and talk to the other sailors. We're in trouble. Talk to the sailors; get them ready. Hurry, before the ship runs into the rocks! Hurry! Go!
+> The captain leaves the stage, fast. More sailors enter the stage.
+> SAILOR: Come on, sailors! Good job! Quickly, quickly! You need to take in the big sail. And listen carefully to the captain's orders. Blow until you burst, wind, but leave enough room for us!
+> Alonso, Sebastian, Antonio, Ferdinand, Gonzalo, and some others enter the stage.
+> ALONSO: Watch out, good sailor! Where's the captain? Make sure the other sailors do their work.
+> SAILOR: Please go back under the deck, Sir!
+> ANTONIO: Sailor, where's the captain?
+> SAILOR: The captain is busy giving people orders. Can't you hear him? You're preventing us from doing our work. Go back to your cabins. You're helping the storm, not us!
+> GONZALO: Calm down, good sailor!
+> SAILOR: It's difficult to calm down in a storm! I'll calm down when the sea calms down! Now go! These big waves don't care about kings and their advisors. Go to your cabin and keep quiet! Don't add to our problems.
+> GONZALO: I'll do what you say, but just remember, you have important people on board.
+> SAILOR: The most important person on board is me! If you're so important, then order the storm to stop. If you can calm this weather, and make the sea peaceful, we can put down our ropes and rest. If you cannot, then be grateful for your long life, go to your cabin, and get ready for the worst. Come on, men! Now get out of our way.
+> The sailor leaves the stage.
+> GONZALO: That sailor makes me feel better. He'll never die on a ship at sea. We're lucky to be here with a terrible villain like him. If he survives this storm, we all will.
+> Gonzalo and the other king's advisors leave the stage.
+RC | Who wrote The Tempest? | William Shakespeare | Gonzalo | the captain
+RC | Where is the ship sailing to? | Italy | North Africa | England
+RC | Where does the sailor tell Alonso and Gonzalo to go? | to their cabins | to the big sail | to the rocks
+RT | Why is the captain worried? | He is worried because the ship might run into the rocks.
+RT | What is a tempest? | A tempest is a violent storm.
+RT | Who is Gonzalo? | Gonzalo is an elderly man who is an advisor to the king.
+RS | Why is the sailor angry with Gonzalo and the other important people?
+RS | Why does the sailor make Gonzalo feel better?
+# grammar
+G | It's difficult to save the passengers and crew.
+G | It's fun to climb a tree.
+G | It's fun to act in a play.
+G | It's easy to learn English if you read a lot of books.
+G | It's dangerous to climb a mountain in a storm.
+G | Is it easy to learn to swim?
+G | It's exciting to ride a horse.
+G | It's nice to cook a meal for your family.
+# speak-write
+SP | A: Hey, let me help you with your {math homework}. | B: Thanks so much! That's very kind of you. | A: No problem. I'm happy to help. | B: I really appreciate it. | math homework / science project / heavy bags / English test / bike / lost phone
+SW | Last week I saw {a play} at {the theater}; it was {very funny}. My favorite character was {the villain}; everyone reacted by laughing. | Write about a play or show you saw, and join two related sentences with a semicolon.
 ## U17 | The World's Most Extraordinary Buildings | Why do we make buildings?
 # learn
 What does "skyscraper" mean? | a very tall building with many floors
@@ -390,6 +1202,52 @@ P | 🏟️🏙️🏛️🏰 | What are these buildings for? Explain.
 C | Is it better to build tall skyscrapers or wide, low buildings? | Tall skyscrapers | Wide, low buildings
 Z | Name three buildings where people work.
 S | Describe your dream building in three sentences.
+# words
+stadium | sta·di·um | sta/di/um | 🏟️
+lighthouse | light·house | light/house | 🔦
+tower | tow·er | tow/er | 🗼
+skyscraper | sky·scrap·er | sky/scrap/er | 🏙️
+warehouse | ware·house | ware/house | 📦
+palace | pal·ace | pal/ace | 🏰
+courthouse | court·house | court/house | ⚖️
+theater | the·a·ter | the/a/ter | 🎭
+office | of·fice | of/fice | 🏢
+showroom | show·room | show/room | 🚗
+architect | ar·chi·tect | ar/chi/tect | 📐
+steel | steel | st/eel | 🔩
+construction | con·struc·tion | con/struc/tion | 🏗️
+countless | count·less | count/less | 🔢
+# reading
+> The World's Most Extraordinary Buildings
+> So, a building is just a building, right? Wrong! Buildings have many different purposes. People use buildings for living, for working, for manufacturing, and also for going to school or to the movies. Here are some of the key reasons we build buildings.
+> Buildings for Shelter: Everybody needs a place to sleep, eat, and keep themselves protected from the weather, so we build houses, apartments, and hotels. Have a look at a few exceptional ones from around the world. The Palais Bulles (Bubble Palace) is a "palace" that's used for conferences and other big events. It reminds people of caves; there aren't any straight lines at all. There's a hotel in Finland that's made entirely of glass igloos where guests can sleep under the stars. And take a look at this hotel in the Maldives. Its bedrooms are almost 5 meters underwater!
+> Buildings for Work: People have jobs, so they need places where they can work. People work in factories, warehouses, lighthouses, offices, schools, hospitals, courthouses, restaurants, airports, barns, showrooms, libraries, skyscrapers, and bus, train, fire, and police stations. This is the headquarters of the Longaberger Company in Ohio, which manufactures wooden baskets. Here's an office with a difference! It recycles water and uses the power of the sun. There are even trees growing on a terrace on one of the floors.
+> Buildings for Leisure and Fun: Everyone likes to have fun, so we need buildings for that purpose, too, whether we want to listen to a concert, go to a play, or play some sports. Shopping malls, movie theaters, and museums are all buildings that we use for having fun. This incredible museum is built in the shape of a saucer. It's set on a clifftop above a beach in Niteroi, Brazil.
+> What Do Architects Do? Before a building can be built, an architect needs to design the shape of the building and plan exactly how it will be used. First, the architect has to consider how many people will need to work or live inside the building, and what activities these people will be doing. This is called the function of the building. Then the architect draws detailed plans and makes a model of the building so that clients can see what the finished structure will look like. This also helps the architect decide how much steel will be needed. When the planning is finished and approved, construction can begin.
+> Zaha Hadid, Architect: Zaha Hadid was an architect who designed countless buildings: concert halls, theaters, towers, museums, art galleries, stadiums, ski jumps with cafes... you name it! Here are some of Zaha's most famous buildings.
+> The Dorobanti Tower, in the heart of Bucharest, Romania, is an apartment block that was designed using diamond shapes and stands 200 meters tall. It's visible from several kilometers away, and has been designed to be extremely strong, since Bucharest is located in an earthquake zone.
+> In 2010, construction of the Sheikh Zayed Bridge in Abu Dhabi, UAE, was completed. Zaha designed the arches of the bridge to look like wavy sand dunes in the desert. By night, the bridge is lit with colored lights that change little by little, giving an amazing impression of movement. Standing 64 meters above the water, the bridge is one of the most complex ever built. Zaha was also the architect for the London Olympics Aquatics Centre, where all the swimming and diving competitions took place.
+> Check this out! It's part of the Dongdaemun Design Plaza and Park, designed by Zaha to bring inspiration to the people of Seoul, South Korea. It has a design museum, a library, and lecture theaters. It's surrounded by a 30,000-square-meter park laid out in the traditional Korean way, with reflecting pools, lotus ponds, and bamboo plants.
+RC | What does an architect do before a building can be built? | design the building | paint the walls | sell the building
+RC | What is the hotel in Finland made of? | glass igloos | wooden baskets | steel towers
+RC | Where did the London Olympics swimming competitions take place? | the Aquatics Centre | the Dorobanti Tower | the Sheikh Zayed Bridge
+RT | What is the function of a building? | The function is how many people will use the building and what activities they will do inside it.
+RT | Why was the Dorobanti Tower designed to be extremely strong? | It was designed to be strong because Bucharest is located in an earthquake zone.
+RT | What do the arches of the Sheikh Zayed Bridge look like? | The arches look like wavy sand dunes in the desert.
+RS | What are the three key reasons we build buildings? Tell us one and give an example.
+RS | Which building in the article would you most like to live or work in? Why?
+# grammar
+G | Before a building can be built, the building needs to be designed.
+G | I go to the pool every weekend.
+G | Can I have an apple, please?
+G | There's an apple in the fridge.
+G | Do you like swimming?
+G | We went to Spain last summer.
+G | I saw a shark in the pool.
+G | The sandwiches my mom makes are great.
+# speak-write
+SP | A: Where would you like to live? | B: I'd like to live in {a lighthouse}. | A: Why do you want to live there? | B: I think it's because I love the view. | a lighthouse / an apartment / a palace / a house / a skyscraper / a tower
+SW | People make buildings for {shelter}. My favorite building is {the stadium} because {I love sports}; it is {huge and exciting}. | Write three sentences about why people make buildings and which building is your favorite.
 ## U18 | The Mystery of Peril Castle | Why do we make buildings?
 # learn
 What does "moat" mean? | a deep, wide ditch filled with water around a castle
@@ -413,3 +1271,59 @@ P | 🏰🪙🐦🔑 | What is the mystery? Tell the story.
 C | Should old castles be restored or left as ruins? | Restored | Left as ruins
 Z | Name three parts of a castle.
 S | Talk about yesterday, today and tomorrow. Say one sentence for each.
+# words
+turret | tur·ret | tur/ret | 🏰
+stable | sta·ble | sta/ble | 🐴
+courtyard | court·yard | court/yard | 🏛️
+gatehouse | gate·house | gate/house | 🚪
+moat | moat | m/oat | 🌊
+drawbridge | draw·bridge | draw/bridge | 🌉
+hall | hall | h/all | 🍽️
+rampart | ram·part | ram/part | 🧱
+mumble | mum·ble | mum/ble | 🤐
+stiffen | stif·fen | stif/fen | 🧍
+missing | miss·ing | miss/ing | ❓
+tremble | trem·ble | trem/ble | 😨
+padlock | pad·lock | pad/lock | 🔒
+mysterious | mys·te·ri·ous | mys/te/ri/ous | 🕵️
+# reading
+> The Mystery of Peril Castle
+> Peril Castle was built in the 15th century to defend Hellenbore City, but now it was deserted. It had been empty for over a hundred years. The local people didn't dare go near it. Its turrets looked terrifying against the evening sky.
+> "Thomas!" shouted Thomas's uncle Robert from the attic, where he'd been looking through old boxes.
+> "What is it?" asked Thomas.
+> "Look! It's proof that Peril Castle belongs to us!" replied Uncle Robert. "Here's the first half of our name!" In his trembling hand was half a gold coin with the letters D-A-W clearly visible on it. Thomas and Robert's last name was Dawson. Also on the coin was half of an eagle's body, with its left wing spread wide. Thomas had known all his life that Peril Castle was his family's castle, but without proof, Uncle Robert couldn't claim it.
+> "We need the other half of the coin. Let's see if we can find it," said Uncle Robert urgently. They ran out of the house and up the hill toward Peril Castle.
+> Thomas felt nervous, but they had to solve the mystery of the missing half-coin. His knees were trembling as he walked toward the deep moat that surrounded the castle. It was filled with green algae. Robert pulled a lever and the drawbridge swung down, making Thomas jump. They scurried across the drawbridge. Thomas and Uncle Robert searched the gatehouse and the stables, but they found nothing. Then they went into the hall. Hurriedly, they checked every corner, searching for clues that would bring them closer to their goal.
+> Where shall we look now? thought Thomas, staring at the courtyard. He gazed at the gray stones of the walls and looked up at the ramparts. Then he spotted an ancient metal ladder.
+> Thomas climbed quickly, listening to his heart thumping. Pulling himself onto the ramparts, he saw a box with a rusty padlock on it.
+> "I've found a box!" shouted Thomas, shaking the lock. As his uncle scrambled up the ladder, the lid sprang open. At first the box looked empty, but on closer examination, Thomas saw a secret drawer. He slid it open and found an old map of the castle.
+> Uncle Robert and Thomas studied the map, which showed the castle as it had originally been built.
+> "Look!" yelled Thomas. "There's a secret passageway behind the ramparts. It goes right inside the eleventh turret."
+> As they walked round the ramparts, Thomas noticed a magpie flying back and forth from the eleventh turret. His heart started to thump again, and his body stiffened with anticipation.
+> Halfway along the ramparts, the pair saw a mysterious crack in the wall. Uncle Robert reached into his bag and took out a hammer. He hit the crack several times, and suddenly a narrow door swung open. As Thomas was watching Uncle Robert, the magpie returned and vanished through a small hole above their heads. "It's the passageway!" said Thomas, squeezing through the narrow door.
+> "I can't hear you. Don't mumble! What do you see?" asked Uncle Robert anxiously. "Nothing. It's too dark!" replied Thomas.
+> He fumbled around for several minutes until he felt something. It was a pile of objects of different shapes and sizes. Thomas filled his pockets and crawled back out.
+> "Look at these shiny things the magpie has collected!" he shouted.
+> There was a key, a Roman coin, a piece of silver, a ring, a spoon, and a tiny mirror. "What's this?" said Thomas, brushing dirt off a lump of metal. "Wait! I don't believe it!"
+> Thomas turned the metal over, and there, clear as day, were the letters S-O-N and an eagle's right wing. Uncle Robert passed Thomas the other half of the coin that he'd found in the attic. The two halves clicked together as if they'd never been parted. DAWSON! This was the proof they needed!
+> For a year, Uncle Robert and Thomas proudly restored the fortress. Once the job was done, they renamed it Peril-Dawson Castle. Flying the family flag from the eleventh turret, they invited all the local people to celebrate Hellenbore's ancient castle with them.
+RC | What did Thomas want to find? | the other half of a coin | a golden eagle | an old sword
+RC | What was Thomas and Robert's last name? | Dawson | Peril | Hellenbore
+RC | What had the magpie collected? | shiny things | old maps | gold keys
+RT | Where did Uncle Robert find the first half of the coin? | He found it in the attic while looking through old boxes.
+RT | What did Thomas find in the secret drawer of the box? | He found an old map of the castle.
+RT | What did Thomas and Uncle Robert rename the castle? | They renamed it Peril-Dawson Castle.
+RS | Why did Thomas feel nervous when he went to the castle?
+RS | How did Thomas and Uncle Robert prove that the castle belonged to their family?
+# grammar
+G | I needed to find the coin.
+G | They had to solve the mystery.
+G | I like castles with turrets.
+G | We need the other half of the coin.
+G | Are you going to explore Peril Castle?
+G | I will see the castles of Wales someday.
+G | I went to the mall yesterday.
+G | It's going to rain this afternoon.
+# speak-write
+SP | A: Let's play {tennis} on Thursday, OK? | B: Thanks! That sounds fun. | A: Great! Would you like to come to my party on Saturday, too? | B: Thanks, but I'm busy that day. | tennis / soccer / video games / basketball / chess / badminton
+SW | I saw a {big} {old} {stone} castle. It had a {scary} black turret and a deep moat. | Write two sentences describing a castle, putting your adjectives in the correct order.
