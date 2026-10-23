@@ -31,7 +31,12 @@ canvas{display:block}
 .q .t{font-family:var(--display);font-size:1.3rem;line-height:1.1;margin-top:4px}
 .teams{position:fixed;left:0;right:0;bottom:0;padding:0 max(16px,env(safe-area-inset-right,0px)) calc(14px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));display:flex;gap:12px;justify-content:space-between;align-items:flex-end;pointer-events:none;flex-wrap:wrap}
 .tcard{background:#fff;border-radius:20px;padding:10px 16px;border:4px solid var(--tc);min-width:170px;box-shadow:0 6px 0 rgba(0,0,0,.14)}
-.tcard b{font-family:var(--display);font-size:1.2rem;color:var(--tc)}
+.tcard b{font-family:var(--display);font-size:1.2rem;color:var(--tc)}.tcard small{display:block;color:var(--muted);font-size:.78rem}.tcards{display:flex;gap:10px;flex-wrap:wrap}
+.bases{pointer-events:auto;background:#fff;border:4px solid #ffe08a;border-radius:20px;padding:8px 12px;box-shadow:0 6px 0 rgba(0,0,0,.14);display:grid;gap:6px;font-size:.88rem}
+.bases .row{display:flex;align-items:center;gap:6px;flex-wrap:wrap}.bases .row>b{font-family:var(--display);margin-right:4px}
+.bases .chip{font-family:var(--display);color:#fff;background:var(--tc);border-radius:99px;padding:2px 10px;min-width:62px;text-align:center}
+.bases button{font:inherit;font-size:.82rem;border:2px solid #dee2e6;background:#f8f9fa;border-radius:10px;padding:4px 9px;cursor:pointer;color:var(--ink)}
+.bases button.sel{background:var(--tc);border-color:var(--tc);color:#fff}.bases button.taken{opacity:.4}
 .bar{height:12px;border-radius:99px;background:#e9ecef;overflow:hidden;margin-top:5px;box-shadow:inset 0 2px 0 rgba(0,0,0,.08)}
 .bar i{display:block;height:100%;background:linear-gradient(180deg,#8ce99a,#2f9e44);transition:width .5s}
 .ctr{pointer-events:auto;display:flex;gap:10px;flex-wrap:wrap;justify-content:center;background:#fff;border:4px solid #ffe08a;border-radius:22px;padding:10px;box-shadow:0 6px 0 rgba(0,0,0,.14)}
@@ -42,18 +47,15 @@ canvas{display:block}
 .banner{position:fixed;left:0;right:0;top:38%;text-align:center;pointer-events:none;animation:ban 2s cubic-bezier(.2,1,.3,1) forwards}
 .banner span{display:inline-block;font-family:var(--display);font-size:clamp(2.4rem,9vw,6rem);line-height:1;color:#fff;background:var(--bc,#e03131);padding:.18em .7em;border-radius:.45em;box-shadow:0 .22em 0 rgba(0,0,0,.22);border:.1em solid #fff;transform:rotate(-2deg)}
 @keyframes ban{0%{opacity:0;transform:scale(.3)}15%{opacity:1;transform:scale(1.1)}25%{transform:scale(1)}80%{opacity:1}100%{opacity:0;transform:scale(1.3)}}
-.note{position:fixed;right:max(16px,env(safe-area-inset-right,0px));top:calc(14px + 84px);background:rgba(255,255,255,.9);border-radius:12px;padding:6px 10px;font-size:.78rem;color:var(--muted);pointer-events:none}
 @media (prefers-reduced-motion:reduce){.banner{animation:none}}
 </style>
 </head>
 <body>
 <div id="stage"></div>
-<div class="hud"><div class="plate"><h1 id="title">🌴 Jungle Safari</h1><p>3D prototype · drag to look around · pinch or scroll to zoom</p></div><div class="sc"><button data-s="jungle" class="sel">🌴 Jungle</button><button data-s="dino">🌋 Dino</button><button data-s="space">🪐 Space</button><button data-s="town">🏙️ Town</button></div><span class="sp"></span><div class="q"><span class="k">⌨️ TYPE A FULL SENTENCE · ROUND 3</span><div class="t">What did you do last weekend?</div></div></div>
-<div class="note">Prototype: sample students, no real players connected</div>
+<div class="hud"><div class="plate"><h1 id="title">🌴 Jungle Safari</h1><p class="note">3D prototype with sample students · drag to look around · pinch or scroll to zoom</p></div><div class="sc"><button data-s="jungle" class="sel">🌴 Jungle</button><button data-s="dino">🌋 Dino</button><button data-s="space">🪐 Space</button><button data-s="town">🏙️ Town</button></div><div class="bases" id="bases"></div><span class="sp"></span><div class="q"><span class="k">⌨️ TYPE A FULL SENTENCE · ROUND 3</span><div class="t">What did you do last weekend?</div></div></div>
 <div class="teams">
-  <div class="tcard" style="--tc:#e03131"><b>Red Team</b><div class="bar"><i id="hpR" style="width:100%"></i></div></div>
+  <div class="tcards" id="tcards"></div>
   <div class="ctr"><button class="war" data-a="attack">⚔️ Attack</button><button class="gold" data-a="level">🔨 Level up</button><button class="ok" data-a="heal">❤️ Repair</button><button class="boss" data-a="boss">👹 Boss</button><button data-a="cheer">🎉 Cheer</button><button data-a="reset">↺ Reset</button></div>
-  <div class="tcard" style="--tc:#3b5bdb"><b>Blue Team</b><div class="bar"><i id="hpB" style="width:100%"></i></div></div>
 </div>
 <script>
 (function(){

@@ -9,8 +9,8 @@
 | `core.js` | renderer、燈光、材質（`M` 霧面 / `GLOSS` 亮面 / `GLOW` 自發光）、幾何捷徑（`SPH CYL BOX CONE lathe capsule`）、天空漸層 `setSky`、canvas sprite（`labelSprite` 名牌、`bubbleSprite` 對話泡泡名牌、`hpSprite` 血條、`textSprite`）、動畫佇列 `animate`、粒子 `spawn`、衝擊環 `ring`、全螢幕 `banner` |
 | `chars.js` | 16 個程序化 chibi 角色 `CHAR_BUILDERS`（lion panda monkey elephant / trex bronto egg dragon / astro rocket alien robot / detective chef wizard firefighter）、`CHAR_CLASS`（角色→職業組）、`buildChar(id)` |
 | `habitats.js` | `HAB[animal|dino|space|hero][0..2]` 三級棲息地建築；`BOSS[jungle|dino|space|town]` 四隻 Boss |
-| `scenes.js` | `ENV[jungle|dino|space|town]()` 四個場景，各回傳 `{pads, tick}`；共用零件 `island cloudsAt coinsAt flowers tufts lollipop palmTree sea pads clearWorld` |
-| `game.js` | 示範邏輯：`TEAMS HPMAX ROSTER`、`makePlayer(p,pad)`、`loadScene(key)`、動作 `setHp knockOut revive jump attack levelUp summonBoss bossAttack resetAll`、鏡頭拖曳／縮放、主迴圈 `loop` |
+| `scenes.js` | `ENV[jungle|dino|space|town]()` 四個場景，各回傳 `{sites, bossAt, tick}`；`sites` 是 4 個可選的隊伍基地（名稱、位置、`yAt`、`claim(team)`）；地平線層 `ground hills forest bushes rocks mountains cityBlocks carFleet birds`；基地零件 `patch signpost mkSite` |
+| `game.js` | 示範邏輯：`TEAM_DEFS`（最多 4 隊）、`teamCount / teamSite`、`ROSTER`、`makePlayer(p,site,k,n)`、`loadScene(key)`、`buildTeams()`、`setTeamCount(n)`、`chooseSite(team,siteIdx)`、`renderHud()`、動作 `setHp knockOut revive jump attack levelUp summonBoss bossAttack resetAll`、鏡頭拖曳／縮放、主迴圈 `loop` |
 | `build.py` | 把 head + 五個 js 串成單檔 `habitat-3d.html` |
 | `stubtest.js` | 無瀏覽器的冒煙測試（Proxy 假 THREE），`node stubtest.js` 應印出 `smoke ok` |
 | `habitat-3d.html` | 組好的獨立展示頁（可直接雙擊開） |
@@ -26,11 +26,17 @@
   - Town：高矮彩色大樓群、鐘樓、斑馬線、路燈
 - 使用場合：教室**電子白板**（非投影），觸控拖曳看鏡頭、雙指縮放。
 
+## 隊伍基地（Team bases）
+- 每個場景提供 4 個具名基地：Jungle = Riverside / Big Tree / Waterfall Pool / Flower Meadow；Dino = Lava Cave / Lake Nest / Fern Forest / Bone Yard；Space = Ice / Red / Green / Gold Planet；Town = Fire Station / Library / Bakery / Toy Shop。
+- 隊伍數不限（示範 2–4 隊）。每隊 `chooseSite(team, siteIdx)` 選一個基地；同一基地只能一隊，選到別隊的會對調。
+- 隊伍選定後：基地插上隊旗、浮出「Red Base」名牌，Town 的建築外牆會漆成隊色（`site.claim(team)`）；該隊玩家與各自的棲息地排在基地周圍（`site.slotR`），Space 的玩家站在星球曲面上（`site.yAt`）。
+- 老師端 HUD 的「Teams」面板可切 2/3/4 隊並點選基地，供整合前試玩。
+
 ## 整合進 index.html 的建議做法
 1. **保持單檔**：把五個 js 串接後放進 `index.html` 的一個新 `<script>`，前面加 `<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js">`（CLAUDE.md 外部腳本白名單要補上 Three.js）。
 2. **開關**：老師端設定加 `🎮 3D Stage` toggle（存在 `S.ui3d` 或 localStorage）。關閉時走原本 2D canvas；開啟時 2D canvas 隱藏、`#stage` 顯示。Three.js 載入失敗時自動退回 2D（原型已有 `typeof THREE==='undefined'` 檢查）。
 3. **資料對接（取代 `game.js` 的示範 `ROSTER`）**：
-   - 玩家 ⇄ `S.players`：`makePlayer({name, id: characterId, team, lv, dx, dz}, pad)`；`id` 對應 `CHAR_BUILDERS` 的 16 個 key，請把正式遊戲的角色 id 對應表寫成一個 `CHAR_MAP`。
+   - 玩家 ⇄ `S.players`：`ROSTER` 改讀 `S.players`，`teamCount = S.teamCount`，每隊的基地索引存進 `S.teams[i].site`（老師在 Setup 或投影畫面選），然後呼叫 `buildTeams()`；`id` 對應 `CHAR_BUILDERS` 的 16 個 key，請把正式遊戲的角色 id 對應表寫成一個 `CHAR_MAP`。
    - 場景 ⇄ `S.scene`（或各隊所選場景）：`loadScene('jungle'|'dino'|'space'|'town')`。
    - 棲息地等級 ⇄ 玩家／隊伍的升級狀態：`levelUp(g)` 會重建 `HAB[class][lv]`。
 4. **事件對接**：在 host 既有函式裡呼叫 3D 動作（只在 3D 開啟時）：

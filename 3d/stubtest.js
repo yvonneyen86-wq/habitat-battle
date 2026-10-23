@@ -29,7 +29,7 @@ const fs=require('fs');const s=fs.readFileSync(require('path').join(__dirname,'h
 // expose internals by stripping the IIFE wrapper
 const inner=code.replace(/^\(function\(\)\{\n/,'').replace(/\}\)\(\);\s*$/,'');
 new Function('THREE',inner+`
-;['jungle','dino','space','town'].forEach(k=>{loadScene(k);Object.keys(CHAR_BUILDERS).forEach(id=>buildChar(id));Object.keys(HAB).forEach(c=>HAB[c].forEach(f=>f()));BOSS[k]();summonBoss();
+;['jungle','dino','space','town'].forEach(k=>{loadScene(k);Object.keys(CHAR_BUILDERS).forEach(id=>buildChar(id));Object.keys(HAB).forEach(c=>HAB[c].forEach(f=>f()));BOSS[k]();summonBoss();setTeamCount(4);chooseSite(0,2);setTeamCount(3);setTeamCount(2);
  const reds=players.filter(p=>p.userData.p.team===0),blues=players.filter(p=>p.userData.p.team===1);attack(reds[0],blues[0],3);levelUp(reds[1]);knockOut(blues[1]);revive(blues[1]);
  for(let i=0;i<80;i++){const dt=.03,t=i*dt;anims.forEach(a=>{a.t+=dt;a.fn(Math.min(1,a.t/a.dur));});for(let j=anims.length-1;j>=0;j--)if(anims[j].t>=anims[j].dur){const a=anims.splice(j,1)[0];a.done&&a.done();}env.tick(dt,t);}
  resetAll();});loadScene('space');summonBoss();for(let i=0;i<5;i++)loop();console.log('smoke ok: scenes, chars, habitats, bosses, actions');`)(THREE);
