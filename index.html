@@ -293,6 +293,9 @@ body.sv-on .sv{display:flex;flex-direction:column;gap:8px;min-height:0;backgroun
 .team-pick.big .flag{width:38px;height:28px;background:var(--tc);border-radius:4px 10px 10px 4px;border-left:5px solid #6b4f3a;box-shadow:0 2px 0 rgba(0,0,0,.15)}
 .team-pick.big button.sel .flag{background:#fff}
 .char-pick button .e{font-size:3rem}.char-pick button{padding:12px 4px;min-height:96px}
+.namegrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px}
+.namegrid button{font:inherit;font-family:var(--display);font-size:1.2rem;padding:12px 8px;border-radius:16px;background:#fff;border:3px solid color-mix(in srgb,var(--tc) 40%,#fff);border-bottom-width:6px;color:var(--ink);display:grid;justify-items:center;gap:2px;cursor:pointer}
+.namegrid button .e{font-family:var(--emoji);font-size:2rem;line-height:1.1}.namegrid button.sel{background:var(--tc);color:#fff;border-color:var(--tc)}
 .jnav{display:flex;justify-content:space-between;gap:10px}.jnav .btn{font-family:var(--display);font-size:1.25rem;padding:14px 22px}.jnav .join-btn{flex:1}.jnav .nxt{margin-left:auto}
 /* tablet: icon-only "what to do now" bar */
 .todo{display:flex;gap:4px;justify-content:center;align-items:stretch}
@@ -1262,6 +1265,9 @@ function onStudent(conn,m){
     S.players[pid].av=cleanAv(m.av,name);
     info.pid=pid;changed();return;
   }
+  if(m.t==='claim'){const p=S.players[m.pid];if(!p||!p.pre)return conn.send({t:'toast',msg:'That name is already taken. Ask your teacher.'});
+    const old=S.cidMap[info.cid];if(old&&old!==m.pid&&S.players[old]&&S.players[old].pre===false&&![...H.conns.values()].some(x=>x!==info&&x.pid===old))S.players[old].online=false;
+    p.pre=false;p.online=true;p.av=cleanAv(m.av,p.name);S.cidMap[info.cid]=m.pid;info.pid=m.pid;log(`${p.name} joined ${teamName(p.team)}! ${charById(p.char).e}`);chime();setTimeout(()=>{popHab(m.pid);burst(m.pid,['✨','🎉'],12,{ring:true,g:0,speed:16,drag:.95});},120);changed();return;}
   const pid=info.pid;if(!pid||!S.players[pid])return;
   if(m.t==='buy')buy(pid,m.item);
   if(m.t==='look'){S.players[pid].av=cleanAv(m.av,S.players[pid].name);changed();return;}
@@ -1333,7 +1339,7 @@ function renderHeader(){
   const el=$('#topbar');if(!el)return;const sc=SCENES[S.scene];const ph=S.phase;
   el.innerHTML=`<span class="brand">⚔️ Habitat Battle</span><span class="chip">${sc.icon} ${esc(sc.name)}</span>
   <span class="chip"><span class="dot ${H.status}"></span>${esc(H.statusText)}</span><span class="chip">Code <b>${esc(S.code)}</b></span><span class="sp"></span>
-  ${ph==='gather'?`<button class="btn" data-act="qr-toggle">${S.showQR?'Hide QR':'Show QR'}</button><button class="btn" data-act="qr-big">Big QR</button><button class="btn" data-act="card">❓ Question Card</button><button class="btn" data-act="all-coin">🪙 +1 Everyone</button><button class="btn war" data-act="start-battle">⚔️ Start Battle</button>`:''}
+  ${ph==='gather'?`<button class="btn" data-act="qr-toggle">${S.showQR?'Hide QR':'Show QR'}</button><button class="btn" data-act="qr-big">Big QR</button><button class="btn" data-act="card">❓ Question Card</button><button class="btn" data-act="all-coin">🪙 +1 Everyone</button><button class="btn" data-act="roster">📋 Class list</button><button class="btn war" data-act="start-battle">⚔️ Start Battle</button>`:''}
   ${ph==='battle'?`<button class="btn" data-act="qr-big">Big QR</button><button class="btn war" data-act="end-battle">🏁 End Battle</button>`:''}
   ${ph==='end'?`<button class="btn" data-act="back-gather">🌱 Back to Learning</button>`:''}
   <button class="btn" data-act="bank">📚 ${S.bankSel?esc(S.bankSel.level)+' U'+S.bankSel.units.join(','):'Textbook'}</button>
@@ -1444,7 +1450,7 @@ function renderConsole(){
     const btns=ph==='battle'?`${ui3d()?`<button class="btn mic" data-act="spot" data-pid="${p.pid}" title="Spotlight on the 3D stage">🎤</button>`:''}${[1,2,3].map(t=>`<button class="btn tier t${t}${isOk===t?' on':''}" data-act="tier" data-t="${t}" data-pid="${p.pid}" ${live?'':'disabled'} title="${['','Good','Great: ×2','Amazing: ×2 + through walls'][t]}">${['','✓','⭐','🌟'][t]}</button>`).join('')}${isOk?`<button class="btn" data-act="no" data-pid="${p.pid}" title="Undo">↺</button>`:''}${canBlk?`<button class="btn blk${b.def.blocks[p.pid]?' on':''}" data-act="block" data-pid="${p.pid}">🛡️ Block</button>`:''}<button class="btn star" data-act="great" data-pid="${p.pid}" title="+1 🪙 and a class item">🎁</button>`
       :`${ui3d()?`<button class="btn mic" data-act="spot" data-pid="${p.pid}" title="Spotlight on the 3D stage">🎤</button>`:''}<button class="btn coin" data-act="coin" data-pid="${p.pid}">✓ +${CORRECT_COINS} 🪙</button><button class="btn star" data-act="great" data-pid="${p.pid}">⭐ Great job</button><button class="btn" data-act="coin-minus" data-pid="${p.pid}">−🪙</button>`;
     return `<div class="prow${p.online?'':' off'}" id="row-${p.pid}" style="--tc:${teamColor(p.team)}"><span class="av">${avImg(p.av,p.name,44)}<i>${ch.e}</i></span>
-    <div class="nm"><span>${esc(p.name)}</span><small>${h[1]} ${esc(h[0])}${p.online?'':' · offline'}</small>${stt}</div>
+    <div class="nm"><span>${esc(p.name)}</span><small>${h[1]} ${esc(h[0])}${p.pre?' · ⏳ waiting for tablet':p.online?'':' · offline'}</small>${stt}</div>
     <div class="stats"><span>🪙 <b>${p.coins}</b></span><span>${p.down?'💤':'❤️'} <b>${p.down?0:p.hp}/${maxHp(p)}</b></span>${p.armor?`<span>🛡️ <b>${p.armor}</b></span>`:''}<span>${c.atk[1]}${p.inv.atk} ${ico(c.def[1])}${p.inv.def} ${c.heal[1]}${p.inv.heal}</span><span>${items}</span>${flags?`<b>${flags}</b>`:''}</div>
     <div class="acts">${btns}<button class="btn x" data-act="remove" data-pid="${p.pid}">${H.confirm==='rm-'+p.pid?'Remove?':'✕'}</button></div></div>`;}).join('')
     :`<div class="empty">No players yet. Students scan the QR code, type their name, pick a team and a character.<br><br>Code: <b>${esc(S.code)}</b></div>`;
@@ -1504,6 +1510,22 @@ function openAdd(){$('#modal-root').innerHTML=`<div class="modal-bg"><div class=
 <label>Team<select id="ad-team">${S.teams.slice(0,S.teamCount).map((t,i)=>`<option value="${i}">${esc(t.name)}</option>`).join('')}</select></label>
 <label>Character<select id="ad-char">${CHARS.map(c=>`<option value="${c.id}">${c.e} ${esc(c.n)} (${esc(CLASSES[c.c].label)})</option>`).join('')}</select></label>
 <div class="mrow"><button class="btn" data-act="m-close">Cancel</button><button class="btn primary" data-act="add-save">Add</button></div></div></div>`;$('#ad-name').focus();}
+/* class list: the teacher types the names once; students then just tap their own name on the tablet (team + character pre-assigned) */
+function openRoster(){const pre=Object.values(S.players).filter(p=>p.pre);$('#modal-root').innerHTML=`<div class="modal-bg"><div class="modal" role="dialog" aria-label="Class list"><h2>📋 Class list</h2>
+<p style="margin:0;color:var(--muted)">One name per line. Students will only have to <b>tap their name</b> on the tablet — no typing. Leave an empty line between groups to set the teams yourself; otherwise teams are mixed evenly. Characters are picked for them (they can still design their look).</p>
+<textarea id="rs-names" rows="10" placeholder="Amy
+Ben
+Cindy
+
+David
+Emma">${esc(H.rosterDraft||'')}</textarea>
+${pre.length?`<small style="color:var(--muted)">Waiting for a tablet: ${pre.map(p=>esc(p.name)).join(', ')}</small>`:''}
+<div class="mrow"><button class="btn" data-act="m-close">Cancel</button><button class="btn primary" data-act="rs-save">➕ Add everyone</button></div></div></div>`;$('#rs-names').focus();}
+function addRoster(text){H.rosterDraft='';const groups=String(text||'').split(/\n\s*\n/).map(g=>g.split('\n').map(n=>n.replace(/\s+/g,' ').trim().slice(0,14)).filter(Boolean)).filter(g=>g.length);
+  const byGroup=groups.length>=2&&groups.length<=S.teamCount;const taken=new Set(Object.values(S.players).map(p=>p.name.toLowerCase()));const counts=S.teams.slice(0,S.teamCount).map((_,i)=>Object.values(S.players).filter(p=>p.team===i).length);let n=0;
+  groups.forEach((g,gi)=>g.forEach(name=>{if(taken.has(name.toLowerCase()))return;taken.add(name.toLowerCase());let team;if(byGroup)team=gi;else{team=counts.indexOf(Math.min(...counts));}counts[team]++;
+    const char=CHARS[rnd(CHARS.length)].id;const pid=newPlayer(name,char,team);const p=S.players[pid];p.pre=true;p.online=false;p.av=avFromName(name);n++;}));
+  if(n){log(`📋 ${n} student${n>1?'s':''} added. They can tap their name to join.`);chime();}changed();return n;}
 function addPlayer(name,team,char){name=String(name||'').replace(/\s+/g,' ').trim().slice(0,14);if(!name)return false;const pid=newPlayer(name,char,team,true);log(`${name} joined ${teamName(team)}! ${charById(char).e}`);chime();changed();setTimeout(()=>popHab(pid),100);return true;}
 function openManualAct(pid){const p=P(pid);if(!p)return;$('#modal-root').innerHTML=`<div class="modal-bg"><div class="modal"><h2>${charById(p.char).e} ${esc(p.name)}: choose an action</h2><div class="seg">${bossOn()?`<button data-act="m-act" data-pid="${pid}" data-k="attack" data-t="boss" style="background:#5f3dc4;color:#fff;border-color:#5f3dc4">⚔️ Attack the ${esc(S.battle.boss.name)}</button>`:''}${S.teams.slice(0,S.teamCount).map((t,i)=>i===p.team||bossOn()?'':`<button data-act="m-act" data-pid="${pid}" data-k="attack" data-t="${i}" style="background:${t.color};color:#fff;border-color:${t.color}">⚔️ Attack ${esc(t.name)}</button>`).join('')}<button data-act="m-act" data-pid="${pid}" data-k="build">🛡️ Build</button><button data-act="m-act" data-pid="${pid}" data-k="repair">❤️ Repair</button></div><div class="mrow"><button class="btn" data-act="m-close">Cancel</button></div></div></div>`;}
 
@@ -1551,7 +1573,7 @@ function onHostClick(e){
     case 'm-act':onAct(pid,b.dataset.k,b.dataset.t);$('#modal-root').innerHTML='';break;
     case 'fx':FX.on=!FX.on;store('habitat-fx',FX.on);FX.parts=[];FX.amb=[];FX.projs.forEach(p=>p.res());FX.projs=[];document.body.classList.toggle('nofx',!fxOn());renderHeader();break;
     case 'sound':H.sound=!H.sound;renderHeader();break;
-    case 'sv-open':openStudentView(Object.keys(S.players)[0]||'new');break;
+    case 'sv-open':openStudentView(Object.values(S.players).find(p=>!p.pre)?.pid||'new');break;
     case 'sv-close':closeStudentView();break;
     case 'setup':openSetup();break;
     case 'bank':openBank();break;
@@ -1563,6 +1585,8 @@ function onHostClick(e){
     case 'bk-add':applyBank(false);break;
     case 'add-open':openAdd();break;
     case 'add-save':if(addPlayer($('#ad-name').value,+$('#ad-team').value,$('#ad-char').value))$('#modal-root').innerHTML='';break;
+    case 'roster':openRoster();break;
+    case 'rs-save':{const t=$('#rs-names').value;if(addRoster(t))$('#modal-root').innerHTML='';else{H.rosterDraft=t;toast('Type at least one new name.');}break;}
     case 'remove':if(H.confirm==='rm-'+pid){const p=P(pid);if(p){log(`${p.name} left the game.`);delete S.players[pid];for(const k in S.cidMap)if(S.cidMap[k]===pid)delete S.cidMap[k];for(const[,i]of H.conns)if(i.pid===pid)i.pid=null;if(S.battle){delete S.battle.ok[pid];delete S.battle.acts[pid];delete S.battle.subs[pid];delete S.battle.spells[pid];}}H.confirm=null;changed();}else{H.confirm='rm-'+pid;renderConsole();}break;
     case 'm-close':if(e.target===b||b.tagName==='BUTTON'){$('#modal-root').innerHTML='';H.confirm=null;applyScene(S.scene);}break;
     case 'd-scene':readSetupInputs();H.setupDraft.scene=b.dataset.k;applyScene(b.dataset.k);renderSetup();break;
@@ -1664,28 +1688,34 @@ function sJoin(app,s){if(ST.mini)ST.mini.stop();
     <div class="steps" id="j-steps"></div>
     <div class="card jstep" id="j-card"></div>
     <div class="jnav" id="j-nav"></div></div></div>`;
-    if(!app._jb){app._jb=true;app.addEventListener('click',sJoinClick);app.addEventListener('input',e=>{if(e.target.id==='j-name'){ST.name=e.target.value;jNav();}});}}
+    if(!app._jb){app._jb=true;app.addEventListener('click',sJoinClick);app.addEventListener('input',e=>{if(e.target.id==='j-name'){ST.name=e.target.value;ST.claim=null;jNav();}});}}
   $('#j-scene').textContent=`${SCENES[s.scene].icon} ${SCENES[s.scene].name}`;
   jRender(s);
 }
 function jDone(i){return i===0?!!ST.name.trim():i===1?ST.team!==null:i===2?!!ST.char:true;}
+function jClaimed(){return !!ST.claim;}
 function jRender(s){const st=ST.jstep;
-  $('#j-steps').innerHTML=JSTEPS.map(([e,t],i)=>`<button class="stp${i===st?' cur':''}${i<st&&jDone(i)?' ok':''}" data-jstep="${i}" ${i>st&&!JSTEPS.slice(0,i).every((_,k)=>jDone(k))?'disabled':''}><span class="n">${i<st&&jDone(i)?'✓':i+1}</span><span class="e">${e}</span><small>${t}</small></button>`).join('');
+  $('#j-steps').innerHTML=JSTEPS.map(([e,t],i)=>{const lock=ST.claim&&(i===1||i===2);const ok=(i<st&&jDone(i))||(lock&&st>0);return `<button class="stp${i===st?' cur':''}${ok?' ok':''}" data-jstep="${i}" ${lock||(i>st&&!JSTEPS.slice(0,i).every((_,k)=>jDone(k)))?'disabled':''}><span class="n">${ok?'✓':i+1}</span><span class="e">${e}</span><small>${t}</small></button>`;}).join('');
   const card=$('#j-card');const h=`<h2><span class="big">${JSTEPS[st][0]}</span> ${JSTEPS[st][1]}</h2>`;
-  if(st===0)card.innerHTML=h+`<input class="name-in" id="j-name" maxlength="14" autocomplete="off" placeholder="Type your English name" value="${esc(ST.name)}">`;
+  const pre=Object.values(s.players).filter(p=>p.pre);
+  if(st===0)card.innerHTML=h+(pre.length&&!ST.typing?`<p class="hint">👆 Tap your name</p><div class="namegrid">${pre.map(p=>`<button data-claim="${p.pid}" class="${ST.claim===p.pid?'sel':''}" style="--tc:${s.teams[p.team]?.color||'#888'}"><span class="e">${charById(p.char).e}</span>${esc(p.name)}</button>`).join('')}</div><button class="btn" data-typing="1">✏️ My name is not here</button>`
+    :`<input class="name-in" id="j-name" maxlength="14" autocomplete="off" placeholder="Type your English name" value="${esc(ST.name)}">${pre.length?'<button class="btn" data-typing="0">👆 Tap my name instead</button>':''}`);
   else if(st===1)card.innerHTML=h+`<div class="team-pick big" id="j-teams">${s.teams.map((t,i)=>`<button data-team="${i}" class="${ST.team===i?'sel':''}" style="--tc:${t.color}"><span class="flag"></span>${esc(t.name)}</button>`).join('')}</div>`;
   else if(st===2)card.innerHTML=h+`<p class="hint">Tap one. Each group has its own home and gear.</p>`+Object.entries(CLASSES).map(([k,c])=>`<div class="class-block"><div class="cl"><b>${c.icon} ${esc(c.label)}</b><span>${c.hab.map(h=>h[1]).join(' → ')} · ${c.atk[1]} ${ico(c.def[1])} ${c.heal[1]}</span></div><div class="char-pick">${CHARS.filter(x=>x.c===k).map(x=>`<button data-char="${x.id}" class="${ST.char===x.id?'sel':''}"><span class="e">${x.e}</span><small>${esc(x.n)}</small></button>`).join('')}</div></div>`).join('');
   else card.innerHTML=h+`<div class="look"><canvas id="j-look" width="248" height="248"></canvas><div class="look-opts" id="j-look-opts"></div></div><button class="btn" id="j-shuffle">🎲 Surprise me</button>`;
   if(st===0){const n=$('#j-name');if(n&&!ST.embedded)setTimeout(()=>n.focus(),50);}if(st===3)jLookOpts();jNav();}
 function jNav(){const st=ST.jstep,nav=$('#j-nav');if(!nav)return;const ready=JSTEPS.every((_,i)=>jDone(i));
-  nav.innerHTML=`${st>0?'<button class="btn" data-jnav="-1">◀ Back</button>':'<span></span>'}${st<3?`<button class="btn primary nxt" data-jnav="1" ${jDone(st)?'':'disabled'}>Next ▶</button>`:`<button class="btn primary join-btn" id="j-go" ${ready?'':'disabled'}>✅ Join the game!</button>`}`;}
+  nav.innerHTML=`${st>0?`<button class="btn" data-jnav="${ST.claim&&st===3?-3:-1}">◀ Back</button>`:'<span></span>'}${st<3?`<button class="btn primary nxt" data-jnav="${ST.claim?3:1}" ${jDone(st)?'':'disabled'}>Next ▶</button>`:`<button class="btn primary join-btn" id="j-go" ${ready?'':'disabled'}>✅ Join the game!</button>`}`;}
 function jLookOpts(){const o=$('#j-look-opts');if(!o)return;o.innerHTML=lookOptsHTML(ST.av);const c=$('#j-look');if(c)drawAvatar(c.getContext('2d'),ST.av,c.width);}
 function sJoinClick(e){if(ST.view!=='join')return;const t=e.target.closest('[data-team]'),c=e.target.closest('[data-char]'),a=e.target.closest('[data-av]'),nv=e.target.closest('[data-jnav]'),sp=e.target.closest('[data-jstep]');
-  const go=i=>{ST.jstep=Math.max(0,Math.min(3,i));jRender(ST.s);};
-  if(t){ST.team=+t.dataset.team;setTimeout(()=>go(2),250);jRender(ST.s);}if(c){ST.char=c.dataset.char;setTimeout(()=>go(3),250);jRender(ST.s);}
+  const go=i=>{ST.jstep=Math.max(0,Math.min(3,i));jRender(ST.s);};const cl=e.target.closest('[data-claim]'),ty=e.target.closest('[data-typing]');
+  if(cl){const p=ST.s.players[cl.dataset.claim];if(p){ST.claim=p.pid;ST.name=p.name;ST.team=p.team;ST.char=p.char;setTimeout(()=>go(3),250);jRender(ST.s);}return;}
+  if(ty){ST.typing=ty.dataset.typing==='1';if(ST.typing){ST.claim=null;}jRender(ST.s);return;}
+  if(e.target.id==='j-name')return;
+  if(t){ST.team=+t.dataset.team;ST.claim=null;setTimeout(()=>go(2),250);jRender(ST.s);}if(c){ST.char=c.dataset.char;setTimeout(()=>go(3),250);jRender(ST.s);}
   if(nv)go(ST.jstep+(+nv.dataset.jnav));if(sp&&!sp.disabled)go(+sp.dataset.jstep);
   if(a){avClick(a);jLookOpts();}if(e.target.closest('#j-shuffle')){ST.av=randomAv();store('habitat-av',ST.av);jLookOpts();}
-  if(e.target.closest('#j-go')){if(sSend({t:'join',name:ST.name,team:ST.team,char:ST.char,av:ST.av}))toast('Joining…');}}
+  if(e.target.closest('#j-go')){if(sSend(ST.claim?{t:'claim',pid:ST.claim,av:ST.av}:{t:'join',name:ST.name,team:ST.team,char:ST.char,av:ST.av}))toast('Joining…');}}
 function lookOptsHTML(a,x=''){const sw=(k,arr)=>arr.map((c,i)=>`<button class="sw${a[k]===i?' sel':''}" ${x} data-av="${k}" data-v="${i}" style="--c:${c}" aria-label="${k} ${i+1}"></button>`).join('');const tx=(k,arr)=>arr.map((t,i)=>`<button class="${a[k]===i?'sel':''}" ${x} data-av="${k}" data-v="${i}">${k==='pt'&&i===4?'#'+a.n:t}</button>`).join('');
   return `<div class="row"><b>Skin</b>${sw('sk',AV.SKIN)}</div><div class="row"><b>Hair</b>${tx('hs',AV.HS)}</div><div class="row"><b>Hair color</b>${sw('hc',AV.HAIR)}</div><div class="row"><b>Shirt</b>${sw('sh',AV.SHIRT)}</div><div class="row"><b>Pattern</b>${tx('pt',AV.PAT)}${a.pt===4?`<button ${x} data-av="n">Next number ▸</button>`:''}</div>`;}
 function avClick(el){const k=el.dataset.av;if(k==='n')ST.av.n=ST.av.n%9+1;else ST.av[k]=+el.dataset.v;store('habitat-av',ST.av);}
