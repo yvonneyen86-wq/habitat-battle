@@ -55,6 +55,10 @@ RT | Who does Mandy live with? | She lives with her brother, grandfather, and gr
 RS | What do families do together? Tell us one thing.
 RS | Which family is like your family? Why?
 # grammar
+GT | Verb Be – am / is / are
+R | I **am** → I**'m**      He **is** → He**'s**
+R | I**'m** six years old.  ·  He**'s** eight years old.
+R | My family **is** big.  ·  Friends **are** important.
 G | I'm six years old.
 G | My family is big.
 G | He's eight years old.
@@ -124,6 +128,10 @@ RT | What do Elliot and Tuti do together? | They eat, play, and sleep together.
 RS | Why are Elliot and Tuti scared?
 RS | Is Elliot happy at the end of the story? Why?
 # grammar
+GT | This, That, These, and Those
+R | **This is** a zebra.   (one, near)      **That's** a lion.   (one, far)
+R | **These are** zebras.   (many, near)      **Those are** lions.   (many, far)
+R | That **is** → That**'s**
 G | This is a zebra.
 G | These are zebras.
 G | That's a lion.
@@ -187,6 +195,10 @@ RT | What color are the dogs? | The dogs are yellow.
 RS | Which animals are in the tree? Tell us two.
 RS | What words in the poems end with the same sound?
 # grammar
+GT | There is … / There are …
+R | **There is** a black kitten.   (one)
+R | **There are** white kittens.   (many)
+R | There **is** → There**'s**
 G | There is a black kitten.
 G | There are white kittens.
 G | There's a black spider.
@@ -252,6 +264,9 @@ RT | What do the children paint? | They paint a mural of the ocean.
 RS | How do we make a secondary color? Tell us one.
 RS | What is in the ocean mural? Tell us two things.
 # grammar
+GT | In, On, Under, Next To
+R | I am **in** the ocean.  ·  The seashells are **on** the sand.
+R | The starfish is **under** the seashell.  ·  The seaweed is **next to** the fish.
 G | I am in the ocean.
 G | The starfish is under the seashell.
 G | The seashells are on the sand.
@@ -318,6 +333,10 @@ RT | Where do some crabs make their homes? | Some crabs make their homes in old 
 RS | Why do crabs find new seashells?
 RS | How does an opossum make its home safe and dry? Tell us.
 # grammar
+GT | Where Questions
+R | **Where's** the eagle?  **It's** under the tree.
+R | **Where are** the chicks?  **They're** in the nest.
+R | Where **is** → Where**'s**
 G | Where is the eagle?
 G | It is under the tree.
 G | Where are the chicks?
@@ -385,6 +404,10 @@ RT | Where does Anak live when she is twelve? | She lives in the rainforest.
 RS | Why is Anak at the reserve at the beginning of the story?
 RS | At the end of the story, is Dian happy or sad? Why?
 # grammar
+GT | What and Who Questions
+R | **What's** that?  It's a tree.
+R | **Who's** this?  It's Anak.
+R | What **is** → What**'s**      Who **is** → Who**'s**
 G | What is that?
 G | It is a tree.
 G | Who is this?
@@ -453,6 +476,10 @@ RT | What covers the ground in winter? | The snow covers the ground.
 RS | What do animals do in the fall?
 RS | How are summer days and winter days different?
 # grammar
+GT | Simple Present – It
+R | It **gets** hot.  ·  It **doesn't get** cold.
+R | It **snows** in the winter.  ·  It **doesn't snow** in the summer.
+R | Does **not** → Does**n't**
 G | It gets hot in the summer.
 G | It doesn't get cold.
 G | It snows in the winter.
@@ -521,6 +548,10 @@ RT | What does Arnold build in the winter? | He builds a snowman.
 RS | What does Arnold's family make in the fall?
 RS | Does Arnold like his apple tree? Why?
 # grammar
+GT | Simple Present – I and You
+R | I **make** a swing.  ·  I **don't make** apple pies.
+R | You **build** a snowman.  ·  You **don't build** a tree house.
+R | **Do** you **watch** honeybees?  Yes, I **do**.  /  No, I **don't**.
 G | I make a swing for my tree.
 G | I don't make apple pies.
 G | Do you watch honeybees?
@@ -587,6 +618,9 @@ RT | How many seashells do we have? | We have seventeen seashells.
 RS | Why do we count things by twos?
 RS | How do you use addition every day?
 # grammar
+GT | Simple Present – Have
+R | You **have** a seashell.  ·  I **don't have** a seashell.
+R | They **have** T-shirts.  ·  We **don't have** T-shirts.
 G | You have a seashell.
 G | I don't have a seashell.
 G | They have seven T-shirts.
@@ -656,6 +690,10 @@ RT | Who eats the soup at the end? | Everyone eats some soup.
 RS | Are the people hungry at the end of the story? Why not?
 RS | What is the lesson of the story?
 # grammar
+GT | Simple Present Questions – Have
+R | **Do** you **have** food?  Yes, I **do**.
+R | **What do** you **have**?  I **have** carrots.
+R | **Do** you **have** potatoes?  No, I **don't**.
 G | Do you have any food?
 G | Yes, I do.
 G | What do you have?
@@ -725,6 +763,10 @@ RT | What does the farmer do at the end of the story? | He takes the hat and the
 RS | Why is Mrs. Flores angry?
 RS | What is the lesson of the story?
 # grammar
+GT | Simple Present – He and She
+R | He **has** a cow.  ·  He **doesn't have** a hat.
+R | He **wants** a hat.  ·  He **doesn't want** a cow.
+R | She **needs** a cow.  ·  She **doesn't need** a dress.
 G | He has a cow.
 G | He doesn't have a hat.
 G | He wants a fancy hat.
@@ -791,6 +833,9 @@ RT | What do teachers help us do? | Teachers help us learn.
 RS | What is a service job? Tell us one example.
 RS | What do you need? Do you have these things?
 # grammar
+GT | Simple Present Questions – He and She
+R | **Does** Maria **have** a kitten?  No, she **doesn't**.
+R | **What does** Akif **want**?  He **wants** a bicycle.
 G | Does Maria have a kitten?
 G | No, she doesn't.
 G | What does Akif want?
@@ -860,6 +905,9 @@ RT | What does an address tell us? | An address tells us where a home is.
 RS | What is in a town? Tell us one thing.
 RS | When do we use an address?
 # grammar
+GT | Possessive 's
+R | Mason**'s** address is 19 Main Street, Rivertown.
+R | Is this Jenna**'s** house?  Yes, it is.
 G | Matias's house is in a town.
 G | Jenna's house is in the country.
 G | Nada's apartment is in the city.
@@ -930,6 +978,10 @@ RT | What does City Mouse think about the country? | He thinks the country is to
 RS | Why does Country Mouse go home?
 RS | How are City Mouse and Country Mouse different? Tell us one thing.
 # grammar
+GT | Possessive Adjectives
+R | **His** home is in the city.  ·  **Her** neighborhood isn't quiet.
+R | Is **your** apartment small?  No, it isn't.
+R | my · your · his · her · our · their
 G | His home is in the city.
 G | Her neighborhood isn't quiet.
 G | Is your apartment small?
@@ -999,6 +1051,10 @@ RT | Why is a triangle called a triangle? | Its shape is a triangle.
 RS | How can we keep the beat without an instrument?
 RS | Which percussion instrument is your favorite? Tell us how we play it.
 # grammar
+GT | Present Continuous
+R | You**'re playing** the drums.  ·  You **aren't playing** the xylophone.
+R | I**'m shaking** the tambourine.  ·  I**'m not striking** it.
+R | am / is / are + verb + **-ing**
 G | You're playing the drums.
 G | You aren't playing the xylophone.
 G | I'm shaking the tambourine.
@@ -1067,6 +1123,11 @@ RT | What are the people doing at the concert? | They are clapping and giving mo
 RS | What is the students' problem? What is their solution?
 RS | Why are the students happy at the end of the story?
 # grammar
+GT | Present Continuous Questions
+R | **Are** you **singing**?  Yes, I **am**.
+R | **Is** she **dancing**?  No, she **isn't**.
+R | **Are** they **playing** instruments?  Yes, they **are**.
+R | **Are** we **having** fun?  Yes, we **are**!
 G | Are you singing a song?
 G | Yes, I am singing.
 G | Is she dancing in the parade?
@@ -1137,6 +1198,9 @@ RT | Can a ball move by itself? | No, a ball can only move if we move it.
 RS | How are living and nonliving things different? Tell us one thing.
 RS | What living things do you see every day?
 # grammar
+GT | Can and Can't
+R | An animal **can** grow.  ·  A toy **can't** grow.
+R | People **can** breathe.  ·  Sneakers **can't** breathe.
 G | An animal can grow.
 G | A toy can't grow.
 G | People can breathe air.
@@ -1224,6 +1288,9 @@ RT | What does the fox tell the gingerbread man to do? | The fox tells him to cl
 RS | Why does everyone chase the gingerbread man?
 RS | Why does the fox tell the gingerbread man to climb on his nose?
 # grammar
+GT | Should and Shouldn't
+R | You **should** run away!
+R | You **shouldn't** stay here.
 G | You should run away!
 G | You shouldn't stay here.
 G | She should close the door.
