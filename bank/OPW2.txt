@@ -1,0 +1,47 @@
+=== OPW2 ===
+// Oxford Phonics World 2 — Learning Time activities. One unit per sound. Sections: # sound, # words, # story, # sort, # pairs, # build.
+// This first unit is a SAMPLE written for testing the game (story text and pictures are not from the book); replace it with the book's content.
+## U1 (sample) | Short a: cat, hat, map |
+# sound
+a | short a | apple
+# words
+cat | c/a/t | 🐱
+hat | h/a/t | 🎩
+bat | b/a/t | 🦇
+map | m/a/p | 🗺️
+cap | c/a/p | 🧢
+bag | b/a/g | 🎒
+fan | f/a/n | 🪭
+man | m/a/n | 👨
+pan | p/a/n | 🍳
+jam | j/a/m | 🍓
+# story
+P | The cat has a hat. |
+P | The cat has a bag. |
+P | A rat is in the bag! |
+P | Run, cat, run! |
+RC | What does the cat have? | a hat | a map | a fan
+RC | What is in the bag? | a rat | a cap | a pan
+RC | What does the cat do at the end? | run | nap | sit
+# sort
+cat | a
+hat | a
+dog | o
+map | a
+hot | o
+pan | a
+mop | o
+jam | a
+# pairs
+cat | cot
+hat | hot
+pan | pin
+map | mop
+bag | big
+# build
+G | The cat is on the map.
+G | I have a red hat.
+G | The man has a bag.
+G | Look at the fan.
+G | Is the cap in the bag?
+G | The bat can see the jam.

@@ -49,6 +49,23 @@ G | correct sentence
 SP | A: line | B: line | A: My {leg} hurts! | B: line | leg / head / ear   ({} = swappable key word, last field = the words to swap)
 SW | My favorite animal group is {birds}. They have {wings}. | prompt      ({} = parts the student changes in their own sentences)
 ```
+Phonics levels (`bank/OPW1.txt … OPW5.txt`, Oxford Phonics World) use these sections instead of `# learn/# battle` (battle + learn lines are generated from them):
+```
+## U1 | Short a: cat, hat, map |
+# sound
+a | short a | apple              (letters | label | key word; chunks equal to the letters are highlighted on the tablets)
+# words
+cat | c/a/t | 🐱                 (word | one piece per sound | emoji)
+# story
+P | The cat has a hat. | drive:FILEID   (one line per panel, 2–6; picture = drive:<Drive file id shared "anyone with the link">, a bare id, an image URL, or empty)
+RC | question | correct | wrong | wrong   (exactly 3, asked after the panels)
+# sort
+cat | a                          (word | sound bucket; at least 2 buckets — the tablet shows one word at a time and the buckets as big buttons)
+# pairs
+cat | cot                        (minimal pairs; A says the left word, B the right one)
+# build
+G | The cat is on the map.       (sentence unscramble with the unit words + sight words)
+```
 Lines starting with `//` are ignored. One question per line, `|` only as separator, no Chinese. `python3 tools/check_bank.py` enforces all of the above (including the 8-question reading rule and that chunks/syllables spell the word).
 Content for the four Learning Time sections comes from the scanned Oxford Discover Student Book pages in the teacher's Google Drive (folders OD1–OD5, files `p.N`; each unit = 8 pages: Words, Before You Read, Reading ×2, Understand, Grammar, Words+Listening, Speaking/Word Study/Write). All five levels (90 units) now carry the four sections; the per-level drafting notes live in the scratchpad briefs (page map → one agent per 3 units → check_unit.py → merge). OD5 units 7–12 start two pages later (p.70, 78, 90, 98, 110, 118) and 13–18 four pages later (p.132 …) because of the Testing Practice spreads.
 
@@ -56,6 +73,7 @@ Content for the four Learning Time sections comes from the scanned Oxford Discov
 - Mode is decided by the URL: no `?join=` → teacher/host; `?join=CODE` → student.
 - Host state object `S` (players, phase `gather|battle|end`, battle round data, qText/bText question text, bankSel). `changed()` = render + save + broadcast.
 - Student state `ST`; students receive `{t:'state', s, me, my}` snapshots and send `{t:'join'|'buy'|'answer'|'build'|'choose'|'buzz'|'vote'|'act'|'power'}`.
+- Phonics units (`u.phon`, any `OPW*` level): the same four buttons become 🔤 Words (sound-by-sound) · 📖 Story (panels `S.lt.i` from −P…−1, then 3 RC questions 0…2) · 🧩 Sound Sort (`{t:'lt',k:'sort'}`) · 💬 Say & Build (pairs + unscramble, `{t:'lt',k:'build'}`); labels come from `ltCats(u)`; `imgURL()` turns `drive:ID` into a Drive thumbnail URL.
 - Learning Time activities (`S.lt`, host `ltStart/ltStop/ltNext/ltMsg/ltGrade/renderLTPanel/ltBoardHTML/ltOverlayHTML`, tablet `sLtDock/sLtClick`, student messages `{t:'lt',k:'word'|'gram'|'choice'|'type'|'hand'|'write'}`): the per-unit content is built by `ltFromUnit()` when a textbook unit is applied (`S.ltUnits`, `S.ltU`), and the panel appears in the console during `gather`. Auto-judged items pay +1 🪙 (+2 for a first-try grammar sentence); teacher-graded ones ✓ +2 / ⭐ +3.
 - Question types parsed by `parseQ()`; battle flow: `nextRound()` → grading (`markCorrect(pid, tier 1|2|3)`) → students `onAct()` → optional `startDefense()` → `resolveRound()`. Extras: `summonBoss()`, `openVote()/revealVote()`, `requestSpell()/castSpell()`.
 - Projector effects: canvas painters `paintScene()/paintDynamic()`, particle engine `burst/confetti/floatText/projectile`, `banner()` queue.
