@@ -64,8 +64,9 @@ cat | a                          (word | sound bucket; at least 2 buckets — th
 # pairs
 cat | cot                        (minimal pairs; A says the left word, B the right one)
 # build
-G | The cat is on the map.       (sentence unscramble with the unit words + sight words)
+G | The cat is on the map. | 🐱   (sentence unscramble with the unit words + sight words; the optional 3rd field is a picture hint — emoji or drive ref — otherwise the matching story panel or the unit words' emojis are shown)
 ```
+OPW1 is the alphabet level (`u.alpha`): Words becomes picture → tap the first letter (`lt-letter`), Sound Sort plays the word (🔊) and hides it, Say & Build shows 4 picture cards (`u.say`) instead of minimal pairs.
 Lines starting with `//` are ignored. One question per line, `|` only as separator, no Chinese. `python3 tools/check_bank.py` enforces all of the above (including the 8-question reading rule and that chunks/syllables spell the word).
 Content for the four Learning Time sections comes from the scanned Oxford Discover Student Book pages in the teacher's Google Drive (folders OD1–OD5, files `p.N`; each unit = 8 pages: Words, Before You Read, Reading ×2, Understand, Grammar, Words+Listening, Speaking/Word Study/Write). All five levels (90 units) now carry the four sections; the per-level drafting notes live in the scratchpad briefs (page map → one agent per 3 units → check_unit.py → merge). OD5 units 7–12 start two pages later (p.70, 78, 90, 98, 110, 118) and 13–18 four pages later (p.132 …) because of the Testing Practice spreads.
 
