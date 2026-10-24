@@ -1,0 +1,437 @@
+=== OPW1 ===
+// Oxford Phonics World 1 - Learning Time activities. One unit per sound group. Sections: # sound, # words, # story, # sort, # pairs, # build.
+// Story pictures live in the teacher's Google Drive folder OPW-images (shared with the link); drive:ID#x,y,w,h = a crop box (percent) inside the page photo.
+## U1 | a b c: apple, bear, cat |
+# sound
+a | short a | apple
+b | b | bear
+c | hard c | cat
+# words
+apple | a/pp/le | 🍎
+ax | a/x | 🪓
+ant | a/n/t | 🐜
+alligator | a/ll/i/g/a/t/or | 🐊
+bear | b/ear | 🐻
+bird | b/ir/d | 🐦
+bed | b/e/d | 🛏️
+banana | b/a/n/a/n/a | 🍌
+cat | c/a/t | 🐱
+cup | c/u/p | 🥤
+car | c/ar | 🚗
+computer | c/o/m/p/u/t/er | 💻
+# story
+P | An alligator! | drive:1PazRkFsa9L6yNJx-jAxkXUIJc5__GOGl#17.6,20.2,28.0,33.2
+P | A bear! | drive:1PazRkFsa9L6yNJx-jAxkXUIJc5__GOGl#48.5,20.2,35.3,33.2
+P | A banana! | drive:1PazRkFsa9L6yNJx-jAxkXUIJc5__GOGl#17.6,54.3,28.0,34.7
+P | It is a cat! | drive:1PazRkFsa9L6yNJx-jAxkXUIJc5__GOGl#48.5,56.0,35.3,32.1
+RC | What does the apple see first? | an alligator | a bear | a cat
+RC | What does the bear slip on? | a banana | an apple | a car
+RC | What is inside the bear? | a cat | a bird | an ant
+# sort
+ant | a
+apple | a
+ax | a
+alligator | a
+bear | b
+bird | b
+bed | b
+banana | b
+cat | c
+cup | c
+car | c
+computer | c
+# pairs
+bear | car
+cat | cup
+bed | bird
+ant | ax
+banana | bear
+# build
+G | It is a cat!
+G | It is a bear!
+G | It is an alligator!
+G | It is a banana!
+G | It is an ant.
+G | It is a cup.
+## U2 | d e f: dog, egg, fish |
+# sound
+d | d | dog
+e | short e | egg
+f | f | fish
+# words
+dog | d/o/g | 🐶
+desk | d/e/s/k | 🪑
+doll | d/o/ll | 🪆
+duck | d/u/ck | 🦆
+egg | e/gg | 🥚
+elbow | e/l/b/ow | 💪
+envelope | e/n/v/e/l/o/pe | ✉️
+elephant | e/l/e/ph/a/n/t | 🐘
+fish | f/i/sh | 🐟
+fan | f/a/n | 🪭
+farm | f/ar/m | 🚜
+fork | f/or/k | 🍴
+# story
+P | I see an egg. | drive:17fOVaiL37qFnh2Jbc30sbBpseopHqKz3#13.0,18.8,22.4,29.3
+P | I have a fan. | drive:17fOVaiL37qFnh2Jbc30sbBpseopHqKz3#38.3,18.8,22.2,29.3
+P | It is a desk. | drive:17fOVaiL37qFnh2Jbc30sbBpseopHqKz3#63.1,18.8,22.1,29.3
+P | It is an elephant! | drive:17fOVaiL37qFnh2Jbc30sbBpseopHqKz3#12.8,50.8,72.6,37.6
+RC | What does the ant see first? | an egg | a fan | a desk
+RC | What does the ant have? | a fan | an egg | a fork
+RC | What is it in the end? | an elephant | a desk | a dog
+# sort
+dog | d
+desk | d
+doll | d
+duck | d
+egg | e
+elbow | e
+envelope | e
+elephant | e
+fish | f
+fan | f
+farm | f
+fork | f
+# pairs
+dog | doll
+duck | desk
+fan | farm
+fork | fan
+egg | elbow
+# build
+G | I see an egg.
+G | I have a fan.
+G | It is a desk.
+G | It is an elephant!
+G | I see a dog.
+G | I have a fork.
+G | I see a duck.
+## U3 | g h i: gorilla, horse, insect |
+# sound
+g | g | gorilla
+h | h | horse
+i | short i | insect
+# words
+gorilla | g/o/r/i/ll/a | 🦍
+goat | g/oa/t | 🐐
+gift | g/i/f/t | 🎁
+girl | g/ir/l | 👧
+horse | h/or/se | 🐴
+hat | h/a/t | 🎩
+house | h/ou/se | 🏠
+insect | i/n/s/e/c/t | 🐞
+ink | i/n/k | 🖋️
+igloo | i/g/l/oo | 🧊
+iguana | i/g/u/a/n/a | 🦎
+# story
+P | I see an iguana. I want a hot dog. | drive:1iOmjBhrtMt_HQ5H5H_IITTOf7aJxAjrw#12.7,18.2,35.4,32.9
+P | This is a bear. | drive:1iOmjBhrtMt_HQ5H5H_IITTOf7aJxAjrw#50.1,18.2,33.8,32.9
+P | It is a gorilla. I want my bear! | drive:1iOmjBhrtMt_HQ5H5H_IITTOf7aJxAjrw#14.1,53.8,34.0,33.5
+P | I want a gorilla! | drive:1iOmjBhrtMt_HQ5H5H_IITTOf7aJxAjrw#50.1,53.8,37.2,33.5
+RC | What does the girl see first? | an iguana | a bear | a gorilla
+RC | What does the boy want to eat? | a hot dog | a goat | an insect
+RC | What does the girl want at the end? | a gorilla | a bear | a horse
+# sort
+gorilla | g
+goat | g
+gift | g
+girl | g
+horse | h
+hat | h
+house | h
+insect | i
+ink | i
+igloo | i
+iguana | i
+# pairs
+got | hot
+gas | has
+hit | it
+hill | ill
+goat | boat
+# build
+G | I see an iguana.
+G | I want a hot dog.
+G | This is a bear.
+G | It is a gorilla.
+G | I want my bear!
+G | I want a gorilla!
+G | I want my hat.
+G | This is a horse.
+## U4 | j k l: jet, kite, lion |
+# sound
+j | j | jet
+k | k | kangaroo
+l | l | lion
+# words
+jet | j/e/t | ✈️
+jam | j/a/m | 🍯
+juice | j/ui/ce | 🧃
+jacket | j/a/ck/e/t | 🧥
+kangaroo | k/a/ng/a/r/oo | 🦘
+key | k/ey | 🔑
+king | k/i/ng | 🤴
+kite | k/i/te | 🪁
+lion | l/i/o/n | 🦁
+lamp | l/a/m/p | 💡
+leaf | l/ea/f | 🍃
+lemon | l/e/m/o/n | 🍋
+# story
+P | That is a kite. That is a jet. | drive:1Ub-6BPOXC9-tPZqQIx3yJVdDcmBwijjJ#12.6,17.8,74.3,16.1
+P | That is a leaf. | drive:1Ub-6BPOXC9-tPZqQIx3yJVdDcmBwijjJ#12.6,35.9,74.3,16.2
+P | I like the jet and the kite. I like the leaf. | drive:1Ub-6BPOXC9-tPZqQIx3yJVdDcmBwijjJ#12.6,54.2,74.3,17.7
+P | I like my hat! | drive:1Ub-6BPOXC9-tPZqQIx3yJVdDcmBwijjJ#12.6,72.7,74.3,16.1
+RC | What does the girl see in the sky? | a kite | a leaf | a lemon
+RC | What does the boy like? | the leaf | the jet | the kite
+RC | Who says "I like my hat!"? | the woman | the boy | the girl
+# sort
+jet | j
+jam | j
+juice | j
+jacket | j
+kangaroo | k
+key | k
+king | k
+kite | k
+lion | l
+lamp | l
+leaf | l
+lemon | l
+# pairs
+jet | let
+kid | lid
+jump | lump
+king | ring
+jam | lamp
+# build
+G | That is a kite.
+G | That is a jet.
+G | That is a leaf.
+G | I like the jet and the kite.
+G | I like the leaf.
+G | I like my hat!
+G | I like my kite.
+G | That is a lion.
+## U5 | m n o: monkey, nut, octopus |
+# sound
+m | m | monkey
+n | n | nut
+o | short o | octopus
+# words
+monkey | m/o/n/k/ey | 🐒
+milk | m/i/l/k | 🥛
+money | m/o/n/ey | 💰
+mouse | m/ou/se | 🐭
+nut | n/u/t | 🥜
+net | n/e/t | 🥅
+nest | n/e/s/t | 🪺
+nose | n/o/se | 👃
+octopus | o/c/t/o/p/u/s | 🐙
+ox | o/x | 🐂
+olive | o/l/i/ve | 🫒
+ostrich | o/s/t/r/i/ch | 🐦
+# story
+P | This is my nut. That is my nut! | drive:1aQ-TgWZqXBrtvL12RUgLgaEVma3Tlpm_#12.0,17.4,37.0,23.2
+P | No, it is my nut. It is a monkey! | drive:1aQ-TgWZqXBrtvL12RUgLgaEVma3Tlpm_#49.9,17.4,37.2,23.2
+P | Yes, it is your nut. Is that your olive? | drive:1aQ-TgWZqXBrtvL12RUgLgaEVma3Tlpm_#5.3,42.2,43.7,48.2
+P | No, it is your olive! | drive:1aQ-TgWZqXBrtvL12RUgLgaEVma3Tlpm_#49.9,42.2,37.2,48.2
+RC | Who has the nut at the start? | a mouse | a monkey | an ox
+RC | Who takes the nut? | a monkey | a mouse | an ostrich
+RC | What does the monkey give back? | an olive | a nut | milk
+# sort
+monkey | m
+milk | m
+money | m
+mouse | m
+nut | n
+net | n
+nest | n
+nose | n
+octopus | o
+ox | o
+olive | o
+ostrich | o
+# pairs
+nut | net
+net | nest
+no | nose
+monkey | money
+# build
+G | This is my nut.
+G | That is my nut!
+G | No, it is my nut.
+G | It is a monkey!
+G | Yes, it is your nut.
+G | Is that your olive?
+G | No, it is your olive!
+G | This is my mouse.
+## U6 | p q r: peach, queen, rabbit |
+# sound
+p | p | peach
+q | qu | queen
+r | r | rabbit
+# words
+peach | p/ea/ch | 🍑
+pen | p/e/n | 🖊️
+panda | p/a/n/d/a | 🐼
+pineapple | p/i/ne/a/pp/le | 🍍
+queen | qu/ee/n | 👸
+quiz | qu/i/z | 📝
+quilt | qu/i/l/t | 🛏️
+question | qu/e/s/t/io/n | ❓
+rabbit | r/a/bb/i/t | 🐰
+rose | r/o/se | 🌹
+rice | r/i/ce | 🍚
+robot | r/o/b/o/t | 🤖
+# story
+P | I am the queen. I want a rose. | drive:1HI2NLsq81JkUy_sbiSlHL-d-ZC89GTIo#15.7,17.3,26.4,37.6
+P | That is a small panda. That is a big robot. | drive:1HI2NLsq81JkUy_sbiSlHL-d-ZC89GTIo#42.3,17.3,46.6,37.6
+P | I have the rose! | drive:1HI2NLsq81JkUy_sbiSlHL-d-ZC89GTIo#15.1,55.9,47.7,35.9
+P | I like my rose! | drive:1HI2NLsq81JkUy_sbiSlHL-d-ZC89GTIo#62.9,55.9,30.2,35.9
+RC | What does the queen want? | a rose | a peach | a pen
+RC | Who is small? | the panda | the robot | the queen
+RC | Who gets the rose? | the panda | the robot | the king
+# sort
+peach | p
+pen | p
+panda | p
+pineapple | p
+queen | q
+quiz | q
+quilt | q
+question | q
+rabbit | r
+rose | r
+rice | r
+robot | r
+# pairs
+rose | nose
+rice | rose
+quiz | quilt
+rabbit | robot
+pen | peach
+# build
+G | I am the queen.
+G | I want a rose.
+G | That is a small panda.
+G | That is a big robot.
+G | I have the rose!
+G | I like my rose!
+G | I want a big peach.
+G | That is a small rabbit.
+## U7 | s t u v: sun, tiger, umbrella, van |
+# sound
+s | s | seal
+t | t | turtle
+u | short u | umbrella
+v | v | van
+# words
+seal | s/ea/l | 🦭
+sun | s/u/n | ☀️
+soap | s/oa/p | 🧼
+socks | s/o/ck/s | 🧦
+turtle | t/ur/t/le | 🐢
+tent | t/e/n/t | ⛺
+tiger | t/i/g/er | 🐯
+teacher | t/ea/ch/er | 👩‍🏫
+umbrella | u/m/b/r/e/ll/a | ☂️
+up | u/p | ⬆️
+uncle | u/n/c/le | 👨
+umpire | u/m/p/ire | ⚾
+van | v/a/n | 🚐
+vet | v/e/t | 👨‍⚕️
+vest | v/e/s/t | 🦺
+violin | v/i/o/l/i/n | 🎻
+# story
+P | The sun is up! | drive:1ej2VW7Q2k9D-Y21xuCFDGhPgOlsRW7rg#14.9,18.2,34.3,34.5
+P | Hi! This is my uncle. He is a vet. | drive:1ej2VW7Q2k9D-Y21xuCFDGhPgOlsRW7rg#50.5,18.2,35.1,34.5
+P | Do you have a cat? No, I don't. What is that? | drive:1ej2VW7Q2k9D-Y21xuCFDGhPgOlsRW7rg#14.9,54.2,34.3,34.4
+P | It is a small tiger! | drive:1ej2VW7Q2k9D-Y21xuCFDGhPgOlsRW7rg#50.5,54.2,37.0,34.4
+RC | What is up? | the sun | the moon | a bat
+RC | Who is the vet? | the uncle | the girl | the tiger
+RC | What does the girl have? | a small tiger | a cat | a dog
+# sort
+seal | s
+sun | s
+soap | s
+turtle | t
+tent | t
+tiger | t
+umbrella | u
+up | u
+uncle | u
+van | v
+vet | v
+vest | v
+# pairs
+vet | vest
+vet | tent
+sun | van
+van | tan
+up | us
+# build
+G | The sun is up.
+G | This is my uncle.
+G | He is a vet.
+G | Do you have a cat?
+G | What is that?
+G | It is a small tiger.
+G | I have a tent.
+G | He is a teacher.
+## U8 | w x y z: wolf, fox, yak, zebra |
+# sound
+w | w | wolf
+x | x | fox
+y | y | yak
+z | z | zipper
+# words
+wolf | w/o/l/f | 🐺
+web | w/e/b | 🕸️
+water | w/a/t/er | 💧
+watch | w/a/tch | ⌚
+fox | f/o/x | 🦊
+box | b/o/x | 📦
+six | s/i/x | 6️⃣
+wax | w/a/x | 🕯️
+yak | y/a/k | 🐂
+yogurt | y/o/g/ur/t | 🥛
+yacht | y/ach/t | ⛵
+zipper | z/i/pp/er | 🤐
+zero | z/e/r/o | 0️⃣
+zoo | z/oo | 🐘
+zebra | z/e/b/r/a | 🦓
+# story
+P | That fox has a box. That wolf has a watch. | drive:1fk-zuqAzaXfOEeP2pJEVQE5w8W9gtD-4#14.3,18.9,70.5,23.5
+P | That zebra has a zipper. That yak has a yo-yo. | drive:1fk-zuqAzaXfOEeP2pJEVQE5w8W9gtD-4#14.3,43.8,70.5,23.5
+P | What do you have? | drive:1fk-zuqAzaXfOEeP2pJEVQE5w8W9gtD-4#14.3,68.6,43.2,19.5
+P | I have an umbrella! | drive:1fk-zuqAzaXfOEeP2pJEVQE5w8W9gtD-4#58.4,68.6,26.4,19.5
+RC | What does the fox have? | a box | a watch | a yo-yo
+RC | Who has a watch? | the wolf | the fox | the yak
+RC | What does the boy have? | an umbrella | a zipper | a box
+# sort
+wolf | w
+web | w
+water | w
+fox | x
+box | x
+six | x
+yak | y
+yogurt | y
+yacht | y
+zipper | z
+zoo | z
+zebra | z
+# pairs
+fox | box
+zoo | you
+web | wet
+yak | yacht
+# build
+G | That fox has a box.
+G | That wolf has a watch.
+G | That zebra has a zipper.
+G | That yak has a yo-yo.
+G | What do you have?
+G | I have an umbrella.
+G | That fox has a watch.
+G | I have a yak.
