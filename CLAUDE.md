@@ -55,7 +55,7 @@ Phonics levels (`bank/OPW1.txt … OPW5.txt`, Oxford Phonics World) use these se
 # sound
 a | short a | apple              (letters | label | key word; chunks equal to the letters are highlighted on the tablets)
 # words
-cat | c/a/t | 🐱                 (word | one piece per sound | emoji)
+cat | c/a/t | 🐱                 (word | one piece per sound | picture: emoji, or drive:ID#x,y,w,h = a crop of the book's words page)
 # story
 P | The cat has a hat. | drive:FILEID   (one line per panel, 2–6; picture = drive:<Drive file id shared "anyone with the link">, a bare id, an image URL, or empty)
 RC | question | correct | wrong | wrong   (exactly 3, asked after the panels)
