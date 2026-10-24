@@ -28,10 +28,6 @@ RC | Where is the man? | at the dam | at the pan | at the fan
 RC | What do the ants want? | the yam | the fan | the van
 RC | What does the man put on the yam? | jam | a can | a fan
 # sort
-cat | a
-ant | a
-yak | a
-ax | a
 ram | am
 jam | am
 yam | am
@@ -137,18 +133,16 @@ RC | What is the red hen at the start? | wet | dry | hot
 RC | Where is the pet hen? | in bed | in a net | in a jet
 RC | How many eggs does the hen have? | ten | two | six
 # sort
+vet | et
+ten | en
 jet | et
 net | et
 wet | et
 pet | et
-vet | et
 hen | en
 pen | en
-ten | en
 red | ed
 bed | ed
-egg | e
-web | e
 # pairs
 pet | pen
 hen | ten
@@ -192,18 +186,16 @@ RC | What does the kid use first? | ink | a bib | a cup
 RC | What can he open? | a lid | a bib | a zip
 RC | What does this kid need? | a bib | a lid | ink
 # sort
+hip | ip
+zip | ip
 lip | ip
 tip | ip
 sip | ip
 rip | ip
-zip | ip
-hip | ip
 bib | ib
 rib | ib
 kid | id
 lid | id
-ink | i
-in | i
 # pairs
 lip | lid
 rip | rib
@@ -249,16 +241,16 @@ RC | What can the fish do at the end? | win | dig | mix
 # sort
 pin | in
 fin | in
+bin | in
 win | in
 fig | ig
+wig | ig
 big | ig
 dig | ig
 pit | it
 hit | it
 six | ix
 mix | ix
-bin | in
-wig | ig
 # pairs
 pin | pit
 big | bin
@@ -301,10 +293,6 @@ RC | What does the fox have? | a hot pot | a big mop | a wet cot
 RC | Where does the fox stand? | on a log | on a rock | in a pot
 RC | What happens to the fox at the end? | He gets wet. | He gets a fish. | He gets hot.
 # sort
-fox | o
-log | o
-ox | o
-rod | o
 pot | ot
 hot | ot
 cot | ot
@@ -354,16 +342,15 @@ RC | How does the mud feel at first? | sad | happy | hot
 RC | Who digs in the mud? | a pup | a bug | a cub
 RC | What does the bug put in the mud? | a pit | a cup | a rug
 # sort
+jug | ug
+hug | ug
 bug | ug
 rug | ug
 mug | ug
-jug | ug
-hug | ug
 bud | ud
 mud | ud
 pup | up
 cup | up
-up | up
 # pairs
 bug | bud
 mug | mud
