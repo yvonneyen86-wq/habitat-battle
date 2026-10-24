@@ -61,7 +61,10 @@ for f in sorted(glob.glob(os.path.join(root, 'bank', 'OD*.txt')) + glob.glob(os.
             if t == 'RT' and n < 2: bad(f'{f}:{i}: RT needs question | model sentence')
             if t == 'RS' and n < 1: bad(f'{f}:{i}: RS needs a question')
         elif mode == 'G':
-            if t != 'G' or n < 1: bad(f'{f}:{i}: grammar lines are G | sentence')
+            if t == 'R':
+                if n < 2: bad(f'{f}:{i}: R needs title | formula line …')
+                continue
+            if t != 'G' or n < 1: bad(f'{f}:{i}: grammar lines are G | sentence (or R | title | formula lines)')
             elif len(l.split('|', 1)[1].split()) < 3: bad(f'{f}:{i}: grammar sentence too short to scramble')
         elif mode == 'S':
             if t == 'SP':
