@@ -310,8 +310,11 @@ RT | What is traveling like today? | Travel is fast and easy now.
 RS | How did people get news before newspapers?
 RS | How is travel different now from long ago? Tell us one thing.
 # grammar
-R | Simple Past · Regular Verbs | verb + -ed → listened · traveled · walked | didn't + verb → didn't watch · didn't travel | many years ago · long ago · last night
-R | Verb changes | watch → watched | play → played | clean → cleaned | talk → talked
+GT | Simple Past – Regular Verbs
+R | verb + -ed  →  listened, traveled, walked
+R | didn't + verb  →  didn't watch, didn't travel
+R | watch → watched,  play → played,  clean → cleaned,  talk → talked
+R | time words: long ago, many years ago, last night
 G | People listened to the news on the radio.
 G | They didn't watch the news on TV.
 G | People traveled by horse and cart.
