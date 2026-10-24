@@ -7,18 +7,18 @@ a | short a | cat
 am | am | jam
 an | an | fan
 # words
-cat | c/a/t | 🐱
-ant | a/n/t | 🐜
-yak | y/a/k | 🐂
-ax | a/x | 🪓
-ram | r/a/m | 🐏
-jam | j/a/m | 🍓
-yam | y/a/m | 🍠
-dam | d/a/m | 🏞️
-fan | f/a/n | 🪭
-man | m/a/n | 👨
-pan | p/a/n | 🍳
-can | c/a/n | 🥫
+cat | c/a/t | drive:1v7ZF38f1e9-tFrXuqJ39LQL3RqUqO3Hq#21.3,48.9,25.4,17.5
+ant | a/n/t | drive:1v7ZF38f1e9-tFrXuqJ39LQL3RqUqO3Hq#53.6,48.4,34.1,16.9
+yak | y/a/k | drive:1v7ZF38f1e9-tFrXuqJ39LQL3RqUqO3Hq#14.9,72.6,32.1,16.4
+ax | a/x | drive:1v7ZF38f1e9-tFrXuqJ39LQL3RqUqO3Hq#53.5,72.4,35.1,14.1
+ram | r/a/m | drive:1m3Kp1-zQvEIca_3gXF106W9Wlsexe4I7#18.8,48.0,22.6,17.3
+jam | j/a/m | drive:1m3Kp1-zQvEIca_3gXF106W9Wlsexe4I7#59.5,47.7,18.9,16.8
+yam | y/a/m | drive:1m3Kp1-zQvEIca_3gXF106W9Wlsexe4I7#14.8,72.2,31.9,14.6
+dam | d/a/m | drive:1m3Kp1-zQvEIca_3gXF106W9Wlsexe4I7#56.9,71.7,29.1,15.0
+fan | f/a/n | drive:19I5xHNe_qv1XsL5GOGzyNFg9x6tzRoVF#13.9,49.5,22.3,17.3
+man | m/a/n | drive:19I5xHNe_qv1XsL5GOGzyNFg9x6tzRoVF#56.8,45.4,12.1,22.0
+pan | p/a/n | drive:19I5xHNe_qv1XsL5GOGzyNFg9x6tzRoVF#14.0,76.7,36.8,8.8
+can | c/a/n | drive:19I5xHNe_qv1XsL5GOGzyNFg9x6tzRoVF#68.6,73.8,11.1,13.6
 # story
 P | A man with a van is at the dam. | drive:1ddn4Jvc93a2KEGPq21nXJsJAYNJw58fc#14.5,19.4,40.5,34.6
 P | He has a fan, a can, and a yam. | drive:1ddn4Jvc93a2KEGPq21nXJsJAYNJw58fc#55.7,19.4,32.8,37.2
@@ -57,18 +57,18 @@ ag | ag | bag
 ap | ap | cap
 at | at | bat
 # words
-dad | d/a/d | 👨
-pad | p/a/d | 📝
-bag | b/a/g | 👜
-rag | r/a/g | 🧽
-cap | c/a/p | 🧢
-map | m/a/p | 🗺️
-nap | n/a/p | 😴
-tap | t/a/p | 🚰
-bat | b/a/t | 🏏
-rat | r/a/t | 🐀
-hat | h/a/t | 👒
-mat | m/a/t | 🟫
+dad | d/a/d | drive:1C_Vu-YtDWskGRZ-TjYZD96myPz2h7fHs#13.7,70.2,15.5,18.3
+pad | p/a/d | drive:1C_Vu-YtDWskGRZ-TjYZD96myPz2h7fHs#30.5,70.4,17.3,17.9
+bag | b/a/g | drive:1C_Vu-YtDWskGRZ-TjYZD96myPz2h7fHs#53.1,69.7,16.6,18.9
+rag | r/a/g | drive:1C_Vu-YtDWskGRZ-TjYZD96myPz2h7fHs#71.2,70.3,18.1,17.4
+cap | c/a/p | drive:1K5ylasOiXxZ_BVWIkUatixYVGWOrcZ6V#9.1,48.2,27.9,15.5
+map | m/a/p | drive:1K5ylasOiXxZ_BVWIkUatixYVGWOrcZ6V#51.4,47.1,29.5,17.7
+nap | n/a/p | drive:1K5ylasOiXxZ_BVWIkUatixYVGWOrcZ6V#18.8,68.8,25.1,20.6
+tap | t/a/p | drive:1K5ylasOiXxZ_BVWIkUatixYVGWOrcZ6V#52.2,72.2,18.6,17.5
+bat | b/a/t | drive:1rKIMtLImNZJWeYh9uuPKIPf46G484B_n#8.2,48.4,31.7,12.8
+rat | r/a/t | drive:1rKIMtLImNZJWeYh9uuPKIPf46G484B_n#48.5,47.9,33.0,15.6
+hat | h/a/t | drive:1rKIMtLImNZJWeYh9uuPKIPf46G484B_n#16.8,67.8,18.0,18.5
+mat | m/a/t | drive:1rKIMtLImNZJWeYh9uuPKIPf46G484B_n#45.4,69.5,31.1,14.9
 # story
 P | This is my dad! He has a hat, a bag, and a map. | drive:1U6mkrlxW9GGdpIfrWAnrxnDXJuYeIMKf#14.4,18.8,36.1,34.9
 P | That is my girl. She has a bat and a cap. | drive:1U6mkrlxW9GGdpIfrWAnrxnDXJuYeIMKf#52.4,19.1,37.8,34.7
@@ -112,18 +112,18 @@ et | et | jet
 en | en | hen
 ed | ed | red
 # words
-web | w/e/b | 🕸️
-egg | e/gg | 🥚
-vet | v/e/t | 🩺
-ten | t/e/n | 🔟
-jet | j/e/t | ✈️
-net | n/e/t | 🥅
-wet | w/e/t | 💦
-pet | p/e/t | 🐶
-hen | h/e/n | 🐔
-pen | p/e/n | 🖊️
-red | r/e/d | 🔴
-bed | b/e/d | 🛏️
+web | w/e/b | drive:1JNfC2PkLmnFHoioZnDFeciXk5WqsaebS#17.7,46.7,30.2,16.4
+egg | e/gg | drive:1JNfC2PkLmnFHoioZnDFeciXk5WqsaebS#63.2,46.1,16.7,17.8
+vet | v/e/t | drive:1JNfC2PkLmnFHoioZnDFeciXk5WqsaebS#21.1,69.2,23.4,17.8
+ten | t/e/n | drive:1JNfC2PkLmnFHoioZnDFeciXk5WqsaebS#64.8,70.7,18.2,14.3
+jet | j/e/t | drive:1V6Ie7hGn0oPnn3fr_Q0Xq-8i2TPTEbs8#12.1,47.4,29.9,16.4
+net | n/e/t | drive:1V6Ie7hGn0oPnn3fr_Q0Xq-8i2TPTEbs8#55.4,46.3,32.2,14.3
+wet | w/e/t | drive:1V6Ie7hGn0oPnn3fr_Q0Xq-8i2TPTEbs8#12.6,70.3,29.9,17.9
+pet | p/e/t | drive:1V6Ie7hGn0oPnn3fr_Q0Xq-8i2TPTEbs8#49.9,66.0,33.6,20.5
+hen | h/e/n | drive:1Qa93YEv8G_mnNZBbSJFk_LEo2o4uTw0v#11.5,74.6,22.7,15.9
+pen | p/e/n | drive:1Qa93YEv8G_mnNZBbSJFk_LEo2o4uTw0v#38.1,72.2,11.5,17.2
+red | r/e/d | drive:1Qa93YEv8G_mnNZBbSJFk_LEo2o4uTw0v#55.6,72.6,16.8,18.3
+bed | b/e/d | drive:1Qa93YEv8G_mnNZBbSJFk_LEo2o4uTw0v#75.2,71.5,17.5,17.8
 # story
 P | The red hen is wet. | drive:1MGNj8aXFNNJV1FRW9CTGMD0T8HGFNd1o#15.4,18.6,40.9,35.0
 P | Oh, no! My pet hen is in bed. | drive:1MGNj8aXFNNJV1FRW9CTGMD0T8HGFNd1o#57.3,18.6,32.6,33.6
@@ -165,18 +165,18 @@ ip | ip | lip
 ib | ib | bib
 id | id | kid
 # words
-hip | h/i/p | 🦵
-ink | i/n/k | 🖋️
-zip | z/i/p | 🤐
-in | i/n | 📥
-lip | l/i/p | 👄
-tip | t/i/p | 👆
-sip | s/i/p | 🥤
-rip | r/i/p | 💥
-bib | b/i/b | 🍼
-rib | r/i/b | 🍖
-kid | k/i/d | 🧒
-lid | l/i/d | 🫙
+hip | h/i/p | drive:1k9jHFyA1Dm7XyJZXkGvDouNCksQnYNa8#15.1,47.8,28.4,16.7
+ink | i/n/k | drive:1k9jHFyA1Dm7XyJZXkGvDouNCksQnYNa8#52.4,48.0,28.3,16.7
+zip | z/i/p | drive:1k9jHFyA1Dm7XyJZXkGvDouNCksQnYNa8#20.2,70.5,20.6,17.5
+in | i/n | drive:1k9jHFyA1Dm7XyJZXkGvDouNCksQnYNa8#58.0,72.5,20.3,15.5
+lip | l/i/p | drive:1FeEejIxW3EKVeHw05FxT6foTu-Ts8MvV#38.8,56.1,11.0,10.3
+tip | t/i/p | drive:1FeEejIxW3EKVeHw05FxT6foTu-Ts8MvV#52.2,55.1,10.2,11.9
+sip | s/i/p | drive:1FeEejIxW3EKVeHw05FxT6foTu-Ts8MvV#38.9,72.5,10.0,12.6
+rip | r/i/p | drive:1FeEejIxW3EKVeHw05FxT6foTu-Ts8MvV#52.8,73.6,9.0,11.9
+bib | b/i/b | drive:12hMtx0_RWQ5Ra3hpAFnE1V-R6GBH3k5V#36.9,72.0,5.8,12.3
+rib | r/i/b | drive:12hMtx0_RWQ5Ra3hpAFnE1V-R6GBH3k5V#43.1,71.7,6.8,12.6
+kid | k/i/d | drive:12hMtx0_RWQ5Ra3hpAFnE1V-R6GBH3k5V#52.7,71.4,2.9,13.6
+lid | l/i/d | drive:12hMtx0_RWQ5Ra3hpAFnE1V-R6GBH3k5V#57.5,74.9,6.6,9.3
 # story
 P | The kid can use ink. | drive:1qUS6EjpgV-Gc4XEoX5-nkYHtahq7U_sR#37.5,32.7,10.5,25.7
 P | He can open a lid. | drive:1qUS6EjpgV-Gc4XEoX5-nkYHtahq7U_sR#48.3,32.7,14.2,25.7
@@ -218,18 +218,18 @@ ig | ig | fig
 it | it | pit
 ix | ix | six
 # words
-pin | p/i/n | 📌
-fin | f/i/n | 🐟
-bin | b/i/n | 🗑️
-win | w/i/n | 🏆
-fig | f/i/g | 🟣
-wig | w/i/g | 💇
-big | b/i/g | 🐘
-dig | d/i/g | ⛏️
-pit | p/i/t | 🕳️
-hit | h/i/t | 🥊
-six | s/i/x | 6️⃣
-mix | m/i/x | 🥣
+pin | p/i/n | drive:1Yy1zggKv4viZIQVVwewvERWJMEFayz5N#38.6,56.7,10.2,10.9
+fin | f/i/n | drive:1Yy1zggKv4viZIQVVwewvERWJMEFayz5N#52.0,53.1,10.7,14.9
+bin | b/i/n | drive:1Yy1zggKv4viZIQVVwewvERWJMEFayz5N#38.5,74.3,10.3,11.7
+win | w/i/n | drive:1Yy1zggKv4viZIQVVwewvERWJMEFayz5N#53.9,73.7,7.2,13.1
+fig | f/i/g | drive:1mftaDONTncvvoluG7R_o-1zlCaQQSQhR#38.6,55.4,5.8,12.5
+wig | w/i/g | drive:1mftaDONTncvvoluG7R_o-1zlCaQQSQhR#51.9,55.3,7.0,13.3
+big | b/i/g | drive:1mftaDONTncvvoluG7R_o-1zlCaQQSQhR#38.8,72.8,11.0,12.8
+dig | d/i/g | drive:1mftaDONTncvvoluG7R_o-1zlCaQQSQhR#54.7,72.9,6.0,12.8
+pit | p/i/t | drive:1TXZhuZlvr5IpsZJb2My1slcMLXvHI6S_#37.4,73.4,5.2,10.5
+hit | h/i/t | drive:1TXZhuZlvr5IpsZJb2My1slcMLXvHI6S_#44.6,73.0,5.0,11.5
+six | s/i/x | drive:1TXZhuZlvr5IpsZJb2My1slcMLXvHI6S_#51.4,73.0,4.9,11.5
+mix | m/i/x | drive:1TXZhuZlvr5IpsZJb2My1slcMLXvHI6S_#58.2,71.4,5.7,13.9
 # story
 P | Help! My fin is in a net! | drive:1ocEcfLGQH12qrvecwDw-bHyHuHQrAunZ#37.8,33.3,11.8,23.5
 P | I can rip it with this pin. | drive:1ocEcfLGQH12qrvecwDw-bHyHuHQrAunZ#50.3,33.3,11.9,26.5
@@ -272,18 +272,18 @@ o | short o | fox
 ot | ot | pot
 op | op | top
 # words
-fox | f/o/x | 🦊
-log | l/o/g | 🪵
-ox | o/x | 🐂
-rod | r/o/d | 🎣
-pot | p/o/t | 🍲
-hot | h/o/t | 🔥
-cot | c/o/t | 🛏️
-dot | d/o/t | ⚫
-top | t/o/p | 🪀
-mop | m/o/p | 🧹
-hop | h/o/p | 🐰
-pop | p/o/p | 🎈
+fox | f/o/x | drive:1kvaAiBq1ZKr96sL_1OHNa_OAsFCO_Jcp#37.1,55.8,10.4,12.7
+log | l/o/g | drive:1kvaAiBq1ZKr96sL_1OHNa_OAsFCO_Jcp#51.9,55.8,10.2,12.2
+ox | o/x | drive:1kvaAiBq1ZKr96sL_1OHNa_OAsFCO_Jcp#39.1,73.4,7.0,12.8
+rod | r/o/d | drive:1kvaAiBq1ZKr96sL_1OHNa_OAsFCO_Jcp#51.5,73.6,11.8,13.5
+pot | p/o/t | drive:17Egr9ovc26QpRU4l2oja0HAiHbu3q_vw#38.8,55.8,10.3,11.7
+hot | h/o/t | drive:17Egr9ovc26QpRU4l2oja0HAiHbu3q_vw#52.3,55.1,10.5,12.5
+cot | c/o/t | drive:17Egr9ovc26QpRU4l2oja0HAiHbu3q_vw#38.8,73.3,11.0,11.6
+dot | d/o/t | drive:17Egr9ovc26QpRU4l2oja0HAiHbu3q_vw#55.9,78.1,3.4,6.0
+top | t/o/p | drive:1W-OWxzMmRfE_0moW862aiQITAeaiJVZY#38.1,55.6,8.5,11.6
+mop | m/o/p | drive:1W-OWxzMmRfE_0moW862aiQITAeaiJVZY#51.3,55.6,9.9,11.4
+hop | h/o/p | drive:1W-OWxzMmRfE_0moW862aiQITAeaiJVZY#38.5,73.2,7.4,12.7
+pop | p/o/p | drive:1W-OWxzMmRfE_0moW862aiQITAeaiJVZY#52.2,73.7,9.6,12.3
 # story
 P | The fox has a hot pot. | drive:1rbBEsXvZ3_UVyWcHwADdOeXEh-ftVMVa#37.5,33.0,13.5,25.9
 P | He stands on a log and uses a rod. | drive:1rbBEsXvZ3_UVyWcHwADdOeXEh-ftVMVa#51.6,33.0,10.6,25.9
@@ -322,17 +322,17 @@ ug | ug | bug
 ud | ud | bud
 up | up | cup
 # words
-sun | s/u/n | ☀️
-up | u/p | ⬆️
-jug | j/u/g | 🫙
-hug | h/u/g | 🤗
-bug | b/u/g | 🐛
-rug | r/u/g | 🧶
-mug | m/u/g | ☕
-bud | b/u/d | 🌱
-mud | m/u/d | 🟤
-pup | p/u/p | 🐶
-cup | c/u/p | 🥤
+sun | s/u/n | drive:1gW9Bw-yO4fUQM-VevJjIYCKQXWnrAGRq#39.5,55.0,9.5,11.9
+up | u/p | drive:1gW9Bw-yO4fUQM-VevJjIYCKQXWnrAGRq#54.2,55.0,5.7,11.8
+jug | j/u/g | drive:1gW9Bw-yO4fUQM-VevJjIYCKQXWnrAGRq#41.4,72.4,4.4,12.8
+hug | h/u/g | drive:1gW9Bw-yO4fUQM-VevJjIYCKQXWnrAGRq#53.6,72.5,8.0,12.0
+bug | b/u/g | drive:1dpIjTczkLXF7L33HI_l55c9paQguLcFT#40.0,55.3,9.1,12.7
+rug | r/u/g | drive:1dpIjTczkLXF7L33HI_l55c9paQguLcFT#50.9,54.2,12.9,15.0
+mug | m/u/g | drive:1dpIjTczkLXF7L33HI_l55c9paQguLcFT#46.3,73.0,9.6,11.9
+bud | b/u/d | drive:10KINoou7Z9TWG_qAVGYtXarvcOrZW4rC#37.3,71.2,5.5,11.6
+mud | m/u/d | drive:10KINoou7Z9TWG_qAVGYtXarvcOrZW4rC#44.4,71.0,5.5,11.8
+pup | p/u/p | drive:10KINoou7Z9TWG_qAVGYtXarvcOrZW4rC#51.0,70.8,5.1,12.0
+cup | c/u/p | drive:10KINoou7Z9TWG_qAVGYtXarvcOrZW4rC#58.3,71.0,5.0,11.3
 # story
 P | There is some mud. The mud is sad. | drive:1D20J7PvrGP5iNztWbXOPOUsh_aWt3JJq#37.7,33.2,10.3,24.8
 P | A pup digs in the mud. | drive:1D20J7PvrGP5iNztWbXOPOUsh_aWt3JJq#48.4,33.2,13.8,23.1
@@ -373,16 +373,16 @@ ub | ub | cub
 um | um | gum
 un | un | bun
 # words
-nut | n/u/t | 🥜
-hut | h/u/t | 🛖
-cut | c/u/t | ✂️
-cub | c/u/b | 🐻
-tub | t/u/b | 🛁
-gum | g/u/m | 🍬
-hum | h/u/m | 🎵
-bun | b/u/n | 🥯
-run | r/u/n | 🏃
-fun | f/u/n | 🎉
+nut | n/u/t | drive:1j90pAspwRyNDxr6TFla_r-bgmRM_pHVM#39.9,56.0,9.0,12.3
+hut | h/u/t | drive:1j90pAspwRyNDxr6TFla_r-bgmRM_pHVM#52.2,56.3,10.9,12.4
+cut | c/u/t | drive:1j90pAspwRyNDxr6TFla_r-bgmRM_pHVM#45.7,72.0,10.2,14.4
+cub | c/u/b | drive:1ySaQtWSpfPDeXKxKJGqPPFYVHUWt6YY_#36.3,72.3,5.8,8.7
+tub | t/u/b | drive:1ySaQtWSpfPDeXKxKJGqPPFYVHUWt6YY_#43.2,72.3,7.2,8.8
+gum | g/u/m | drive:1ySaQtWSpfPDeXKxKJGqPPFYVHUWt6YY_#51.4,70.8,5.1,11.0
+hum | h/u/m | drive:1ySaQtWSpfPDeXKxKJGqPPFYVHUWt6YY_#58.2,69.7,5.6,12.0
+bun | b/u/n | drive:1Jd2VBWCnDlv_hJPpEuE6HSKZglyxODgG#38.5,56.5,8.6,11.0
+run | r/u/n | drive:1Jd2VBWCnDlv_hJPpEuE6HSKZglyxODgG#53.0,55.1,6.8,14.4
+fun | f/u/n | drive:1Jd2VBWCnDlv_hJPpEuE6HSKZglyxODgG#48.0,70.7,6.0,15.2
 # story
 P | The cub and the pup are friends. They live in a hut. | drive:13mylTSo27BJNOL8T3bO2OQYHuTLKMBeR#37.6,33.0,11.9,26.2
 P | I like to make buns. I like to run for fun! | drive:13mylTSo27BJNOL8T3bO2OQYHuTLKMBeR#50.0,33.0,12.3,26.0
