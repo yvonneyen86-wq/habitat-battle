@@ -51,6 +51,11 @@ RT | What covers most land mammals' bodies? | Hair or fur covers their bodies.
 RS | How are birds and fish different? Tell us one thing.
 RS | Why do birds' eggs have hard shells?
 # grammar
+GT | Pronouns – Subject and Object
+R | **Fish** have gills.  →  **They** have gills.
+R | Gills help **fish** breathe.  →  Gills help **them** breathe.
+R | **Do** gills help fish breathe?  Yes, gills help **them** breathe.
+R | **How** do gills help fish?  Gills help **them** breathe.
 G | Fish have gills.
 G | Gills help them breathe.
 G | Do gills help fish breathe?
@@ -115,6 +120,11 @@ RT | How does Lily get home? | She sits on Leo's back, and Leo carries her home.
 RS | How are Leo and Lily different? Tell us one thing.
 RS | Why are Leo and Lily friends at the end of the story?
 # grammar
+GT | Adverbs of Frequency
+R | **always** ✓✓✓✓   **usually** ✓✓✓   **sometimes** ✓✓   **hardly ever** ✓   **never** ✗
+R | Lily **always** escapes.  ·  Lily is **usually** very nervous.
+R | Leo **sometimes** tries to catch Lily.  ·  Leo **hardly ever** tries to catch Lily now.
+R | Leo and Lily **never** fight now.
 G | Lily always escapes from Leo.
 G | Lily is usually very nervous.
 G | Leo sometimes tries to catch Lily.
@@ -181,6 +191,11 @@ RT | What is a liquid? | A liquid is a thing that can flow.
 RS | What is the cause of the snow melting? What is the effect?
 RS | Tell us one solid, one liquid, and one gas in our classroom.
 # grammar
+GT | Simple Past of Verb To Be
+R | It **was** a liquid.  →  Now it**'s** a gas.
+R | They **were** hard.  →  Now they**'re** soft.
+R | I / he / she / it → **was**      you / we / they → **were**
+R | then: **was / were**      now: **is / are**
 G | It was a liquid.
 G | Now it's a gas.
 G | They were hard before.
@@ -245,6 +260,11 @@ RT | What do the students do after they put the small bag in the big bag? | They
 RS | What is the effect of shaking the mixture?
 RS | Why did Mr. Jenkins help the students? What do you think?
 # grammar
+GT | Was / Were – Questions
+R | **Was** the freezer door open?  Yes, it **was**.
+R | **Were** the students happy?  No, they **weren't**.
+R | **Where was** the ice cream?  It **was** in the freezer.
+R | **Where were** you yesterday?  We **were** at a party.
 G | Was the freezer door open?
 G | Yes, it was open all night.
 G | Were the students happy?
@@ -394,6 +414,11 @@ RT | Where does Henry want to go next summer? | He wants to take a trip to Italy
 RS | Why couldn't some people enter New York?
 RS | Was it easy going to a new country long ago? Why or why not?
 # grammar
+GT | Simple Past – Questions
+R | **Did** they travel by ship?  Yes, they **did**.
+R | **Did** they arrive in two days?  No, they **didn't**.
+R | **What did** they do?  They liv**ed** with Carlo's uncle.
+R | **Did** + verb (no -ed in the question)  →  Did they travel?  /  They travel**ed**.
 G | Did they travel by ship?
 G | Yes, they traveled by ship.
 G | Did they arrive in two days?
@@ -458,6 +483,11 @@ RT | How many grapes did Olivia give to her little sister? | She gave twenty gra
 RS | What happens when we subtract things?
 RS | When do people use subtraction every day? Tell us one thing.
 # grammar
+GT | Simple Past – Irregular Verbs
+R | buy → **bought**    give → **gave**    eat → **ate**    see → **saw**
+R | Alma **bought** five cookies.  She **didn't buy** four.
+R | Olivia **gave** her sister twenty stickers.  She **didn't give** her twenty-six.
+R | **didn't** + verb  →  didn't buy, didn't give, didn't eat
 G | Alma bought five cookies.
 G | She didn't buy four cookies.
 G | Olivia gave her sister twenty stickers.
@@ -528,6 +558,11 @@ RT | Did Bandar let go of the candy? | No, he didn't let go of the candy.
 RS | Why couldn't the people catch Bandar at first?
 RS | What is the lesson of the story? Give one idea.
 # grammar
+GT | Simple Past Irregular – Questions
+R | **Did** Bandar **go** to a candy store?  Yes, he **did**.
+R | **Did** he **let go** of the candy?  No, he **didn't**.
+R | **What did** Bandar **do** with the cookies?  He **ate** them.
+R | make → **made**    buy → **bought**    take → **took**    sell → **sold**
 G | Did Bandar go to a candy store?
 G | Did he let go of the candy?
 G | No, he didn't let go.
@@ -591,6 +626,11 @@ RT | Why should we listen to the lifeguards? | Lifeguards make sure we are safe 
 RS | How do rules help us? Tell us one thing.
 RS | What is one rule at the swimming pool?
 # grammar
+GT | Possessive Pronouns
+R | your things  →  **yours**      my toys  →  **mine**
+R | **Whose** book is this?  It's **hers**.
+R | **Whose** pencils are these?  They're **his**.
+R | mine · yours · his · hers · ours · theirs
 G | Those things are yours.
 G | They aren't my toys.
 G | Whose book is this?
@@ -654,6 +694,10 @@ RT | What is one thing that bears share? | Bears share their toys and their hone
 RS | Why does the ox always knock before opening a door?
 RS | Which animal is rude? Why?
 # grammar
+GT | Can and May
+R | **Can** I play?  Yes, you **can**.  /  No, you **can't**.
+R | **May** I come in?  Yes, you **may**.  /  No, you **may not**.
+R | **Can / May** + I + verb  →  asking politely
 G | Can I play outside?
 G | Yes, you can play outside.
 G | May I come in?
@@ -721,6 +765,11 @@ RT | What should we do if we cut down trees? | We should plant new trees.
 RS | Why are landfills bad? Give one reason.
 RS | What can you do today to help take care of our natural resources?
 # grammar
+GT | Prepositions of Place
+R | There's smoke in the air **above** the city.
+R | The landfill is **across from** the park.
+R | The trash can is **behind** the tree.  ·  The tree is **in front of** the trash can.
+R | above · across from · behind · in front of · between · next to
 G | There's smoke in the air above the city.
 G | The landfill is across from the park.
 G | The trash can is behind the tree.
@@ -784,6 +833,10 @@ RT | Why was the recycling plant a little scary? | There were large machines tha
 RS | Where was the trash can at the lake? Why didn't the girl use it?
 RS | Why is it important to recycle things?
 # grammar
+GT | Prepositions of Place – Questions
+R | **Where's** the fountain?  It's **across from** the statue.
+R | **Is there** a trash can **behind** the tree?  Yes, there is.
+R | **Is there** a bicycle **in front of** the red bin?  No, there isn't.  There's a bicycle **next to** the green bin.
 G | Where is the fountain?
 G | It's across from the statue.
 G | Is there a trash can behind the tree?
@@ -851,6 +904,10 @@ RT | What can we imagine when the music is fast? | We can imagine an animal runn
 RS | Are there right or wrong feelings about music? Why?
 RS | How does music help us imagine things? Tell us one example.
 # grammar
+GT | Prepositions of Time – in / on / at
+R | **at** night      **in** the morning / afternoon / evening      **on** Monday
+R | Pedro listens to slow music **at night**.
+R | **When** does Amanda listen to slow music?  She listens **in the morning**.
 G | Pedro listens to slow music at night.
 G | When does Amanda listen to fast music?
 G | She listens to fast music in the morning.
@@ -919,6 +976,10 @@ RT | What does Mr. Perez say Olga should never forget? | She should never forget
 RS | Why do Olga's eyes fill with tears this morning?
 RS | Is Mr. Perez smart and kind? Why?
 # grammar
+GT | Adverbs of Time
+R | **This morning**, Olga goes to school early.   (now → goes)
+R | **When did** Mark go to music class?  He went **yesterday morning**.   (past → went)
+R | last week · yesterday morning · yesterday afternoon · last night · this morning
 G | This morning, Olga goes to school early.
 G | Yesterday he played the trumpet.
 G | Last week Gus played the cymbals.
@@ -986,6 +1047,10 @@ RT | What happens when you push a door with a big force? | The door opens quickl
 RS | Tell us something you push and something you pull.
 RS | Why do we need a big force to move a real car?
 # grammar
+GT | Comparative Adjectives – -er than
+R | adjective + **-er than**  →  A ball is light**er than** a desk.
+R | ends in y → **-ier than**  →  Is a desk heav**ier than** a ball?  Yes, it is.
+R | **What's** slow**er than** an airplane?  A train is slow**er than** an airplane.
 G | A ball is lighter than a desk.
 G | Is a desk heavier than a ball?
 G | A train is slower than an airplane.
@@ -1052,6 +1117,10 @@ RT | How did the goats feel at the end of the story? | They were angry, tired, w
 RS | Why didn't Black Goat and Brown Goat get along?
 RS | Why did the goats fall into the river?
 # grammar
+GT | Superlative Adjectives – the -est
+R | **the** + adjective + **-est**  →  I'm **the** young**est** person in my family.
+R | ends in y → **the -iest**  →  Is **the** juic**iest** grass on East Mountain?  Yes, it is.
+R | old → **the** old**est**    big → **the** bigg**est**    loud → **the** loud**est**
 G | I'm the youngest person in my family.
 G | Is the juiciest grass on East Mountain?
 G | Brown Goat drinks the coldest water.
@@ -1120,6 +1189,10 @@ RT | Which artist inspired people to use shapes and straight lines? | Piet Mondr
 RS | How are squares and rectangles different?
 RS | How are crescents and spirals different from squares? Tell us one thing.
 # grammar
+GT | Quantifiers – a lot of / any
+R | things we can count:  There **are a lot of** shapes.  ·  There **aren't any** triangles.
+R | things we can't count:  There **is a lot of** paper.  ·  There **isn't any** red paint.
+R | count → **are / aren't any**      can't count → **is / isn't any**
 G | There are a lot of shapes.
 G | There is a lot of paper.
 G | There aren't any triangles.
@@ -1189,6 +1262,10 @@ RT | What did Maki make with the golden paper? | She made a big, round sun.
 RS | Why did Maki make a second crane?
 RS | Why did Maki get onto the sailboat?
 # grammar
+GT | Quantifiers – Questions
+R | **Did** Maki have **any** pencils?  No, she didn't.
+R | **How many** seals were there?  There was **one** seal.   (count)
+R | **How much** paper was there?  There was **a lot of** paper.   (can't count)
 G | Did Maki have any pencils?
 G | No, she didn't have any pencils.
 G | How many seals were there?
