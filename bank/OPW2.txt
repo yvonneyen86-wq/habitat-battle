@@ -1,47 +1,433 @@
 === OPW2 ===
-// Oxford Phonics World 2 — Learning Time activities. One unit per sound. Sections: # sound, # words, # story, # sort, # pairs, # build.
-// This first unit is a SAMPLE written for testing the game (story text and pictures are not from the book); replace it with the book's content.
-## U1 (sample) | Short a: cat, hat, map |
+// Oxford Phonics World 2 - Learning Time activities. One unit per sound group. Sections: # sound, # words, # story, # sort, # pairs, # build.
+// Story pictures live in the teacher's Google Drive folder OPW-images (shared with the link); drive:ID#x,y,w,h = a crop box (percent) inside the page photo.
+## U1 | short a: a, am, an |
 # sound
-a | short a | apple
+a | short a | cat
+am | am | jam
+an | an | fan
 # words
 cat | c/a/t | 🐱
-hat | h/a/t | 🎩
-bat | b/a/t | 🦇
-map | m/a/p | 🗺️
-cap | c/a/p | 🧢
-bag | b/a/g | 🎒
+ant | a/n/t | 🐜
+yak | y/a/k | 🐂
+ax | a/x | 🪓
+ram | r/a/m | 🐏
+jam | j/a/m | 🍓
+yam | y/a/m | 🍠
+dam | d/a/m | 🏞️
 fan | f/a/n | 🪭
 man | m/a/n | 👨
 pan | p/a/n | 🍳
-jam | j/a/m | 🍓
+can | c/a/n | 🥫
 # story
-P | The cat has a hat. | drive:112hQC4lXfobD2trzUz8CAzSHWeeMKNwM
-P | The cat has a bag. | drive:112hQC4lXfobD2trzUz8CAzSHWeeMKNwM#50,0,50,100
-P | A rat is in the bag! |
-P | Run, cat, run! |
-RC | What does the cat have? | a hat | a map | a fan
-RC | What is in the bag? | a rat | a cap | a pan
-RC | What does the cat do at the end? | run | nap | sit
+P | A man with a van is at the dam. | drive:1ddn4Jvc93a2KEGPq21nXJsJAYNJw58fc#14.5,19.4,40.5,34.6
+P | He has a fan, a can, and a yam. | drive:1ddn4Jvc93a2KEGPq21nXJsJAYNJw58fc#55.7,19.4,32.8,37.2
+P | The ants want the yam! | drive:1ddn4Jvc93a2KEGPq21nXJsJAYNJw58fc#14.5,55.3,31.3,35.6
+P | The man puts jam on the yam for the ants. | drive:1ddn4Jvc93a2KEGPq21nXJsJAYNJw58fc#45.8,56.5,42.7,35.6
+RC | Where is the man? | at the dam | at the pan | at the fan
+RC | What do the ants want? | the yam | the fan | the van
+RC | What does the man put on the yam? | jam | a can | a fan
 # sort
 cat | a
-hat | a
-dog | o
-map | a
-hot | o
-pan | a
-mop | o
-jam | a
+ant | a
+yak | a
+ax | a
+ram | am
+jam | am
+yam | am
+dam | am
+fan | an
+man | an
+pan | an
+can | an
 # pairs
-cat | cot
-hat | hot
-pan | pin
-map | mop
-bag | big
+cat | can
+yak | yam
+jam | yam
+man | pan
+fan | can
 # build
-G | The cat is on the map.
-G | I have a red hat.
-G | The man has a bag.
-G | Look at the fan.
-G | Is the cap in the bag?
-G | The bat can see the jam.
+G | A man with a van is at the dam.
+G | He has a fan, a can, and a yam.
+G | The ants want the yam!
+G | The man puts jam on the yam for the ants.
+G | The ants want the jam.
+G | The man has a yam.
+G | A cat is at the van.
+## U2 | short a: ad, ag, ap, at |
+# sound
+ad | ad | dad
+ag | ag | bag
+ap | ap | cap
+at | at | bat
+# words
+dad | d/a/d | 👨
+pad | p/a/d | 📝
+bag | b/a/g | 👜
+rag | r/a/g | 🧽
+cap | c/a/p | 🧢
+map | m/a/p | 🗺️
+nap | n/a/p | 😴
+tap | t/a/p | 🚰
+bat | b/a/t | 🏏
+rat | r/a/t | 🐀
+hat | h/a/t | 👒
+mat | m/a/t | 🟫
+# story
+P | This is my dad! He has a hat, a bag, and a map. | drive:1U6mkrlxW9GGdpIfrWAnrxnDXJuYeIMKf#14.4,18.8,36.1,34.9
+P | That is my girl. She has a bat and a cap. | drive:1U6mkrlxW9GGdpIfrWAnrxnDXJuYeIMKf#52.4,19.1,37.8,34.7
+P | At the house, we use the tap. | drive:1U6mkrlxW9GGdpIfrWAnrxnDXJuYeIMKf#14.4,55.7,36.1,34.7
+P | Then we take a nap! | drive:1U6mkrlxW9GGdpIfrWAnrxnDXJuYeIMKf#52.5,56.0,37.7,34.6
+RC | What does Dad have? | a hat | a bat | a cap
+RC | What does the girl have? | a bat | a hat | a map
+RC | What do they do at the end? | take a nap | use the tap | take a bag
+# sort
+dad | ad
+pad | ad
+bag | ag
+rag | ag
+cap | ap
+map | ap
+nap | ap
+tap | ap
+bat | at
+rat | at
+hat | at
+mat | at
+# pairs
+bat | bag
+rat | rag
+map | mat
+nap | tap
+dad | pad
+# build
+G | This is my dad!
+G | He has a hat, a bag, and a map.
+G | That is my girl.
+G | She has a bat and a cap.
+G | At the house, we use the tap.
+G | Then we take a nap!
+G | She has a hat and a bag.
+G | Dad has a map.
+## U3 | short e: et, en, ed |
+# sound
+e | short e | egg
+et | et | jet
+en | en | hen
+ed | ed | red
+# words
+web | w/e/b | 🕸️
+egg | e/gg | 🥚
+vet | v/e/t | 🩺
+ten | t/e/n | 🔟
+jet | j/e/t | ✈️
+net | n/e/t | 🥅
+wet | w/e/t | 💦
+pet | p/e/t | 🐶
+hen | h/e/n | 🐔
+pen | p/e/n | 🖊️
+red | r/e/d | 🔴
+bed | b/e/d | 🛏️
+# story
+P | The red hen is wet. | drive:1MGNj8aXFNNJV1FRW9CTGMD0T8HGFNd1o#15.4,18.6,40.9,35.0
+P | Oh, no! My pet hen is in bed. | drive:1MGNj8aXFNNJV1FRW9CTGMD0T8HGFNd1o#57.3,18.6,32.6,33.6
+P | We go to the vet. | drive:1MGNj8aXFNNJV1FRW9CTGMD0T8HGFNd1o#15.4,54.7,36.3,34.8
+P | My hen has ten eggs! | drive:1MGNj8aXFNNJV1FRW9CTGMD0T8HGFNd1o#52.3,54.7,37.6,34.8
+RC | What is the red hen at the start? | wet | dry | hot
+RC | Where is the pet hen? | in bed | in a net | in a jet
+RC | How many eggs does the hen have? | ten | two | six
+# sort
+jet | et
+net | et
+wet | et
+pet | et
+vet | et
+hen | en
+pen | en
+ten | en
+red | ed
+bed | ed
+egg | e
+web | e
+# pairs
+pet | pen
+hen | ten
+wet | web
+bed | red
+net | jet
+pen | ten
+# build
+G | The red hen is wet.
+G | Oh, no! My pet hen is in bed.
+G | We go to the vet.
+G | My hen has ten eggs!
+G | The pet hen is red.
+G | We go to bed.
+G | My pet is wet.
+## U4 | short i: ip, ib, id |
+# sound
+i | short i | ink
+ip | ip | lip
+ib | ib | bib
+id | id | kid
+# words
+hip | h/i/p | 🦵
+ink | i/n/k | 🖋️
+zip | z/i/p | 🤐
+in | i/n | 📥
+lip | l/i/p | 👄
+tip | t/i/p | 👆
+sip | s/i/p | 🥤
+rip | r/i/p | 💥
+bib | b/i/b | 🍼
+rib | r/i/b | 🍖
+kid | k/i/d | 🧒
+lid | l/i/d | 🫙
+# story
+P | The kid can use ink. | drive:1qUS6EjpgV-Gc4XEoX5-nkYHtahq7U_sR#37.5,32.7,10.5,25.7
+P | He can open a lid. | drive:1qUS6EjpgV-Gc4XEoX5-nkYHtahq7U_sR#48.3,32.7,14.2,25.7
+P | He can sip and zip. | drive:1qUS6EjpgV-Gc4XEoX5-nkYHtahq7U_sR#37.5,59.5,14.1,25.7
+P | This kid needs a bib! | drive:1qUS6EjpgV-Gc4XEoX5-nkYHtahq7U_sR#51.9,59.5,10.6,24.6
+RC | What does the kid use first? | ink | a bib | a cup
+RC | What can he open? | a lid | a bib | a zip
+RC | What does this kid need? | a bib | a lid | ink
+# sort
+lip | ip
+tip | ip
+sip | ip
+rip | ip
+zip | ip
+hip | ip
+bib | ib
+rib | ib
+kid | id
+lid | id
+ink | i
+in | i
+# pairs
+lip | lid
+rip | rib
+sip | zip
+bib | rib
+kid | lid
+tip | lip
+# build
+G | The kid can use ink.
+G | He can open a lid.
+G | He can sip and zip.
+G | This kid needs a bib!
+G | The kid can zip.
+G | He can open a bib.
+G | This kid needs a lid.
+## U5 | short i: in, ig, it, ix |
+# sound
+in | in | pin
+ig | ig | fig
+it | it | pit
+ix | ix | six
+# words
+pin | p/i/n | 📌
+fin | f/i/n | 🐟
+bin | b/i/n | 🗑️
+win | w/i/n | 🏆
+fig | f/i/g | 🟣
+wig | w/i/g | 💇
+big | b/i/g | 🐘
+dig | d/i/g | ⛏️
+pit | p/i/t | 🕳️
+hit | h/i/t | 🥊
+six | s/i/x | 6️⃣
+mix | m/i/x | 🥣
+# story
+P | Help! My fin is in a net! | drive:1ocEcfLGQH12qrvecwDw-bHyHuHQrAunZ#37.8,33.3,11.8,23.5
+P | I can rip it with this pin. | drive:1ocEcfLGQH12qrvecwDw-bHyHuHQrAunZ#50.3,33.3,11.9,26.5
+P | I can dig under the net. I can hit. | drive:1ocEcfLGQH12qrvecwDw-bHyHuHQrAunZ#37.8,58.1,13.1,26.1
+P | Thank you! Now I can win! | drive:1ocEcfLGQH12qrvecwDw-bHyHuHQrAunZ#51.7,61.4,10.4,22.8
+RC | Where is the fish's fin? | in a net | in a bin | in a pit
+RC | What does the octopus rip the net with? | a pin | a fig | a wig
+RC | What can the fish do at the end? | win | dig | mix
+# sort
+pin | in
+fin | in
+win | in
+fig | ig
+big | ig
+dig | ig
+pit | it
+hit | it
+six | ix
+mix | ix
+bin | in
+wig | ig
+# pairs
+pin | pit
+big | bin
+fin | fig
+win | wig
+hit | pit
+six | mix
+# build
+G | Help! My fin is in a net!
+G | I can rip it with this pin.
+G | I can dig under the net.
+G | Thank you! Now I can win!
+G | I can hit it.
+G | The pin is in the bin.
+G | Now I can dig.
+## U6 | short o: o, ot, op |
+# sound
+o | short o | fox
+ot | ot | pot
+op | op | top
+# words
+fox | f/o/x | 🦊
+log | l/o/g | 🪵
+ox | o/x | 🐂
+rod | r/o/d | 🎣
+pot | p/o/t | 🍲
+hot | h/o/t | 🔥
+cot | c/o/t | 🛏️
+dot | d/o/t | ⚫
+top | t/o/p | 🪀
+mop | m/o/p | 🧹
+hop | h/o/p | 🐰
+pop | p/o/p | 🎈
+# story
+P | The fox has a hot pot. | drive:1rbBEsXvZ3_UVyWcHwADdOeXEh-ftVMVa#37.5,33.0,13.5,25.9
+P | He stands on a log and uses a rod. | drive:1rbBEsXvZ3_UVyWcHwADdOeXEh-ftVMVa#51.6,33.0,10.6,25.9
+P | The fish hops. It doesn't like the rod! | drive:1rbBEsXvZ3_UVyWcHwADdOeXEh-ftVMVa#37.5,59.2,9.2,25.6
+P | The fox hops, too. He gets wet! | drive:1rbBEsXvZ3_UVyWcHwADdOeXEh-ftVMVa#47.2,59.2,15.0,25.6
+RC | What does the fox have? | a hot pot | a big mop | a wet cot
+RC | Where does the fox stand? | on a log | on a rock | in a pot
+RC | What happens to the fox at the end? | He gets wet. | He gets a fish. | He gets hot.
+# sort
+fox | o
+log | o
+ox | o
+rod | o
+pot | ot
+hot | ot
+cot | ot
+dot | ot
+top | op
+mop | op
+hop | op
+pop | op
+# pairs
+hot | hop
+pot | pop
+cot | dot
+top | mop
+fox | ox
+# build
+G | The fox has a hot pot.
+G | He stands on a log and uses a rod.
+G | The fish hops.
+G | It doesn't like the rod!
+G | The fox hops, too.
+G | He gets wet!
+G | The ox stands on a log.
+## U7 | short u: ug, ud, up |
+# sound
+u | short u | sun
+ug | ug | bug
+ud | ud | bud
+up | up | cup
+# words
+sun | s/u/n | ☀️
+up | u/p | ⬆️
+jug | j/u/g | 🫙
+hug | h/u/g | 🤗
+bug | b/u/g | 🐛
+rug | r/u/g | 🧶
+mug | m/u/g | ☕
+bud | b/u/d | 🌱
+mud | m/u/d | 🟤
+pup | p/u/p | 🐶
+cup | c/u/p | 🥤
+# story
+P | There is some mud. The mud is sad. | drive:1D20J7PvrGP5iNztWbXOPOUsh_aWt3JJq#37.7,33.2,10.3,24.8
+P | A pup digs in the mud. | drive:1D20J7PvrGP5iNztWbXOPOUsh_aWt3JJq#48.4,33.2,13.8,23.1
+P | A bug puts a pit in the mud. | drive:1D20J7PvrGP5iNztWbXOPOUsh_aWt3JJq#37.7,60.0,11.6,23.4
+P | The sun comes up. It is a bud! Now the mud is happy. | drive:1D20J7PvrGP5iNztWbXOPOUsh_aWt3JJq#49.6,57.5,12.6,26.3
+RC | How does the mud feel at first? | sad | happy | hot
+RC | Who digs in the mud? | a pup | a bug | a cub
+RC | What does the bug put in the mud? | a pit | a cup | a rug
+# sort
+bug | ug
+rug | ug
+mug | ug
+jug | ug
+hug | ug
+bud | ud
+mud | ud
+pup | up
+cup | up
+up | up
+# pairs
+bug | bud
+mug | mud
+pup | cup
+hug | jug
+bug | rug
+# build
+G | There is some mud.
+G | The mud is sad.
+G | A pup digs in the mud.
+G | A bug puts a pit in the mud.
+G | The sun comes up.
+G | Now the mud is happy.
+G | The pup is happy.
+G | There is a bug.
+## U8 | short u: ut, ub, um, un |
+# sound
+ut | ut | nut
+ub | ub | cub
+um | um | gum
+un | un | bun
+# words
+nut | n/u/t | 🥜
+hut | h/u/t | 🛖
+cut | c/u/t | ✂️
+cub | c/u/b | 🐻
+tub | t/u/b | 🛁
+gum | g/u/m | 🍬
+hum | h/u/m | 🎵
+bun | b/u/n | 🥯
+run | r/u/n | 🏃
+fun | f/u/n | 🎉
+# story
+P | The cub and the pup are friends. They live in a hut. | drive:13mylTSo27BJNOL8T3bO2OQYHuTLKMBeR#37.6,33.0,11.9,26.2
+P | I like to make buns. I like to run for fun! | drive:13mylTSo27BJNOL8T3bO2OQYHuTLKMBeR#50.0,33.0,12.3,26.0
+P | The cub hums and cuts nuts. | drive:13mylTSo27BJNOL8T3bO2OQYHuTLKMBeR#37.6,60.5,12.0,22.5
+P | I like buns, too! Yum! | drive:13mylTSo27BJNOL8T3bO2OQYHuTLKMBeR#50.1,60.5,11.8,23.4
+RC | Where do the cub and the pup live? | in a hut | in a tub | in the mud
+RC | Who likes to run for fun? | the pup | the cub | the bug
+RC | What does the cub cut? | nuts | buns | gum
+# sort
+nut | ut
+hut | ut
+cut | ut
+cub | ub
+tub | ub
+gum | um
+hum | um
+bun | un
+run | un
+fun | un
+# pairs
+nut | hut
+cub | tub
+gum | hum
+bun | run
+cut | cub
+hut | hum
+# build
+G | The cub and the pup are friends.
+G | They live in a hut.
+G | I like to make buns.
+G | I like to run for fun!
+G | The cub hums and cuts nuts.
+G | I like buns, too!
+G | The pup likes to run.
+G | I like nuts, too!
