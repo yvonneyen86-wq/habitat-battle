@@ -74,6 +74,9 @@ RT | What is a sanctuary? | A sanctuary is a place where no one can hurt you.
 RS | Why did the sea wolves become extinct? Tell us one reason.
 RS | What does the author want you to learn from this story?
 # grammar
+GT | Present Perfect and Present Perfect Continuous
+R | present perfect  →  done in your life up to now:  I **have read** books about dodos.
+R | present perfect continuous  →  started in the past, still doing it now:  I **have been reading** this book for an hour.
 G | I have read books about dodos.
 G | I have been reading this book for an hour.
 G | They've been playing basketball since three o'clock.
@@ -140,6 +143,11 @@ RT | How many tiger reserves are there in India now? | There are now more than 3
 RS | Why did Jim Corbett change from a hunter into a conservationist?
 RS | Why is it important to save tigers? Tell us one reason.
 # grammar
+GT | Review of Tenses
+R | Simple Present:  Tigers **go** to the river every day.
+R | Present Continuous:  Tigers **are going** to the river to drink.
+R | Simple Past:  Tigers **went** to the river yesterday.
+R | Present Perfect:  People **have cleared** forests.  The animals' habitat **has suffered**.  Tigers **have always lived** in thick jungles.
 G | Tigers go to the river every day.
 G | Tigers are going to the river to drink.
 G | Tigers went to the river yesterday.
@@ -221,6 +229,9 @@ RT | What does the carnivore do with its canine teeth? | The carnivore tears up 
 RS | How did the boy feel at the end of the poem? Why?
 RS | Which teeth does the omnivore use, and what do they do to food?
 # grammar
+GT | Modals of Ability
+R | past:  **could / couldn't**  →  I **could** read by the time I was four.  I **couldn't** chew after I got a cavity.
+R | future of can / can't:  **will / won't be able to**  →  Next year, I **will be able to** ride my bike to school.  I **won't be able to** drive a car.
 G | I could read by the time I was four.
 G | I couldn't chew after I got a cavity.
 G | Next year, I will be able to ride my bike to school.
@@ -290,6 +301,10 @@ RT | What do naked mole rats use their teeth for? | They use four razor-sharp te
 RS | How do vampire bats get their food? Tell us the steps.
 RS | How do prosimians use their teeth? Why is this useful?
 # grammar
+GT | Modals of Certainty
+R | sure it's true:  **must / has to**  →  It **must** be a prosimian.  It **has to** be a spider.
+R | sure it isn't true:  **can't**  →  That **can't** be a spider!  It only has four legs.
+R | not sure:  **might**  →  It **might** be a spider, but I'm not sure.
 G | It must be a giraffe.
 G | It has to be a spider.
 G | That can't be a spider!
@@ -357,6 +372,9 @@ RT | What new technology can move by itself? | An automatic suitcase can move by
 RS | How were heavy stones transported before the wheel was invented?
 RS | What is the most important use of wheels? Give your reasons.
 # grammar
+GT | Future with Will and Going To
+R | **will**  →  a future fact / a prediction you believe:  The sun **will rise** at 6:05 tomorrow.  Wheels **will** always **be** a central part of life.
+R | **going to**  →  a plan / a prediction about what you see:  I'm **going to visit** my uncle next week.  Look at those clouds. It's **going to rain**.
 G | The sun will rise at 6:05 tomorrow.
 G | Wheels will always be a central part of life.
 G | I'm going to visit my uncle next week.
@@ -426,6 +444,10 @@ RT | What did Zoog do all night long? | Zoog drew pictures of the machines with 
 RS | Why was it too risky to bring food from other parts of SinRota?
 RS | What did Zoog see on the blue planet? Tell us two things.
 # grammar
+GT | Future with Present Continuous
+R | **present continuous** + a time or place  →  an arrangement:  We **are meeting** our friends at 2:00 on Friday.
+R | **will**  →  a future fact / belief:  The moon **will rise** at ten o'clock tonight.
+R | **going to**  →  a plan / what you see:  I'm **going to take** a music class next year.
 G | We are meeting our friends at 2:00 on Friday.
 G | I'm seeing a movie on Tuesday afternoon.
 G | The moon will rise at ten o'clock tonight.
@@ -499,6 +521,10 @@ RT | How did the dolphin move through the water? | The dolphin used its powerful
 RS | Why did Magdi whisper "thank you" to the dolphin?
 RS | What tricks did the dolphin teach Magdi? Tell us two.
 # grammar
+GT | Reported Speech with Said That
+R | "It's a beautiful day," said Magdi.  →  Magdi **said that** it **was** a beautiful day.
+R | "I'm working," said Tom.  →  Tom **said that** he **was** working.
+R | present  →  **past** in reported speech
 G | Magdi said that it was a beautiful day.
 G | Tom said that he was working.
 G | He said that he was going fishing.
@@ -568,6 +594,10 @@ RT | How many words did Kanzi learn using a keyboard? | Kanzi learned 450 words 
 RS | How do the honeyguide and the honey badger collaborate?
 RS | What could Alex the parrot do? Tell us two things.
 # grammar
+GT | Reported Speech with Told or Asked
+R | **told** + person + **that**:  He **told us that** Kanzi **was** learning new things every day.
+R | **asked** + person:  A classmate **asked the scientist** what Kanzi **was** learning.
+R | present  →  **past** in reported speech
 G | He told us that Kanzi was learning new things.
 G | A classmate asked the scientist what Kanzi was learning.
 G | She said that she was learning about animal communication.
@@ -635,6 +665,10 @@ RT | What did the Maya mix to make their chocolate drink? | They mixed cocoa bea
 RS | What were the Egyptians good at? Tell us two things.
 RS | Which invention in the narrative do you think is the most important? Why?
 # grammar
+GT | Asking Questions
+R | **Who saw** Finn?   (Who = the subject)  →  Finn's mom saw Finn.
+R | **Who did** Finn **see**?   (Who = the object)  →  Finn didn't see anybody.
+R | who · where · when · why · what · which · how
 G | Who did Finn see?
 G | Who saw Finn at home?
 G | Who did you write to?
@@ -711,6 +745,10 @@ RT | What did Akiko spot on the roof of the palace? | She spotted a black, yello
 RS | How did Akiko go back in time? Tell us what happened.
 RS | Why was Akiko the happiest she'd been in her life?
 # grammar
+GT | Short Answers
+R | Is there a chocolate shop near here?  →  **Yes, there is.**
+R | Do you like my new sneakers?  →  **Yes, I do!**
+R | Has it stopped raining?  →  **No, it hasn't.**
 G | Is there a chocolate store near here? Yes, there is.
 G | Do you like my new sneakers? Yes, I do!
 G | Has it stopped raining? No, it hasn't.
@@ -780,6 +818,9 @@ RT | Why do farmers build terraces into steep mountainsides? | They build terrac
 RS | Why are some mountain animals becoming rare?
 RS | Why are mountains important? Tell us two reasons.
 # grammar
+GT | Passive
+R | active:  People **find** corn in the mountains.  →  passive:  Corn **is found** in the mountains.
+R | active:  **Do** farmers **grow** potatoes in the Andes?  →  passive:  **Are** potatoes **grown** in the Andes?
 G | People find corn in the mountains.
 G | Corn is found in the mountains.
 G | Are potatoes grown in the Andes?
@@ -865,6 +906,9 @@ RT | Who was Entwhistle Peak named for? | It was named for the famous explorer S
 RS | Why is the mountain a good place for the scientist to work? Tell us one reason.
 RS | What did Samantha and Robert see from the tower when the sun came out?
 # grammar
+GT | Past Passive
+R | active:  Someone **broke** my mom's favorite vase.  →  passive:  My mom's favorite vase **was broken**.
+R | active:  Someone **showed** the weather forecasts on TV.  →  passive:  The weather forecasts **were shown** on TV.
 G | Mount Everest was climbed in 1953.
 G | Sir Edmund Hillary and Tenzing Norgay climbed Mount Everest.
 G | My mom's favorite vase was broken.
@@ -950,6 +994,10 @@ RT | How did the Hodja pay the man? | He paid for the smell of soup with the sou
 RS | Why did Erman sit on his balcony and sniff the air?
 RS | What lesson can we learn from this folk tale? Tell us your idea.
 # grammar
+GT | Adjectives and Adverbs
+R | adjective  →  about a noun:  A **terrifying** man with **huge** muscles opened the door.
+R | adverb of manner  →  how:  "Three gold coins!" repeated the man **aggressively**.
+R | adverb of frequency  →  how often:  The Hodja was reading a newspaper, as he **often** did.
 G | A terrifying man with huge muscles opened the door.
 G | The man repeated the price aggressively.
 G | The Hodja often read a newspaper in court.
@@ -1018,6 +1066,9 @@ RT | What can we use to spend money electronically? | We can use cell phones and
 RS | What is bartering? Give an example from the text.
 RS | Why is paper money better than coins? Tell us one reason.
 # grammar
+GT | Unreal Conditional
+R | **If** + past,  **would** + verb  →  not possible now
+R | **If** I **had** a plane, I **would fly** to Peru.
 G | If I had a plane, I would fly to Peru.
 G | If I had a bike, I would get to school quicker.
 G | If my friend could fly a plane, we would go to the North Pole.
@@ -1086,6 +1137,10 @@ RT | Why does Taylor create artificial reefs? | He hopes to draw people away fro
 RS | How do the sculptures change over time? Tell us two things.
 RS | What does the Lost Correspondent exhibit express? Why?
 # grammar
+GT | Sense Verb + Adjective
+R | look · feel · sound · smell · taste  +  **adjective**  (not an adverb)
+R | The sculptures **look bumpy** and **rough**.      I **felt sick** this morning.
+R | This lemon **smells good**, but it **tastes bitter**.
 G | The sculptures look bumpy and rough.
 G | I felt sick this morning, but I'm OK now.
 G | This lemon smells good, but it tastes bitter.
@@ -1168,6 +1223,10 @@ RT | Who is Gonzalo? | Gonzalo is an elderly man who is an advisor to the king.
 RS | Why is the sailor angry with Gonzalo and the other important people?
 RS | Why does the sailor make Gonzalo feel better?
 # grammar
+GT | Infinitive as Subject
+R | **It's** + adjective + **to** + verb  →  an opinion
+R | It's difficult **to save** the passengers and crew.
+R | It's fun **to climb** a tree.
 G | It's difficult to save the passengers and crew.
 G | It's fun to climb a tree.
 G | It's fun to act in a play.
@@ -1237,6 +1296,10 @@ RT | What do the arches of the Sheikh Zayed Bridge look like? | The arches look 
 RS | What are the three key reasons we build buildings? Tell us one and give an example.
 RS | Which building in the article would you most like to live or work in? Why?
 # grammar
+GT | A, An, The, and No Article
+R | **a / an**  →  the first time, not special:  It's **a** shark.
+R | **the**  →  talking about it again, the person knows which:  It's in **the** pool.
+R | no article  →  sports, meals, most countries, school subjects:  I play tennis.  We went to Spain.
 G | Before a building can be built, the building needs to be designed.
 G | I go to the pool every weekend.
 G | Can I have an apple, please?
@@ -1316,6 +1379,10 @@ RT | What did Thomas and Uncle Robert rename the castle? | They renamed it Peril
 RS | Why did Thomas feel nervous when he went to the castle?
 RS | How did Thomas and Uncle Robert prove that the castle belonged to their family?
 # grammar
+GT | Review of Tenses and Future Forms
+R | Past:  I **needed to find** the coin.  They **had to solve** the mystery.
+R | Present:  I **like** castles with turrets.  We **need** the other half of the coin.
+R | Future:  **Are** you **going to explore** Peril Castle?  I **will see** the castles of Wales someday.
 G | I needed to find the coin.
 G | They had to solve the mystery.
 G | I like castles with turrets.

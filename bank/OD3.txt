@@ -60,6 +60,10 @@ RT | Who comes together at a family reunion? | Aunts, uncles, cousins, and grand
 RS | Why is it important to have fun? Tell us what the reading says.
 RS | What happens at a wedding in Egypt? Tell us one thing.
 # grammar
+GT | Adjectives with -ed and -ing
+R | **-ed** → how we feel:  tir**ed**, bor**ed**, excit**ed**
+R | **-ing** → about a thing (a game, a movie):  tir**ing**, bor**ing**, excit**ing**
+R | The people are **excited**.  The game is **exciting**.
 G | That race was really tiring.
 G | I'm so tired after the race.
 G | The people are excited.
@@ -126,6 +130,10 @@ RT | What does the ball fly over at the end of the story? | The ball flies over 
 RS | What is the main idea of the story? Tell us in one sentence.
 RS | Why isn't Carlos sad at the end of the story?
 # grammar
+GT | Gerunds
+R | verb + **-ing** = a noun (gerund):  skip → skipp**ing**,  land → land**ing**
+R | Ashanti's friends like **skipping**.
+R | Maria likes **landing** on one foot.
 G | Running and jumping are lots of fun.
 G | Do you like to bounce a ball?
 G | Bouncing a ball is lots of fun.
@@ -197,6 +205,10 @@ RT | What lessons is Sati taking with Emily? | Sati is taking tap dance lessons 
 RS | How did Sati's feelings change through the year?
 RS | Why was Sati angry at school in October?
 # grammar
+GT | Can and Could
+R | **can** = now (present)      **could** = before (past)
+R | Then: Sati **couldn't** ice skate.  →  Now: Sati **can** ice skate.
+R | Then: Sati **could** play with Nisha.  →  Now: Sati **can't** play with Nisha.
 G | When I was younger, I couldn't ride a bike.
 G | Now I can ride a bike.
 G | Sati couldn't ice skate before.
@@ -264,6 +276,10 @@ RT | Where did the grandparents move to? | The grandparents moved to Portugal.
 RS | What are the three main reasons people move? Tell us one.
 RS | Why do students sometimes go to universities in other countries?
 # grammar
+GT | Present Real Conditional
+R | **If** / **When** + one thing happens,  another thing happens
+R | **If** I'm sleepy, I run to the park.
+R | **When** another city has good services, people want to move there.
 G | If I'm sleepy, I run to the park.
 G | When you run, you feel more awake.
 G | When another city has good services, people want to move there.
@@ -333,6 +349,9 @@ RT | In "Bed in Summer," when does the boy have to go to bed in summer? | He has
 RS | Why do people write poems? Tell us one reason from the text.
 RS | Why does the boy in "Bed in Summer" think summer bedtime is hard?
 # grammar
+GT | Past Continuous
+R | **was / were** + verb + **-ing**  →  what was going on at a time in the past
+R | What were they doing last night?  They **were watching** television.
 G | The birds were singing this morning.
 G | My dad was frying eggs in the kitchen.
 G | The bus driver was honking his horn.
@@ -403,6 +422,9 @@ RT | What goes on line 3 of a cinquain poem? | Line 3 has three action verbs tha
 RS | What are the three points a good poet remembers? Tell us one.
 RS | How is a haiku different from an acrostic poem?
 # grammar
+GT | Past Continuous and Simple Past
+R | past continuous (what was going on)  +  **when**  +  simple past (what happened)
+R | I **was walking** to school this morning **when** I **saw** an orange butterfly.
 G | I was dreaming of the ocean when the rain came down.
 G | I was walking to the circus when I met a funny clown.
 G | I was searching for my sock when I saw my shoe.
@@ -470,6 +492,10 @@ RT | What do we call the time it takes the Earth to make one complete turn? | We
 RS | Why does the sun seem to move across the sky?
 RS | When it is 10:00 a.m. where you live, what time is it on the opposite side of the world? Why?
 # grammar
+GT | Future Facts with Will
+R | **will** + verb  →  a future fact (something that is true)
+R | In two hours, it **will be** noon where you live.
+R | On the other side of the world it **won't be** noon.
 G | In two hours, it will be noon.
 G | It will be 12:00 at night there.
 G | Tomorrow the sun will rise at 6:00.
@@ -543,6 +569,10 @@ RT | What was Molly's father doing at 5:00 p.m.? | He was watching TV and drinki
 RS | Why didn't Molly call her mother at 9:00 in the morning?
 RS | How did Molly take care of her father? Tell us two things.
 # grammar
+GT | Future Plans with Going To
+R | **am / is / are going to** + verb  →  a plan for the future
+R | I**'m going to** take care of you all day.
+R | My mom **is going to** give me a present.
 G | I'm going to take care of you all day.
 G | My mom is going to give me a present.
 G | I'm going to call her tonight.
@@ -612,6 +642,10 @@ RT | What is biomass? | Biomass is energy that we get from plants around us.
 RS | Why are fossil fuels bad for the Earth? Tell us one reason.
 RS | What are two sources of green energy? How do they make electricity?
 # grammar
+GT | May and Might
+R | **may / might** + verb  →  not sure it will happen
+R | We **may** find other sources of green energy.
+R | Renewable energy **might** reduce our need for fossil fuels.
 G | We may find other sources of green energy.
 G | You might see solar panels in your area.
 G | I might visit my aunt on Sunday.
@@ -678,6 +712,11 @@ RT | Why does Hector save energy? | He wants to help the planet.
 RS | How do carpools help the city? Tell us one thing.
 RS | Why did Hector take Mr. Big to the roof?
 # grammar
+GT | Quantifiers
+R | **a little** → a small amount, can't count (energy, wood)
+R | **a few** → a small amount, can count (cars, nails)
+R | **a lot of / lots of** → a big amount, can or can't count
+R | Hector uses **a little** energy.  There were only **a few** cars on the road.
 G | Hector uses a little energy.
 G | There were only a few cars on the road.
 G | Mr. Big uses a lot of energy.
@@ -745,6 +784,10 @@ RT | What is the man in the black jacket holding? | He is holding a thin white b
 RS | Why does Lisa think the guest is a beekeeper?
 RS | How do Lisa and Marco feel about the orchestra? How do you know?
 # grammar
+GT | Comparative and Superlative Adjectives
+R | loud  →  **louder than**  →  **the loudest**
+R | beautiful  →  **more beautiful than**  →  **the most beautiful**
+R | comparative = **two** things      superlative = **three or more** things
 G | The trombone is louder than the cello.
 G | A cello is more beautiful than a drum.
 G | The timpani drums are the loudest instruments.
@@ -811,6 +854,9 @@ RT | What are the four families of instruments? | They are strings, woodwinds, b
 RS | How are the flute and the panpipes different? Tell us one thing.
 RS | How are the tuba and the didgeridoo alike?
 # grammar
+GT | Comparative Adjectives with As
+R | **as** + adjective + **as**  →  the same:  The sound of the didgeridoo is **as low as** the tuba's sound.
+R | **not as** + adjective + **as**  →  different:  The didgeridoo is **not as curved as** the tuba.
 G | The drum is as loud as the falling rain.
 G | The flute is as sharp as a whistle from a train.
 G | The tuba is as low as the traffic in the street.
@@ -875,6 +921,9 @@ RT | What simple machine does a doorknob use? | A doorknob uses a wheel and axle
 RS | Why do you need a wedge almost every day?
 RS | What are the ramps in nature? Tell us one more ramp from the text.
 # grammar
+GT | Too and Either
+R | positive + **too**:  A hammer is a lever.  A seesaw is a lever, **too**.
+R | negative + **either**:  The wedge isn't a new invention.  The ramp isn't, **either**.
 G | A hammer is a lever.
 G | A seesaw is a lever, too.
 G | The wedge isn't a new invention.
@@ -948,6 +997,10 @@ RT | Why couldn't Mr. Lombardi's wife read his books? | She couldn't read his bo
 RS | How did Clara turn a problem into something useful?
 RS | How do you think Clara's father felt about the broken vases? Why?
 # grammar
+GT | Comparative and Superlative Adverbs
+R | fast  →  **faster than**  →  **the fastest**
+R | carefully  →  **more carefully than**  →  **the most carefully**
+R | Antonio made his glassware **faster than** before.
 G | Antonio made his glassware faster than before.
 G | I came earlier than you.
 G | Harry came the earliest.
@@ -1014,6 +1067,10 @@ RT | What do people use sunflower oil for? | People use sunflower oil for cookin
 RS | What happens when you plant and water a sunflower seed?
 RS | Why is the sunflower important for life on Earth? Tell us one reason.
 # grammar
+GT | Measure Words
+R | can't count:  a **bag** of soil,  a **cup** of water
+R | a big number you can count:  a **box** of seeds,  a **kilogram** of apples
+R | loaf · bag · jar · bottle · box · kilogram
 G | Fill a pot with a bag of soil.
 G | Moisten the soil with a cup of water.
 G | I bought a box of seeds.
@@ -1084,6 +1141,10 @@ RT | What did Mr. Singh carry away from the garden? | He carried away a basket f
 RS | Why was Marisol too sad to go to the empty lot?
 RS | What do you think Marisol saw at the end of the story? Why did it make her happy?
 # grammar
+GT | Adjectives with Prepositions
+R | Marisol is **curious about** her plant.
+R | She was **surprised at** the big sunflower.
+R | She was very **happy with** the mural.
 G | Marisol is curious about her plant.
 G | She was surprised at the big sunflower.
 G | She was very happy with the mural.
@@ -1153,6 +1214,9 @@ RT | How many men came home to Spain? | Only 18 men came home to Spain.
 RS | Why did Magellan want to sail west? Tell us.
 RS | How do you think Juan felt when he got home? Why?
 # grammar
+GT | Prepositions of Movement
+R | Go **up** to the deck.      We sailed **down** the coast of South America.
+R | up · down · into · out of · to · around · through
 G | Go up to the deck and check the sails.
 G | We sailed down the coast of South America.
 G | Walk down this street and through the park.
@@ -1223,6 +1287,9 @@ RT | What does the Cousteau Society teach people? | It teaches people about ocea
 RS | Why did the goggles change Cousteau's life?
 RS | Cousteau said, "We protect what we love." What do you think he meant?
 # grammar
+GT | Want to / Need to / Have to
+R | **want to**  →  you have a choice:  Cousteau **wanted to** stay underwater longer.
+R | **need to / have to**  →  no choice, you must:  He **needed to** (**had to**) use the Aqua-Lung.
 G | I want to swim underneath the waves.
 G | Cousteau wanted to stay underwater longer.
 G | He needed to use the Aqua-Lung.

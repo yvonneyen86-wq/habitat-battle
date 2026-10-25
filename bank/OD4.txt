@@ -59,6 +59,9 @@ RT | What did Bella see at the end of her journey? | She saw billions of galaxie
 RS | Why did Charles write a poem instead of using numbers and charts?
 RS | How did Bella's house and Nome look from the sky? Tell us one thing.
 # grammar
+GT | Predictions with Will
+R | **will** + verb  →  a prediction (something you believe about the future, not a fact)
+R | I **will** visit those places again, Bella thought.
 G | I will visit those places again.
 G | Scientists will send a person to Mars someday.
 G | She will become an astronaut when she grows up.
@@ -125,6 +128,10 @@ RT | What makes up most of the four inner planets? | Iron and rock make up most 
 RS | Why can't you stand on the surface of Saturn?
 RS | How are Earth and Venus alike and different? Tell us one thing.
 # grammar
+GT | Future Real Conditional
+R | **If** + future possibility,  **will** + result
+R | **If** technology continues to grow, we **will** travel to these places ourselves.
+R | We **will** travel to these places ourselves **if** technology continues to grow.
 G | If I become an astronaut, I will go to Mars.
 G | If technology continues to grow, we will travel to these places ourselves.
 G | Wendy will search the sky if she gets a telescope.
@@ -194,6 +201,10 @@ RT | How old was the emperor when he died? | The emperor died when he was 49 yea
 RS | How are the clay soldiers different from each other? Tell us one thing.
 RS | Why do modern craftsmen make copies of the soldiers?
 # grammar
+GT | Verbs Followed by Infinitives
+R | verb + **to** + verb (infinitive)
+R | The Chinese government **plans to keep** it closed for now.
+R | plan · promise · try · decide · forget  +  **to** …
 G | The Chinese government plans to keep it closed for now.
 G | All the students promised to study hard for the history test.
 G | The archaeologists tried to find more terracotta soldiers.
@@ -269,6 +280,10 @@ RT | What do paleontologists look for above and below sedimentary rock? | They l
 RS | What was Javier's dream? Did it come true?
 RS | Why did they call the dinosaur the Javiersaurus?
 # grammar
+GT | Verbs Followed by Gerunds
+R | verb + verb**-ing** (gerund)
+R | Javier **enjoyed playing** with his friends.
+R | enjoy · finish · practice · like · begin  +  **-ing**
 G | Javier enjoyed playing with his friends.
 G | I don't like getting my hands dirty.
 G | Now they enjoy digging in the garden.
@@ -344,6 +359,9 @@ RT | Why did the boy climb a tree in Madagascar? | He climbed the tree to peel o
 RS | Why can't Patrick give the boy any cinnamon?
 RS | How do they all get home? Why do they hurry?
 # grammar
+GT | Present Continuous for Future Plans
+R | **am / is / are** + verb**-ing**  +  a future time  →  a plan
+R | I**'m making** a special breakfast **today**.
 G | I'm making a special breakfast today.
 G | We're making vanilla pudding tomorrow.
 G | We're playing soccer after school today.
@@ -407,6 +425,9 @@ RT | Why do companies put chemicals on food? | They put chemicals on food to hel
 RS | Why can food miles be bad for the Earth? Tell us one reason.
 RS | Why is buying food from local farmers a good idea?
 # grammar
+GT | Polite Offers
+R | **Would you like** + **to** + verb?  (an action)  →  Would you like **to know** where your food comes from?
+R | **Would you like** + a thing?  →  Would you like **a delicious apple** from South Africa?
 G | Would you like to try my cheesecake?
 G | Would you like strawberries on top?
 G | Would you like me to call Harry?
@@ -473,6 +494,10 @@ RT | What does Sung Hee Cho glue onto the canvas? | She glues thousands of small
 RS | Why are Patrick Dougherty's sculptures temporary?
 RS | How does Sung Hee Cho make her artwork? Tell us two steps.
 # grammar
+GT | Indefinite Pronouns
+R | **anyone** = any of the people  →  Can **anyone** make art?
+R | **something** = one of the things  →  I want to paint **something** in this room.
+R | **everyone** = all of the people  →  **Everyone** worked on the sculpture.
 G | Anyone can be an artist.
 G | Can anyone make art from anything?
 G | I want to paint something in this room.
@@ -541,6 +566,9 @@ RT | What does Zayan Khan tell Theo at the end? | He tells Theo that he is alrea
 RS | How does Theo know that the man is Zayan Khan? Tell us one clue.
 RS | Why are Theo and Zayan Khan silent at the end of the story?
 # grammar
+GT | Offers with Shall and Will
+R | **Shall I** … ?  →  an offer with a question:  "**Shall I** show you some more sketches?"
+R | **I will** …  →  an offer with a statement:  "**I will** sign you up for something."
 G | Shall I show you some more sketches?
 G | I will sign you up for something.
 G | I'll bring you some ice cream.
@@ -609,6 +637,9 @@ RT | Why were rickshaws banned in Jakarta? | They were too slow and held up traf
 RS | Why is Jakarta so congested and polluted?
 RS | What can you buy at the Jalan Surabaya antiques market? Tell us two things.
 # grammar
+GT | Negative Indefinite Pronouns
+R | **nothing** = not anything  →  Do you have **nothing** to do?
+R | **no one / nobody** = no person  →  **No one** could see everything.  **Nobody** is in the museum.
 G | Nobody is ever bored in the city.
 G | Nothing can beat the city for me.
 G | No one could see everything in one day.
@@ -686,6 +717,10 @@ RT | What was Marcy's idea for the city park? | She planned a Volunteer Day with
 RS | Why do you think Mr. Clark was always running? Tell us one reason.
 RS | How did Marcy change during the day? Tell us one thing.
 # grammar
+GT | Tag Questions
+R | statement  +  **tag**  →  a yes / no question
+R | You'll work hard, **won't you**?
+R | Marcy wasn't nervous, **was she**?
 G | You'll work hard, won't you?
 G | Marcy wasn't nervous, was she?
 G | Mayors are hard workers, aren't they?
@@ -755,6 +790,9 @@ RT | What can white blood cells do? | White blood cells can kill the virus or th
 RS | How does mucus help your body fight viruses? Tell us one thing.
 RS | How are viruses different from bacteria?
 # grammar
+GT | Order of Adjectives
+R | **opinion** → **size** → **age** → **shape** → **color** → **kind**
+R | Max Axiom studies these **fascinating**, **tiny** visitors.   (opinion, size)
 G | It's a nice, warm, and sunny day.
 G | Max Axiom studies these fascinating, tiny visitors.
 G | The doctor washed his new, white lab coat.
@@ -820,6 +858,10 @@ RT | What do your cells create after they use oxygen? | The cells create carbon 
 RS | What two things does your diaphragm do?
 RS | Why is the human body called the most amazing machine? Tell us one reason.
 # grammar
+GT | Used To
+R | **used to** + verb  →  happened often in the past, but not now
+R | In ancient times, people **used to think** differently about the human body.
+R | one time in the past → simple past:  Last week, I **thought** about the circulatory system.
 G | People used to think differently about the human body.
 G | My sister used to go to the swimming pool often.
 G | My father used to play games with his friends.
@@ -897,6 +939,10 @@ RT | What helps to pay for the cost of publishing newspapers and magazines? | Ad
 RS | How is mass media different from telling your friends? Tell us one thing.
 RS | Why are magazines popular?
 # grammar
+GT | Must, Mustn't, Have To, Don't Have To
+R | **must / have to**  →  needs to do:  You **must** pay for the Internet to use it at home.
+R | **mustn't**  →  shouldn't do:  You **mustn't** take a newspaper without paying for it.
+R | **don't have to**  →  doesn't need to do:  You **don't have to** carry a computer to check the news.
 G | You must pay for the Internet to use it at home.
 G | You mustn't take a newspaper without paying for it.
 G | You don't have to carry a computer to check the news.
@@ -965,6 +1011,10 @@ RT | What did the mayor decide on August 1? | The mayor decided not to tear down
 RS | Why is Miss Lu a hero?
 RS | How did Elsa find out about the history of the house? Tell us one thing.
 # grammar
+GT | Present Perfect
+R | **has / have** + past participle  →  happened in the past, not at a specific time
+R | I **have decided** to keep a blog.
+R | He **hasn't written** a blog before.
 G | I have decided to keep a blog.
 G | He hasn't written a blog before.
 G | The reporter has done many interviews.
@@ -1030,6 +1080,9 @@ RT | What is under Earth's crust? | Under the crust are many pieces called plate
 RS | Why are blizzards dangerous to drive in?
 RS | What kinds of warnings can people receive? Tell us one.
 # grammar
+GT | Present Perfect with Ever and Never
+R | **Have** you **ever seen** a real tornado?
+R | Yes, I **have**.  /  No, I **haven't**.  I**'ve never seen** a real tornado.
 G | Have you ever seen a real tornado?
 G | I've never seen a real tornado.
 G | Have you ever experienced an earthquake?
@@ -1103,6 +1156,10 @@ RT | Why was not one life lost on the Yucatan Peninsula? | The government and th
 RS | How is Luis different from his younger brothers?
 RS | What did Luis do to prepare for the storm? Tell us two things.
 # grammar
+GT | Present Perfect with Already, Just, and Yet
+R | I've **already** packed everything.
+R | I've **just** eaten dinner.
+R | Have you cleaned your room **yet**?  No, I haven't cleaned it **yet**.
 G | I've already packed everything we need.
 G | I've just put batteries in my flashlight.
 G | Have you cleaned your room yet?
@@ -1171,6 +1228,9 @@ RT | How much of Earth do oceans cover? | Oceans cover 75 percent of Earth.
 RS | How are the taiga and the tundra different? Tell us one thing.
 RS | Why is the tropical rainforest a very important biome?
 # grammar
+GT | Present Perfect with For and Since
+R | **for** + an amount of time:  These biomes have provided a home for animals **for** a long time.
+R | **since** + a point of time:  I have studied biomes **since** February.
 G | I've lived here since I was born.
 G | These biomes have provided a home for animals for a long time.
 G | I have studied biomes since February.
@@ -1241,6 +1301,9 @@ RT | What happened within one year of the petition? | Three countries passed law
 RS | Why are coral reefs important? Tell us one reason from Camila's talk.
 RS | How did Camila make a difference for the coral reefs?
 # grammar
+GT | Present Perfect and Simple Past
+R | present perfect  →  we don't know when:  Camila **has created** a petition.
+R | simple past  →  we know when:  When she got home, Camila **created** a petition.
 G | Camila has created a petition.
 G | When she got home, Camila created a petition.
 G | We've written a petition, so stay away!
