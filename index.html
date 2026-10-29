@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Habitat Battle</title>
+<title>Yvonne English Arena</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@600;700;800;900&family=Noto+Color+Emoji&display=swap" rel="stylesheet">
@@ -662,7 +662,7 @@ body.lite .amb-canvas{display:none}
 </head>
 <body>
 <div id="app"></div>
-<script>if(/[?&]screen=/.test(location.search)&&window.parent!==window){document.getElementById('app').innerHTML='<div class="student"><div class="s-col"><div class="s-head"><span class="brand">⚔️ Habitat Battle</span></div><div class="card conn"><div class="e">📡</div><h2>Getting ready…</h2><p class="hint">Waiting for the classroom screen.</p></div></div></div>';}</script>
+<script>if(/[?&]screen=/.test(location.search)&&window.parent!==window){document.getElementById('app').innerHTML='<div class="student"><div class="s-col"><div class="s-head"><span class="brand">⚔️ Yvonne English Arena</span></div><div class="card conn"><div class="e">📡</div><h2>Getting ready…</h2><p class="hint">Waiting for the classroom screen.</p></div></div></div>';}</script>
 <div id="toast" class="toast" hidden></div>
 
 <script>
@@ -1468,7 +1468,7 @@ function render3dBar(){const el=$('#p3d-bar');if(!el||!ui3d())return;const key=S
   el.innerHTML=`<button class="btn" data-act="island">🏝️ Island</button>${S.teams.slice(0,S.teamCount).map((t,i)=>`<button class="btn" data-act="spot-team" data-i="${i}" style="border-bottom:4px solid ${t.color}">👥 ${esc(t.name.replace(/\s+Team$/i,''))}</button>`).join('')}<button class="btn" data-act="bases">🏕️ Bases</button>`;}
 function renderHeader(){
   const el=$('#topbar');if(!el)return;const sc=SCENES[S.scene];const ph=S.phase;
-  el.innerHTML=`<span class="brand">⚔️ Habitat Battle</span><span class="chip">${sc.icon} ${esc(sc.name)}</span>
+  el.innerHTML=`<span class="brand">⚔️ Yvonne English Arena</span><span class="chip">${sc.icon} ${esc(sc.name)}</span>
   <span class="chip"><span class="dot ${H.status}"></span>${esc(H.statusText)}</span><span class="chip">Code <b>${esc(S.code)}</b></span><span class="sp"></span>
   ${ph==='gather'?`<button class="btn" data-act="qr-toggle">${S.showQR?'Hide QR':'Show QR'}</button><button class="btn" data-act="qr-big">Big QR</button><button class="btn" data-act="card">❓ Question Card</button><button class="btn" data-act="all-coin">🪙 +1 Everyone</button><button class="btn" data-act="roster">📋 Class list</button><button class="btn war" data-act="start-battle">⚔️ Start Battle</button>`:''}
   ${ph==='battle'?`<button class="btn" data-act="qr-big">Big QR</button><button class="btn war" data-act="end-battle">🏁 End Battle</button>`:''}
@@ -1975,9 +1975,9 @@ function sRender(){sRenderInner();if(ST.s)sAmbient(ST.s.scene);}
 function sRenderInner(){
   const app=ST.root||$('#app');const s=ST.s;
   if(s&&!ST.embedded)applyScene(s.scene);
-  if(!s){ST.view='conn';app.innerHTML=`<div class="student"><div class="s-col"><div class="s-head"><span class="brand">⚔️ Habitat Battle</span></div><div class="card conn"><div class="e">📡</div><h2>${esc(ST.status)}</h2><p class="hint">Game code: <b>${esc(JOIN)}</b></p></div></div></div>`;return;}
+  if(!s){ST.view='conn';app.innerHTML=`<div class="student"><div class="s-col"><div class="s-head"><span class="brand">⚔️ Yvonne English Arena</span></div><div class="card conn"><div class="e">📡</div><h2>${esc(ST.status)}</h2><p class="hint">Game code: <b>${esc(JOIN)}</b></p></div></div></div>`;return;}
   const me=ST.me&&s.players[ST.me];
-  if(!me){if(CR.inRunner&&CR.init.me){if(ST.view!=='crwait'){ST.view='crwait';app.innerHTML=`<div class="student"><div class="s-col"><div class="s-head"><span class="brand">⚔️ Habitat Battle</span></div><div class="card conn"><div class="e">${esc(SCENES[s.scene].icon)}</div><h2>Hi ${esc(CR.init.me.name||'')}!</h2><p class="hint">Joining ${esc(SCENES[s.scene].name)}…</p></div></div></div>`;}return;}return sJoin(app,s);}
+  if(!me){if(CR.inRunner&&CR.init.me){if(ST.view!=='crwait'){ST.view='crwait';app.innerHTML=`<div class="student"><div class="s-col"><div class="s-head"><span class="brand">⚔️ Yvonne English Arena</span></div><div class="card conn"><div class="e">${esc(SCENES[s.scene].icon)}</div><h2>Hi ${esc(CR.init.me.name||'')}!</h2><p class="hint">Joining ${esc(SCENES[s.scene].name)}…</p></div></div></div>`;}return;}return sJoin(app,s);}
   if(ST.view!=='play'){ST.view='play';ST.qKey='';ST.prev=null;ST.shopOpen=false;ST.popQid=null;sSkeleton(app);
     if(!ST.boundPlay){ST.boundPlay=true;document.addEventListener('click',sPlayClick);document.addEventListener('input',e=>{if(e.target.id==='ans'){ST.draft=e.target.value;sMeter();}});}}
   sPlay(s,me);
@@ -1986,7 +1986,7 @@ function sRenderInner(){
 const JSTEPS=[['✏️','My name'],['🚩','My team'],['🐾','My character'],['🎨','My look']];
 function sJoin(app,s){if(ST.mini)ST.mini.stop();
   if(ST.view!=='join'){ST.view='join';ST.jstep=ST.jstep||0;app.innerHTML=`<div class="student"><div class="s-col">
-    <div class="s-head"><span class="brand">⚔️ Habitat Battle</span><span class="sp"></span><span class="chip" id="j-scene"></span></div>
+    <div class="s-head"><span class="brand">⚔️ Yvonne English Arena</span><span class="sp"></span><span class="chip" id="j-scene"></span></div>
     <div class="steps" id="j-steps"></div>
     <div class="card jstep" id="j-card"></div>
     <div class="jnav" id="j-nav"></div></div></div>`;

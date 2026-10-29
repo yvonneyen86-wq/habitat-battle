@@ -1,4 +1,4 @@
-# Habitat Battle — 3D 模組（Three.js）
+# Yvonne English Arena（repo: habitat-battle）— 3D 模組（Three.js）
 
 這個資料夾是 3D 舞台的原始碼。**已接進正式遊戲 `index.html`**（老師端 `🎮 3D` 開關，預設關閉）；`habitat-3d.html` 仍是可獨立開啟的展示頁。
 目標：把老師端／電子白板上的 2D canvas 舞台（`paintScene/paintDynamic`）換成可選的 3D 舞台；學生平板端維持 2D。

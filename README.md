@@ -1,4 +1,6 @@
-# Habitat Battle
+# Yvonne English Arena
+
+（遊戲原名 Habitat Battle；repo 與網址維持 `habitat-battle`。）
 
 Classroom English game for Yvonne's English (Oxford Discover 1–5).
 

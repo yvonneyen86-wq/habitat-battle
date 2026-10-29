@@ -1,4 +1,6 @@
-# Habitat Battle — notes for Claude (read before changing anything)
+# Yvonne English Arena (repo "habitat-battle") — notes for Claude (read before changing anything)
+
+The game is named **Yvonne English Arena** on every screen (renamed from "Habitat Battle" on 2026-10-29). The repo name, the Pages URL, the PeerJS prefix and the file names stay `habitat-battle`/`habitatbattle` — do not rename those.
 
 Classroom English game for 伊凡美語 (Yvonne's English, Hsinchu/Zhubei, Taiwan), built on Oxford Discover 1–5.
 Live site: https://yvonneyen86-wq.github.io/habitat-battle/ (GitHub Pages, branch `main`, root). Every push to `main` goes live in 1–2 minutes.

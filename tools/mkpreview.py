@@ -1,7 +1,7 @@
 t=open('index.html').read()
 for x in ['<!doctype html>\n','<html lang="en">\n','<head>\n','<meta charset="utf-8">\n','<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n','</head>\n','<body>\n','</body>\n','</html>\n']:
     assert x in t,x; t=t.replace(x,'',1)
-t=t.replace('<title>Habitat Battle</title>','<title>Habitat Battle Preview</title>')
+t=t.replace('<title>Yvonne English Arena</title>','<title>Yvonne English Arena Preview</title>')
 a="applyScene(S.scene);hostShell();render();startHost();"; assert a in t; t=t.replace(a,"applyScene(S.scene);hostShell();render();previewStart();")
 b="changed();startHost();}"; assert b in t; t=t.replace(b,"changed();previewStart();}")
 t=t.replace("store('habitat-host'","store('habitat-preview4'").replace("function save(){store('habitat-host',S);}","function save(){store('habitat-preview4',S);}")
