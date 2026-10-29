@@ -1,0 +1,443 @@
+=== OPW4 ===
+// Oxford Phonics World 4 - Learning Time activities. One unit per sound group. Sections: # sound, # words, # story, # sort, # pairs, # build.
+// Story pictures live in the teacher's Google Drive folder OPW-images (shared with the link); drive:ID#x,y,w,h = a crop box (percent) inside the page photo.
+## U1 | l and r blends: bl cl br cr fl gl |
+# sound
+bl | bl blend | black
+cl | cl blend | clock
+br | br blend | broom
+cr | cr blend | crab
+fl | fl blend | fly
+gl | gl blend | globe
+# words
+black | bl/a/ck | drive:1TOGWl5X2pGF0tGsXXpXxgHFEW28SlkCq#36.2,69.6,6.3,12.7
+blanket | bl/a/nk/e/t | drive:1TOGWl5X2pGF0tGsXXpXxgHFEW28SlkCq#42.8,71.2,7.0,10.5
+clock | cl/o/ck | drive:1TOGWl5X2pGF0tGsXXpXxgHFEW28SlkCq#50.7,70.0,5.1,12.6
+club | cl/u/b | drive:1TOGWl5X2pGF0tGsXXpXxgHFEW28SlkCq#57.1,70.1,6.5,12.7
+broom | br/oo/m | drive:1SSQ9p6dvUhpFAojfg5SqjdJGlynU84w3#35.7,70.1,6.2,13.3
+bride | br/ide | drive:1SSQ9p6dvUhpFAojfg5SqjdJGlynU84w3#43.8,70.0,5.4,13.2
+crab | cr/a/b | drive:1SSQ9p6dvUhpFAojfg5SqjdJGlynU84w3#49.4,69.7,7.4,12.2
+crocodile | cr/o/c/o/d/ile | drive:1SSQ9p6dvUhpFAojfg5SqjdJGlynU84w3#56.6,70.0,7.0,12.2
+fly | fl/y | drive:1qga4B_EMORDws3XPvwpJv7KYSUsLjsQP#35.9,70.2,6.4,10.2
+flag | fl/a/g | drive:1qga4B_EMORDws3XPvwpJv7KYSUsLjsQP#44.0,69.6,5.7,13.5
+globe | gl/obe | drive:1qga4B_EMORDws3XPvwpJv7KYSUsLjsQP#50.2,69.6,6.1,13.5
+glass | gl/a/ss | drive:1qga4B_EMORDws3XPvwpJv7KYSUsLjsQP#58.3,69.5,4.9,13.4
+# story
+P | The fly, the crab, and the crocodile are friends. This is their club. | drive:1aKIQ4sLAni5sIcUlzQhtd8iEQ7yab0HW#37.4,32.2,12.0,20.6
+P | Our club is a mess. We need to clean up! I can use the broom to sweep. | drive:1aKIQ4sLAni5sIcUlzQhtd8iEQ7yab0HW#50.3,31.1,12.0,25.6
+P | I can put away the blanket and put up the flag. I can wipe the globe with a rag. | drive:1aKIQ4sLAni5sIcUlzQhtd8iEQ7yab0HW#37.4,58.2,13.0,24.6
+P | Now our club is clean! Look at the clock. It's time to eat! | drive:1aKIQ4sLAni5sIcUlzQhtd8iEQ7yab0HW#50.3,58.2,12.7,24.6
+RC | Who uses the broom to sweep? | the crab | the fly | the crocodile
+RC | What is the club like at first? | a mess | clean | empty
+RC | What does the crocodile wipe? | the globe | the flag | the clock
+# sort
+black | bl
+blanket | bl
+clock | cl
+club | cl
+broom | br
+bride | br
+crab | cr
+crocodile | cr
+fly | fl
+flag | fl
+globe | gl
+glass | gl
+# pairs
+black | back
+clock | lock
+crab | cab
+club | cub
+fly | fry
+glass | grass
+# build
+G | This is their club.
+G | Our club is a mess.
+G | I can use the broom to sweep.
+G | I can wipe the globe with a rag.
+G | Now our club is clean!
+G | Look at the clock.
+G | The crab can sweep the club.
+G | The fly can put up the flag.
+## U2 | r and l blends: fr gr pl sl dr tr |
+# sound
+fr | fr blend | frog
+gr | gr blend | green
+pl | pl blend | plate
+sl | sl blend | slide
+dr | dr blend | drum
+tr | tr blend | truck
+# words
+frog | fr/o/g | 🐸
+green | gr/ee/n | 🟢
+grass | gr/a/ss | 🌱
+plate | pl/ate | drive:1OkGeHY39vzi7EvRasYWNNzr-UaMczEGQ#36.2,70.7,5.7,10.1
+play | pl/ay | drive:1OkGeHY39vzi7EvRasYWNNzr-UaMczEGQ#43.0,70.9,6.5,12.2
+slide | sl/ide | drive:1OkGeHY39vzi7EvRasYWNNzr-UaMczEGQ#49.5,69.5,7.1,11.1
+sleep | sl/ee/p | drive:1OkGeHY39vzi7EvRasYWNNzr-UaMczEGQ#56.5,68.9,6.8,13.1
+drum | dr/u/m | drive:1la1RQLmuD4DGlf5LX5hPA8W9JFqGngoC#36.1,68.0,5.9,12.1
+dress | dr/e/ss | drive:1la1RQLmuD4DGlf5LX5hPA8W9JFqGngoC#42.3,68.6,5.5,13.6
+truck | tr/u/ck | drive:1la1RQLmuD4DGlf5LX5hPA8W9JFqGngoC#48.3,68.4,9.3,12.6
+tree | tr/ee | drive:1la1RQLmuD4DGlf5LX5hPA8W9JFqGngoC#57.4,64.7,7.3,16.1
+# story
+P | The green frogs live in a big tree. | drive:1uZjUzySW1hduRwog0EMwPvGaI-3Ocb8k#37.5,31.6,11.9,21.5
+P | On Friday, they drive their truck to the park. They bring a lot of food and plates. | drive:1uZjUzySW1hduRwog0EMwPvGaI-3Ocb8k#50.2,31.6,11.8,18.8
+P | Some frogs drum, and some frogs swim. They hop in the grass and play on the slide. | drive:1uZjUzySW1hduRwog0EMwPvGaI-3Ocb8k#37.5,58.1,11.9,19.5
+P | On Saturday, all the frogs sleep late! | drive:1uZjUzySW1hduRwog0EMwPvGaI-3Ocb8k#50.2,58.1,11.8,20.5
+RC | Where do the green frogs live? | in a big tree | in a truck | in the park
+RC | What do they drive to the park? | a truck | a bus | a bike
+RC | What do all the frogs do on Saturday? | sleep late | play drums | swim
+# sort
+frog | fr
+green | gr
+grass | gr
+plate | pl
+play | pl
+slide | sl
+sleep | sl
+drum | dr
+dress | dr
+truck | tr
+tree | tr
+# pairs
+frog | fog
+grass | glass
+play | pray
+slide | side
+truck | tuck
+tree | free
+# build
+G | The green frogs live in a big tree.
+G | They drive their truck to the park.
+G | They bring a lot of food and plates.
+G | They hop in the grass.
+G | They play on the slide.
+G | All the frogs sleep late!
+G | The frog can play the drum.
+G | Some frogs sleep in the tree.
+## U3 | s blends: sm sn sp sw st |
+# sound
+sm | sm blend | smile
+sn | sn blend | snake
+sp | sp blend | spoon
+sw | sw blend | swing
+st | st blend | stop
+# words
+smile | sm/ile | drive:1-saYA8PT8sOxqzXxUchrKeQE9HaJlLat#36.7,68.7,6.7,13.3
+smoke | sm/oke | drive:1-saYA8PT8sOxqzXxUchrKeQE9HaJlLat#44.6,70.9,5.0,11.8
+snake | sn/ake | drive:1-saYA8PT8sOxqzXxUchrKeQE9HaJlLat#50.5,68.3,5.7,13.4
+snow | sn/ow | drive:1-saYA8PT8sOxqzXxUchrKeQE9HaJlLat#57.9,68.6,6.0,13.1
+spoon | sp/oo/n | drive:1FXJyZzODvbRhKP1TnK0A_-udt5a1IKll#36.7,68.5,4.2,13.8
+spot | sp/o/t | drive:1FXJyZzODvbRhKP1TnK0A_-udt5a1IKll#42.8,68.5,5.7,11.7
+swing | sw/i/ng | drive:1FXJyZzODvbRhKP1TnK0A_-udt5a1IKll#48.6,68.5,8.6,11.9
+swim | sw/i/m | drive:1FXJyZzODvbRhKP1TnK0A_-udt5a1IKll#57.9,68.4,5.6,11.1
+stop | st/o/p | drive:1HS9HqFBEAZ0JnJ9v-9U2V8GK9yGjU1B5#38.7,53.5,7.2,12.7
+test | t/e/st | drive:1HS9HqFBEAZ0JnJ9v-9U2V8GK9yGjU1B5#50.5,53.0,11.2,13.9
+stamp | st/a/mp | drive:1HS9HqFBEAZ0JnJ9v-9U2V8GK9yGjU1B5#36.9,70.9,10.6,12.3
+fast | f/a/st | drive:1HS9HqFBEAZ0JnJ9v-9U2V8GK9yGjU1B5#49.3,73.6,12.3,7.5
+# story
+P | Hi, I'm Fran. In winter, my class takes a big test. Then we go on vacation! | drive:1DDyr_QOlvprt4MSMEqzTOSCHQmYGbS-O#37.9,32.3,9.2,18.9
+P | We play outside in the snow. Some kids are fast on their skates. My friend and I smile. We make hot tea and stir it with a spoon. | drive:1DDyr_QOlvprt4MSMEqzTOSCHQmYGbS-O#47.7,32.3,14.2,18.9
+P | In summer, we play outside in the sun! We swim in the lake and go on the swings. | drive:1DDyr_QOlvprt4MSMEqzTOSCHQmYGbS-O#37.9,58.5,13.8,19.0
+P | I like the winter and the summer. What season do you like? | drive:1DDyr_QOlvprt4MSMEqzTOSCHQmYGbS-O#52.2,58.5,9.7,19.0
+RC | What does Fran's class take in winter? | a big test | a big bus | a big snake
+RC | What do they stir with a spoon? | hot tea | hot soup | cold milk
+RC | Where do they swim in summer? | in the lake | in the sea | in the snow
+# sort
+smile | sm
+smoke | sm
+snake | sn
+snow | sn
+spoon | sp
+spot | sp
+swing | sw
+swim | sw
+stop | st
+stamp | st
+test | st
+fast | st
+# pairs
+top | stop
+pot | spot
+wing | swing
+now | snow
+mile | smile
+# build
+G | My class takes a big test.
+G | We play outside in the snow.
+G | Some kids are fast on their skates.
+G | My friend and I smile.
+G | We stir it with a spoon.
+G | We swim in the lake.
+G | I like the winter and the summer.
+## U4 | digraphs: sh ch tch ph wh |
+# sound
+sh | sh digraph | shell
+ch | ch digraph | chick
+tch | tch digraph | watch
+ph | ph digraph | phone
+wh | wh digraph | whale
+# words
+shell | sh/e/ll | drive:12bGlhXcPQLUzCDCwmkOFTQRhiECDldPY#36.6,53.5,10.2,12.6
+fish | f/i/sh | drive:12bGlhXcPQLUzCDCwmkOFTQRhiECDldPY#50.5,53.5,10.5,12.9
+ship | sh/i/p | drive:12bGlhXcPQLUzCDCwmkOFTQRhiECDldPY#37.3,71.2,10.7,12.7
+brush | br/u/sh | drive:12bGlhXcPQLUzCDCwmkOFTQRhiECDldPY#50.7,72.4,10.2,8.5
+chick | ch/i/ck | drive:1Bd70E0ikaCi5SOSbf5Kra1QY3SaQRsPF#36.1,69.0,6.4,12.6
+lunch | l/u/n/ch | drive:1Bd70E0ikaCi5SOSbf5Kra1QY3SaQRsPF#43.6,68.4,5.3,13.0
+watch | w/a/tch | drive:1Bd70E0ikaCi5SOSbf5Kra1QY3SaQRsPF#50.2,70.0,6.8,12.5
+catch | c/a/tch | drive:1Bd70E0ikaCi5SOSbf5Kra1QY3SaQRsPF#58.0,67.2,4.7,13.8
+phone | ph/one | drive:17Hw2s5Lqwr5LQiVv8zf5dQmPtbaCsiMf#36.0,68.0,5.4,13.3
+dolphin | d/o/l/ph/i/n | drive:17Hw2s5Lqwr5LQiVv8zf5dQmPtbaCsiMf#41.9,68.1,6.8,12.3
+whale | wh/ale | drive:17Hw2s5Lqwr5LQiVv8zf5dQmPtbaCsiMf#48.1,69.8,8.7,10.6
+white | wh/ite | drive:17Hw2s5Lqwr5LQiVv8zf5dQmPtbaCsiMf#57.8,70.2,5.8,10.1
+# story
+P | Brad and his family live on Dolphin Bay. They play catch on the beach and look for shells. | drive:1XS3QkpTOAcoWFUSya99_kEhYw6Ls5XL3#37.9,31.7,11.8,17.3
+P | Brad's mom works on a big ship. She uses a net to catch fish. | drive:1XS3QkpTOAcoWFUSya99_kEhYw6Ls5XL3#50.5,31.7,11.5,17.3
+P | His dad trains dolphins. People come to see them swim. | drive:1XS3QkpTOAcoWFUSya99_kEhYw6Ls5XL3#37.9,56.0,11.0,21.7
+P | Brad works on the bay, too. Today, he sees a white whale! It's fun to live on Dolphin Bay. | drive:1XS3QkpTOAcoWFUSya99_kEhYw6Ls5XL3#49.7,56.0,12.2,20.0
+RC | Where do Brad and his family live? | on Dolphin Bay | on a big ship | on a farm
+RC | What does Brad's mom use to catch fish? | a net | a phone | a brush
+RC | What does Brad see today? | a white whale | a big fish | a pink shell
+# sort
+shell | sh
+fish | sh
+ship | sh
+brush | sh
+chick | ch
+lunch | ch
+watch | tch
+catch | tch
+phone | ph
+dolphin | ph
+whale | wh
+white | wh
+# pairs
+ship | chip
+shell | sell
+watch | wash
+catch | cash
+# build
+G | They play catch on the beach.
+G | She uses a net to catch fish.
+G | His dad trains dolphins.
+G | People come to see them swim.
+G | He sees a white whale!
+G | Brad works on the bay.
+G | I see a fish and a shell.
+## U5 | th th ck qu: this, three, duck, queen |
+# sound
+th | voiced th | this
+th | unvoiced th | three
+ck | ck | duck
+qu | qu | queen
+# words
+this | th/i/s | drive:17pxUwVm6Dc3DzURMG8XXJl5gaFxEi7EO#37.9,52.9,7.3,12.0
+that | th/a/t | drive:17pxUwVm6Dc3DzURMG8XXJl5gaFxEi7EO#54.6,50.7,6.6,15.6
+mother | m/o/th/er | drive:17pxUwVm6Dc3DzURMG8XXJl5gaFxEi7EO#39.6,70.0,6.8,13.1
+father | f/a/th/er | drive:17pxUwVm6Dc3DzURMG8XXJl5gaFxEi7EO#51.4,70.0,7.7,13.1
+three | th/r/ee | drive:1ZX0tECB_3Ra-b07-bdOcOVUNB9B-qGkb#39.2,52.7,3.7,11.9
+teeth | t/ee/th | drive:1ZX0tECB_3Ra-b07-bdOcOVUNB9B-qGkb#50.4,53.6,10.0,8.4
+think | th/i/nk | drive:1ZX0tECB_3Ra-b07-bdOcOVUNB9B-qGkb#38.8,68.4,8.3,15.0
+bath | b/a/th | drive:1ZX0tECB_3Ra-b07-bdOcOVUNB9B-qGkb#50.3,69.2,10.4,12.3
+duck | d/u/ck | drive:1A1v01AezGr2UlSz_cGjvrTS0zeM6V8tu#36.7,68.8,7.1,11.4
+rocket | r/o/ck/e/t | drive:1A1v01AezGr2UlSz_cGjvrTS0zeM6V8tu#44.4,68.8,4.5,12.0
+queen | qu/ee/n | drive:1A1v01AezGr2UlSz_cGjvrTS0zeM6V8tu#50.8,67.5,5.0,13.6
+quilt | qu/i/lt | drive:1A1v01AezGr2UlSz_cGjvrTS0zeM6V8tu#57.1,67.7,6.4,13.0
+# story
+P | Hi, I'm Dale Duck. That is my father. He likes to bake cakes. | drive:1YFblBPbIWHPrZ69FODHy8Ns1IIo1xGS6#37.7,30.5,11.9,24.6
+P | This is my mother. She likes to make quilts. When she sees a crocodile, she makes a loud quack! | drive:1YFblBPbIWHPrZ69FODHy8Ns1IIo1xGS6#50.4,30.5,11.5,24.6
+P | That is my brother. He's a chick. He takes a bath with his toy rocket. | drive:1YFblBPbIWHPrZ69FODHy8Ns1IIo1xGS6#37.7,56.4,11.9,25.5
+P | This is my family. One, two, three. I love my family, and they love me. | drive:1YFblBPbIWHPrZ69FODHy8Ns1IIo1xGS6#50.4,56.4,11.5,25.5
+RC | What does Dale's father like to bake? | cakes | quilts | rockets
+RC | What does the mother do when she sees a crocodile? | a loud quack | a bath | a cake
+RC | Who takes a bath with a toy rocket? | the brother | the father | the mother
+# sort
+this | th
+that | th
+three | th
+bath | th
+think | th
+duck | ck
+rocket | ck
+chick | ck
+queen | qu
+quilt | qu
+# pairs
+three | tree
+bath | bat
+that | hat
+think | sink
+quilt | kilt
+# build
+G | That is my father.
+G | He likes to bake cakes.
+G | This is my mother.
+G | She likes to make quilts.
+G | He takes a bath with his toy rocket.
+G | This is my duck.
+G | That is my quilt.
+## U6 | final blends: ng nk nd nt lt mp |
+# sound
+ng | final ng | king
+nk | final nk | bank
+nd | final nd | wind
+nt | final nt | tent
+lt | final lt | belt
+mp | final mp | lamp
+# words
+king | k/i/ng | drive:19bDJGUsivckIddgwOYKOBphc5cF685RN#36.8,67.5,5.5,12.9
+long | l/o/ng | drive:19bDJGUsivckIddgwOYKOBphc5cF685RN#42.9,68.9,6.3,11.2
+bank | b/a/nk | drive:19bDJGUsivckIddgwOYKOBphc5cF685RN#50.3,68.0,6.1,12.4
+pink | p/i/nk | drive:19bDJGUsivckIddgwOYKOBphc5cF685RN#57.6,67.7,6.1,13.1
+wind | w/i/nd | drive:1xcRx0DTv5450mPwYEPsPwbM4JAYY5oH_#35.5,69.2,6.4,9.4
+hand | h/a/nd | drive:1xcRx0DTv5450mPwYEPsPwbM4JAYY5oH_#43.2,67.3,5.5,12.0
+tent | t/e/nt | drive:1xcRx0DTv5450mPwYEPsPwbM4JAYY5oH_#49.0,67.4,8.4,12.1
+paint | p/ai/nt | drive:1xcRx0DTv5450mPwYEPsPwbM4JAYY5oH_#57.4,68.1,5.3,12.0
+belt | b/e/lt | drive:1HrLtrrXdNGOKUdpxLoN4V8CZ-sgUUWTE#35.3,70.1,7.5,7.9
+adult | a/d/u/lt | drive:1HrLtrrXdNGOKUdpxLoN4V8CZ-sgUUWTE#43.4,67.6,5.7,13.4
+lamp | l/a/mp | drive:1HrLtrrXdNGOKUdpxLoN4V8CZ-sgUUWTE#50.4,67.9,5.9,12.6
+camp | c/a/mp | drive:1HrLtrrXdNGOKUdpxLoN4V8CZ-sgUUWTE#57.2,67.6,5.9,12.7
+# story
+P | I can paint a picture by hand. | drive:12qqI9rj_aFWdkHego0tBJlvG12eHdmsM#37.6,30.3,10.5,21.6
+P | I paint grass and a tree. I paint the sky, too. The grass is green, and the sky is blue. | drive:12qqI9rj_aFWdkHego0tBJlvG12eHdmsM#48.8,30.3,13.0,20.6
+P | I paint a king with a belt and a queen in a long, pink robe. Then I paint a camp with three tents and a lamp. | drive:12qqI9rj_aFWdkHego0tBJlvG12eHdmsM#37.6,55.8,10.5,18.2
+P | I paint the wind. It blows the camp. It blows the king and queen, too. Oh, no! | drive:12qqI9rj_aFWdkHego0tBJlvG12eHdmsM#48.8,55.1,13.0,21.0
+RC | What color is the sky in the picture? | blue | green | pink
+RC | What does the queen wear? | a pink robe | a belt | a lamp
+RC | What does the wind blow? | the camp | the tree | the sky
+# sort
+king | ng
+long | ng
+bank | nk
+pink | nk
+wind | nd
+hand | nd
+tent | nt
+paint | nt
+belt | lt
+adult | lt
+lamp | mp
+camp | mp
+# pairs
+tent | ten
+hand | had
+belt | bell
+camp | cap
+pink | pin
+long | log
+# build
+G | I can paint a picture by hand.
+G | I paint grass and a tree.
+G | I paint the sky, too.
+G | I paint the wind.
+G | It blows the camp.
+G | I paint a king with a belt.
+G | The tent is pink.
+## U7 | s blends: sk sc spr str spl squ |
+# sound
+sk | sk blend | skunk
+sc | sc blend | scale
+spr | spr blend | spray
+str | str blend | string
+spl | spl blend | splash
+squ | squ blend | squid
+# words
+skunk | sk/u/nk | drive:13HgzbbtoCN0y4FoOYj-2Ccn4s2MuloFX#36.4,67.6,5.8,11.8
+desk | d/e/sk | drive:13HgzbbtoCN0y4FoOYj-2Ccn4s2MuloFX#43.3,68.7,5.5,11.4
+scale | sc/ale | drive:13HgzbbtoCN0y4FoOYj-2Ccn4s2MuloFX#50.4,68.8,5.6,11.1
+school | sc/h/oo/l | drive:13HgzbbtoCN0y4FoOYj-2Ccn4s2MuloFX#57.0,67.5,6.4,13.3
+spray | spr/ay | drive:1leKZ0BxwAE76Y4AVCM7mUjETQbPpvhTo#36.6,67.7,5.8,13.1
+spring | spr/i/ng | drive:1leKZ0BxwAE76Y4AVCM7mUjETQbPpvhTo#44.1,67.9,5.8,12.5
+string | str/i/ng | drive:1leKZ0BxwAE76Y4AVCM7mUjETQbPpvhTo#51.0,67.7,5.9,12.5
+strong | str/o/ng | drive:1leKZ0BxwAE76Y4AVCM7mUjETQbPpvhTo#57.8,67.6,6.2,12.4
+splash | spl/a/sh | drive:1EJXTJSd5ISMDGpvycLSubmhpsLr8pBSs#36.7,67.7,5.5,12.4
+splint | spl/i/nt | drive:1EJXTJSd5ISMDGpvycLSubmhpsLr8pBSs#43.8,66.9,5.5,13.4
+squid | squ/i/d | drive:1EJXTJSd5ISMDGpvycLSubmhpsLr8pBSs#49.8,66.4,6.7,14.4
+square | squ/are | drive:1EJXTJSd5ISMDGpvycLSubmhpsLr8pBSs#57.3,67.3,6.0,10.6
+# story
+P | It's a pretty spring day. The squid kids are in school. | drive:1h57Dcw-8MbY2s6p83ohM_kZ0bGsGZ-MG#37.5,29.9,11.9,20.0
+P | A skunk jumps into the sea. Splash! He wants to catch the squids! | drive:1h57Dcw-8MbY2s6p83ohM_kZ0bGsGZ-MG#49.9,29.9,11.8,20.0
+P | The kids swim under their desks. They spray black ink. The skunk can't see! | drive:1h57Dcw-8MbY2s6p83ohM_kZ0bGsGZ-MG#37.5,55.6,11.9,20.0
+P | The squid teacher is strong. He picks up the skunk and puts him on the grass. The skunk is sorry! | drive:1h57Dcw-8MbY2s6p83ohM_kZ0bGsGZ-MG#49.9,55.6,11.8,20.0
+RC | What jumps into the sea? | a skunk | a squid | a teacher
+RC | What do the kids spray? | black ink | blue water | green grass
+RC | Who picks up the skunk? | the squid teacher | the squid kids | the skunk
+# sort
+skunk | sk
+desk | sk
+scale | sc
+school | sc
+spray | spr
+spring | spr
+string | str
+strong | str
+splash | spl
+splint | spl
+squid | squ
+square | squ
+# pairs
+spring | string
+scale | sale
+skunk | sunk
+splash | slash
+square | scare
+strong | song
+# build
+G | It's a pretty spring day.
+G | The squid kids are in school.
+G | A skunk jumps into the sea.
+G | The kids swim under their desks.
+G | They spray black ink.
+G | The squid teacher is strong.
+G | The skunk is sorry!
+G | The squid has a string.
+## U8 | soft c, soft g, voiced s: city, cage |
+# sound
+c | soft c | city
+g | soft g | giraffe
+s | voiced s | rose
+# words
+rice | r/i/c/e | drive:1lw5hBJ9KNZ1yeBJi0Ts2C7GyHlJQejbo#38.2,52.9,10.2,12.2
+city | c/i/t/y | drive:1lw5hBJ9KNZ1yeBJi0Ts2C7GyHlJQejbo#50.9,50.5,12.5,15.0
+giraffe | g/i/r/a/ffe | drive:1O3Ha4DH-cjSYx6XP26si-wk9QCd0uIMo#37.6,52.4,7.6,18.4
+orange | o/r/a/n/g/e | drive:1O3Ha4DH-cjSYx6XP26si-wk9QCd0uIMo#50.3,53.0,7.1,11.7
+giant | g/i/a/n/t | drive:1O3Ha4DH-cjSYx6XP26si-wk9QCd0uIMo#42.1,65.1,9.4,17.2
+cage | c/a/g/e | drive:1O3Ha4DH-cjSYx6XP26si-wk9QCd0uIMo#56.0,69.6,5.1,13.0
+rose | r/o/s/e | drive:13p91JnQajTugPR6Fe4op1S0s8srw0kmB#38.9,52.6,11.1,10.9
+jeans | j/ea/n/s | drive:13p91JnQajTugPR6Fe4op1S0s8srw0kmB#51.7,52.3,10.2,13.4
+cheese | ch/ee/s/e | drive:13p91JnQajTugPR6Fe4op1S0s8srw0kmB#38.8,70.3,9.9,10.8
+legs | l/e/g/s | drive:13p91JnQajTugPR6Fe4op1S0s8srw0kmB#53.9,70.4,7.3,10.7
+# story
+P | Jim Giant lives in a city. He has a big cell phone and huge blue jeans. | drive:1mWR-yTjprVJMxmIErKTgPbqN6TS3bosz#37.5,29.5,11.9,21.2
+P | His lunch is huge, too! Jim eats ten plates of rice, nine oranges, a pot of cheese, and one small ice cream cone. | drive:1mWR-yTjprVJMxmIErKTgPbqN6TS3bosz#49.9,29.5,11.8,18.4
+P | He has a pet giraffe named Spot. Spot has a long nose and very long legs. He likes to eat roses. | drive:1mWR-yTjprVJMxmIErKTgPbqN6TS3bosz#37.5,56.2,13.3,19.7
+P | No, Spot! Don't eat that rose! | drive:1mWR-yTjprVJMxmIErKTgPbqN6TS3bosz#51.3,56.2,11.1,25.9
+RC | Where does Jim Giant live? | in a city | in a cage | in a school
+RC | What is Jim's pet? | a giraffe | a giant | a rose
+RC | What does Spot like to eat? | roses | rice | cheese
+# sort
+rice | c
+city | c
+cage | c
+giraffe | g
+orange | g
+giant | g
+rose | s
+jeans | s
+cheese | s
+legs | s
+# pairs
+rice | rise
+city | kitty
+giant | gift
+cage | cake
+legs | lets
+# build
+G | Jim Giant lives in a city.
+G | His lunch is huge, too!
+G | He has a pet giraffe named Spot.
+G | He likes to eat roses.
+G | No, Spot! Don't eat that rose!
+G | Spot has very long legs.
+G | Jim eats ten plates of rice.
+G | Jim has huge blue jeans.
