@@ -1,0 +1,424 @@
+=== OPW3 ===
+// Oxford Phonics World 3 - Learning Time activities. One unit per sound group. Sections: # sound, # words, # story, # sort, # pairs, # build.
+// Story pictures live in the teacher's Google Drive folder OPW-images (shared with the link); drive:ID#x,y,w,h = a crop box (percent) inside the page photo.
+## U1 | Long a: a_e (ame ake ate ave) |
+# sound
+ame | long a (a_e) | game
+ake | long a (a_e) | cake
+ate | long a (a_e) | gate
+ave | long a (a_e) | wave
+# words
+tape | t/ape | drive:16peTLeOFnaKe2VkNpGliQf4BPhzPwZ02#36.8,54.8,10.5,13.6
+cape | c/ape | drive:16peTLeOFnaKe2VkNpGliQf4BPhzPwZ02#51.8,53.9,6.6,15.1
+cane | c/ane | drive:16peTLeOFnaKe2VkNpGliQf4BPhzPwZ02#36.6,73.0,12.0,12.6
+mane | m/ane | drive:16peTLeOFnaKe2VkNpGliQf4BPhzPwZ02#51.3,72.0,10.6,14.3
+game | g/ame | drive:15Q_2MCSRO0uBogmZ3jh0KXbEszoOvG_Y#36.8,71.6,6.0,12.6
+cake | c/ake | drive:15Q_2MCSRO0uBogmZ3jh0KXbEszoOvG_Y#43.0,71.9,6.6,11.9
+name | n/ame | drive:15Q_2MCSRO0uBogmZ3jh0KXbEszoOvG_Y#50.5,71.2,6.7,13.8
+lake | l/ake | drive:15Q_2MCSRO0uBogmZ3jh0KXbEszoOvG_Y#58.2,71.4,6.1,13.6
+gate | g/ate | drive:1xkE8cuXnPUu6-8o2IBRisjsGPMOiTYU6#36.7,72.9,5.5,11.3
+wave | w/ave | drive:1xkE8cuXnPUu6-8o2IBRisjsGPMOiTYU6#43.3,71.6,6.6,13.4
+skate | s/k/ate | drive:1xkE8cuXnPUu6-8o2IBRisjsGPMOiTYU6#50.0,71.9,6.7,12.8
+cave | c/ave | drive:1xkE8cuXnPUu6-8o2IBRisjsGPMOiTYU6#57.6,71.4,6.2,13.6
+# story
+P | My cane is new. My skates are old. | drive:1NO3QuCBLPVatwX08uLJwnD_akV974qHE#37.8,36.2,13.3,20.9
+P | Look. My name is on the gate. | drive:1NO3QuCBLPVatwX08uLJwnD_akV974qHE#51.4,36.2,11.2,20.9
+P | Your name is on the cave, too. | drive:1NO3QuCBLPVatwX08uLJwnD_akV974qHE#37.8,59.6,8.7,23.7
+P | And your name is on the cake! New skates! | drive:1NO3QuCBLPVatwX08uLJwnD_akV974qHE#46.7,59.4,15.9,24.2
+RC | What is old? | Kate's skates | Dad's cane | the cake
+RC | Where is Kate's name first? | on the gate | on the cave | on the cake
+RC | What does Kate get at the end? | new skates | a new cane | a big lake
+# sort
+game | ame
+name | ame
+cake | ake
+lake | ake
+gate | ate
+skate | ate
+wave | ave
+cave | ave
+# pairs
+tap | tape
+cap | cape
+can | cane
+man | mane
+gate | gave
+cake | cave
+# build
+G | My cane is new.
+G | My skates are old.
+G | My name is on the gate.
+G | Your name is on the cave, too.
+G | And your name is on the cake!
+G | Kate and her dad skate on a lake.
+G | Look at the old gate.
+## U2 | Long i: i_e (ime ike ive ine) |
+# sound
+ime | long i (i_e) | lime
+ike | long i (i_e) | bike
+ive | long i (i_e) | five
+ine | long i (i_e) | nine
+# words
+kite | k/ite | drive:1xxGCvNDWmXZwh1p4VSa1Q8IlbSkJtrf2#38.5,55.7,8.6,13.1
+pine | p/ine | drive:1xxGCvNDWmXZwh1p4VSa1Q8IlbSkJtrf2#53.0,53.7,5.4,14.8
+ripe | r/ipe | drive:1xxGCvNDWmXZwh1p4VSa1Q8IlbSkJtrf2#37.0,73.0,9.3,12.3
+fine | f/ine | drive:1xxGCvNDWmXZwh1p4VSa1Q8IlbSkJtrf2#50.8,72.6,9.3,12.9
+lime | l/ime | drive:1XFD626oK4nnlBYby8F4n3EqB9Tkn4_mZ#36.0,73.1,6.1,10.7
+bike | b/ike | drive:1XFD626oK4nnlBYby8F4n3EqB9Tkn4_mZ#42.8,73.8,7.1,8.4
+time | t/ime | drive:1XFD626oK4nnlBYby8F4n3EqB9Tkn4_mZ#51.0,74.1,6.0,7.8
+hike | h/ike | drive:1XFD626oK4nnlBYby8F4n3EqB9Tkn4_mZ#58.0,70.7,6.0,13.9
+five | f/ive | drive:17iIzvw4vsTWoywozDiGQbh3NR2iRGKhs#36.7,71.9,5.2,12.6
+nine | n/ine | drive:17iIzvw4vsTWoywozDiGQbh3NR2iRGKhs#43.4,71.5,4.5,12.6
+dive | d/ive | drive:17iIzvw4vsTWoywozDiGQbh3NR2iRGKhs#49.3,71.5,6.2,13.5
+line | l/ine | drive:17iIzvw4vsTWoywozDiGQbh3NR2iRGKhs#56.9,68.7,5.7,16.4
+# story
+P | My name is Mike. I ride my bike at nine o'clock. | drive:1CwX5zGxtlbvgJKPoSxWOQ74cch4qEkiV#37.7,33.2,12.5,24.5
+P | I hike up to the pines at ten o'clock. | drive:1CwX5zGxtlbvgJKPoSxWOQ74cch4qEkiV#50.7,33.2,11.5,29.5
+P | I dive in the lake and swim in waves at five o'clock. | drive:1CwX5zGxtlbvgJKPoSxWOQ74cch4qEkiV#37.7,58.2,12.3,23.7
+P | It is time to wake up, Mike! | drive:1CwX5zGxtlbvgJKPoSxWOQ74cch4qEkiV#49.5,63.7,12.7,20.2
+RC | What does Mike ride at nine o'clock? | his bike | a kite | a lime
+RC | Where does Mike hike? | to the pines | to the lake | to the cave
+RC | When does Mike dive in the lake? | five o'clock | nine o'clock | ten o'clock
+# sort
+lime | ime
+time | ime
+bike | ike
+hike | ike
+five | ive
+dive | ive
+pine | ine
+fine | ine
+nine | ine
+line | ine
+# pairs
+kit | kite
+pin | pine
+fin | fine
+rip | ripe
+lime | line
+five | fine
+# build
+G | My name is Mike.
+G | I ride my bike at nine o'clock.
+G | I hike up to the pines.
+G | I dive in the lake at five o'clock.
+G | It is time to wake up, Mike!
+G | I fly my kite at five o'clock.
+G | The lime is ripe.
+## U3 | Long o / long u: o_e u_e |
+# sound
+ome | long o (o_e) | home
+one | long o (o_e) | bone
+ope | long o (o_e) | rope
+ube | long u (u_e) | cube
+ute | long u (u_e) | cute
+ule | long u (u_e) | mule
+# words
+home | h/ome | drive:1M21TTr97KlNXA4NszNqmf5vLe_irhmGn#37.0,55.0,12.3,13.8
+bone | b/one | drive:1M21TTr97KlNXA4NszNqmf5vLe_irhmGn#50.9,56.6,12.0,10.1
+cone | c/one | drive:1M21TTr97KlNXA4NszNqmf5vLe_irhmGn#37.6,73.5,10.0,12.5
+rope | r/ope | drive:1M21TTr97KlNXA4NszNqmf5vLe_irhmGn#51.5,74.1,12.6,10.6
+cube | c/ube | drive:118ntx7Jt8fC097-BmtHSI_mkoI2sGjxe#38.9,56.2,7.1,12.3
+mute | m/ute | drive:118ntx7Jt8fC097-BmtHSI_mkoI2sGjxe#51.6,56.8,8.5,9.4
+cute | c/ute | drive:118ntx7Jt8fC097-BmtHSI_mkoI2sGjxe#38.0,72.5,8.4,13.3
+mule | m/ule | drive:118ntx7Jt8fC097-BmtHSI_mkoI2sGjxe#52.1,70.6,8.8,15.2
+tube | t/ube | drive:1oCtu7-dsiNggZ2nZLj2hqjvrX7shJKnM#37.2,56.4,11.6,12.2
+tune | t/une | drive:1oCtu7-dsiNggZ2nZLj2hqjvrX7shJKnM#37.2,72.5,12.6,12.9
+rule | r/ule | drive:1oCtu7-dsiNggZ2nZLj2hqjvrX7shJKnM#52.4,73.3,10.1,12.6
+# story
+P | It's June. Luke and his cute mule walk on the sand. | drive:1TyvYrIs6o-3xq7hUwN77ocR16cuBXDHl#37.5,32.1,11.9,17.2
+P | Luke sees a bone in the sand. It is a big bone. He has a mule and a rope. | drive:1TyvYrIs6o-3xq7hUwN77ocR16cuBXDHl#50.3,32.1,11.4,17.2
+P | Luke and his mule pull the bone with the rope. | drive:1TyvYrIs6o-3xq7hUwN77ocR16cuBXDHl#37.5,56.5,11.4,21.3
+P | Luke is at home. He puts the big bone on the cube. Luke and his mule are happy. | drive:1TyvYrIs6o-3xq7hUwN77ocR16cuBXDHl#49.9,57.3,11.6,17.6
+RC | Who walks on the sand with Luke? | his mule | his dog | his cat
+RC | What does Luke see in the sand? | a big bone | a big cube | a big rope
+RC | Where does Luke put the bone? | on the cube | on the sand | on the mule
+# sort
+home | o_e
+bone | o_e
+cone | o_e
+rope | o_e
+cube | u_e
+mute | u_e
+cute | u_e
+mule | u_e
+tube | u_e
+tune | u_e
+rule | u_e
+# pairs
+hop | hope
+cub | cube
+cut | cute
+tub | tube
+bone | cone
+mule | rule
+# build
+G | Luke sees a bone in the sand.
+G | It is a big bone.
+G | He has a mule and a rope.
+G | Luke is at home.
+G | Luke and his mule are happy.
+G | The cute mule is at home.
+G | He puts the bone on the cube.
+## U4 | Long a: ai ay |
+# sound
+ai | long a | rain
+ay | long a | day
+# words
+rain | r/ai/n | drive:10fzkaIIUllx4t56WYepTJTJ_405EXwhy#37.2,53.4,11.9,13.8
+nail | n/ai/l | drive:10fzkaIIUllx4t56WYepTJTJ_405EXwhy#52.0,53.9,8.9,11.1
+tail | t/ai/l | drive:10fzkaIIUllx4t56WYepTJTJ_405EXwhy#36.9,70.3,10.6,12.6
+wait | w/ai/t | drive:10fzkaIIUllx4t56WYepTJTJ_405EXwhy#50.3,69.2,11.9,13.4
+bay | b/ay | drive:1mcQiCmaCkV793INFk0fBAUBkFIEKFpob#36.9,53.8,12.6,12.9
+day | d/ay | drive:1mcQiCmaCkV793INFk0fBAUBkFIEKFpob#51.1,53.1,11.0,12.7
+say | s/ay | drive:1mcQiCmaCkV793INFk0fBAUBkFIEKFpob#36.9,70.8,11.2,13.2
+pay | p/ay | drive:1mcQiCmaCkV793INFk0fBAUBkFIEKFpob#51.5,70.4,9.8,13.8
+sail | s/ai/l | ⛵
+mail | m/ai/l | ✉️
+hay | h/ay | 🌾
+# story
+P | Hello! My name is Ray. I like to sail. I sail on the bay. | drive:1S2TB9byNbqAV9pWaGivJDzqqE2NiNbLY#37.5,30.3,25.1,34.6
+P | I like to sail on the bay on a hot day. I sail on the bay on a hot day in May. | drive:1S2TB9byNbqAV9pWaGivJDzqqE2NiNbLY#37.5,30.3,25.1,53.8
+P | I don't like to sail on the bay in the rain. Do you want to sail with me? | drive:1S2TB9byNbqAV9pWaGivJDzqqE2NiNbLY#37.5,62.7,25.1,21.4
+RC | What is the boy's name? | Ray | May | Jay
+RC | Where does Ray sail? | on the bay | in the sand | on a train
+RC | When does Ray like to sail? | on a hot day | in the rain | at night
+# sort
+rain | ai
+bay | ay
+nail | ai
+day | ay
+tail | ai
+say | ay
+wait | ai
+pay | ay
+sail | ai
+hay | ay
+mail | ai
+# pairs
+rain | ran
+pain | pan
+main | man
+tail | tell
+wait | wet
+# build
+G | My name is Ray.
+G | I like to sail.
+G | I sail on the bay.
+G | Do you want to sail with me?
+G | I sail on a hot day.
+G | I do not like the rain.
+## U5 | Long e: ee ea y ey |
+# sound
+ee | long e | bee
+ea | long e | leaf
+y | long e | candy
+ey | long e | key
+# words
+bee | b/ee | drive:1MtMdMSVIWvYU4Qnr55tU0_Y3zX08mhvi#37.9,54.3,10.3,12.2
+feet | f/ee/t | drive:1MtMdMSVIWvYU4Qnr55tU0_Y3zX08mhvi#51.5,54.3,10.9,11.9
+seed | s/ee/d | drive:1MtMdMSVIWvYU4Qnr55tU0_Y3zX08mhvi#39.6,74.2,5.6,6.9
+jeep | j/ee/p | drive:1MtMdMSVIWvYU4Qnr55tU0_Y3zX08mhvi#51.5,70.3,10.8,13.7
+leaf | l/ea/f | drive:1M4PpNZ7KaORaDzEoGHUvfWBx9deoLdJv#39.2,54.1,7.2,11.6
+eat | ea/t | drive:1M4PpNZ7KaORaDzEoGHUvfWBx9deoLdJv#50.7,52.9,10.7,13.3
+sea | s/ea | drive:1M4PpNZ7KaORaDzEoGHUvfWBx9deoLdJv#37.1,70.8,11.7,12.6
+meat | m/ea/t | drive:1M4PpNZ7KaORaDzEoGHUvfWBx9deoLdJv#49.8,71.6,11.0,10.9
+candy | c/a/nd/y | drive:1NhsRHckwqxvzfJHZS_NIQF0i6H6FaIzs#36.6,70.1,5.2,12.6
+key | k/ey | drive:1NhsRHckwqxvzfJHZS_NIQF0i6H6FaIzs#44.0,70.1,3.2,12.6
+happy | h/a/pp/y | drive:1NhsRHckwqxvzfJHZS_NIQF0i6H6FaIzs#49.0,68.9,6.8,13.6
+money | m/o/n/ey | drive:1NhsRHckwqxvzfJHZS_NIQF0i6H6FaIzs#56.2,72.4,7.7,8.4
+# story
+P | Two bees play in the sea. I like this leaf! I like this wave! | drive:1eG-qx8GrGgKVXBZAmWJc42rDR-6ggWAU#37.4,34.6,11.2,20.0
+P | I see a key. I see money. | drive:1eG-qx8GrGgKVXBZAmWJc42rDR-6ggWAU#48.9,32.0,13.3,22.6
+P | I see candy. I see... | drive:1eG-qx8GrGgKVXBZAmWJc42rDR-6ggWAU#37.4,56.4,9.8,25.7
+P | ...feet! | drive:1eG-qx8GrGgKVXBZAmWJc42rDR-6ggWAU#47.6,56.4,14.6,25.7
+RC | Where do the two bees play? | in the sea | in a jeep | in a tree
+RC | What does the bee see first? | a key | candy | feet
+RC | What do the bees see at the end? | feet | a leaf | money
+# sort
+bee | ee
+feet | ee
+seed | ee
+jeep | ee
+leaf | ea
+eat | ea
+sea | ea
+meat | ea
+candy | y
+happy | y
+key | ey
+money | ey
+# pairs
+bee | sea
+feet | meat
+seed | leaf
+candy | key
+happy | money
+# build
+G | Two bees play in the sea.
+G | I like this leaf!
+G | I like this wave!
+G | I see a key.
+G | I see money.
+G | I see candy.
+G | I see feet!
+G | I like this candy.
+## U6 | Long i: igh ie y |
+# sound
+igh | long i | light
+ie | long i | pie
+y | long i | spy
+# words
+light | l/igh/t | drive:1LaGNfYAsqIeo0NCD3Y7nUXj2bJ6KNkdC#36.7,55.2,11.4,10.6
+night | n/igh/t | drive:1LaGNfYAsqIeo0NCD3Y7nUXj2bJ6KNkdC#51.2,53.8,11.7,12.7
+high | h/igh | drive:1LaGNfYAsqIeo0NCD3Y7nUXj2bJ6KNkdC#37.1,71.3,11.8,12.0
+right | r/igh/t | drive:1LaGNfYAsqIeo0NCD3Y7nUXj2bJ6KNkdC#54.2,71.5,7.1,12.4
+pie | p/ie | drive:1eheW9UI_aSRoz6KvjA1FNKaqn50qtF4i#38.8,54.1,9.0,11.9
+tie | t/ie | drive:1eheW9UI_aSRoz6KvjA1FNKaqn50qtF4i#50.2,54.4,9.9,11.9
+lie | l/ie | drive:1eheW9UI_aSRoz6KvjA1FNKaqn50qtF4i#37.1,71.3,11.8,12.2
+die | d/ie | drive:1eheW9UI_aSRoz6KvjA1FNKaqn50qtF4i#52.1,71.3,6.7,11.6
+spy | s/p/y | drive:1SLZjNyBgikAtMwKKtn3Th5UF4wOswr7x#36.7,55.4,6.0,20.1
+sky | s/k/y | drive:1SLZjNyBgikAtMwKKtn3Th5UF4wOswr7x#47.2,54.1,11.8,12.4
+cry | c/r/y | drive:1SLZjNyBgikAtMwKKtn3Th5UF4wOswr7x#44.6,71.3,7.7,12.6
+my | m/y | drive:1SLZjNyBgikAtMwKKtn3Th5UF4wOswr7x#54.1,70.7,8.3,12.8
+# story
+P | Let's bake a pie for our cute cub. Where is the cub? | drive:1Ua_-8qE2m35h7FnY9kpToHlWiOgJ1z1Q#37.4,30.7,11.0,19.4
+P | Look at the sky. It's night. Is he fine? Don't cry. I have my light. Let's find him. | drive:1Ua_-8qE2m35h7FnY9kpToHlWiOgJ1z1Q#48.9,30.7,13.3,22.8
+P | I am fine. He is high in the pine! | drive:1Ua_-8qE2m35h7FnY9kpToHlWiOgJ1z1Q#37.4,50.7,11.0,32.0
+P | We like pie! | drive:1Ua_-8qE2m35h7FnY9kpToHlWiOgJ1z1Q#48.9,54.2,13.3,28.6
+RC | What do the bears bake? | a pie | a cake | a cub
+RC | What does the bear have to find the cub? | a light | a tie | a kite
+RC | Where is the cub? | in the pine | in the sky | in the house
+# sort
+light | igh
+night | igh
+high | igh
+right | igh
+pie | ie
+tie | ie
+lie | ie
+die | ie
+spy | y
+sky | y
+cry | y
+my | y
+# pairs
+high | sky
+pie | my
+light | lie
+tie | sky
+cry | die
+night | right
+# build
+G | Let's bake a pie for our cute cub.
+G | Where is the cub?
+G | Look at the sky.
+G | I have my light.
+G | Let's find him.
+G | He is high in the pine!
+G | We like pie!
+G | I see the light at night.
+## U7 | Long o: oa ow (boat, bow) |
+# sound
+oa | long o | boat
+ow | long o | bow
+# words
+boat | b/oa/t | drive:1J0a89r40Cxj5pA3Osh9Txk-NnZ0Oqyel#37.1,54.2,11.8,12.7
+coat | c/oa/t | drive:1J0a89r40Cxj5pA3Osh9Txk-NnZ0Oqyel#52.5,54.1,7.0,13.0
+soap | s/oa/p | drive:1J0a89r40Cxj5pA3Osh9Txk-NnZ0Oqyel#36.8,72.1,10.6,11.8
+road | r/oa/d | drive:1J0a89r40Cxj5pA3Osh9Txk-NnZ0Oqyel#49.6,71.5,11.8,12.8
+bow | b/ow | drive:1KMdhXnGsnP2lK6Faz4LYNMZr8SMSL_9m#37.1,54.5,8.9,12.3
+row | r/ow | drive:1KMdhXnGsnP2lK6Faz4LYNMZr8SMSL_9m#49.5,53.8,11.7,13.1
+yellow | y/e/ll/ow | drive:1KMdhXnGsnP2lK6Faz4LYNMZr8SMSL_9m#36.9,71.0,9.3,11.6
+pillow | p/i/ll/ow | drive:1KMdhXnGsnP2lK6Faz4LYNMZr8SMSL_9m#51.0,71.2,9.6,11.5
+goat | g/oa/t | drive:1wzkkaxtD5vZCdFqYJpZSStt5dDJcA9ZQ#44.3,33.4,8.3,11.8
+toad | t/oa/d | drive:1wzkkaxtD5vZCdFqYJpZSStt5dDJcA9ZQ#55.0,33.5,7.2,10.3
+elbow | e/l/b/ow | drive:1wzkkaxtD5vZCdFqYJpZSStt5dDJcA9ZQ#44.8,48.5,8.3,10.4
+window | w/i/nd/ow | drive:1wzkkaxtD5vZCdFqYJpZSStt5dDJcA9ZQ#54.6,49.1,8.3,10.3
+# story
+P | Ben is in the tub at home. | drive:12kSshlk7ROh-AHzCeQl0Pa0BRo96aUnY#37.6,32.3,9.8,18.3
+P | He has a goat and a toad in the tub. | drive:12kSshlk7ROh-AHzCeQl0Pa0BRo96aUnY#48.1,32.3,13.6,18.2
+P | Ben, the goat, and the toad are in the soap. Ben thinks the tub is a boat. | drive:12kSshlk7ROh-AHzCeQl0Pa0BRo96aUnY#37.4,54.6,9.6,21.0
+P | He rows in the soap. Mom is glad she has her yellow coat! | drive:12kSshlk7ROh-AHzCeQl0Pa0BRo96aUnY#47.7,54.6,14.0,21.6
+RC | Where is Ben? | in the tub | on the road | at the zoo
+RC | What does Ben think the tub is? | a boat | a road | a window
+RC | What color is Mom's coat? | yellow | blue | pink
+# sort
+boat | oa
+coat | oa
+soap | oa
+road | oa
+bow | ow
+row | ow
+yellow | ow
+pillow | ow
+goat | oa
+toad | oa
+elbow | ow
+window | ow
+# pairs
+boat | bow
+coat | goat
+road | toad
+row | road
+pillow | yellow
+# build
+G | Ben is in the tub at home.
+G | He has a goat and a toad in the tub.
+G | Ben thinks the tub is a boat.
+G | He rows in the soap.
+G | Mom is glad she has her yellow coat!
+G | The goat is in the boat.
+G | The toad is on the road.
+## U8 | Long u: ue ui ew oo (blue, moon) |
+# sound
+ue | long u | blue
+ui | long u | fruit
+ew | long u | new
+oo | long u | moon
+# words
+blue | b/l/ue | drive:1G63tgtuNeLvNkOENmIMX0Vkpir5oQMfw#36.7,53.6,11.8,12.2
+glue | g/l/ue | drive:1G63tgtuNeLvNkOENmIMX0Vkpir5oQMfw#52.5,52.5,5.2,12.7
+clue | c/l/ue | drive:1G63tgtuNeLvNkOENmIMX0Vkpir5oQMfw#36.8,70.4,11.6,11.1
+fruit | f/r/ui/t | drive:1p9W3M-1D3PqEw3fvAcCmsXjKblQWUPKy#36.8,70.2,6.5,11.9
+suit | s/ui/t | drive:1p9W3M-1D3PqEw3fvAcCmsXjKblQWUPKy#44.0,69.2,5.6,13.2
+new | n/ew | drive:1p9W3M-1D3PqEw3fvAcCmsXjKblQWUPKy#51.0,69.4,5.6,13.5
+dew | d/ew | drive:1p9W3M-1D3PqEw3fvAcCmsXjKblQWUPKy#58.3,69.2,5.7,13.4
+moon | m/oo/n | drive:1-1KsWrjL1gSE7kycJxgnW85qUoJ2iQks#37.2,53.2,10.9,13.7
+zoo | z/oo | drive:1-1KsWrjL1gSE7kycJxgnW85qUoJ2iQks#51.0,52.9,12.3,14.0
+food | f/oo/d | drive:1-1KsWrjL1gSE7kycJxgnW85qUoJ2iQks#36.9,71.3,11.8,11.3
+boot | b/oo/t | drive:1-1KsWrjL1gSE7kycJxgnW85qUoJ2iQks#53.9,70.2,6.6,12.2
+# story
+P | It is Tuesday. I am at the zoo. I am looking for clues. | drive:1qhP-2gYCSBBkElWeKaVPtlY_UZmaQiFB#37.7,31.1,10.5,20.6
+P | I see a boy in blue boots. He has fruit. Oh no! The fruit is gone. | drive:1qhP-2gYCSBBkElWeKaVPtlY_UZmaQiFB#48.8,31.2,12.9,20.6
+P | I see a woman in a new suit. She has fruit, too. Oh no! The fruit is gone. | drive:1qhP-2gYCSBBkElWeKaVPtlY_UZmaQiFB#37.6,57.2,15.2,20.5
+P | I see an elephant with lots of food! | drive:1qhP-2gYCSBBkElWeKaVPtlY_UZmaQiFB#53.3,57.3,8.3,20.3
+RC | Where is the girl? | at the zoo | at home | in the tub
+RC | What does the boy have on? | blue boots | a new suit | a yellow coat
+RC | Who has lots of food? | an elephant | a boy | a woman
+# sort
+blue | ue
+glue | ue
+clue | ue
+fruit | ui
+suit | ui
+new | ew
+dew | ew
+moon | oo
+zoo | oo
+food | oo
+boot | oo
+# pairs
+blue | glue
+clue | blue
+new | dew
+suit | fruit
+boot | boat
+# build
+G | I am at the zoo.
+G | I am looking for clues.
+G | I see a boy in blue boots.
+G | The fruit is gone.
+G | I see a woman in a new suit.
+G | I see an elephant with lots of food!
+G | I see the moon at the zoo.
