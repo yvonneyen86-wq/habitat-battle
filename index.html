@@ -589,6 +589,9 @@ body.lite .amb-canvas{display:none}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 
 /* ---- Learning Time activities ---- */
+.turn{margin:6px 12px 0;background:#fff3bf;border:2px solid #f59f00;color:#7a4b00;border-radius:12px;padding:5px 10px;font-weight:800;text-align:center;font-size:1.02rem;box-shadow:0 2px 0 rgba(0,0,0,.08)}.turn i{font-style:normal;color:#c2410c}.turn.pop{animation:turnpop .5s ease-out}@keyframes turnpop{0%{transform:scale(.92)}60%{transform:scale(1.04)}100%{transform:scale(1)}}
+.name-in.pair{margin-top:8px;font-size:.95em;border-style:dashed}
+.overlay .pairs{display:flex;flex-wrap:wrap;gap:1cqmin;justify-content:center;margin-top:1.2cqmin}.overlay .pairs span{background:#fff;border-left:1cqmin solid var(--tc);border-radius:1cqmin;padding:.6cqmin 1.4cqmin;font-size:2.6cqmin}
 .wp{font-style:normal;font-family:var(--emoji);display:inline-block;vertical-align:middle}.wp.img{display:inline-block;vertical-align:middle;line-height:0}.wp.img .crop{aspect-ratio:auto!important;border-radius:10px;background:#fff}.wp.img>img{object-fit:contain;border-radius:10px;background:#fff}
 .wp.sm{font-size:1.4rem}.wp.img.sm .crop,.wp.img.sm>img{width:36px;height:36px}
 .wp.mid{font-size:3.6rem}.wp.img.mid .crop,.wp.img.mid>img{width:150px;height:110px}
@@ -1131,6 +1134,9 @@ function broadcast(){const s=pub();for(const[conn,info]of H.conns){if(conn.open)
 function sendTo(pid,m){for(const[conn,info]of H.conns)if(info.pid===pid&&conn.open)try{conn.send(m);}catch(e){}}
 const sendErr=(pid,msg)=>sendTo(pid,{t:'toast',msg});
 
+function pairFlip(p){if(p&&p.pair)p.turn=1-(p.turn||0);}
+function pairTally(p){if(p&&p.pair){p.pairOk=p.pairOk||[0,0];p.pairOk[p.turn||0]=(p.pairOk[p.turn||0]||0)+1;}}
+function pairWho(p){return p&&p.pair?p.pair[p.turn||0]:'';}
 function newPlayer(name,char,team,manual){const pid='p'+(S.nextId++);S.players[pid]={pid,name,char,team,coins:0,lv:1,hp:HPMAX[1],armor:0,inv:{atk:0,def:0,heal:0},items:0,powers:0,dash:false,warp:false,down:false,pts:0,streak:0,online:true,manual:!!manual};return pid;}
 
 /* ----- gather rewards & shop ----- */
@@ -1169,6 +1175,7 @@ async function nextRound(custom){
   H.busy=true;
   if(b.round>0)Object.values(S.players).forEach(p=>{p.streak=b.ok[p.pid]?(p.streak||0)+1:0;});
   q.ci=crIndex(q.src);b.round++;b.qid++;b.q=q;crStart();Object.assign(b,{ok:{},subs:{},acts:{},choice:{},buzz:[],tries:{},def:null,vote:null,spells:{}});b.step='question';H.showModel=false;
+    if(b.round>1)Object.values(S.players).forEach(p=>pairFlip(p));
   const revived=Object.values(S.players).filter(p=>p.down);
   revived.forEach(p=>{p.down=false;p.hp=Math.ceil(maxHp(p)/2);p.armor=0;});
   let drop=null;
@@ -1186,7 +1193,7 @@ function markCorrect(pid,tier=1,auto=false){
   if(tier){const prev=b.ok[pid]||0;b.ok[pid]=tier;
     if(b.subs[pid]){b.subs[pid].ok=tier;if(!prev&&b.q&&TYPED.has(b.q.type)){b.approved.push({pid,text:b.subs[pid].text,round:b.round});if(b.approved.length>40)b.approved.shift();}}
     if(prev!==tier){beep(tier===3?990:820);floatText(pid,tier===3?'🌟 AMAZING!':tier===2?'⭐ GREAT!':'✓',tier===3?'#e8590c':tier===2?'#f08c00':'#2f9e44');burst(pid,tier===3?['🌟','✨','⚡']:tier===2?['⭐','⚡']:['⚡'],tier===3?18:tier===2?10:5,{speed:18});
-      if(!prev)log(`${p.name} ${tier===3?'gave an AMAZING answer! 🌟':tier===2?'gave a great answer! ⭐':'can take an action! ⚡'}`);if(ui3d())H.hb3d.correct(pid,tier);sendTo(pid,{t:'fx',k:'cheer',tier});}
+      if(!prev){log(`${p.name} ${tier===3?'gave an AMAZING answer! 🌟':tier===2?'gave a great answer! ⭐':'can take an action! ⚡'}`);pairTally(p);}if(ui3d())H.hb3d.correct(pid,tier);sendTo(pid,{t:'fx',k:'cheer',tier});}
   }else{delete b.ok[pid];delete b.acts[pid];if(b.subs[pid])b.subs[pid].ok=false;}
   changed();
 }
@@ -1347,7 +1354,8 @@ function endBattle(){
   if(!S.battle)return;
   const ts=teamStats(S).sort((a,b)=>b.pts-a.pts||b.pct-a.pct);
   const mvp=Object.values(S.players).sort((a,b)=>b.pts-a.pts)[0];
-  S.results={teams:ts.map(t=>({name:t.name,color:t.color,pts:t.pts,pct:Math.round(t.pct*100)})),mvp:mvp?{name:mvp.name,e:charById(mvp.char).e,pts:mvp.pts,team:teamName(mvp.team)}:null};
+  S.results={teams:ts.map(t=>({name:t.name,color:t.color,pts:t.pts,pct:Math.round(t.pct*100)})),mvp:mvp?{name:mvp.name,e:charById(mvp.char).e,pts:mvp.pts,team:teamName(mvp.team)}:null,
+      pairs:Object.values(S.players).filter(p=>p.pair).map(p=>({e:charById(p.char).e,a:p.pair[0],b:p.pair[1],ok:p.pairOk||[0,0],color:teamColor(p.team)}))};
   S.phase='end';S.battle.step='done';log(`🏁 Battle over! ${ts[0]?.name||''} wins!`);changed();
   fanfare();banner(`${ts[0]?.name||'Game'} WINS!`,'🏆 Great battle, everyone!',ts[0]?.color);
   setTimeout(()=>{confetti({x:FX.w*.3,y:FX.h*.7},PARTY,70,{speed:60});confetti({x:FX.w*.7,y:FX.h*.7},PARTY,70,{speed:60});},400);
@@ -1371,11 +1379,13 @@ function onStudent(conn,m){
   if(m.t==='hello'){info.cid=String(m.cid||'').slice(0,40);const pid=S.cidMap[info.cid];info.pid=pid&&S.players[pid]?pid:null;if(info.pid)S.players[info.pid].online=true;conn.send({t:'state',s:pub(),me:info.pid,my:myView(info.pid)});render();return;}
   if(!info.cid)return;
   if(m.t==='join'){
-    const name=String(m.name||'').replace(/\s+/g,' ').trim().slice(0,14),team=+m.team;
-    if(!name||!CHARS.some(c=>c.id===m.char)||!(team>=0&&team<S.teamCount))return conn.send({t:'toast',msg:'Please type your name, pick a team and a character.'});
+    const name0=String(m.name||'').replace(/\s+/g,' ').trim().slice(0,14),partner=String(m.pair||'').replace(/\s+/g,' ').trim().slice(0,14),team=+m.team;
+    if(!name0||!CHARS.some(c=>c.id===m.char)||!(team>=0&&team<S.teamCount))return conn.send({t:'toast',msg:'Please type your name, pick a team and a character.'});
+      const pair=partner&&partner.toLowerCase()!==name0.toLowerCase()?[name0,partner]:null,name=pair?`${name0} & ${partner}`:name0;
     let pid=S.cidMap[info.cid];
-    if(!pid||!S.players[pid]){pid=newPlayer(name,m.char,team);S.cidMap[info.cid]=pid;log(`${name} joined ${teamName(team)}! ${charById(m.char).e}`);chime();setTimeout(()=>{popHab(pid);burst(pid,['✨','🎉'],12,{ring:true,g:0,speed:16,drag:.95});},120);}
+    if(!pid||!S.players[pid]){pid=newPlayer(name,m.char,team);S.cidMap[info.cid]=pid;log(`${name} joined ${teamName(team)}! ${charById(m.char).e}${pair?' 👥':''}`);chime();setTimeout(()=>{popHab(pid);burst(pid,['✨','🎉'],12,{ring:true,g:0,speed:16,drag:.95});},120);}
     else Object.assign(S.players[pid],{name,char:m.char,team,online:true});
+      Object.assign(S.players[pid],{pair,turn:pair?(S.players[pid].turn||0):0,pairOk:pair?(S.players[pid].pairOk||[0,0]):null});
     S.players[pid].av=cleanAv(m.av,name);
     info.pid=pid;changed();return;
   }
@@ -1534,7 +1544,7 @@ function renderStage(){
 function renderOverlay(){
   const o=$('#ovl');
   if(S.phase==='end'&&S.results){const r=S.results,m=['🥇','🥈','🥉','🏅'];
-    o.innerHTML=`<div class="kind">Battle Results</div><div class="podium">${r.teams.map((t,i)=>`<div class="pr${i===0?' first':''}" style="--tc:${t.color}"><span class="m">${m[i]||''}</span><span>${esc(t.name)}</span><small style="color:var(--muted)">❤️ ${t.pct}% left</small><b>🏆 ${t.pts}</b></div>`).join('')}</div>${r.mvp&&r.mvp.pts>0?`<div class="mvp">⭐ MVP: ${r.mvp.e} <b>${esc(r.mvp.name)}</b> (${esc(r.mvp.team)}) · 🏆 ${r.mvp.pts}</div>`:''}<div class="acts"><button class="btn primary" data-act="ovl-hide">Show the battlefield</button></div>`;
+    o.innerHTML=`<div class="kind">Battle Results</div><div class="podium">${r.teams.map((t,i)=>`<div class="pr${i===0?' first':''}" style="--tc:${t.color}"><span class="m">${m[i]||''}</span><span>${esc(t.name)}</span><small style="color:var(--muted)">❤️ ${t.pct}% left</small><b>🏆 ${t.pts}</b></div>`).join('')}</div>${r.mvp&&r.mvp.pts>0?`<div class="mvp">⭐ MVP: ${r.mvp.e} <b>${esc(r.mvp.name)}</b> (${esc(r.mvp.team)}) · 🏆 ${r.mvp.pts}</div>`:''}${r.pairs&&r.pairs.length?`<div class="pairs">${r.pairs.map(x=>`<span style="--tc:${x.color}">${x.e} <b>${esc(x.a)}</b> ${x.ok[0]||0} ✓ · <b>${esc(x.b)}</b> ${x.ok[1]||0} ✓</span>`).join('')}</div>`:''}<div class="acts"><button class="btn primary" data-act="ovl-hide">Show the battlefield</button></div>`;
     o.hidden=!!H.hideResults;return;}
   if(S.phase==='battle'&&S.battle&&S.battle.vote){const v=S.battle.vote,c=voteCounts(),tot=Math.max(1,c.reduce((a,x)=>a+x,0)),n=Object.keys(v.votes).length;
     o.innerHTML=`<div class="kind">🗳️ Vote for the best sentence</div><div class="vote-items">${v.items.map((it,i)=>{const pp=P(it.pid);return `<div class="vi${v.revealed&&v.winner===i?' win':''}">${v.revealed?`<i class="fill" style="width:${Math.round(c[i]/tot*100)}%"></i>`:''}<span class="L">${'ABCD'[i]}</span><span class="tx">${esc(it.text)}${v.revealed&&v.winner===i&&pp?`<small> — ${charById(pp.char).e} ${esc(pp.name)}</small>`:''}</span>${v.revealed?`<b class="cnt">${c[i]}</b>`:''}</div>`;}).join('')}</div><div class="hint">🗳️ ${n} vote${n===1?'':'s'} so far · Students vote on their tablets</div><div class="acts">${v.revealed?'':'<button class="btn primary" data-act="vote-reveal">🏅 Show results</button>'}<button class="btn" data-act="vote-close">Close</button></div>`;o.hidden=false;return;}
@@ -1583,7 +1593,7 @@ function renderConsole(){
     const btns=ph==='battle'?`${ui3d()?`<button class="btn mic" data-act="spot" data-pid="${p.pid}" title="Spotlight on the 3D stage">🎤</button>`:''}${[1,2,3].map(t=>`<button class="btn tier t${t}${isOk===t?' on':''}" data-act="tier" data-t="${t}" data-pid="${p.pid}" ${live?'':'disabled'} title="${['','Good','Great: ×2','Amazing: ×2 + through walls'][t]}">${['','✓','⭐','🌟'][t]}</button>`).join('')}${isOk?`<button class="btn" data-act="no" data-pid="${p.pid}" title="Undo">↺</button>`:''}${canBlk?`<button class="btn blk${b.def.blocks[p.pid]?' on':''}" data-act="block" data-pid="${p.pid}">🛡️ Block</button>`:''}<button class="btn star" data-act="great" data-pid="${p.pid}" title="+1 🪙 and a class item">🎁</button>`
       :`${ui3d()?`<button class="btn mic" data-act="spot" data-pid="${p.pid}" title="Spotlight on the 3D stage">🎤</button>`:''}<button class="btn coin" data-act="coin" data-pid="${p.pid}">✓ +${CORRECT_COINS} 🪙</button><button class="btn star" data-act="great" data-pid="${p.pid}">⭐ Great job</button><button class="btn" data-act="coin-minus" data-pid="${p.pid}">−🪙</button>`;
     return `<div class="prow${p.online?'':' off'}" id="row-${p.pid}" style="--tc:${teamColor(p.team)}"><span class="av">${avImg(p.av,p.name,44)}<i>${ch.e}</i></span>
-    <div class="nm"><span>${esc(p.name)}</span><small>${h[1]} ${esc(h[0])}${p.pre?' · ⏳ waiting for tablet':p.online?'':' · offline'}</small>${stt}</div>
+    <div class="nm"><span>${esc(p.name)}</span><small>${h[1]} ${esc(h[0])}${p.pair?` · 🎤 ${esc(pairWho(p))}`:''}${p.pre?' · ⏳ waiting for tablet':p.online?'':' · offline'}</small>${stt}</div>
     <div class="stats"><span>🪙 <b>${p.coins}</b></span><span>${p.down?'💤':'❤️'} <b>${p.down?0:p.hp}/${maxHp(p)}</b></span>${p.armor?`<span>🛡️ <b>${p.armor}</b></span>`:''}<span>${c.atk[1]}${p.inv.atk} ${ico(c.def[1])}${p.inv.def} ${c.heal[1]}${p.inv.heal}</span><span>${items}</span>${flags?`<b>${flags}</b>`:''}</div>
     <div class="acts">${btns}<button class="btn x" data-act="remove" data-pid="${p.pid}">${H.confirm==='rm-'+p.pid?'Remove?':'✕'}</button></div></div>`;}).join('')
     :`<div class="empty">No players yet. Students scan the QR code, type their name, pick a team and a character.<br><br>Code: <b>${esc(S.code)}</b></div>`;
@@ -1748,9 +1758,10 @@ function ltStop(){if(!S.lt)return;S.lt=null;H.ltHideText=false;changed();}
 function ltNext(){const u=ltUnit();if(!S.lt||S.lt.cat!=='reading'||!u||!u.reading)return;if(S.lt.i<u.reading.qs.length-1){S.lt.i++;beep(500,.1);}else{toast('That was the last question.');}changed();}
 function ltPrev(){const u=ltUnit();if(!S.lt||S.lt.cat!=='reading')return;const lo=u&&u.phon&&u.reading?-(u.reading.panels.length||1):-1;if(S.lt.i>lo)S.lt.i--;changed();}
 function ltProg(pid){const l=S.lt;if(!l.prog[pid])l.prog[pid]={done:{},ok:0,tries:{}};return l.prog[pid];}
-function ltCoin(pid,n,why){const p=P(pid);if(!p||n<=0)return;p.coins+=n;if(p.crId)crEvent('points',{student:p.crId,delta:n,reason:why||'learning time'});floatText(pid,`+${n} 🪙`);burst(pid,['🪙'],Math.min(6,n*2),{speed:18});flashRow(pid);}
+function ltCoin(pid,n,why){const p=P(pid);if(!p||n<=0)return;p.coins+=n;pairTally(p);if(p.crId)crEvent('points',{student:p.crId,delta:n,reason:why||'learning time'});floatText(pid,`+${n} 🪙`);burst(pid,['🪙'],Math.min(6,n*2),{speed:18});flashRow(pid);}
 /* a tablet reports progress on the current activity */
-function ltMsg(pid,m){const l=S.lt,u=ltUnit(),p=P(pid);if(!l||!u||!p||!m)return;const k=String(m.k||'');
+function ltMsg(pid,m){ltMsg0(pid,m);const p=P(pid),k=String(m&&m.k||'');if(p&&p.pair&&['word','gram','sort','build','choice','type','write'].includes(k)){pairFlip(p);changed();}}
+  function ltMsg0(pid,m){const l=S.lt,u=ltUnit(),p=P(pid);if(!l||!u||!p||!m)return;const k=String(m.k||'');
   if(k==='word'&&l.cat==='words'){const i=+m.i;const w=u.words[i];if(!w)return;const pr=ltProg(pid);if(pr.done[i])return;pr.tries[i]=(pr.tries[i]||0)+1;if(m.ok){pr.done[i]=1;pr.ok++;ltCoin(pid,1,'word');if(pr.ok===u.words.length)log(`${p.name} finished all ${u.words.length} words! 🔤`);}changed();return;}
   if(k==='gram'&&l.cat==='grammar'){const i=+m.i;if(!u.grammar[i])return;const pr=ltProg(pid);if(pr.done[i])return;pr.tries[i]=(pr.tries[i]||0)+1;if(m.ok){pr.done[i]=pr.tries[i]===1?2:1;pr.ok++;ltCoin(pid,pr.tries[i]===1?2:1,'grammar');if(pr.ok===u.grammar.length)log(`${p.name} built all ${u.grammar.length} sentences! 🧩`);}changed();return;}
   if(k==='sort'&&l.cat==='grammar'&&u.sort){const i=+m.i;if(!u.sort.items[i])return;const pr=ltProg(pid);if(pr.done[i])return;pr.tries[i]=(pr.tries[i]||0)+1;if(m.ok){pr.done[i]=1;pr.ok++;ltCoin(pid,1,'sound sort');if(pr.ok===u.sort.items.length)log(`${p.name} sorted all ${u.sort.items.length} words! 🧩`);}changed();return;}
@@ -1990,7 +2001,7 @@ function sJoin(app,s){if(ST.mini)ST.mini.stop();
     <div class="steps" id="j-steps"></div>
     <div class="card jstep" id="j-card"></div>
     <div class="jnav" id="j-nav"></div></div></div>`;
-    if(!app._jb){app._jb=true;app.addEventListener('click',sJoinClick);app.addEventListener('input',e=>{if(e.target.id==='j-name'){ST.name=e.target.value;ST.claim=null;jNav();}});}}
+    if(!app._jb){app._jb=true;app.addEventListener('click',sJoinClick);app.addEventListener('input',e=>{if(e.target.id==='j-name'){ST.name=e.target.value;ST.claim=null;jNav();}if(e.target.id==='j-pair'){ST.pair=e.target.value;}});}}
   $('#j-scene').textContent=`${SCENES[s.scene].icon} ${SCENES[s.scene].name}`;
   jRender(s);
 }
@@ -2001,7 +2012,7 @@ function jRender(s){const st=ST.jstep;
   const card=$('#j-card');const h=`<h2><span class="big">${JSTEPS[st][0]}</span> ${JSTEPS[st][1]}</h2>`;
   const pre=Object.values(s.players).filter(p=>p.pre);
   if(st===0)card.innerHTML=h+(pre.length&&!ST.typing?`<p class="hint">👆 Tap your name</p><div class="namegrid">${pre.map(p=>`<button data-claim="${p.pid}" class="${ST.claim===p.pid?'sel':''}" style="--tc:${s.teams[p.team]?.color||'#888'}"><span class="e">${charById(p.char).e}</span>${esc(p.name)}</button>`).join('')}</div><button class="btn" data-typing="1">✏️ My name is not here</button>`
-    :`<input class="name-in" id="j-name" maxlength="14" autocomplete="off" placeholder="Type your English name" value="${esc(ST.name)}">${pre.length?'<button class="btn" data-typing="0">👆 Tap my name instead</button>':''}`);
+    :`<input class="name-in" id="j-name" maxlength="14" autocomplete="off" placeholder="Type your English name" value="${esc(ST.name)}"><input class="name-in pair" id="j-pair" maxlength="14" autocomplete="off" placeholder="👥 Partner's name (if 2 students share this tablet)" value="${esc(ST.pair||'')}">${pre.length?'<button class="btn" data-typing="0">👆 Tap my name instead</button>':''}`);
   else if(st===1)card.innerHTML=h+`<div class="team-pick big" id="j-teams">${s.teams.map((t,i)=>`<button data-team="${i}" class="${ST.team===i?'sel':''}" style="--tc:${t.color}"><span class="flag"></span>${esc(t.name)}</button>`).join('')}</div>`;
   else if(st===2)card.innerHTML=h+`<p class="hint">Tap one. Each group has its own home and gear.</p>`+Object.entries(CLASSES).map(([k,c])=>`<div class="class-block"><div class="cl"><b>${c.icon} ${esc(c.label)}</b><span>${c.hab.map(h=>h[1]).join(' → ')} · ${c.atk[1]} ${ico(c.def[1])} ${c.heal[1]}</span></div><div class="char-pick">${CHARS.filter(x=>x.c===k).map(x=>`<button data-char="${x.id}" class="${ST.char===x.id?'sel':''}"><span class="e">${x.e}</span><small>${esc(x.n)}</small></button>`).join('')}</div></div>`).join('');
   else card.innerHTML=h+`<div class="look"><canvas id="j-look" width="248" height="248"></canvas><div class="look-opts" id="j-look-opts"></div></div><button class="btn" id="j-shuffle">🎲 Surprise me</button>`;
@@ -2013,11 +2024,11 @@ function sJoinClick(e){if(ST.view!=='join')return;const t=e.target.closest('[dat
   const go=i=>{ST.jstep=Math.max(0,Math.min(3,i));jRender(ST.s);};const cl=e.target.closest('[data-claim]'),ty=e.target.closest('[data-typing]');
   if(cl){const p=ST.s.players[cl.dataset.claim];if(p){ST.claim=p.pid;ST.name=p.name;ST.team=p.team;ST.char=p.char;setTimeout(()=>go(3),250);jRender(ST.s);}return;}
   if(ty){ST.typing=ty.dataset.typing==='1';if(ST.typing){ST.claim=null;}jRender(ST.s);return;}
-  if(e.target.id==='j-name')return;
+  if(e.target.id==='j-name'||e.target.id==='j-pair')return;
   if(t){ST.team=+t.dataset.team;ST.claim=null;setTimeout(()=>go(2),250);jRender(ST.s);}if(c){ST.char=c.dataset.char;setTimeout(()=>go(3),250);jRender(ST.s);}
   if(nv)go(ST.jstep+(+nv.dataset.jnav));if(sp&&!sp.disabled)go(+sp.dataset.jstep);
   if(a){avClick(a);jLookOpts();}if(e.target.closest('#j-shuffle')){ST.av=randomAv();store(avKey(),ST.av);jLookOpts();}
-  if(e.target.closest('#j-go')){if(sSend(ST.claim?{t:'claim',pid:ST.claim,av:ST.av}:{t:'join',name:ST.name,team:ST.team,char:ST.char,av:ST.av}))toast('Joining…');}}
+  if(e.target.closest('#j-go')){if(sSend(ST.claim?{t:'claim',pid:ST.claim,av:ST.av}:{t:'join',name:ST.name,pair:ST.claim?'':(ST.pair||''),team:ST.team,char:ST.char,av:ST.av}))toast('Joining…');}}
 function lookOptsHTML(a,x=''){const sw=(k,arr)=>arr.map((c,i)=>`<button class="sw${a[k]===i?' sel':''}" ${x} data-av="${k}" data-v="${i}" style="--c:${c}" aria-label="${k} ${i+1}"></button>`).join('');const tx=(k,arr)=>arr.map((t,i)=>`<button class="${a[k]===i?'sel':''}" ${x} data-av="${k}" data-v="${i}">${k==='pt'&&i===4?'#'+a.n:t}</button>`).join('');
   return `<div class="row"><b>Skin</b>${sw('sk',AV.SKIN)}</div><div class="row"><b>Hair</b>${tx('hs',AV.HS)}</div><div class="row"><b>Hair color</b>${sw('hc',AV.HAIR)}</div><div class="row"><b>Shirt</b>${sw('sh',AV.SHIRT)}</div><div class="row"><b>Pattern</b>${tx('pt',AV.PAT)}${a.pt===4?`<button ${x} data-av="n">Next number ▸</button>`:''}</div>`;}
 function avClick(el){const k=el.dataset.av;if(k==='n')ST.av.n=ST.av.n%9+1;else ST.av[k]=+el.dataset.v;store(avKey(),ST.av);}
@@ -2055,6 +2066,8 @@ function sPlay(s,me){sMini(s,me);
   const ch=charById(me.char),c=CLASSES[ch.c],team=s.teams[me.team]||{name:'Team',color:'#888'},h=c.hab[me.lv-1],mx=HPMAX[me.lv];
   $('#s-root').style.setProperty('--tc',team.color);
   {const el=$('#t-av'),k=JSON.stringify(me.av||0)+me.name;if(el.dataset.k!==k){el.dataset.k=k;el.innerHTML=avImg(me.av,me.name,44);}}$('#t-name').textContent=me.name;$('#t-team').textContent=team.name;$('#t-coin-n').textContent=me.coins;
+    {let tt=$('#t-turn');if(!tt){tt=document.createElement('div');tt.id='t-turn';tt.className='turn';tt.hidden=true;const top=$('.s-top');if(top)top.insertAdjacentElement('afterend',tt);}
+     if(tt){tt.hidden=!me.pair;if(me.pair){const q=s.phase==='battle'&&s.battle&&s.battle.q,both=q&&['S','P'].includes(q.type)||(s.phase==='gather'&&s.lt&&s.lt.cat==='sw');const who=me.pair[me.turn||0];const k=who+'|'+(both?1:0);if(tt.dataset.k!==k){tt.dataset.k=k;tt.innerHTML=`🎤 <b>${esc(who)}</b>'s turn${both?' · <i>Both say it!</i>':''}`;tt.classList.remove('pop');void tt.offsetWidth;tt.classList.add('pop');}}}}
   const afford=(me.lv<3&&me.coins>=UPGRADE_COST[me.lv]?1:0)+['atk','def','heal'].filter(k=>me.coins>=GEAR_COST&&me.inv[k]<INV_CAP).length;
   const bd=$('#t-badge');bd.hidden=!afford;bd.textContent=afford;$('#t-supply').classList.toggle('has',afford>0);
   const ts=teamStats(s);$('#t-teams').innerHTML=ts.map(t=>`<span style="--tc:${t.color}">${esc(t.name)} <b>${s.phase==='gather'?'🪙 '+t.coins:'🏆 '+t.pts}</b></span>`).join('');
