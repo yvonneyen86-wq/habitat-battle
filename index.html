@@ -1685,7 +1685,7 @@ function crHostSetup(){const init=CR.init;const sess=init.session||{};
   crLoadUnit(init);crMode();
   CR.on('cr:end',crFinish);}
 /* runner: the unit the runner sent (## Un … with # words/# reading/# grammar/# speak-write) becomes the Learning Time unit */
-function crLoadUnit(init){try{const lines=S.crLines||[];if(!lines.some(l=>/^##\s/.test(l)))return;const us=parseBankText(lines.join('\n'));if(!us.length)return;const lv=init.questions&&init.questions.level?'OD'+init.questions.level:(S.bankSel&&S.bankSel.level)||'OD';S.ltUnits=us.map(u=>ltFromUnit(u,lv));S.ltU=0;}catch(e){}}
+function crLoadUnit(init){try{const lines=S.crLines||[];if(!lines.some(l=>/^##\s/.test(l)))return;const us=parseBankText(lines.join('\n'));if(!us.length)return;const lv=init.questions&&init.questions.level?(init.questions.series||'OD')+init.questions.level:(S.bankSel&&S.bankSel.level)||'OD';S.ltUnits=us.map(u=>ltFromUnit(u,lv));S.ltU=0;}catch(e){}}
 /* runner: index.html?mode=words|reading|grammar|speak opens that Learning Time activity right away (battle / none = normal console) */
 function crMode(){const m=(new URLSearchParams(location.search).get('mode')||'').toLowerCase();const cat={words:'words',reading:'reading',grammar:'grammar',speak:'sw',sw:'sw','speak-write':'sw'}[m];if(!cat||S.lt)return;const u=ltUnit();if(!u||!ltHas(u,cat))return;try{ltStart(cat);}catch(e){}}
 function crFinish(){if(!CR.inRunner||H.crFinished)return;H.crFinished=true;try{if(S.phase==='battle'&&S.battle){H.hideResults=false;endBattle();}}catch(e){}
