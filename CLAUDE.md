@@ -28,7 +28,7 @@ Live site: https://yvonneyen86-wq.github.io/habitat-battle/ (GitHub Pages, branc
 ## U3 | Unit title | Big Question?
 # learn
 C | question | model sentence   (❓ Question Card, 12 per unit: 4 C + 4 G + 4 V. C = textbook content Q&A, full-sentence answer;
-G | question | model sentence   G = a question that makes the student USE the unit's grammar point in the answer (Q&A, not "transform this");
+G | question | model | cue · cue   G = a question that makes the student USE the unit's grammar point (Q&A, not "transform this"); 4th field = 2–4 cue words shown as "Use:" chips, all present in the model. C/G questions must name their subject (no bare he/she/it/they);
 V | Fish have ___ to breathe. | gills   V = fill in the blank with a unit word (___ = blank; the board shows a box, the answer is the word).
                               Inference / critical-thinking questions belong to the classroom runner, not here.)
 question | answer            (old untagged form still works; answer optional)

@@ -1,14 +1,14 @@
 === OD4 ===
 ## U1 | The Universe: Bella's Home | Where are we in the universe?
 # learn
-C | Where did Charles Kunayak live with his family? | He lived in a quiet neighborhood in Nome, Alaska.
-C | What did Charles write to help Bella understand the universe? | He wrote a poem called "Bella's Home" for his daughter.
+C | Where did Charles Kunayak live with his family? | Charles lived in a quiet neighborhood in Nome, Alaska.
+C | What did Charles write to help Bella understand the universe? | Charles wrote a poem called "Bella's Home" for his daughter.
 C | What did Alaska look like from the sky? | Alaska looked like a bear from the sky.
-C | What did Bella see at the end of her journey? | She saw billions of galaxies filled with billions of stars.
-G | What will Bella do when she grows up? | I think she will become an astronaut when she grows up.
-G | Will scientists send a person to Mars someday? | Yes, I think scientists will send a person to Mars someday.
-G | Where will people travel one day? | People will travel through the universe one day.
-G | Will Bella visit those places again? | Yes, she will visit those places again in her mind.
+C | What did Bella see at the end of her journey? | Bella saw billions of galaxies filled with billions of stars.
+G | What will Bella become one day? | I think Bella will become an astronaut one day. | will · become · astronaut
+G | Will scientists send a person to Mars someday? | Yes, I think scientists will send a person to Mars someday. | will · send · Mars
+G | Where will people travel one day? | People will travel through the universe one day. | will travel · universe
+G | Will Bella visit those places again? | Yes, Bella will visit those places again in her mind. | will visit · again · in her mind
 V | Charles had a powerful ___ to study the stars. | telescope
 V | In her mind, Bella climbed inside a ___ and flew. | spacecraft
 V | A shining ___ circled the Earth with the sun's light on its face. | moon
@@ -76,14 +76,14 @@ SP | A: Look at the two pictures. What do you see? | B: In the first picture, I 
 SW | The universe is {a beautiful place}. It has {more stars than we can count}. Look in the sky and you will see {the Milky Way}. | Write three complete sentences about the universe.
 ## U2 | Traveling Together Around the Sun | Where are we in the universe?
 # learn
-C | Why do all the bodies move around the sun? | They move around the sun because its gravity is very strong.
+C | Why do all the bodies move around the sun? | All the bodies move around the sun because the sun's gravity is very strong.
 C | How long does Earth take to complete one orbit? | Earth completes one orbit in 365 days, or one year.
 C | What makes up most of the four inner planets? | Iron and rock make up most of the four inner planets.
 C | What landed on Mars on August 6, 2012? | A space probe called Curiosity landed on Mars that day.
-G | What will happen if technology continues to grow? | If technology continues to grow, we will travel to these places ourselves.
-G | What will you see if you look through a telescope? | If I look through a telescope, I will see the moon's craters.
-G | What will Wendy do if she gets a telescope? | Wendy will search the sky if she gets a telescope.
-G | Where will you go if you become an astronaut? | If I become an astronaut, I will go to Mars.
+G | What will happen if technology continues to grow? | If technology continues to grow, we will travel to these places ourselves. | If · will travel · ourselves
+G | What will scientists learn if Curiosity keeps exploring Mars? | If Curiosity keeps exploring Mars, scientists will learn more about the planet. | If · will learn · Mars
+G | What will happen if an astronaut tries to stand on Saturn? | If an astronaut tries to stand on Saturn, the astronaut will sink to the core. | If · will sink · core
+G | Which planet will the astronauts visit first if the rocket is ready? | If the rocket is ready, the astronauts will visit Mars first. | If · will visit · Mars
 V | Each planet's path around the sun is called an ___. | orbit
 V | Mercury has lots of ___, just like our moon. | craters
 V | Jupiter's ___ is eleven times bigger than Earth's. | diameter
@@ -148,16 +148,16 @@ SP | A: How many {planets} are in our solar system? | B: I'm not sure, but I thi
 SW | Is {Mars} a moon or a planet? It's {a planet}. Is {Jupiter} bigger or smaller than Earth? It's {bigger}. | Write two choice questions about the solar system and answer them.
 ## U3 | Hidden Army: Clay Soldiers of Ancient China | How do we know what happened long ago?
 # learn
-C | What are the clay soldiers made of? | They are made of terracotta, a strong kind of clay.
+C | What are the clay soldiers made of? | The clay soldiers are made of terracotta, a strong kind of clay.
 C | How are the soldiers' faces different? | Some faces are old and some faces are young.
 C | Who wore the most elegant uniforms? | The generals wore the most elegant uniforms.
 C | Why does nobody know what is inside the tomb? | Nobody knows because the tomb has never been opened.
-G | What does the Chinese government plan to do with the tomb? | The government plans to keep the tomb closed for now.
-G | What did the emperor decide to build? | The emperor decided to build a huge clay army.
-G | What did the archaeologists try to find? | They tried to find more terracotta soldiers in the pits.
-G | What did the students promise to do? | They promised to study hard for the history test.
+G | What does the Chinese government plan to do with the tomb? | The government plans to keep the tomb closed for now. | plans to keep · closed
+G | What did the emperor decide to build? | The emperor decided to build a huge clay army. | decided to build · clay army
+G | What are scientists trying to create? | Scientists are trying to create a special varnish to hold the paint in place. | trying to create · varnish · paint
+G | What do the craftsmen try to make near the pits? | The craftsmen try to make copies of the soldiers. | try to make · copies
 V | The ___ were exact copies of what real soldiers wore. | uniforms
-V | Their ___ had small iron rings that look like fish scales. | armor
+V | The generals' ___ had small iron rings that look like fish scales. | armor
 V | At that time, ___ was more precious than gold. | jade
 V | The emperor's body rests in a heavy, bronze ___. | coffin
 # battle
@@ -224,18 +224,18 @@ SP | A: If you had a time machine, where would you go? | B: I'd like to go back 
 SW | Last year, {a farmer} found {an old coin} in {his garden}. It was over {600} years old. He took it to a museum. | Write three sentences in the past tense about someone who found something old.
 ## U4 | Stumbling upon the Past | How do we know what happened long ago?
 # learn
-C | Where did Javier live? | He lived in the hillside town of Ademuz, in Spain.
-C | What was Javier's favorite pastime? | His favorite pastime was to explore the hills and fields.
-C | What did Javier trip on in the ravine? | He tripped on a rough, gray object in the ground.
-C | What did the paleontologists find next to the bone? | They found more bones, as well as a skull.
-G | What did Javier enjoy doing with his friends? | Javier enjoyed playing with his two friends.
-G | Does the paleontologist like working in the rain? | No, he doesn't like working in the rain.
-G | What did the museum staff finish doing? | The museum staff finished cleaning the dinosaur bones.
-G | Do you enjoy exploring the hills? | Yes, I enjoy exploring the hills around my town.
+C | Where did Javier live? | Javier lived in the hillside town of Ademuz, in Spain.
+C | What was Javier's favorite pastime? | Javier's favorite pastime was to explore the hills and fields.
+C | What did Javier trip on in the ravine? | Javier tripped on a rough, gray object in the ground.
+C | What did the paleontologists find next to the bone? | The paleontologists found more bones, as well as a skull.
+G | What did Javier enjoy doing with his friends? | Javier enjoyed playing with his two friends. | enjoyed playing · friends
+G | What did Javier like doing around his town? | Javier liked exploring the hills and open fields. | liked exploring · hills · fields
+G | What did the paleontologists begin doing around the bone? | The paleontologists began excavating the area around the bone. | began excavating · area
+G | What did Fernando and Pepe practice doing in the field? | Fernando and Pepe practiced flying a colorful kite in the field. | practiced flying · kite
 V | The bone was buried in rock, which lies in ___ under the ground. | layers
-V | They look for volcanic ___ below and above the rock layer. | ash
+V | The paleontologists look for volcanic ___ below and above the rock layer. | ash
 V | A ___ from the foundation came to examine the discovery. | paleontologist
-V | Javier's foot caught on something and he ___ in the ravine. | tripped
+V | Javier ___ on a rough, gray object in the ravine. | tripped
 # battle
 T | What do you enjoy doing on a summer morning? | I enjoy exploring the hills near my town.
 S | Tell the story of how Javier found the dinosaur bone.
@@ -305,14 +305,14 @@ SP | A: What did {dinosaurs} sound like? | B: They probably sounded very loud. |
 SW | {The skull} is very old. {Many bones} are buried under the ground. {A little water} is in the ravine. | Write three sentences about a discovery, using count and noncount nouns with the correct verb.
 ## U5 | The Breakfast Quest | Where does our food come from?
 # learn
-C | What is the boy making for breakfast today? | He is making Granny's Famous Cinnamon Buns today.
+C | What is the boy making for breakfast today? | The boy is making Granny's Famous Cinnamon Buns today.
 C | Where does the best butter come from? | The best butter comes from a farm in Denmark.
 C | Where does the finest vanilla come from? | The finest vanilla in the world comes from Madagascar.
-C | Why can't Patrick give the boy any cinnamon? | He is all out because they harvested it yesterday.
-G | What are you making for breakfast today? | I'm making a special breakfast with cinnamon buns today.
-G | What are you doing after school today? | We're playing soccer with our friends after school today.
-G | Where are your parents having dinner tomorrow? | My parents are having dinner at a French restaurant tomorrow.
-G | Are you visiting your grandmother this weekend? | Yes, I'm visiting my grandmother this weekend.
+C | Why can't Patrick give the boy any cinnamon? | Patrick is all out because the farmers harvested the cinnamon yesterday.
+G | What are the boy and Sam making today? | The boy and Sam are making cinnamon buns today. | are making · today
+G | Where are Farmer Ray and the children going next? | Farmer Ray and the children are going to Denmark next. | are going · Denmark · next
+G | What is Farmer Sabine showing the visitors this afternoon? | Farmer Sabine is showing the visitors her vanilla vines this afternoon. | is showing · vines · this afternoon
+G | Is Farmer Lena coming to Patrick's plantation tomorrow? | Yes, Farmer Lena is coming to Patrick's plantation tomorrow. | Yes · is coming · tomorrow
 V | The heartiest ___ in the world comes from France. | wheat
 V | To make the best buns, you need the best ___. | ingredients
 V | I climb the tree and ___ some bark off. | peel
@@ -386,14 +386,14 @@ SW | My chickens lay {wonderful} eggs. The pumpkins in my garden are {enormous}.
 ## U6 | From the World to Your Table | Where does our food come from?
 # learn
 C | Where does most of our food probably come from? | Most of our food probably comes from far away.
-C | What do companies do to food before it gets to the supermarket? | Companies process and package most of the food first.
+C | What do companies do to food before the food gets to the supermarket? | Companies process and package most of the food first.
 C | What are "food miles"? | Food miles is the distance that food travels to get to us.
-C | Why do companies put chemicals on food? | They put chemicals on food to help it last longer.
-G | Would you like to try my cheesecake? | Yes, I would like to try your cheesecake, please.
-G | What would you like to know about your food? | I would like to know where my food comes from.
-G | Would you like a delicious apple from South Africa? | Yes, I would like a delicious apple, thank you.
-G | What would you like to eat for lunch today? | I would like a piece of apple pie for lunch.
-V | Buy ___ food, which doesn't have chemicals on it. | organic
+C | Why do companies put chemicals on food? | Companies put chemicals on food to help the food last longer.
+G | Would you like to try an apple from South Africa? | Yes, I would like to try an apple from South Africa, please. | would like to · apple
+G | What would you like to know about your food? | I would like to know where my food comes from. | would like to know · food
+G | Would you like some kimchi from Korea? | Yes, I would like some kimchi from Korea, thank you. | Yes · would like · kimchi
+G | What would you like for lunch, pasta or pizza? | I would like pasta from Italy for lunch, please. | would like · pasta · please
+V | Buy ___ food, which has no chemicals on the outside. | organic
 V | Many countries ___ food to places around the world. | export
 V | Buy food that ___ farmers grow in your area. | local
 V | It's ___ to buy food from all around the world. | convenient
@@ -452,18 +452,18 @@ SP | A: People often grow {tomatoes} where I live. | B: What do people make with
 SW | The {garden} is {behind the house}. The {asparagus} is {near the carrots}. | Write two sentences that tell where food or plants are, using prepositional phrases of location.
 ## U7 | Art Through New Eyes | Why do we make art?
 # learn
-C | What did Kieron draw on his trip to Cornwall? | He drew sketches of the boats he saw there.
-C | Where can you find Edgar Mueller's paintings? | You can find them at festivals and on public walkways.
-C | What are Patrick Dougherty's sculptures made of? | His sculptures are made of young trees, or saplings.
-C | What does Sung Hee Cho glue onto the canvas? | She glues thousands of small pieces of paper onto the canvas.
-G | Can anyone make art from anything? | Yes, anyone can make art from almost anything.
-G | Who worked on the stick sculpture? | Everyone in the community worked on the sculpture.
-G | What do you want to paint in this room? | I want to paint something colorful in this room.
-G | Did you meet anyone at the art gallery? | No, I didn't meet anyone at the art gallery.
+C | What did Kieron draw on his trip to Cornwall? | Kieron drew sketches of the boats he saw there.
+C | Where can you find Edgar Mueller's paintings? | Edgar Mueller's paintings are at festivals and on public walkways.
+C | What are Patrick Dougherty's sculptures made of? | Dougherty's sculptures are made of young trees, or saplings.
+C | What does Sung Hee Cho glue onto the canvas? | Sung Hee Cho glues thousands of small pieces of paper onto the canvas.
+G | Can anyone make art from anything? | Yes, anyone can make art from almost anything. | anyone · anything · art
+G | Who helps Dougherty build the stick sculptures? | Everyone in the community helps Dougherty build the sculptures. | Everyone · community · helps
+G | What does Edgar Mueller always wish to create? | Edgar Mueller always wishes to create something new. | something · new
+G | What does Dougherty say about sticks? | Dougherty says sticks are something we all have in common. | something · in common
 V | By the age of nine, Kieron was considered a child ___. | prodigy
 V | Mueller uses ___ paint or chalk, paintbrushes, and string. | washable
 V | Patrick Dougherty is a unique ___ who works with sticks. | sculptor
-V | She glues the paper onto a large ___ in layers. | canvas
+V | Cho glues the paper onto a large ___ in layers. | canvas
 # battle
 T | What is something you want to paint or draw? | I want to paint something beautiful in my bedroom.
 S | Describe an artist from the reading and the art they make.
@@ -527,14 +527,14 @@ SW | We make art because {it's fun}. Yesterday I {drew a picture of my cat} and 
 # learn
 C | Where does Theo go each day after school? | Theo goes to the art museum each day after school.
 C | What does each new painting in the exhibition show? | Each painting in the exhibition features a different mountain.
-C | Why doesn't Theo show his artwork to anyone? | He worries that his artwork isn't any good.
-C | What does Zayan Khan tell Theo at the end? | He tells Theo that he is already an artist.
-G | Can you help me with this heavy bag? | Sure, I'll carry that heavy bag for you.
-G | What will you do if I am thirsty? | I'll bring you a cold drink right away.
-G | Theo's kite is stuck in a tree. What will you do? | I'll get your kite down from the tree, Theo.
-G | Shall I sign you up for the school play? | No, thanks, I'll go to the art museum instead.
+C | Why doesn't Theo show his artwork to anyone? | Theo worries that his artwork isn't any good.
+C | What does Zayan Khan tell Theo at the end? | Zayan Khan tells Theo that Theo is already an artist.
+G | You are Theo's mother. What will you offer Theo? | I will sign you up for something, Theo. | I will · sign you up
+G | What does Theo say to the man when the man likes his sketch? | Theo asks, "Shall I show you some more sketches?" and smiles. | Shall I · show · sketches
+G | Zayan Khan is thirsty. What will you offer? | I will bring you a cold drink, Mr. Khan. | I will · bring · drink
+G | You are Zayan Khan. The gallery is closing. What will you offer Theo? | I will walk you home, Theo. | I will · walk · home
 V | An ___ is opening: The Mountain Landscapes of Zayan Khan. | exhibition
-V | He likes the contrast of the black lines and the ___ blue sky. | pale
+V | Theo likes the contrast of the black lines and the ___ blue sky. | pale
 V | I like the way you create texture with ___. | shading
 V | The man's hands and fingers are ___ with paint. | stained
 # battle
@@ -601,11 +601,11 @@ SW | Yesterday I went to {an art gallery}. I saw {a painting of a mountain}. The
 C | How many people live in Jakarta? | Jakarta is filled with more than 10 million people.
 C | What gives Jakarta a futuristic feel? | Countless skyscrapers give the city a futuristic feel.
 C | What does the old city of Kota have? | Kota has old canals and classical architecture.
-C | Why were rickshaws banned in Jakarta? | They were too slow and held up traffic.
-G | Who could see everything in Jakarta in one day? | No one could see everything in one day.
-G | Who can enter the city zoo after five? | Nobody can enter the city zoo after five.
-G | What is in your pocket? | There is nothing in my pocket right now.
-G | Who sat next to you on the bus? | Nobody sat next to me on the bus today.
+C | Why were rickshaws banned in Jakarta? | Rickshaws were too slow and held up traffic.
+G | Who could see everything in Jakarta in one day? | No one could see everything in Jakarta in one day. | No one · everything · one day
+G | Who can enter the National Museum after five? | Nobody can enter the National Museum after five. | Nobody · museum · after five
+G | What did the tourists find in the empty antiques shop? | The tourists found nothing in the empty antiques shop. | nothing · antiques shop
+G | Who rides rickshaws in Jakarta now? | Nobody rides rickshaws in Jakarta now because they are banned. | Nobody · rickshaws · banned
 V | Jakarta is one of the most ___ cities in the world. | congested
 V | People shop for dinner and ___ over the price of shrimp. | haggle
 V | The boats transport things like coffee, ___, and exotic fruits. | tuna
@@ -671,14 +671,14 @@ SP | A: Why did your city grow where it is today? | B: My city grew because it i
 SW | My city is near {the Pacific Ocean}. People use the water for {fishing}. Ships can travel from {our port} to {other countries}. | Write three sentences about a body of water near your city, with a capital letter for its name.
 ## U10 | Mayor for a Day | What is a city?
 # learn
-C | How did Marcy become mayor for a day? | She won the Mayor for a Day contest at her school.
-C | What did Marcy do at the new city library? | She cut a celebration ribbon and made a short speech.
+C | How did Marcy become mayor for a day? | Marcy won the Mayor for a Day contest at her school.
+C | What did Marcy do at the new city library? | Marcy cut a celebration ribbon and made a short speech.
 C | Why were the garbage collectors unhappy? | There was too much garbage to pick up.
-C | What was Marcy's idea for the city park? | She planned a Volunteer Day with free ice cream.
-G | You'll work hard as the mayor, won't you? | Yes, I will. I'll do my best, sir.
-G | Marcy wasn't nervous anymore, was she? | No, she wasn't. She wasn't nervous anymore.
-G | Mr. Clark isn't the mayor, is he? | No, he isn't. He is Marcy's assistant today.
-G | Hilda Hanson will build a factory in Glenview, won't she? | Yes, she will. She will start building it tomorrow.
+C | What was Marcy's idea for the city park? | Marcy planned a Volunteer Day with free ice cream.
+G | Marcy, you'll work hard as the mayor, won't you? | Yes, I will. I will do my best, sir. | Yes, I will · my best
+G | Marcy, you weren't nervous anymore, were you? | No, I wasn't. I wasn't nervous anymore. | No, I wasn't · nervous
+G | Mr. Clark, we have a city council meeting soon, don't we? | Yes, we do. The meeting is in five minutes. | Yes, we do · five minutes
+G | Hilda Hanson, you'll build a factory in Glenview, won't you? | Yes, I will. We will start building the factory tomorrow. | Yes, I will · factory · tomorrow
 V | For one day, Marcy would be the ___ of her city. | mayor
 V | Mr. Clark will be your ___ today. | assistant
 V | The ___ equipment at the city park needs fresh paint. | playground
@@ -755,14 +755,14 @@ SW | I want to visit {the new library} and {the city park}. Cities are {noisy}, 
 ## U11 | Understanding Viruses | How do our bodies work?
 # learn
 C | What do you need to see a virus? | You need a powerful electron microscope to see a virus.
-C | Which virus can paralyze people? | Polio is a virus that can paralyze people it infects.
+C | Which virus can paralyze people? | Polio is a virus that can paralyze the people it infects.
 C | What is the top layer of your skin made of? | The top layer of your skin is made of dead cells.
 C | What happens to viruses that reach your stomach? | Stomach acids usually destroy the viruses in your stomach.
-G | What kind of visitors does Max Axiom study? | He studies these fascinating, tiny visitors called viruses.
-G | What did the doctor wash? | The doctor washed his new, white lab coat.
-G | What kind of viruses did Max see? | Max saw large, round, red viruses under the microscope.
-G | What is on your desk? | There is a long, white, plastic ruler on my desk.
-V | Viruses are much smaller than ___, so they are hard to see. | bacteria
+G | What kind of visitors does Max Axiom study? | Max Axiom studies these fascinating, tiny visitors called viruses. | fascinating · tiny · visitors
+G | What kind of lab coat does Max Axiom wear? | Max Axiom wears a clean, long, white lab coat. | clean · long · white · lab coat
+G | What kind of viruses did Max Axiom see under the microscope? | Max Axiom saw strange, tiny, round viruses under the microscope. | strange · tiny · round
+G | What kind of microscope does Max Axiom use? | Max Axiom uses a powerful, big, new electron microscope. | powerful · big · new
+V | Viruses are much smaller than ___ and very hard to see. | bacteria
 V | The ___ virus is the one that causes the flu. | influenza
 V | If you have a cut or ___, viruses may get in. | scrape
 V | Some viruses get trapped in a slimy fluid called ___. | mucus
@@ -827,14 +827,14 @@ SP | A: What do you do when you catch a cold? | B: I {drink a lot of water} and 
 SW | {Wash your hands} every day. Don't {touch your eyes} with your fingers. {Eat healthy food} to stay strong. | Write three commands that give advice on how to stay healthy.
 ## U12 | The Human Body: Systems at Work | How do our bodies work?
 # learn
-C | What are the three major parts of the respiratory system? | They are the trachea, the lungs, and the diaphragm.
+C | What are the three major parts of the respiratory system? | The three major parts are the trachea, the lungs, and the diaphragm.
 C | What carries blood from the heart to all the cells? | The arteries carry blood from the heart to all the cells.
-C | What happens when your diaphragm moves down? | Your lungs get bigger and air flows into them.
-C | What do your cells create after they use oxygen? | The cells create carbon dioxide after they use oxygen.
-G | How did people use to think about the human body? | People used to think differently about the human body.
-G | How did you use to get to school? | I used to take the bus to school every day.
-G | What did your father use to do with his friends? | My father used to play games with his friends.
-G | Where did your sister use to go often? | My sister used to go to the swimming pool often.
+C | What happens when your diaphragm moves down? | Your lungs get bigger and air flows into your lungs.
+C | What do your cells create while using oxygen? | Your cells create carbon dioxide while using oxygen.
+G | How did people in ancient times use to think about the body? | People in ancient times used to think differently about the human body. | used to think · differently
+G | What did the class use to think about the lungs? | The class used to think the lungs pumped blood. | used to think · lungs
+G | How did the scientist use to study the human body? | The scientist used to study the human body with drawings. | used to study · drawings
+G | What did the nurse use to do every morning? | The nurse used to check patients' hearts every morning. | used to check · every morning
 V | This system first brings ___ into your lungs. | oxygen
 V | Your heart pumps blood into thick tubes called ___. | arteries
 V | Your ___ moves up and squeezes your lungs. | diaphragm
@@ -902,10 +902,10 @@ C | Who invented the printing press in 1440? | Johannes Gutenberg invented the p
 C | How many daily newspapers are there in the world today? | There are over 6,000 daily newspapers in the world today.
 C | What were the short news films in theaters called? | These short news films were called newsreels.
 C | When did television broadcasting start? | Television broadcasting started in the 1930s, after the radio.
-G | Do you have to pay for the Internet at home? | Yes, you must pay for the Internet to use it at home.
-G | Do you have to carry a computer to check the news? | No, you don't have to carry a computer to check the news.
-G | Can I take a newspaper without paying for it? | No, you mustn't take a newspaper without paying for it.
-G | What do we have to do for the test? | We have to study harder for the test.
+G | Does a family have to pay for the Internet at home? | Yes, a family must pay for the Internet to use it at home. | must pay · Internet
+G | Does Megan have to carry a computer to check the news? | No, Megan doesn't have to carry a computer to check the news. | doesn't have to · computer
+G | Can readers take a newspaper without paying? | No, readers mustn't take a newspaper without paying. | mustn't · paying
+G | What did people have to do to make books before 1440? | People had to make books by hand before the printing press. | had to · by hand
 V | ___ helps to pay for the cost of publishing newspapers. | Advertising
 V | Over two billion people now have a ___. | smartphone
 V | People can share information through social networks and ___. | blogs
@@ -983,17 +983,17 @@ SW | My {dad} gets news from {the newspaper}. {He} reads it every morning becaus
 ## U14 | From the Blog of Elsa B. Garcia, Kid Reporter | What is the mass media?
 # learn
 C | Who owns the old stone house across the street? | The city government owns the old stone house.
-C | What was the stone building long ago? | It was once the gatehouse of a huge mansion.
+C | What was the stone building long ago? | The stone building was once the gatehouse of a huge mansion.
 C | Who saved seven people in the fire? | Miss Lu saved seven people when she was nine.
 C | What did the mayor decide on August 1? | The mayor decided not to tear down the old house.
-G | What has Elsa decided to do? | She has decided to keep a blog about her stories.
-G | Has he written a blog before? | No, he hasn't written a blog before.
-G | How many interviews has the reporter done? | The reporter has done many interviews this year.
-G | How have smartphones changed the news? | Smartphones have changed the news business a lot.
+G | What has Elsa decided to do? | Elsa has decided to keep a blog about her stories. | has decided · blog
+G | Has Elsa done an interview before? | No, Elsa has never done an interview before. | has never done · interview
+G | What has Elsa found on the Internet? | Elsa has found a website called The Lost History of Stone House. | has found · website
+G | How many people have asked Miss Lu about the Martins? | No one has ever asked Miss Lu about the Martins before. | has ever asked · No one
 V | I found an entire ___ called The Lost History of Stone House. | website
 V | The ___ said a young girl saved seven people in the fire. | headline
 V | I have never done an ___ before, and I'm very nervous. | interview
-V | Miss Lu is a ___, so it isn't fair to take her home. | hero
+V | Miss Lu is a ___, so taking her home isn't fair. | hero
 # battle
 T | Tell us something you haven't done before. | I haven't met a real reporter before.
 S | Tell Elsa's story in your own words.
@@ -1059,10 +1059,10 @@ C | Where does a hurricane form? | A hurricane forms over warm ocean water.
 C | What does a tornado often look like? | A tornado often looks like a funnel with spinning winds.
 C | Which place has more tornadoes than any other? | North America has more tornadoes than any other place.
 C | Why are blizzards dangerous to drive in? | Drivers can't see far away and may lose control of their cars.
-G | Have you ever seen a real tornado? | No, I've never seen a real tornado.
-G | Have you ever experienced an earthquake? | Yes, I have experienced a small earthquake before.
-G | Has your teacher ever driven in a blizzard? | No, she has never driven in a blizzard.
-G | Have you ever watched a scary movie? | Yes, I have watched a scary movie about a tsunami.
+G | Have you ever seen a real tornado? | No, I have never seen a real tornado. | have never seen · tornado
+G | Has Japan ever experienced a large tsunami? | Yes, Japan has experienced a large tsunami before. | has experienced · tsunami
+G | Have the rescue workers ever driven in a blizzard? | No, the rescue workers have never driven in a blizzard. | have never driven · blizzard
+G | Has North America ever had a hurricane 500 kilometers wide? | Yes, North America has had very large hurricanes before. | has had · hurricanes · before
 V | In an earthquake, objects and even buildings can ___. | collapse
 V | A ___ travels very fast through the water. | tsunami
 V | In cold climates, ___ sometimes completely cover an area. | blizzards
@@ -1127,13 +1127,13 @@ SW | I've experienced {a thunderstorm} in {my town}. My family has never been in
 ## U16 | Staying Calm Before the Storm | What can we learn from nature's power?
 # learn
 C | How old was Luis when Hurricane Dean hit the coast? | Luis was nine years old when Hurricane Dean hit.
-C | What did Luis's father ask the family to do? | He asked them to leave Chetumal and go further inland.
+C | What did Luis's father ask the family to do? | Luis's father asked the family to leave Chetumal and go inland.
 C | Why did the supermarket turn Luis's mother away? | There were too many people at the supermarket.
-C | Where did the family stay after they left the city? | They stayed at a storm shelter many kilometers inland.
-G | Have you packed everything we need yet? | Yes, I've already packed everything we need.
-G | Have you cleaned your room yet? | No, I haven't cleaned my room yet.
-G | Has Vince washed the car yet? | Yes, he has just washed the car.
-G | What have you just put in your flashlight? | I've just put new batteries in my flashlight.
+C | Where did the family stay after leaving the city? | The family stayed at a storm shelter many kilometers inland.
+G | Has Luis packed everything the family needs yet? | Yes, Luis has already packed everything the family needs. | has already packed · everything
+G | Has Luis's mother bought food and water yet? | No, Luis's mother hasn't bought food and water yet. | hasn't bought · yet
+G | What has the government just declared? | The government has just declared a state of emergency. | has just declared · emergency
+G | Has Aunt Alma put boards over her windows yet? | No, Aunt Alma hasn't put boards over her windows yet. | hasn't put · yet · boards
 V | The government has declared a state of ___. | emergency
 V | The rest of the supplies would go in the ___ of the car. | trunk
 V | Hurricane Dean made ___ near the town of Majahual. | landfall
@@ -1209,10 +1209,10 @@ C | How many major biomes are there on Earth? | There are eight major biomes on 
 C | Where are tropical rainforests? | Tropical rainforests are near the equator, where lots of rain falls.
 C | Why have people turned many grasslands into farms? | Grasslands have rich soil and almost no trees.
 C | Which biome is the driest on Earth? | The desert is the driest biome on Earth.
-G | How long have you gone to school? | I've gone to school for five years.
-G | How long has your dad studied mammals? | My dad has studied mammals for twenty years.
-G | How long has the government protected this forest? | The government has protected this forest since 1998.
-G | How long have these biomes provided a home for animals? | They have provided a home for animals for a very long time.
+G | How long have the eight biomes provided a home for animals? | The eight biomes have provided a home for animals for a very long time. | have provided · for · a very long time
+G | How long has the polar bear hunted for seals? | The polar bear has hunted for seals since the Arctic winter began. | has hunted · since
+G | How long has the tundra been frozen? | The tundra has been frozen for thousands of years. | has been · for · thousands of years
+G | How long have the students studied biomes? | The students have studied biomes since February. | have studied · since February
 V | A ___ is a community of plants and animals that live together. | biome
 V | The ___ is a forest biome with evergreen trees. | taiga
 V | The ___ is always frozen and north of the taiga. | tundra
@@ -1279,15 +1279,15 @@ SW | The {polar bear} hunted for {seals} until it {caught one}. I will stay in t
 ## U18 | Camila's Journey | Why are biomes important?
 # learn
 C | Where did Camila live? | Camila lived in Belize City on the coast of Belize.
-C | What did Camila's father do for the government? | He helped to manage the seven marine parks off the coast.
+C | What did Camila's father do for the government? | Camila's father helped to manage the seven marine parks off the coast.
 C | Why was Camila angry and upset? | A speedboat full of tourists raced toward the reef.
-C | How many people signed Camila's petition in three weeks? | In three weeks, 20,000 people in 38 countries signed it.
-G | What has Camila created to help the coral reefs? | Camila has created a petition on the Internet.
-G | When did Camila create the petition? | When she got home, Camila created a petition.
-G | Have you ever run in a race? | Yes, I have. I ran in a race last summer.
-G | Has the explorer seen a manta ray before? | Yes, he has seen a manta ray before.
+C | How many people signed Camila's petition in three weeks? | In three weeks, 20,000 people in 38 countries signed the petition.
+G | What has Camila created to help the coral reefs? | Camila has created a petition on the Internet. | has created · petition
+G | When did Camila create the petition? | Camila created the petition when she got home. | created · when she got home
+G | Has Camila's father ever seen a manta ray? | Yes, Camila's father has seen many manta rays at Glover's Reef. | has seen · manta rays
+G | What did three countries do within one year? | Within one year, three countries passed laws to protect their coral reefs. | passed · laws · within one year
 V | Hundreds of butterfly fish, parrot fish, and ___ darted around her. | seahorses
-V | They saw a large ___ filled with tourists racing toward the reef. | speedboat
+V | Camila saw a large ___ filled with tourists racing toward the reef. | speedboat
 V | Within one year, three countries passed ___ to protect their coral reefs. | laws
 V | One day, Camila's father ___ her to visit one of the parks. | invited
 # battle
