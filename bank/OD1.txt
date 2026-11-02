@@ -2,13 +2,13 @@
 ## U1 | Families and Friends | Who are your family and friends?
 # learn
 C | How old is Jake? | Jake is seven years old.
-C | Who does Jake live with? | He lives with his mother, father, and sisters.
+C | Who does Jake live with? | Jake lives with his mother, father, and sisters.
 C | Is Kim's family big or small? | Kim's family is small.
 C | What do friends do together? | Friends play together and share things.
-G | How old is Mandy? | She is eight years old.
-G | Is Jake's family big? | Yes, his family is big.
-G | Are friends important? | Yes, friends are important.
-G | Is Kim six or seven? | Kim is six years old.
+G | How old is Mandy? | Mandy is eight years old. | is · eight years old
+G | Is Jake's family big? | Yes, Jake's family is big. | Yes · is · big
+G | Are friends important? | Yes, friends are important. | Yes · are · important
+G | How old is Kim? | Kim is six years old. | is · six years old
 V | Jake lives with his ___, father, and sisters. | mother
 V | Mandy lives with her ___, grandfather, and grandmother. | brother
 V | Kim's ___ is small. | family
@@ -76,12 +76,12 @@ SW | I'm {Lisa}. I'm {eight} years old. My family is {big}. | Write about yourse
 # learn
 C | How does Elliot feel at the start? | Elliot is sad and lonely.
 C | What animal is Tuti? | Tuti is a tortoise.
-C | What can't Elliot find? | He can't find his family.
-C | What do Elliot and Tuti do together? | They eat, play, and sleep together.
-G | What is this animal? | This is a tortoise.
-G | What are those animals? | Those are zebras.
-G | Are those lions? | Yes, those are lions.
-G | Is that Elliot's family? | Yes, that's his family.
+C | What can't Elliot find? | Elliot can't find his family.
+C | What do Elliot and Tuti do together? | Elliot and Tuti eat, play, and sleep together.
+G | What is this animal? | This is a tortoise. | This is · tortoise
+G | What are those animals? | Those are zebras. | Those are · zebras
+G | Are those animals lions? | Yes, those are lions. | Yes · those are · lions
+G | Is that Elliot's family? | Yes, that's Elliot's family. | Yes · that's · family
 V | Elliot is an ___. | elephant
 V | Elliot is sad and ___. | lonely
 V | The zebras are ___ and run away. | scared
@@ -152,10 +152,10 @@ C | How many red butterflies are in the tree? | There are six red butterflies in
 C | What color are the lizards? | The lizards are green.
 C | What color is the sky? | The sky is blue.
 C | What color are the clouds? | The clouds are white.
-G | What is in the tree? | There are twenty animals in the tree.
-G | How many brown birds are there? | There are four brown birds.
-G | How many purple cats are in the tree? | There are three purple cats in the tree.
-G | Is there a yellow dog in the tree? | Yes, there are two yellow dogs.
+G | What is in the tree? | There are twenty animals in the tree. | There are · twenty animals
+G | How many brown birds are in the tree? | There are four brown birds in the tree. | There are · four · brown birds
+G | How many purple cats are in the tree? | There are three purple cats in the tree. | There are · three · purple cats
+G | Are there two yellow dogs in the tree? | Yes, there are two yellow dogs in the tree. | Yes · there are · yellow dogs
 V | There are six ___ butterflies in the tree. | red
 V | There are five ___ lizards in the tree. | green
 V | The sky is ___. | blue
@@ -220,12 +220,12 @@ SW | There is a {blue} {bird} in my yard. There are two {brown} dogs. | Write tw
 # learn
 C | What are the three primary colors? | The primary colors are red, blue, and yellow.
 C | What do red and yellow make? | Red and yellow make orange.
-C | What do the children paint? | They paint a mural of the ocean.
+C | What do the children paint? | The children paint a mural of the ocean.
 C | What color is the sand? | The sand is yellow.
-G | Where is the blue starfish? | The starfish is under the seashell.
-G | Where is the red fish? | The red fish is next to the seaweed.
-G | Where are the seashells? | The seashells are on the sand.
-G | Where are you in your picture? | I am in the ocean.
+G | Where is the blue starfish? | The blue starfish is under the seashell. | under · starfish · seashell
+G | Where is the red fish? | The red fish is next to the seaweed. | next to · fish · seaweed
+G | Where are the seashells? | The seashells are on the sand. | on · seashells · sand
+G | Is the blue starfish on the sand? | No, the blue starfish is under the seashell. | No · under · seashell
 V | We ___ red and yellow to make orange. | mix
 V | The children paint a ___ of the ocean. | mural
 V | There's yellow ___ in the mural. | sand
@@ -288,13 +288,13 @@ SW | The {starfish} is {under} the {seashell}. It is {orange}. | Write two sente
 ## U5 | Animal Homes | Where do animals live?
 # learn
 C | Where is the eagle's nest? | The eagle's nest is high in a tree.
-C | What do honeybees make in the hive? | They make honey in the hive.
+C | What do honeybees make in the hive? | Honeybees make honey in the hive.
 C | How many legs do crabs have? | Crabs have ten legs.
 C | Where does an opossum live? | An opossum lives inside a tree hollow.
-G | Where are the chicks? | They're in the nest.
-G | Where's the opossum? | It's inside a tree hollow.
-G | Where do crabs live? | They live under water and on land.
-G | Where's the honey? | It's in the hive.
+G | Where are the eagle's chicks? | They're in the nest. | They're · in the nest
+G | Where is the opossum? | It's inside a tree hollow. | It's · inside · tree hollow
+G | Where do crabs live? | They live under water and on land. | They · under water · on land
+G | Where is the honey? | It's in the hive. | It's · in the hive
 V | Eagles keep their ___ safe in the nest. | chicks
 V | Honeybees make a ___ for their home. | hive
 V | Some ___ make their homes in old seashells. | crabs
@@ -361,13 +361,13 @@ SW | The {eagle} lives in a {nest}. Its home is {high in a tree}. | Write two se
 ## U6 | My Friend Anak | Where do animals live?
 # learn
 C | Who takes care of Anak? | Dian takes care of Anak.
-C | What does baby Anak drink? | She drinks milk from a bottle.
-C | What does Anak eat when she is four? | She eats fruit, leaves, and flowers.
-C | Where does Anak live when she is twelve? | She lives in the rainforest.
-G | Who's Anak? | Anak is a young orangutan.
-G | Who's Dian? | Dian is Anak's special friend.
-G | What's that in the bottle? | It's milk for Anak.
-G | What's this place? | It's the Happy House Reserve.
+C | What does baby Anak drink? | Anak drinks milk from a bottle.
+C | What does four-year-old Anak eat? | Anak eats fruit, leaves, and flowers.
+C | Where does twelve-year-old Anak live? | Anak lives in the rainforest.
+G | Who is Anak? | Anak is a young orangutan. | is · young orangutan
+G | Who is Dian? | Dian is Anak's special friend. | is · special friend
+G | What is that in the bottle? | It's milk for Anak. | It's · milk
+G | What is this place? | It's the Happy House Reserve. | It's · Happy House Reserve
 V | Anak is a baby ___. | orangutan
 V | Dian works at a reserve in the ___. | rainforest
 V | I ___ Anak about the rainforest. | teach
@@ -437,10 +437,10 @@ C | How many seasons are in a year? | There are four seasons in a year.
 C | What helps plants grow in spring? | The rain helps plants grow.
 C | Which season comes after summer? | Fall comes after summer.
 C | What covers the ground in winter? | The snow covers the ground.
-G | Does it get hot in summer? | Yes, it gets hot in summer.
-G | Does it snow in summer? | No, it doesn't snow in summer.
-G | What happens in spring? | It gets warm and it rains a lot.
-G | Does it get cold in winter? | Yes, it gets cold and it snows.
+G | Is summer hot? | Yes, it gets hot in summer. | Yes · it gets · hot
+G | Does snow fall in summer? | No, it doesn't snow in summer. | No · it doesn't · snow
+G | What happens in spring? | It gets warm and it rains a lot. | It gets · warm · rains
+G | Is winter cold? | Yes, it gets cold and it snows in winter. | Yes · it gets · cold · snows
 V | In spring, it gets ___ outside. | warm
 V | In summer, the days are ___ and the nights are short. | long
 V | In fall, it gets ___ outside. | cool
@@ -508,13 +508,13 @@ SW | It gets {hot} in the {summer}. It doesn't {snow}. | Write two sentences abo
 ## U8 | Arnold's Apple Tree | How are seasons different?
 # learn
 C | What does Arnold have? | Arnold has an apple tree.
-C | What does Arnold build in summer? | He builds a tree house.
+C | What does Arnold build in summer? | Arnold builds a tree house.
 C | What color are the apples in fall? | The apples are big and red.
-C | Who eats the popcorn and berries? | The birds eat them.
-G | What do you make in spring, Arnold? | I make a swing for my apple tree.
-G | Do you build a snowman in winter? | Yes, I build a snowman in winter.
-G | Do you make apple pies in summer? | No, I don't make apple pies in summer.
-G | Do you watch honeybees? | Yes, I watch honeybees in spring.
+C | Who eats the popcorn and berries? | The birds eat the popcorn and berries.
+G | Arnold, what do you make in spring? | I make a swing for my apple tree. | I make · swing
+G | Arnold, do you build a snowman in winter? | Yes, I build a snowman in winter. | Yes · I build · snowman
+G | Arnold, do you make apple pies in summer? | No, I don't make apple pies in summer. | No · I don't make · apple pies
+G | Arnold, do you watch honeybees in spring? | Yes, I watch honeybees in spring. | Yes · I watch · honeybees
 V | I ___ small buds grow on my apple tree. | watch
 V | I ___ a tree house in my apple tree. | build
 V | Red apples ___ to the ground. | fall
@@ -581,14 +581,14 @@ SP | A: What do you do in the spring? | B: I {ride a bicycle} in the spring. | A
 SW | In the {spring}, I {fly a kite}. I don't {build a snowman}. | Write two sentences about what you do in your favorite season.
 ## U9 | Working with Numbers | How do numbers help us?
 # learn
-C | What does the number line show? | It shows the numbers 1 to 20 in order.
+C | What does the number line show? | The number line shows the numbers 1 to 20 in order.
 C | What color are the even numbers? | The even numbers are blue.
-C | What does the plus sign tell us? | It tells us to add the numbers together.
+C | What does the plus sign tell us? | The plus sign tells us to add the numbers together.
 C | How do we say 2 + 3 = 5? | Two plus three equals five.
-G | How many seashells do you have? | I have eight orange seashells.
-G | Do they have red crabs? | Yes, they have six red crabs.
-G | Do you have a ruler? | No, I don't have a ruler.
-G | What do you have in your backpack? | I have two pencils and a notebook.
+G | How many orange seashells do you have? | I have eight orange seashells. | I have · eight · seashells
+G | How many red crabs do the children have? | They have six red crabs. | They have · six · red crabs
+G | Do you have a ruler? | No, I don't have a ruler. | No · I don't have · ruler
+G | What do you have in your backpack? | I have two pencils and a notebook. | I have · pencils · notebook
 V | Some numbers are even, and some numbers are ___. | odd
 V | This is a ___ sign: +. | plus
 V | After the equals sign comes the ___. | answer
@@ -652,14 +652,14 @@ SP | A: Olly, how old are you? | B: I'm {seven} years old. How about you, Ben? |
 SW | I have {two} {pencils}. I don't have {a ruler}. | Write two sentences about the things you have and don't have.
 ## U10 | Stone Soup | How do numbers help us?
 # learn
-C | What does Hans put in the pot first? | He puts water in the pot first.
-C | How many stones do Ann and Olga each find? | They each find four stones.
+C | What does Hans put in the pot first? | Hans puts water in the pot first.
+C | How many stones do Ann and Olga each find? | Ann and Olga each find four stones.
 C | How many potatoes does the woman have? | The woman has five potatoes.
-C | What do the people from the town add? | They add onions and carrots.
-G | Do you have any food? | No, I don't have any food.
-G | Do you have potatoes? | Yes, I have five potatoes.
-G | What do you have? | I have two sausages.
-G | Do you have any sausages? | No, we don't have any sausages.
+C | What do the people from the town add? | The people add onions and carrots.
+G | Do you have any food? | No, I don't have any food. | No · I don't have · any food
+G | Do you have potatoes? | Yes, I have five potatoes. | Yes · I have · five potatoes
+G | What do you have for the soup? | I have two sausages. | I have · two sausages
+G | Do you have any onions and carrots? | Yes, we have onions and carrots. | Yes · we have · onions · carrots
 V | The family has a big ___. | pot
 V | Ann and Olga put ___ into the pot. | stones
 V | The man puts two ___ into the pot. | sausages
@@ -727,18 +727,18 @@ SP | A: I have two {oranges}. | B: I have one. How many do we have? | A: Two plu
 SW | I have {potatoes} and {onions}. Let's make {potato} soup! It is tasty. | Write about the food you have and the soup you want to make.
 ## U11 | The Farmer and the Hat | What do we need?
 # learn
-C | What does Farmer Flores grow? | He grows carrots, potatoes, and onions.
-C | Where does Mrs. Flores sell the milk? | She sells the milk at the market.
-C | What does Farmer Flores buy for himself? | He buys a very fancy hat.
-C | What does the farmer do at the end? | He buys his cow back.
-G | Does the farmer have a lot of money? | No, he doesn't have a lot of money.
-G | What does Mrs. Flores want? | She wants to go to the dance.
-G | Does the farmer need his cow? | Yes, he needs his cow.
-G | Does he want the fancy hat at the end? | No, he doesn't want the hat.
+C | What does Farmer Flores grow? | Farmer Flores grows carrots, potatoes, and onions.
+C | Where does Mrs. Flores sell the milk? | Mrs. Flores sells the milk at the market.
+C | What does Farmer Flores buy for himself? | Farmer Flores buys a very fancy hat.
+C | What does the farmer do at the end? | The farmer buys his cow back.
+G | Does Farmer Flores have a lot of money? | No, he doesn't have a lot of money. | No · he doesn't have · money
+G | What does Mrs. Flores want? | She wants to go to the dance. | She wants · dance
+G | Does the farmer need his cow? | Yes, he needs his cow. | Yes · he needs · cow
+G | Does Farmer Flores want the fancy hat at the end? | No, he doesn't want the hat. | No · he doesn't want · hat
 V | Tomas Flores is a ___. | farmer
 V | Farmer Flores has a ___. | cow
 V | The cow gives lots of ___ every day. | milk
-V | He buys a very ___ hat for himself. | fancy
+V | Farmer Flores buys a very ___ hat for himself. | fancy
 # battle
 T | What do you want? | I want a new bicycle.
 T | What does your friend have? | She has a comic book.
@@ -806,10 +806,10 @@ C | What does Maria want? | Maria wants a kitten.
 C | What do we need to keep us warm? | We need clothes to keep us warm.
 C | Why do people have jobs? | People have jobs to get money.
 C | What does a farmer do? | A farmer grows food.
-G | Does Maria want a bicycle? | No, she wants a kitten.
-G | What does Akif want? | He wants a new bicycle.
-G | Does Ji-Min need a pencil? | Yes, she needs a pencil for her homework.
-G | What does Sam need? | He needs new sneakers to walk to school.
+G | Does Maria want a bicycle? | No, she wants a kitten. | No · she wants · kitten
+G | What does Akif want? | He wants a new bicycle. | He wants · new bicycle
+G | Does Ji-Min need a pencil? | Yes, she needs a pencil for her homework. | Yes · she needs · pencil
+G | What does Sam need? | He needs new sneakers to walk to school. | He needs · sneakers · school
 V | People have jobs to get ___. | money
 V | We need food and ___ to keep healthy. | water
 V | ___ have service jobs and help us learn. | Teachers
@@ -877,10 +877,10 @@ C | What is a neighborhood? | A neighborhood is where families live, work, and p
 C | Where does Jenna live? | Jenna lives on a farm in the country.
 C | What is Cairo? | Cairo is a big city.
 C | What does an address tell us? | An address tells us where a home is.
-G | Where is Matias's house? | Matias's house is in a town.
-G | Whose apartment is in the city? | Nada's apartment is in the city.
-G | Is this Jenna's house? | Yes, it's Jenna's house.
-G | What is Mason's address? | Mason's address is 19 Main Street, Rivertown.
+G | Where is Matias's house? | Matias's house is in a town. | Matias's · house · town
+G | Whose apartment is in the city? | Nada's apartment is in the city. | Nada's · apartment · city
+G | Is this Jenna's house? | Yes, it's Jenna's house. | Yes · Jenna's · house
+G | What is Mason's address? | Mason's address is 19 Main Street, Rivertown. | Mason's · address · 19 Main Street
 V | The ___ is very big. | world
 V | Some homes are ___ and some are houses. | apartments
 V | Loreto is a small ___. | town
@@ -948,17 +948,17 @@ SW | I live in {Zhubei}. My home is {an apartment}. {Lily}'s home is in {the cou
 ## U14 | City Mouse and Country Mouse | Where do we live?
 # learn
 C | Where does City Mouse live? | City Mouse lives in the city.
-C | What do the mice eat in the country? | They eat corn and apples.
-C | How do the mice go to the city? | They take a train to the city.
-C | Where do they sleep in the city? | They sleep in a new hotel.
-G | Where is City Mouse's home? | His home is in the city.
-G | Is your neighborhood quiet, Country Mouse? | Yes, my neighborhood is quiet.
-G | Is the mice's city hotel old? | No, their hotel is new.
-G | Where is your cousin's home, City Mouse? | His home is in the country.
-V | They go to the ___ and eat some corn. | cornfield
-V | They go to the ___ and eat some apples. | orchard
-V | They sleep in an ___ barn. | old
-V | They sleep in a new ___. | hotel
+C | What do the mice eat in the country? | The mice eat corn and apples.
+C | How do the mice go to the city? | The mice take a train to the city.
+C | Where do the mice sleep in the city? | The mice sleep in a new hotel.
+G | Where is City Mouse's home? | His home is in the city. | His home · city
+G | Country Mouse, is your home in the country? | Yes, my home is in the country. | Yes · my home · country
+G | Is the mice's hotel in the city old? | No, their hotel is new. | No · their hotel · new
+G | Where is City Mouse's cousin's home? | His cousin's home is in the country. | His · cousin's home · country
+V | The mice go to the ___ and eat some corn. | cornfield
+V | The mice go to the ___ and eat some apples. | orchard
+V | The mice sleep in an ___ barn. | old
+V | The mice sleep in a new ___. | hotel
 # battle
 T | Is there a park in your neighborhood? | Yes, there is a park near my home.
 T | Tell us about your friend's home. | Her home is in the city.
@@ -1023,14 +1023,14 @@ SP | A: Is there a {park} in your neighborhood? | B: Yes, there is. | A: Is ther
 SW | My home is in {the city}. My neighborhood is {noisy}. There is a {park} in my neighborhood. | Write about your home and the places in your neighborhood.
 ## U15 | Percussion Instruments | How can we make music?
 # learn
-C | What do we do with percussion instruments? | We strike or shake them.
+C | What do we do with percussion instruments? | We strike or shake percussion instruments.
 C | What does a xylophone have? | A xylophone has wooden bars.
 C | How do we play the cymbals? | We strike two cymbals together.
 C | Why is a triangle called a triangle? | Its shape is a triangle.
-G | What is the boy doing? | He's striking the big white drum.
-G | What is the girl doing? | She's striking the xylophone with mallets.
-G | Are you playing the drums? | Yes, I'm playing the drums.
-G | Is the boy playing small cymbals? | No, he's playing big cymbals.
+G | What is the boy with the mallets doing? | He's striking the big white drum. | He's striking · drum
+G | What is the girl doing? | She's striking the xylophone with mallets. | She's striking · xylophone
+G | Are you playing the drums? | Yes, I'm playing the drums. | Yes · I'm playing · drums
+G | Is the boy playing small cymbals? | No, he's playing big cymbals. | No · he's playing · big cymbals
 V | Percussion ___ are big and small. | instruments
 V | We ___ drums with our hands or mallets. | strike
 V | A ___ is like a small drum. | tambourine
@@ -1098,14 +1098,14 @@ SP | A: Can you help me, please? | B: Sure! Let's {play the drum} together. | A:
 SW | I'm playing the {drum}. I'm {striking} it. It sounds {loud} and {fast}. | Write about a percussion instrument you are playing.
 ## U16 | Let's Make Music | How can we make music?
 # learn
-C | What do the students want? | They want music lessons.
-C | Why can't the students buy instruments? | They don't have any money.
+C | What do the students want? | The students want music lessons.
+C | Why can't the students buy instruments? | The students don't have any money.
 C | What are the buckets and pots? | The buckets and pots are their drums.
-C | Who is helping the students? | Ms. King is helping them.
-G | Are the parents taking pictures? | Yes, they are taking pictures.
-G | Is Ms. King helping the students? | Yes, she is helping them.
-G | Are the people clapping? | Yes, they are clapping and giving money.
-G | Are Fay and Oscar striking drums? | No, they are shaking their instruments.
+C | Who is helping the students? | Ms. King is helping the students.
+G | Are the parents taking pictures? | Yes, they are taking pictures. | Yes · they are taking · pictures
+G | Is Ms. King helping the students? | Yes, she is helping the students. | Yes · she is helping · students
+G | Are the people clapping? | Yes, they are clapping and giving money. | Yes · they are clapping · money
+G | Are Fay and Oscar striking drums? | No, they are shaking their instruments. | No · they are shaking · instruments
 V | We need a good ___. | idea
 V | We can sell ___ and get money. | tickets
 V | Our parents are taking ___. | pictures
@@ -1174,13 +1174,13 @@ SW | My favorite performance is a {concert}. Are the people {singing}? Yes, they
 ## U17 | Living and Nonliving Things (partial) | What are living things?
 # learn
 C | What can a living thing do? | A living thing can grow and change.
-C | What do living things need? | They need food, water, and air.
+C | What do living things need? | Living things need food, water, and air.
 C | What do plants make their food from? | Plants make food from sunlight, water, and air.
 C | Is a ball a living thing? | No, a ball is a nonliving thing.
-G | Can plants move by themselves? | No, plants can't move by themselves.
-G | Can a ball move by itself? | No, it can only move if we move it.
-G | Can animals get food and water? | Yes, animals can get food and water.
-G | Can a toy breathe? | No, a toy can't breathe.
+G | Can plants move by themselves? | No, plants can't move by themselves. | No · can't · move
+G | Can a ball move by itself? | No, a ball can only move if we move it. | No · can only · move
+G | Can animals get food and water? | Yes, animals can get food and water. | Yes · can · get
+G | Can a toy breathe? | No, a toy can't breathe. | No · can't · breathe
 V | A ___ thing can grow and change. | living
 V | Living things ___ air. | breathe
 V | A toy is a ___ thing. | nonliving
@@ -1249,13 +1249,13 @@ SW | A {tree} is a living thing. It can {grow and change}. A {ball} is a nonlivi
 ## U18 | The Gingerbread Man | What are living things?
 # learn
 C | Who bakes the gingerbread man? | An old woman bakes the gingerbread man.
-C | Where does the gingerbread man see the cow? | He sees the cow in a grassy field.
-C | Why can't they catch the gingerbread man? | He is too fast.
+C | Where does the gingerbread man see the cow? | The gingerbread man sees the cow in a grassy field.
+C | Why can't the old woman and the animals catch the gingerbread man? | The gingerbread man is too fast.
 C | Who eats the gingerbread man? | The fox eats the gingerbread man.
-G | Should the gingerbread man run fast? | Yes, he should run fast.
-G | Should he talk to the fox? | No, he shouldn't talk to the fox.
-G | What should the gingerbread man do at the river? | He should swim across the river.
-G | Should you run in the classroom? | No, you shouldn't run in the classroom.
+G | Should the gingerbread man run fast? | Yes, he should run fast. | Yes · should · run fast
+G | Should the gingerbread man talk to the fox? | No, he shouldn't talk to the fox. | No · shouldn't · talk · fox
+G | What should the gingerbread man do at the river? | He should swim across the river. | should · swim · river
+G | Should students run in the classroom? | No, students shouldn't run in the classroom. | No · shouldn't · run
 V | The old woman ___ the cookie in the oven. | bakes
 V | The old woman and old man ___ the gingerbread man. | chase
 V | You can't ___ me, I'm the gingerbread man! | catch
