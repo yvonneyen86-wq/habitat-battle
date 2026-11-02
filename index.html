@@ -589,6 +589,17 @@ body.lite .amb-canvas{display:none}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 
 /* ---- Learning Time activities ---- */
+#bp-bar{display:none}#bp-call{display:none}
+body.bp-on .sv{position:fixed;inset:0;z-index:60;display:flex;flex-direction:column;gap:8px;background:#1e2433;padding:10px 16px 12px}
+body.bp-on .main{grid-template-columns:minmax(0,1fr) 360px}
+body.bp-on .sv .sv-bar,body.bp-on .sv-note{display:none}
+body.bp-on #bp-bar{display:flex;gap:10px;align-items:center;color:#fff;flex-wrap:wrap}#bp-bar>b{font-size:1.1rem;white-space:nowrap}
+#bp-tabs{display:flex;flex-wrap:wrap;gap:6px;flex:1;min-width:0}#bp-tabs button{font:inherit;font-weight:800;border:2px solid var(--tc);background:#fff;color:var(--ink);border-radius:999px;padding:6px 12px;cursor:pointer}#bp-tabs button.cur{background:var(--tc);color:#fff}
+.bp-auto{display:flex;align-items:center;gap:6px;font-weight:800;white-space:nowrap}#bp-bar .btn{color:var(--ink)}
+body.bp-on .sv-screen{width:min(640px,46vw);align-self:center;flex:1;min-height:0}
+body.bp-on #bp-call{display:block;position:absolute;left:50%;top:64px;transform:translateX(-50%);z-index:5;background:#fff3bf;border:3px solid #f59f00;color:#7a4b00;border-radius:16px;padding:10px 22px;font-weight:900;font-size:1.4rem;box-shadow:0 6px 0 rgba(0,0,0,.2);animation:turnpop .5s ease-out}body.bp-on #bp-call[hidden]{display:none}
+.overlay .voters{display:flex;flex-wrap:wrap;gap:.8cqmin;justify-content:center;margin:1cqmin 0}.overlay .voters .vb{font:inherit;font-weight:800;font-size:2.2cqmin;border:.35cqmin solid var(--tc);background:#fff;color:var(--ink);border-radius:99px;padding:.5cqmin 1.4cqmin;cursor:pointer}.overlay .voters .vb.cur{background:var(--tc);color:#fff}.overlay .voters .vb.done{opacity:.55}
+.overlay .vi.pick{cursor:pointer;outline:.4cqmin dashed #0c8599;outline-offset:.3cqmin}
 .turn{margin:6px 12px 0;background:#fff3bf;border:2px solid #f59f00;color:#7a4b00;border-radius:12px;padding:5px 10px;font-weight:800;text-align:center;font-size:1.02rem;box-shadow:0 2px 0 rgba(0,0,0,.08)}.turn i{font-style:normal;color:#c2410c}.turn.pop{animation:turnpop .5s ease-out}@keyframes turnpop{0%{transform:scale(.92)}60%{transform:scale(1.04)}100%{transform:scale(1)}}
 .name-in.pair{margin-top:8px;font-size:.95em;border-style:dashed}
 .s-top .who b.long{font-size:.82em;letter-spacing:-.2px;white-space:normal;line-height:1.05}
@@ -1404,7 +1415,7 @@ function onStudent(conn,m){
   if(m.t==='choose')onChoose(pid,m.i);
   if(m.t==='buzz')onBuzz(pid);
   if(m.t==='vote')onVote(pid,m.i);
-  if(m.t==='act')onAct(pid,m.kind,m.target);
+  if(m.t==='act'){onAct(pid,m.kind,m.target);if(S.battle&&S.battle.acts[pid])bpTouched(pid,'act');}
   if(m.t==='power')usePower(pid);
 }
 function joinURL(){const u=new URL(location.href);const q=new URLSearchParams();q.set('join',S.code);PEER_PARAMS.forEach(k=>{if(params.get(k))q.set(k,params.get(k));});return u.origin+u.pathname+'?'+q.toString();}
@@ -1428,7 +1439,7 @@ function hostShell(){
         <div class="overlay" id="ovl" hidden></div>
       </div></div>
       <aside class="console" id="console"></aside>
-      <aside class="sv" id="sv"><div class="sv-bar"><b>📱 Student view</b><select id="sv-who" aria-label="View as"></select><button class="btn" data-act="sv-close">✕</button></div><div class="sv-screen" id="sv-app"></div><small class="sv-note">This is exactly what a student sees on a tablet. Tap the buttons to try it.</small></aside>
+      <aside class="sv" id="sv"><div id="bp-bar"><b>🖥️ Board play</b><div id="bp-tabs"></div><label class="bp-auto"><input type="checkbox" id="bp-auto" checked> Auto next</label><button class="btn" data-act="bp-next">Next ▶</button><button class="btn" data-act="bp-close">✕</button></div><div id="bp-call" hidden></div><div class="sv-bar"><b>📱 Student view</b><select id="sv-who" aria-label="View as"></select><button class="btn" data-act="sv-close">✕</button></div><div class="sv-screen" id="sv-app"></div><small class="sv-note">This is exactly what a student sees on a tablet. Tap the buttons to try it.</small></aside>
     </div>
   </div>
   <div id="modal-root"></div>`;
@@ -1444,7 +1455,7 @@ function tick(){
   const left=b.endsAt-Date.now();const el=$('#tm');if(el){el.textContent=fmtTime(left);el.classList.toggle('warn',left<120000);}
   if(left<=0&&!b.timeUpShown){b.timeUpShown=true;save();banner("TIME'S UP!",'Finish this round, then press End Battle','#f08c00');beep(440,.3);}
 }
-function render(){if(MODE!=='host'||!$('#stage'))return;applyScene(S.scene);renderHeader();renderStage();renderOverlay();renderConsole();sync3d();}
+function render(){if(MODE!=='host'||!$('#stage'))return;applyScene(S.scene);renderHeader();renderStage();renderOverlay();renderConsole();sync3d();if(H.bp&&H.bp.on)bpTabs();}
 /* ===== 3D stage (optional, teacher screen only). The bundle in the 3D-BUNDLE block is built from 3d/*.js by python3 3d/build.py ===== */
 function ensureThree(){return new Promise(r=>{if(window.THREE)return r(true);const sc=document.createElement('script');sc.src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js';const t=setTimeout(()=>r(!!window.THREE),20000);sc.onload=()=>{clearTimeout(t);r(!!window.THREE);};sc.onerror=()=>{clearTimeout(t);r(false);};document.head.appendChild(sc);});}
 function hasWebGL(){try{const c=document.createElement('canvas');return !!(c.getContext('webgl2')||c.getContext('webgl')||c.getContext('experimental-webgl'));}catch(e){return false;}}
@@ -1487,6 +1498,7 @@ function renderHeader(){
   ${ph==='end'?`<button class="btn" data-act="back-gather">🌱 Back to Learning</button>`:''}
   <button class="btn" data-act="bank">📚 ${S.bankSel?esc(S.bankSel.level)+' U'+S.bankSel.units.join(','):'Textbook'}</button>
   <button class="btn" data-act="sv-open">📱 Student view</button>
+    <button class="btn${H.bp&&H.bp.on?' war':''}" data-act="bp-open" title="Play on the whiteboard without tablets">🖥️ Board play</button>
   <button class="btn${S.ui3d?' war':''}" data-act="3d" title="3D stage on/off">🎮 3D${S.ui3d?' on':''}</button>
   <button class="btn" data-act="setup">⚙️ Setup</button>
   <button class="btn" data-act="fx" aria-label="Animations" title="Animations: full → lite → off">${!FX.on?'✨ off':FX.lite?'✨ lite':'✨'}</button>
@@ -1549,7 +1561,7 @@ function renderOverlay(){
     o.innerHTML=`<div class="kind">Battle Results</div><div class="podium">${r.teams.map((t,i)=>`<div class="pr${i===0?' first':''}" style="--tc:${t.color}"><span class="m">${m[i]||''}</span><span>${esc(t.name)}</span><small style="color:var(--muted)">❤️ ${t.pct}% left</small><b>🏆 ${t.pts}</b></div>`).join('')}</div>${r.mvp&&r.mvp.pts>0?`<div class="mvp">⭐ MVP: ${r.mvp.e} <b>${esc(r.mvp.name)}</b> (${esc(r.mvp.team)}) · 🏆 ${r.mvp.pts}</div>`:''}${r.pairs&&r.pairs.length?`<div class="pairs">${r.pairs.map(x=>`<span style="--tc:${x.color}">${x.e} ${(x.names||[x.a,x.b]).map((n,i)=>`<b>${esc(n)}</b> ${(x.ok||[])[i]||0} ✓`).join(' · ')}</span>`).join('')}</div>`:''}<div class="acts"><button class="btn primary" data-act="ovl-hide">Show the battlefield</button></div>`;
     o.hidden=!!H.hideResults;return;}
   if(S.phase==='battle'&&S.battle&&S.battle.vote){const v=S.battle.vote,c=voteCounts(),tot=Math.max(1,c.reduce((a,x)=>a+x,0)),n=Object.keys(v.votes).length;
-    o.innerHTML=`<div class="kind">🗳️ Vote for the best sentence</div><div class="vote-items">${v.items.map((it,i)=>{const pp=P(it.pid);return `<div class="vi${v.revealed&&v.winner===i?' win':''}">${v.revealed?`<i class="fill" style="width:${Math.round(c[i]/tot*100)}%"></i>`:''}<span class="L">${'ABCD'[i]}</span><span class="tx">${esc(it.text)}${v.revealed&&v.winner===i&&pp?`<small> — ${charById(pp.char).e} ${esc(pp.name)}</small>`:''}</span>${v.revealed?`<b class="cnt">${c[i]}</b>`:''}</div>`;}).join('')}</div><div class="hint">🗳️ ${n} vote${n===1?'':'s'} so far · Students vote on their tablets</div><div class="acts">${v.revealed?'':'<button class="btn primary" data-act="vote-reveal">🏅 Show results</button>'}<button class="btn" data-act="vote-close">Close</button></div>`;o.hidden=false;return;}
+    o.innerHTML=`<div class="kind">🗳️ Vote for the best sentence</div><div class="vote-items">${v.items.map((it,i)=>{const pp=P(it.pid);return `<div class="vi${v.revealed&&v.winner===i?' win':''}${!v.revealed&&H.voter?' pick':''}" ${!v.revealed?`data-act="vote-cast" data-i="${i}"`:''}>${v.revealed?`<i class="fill" style="width:${Math.round(c[i]/tot*100)}%"></i>`:''}<span class="L">${'ABCD'[i]}</span><span class="tx">${esc(it.text)}${v.revealed&&v.winner===i&&pp?`<small> — ${charById(pp.char).e} ${esc(pp.name)}</small>`:''}</span>${v.revealed?`<b class="cnt">${c[i]}</b>`:''}</div>`;}).join('')}</div>${v.revealed?'':`<div class="voters">${Object.values(S.players).filter(p=>!p.pre).map(p=>`<button class="vb${H.voter===p.pid?' cur':''}${v.votes[p.pid]!=null?' done':''}" data-act="vote-as" data-pid="${p.pid}" style="--tc:${teamColor(p.team)}">${charById(p.char).e} ${esc(p.name)}${v.votes[p.pid]!=null?' ✓':''}</button>`).join('')}</div>`}<div class="hint">🗳️ ${n} vote${n===1?'':'s'} so far · Students vote on their tablets${v.revealed?'':H.voter?` · <b>Now tap the sentence ${esc(P(H.voter)?.name||'')} chooses</b>`:' · or tap a name, then a sentence, to vote for them'}</div><div class="acts">${v.revealed?'':'<button class="btn primary" data-act="vote-reveal">🏅 Show results</button>'}<button class="btn" data-act="vote-close">Close</button></div>`;o.hidden=false;return;}
   if(S.phase==='gather'&&S.lt&&S.lt.cat!=='sw'&&!H.ltHideText&&ltUnit()){const h=ltOverlayHTML();if(h){o.innerHTML=h;o.hidden=false;return;}}
   if(S.phase==='gather'&&S.card){const c=S.card;o.innerHTML=`<div class="kind">Question Card · Everyone</div><div class="q">${esc(c.q)}</div><div class="ans">${H.showAns&&c.a?'Answer: '+esc(c.a):''}</div><div class="acts">${c.a?`<button class="btn" data-act="show-ans">${H.showAns?'Hide':'Show'} answer</button>`:''}<button class="btn primary" data-act="card">Next question</button><button class="btn" data-act="card-close">Close</button></div><div class="hint">Reward the student who answers: tap ✓ +${CORRECT_COINS} 🪙 in the player list.</div>`;o.hidden=false;return;}
   o.hidden=true;
@@ -1768,7 +1780,8 @@ function ltPrev(){const u=ltUnit();if(!S.lt||S.lt.cat!=='reading')return;const l
 function ltProg(pid){const l=S.lt;if(!l.prog[pid])l.prog[pid]={done:{},ok:0,tries:{}};return l.prog[pid];}
 function ltCoin(pid,n,why){const p=P(pid);if(!p||n<=0)return;p.coins+=n;pairTally(p);if(p.crId)crEvent('points',{student:p.crId,delta:n,reason:why||'learning time'});floatText(pid,`+${n} 🪙`);burst(pid,['🪙'],Math.min(6,n*2),{speed:18});flashRow(pid);}
 /* a tablet reports progress on the current activity */
-function ltMsg(pid,m){ltMsg0(pid,m);const p=P(pid),k=String(m&&m.k||'');if(p&&p.pair&&['word','gram','sort','build','choice','type','write'].includes(k)){pairFlip(p);changed();}}
+function ltMsg(pid,m){ltMsg0(pid,m);const p=P(pid),k=String(m&&m.k||'');if(p&&p.pair&&['word','gram','sort','build','choice','type','write'].includes(k)){pairFlip(p);changed();}
+    if(p&&['word','gram','sort','build','choice','type','write'].includes(k)){const pr=ltProg(pid),i=+m.i;if(m.ok!==false||(pr.tries&&pr.tries[i]>=2)||['choice','type','write'].includes(k))bpTouched(pid,k);}}
   function ltMsg0(pid,m){const l=S.lt,u=ltUnit(),p=P(pid);if(!l||!u||!p||!m)return;const k=String(m.k||'');
   if(k==='word'&&l.cat==='words'){const i=+m.i;const w=u.words[i];if(!w)return;const pr=ltProg(pid);if(pr.done[i])return;pr.tries[i]=(pr.tries[i]||0)+1;if(m.ok){pr.done[i]=1;pr.ok++;ltCoin(pid,1,'word');if(pr.ok===u.words.length)log(`${p.name} finished all ${u.words.length} words! 🔤`);}changed();return;}
   if(k==='gram'&&l.cat==='grammar'){const i=+m.i;if(!u.grammar[i])return;const pr=ltProg(pid);if(pr.done[i])return;pr.tries[i]=(pr.tries[i]||0)+1;if(m.ok){pr.done[i]=pr.tries[i]===1?2:1;pr.ok++;ltCoin(pid,pr.tries[i]===1?2:1,'grammar');if(pr.ok===u.grammar.length)log(`${p.name} built all ${u.grammar.length} sentences! 🧩`);}changed();return;}
@@ -1893,6 +1906,12 @@ function onHostClick(e){
     case 'sound':H.sound=!H.sound;renderHeader();break;
     case 'sv-open':openStudentView(Object.values(S.players).find(p=>!p.pre)?.pid||'new');break;
     case 'sv-close':closeStudentView();break;
+      case 'bp-open':if(H.bp&&H.bp.on)closeBoardPlay();else openBoardPlay();break;
+      case 'bp-close':closeBoardPlay();break;
+      case 'bp-tab':bpSwitch(b.dataset.pid);break;
+      case 'bp-next':bpNext(true);break;
+      case 'vote-as':H.voter=H.voter===b.dataset.pid?null:b.dataset.pid;render();break;
+      case 'vote-cast':if(H.voter){const v=S.battle&&S.battle.vote;if(v&&v.items[+b.dataset.i]&&v.items[+b.dataset.i].pid===H.voter){toast("Students can't vote for their own sentence.");break;}onVote(H.voter,+b.dataset.i);H.voter=null;render();}else toast('Tap a name first, then the sentence.');break;
     case 'setup':openSetup();break;
     case 'bank':openBank();break;
     case 'bk-level':H.bank.level=b.dataset.k;H.bank.units=new Set();renderBank();break;
@@ -1930,7 +1949,16 @@ function openStudentView(pid){
   svOptions(pid);ST.conn.send({t:'hello',cid:cidv});
   requestAnimationFrame(fxResize);
 }
-function closeStudentView(){if(H.svConn){dropConn(H.svConn);H.svConn=null;}ST.root=null;ST.view='';document.body.classList.remove('sv-on');$('#sv-app').innerHTML='';requestAnimationFrame(fxResize);}
+function hasTablet(pid){for(const[c,i]of H.conns)if(c!==H.svConn&&i.pid===pid&&c.open)return true;return false;}
+  function bpOrder(){const ps=Object.values(S.players).filter(p=>!p.pre).sort((a,b)=>a.team-b.team||a.pid.localeCompare(b.pid,undefined,{numeric:true}));const free=ps.filter(p=>!hasTablet(p.pid));return free.length?free:ps;}
+  function openBoardPlay(pid){H.bp={on:true,pid:null};document.body.classList.add('bp-on');const o=bpOrder();pid=pid||(o[0]&&o[0].pid)||'new';bpSwitch(pid);}
+  function closeBoardPlay(){if(H.bp)H.bp.on=false;document.body.classList.remove('bp-on');closeStudentView();render();}
+  function bpSwitch(pid){if(!H.bp||!H.bp.on)return;clearTimeout(H.bpTimer);H.bp.pid=pid;openStudentView(pid);bpTabs();const p=P(pid),c=$('#bp-call');if(c&&p){c.textContent=`👉 ${p.pair?pairWho(p):p.name}, your turn at the board!`;c.hidden=false;clearTimeout(H.bpCallT);H.bpCallT=setTimeout(()=>{c.hidden=true;},2600);beep(880,.08);}}
+  function bpNext(manual){if(!H.bp||!H.bp.on)return;const o=bpOrder();if(!o.length)return;const i=o.findIndex(p=>p.pid===H.bp.pid);bpSwitch(o[(i+1)%o.length].pid);}
+  function bpTouched(pid,kind){if(!H.bp||!H.bp.on||pid!==H.bp.pid)return;const auto=$('#bp-auto');if(auto&&!auto.checked)return;clearTimeout(H.bpTimer);H.bpTimer=setTimeout(()=>{if(H.bp&&H.bp.on&&H.bp.pid===pid)bpNext();},kind==='act'?1600:1400);}
+  function bpTabs(){const el=$('#bp-tabs');if(!el||!H.bp||!H.bp.on)return;const ps=Object.values(S.players).filter(p=>!p.pre).sort((a,b)=>a.team-b.team||a.pid.localeCompare(b.pid,undefined,{numeric:true}));
+    el.innerHTML=ps.map(p=>`<button data-act="bp-tab" data-pid="${p.pid}" class="${p.pid===H.bp.pid?'cur':''}" style="--tc:${teamColor(p.team)}">${charById(p.char).e} ${esc(p.name)}${hasTablet(p.pid)?' 📱':''}</button>`).join('')+`<button data-act="bp-tab" data-pid="new" class="${H.bp.pid==='new'?'cur':''}" style="--tc:#667085">➕ Join</button>`;}
+  function closeStudentView(){if(H.svConn){dropConn(H.svConn);H.svConn=null;}ST.root=null;ST.view='';document.body.classList.remove('sv-on');$('#sv-app').innerHTML='';requestAnimationFrame(fxResize);}
 function initHost(){
   S=store(skey());
   if(!S||!S.code||!S.players||!S.bText)S=newState();

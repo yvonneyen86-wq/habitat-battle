@@ -83,6 +83,7 @@ Content for the four Learning Time sections comes from the scanned Oxford Discov
 - Student tablet: `sSkeleton()/sPlay()/sDock()`; shop sheet `sShop()`; level-up animation `sTransform()`.
 - Pair mode (2–3 students on one tablet): the join message may carry `pair` and `pair2` (partner names); the host stores `p.name` via `pairName()` ("Amy & Ben", "Amy, Ben & Cal"), `p.pair=[a,b(,c)]`, `p.turn` (index) and `p.pairOk=[n,…]`. `pairFlip()` rotates the turn at every battle round after the first and after each scored Learning Time message (`ltMsg` wraps `ltMsg0`); `pairTally()` credits the current partner in `markCorrect`/`ltCoin`; the tablet shows `#t-turn` ("Amy's turn · Both say it!" for S/P questions and Speak & Write); `S.results.pairs` feeds the end overlay.
 - `📱 Student view` on the teacher screen embeds a live student client in the same page (`openStudentView()`), useful for testing without a tablet.
+- `🖥️ Board play` (`H.bp`, `openBoardPlay/closeBoardPlay/bpSwitch/bpNext/bpTouched/bpTabs`, `body.bp-on`) turns that embedded client into a fullscreen whiteboard screen with player tabs; `bpTouched()` auto-advances to the next player without a live tablet (`hasTablet()`) after a scored Learning Time message or a battle action. On the vote overlay the teacher can pick a student (`vote-as`) and tap a sentence (`vote-cast`) to vote for them.
 
 ## How to test a change
 1. `python3 -c "import re;s=open('index.html').read();open('/tmp/x.js','w').write(re.search(r'<script>([\s\S]*)</script>',s).group(1))" && node --check /tmp/x.js`
