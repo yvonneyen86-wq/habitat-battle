@@ -1700,10 +1700,15 @@ function ltRulesHTML(rules){if(!rules||!rules.length)return '';return `<div clas
 const LT_CATS_P={words:['🔤','Words'],reading:['📖','Story'],grammar:['🧩','Sound Sort'],sw:['💬','Say & Build']};
 function ltCats(u){return u&&u.phon?LT_CATS_P:LT_CATS;}
 /* story / word pictures: "drive:FILEID" (a Google Drive image shared with the link), a bare Drive id, or any image URL */
-function imgURL(x){x=String(x||'').trim().split('#')[0];if(!x)return '';if(/^drive:/i.test(x))x=x.slice(6);if(/^[\w-]{20,}$/.test(x))return 'https://drive.google.com/thumbnail?id='+encodeURIComponent(x)+'&sz=w1200';return x;}
+/* 2026-11-02 classroom tablets: load Drive pictures as JPEG straight from lh3 (=w1200-rj, about 250 KB) instead of drive.google.com/thumbnail (PNG 1-1.8 MB + a redirect); pictures were blank on tablets for a long time */
+function imgURL(x){x=String(x||'').trim().split('#')[0];if(!x)return '';if(/^drive:/i.test(x))x=x.slice(6);if(/^[\w-]{20,}$/.test(x))return 'https://lh3.googleusercontent.com/d/'+encodeURIComponent(x)+'=w1200-rj';return x;}
 function imgHTML(ref,cls){ref=String(ref||'').trim();if(!ref)return '';const url=imgURL(ref);const m=/#\s*([\d.]+)\s*,\s*([\d.]+)\s*,\s*([\d.]+)\s*,\s*([\d.]+)/.exec(ref);
-  if(!m)return `<img class="${cls}" src="${esc(url)}" alt="" loading="lazy">`;const[x,y,w,h]=m.slice(1).map(Number);
-  return `<span class="crop ${cls}" style="--x:${x};--y:${y};--w:${w};--h:${h}"><img src="${esc(url)}" alt="" loading="lazy" onload="cropFit(this)"></span>`;}
+  if(!m)return `<img class="${cls}" src="${esc(url)}" alt="" onerror="imgErr(this)">`;const[x,y,w,h]=m.slice(1).map(Number);
+  return `<span class="crop ${cls}" style="--x:${x};--y:${y};--w:${w};--h:${h}"><img src="${esc(url)}" alt="" onload="cropFit(this)" onerror="imgErr(this)"></span>`;}
+/* picture failed: retry once after 1.5 s; still failing -> tell the class runner (cr_events note) and show a tap-to-retry mark */
+function imgErr(img){if(!img.dataset.retry){img.dataset.retry='1';setTimeout(()=>{img.src=img.src.split('?')[0]+'?r='+Date.now();},1500);return;}crEvent('note',{text:'img-error',src:String(img.src).slice(0,160)});const el=img.parentNode;if(el&&!el.querySelector('.imgretry')){const b=document.createElement('button');b.className='imgretry';b.textContent='↻';b.style.cssText='position:absolute;inset:0;margin:auto;width:56px;height:56px;border-radius:50%;border:0;background:#fff;font-size:30px;box-shadow:0 2px 8px rgba(0,0,0,.2)';b.onclick=e=>{e.stopPropagation();b.remove();img.dataset.retry='';img.src=img.src.split('?')[0]+'?r='+Date.now();};el.appendChild(b);}}
+/* warm the browser cache with this unit's pictures (one unit = ~3 page images) so a tablet's Picture 1 is already there */
+const PRELOADED=new Set();function preloadPics(refs){(refs||[]).forEach(r=>{const u=imgURL(r);if(!u||PRELOADED.has(u)||!/^https?:/.test(u))return;PRELOADED.add(u);const i=new Image();i.src=u;});}
 function isPicRef(p){p=String(p||'').trim();return /^drive:|^https?:|^[\w-]{20,}$/.test(p);}
 function wpic(p,cls){p=String(p||'').trim();cls=cls||'';if(!p)return `<i class="wp ${cls}">🔤</i>`;return isPicRef(p)?`<span class="wp img ${cls}">${imgHTML(p,'fit')}</span>`:`<i class="wp ${cls}">${esc(p)}</i>`;}
 function cropFit(img){const el=img.parentNode;if(!el||!img.naturalWidth)return;const cs=getComputedStyle(el);const x=+cs.getPropertyValue('--x')||0,y=+cs.getPropertyValue('--y')||0,w=+cs.getPropertyValue('--w')||100,h=+cs.getPropertyValue('--h')||100;const nw=img.naturalWidth,nh=img.naturalHeight,cw=w/100*nw,ch=h/100*nh;
@@ -2215,7 +2220,7 @@ function sLtDock(s,me){const lt=s.lt,my=(ST.my&&ST.my.lt)||{done:{},ok:0,tries:{
     const d=todo([['👂','Read'],['🧩','Build'],['✓','Check']],ord.length?1:0)+`<div class="builder">${picHTML(pics&&pics[i])}<div class="bline">${ord.length?ord.map((k,pos)=>`<button class="tile" data-sact="lt-unplace" data-i="${pos}">${esc(tiles.find(t=>t.k===k).c)}</button>`).join(''):'<span class="ph">Tap the words below ⬇️</span>'}</div><div class="bpool">${tiles.map(t=>ord.includes(t.k)?'':`<button class="tile" data-sact="lt-place" data-k="${t.k}">${esc(t.c)}</button>`).join('')}</div><div class="brow"><button class="btn" data-sact="lt-reset">↺ Reset</button><button class="btn primary" data-sact="lt-check" ${ord.length<words.length?'disabled':''}>✓ Check</button></div></div>`;
     return {ph,d};};
   let ph='',d='',key='';
-  if(lt.cat==='words'&&lt.alpha){const ws=lt.words||[],Ls=lt.letters||[];let i=L.i;if(my.done[i]||i>=ws.length){i=ws.findIndex((_,k)=>!my.done[k]);if(i<0)i=ws.length;L.i=i;}
+  if(lt.cat==='words'&&lt.alpha){const ws=lt.words||[],Ls=lt.letters||[];preloadPics(ws.map(w=>w.pic));let i=L.i;if(my.done[i]||i>=ws.length){i=ws.findIndex((_,k)=>!my.done[k]);if(i<0)i=ws.length;L.i=i;}
     key=['a',i,Object.keys(my.done).length,L.bad].join('|');if(key===ST.qKey)return;ST.qKey=key;
     if(i>=ws.length){ph=tag('🔤','Letters')+`<div class="qp">All ${ws.length} pictures done! 🎉</div>`;d=todo([['👀','Look'],['🔤','Letter'],['🪙','Coins']],3)+`<div class="dock-msg"><b>Great job!</b><span>Wait for your teacher.</span></div>`;}
     else{const w=ws[i];ph=tag('🔤','Letters')+`<div class="ltprog">${ws.map((_,k)=>`<i class="${my.done[k]?'d':k===i?'c':''}"></i>`).join('')}</div><div class="qp">Picture ${i+1} of ${ws.length}</div><div class="picbox">${wpic(w.pic,'big')}</div><div class="hint">Which letter does it start with?</div>`;
