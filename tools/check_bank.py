@@ -8,7 +8,7 @@ ok = True
 def bad(msg):
     global ok
     print(msg); ok = False
-for f in sorted(glob.glob(os.path.join(root, 'bank', 'OD*.txt')) + glob.glob(os.path.join(root, 'bank', 'OPW*.txt'))):
+for f in sorted(glob.glob(os.path.join(root, 'bank', 'OD*.txt')) + glob.glob(os.path.join(root, 'bank', 'OPW*.txt')) + glob.glob(os.path.join(root, 'bank', 'JH*.txt'))):
     phon = os.path.basename(f).startswith('OPW')
     s = open(f, encoding='utf-8').read(); cur = None; mode = None; units = 0; rq = None; lt = 0; sq = None; buckets = None
     def close_unit():

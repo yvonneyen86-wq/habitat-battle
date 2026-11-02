@@ -820,7 +820,7 @@ function parseBankText(txt){
 async function loadLiveBank(){
   if(location.protocol==='file:')return;
   let n=0;
-  for(const lv of ['OD1','OD2','OD3','OD4','OD5','OD6','OPW1','OPW2','OPW3','OPW4','OPW5']){
+  for(const lv of ['OD1','OD2','OD3','OD4','OD5','OD6','OPW1','OPW2','OPW3','OPW4','OPW5','JH1','JH2','JH3']){
     try{const r=await fetch('bank/'+lv+'.txt',{cache:'no-store'});if(!r.ok)continue;const units=parseBankText(await r.text());if(units.length){OD_BANK[lv]={units};n++;}}catch(e){}
   }
   if(n){OD_LEVELS=Object.keys(OD_BANK).sort();H.bankLive=n;if(typeof renderHeader==='function'&&S)renderHeader();}
@@ -1643,6 +1643,7 @@ function renderBank(){
   <h2>📚 Textbook <small style="font-family:var(--body);font-size:.8rem;color:var(--muted)">${H.bankLive?'loaded from the bank/ files on the site':'built-in'}</small></h2>
   <div class="lvrow"><small>Oxford Discover</small><div class="seg lv">${OD_LEVELS.filter(k=>/^OD/.test(k)).map(k=>`<button class="${b.level===k?'sel':''}" data-act="bk-level" data-k="${k}">${k}</button>`).join('')}</div></div>
   ${OD_LEVELS.some(k=>/^OPW/.test(k))?`<div class="lvrow"><small>Oxford Phonics World</small><div class="seg lv">${OD_LEVELS.filter(k=>/^OPW/.test(k)).map(k=>`<button class="${b.level===k?'sel':''}" data-act="bk-level" data-k="${k}">${k.replace('OPW','Phonics ')}</button>`).join('')}</div></div>`:''}
+    ${OD_LEVELS.some(k=>/^JH/.test(k))?`<div class="lvrow"><small>Junior High Grammar</small><div class="seg lv">${OD_LEVELS.filter(k=>/^JH/.test(k)).map(k=>`<button class="${b.level===k?'sel':''}" data-act="bk-level" data-k="${k}">${k.replace('JH','Grammar ')}</button>`).join('')}</div></div>`:''}
   <div class="bk-tools"><small>${/^OPW/.test(b.level)?'Tap the units you are teaching. Phonics units fill the Learning Time activities (🔤 Words · 📖 Story · 🧩 Sound Sort · 💬 Say & Build); battle questions are made from the unit words and sentences.':`Tap the units you are teaching. Each unit has ${lv.units[0].learn.length} Learning-Time questions and ${lv.units[0].battle.length} battle questions.`}</small><span class="sp"></span><button class="btn" data-act="bk-all">All units</button><button class="btn" data-act="bk-none">Clear</button></div>
   <div class="units">${lv.units.map(u=>`<label class="unit${b.units.has(u.n)?' on':''}"><input type="checkbox" data-act="bk-unit" data-n="${u.n}" ${b.units.has(u.n)?'checked':''}><span class="un">U${u.n}</span><span class="ut"><b>${esc(u.title)}</b>${u.partial?' <i class="pt">partial</i>':''}<small>${esc(u.bq)}</small></span><span class="uc">${u.learn.length}+${u.battle.length}</span></label>`).join('')}</div>
   <div class="bk-foot"><b>${picked.length?`${b.level} · Unit${picked.length>1?'s':''} ${picked.join(', ')} · ${nL} learning + ${nB} battle questions`:'No units selected'}</b></div>

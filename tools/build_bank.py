@@ -7,7 +7,7 @@ root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECTIONS = {'# learn': 'learn', '# battle': 'battle', '# words': 'words', '# reading': 'reading', '# grammar': 'grammar', '# speak-write': 'sw',
             '# sound': 'sound', '# story': 'story', '# sort': 'sort', '# pairs': 'pairs', '# build': 'build'}
 bank = {}
-for f in sorted(glob.glob(os.path.join(root, 'bank', 'OD*.txt')) + glob.glob(os.path.join(root, 'bank', 'OPW*.txt'))):
+for f in sorted(glob.glob(os.path.join(root, 'bank', 'OD*.txt')) + glob.glob(os.path.join(root, 'bank', 'OPW*.txt')) + glob.glob(os.path.join(root, 'bank', 'JH*.txt'))):
     lv = os.path.basename(f)[:-4]
     units = []; cur = None; mode = None
     for raw in open(f, encoding='utf-8').read().split('\n'):
