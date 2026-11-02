@@ -5,14 +5,14 @@ C | What do birds have on their bodies? | Birds have two wings and feathers.
 C | What helps fish breathe in water? | Gills help fish breathe in water.
 C | Where do amphibians lay their eggs? | Amphibians lay their soft eggs in water.
 C | What do baby mammals drink? | Baby mammals drink milk from their mothers.
-G | Say it with a pronoun: Fish have gills. | They have gills.
-G | Say it with a pronoun: Gills help fish breathe. | Gills help them breathe.
-G | Make a yes/no question: Gills help fish breathe. | Do gills help fish breathe?
-G | Answer with a pronoun: Do feathers keep birds warm? | Yes, they keep them warm.
-V | Make a sentence with "scales". | Scales keep fish safe from dangerous fish.
-V | Make a sentence with "fur". | Fur keeps mammals warm.
-V | Make a sentence with "wings". | Birds use their wings to fly.
-V | Make a sentence with "amphibians". | Amphibians can live on land and in water.
+G | Do gills help fish breathe? | Yes, they help them breathe.
+G | What do fish have on their bodies? | They have scales on their bodies.
+G | Do birds lay eggs? | Yes, they lay eggs with hard shells.
+G | How do feathers help birds? | They help them fly and keep them warm.
+V | Fish have ___ to help them breathe in water. | gills
+V | Birds have two ___ and feathers. | wings
+V | ___ can live on land and in water. | Amphibians
+V | Hair or ___ covers most land mammals' bodies. | fur
 # battle
 T | How are fish different from birds? | Fish have gills and birds have wings.
 B | Birds have two wings and feathers.
