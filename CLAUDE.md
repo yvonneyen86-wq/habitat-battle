@@ -27,7 +27,10 @@ Live site: https://yvonneyen86-wq.github.io/habitat-battle/ (GitHub Pages, branc
 ```
 ## U3 | Unit title | Big Question?
 # learn
-question | answer            (Learning-Time cards; answer optional)
+C | question | model sentence   (❓ Question Card. Kinds: C = textbook content, G = grammar transformation, V = make a sentence with a word;
+G | prompt | model sentence      the board shows the kind and "Answer in a full sentence". Cards drill full-sentence answers from the unit's
+V | Make a sentence with "x". | model sentence   text, grammar and words; inference / critical-thinking questions belong to the classroom runner, not here.
+question | answer            (old untagged form still works; answer optional)
 # battle
 T | question | model sentence (type a full sentence)
 S | question                  (speak)

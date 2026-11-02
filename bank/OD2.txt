@@ -1,16 +1,18 @@
 === OD2 ===
 ## U1 | Amazing Animals | How are animals different from one another?
 # learn
-What does "gills" mean? | the parts that help fish breathe in water
-What does "mammals" mean? | animals with fur or hair whose babies drink milk
-What does "amphibians" mean? | animals that can live on land and in water, like frogs
-Spell the word "feathers". | f-e-a-t-h-e-r-s
-Spell the word "scales". | s-c-a-l-e-s
-Complete: Fish have gills. ___ help them breathe. | They
-Complete: Do gills help fish breathe? Yes, gills help ___ breathe. | them
-What do birds have on their bodies? | feathers and wings
-Where do fish lay their eggs? | in water
-Which animal group do you like best? Why?
+C | What do birds have on their bodies? | Birds have two wings and feathers.
+C | What helps fish breathe in water? | Gills help fish breathe in water.
+C | Where do amphibians lay their eggs? | Amphibians lay their soft eggs in water.
+C | What do baby mammals drink? | Baby mammals drink milk from their mothers.
+G | Say it with a pronoun: Fish have gills. | They have gills.
+G | Say it with a pronoun: Gills help fish breathe. | Gills help them breathe.
+G | Make a yes/no question: Gills help fish breathe. | Do gills help fish breathe?
+G | Answer with a pronoun: Do feathers keep birds warm? | Yes, they keep them warm.
+V | Make a sentence with "scales". | Scales keep fish safe from dangerous fish.
+V | Make a sentence with "fur". | Fur keeps mammals warm.
+V | Make a sentence with "wings". | Birds use their wings to fly.
+V | Make a sentence with "amphibians". | Amphibians can live on land and in water.
 # battle
 T | How are fish different from birds? | Fish have gills and birds have wings.
 B | Birds have two wings and feathers.
