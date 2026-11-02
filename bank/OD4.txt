@@ -1,16 +1,18 @@
 === OD4 ===
 ## U1 | The Universe: Bella's Home | Where are we in the universe?
 # learn
-What does "galaxy" mean? | a huge group of billions of stars, like the Milky Way
-What does "observatory" mean? | a building where people use telescopes to study the sky
-What does "meteorite" mean? | a piece of rock from space that lands on Earth
-Spell the word "universe". | u-n-i-v-e-r-s-e
-Spell the word "telescope". | t-e-l-e-s-c-o-p-e
-Make a prediction with "will" about space travel. | Scientists will send a person to Mars someday.
-Is this a prediction or a fact? "Eric wants to go to space camp next summer." | It is not a prediction; it is about what Eric wants now.
-Where did Charles Kunayak and his daughter Bella live? | In Nome, Alaska.
-In the poem, what did Alaska look like from the sky? | It looked like a bear.
-If you had a spacecraft, where in the universe would you go first?
+C | Where did Charles Kunayak live with his family? | He lived in a quiet neighborhood in Nome, Alaska.
+C | What did Charles write to help Bella understand the universe? | He wrote a poem called "Bella's Home" for his daughter.
+C | What did Alaska look like from the sky? | Alaska looked like a bear from the sky.
+C | What did Bella see at the end of her journey? | She saw billions of galaxies filled with billions of stars.
+G | What will Bella do when she grows up? | I think she will become an astronaut when she grows up.
+G | Will scientists send a person to Mars someday? | Yes, I think scientists will send a person to Mars someday.
+G | Where will people travel one day? | People will travel through the universe one day.
+G | Will Bella visit those places again? | Yes, she will visit those places again in her mind.
+V | Charles had a powerful ___ to study the stars. | telescope
+V | In her mind, Bella climbed inside a ___ and flew. | spacecraft
+V | A shining ___ circled the Earth with the sun's light on its face. | moon
+V | Now the sun was a ___ of bright light in the galaxy. | speck
 # battle
 T | What do you think scientists will discover in space in the future? | I think scientists will find new solar systems in our galaxy.
 S | Describe what you can see in the night sky where you live.
@@ -74,16 +76,18 @@ SP | A: Look at the two pictures. What do you see? | B: In the first picture, I 
 SW | The universe is {a beautiful place}. It has {more stars than we can count}. Look in the sky and you will see {the Milky Way}. | Write three complete sentences about the universe.
 ## U2 | Traveling Together Around the Sun | Where are we in the universe?
 # learn
-What does "orbit" mean? | a planet's path around the sun
-What does "gravity" mean? | the force that pulls things toward a planet or the sun
-What does "space probe" mean? | a machine without people that explores space
-Spell the word "astronomer". | a-s-t-r-o-n-o-m-e-r
-Spell the word "diameter". | d-i-a-m-e-t-e-r
-Complete the future real conditional: "If I become an astronaut, I ___ walk on Mars." | will
-In "If technology continues to grow, we will travel to these places ourselves", which part is the future possibility? | If technology continues to grow
-How many days does Mercury take to complete one orbit? | 88 days
-Which space probe landed on Mars on August 6, 2012? | Curiosity
-Would you like to travel to Mars one day? Why or why not?
+C | Why do all the bodies move around the sun? | They move around the sun because its gravity is very strong.
+C | How long does Earth take to complete one orbit? | Earth completes one orbit in 365 days, or one year.
+C | What makes up most of the four inner planets? | Iron and rock make up most of the four inner planets.
+C | What landed on Mars on August 6, 2012? | A space probe called Curiosity landed on Mars that day.
+G | What will happen if technology continues to grow? | If technology continues to grow, we will travel to these places ourselves.
+G | What will you see if you look through a telescope? | If I look through a telescope, I will see the moon's craters.
+G | What will Wendy do if she gets a telescope? | Wendy will search the sky if she gets a telescope.
+G | Where will you go if you become an astronaut? | If I become an astronaut, I will go to Mars.
+V | Each planet's path around the sun is called an ___. | orbit
+V | Mercury has lots of ___, just like our moon. | craters
+V | Jupiter's ___ is eleven times bigger than Earth's. | diameter
+V | Curiosity moves over the ___ of Mars. | surface
 # battle
 T | What will you do if you get a telescope? | If I get a telescope, I will search the sky every night.
 S | Compare the inner planets and the outer planets.
@@ -144,16 +148,18 @@ SP | A: How many {planets} are in our solar system? | B: I'm not sure, but I thi
 SW | Is {Mars} a moon or a planet? It's {a planet}. Is {Jupiter} bigger or smaller than Earth? It's {bigger}. | Write two choice questions about the solar system and answer them.
 ## U3 | Hidden Army: Clay Soldiers of Ancient China | How do we know what happened long ago?
 # learn
-What does "archaeologist" mean? | a scientist who digs up and studies things from the past
-What does "tomb" mean? | a place where a dead person is buried
-What does "armor" mean? | a hard covering that protects a soldier's body in battle
-Spell the word "emperor". | e-m-p-e-r-o-r
-Spell the word "treasure". | t-r-e-a-s-u-r-e
-Complete the sentence with an infinitive: "The archaeologists tried ___ more soldiers." | to find
-What is an infinitive? | a verb with the word "to" in front of it, like "to study"
-What are the clay soldiers made of? | terracotta, a strong kind of clay
-How old was the emperor when he died? | 49 years old
-Should scientists open the emperor's tomb? Why or why not?
+C | What are the clay soldiers made of? | They are made of terracotta, a strong kind of clay.
+C | How are the soldiers' faces different? | Some faces are old and some faces are young.
+C | Who wore the most elegant uniforms? | The generals wore the most elegant uniforms.
+C | Why does nobody know what is inside the tomb? | Nobody knows because the tomb has never been opened.
+G | What does the Chinese government plan to do with the tomb? | The government plans to keep the tomb closed for now.
+G | What did the emperor decide to build? | The emperor decided to build a huge clay army.
+G | What did the archaeologists try to find? | They tried to find more terracotta soldiers in the pits.
+G | What did the students promise to do? | They promised to study hard for the history test.
+V | The ___ were exact copies of what real soldiers wore. | uniforms
+V | Their ___ had small iron rings that look like fish scales. | armor
+V | At that time, ___ was more precious than gold. | jade
+V | The emperor's body rests in a heavy, bronze ___. | coffin
 # battle
 T | What do you promise to do this year at school? | I promise to study hard for every history test.
 S | Describe the clay soldiers. How are they different from each other?
@@ -218,16 +224,18 @@ SP | A: If you had a time machine, where would you go? | B: I'd like to go back 
 SW | Last year, {a farmer} found {an old coin} in {his garden}. It was over {600} years old. He took it to a museum. | Write three sentences in the past tense about someone who found something old.
 ## U4 | Stumbling upon the Past | How do we know what happened long ago?
 # learn
-What does "paleontologist" mean? | a scientist who studies dinosaurs and fossils
-What does "excavate" mean? | to dig carefully in the ground to find old things
-What does "pastime" mean? | an activity you enjoy doing in your free time
-Spell the word "dinosaur". | d-i-n-o-s-a-u-r
-Spell the word "ravine". | r-a-v-i-n-e
-Complete the sentence with a gerund: "Javier enjoyed ___ with his friends." | playing
-Which verbs are often followed by gerunds? Name two. | enjoy, finish, practice, like
-Where did Javier live? | In Ademuz, in the province of Valencia, Spain
-What name did they give the new dinosaur? | the Javiersaurus
-Do you think children can make important discoveries? Why?
+C | Where did Javier live? | He lived in the hillside town of Ademuz, in Spain.
+C | What was Javier's favorite pastime? | His favorite pastime was to explore the hills and fields.
+C | What did Javier trip on in the ravine? | He tripped on a rough, gray object in the ground.
+C | What did the paleontologists find next to the bone? | They found more bones, as well as a skull.
+G | What did Javier enjoy doing with his friends? | Javier enjoyed playing with his two friends.
+G | Does the paleontologist like working in the rain? | No, he doesn't like working in the rain.
+G | What did the museum staff finish doing? | The museum staff finished cleaning the dinosaur bones.
+G | Do you enjoy exploring the hills? | Yes, I enjoy exploring the hills around my town.
+V | The bone was buried in rock, which lies in ___ under the ground. | layers
+V | They look for volcanic ___ below and above the rock layer. | ash
+V | A ___ from the foundation came to examine the discovery. | paleontologist
+V | Javier's foot caught on something and he ___ in the ravine. | tripped
 # battle
 T | What do you enjoy doing on a summer morning? | I enjoy exploring the hills near my town.
 S | Tell the story of how Javier found the dinosaur bone.
@@ -297,16 +305,18 @@ SP | A: What did {dinosaurs} sound like? | B: They probably sounded very loud. |
 SW | {The skull} is very old. {Many bones} are buried under the ground. {A little water} is in the ravine. | Write three sentences about a discovery, using count and noncount nouns with the correct verb.
 ## U5 | The Breakfast Quest | Where does our food come from?
 # learn
-What does "ingredients" mean? | the foods you mix together to make a dish
-What does "plantation" mean? | a very large farm where one crop grows, like sugar cane
-What does "spoil" mean? | to go bad and become unsafe to eat
-Spell the word "cinnamon". | c-i-n-n-a-m-o-n
-Spell the word "vanilla". | v-a-n-i-l-l-a
-Complete the sentence about a future plan: "We ___ soccer after school today." | are playing
-Change this to a future plan with the present continuous: "I will bake a cake tomorrow." | I am baking a cake tomorrow.
-Where does the best butter come from in the story? | Denmark
-Which country grows the finest vanilla in the story? | Madagascar
-What is the best breakfast you have ever eaten?
+C | What is the boy making for breakfast today? | He is making Granny's Famous Cinnamon Buns today.
+C | Where does the best butter come from? | The best butter comes from a farm in Denmark.
+C | Where does the finest vanilla come from? | The finest vanilla in the world comes from Madagascar.
+C | Why can't Patrick give the boy any cinnamon? | He is all out because they harvested it yesterday.
+G | What are you making for breakfast today? | I'm making a special breakfast with cinnamon buns today.
+G | What are you doing after school today? | We're playing soccer with our friends after school today.
+G | Where are your parents having dinner tomorrow? | My parents are having dinner at a French restaurant tomorrow.
+G | Are you visiting your grandmother this weekend? | Yes, I'm visiting my grandmother this weekend.
+V | The heartiest ___ in the world comes from France. | wheat
+V | To make the best buns, you need the best ___. | ingredients
+V | I climb the tree and ___ some bark off. | peel
+V | We head home before the ingredients ___. | spoil
 # battle
 T | What are you making for dinner this weekend? | I'm making pancakes with my family on Saturday morning.
 S | Tell us how to make your favorite food. What ingredients do you need?
@@ -375,16 +385,18 @@ SP | A: Do you want some fruit? | B: Sure. I love fruit. Thank you. | A: I have 
 SW | My chickens lay {wonderful} eggs. The pumpkins in my garden are {enormous}. I put {creamy} butter on my toast. | Write three sentences about food, using interesting adjectives instead of good, big, or nice.
 ## U6 | From the World to Your Table | Where does our food come from?
 # learn
-What does "export" mean? | to send food or goods to another country to sell
-What does "local" mean? | from the area near where you live
-What does "convenient" mean? | easy and quick to use or do
-Spell the word "agriculture". | a-g-r-i-c-u-l-t-u-r-e
-Spell the word "chemical". | c-h-e-m-i-c-a-l
-Make a polite offer with "Would you like" and an action. | Would you like to try my cheesecake?
-Choose the correct word: "Would you like (to / a) banana for a snack?" | a
-What are "food miles"? | the distance that food travels to get to us
-Name two things you can do to help keep food healthy and save energy. | Buy local food and buy organic food.
-Is it better to buy local food or food from far away? Why?
+C | Where does most of our food probably come from? | Most of our food probably comes from far away.
+C | What do companies do to food before it gets to the supermarket? | Companies process and package most of the food first.
+C | What are "food miles"? | Food miles is the distance that food travels to get to us.
+C | Why do companies put chemicals on food? | They put chemicals on food to help it last longer.
+G | Would you like to try my cheesecake? | Yes, I would like to try your cheesecake, please.
+G | What would you like to know about your food? | I would like to know where my food comes from.
+G | Would you like a delicious apple from South Africa? | Yes, I would like a delicious apple, thank you.
+G | What would you like to eat for lunch today? | I would like a piece of apple pie for lunch.
+V | Buy ___ food, which doesn't have chemicals on it. | organic
+V | Many countries ___ food to places around the world. | export
+V | Buy food that ___ farmers grow in your area. | local
+V | It's ___ to buy food from all around the world. | convenient
 # battle
 T | Where does the food in your kitchen come from? | Some of our rice comes from a local farm near my town.
 S | Tell us about a food that comes from another country.
@@ -440,16 +452,18 @@ SP | A: People often grow {tomatoes} where I live. | B: What do people make with
 SW | The {garden} is {behind the house}. The {asparagus} is {near the carrots}. | Write two sentences that tell where food or plants are, using prepositional phrases of location.
 ## U7 | Art Through New Eyes | Why do we make art?
 # learn
-What does "sculptor" mean? | an artist who makes three-dimensional art from wood, stone, or other materials
-What does "prodigy" mean? | a child with amazing skills, like a nine-year-old painter
-What does "canvas" mean? | the strong cloth that artists paint on
-Spell the word "paintbrushes". | p-a-i-n-t-b-r-u-s-h-e-s
-Spell the word "carpenter". | c-a-r-p-e-n-t-e-r
-Choose the indefinite pronoun: "Did you meet (everything / anyone) at the art gallery?" | anyone
-Which indefinite pronoun means all of the people? | everyone
-What does Edgar Mueller use to paint on the street? | washable paint or chalk
-What are Patrick Dougherty's sculptures made of? | young trees, or saplings
-Which kind of art would you like to make: a street painting, a sculpture, or a paper collage?
+C | What did Kieron draw on his trip to Cornwall? | He drew sketches of the boats he saw there.
+C | Where can you find Edgar Mueller's paintings? | You can find them at festivals and on public walkways.
+C | What are Patrick Dougherty's sculptures made of? | His sculptures are made of young trees, or saplings.
+C | What does Sung Hee Cho glue onto the canvas? | She glues thousands of small pieces of paper onto the canvas.
+G | Can anyone make art from anything? | Yes, anyone can make art from almost anything.
+G | Who worked on the stick sculpture? | Everyone in the community worked on the sculpture.
+G | What do you want to paint in this room? | I want to paint something colorful in this room.
+G | Did you meet anyone at the art gallery? | No, I didn't meet anyone at the art gallery.
+V | By the age of nine, Kieron was considered a child ___. | prodigy
+V | Mueller uses ___ paint or chalk, paintbrushes, and string. | washable
+V | Patrick Dougherty is a unique ___ who works with sticks. | sculptor
+V | She glues the paper onto a large ___ in layers. | canvas
 # battle
 T | What is something you want to paint or draw? | I want to paint something beautiful in my bedroom.
 S | Describe an artist from the reading and the art they make.
@@ -511,16 +525,18 @@ SP | A: What are the children doing? | B: They're {painting}. | A: Does it look 
 SW | We make art because {it's fun}. Yesterday I {drew a picture of my cat} and {colored it with pastels}. | Write two sentences about why you make art and what you did, joining two actions with and.
 ## U8 | Sketches in a Gallery | Why do we make art?
 # learn
-What does "exhibition" mean? | a show of art in a gallery or museum
-What does "landscape" mean? | a painting of land, mountains, or the countryside
-What does "texture" mean? | the way a surface looks or feels, like rough or smooth
-Spell the word "perspective". | p-e-r-s-p-e-c-t-i-v-e
-Spell the word "brilliant". | b-r-i-l-l-i-a-n-t
-Make an offer with "shall" as a question. | Shall I show you some more sketches?
-Make an offer with "will" as a statement for a thirsty friend. | I'll bring you a cold drink.
-Where does Theo go every day after school? | to the art museum
-Whose exhibition does Theo visit? | The Mountain Landscapes of Zayan Khan
-Do you think Theo should play sports with other children instead of sketching? Why?
+C | Where does Theo go each day after school? | Theo goes to the art museum each day after school.
+C | What does each new painting in the exhibition show? | Each painting in the exhibition features a different mountain.
+C | Why doesn't Theo show his artwork to anyone? | He worries that his artwork isn't any good.
+C | What does Zayan Khan tell Theo at the end? | He tells Theo that he is already an artist.
+G | Can you help me with this heavy bag? | Sure, I'll carry that heavy bag for you.
+G | What will you do if I am thirsty? | I'll bring you a cold drink right away.
+G | Theo's kite is stuck in a tree. What will you do? | I'll get your kite down from the tree, Theo.
+G | Shall I sign you up for the school play? | No, thanks, I'll go to the art museum instead.
+V | An ___ is opening: The Mountain Landscapes of Zayan Khan. | exhibition
+V | He likes the contrast of the black lines and the ___ blue sky. | pale
+V | I like the way you create texture with ___. | shading
+V | The man's hands and fingers are ___ with paint. | stained
 # battle
 T | Your friend has a heavy bag. Make an offer. | Shall I carry that heavy bag for you?
 S | Describe your favorite painting or picture.
@@ -582,16 +598,18 @@ SP | A: Do you have a wish? | B: Yes. I wish I could {paint like Claude Monet}. 
 SW | Yesterday I went to {an art gallery}. I saw {a painting of a mountain}. The {painting} was {brilliant}. | Write three sentences about a visit to a gallery or museum, using a, an, and the.
 ## U9 | Jakarta: A Big-City Snapshot | What is a city?
 # learn
-What does "port" mean? | a place on the coast where ships load and unload goods
-What does "architecture" mean? | the style and design of buildings
-What does "souvenirs" mean? | things you buy to remember a place you visited
-Spell the word "rickshaw". | r-i-c-k-s-h-a-w
-Spell the word "antiques". | a-n-t-i-q-u-e-s
-Choose the correct negative indefinite pronoun: "(Nobody / Nothing) can enter the zoo after 5:00 p.m." | Nobody
-What does "nothing" mean? | not anything
-What is Jakarta? | the capital city of Indonesia
-Why are rickshaws banned in Jakarta now? | They were too slow and held up traffic.
-Would you like to live in a big city like Jakarta? Why or why not?
+C | How many people live in Jakarta? | Jakarta is filled with more than 10 million people.
+C | What gives Jakarta a futuristic feel? | Countless skyscrapers give the city a futuristic feel.
+C | What does the old city of Kota have? | Kota has old canals and classical architecture.
+C | Why were rickshaws banned in Jakarta? | They were too slow and held up traffic.
+G | Who could see everything in Jakarta in one day? | No one could see everything in one day.
+G | Who can enter the city zoo after five? | Nobody can enter the city zoo after five.
+G | What is in your pocket? | There is nothing in my pocket right now.
+G | Who sat next to you on the bus? | Nobody sat next to me on the bus today.
+V | Jakarta is one of the most ___ cities in the world. | congested
+V | People shop for dinner and ___ over the price of shrimp. | haggle
+V | The boats transport things like coffee, ___, and exotic fruits. | tuna
+V | The ___ market is a great spot to pick up souvenirs. | antiques
 # battle
 T | What is there to do in your city or town? | There is nothing boring about my city because there are many markets.
 S | Describe a city you have visited. What did you see and eat there?
@@ -653,16 +671,18 @@ SP | A: Why did your city grow where it is today? | B: My city grew because it i
 SW | My city is near {the Pacific Ocean}. People use the water for {fishing}. Ships can travel from {our port} to {other countries}. | Write three sentences about a body of water near your city, with a capital letter for its name.
 ## U10 | Mayor for a Day | What is a city?
 # learn
-What does "mayor" mean? | the leader of a city
-What does "citizens" mean? | the people who live in a city or country
-What does "volunteers" mean? | people who work to help others without being paid
-Spell the word "council". | c-o-u-n-c-i-l
-Spell the word "equipment". | e-q-u-i-p-m-e-n-t
-Add the tag: "Mayors are hard workers, ___?" | aren't they
-Add the tag: "Mr. Clark isn't the mayor, ___?" | is he
-How did Marcy become mayor for a day? | She won the Mayor for a Day contest at her school.
-What did Marcy start to reduce garbage? | a recycling program
-If you were mayor for a day, what would you do first?
+C | How did Marcy become mayor for a day? | She won the Mayor for a Day contest at her school.
+C | What did Marcy do at the new city library? | She cut a celebration ribbon and made a short speech.
+C | Why were the garbage collectors unhappy? | There was too much garbage to pick up.
+C | What was Marcy's idea for the city park? | She planned a Volunteer Day with free ice cream.
+G | You'll work hard as the mayor, won't you? | Yes, I will. I'll do my best, sir.
+G | Marcy wasn't nervous anymore, was she? | No, she wasn't. She wasn't nervous anymore.
+G | Mr. Clark isn't the mayor, is he? | No, he isn't. He is Marcy's assistant today.
+G | Hilda Hanson will build a factory in Glenview, won't she? | Yes, she will. She will start building it tomorrow.
+V | For one day, Marcy would be the ___ of her city. | mayor
+V | Mr. Clark will be your ___ today. | assistant
+V | The ___ equipment at the city park needs fresh paint. | playground
+V | People can ___ at the park and enjoy free ice cream. | volunteer
 # battle
 T | Ask a tag question about your partner. | You like ice cream, don't you?
 S | Tell us about the problems Marcy solved as mayor.
@@ -734,16 +754,18 @@ SP | A: What does a {mayor} have to do? | B: A mayor has to go to many meetings.
 SW | I want to visit {the new library} and {the city park}. Cities are {noisy}, but they are also {exciting}. | Write two sentences about your city using and, but, or or.
 ## U11 | Understanding Viruses | How do our bodies work?
 # learn
-What does "virus" mean? | a very tiny thing that can cause diseases like the flu
-What does "immune" mean? | protected from a disease; the immune system fights viruses
-What does "paralyze" mean? | to make a person unable to move
-Spell the word "bacteria". | b-a-c-t-e-r-i-a
-Spell the word "microscope". | m-i-c-r-o-s-c-o-p-e
-Put the adjectives in order: "a (gray, tiny, ugly) polio virus" | an ugly, tiny, gray polio virus
-What is the order of adjectives? | opinion, size, age, shape, color, kind
-What do you need to see a virus? | a powerful electron microscope
-How does your skin protect you? | It acts like a suit of armor against viruses.
-What do you do to stay healthy when many people have colds?
+C | What do you need to see a virus? | You need a powerful electron microscope to see a virus.
+C | Which virus can paralyze people? | Polio is a virus that can paralyze people it infects.
+C | What is the top layer of your skin made of? | The top layer of your skin is made of dead cells.
+C | What happens to viruses that reach your stomach? | Stomach acids usually destroy the viruses in your stomach.
+G | What kind of visitors does Max Axiom study? | He studies these fascinating, tiny visitors called viruses.
+G | What did the doctor wash? | The doctor washed his new, white lab coat.
+G | What kind of viruses did Max see? | Max saw large, round, red viruses under the microscope.
+G | What is on your desk? | There is a long, white, plastic ruler on my desk.
+V | Viruses are much smaller than ___, so they are hard to see. | bacteria
+V | The ___ virus is the one that causes the flu. | influenza
+V | If you have a cut or ___, viruses may get in. | scrape
+V | Some viruses get trapped in a slimy fluid called ___. | mucus
 # battle
 T | Describe an object in your classroom with two or three adjectives. | There is a long, white, plastic ruler on my desk.
 S | Explain how your body fights viruses.
@@ -805,16 +827,18 @@ SP | A: What do you do when you catch a cold? | B: I {drink a lot of water} and 
 SW | {Wash your hands} every day. Don't {touch your eyes} with your fingers. {Eat healthy food} to stay strong. | Write three commands that give advice on how to stay healthy.
 ## U12 | The Human Body: Systems at Work | How do our bodies work?
 # learn
-What does "arteries" mean? | thick tubes that carry blood from the heart to the body
-What does "diaphragm" mean? | the muscle that moves down and up so your lungs can breathe
-What does "pulse" mean? | the beat of blood moving through an artery that you can count
-Spell the word "trachea". | t-r-a-c-h-e-a
-Spell the word "lungs". | l-u-n-g-s
-Choose the correct form: "My sister (used to go / went) to the pool often as a child." | used to go
-When do we use "used to"? | for an action that happened often in the past but not now
-What are the three major parts of the respiratory system? | the trachea, the lungs, and the diaphragm
-How many times do you breathe every day? | about 20,000 times
-Which body system do you think is the most important? Why?
+C | What are the three major parts of the respiratory system? | They are the trachea, the lungs, and the diaphragm.
+C | What carries blood from the heart to all the cells? | The arteries carry blood from the heart to all the cells.
+C | What happens when your diaphragm moves down? | Your lungs get bigger and air flows into them.
+C | What do your cells create after they use oxygen? | The cells create carbon dioxide after they use oxygen.
+G | How did people use to think about the human body? | People used to think differently about the human body.
+G | How did you use to get to school? | I used to take the bus to school every day.
+G | What did your father use to do with his friends? | My father used to play games with his friends.
+G | Where did your sister use to go often? | My sister used to go to the swimming pool often.
+V | This system first brings ___ into your lungs. | oxygen
+V | Your heart pumps blood into thick tubes called ___. | arteries
+V | Your ___ moves up and squeezes your lungs. | diaphragm
+V | Air flows through your ___ and into your lungs. | trachea
 # battle
 T | Tell us about something you used to do when you were little. | I used to take the bus to school every day.
 S | Explain what happens when you breathe in.
@@ -874,16 +898,18 @@ SP | A: What is the {heart}? | B: It's the part of the body that pumps blood. | 
 SW | Everyone needs to {exercise} to keep their body strong. Nobody wants to {get sick}. Anything is possible when you {work hard}. | Write three sentences with everyone, nobody, or anything about staying healthy.
 ## U13 | From Newspapers to Smartphones: The Rise of the Mass Media | What is the mass media?
 # learn
-What does "mass media" mean? | ways of bringing news and information to many people quickly
-What does "publisher" mean? | a company or person that prints newspapers, magazines, or books
-What does "broadcast" mean? | to send out a program on radio or television
-Spell the word "newspaper". | n-e-w-s-p-a-p-e-r
-Spell the word "smartphone". | s-m-a-r-t-p-h-o-n-e
-Choose the correct verb: "You (must / mustn't) take a newspaper without paying." | mustn't
-What does "don't have to" mean? | a person doesn't need to do something
-Who invented the printing press in 1440? | Johannes Gutenberg
-When did television broadcasting start? | in the 1930s
-Where do you like to get news: newspapers, TV, radio, or the Web? Why?
+C | Who invented the printing press in 1440? | Johannes Gutenberg invented the printing press in 1440.
+C | How many daily newspapers are there in the world today? | There are over 6,000 daily newspapers in the world today.
+C | What were the short news films in theaters called? | These short news films were called newsreels.
+C | When did television broadcasting start? | Television broadcasting started in the 1930s, after the radio.
+G | Do you have to pay for the Internet at home? | Yes, you must pay for the Internet to use it at home.
+G | Do you have to carry a computer to check the news? | No, you don't have to carry a computer to check the news.
+G | Can I take a newspaper without paying for it? | No, you mustn't take a newspaper without paying for it.
+G | What do we have to do for the test? | We have to study harder for the test.
+V | ___ helps to pay for the cost of publishing newspapers. | Advertising
+V | Over two billion people now have a ___. | smartphone
+V | People can share information through social networks and ___. | blogs
+V | The first radio station didn't ___ until 1920. | broadcast
 # battle
 T | Make a rule for students with "must" or "mustn't". | Students must walk quietly in the halls.
 S | Tell us how people got news long ago and how they get it today.
@@ -956,16 +982,18 @@ SP | A: How do people in your family get the news? | B: My dad gets news from {t
 SW | My {dad} gets news from {the newspaper}. {He} reads it every morning because {it is easy}. | Write three sentences about how someone in your family gets the news, using pronouns.
 ## U14 | From the Blog of Elsa B. Garcia, Kid Reporter | What is the mass media?
 # learn
-What does "headline" mean? | the big title at the top of a news story
-What does "investigate" mean? | to find out the facts about something carefully
-What does "editor" mean? | the person who decides what goes in a newspaper and checks the stories
-Spell the word "interview". | i-n-t-e-r-v-i-e-w
-Spell the word "reporter". | r-e-p-o-r-t-e-r
-Change to the present perfect: "I decide to keep a blog." | I have decided to keep a blog.
-What is the past participle of "write"? | written
-What did Elsa want to save? | the old stone house across the street
-Who was the little girl who saved seven people in the fire? | Miss Lu
-Would you like to be a reporter? Why or why not?
+C | Who owns the old stone house across the street? | The city government owns the old stone house.
+C | What was the stone building long ago? | It was once the gatehouse of a huge mansion.
+C | Who saved seven people in the fire? | Miss Lu saved seven people when she was nine.
+C | What did the mayor decide on August 1? | The mayor decided not to tear down the old house.
+G | What has Elsa decided to do? | She has decided to keep a blog about her stories.
+G | Has he written a blog before? | No, he hasn't written a blog before.
+G | How many interviews has the reporter done? | The reporter has done many interviews this year.
+G | How have smartphones changed the news? | Smartphones have changed the news business a lot.
+V | I found an entire ___ called The Lost History of Stone House. | website
+V | The ___ said a young girl saved seven people in the fire. | headline
+V | I have never done an ___ before, and I'm very nervous. | interview
+V | Miss Lu is a ___, so it isn't fair to take her home. | hero
 # battle
 T | Tell us something you haven't done before. | I haven't met a real reporter before.
 S | Tell Elsa's story in your own words.
@@ -1027,16 +1055,18 @@ SP | A: I think {reporters have a difficult job}. | B: Why do you think that? | 
 SW | I have {written} a blog about {my school}. I have also {investigated} {a news story}. | Write two sentences about things you have done, using the present perfect.
 ## U15 | Forces of Nature | What can we learn from nature's power?
 # learn
-What does "tsunami" mean? | a huge wave caused by an earthquake under the ocean
-What does "blizzard" mean? | a very heavy snowstorm with strong winds
-What does "collapse" mean? | to fall down suddenly, like a building in an earthquake
-Spell the word "hurricane". | h-u-r-r-i-c-a-n-e
-Spell the word "tornado". | t-o-r-n-a-d-o
-Add "ever" to the question: "Have you seen a tornado?" | Have you ever seen a tornado?
-Answer with "never": "Have you ever felt an earthquake?" | No, I haven't. I've never felt an earthquake.
-Where does a hurricane form? | over warm ocean water
-Which place has more tornadoes than any other place in the world? | North America
-Which force of nature do you think is the most dangerous? Why?
+C | Where does a hurricane form? | A hurricane forms over warm ocean water.
+C | What does a tornado often look like? | A tornado often looks like a funnel with spinning winds.
+C | Which place has more tornadoes than any other? | North America has more tornadoes than any other place.
+C | Why are blizzards dangerous to drive in? | Drivers can't see far away and may lose control of their cars.
+G | Have you ever seen a real tornado? | No, I've never seen a real tornado.
+G | Have you ever experienced an earthquake? | Yes, I have experienced a small earthquake before.
+G | Has your teacher ever driven in a blizzard? | No, she has never driven in a blizzard.
+G | Have you ever watched a scary movie? | Yes, I have watched a scary movie about a tsunami.
+V | In an earthquake, objects and even buildings can ___. | collapse
+V | A ___ travels very fast through the water. | tsunami
+V | In cold climates, ___ sometimes completely cover an area. | blizzards
+V | Many rescue workers helped the ___ of this disaster. | victims
 # battle
 T | Ask your partner about a life experience with "Have you ever". | Have you ever experienced an earthquake?
 S | Explain what causes a tsunami and what happens after it.
@@ -1096,16 +1126,18 @@ SP | A: What will the weather be like today? | B: There might be {a lot of rain}
 SW | I've experienced {a thunderstorm} in {my town}. My family has never been in {a blizzard}. We've usually been safe! | Write three sentences about forces of nature you have or have never experienced.
 ## U16 | Staying Calm Before the Storm | What can we learn from nature's power?
 # learn
-What does "emergency" mean? | a dangerous situation that needs quick action
-What does "storm shelter" mean? | a safe place where people stay during a storm
-What does "supplies" mean? | the things you need, like food, water, and batteries
-Spell the word "flashlight". | f-l-a-s-h-l-i-g-h-t
-Spell the word "batteries". | b-a-t-t-e-r-i-e-s
-Complete the sentence: "Has Vince washed the car ___? It still looks dirty." | yet
-Complete the sentence: "Emma has ___ left for work. She left a minute ago." | just
-Which hurricane was moving toward Chetumal in the story? | Hurricane Dean
-How many liters of bottled water were on the emergency list? | 20 liters
-What would you pack first in an emergency? Why?
+C | How old was Luis when Hurricane Dean hit the coast? | Luis was nine years old when Hurricane Dean hit.
+C | What did Luis's father ask the family to do? | He asked them to leave Chetumal and go further inland.
+C | Why did the supermarket turn Luis's mother away? | There were too many people at the supermarket.
+C | Where did the family stay after they left the city? | They stayed at a storm shelter many kilometers inland.
+G | Have you packed everything we need yet? | Yes, I've already packed everything we need.
+G | Have you cleaned your room yet? | No, I haven't cleaned my room yet.
+G | Has Vince washed the car yet? | Yes, he has just washed the car.
+G | What have you just put in your flashlight? | I've just put new batteries in my flashlight.
+V | The government has declared a state of ___. | emergency
+V | The rest of the supplies would go in the ___ of the car. | trunk
+V | Hurricane Dean made ___ near the town of Majahual. | landfall
+V | There were 530 local storm ___ with food, blankets, and medicine. | shelters
 # battle
 T | What have you already done today? | I've already finished my homework and packed my bag.
 S | Tell us how Luis and his family prepared for the hurricane.
@@ -1173,16 +1205,18 @@ SP | A: A hurricane is coming. What will we need? | B: We need to get {bottled w
 SW | My {sister} is {brave}. She walked {bravely} into the dark storm shelter. | Write about a person with an adjective and then its -ly adverb.
 ## U17 | The Natural Communities of Earth | Why are biomes important?
 # learn
-What does "biome" mean? | a community of plants and animals that live together in the same area
-What does "tundra" mean? | a frozen biome north of the taiga with very little rain
-What does "equator" mean? | the imaginary line around the middle of the Earth
-Spell the word "desert". | d-e-s-e-r-t
-Spell the word "grassland". | g-r-a-s-s-l-a-n-d
-Choose "for" or "since": "My dad has studied mammals ___ twenty years." | for
-Choose "for" or "since": "The government has protected this forest ___ 1998." | since
-How many major biomes are there on Earth? | eight
-Which biome is the driest on Earth? | the desert
-Which biome would you like to visit? Why?
+C | How many major biomes are there on Earth? | There are eight major biomes on Earth.
+C | Where are tropical rainforests? | Tropical rainforests are near the equator, where lots of rain falls.
+C | Why have people turned many grasslands into farms? | Grasslands have rich soil and almost no trees.
+C | Which biome is the driest on Earth? | The desert is the driest biome on Earth.
+G | How long have you gone to school? | I've gone to school for five years.
+G | How long has your dad studied mammals? | My dad has studied mammals for twenty years.
+G | How long has the government protected this forest? | The government has protected this forest since 1998.
+G | How long have these biomes provided a home for animals? | They have provided a home for animals for a very long time.
+V | A ___ is a community of plants and animals that live together. | biome
+V | The ___ is a forest biome with evergreen trees. | taiga
+V | The ___ is always frozen and north of the taiga. | tundra
+V | Plants like the ___ can live without much water. | cactus
 # battle
 T | How long have you gone to this school? | I have gone to this school since I was seven years old.
 S | Describe a biome. What is the weather like and what animals live there?
@@ -1244,16 +1278,18 @@ SP | A: What happens to the trees through the seasons? | B: In the spring, the t
 SW | The {polar bear} hunted for {seals} until it {caught one}. I will stay in the {taiga} until the snow falls. | Write two sentences about animals or biomes with until.
 ## U18 | Camila's Journey | Why are biomes important?
 # learn
-What does "petition" mean? | a letter that many people sign to ask for a change
-What does "marine park" mean? | a protected area of the ocean where animals and plants are kept safe
-What does "astonish" mean? | to surprise someone very much
-Spell the word "seahorse". | s-e-a-h-o-r-s-e
-Spell the word "snorkel". | s-n-o-r-k-e-l
-Choose the correct form: "He (went / has gone) to the Arctic last year." | went
-When do we use the present perfect instead of the simple past? | when we don't know exactly when the action happened
-Where did Camila live? | in Belize City, on the coast of Belize
-How many people signed Camila's petition in three weeks? | 20,000 people in 38 countries
-What can children do to help protect the ocean?
+C | Where did Camila live? | Camila lived in Belize City on the coast of Belize.
+C | What did Camila's father do for the government? | He helped to manage the seven marine parks off the coast.
+C | Why was Camila angry and upset? | A speedboat full of tourists raced toward the reef.
+C | How many people signed Camila's petition in three weeks? | In three weeks, 20,000 people in 38 countries signed it.
+G | What has Camila created to help the coral reefs? | Camila has created a petition on the Internet.
+G | When did Camila create the petition? | When she got home, Camila created a petition.
+G | Have you ever run in a race? | Yes, I have. I ran in a race last summer.
+G | Has the explorer seen a manta ray before? | Yes, he has seen a manta ray before.
+V | Hundreds of butterfly fish, parrot fish, and ___ darted around her. | seahorses
+V | They saw a large ___ filled with tourists racing toward the reef. | speedboat
+V | Within one year, three countries passed ___ to protect their coral reefs. | laws
+V | One day, Camila's father ___ her to visit one of the parks. | invited
 # battle
 T | Tell us something you have done and when you did it. | I have run in a race. I ran in it last summer.
 S | Explain why coral reefs are important.
