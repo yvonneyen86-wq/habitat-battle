@@ -5,10 +5,10 @@ C | What do children often get at Chinese New Year? | Children often get money i
 C | What do families do at Diwali? | Families light candles and decorate their homes with flowers.
 C | How many countries play volleyball? | People play volleyball in 211 countries.
 C | What do folk dancers wear in Turkey? | Folk dancers in Turkey wear colorful costumes.
-G | How do the people feel at the soccer game? | The people at the game are very excited.
-G | Is a long race tiring or boring? | A long race is very tiring.
-G | How do you feel after a long race? | I feel very tired after a long race.
-G | What does Jay think about races? | Jay thinks that races are very boring.
+G | How do the people feel at the soccer game? | The people at the game are very excited. | excited · people · game
+G | Is a long race tiring or boring? | A long race is very tiring. | tiring · long race
+G | How do you feel after a long race? | I feel very tired after a long race. | tired · feel · race
+G | What does Jay think about races? | Jay thinks that races are very boring. | boring · Jay · races
 V | Diwali is the ___ of lights in India. | festival
 V | A ___ is always a big celebration in Egypt. | wedding
 V | The first team to reach a ___ of 25 wins. | score
@@ -83,10 +83,10 @@ C | Where does Carlos kick his red rubber ball? | Carlos kicks his ball high up 
 C | What does Ashanti act like in Da Ga? | Ashanti acts like a snake in the center of the circle.
 C | How many stones does Hyo need to line up? | Hyo needs to line up five of his stones to win.
 C | What does Papa draw in the sand? | Papa draws boxes in the sand for La Thunkuna.
-G | What do Ashanti's friends like doing? | Ashanti's friends like skipping around the circle.
-G | What does Maria like doing in the game? | Maria likes landing on one foot.
-G | Is bouncing a ball fun? | Yes, bouncing a ball is lots of fun.
-G | What is fun to do with a ball? | Kicking it high in the sky is fun.
+G | What do Ashanti's friends like doing? | Ashanti's friends like skipping around the circle. | skipping · like · circle
+G | What does Maria like doing in the game? | Maria likes landing on one foot. | landing · likes · one foot
+G | Is bouncing a ball fun? | Yes, bouncing a ball is lots of fun. | bouncing · Yes · lots of fun
+G | What is fun to do with a ball? | Kicking it high in the sky is fun. | Kicking · high · fun
 V | Ashanti tries to ___ the next Da Ga. | tag
 V | The ball flies over a forest, white ___, and an ocean. | cliffs
 V | Maria puts her arms out to keep her ___. | balance
@@ -153,12 +153,12 @@ SW | {What} is your favorite game? {Where} do you play it? {Why} do you like it?
 # learn
 C | Where is Sati's new house? | Sati's new house is in St. Cloud, Minnesota.
 C | What is Sati's dad's new job? | Sati's dad is a surgeon at the hospital.
-C | What do Sati and Sunil do every Saturday in October? | They rake leaves in their yard every Saturday.
+C | What do Sati and Sunil do every Saturday in October? | Sati and Sunil rake leaves in their yard every Saturday.
 C | What lessons is Sati taking with Emily? | Sati is taking tap dance lessons with Emily.
-G | Could Sati ice skate before she moved? | No, Sati couldn't ice skate before she moved.
-G | Can Sati ice skate now? | Yes, now Sati can ice skate on the lake.
-G | Why can't Sati play with Nisha now? | Sati can't play with Nisha because Nisha is in India.
-G | What could you do when you were five? | I could read short words when I was five.
+G | Could Sati ice skate before moving to Minnesota? | No, Sati couldn't ice skate before she moved. | couldn't · No · ice skate
+G | Can Sati ice skate now? | Yes, now Sati can ice skate on the lake. | can · Yes · ice skate · lake
+G | Why can't Sati play with Nisha now? | Sati can't play with Nisha because Nisha is in India. | can't · because · India
+G | What could you do when you were five? | I could read short words when I was five. | could · read · short words
 V | ___ is hard work, and we are still unpacking boxes. | Moving
 V | Dad started his new job as a ___ at the hospital. | surgeon
 V | Sunil and I threw ___ and went sledding with Emily. | snowballs
@@ -230,12 +230,12 @@ SW | In {India}, the summers are {rainy}, but in {Minnesota} the summers are {su
 # learn
 C | Why do people move from rural areas to urban areas? | People move to urban areas to get a job.
 C | Where are suburbs? | Suburbs are near the outside of a city.
-C | Why did immigrants from Europe move to Brazil? | They moved to Brazil to work in factories.
+C | Why did immigrants from Europe move to Brazil? | Immigrants from Europe moved to Brazil to work in factories.
 C | Where did the grandparents move when the child was five? | The grandparents moved to Portugal for the warm weather.
-G | What happens when another city has good services? | When a city has good services, people want to move there.
-G | What happens if ice gets warm? | If ice gets warm, it melts.
-G | Where do you go if you get sick? | If I get sick, I go to the clinic.
-G | What do you do when you are hungry? | When I am hungry, I have a snack.
+G | What happens when another city has good services? | When a city has good services, people want to move there. | When · good services · move
+G | What happens if ice gets warm? | If ice gets warm, it melts. | If · ice · melts
+G | Where do you go if you get sick? | If I get sick, I go to the clinic. | If · sick · clinic
+G | What do you do when you are hungry? | When I am hungry, I have a snack. | When · hungry · snack
 V | Every day, people pack their ___ and move to new places. | belongings
 V | Families with children like to live in the ___. | suburbs
 V | People move ___ to find a better way of life. | abroad
@@ -301,16 +301,16 @@ SP | A: What kind of community do you like the most? | B: I like {suburban} area
 SW | I want to move to {Australia} because {the weather there is often sunny}. I also like it because {there are beautiful beaches}. | Write two complete sentences with because about a place you want to move to.
 ## U5 | Three Poets | Why do people write poems?
 # learn
-C | Which two countries do the three poets come from? | They come from the United States and the United Kingdom.
+C | Which two countries do the three poets come from? | The three poets come from the United States and the United Kingdom.
 C | What did Aileen Fisher love to write about? | Aileen Fisher loved to write about insects.
 C | Which famous book did Robert Louis Stevenson write? | Robert Louis Stevenson wrote the famous Treasure Island.
 C | How do insects smell in "But I Wonder..."? | Insects smell with feelers, not with little noses.
-G | What were Michael Rosen and his daughter doing? | They were eating at a table together.
-G | What was the raisin doing on the table? | The raisin was whooshing across the table like a shooting star.
-G | What were they doing last night? | They were watching television last night.
-G | What was Sarah doing yesterday afternoon? | She was playing in the park yesterday afternoon.
+G | What were Michael Rosen and his daughter doing? | Michael Rosen and his daughter were eating at a table. | were eating · table
+G | What was the raisin doing on the table? | The raisin was whooshing across the table like a shooting star. | was whooshing · table · shooting star
+G | What were the children doing last night? | The children were watching television last night. | were watching · television · last night
+G | What was Sarah doing yesterday afternoon? | Sarah was playing in the park yesterday afternoon. | was playing · park · yesterday
 V | A ___ has escaped from the jar on the table. | raisin
-V | Now it's leaping in the air like a ___. | kangaroo
+V | Now the raisin is leaping in the air like a ___. | kangaroo
 V | The crickets sing in the ___, and the katydids sing in trees. | thickets
 V | Aileen Fisher loved to write about ladybugs and ___. | bees
 # battle
@@ -379,10 +379,10 @@ C | How many lines does a cinquain poem have? | A cinquain poem has five lines.
 C | Where does haiku come from? | Haiku poems come from the country of Japan.
 C | How do you write the topic word in an acrostic poem? | You write the topic word vertically, up and down.
 C | What are haiku poems often about? | Haiku poems are often about nature and the four seasons.
-G | What happened when you were walking to school this morning? | I was walking to school when I saw an orange butterfly.
-G | What was Jen doing when her phone rang? | Jen was going to the movies when her phone rang.
-G | What happened when Mike was reading a book? | Mike was reading a book when he fell asleep.
-G | What were you doing when the rain came down? | I was dreaming of the ocean when the rain came down.
+G | What happened when you were walking to school this morning? | I was walking to school when I saw an orange butterfly. | was walking · when · saw · butterfly
+G | What was Jen doing when her phone rang? | Jen was going to the movies when her phone rang. | was going · when · rang
+G | What happened when Mike was reading a book? | Mike was reading a book when he fell asleep. | was reading · when · fell asleep
+G | What were you doing when the rain came down? | I was dreaming of the ocean when the rain came down. | was dreaming · when · ocean
 V | Haiku poems use an exact number of ___ in each line. | syllables
 V | Line 2 of a cinquain has two ___ that describe the topic. | adjectives
 V | Line 3 has three action ___ that end in -ing. | verbs
@@ -454,10 +454,10 @@ C | How did people tell time before clocks? | People watched the sun move across
 C | What is the imaginary line the Earth spins on called? | The imaginary line is called an axis.
 C | How many minutes are there in one day? | There are 1,440 minutes in one day.
 C | How many time zones do we divide the Earth into? | We divide the Earth into 24 time zones.
-G | What time will it be here in two hours? | In two hours, it will be noon here.
-G | Will it be noon on the other side of the world? | No, it won't be noon on the other side.
-G | What time will the sun rise tomorrow? | Tomorrow the sun will rise at 6:00 a.m.
-G | What will the weather be like tomorrow? | The weather tomorrow will be sunny and windy.
+G | What time will the clock show here in two hours? | In two hours, it will be noon here. | will be · noon · two hours
+G | Will the other side of the world have noon, too? | No, it won't be noon on the other side. | won't be · No · noon · other side
+G | What time will the sun rise tomorrow? | Tomorrow the sun will rise at 6:00 a.m. | will rise · sun · 6:00
+G | What will the weather be like tomorrow? | The weather tomorrow will be sunny and windy. | will be · weather · sunny · windy
 V | At ___, when the sun was very high, people ate and rested. | noon
 V | The Earth travels around, or ___, the sun. | orbits
 V | One ___ is equal to 12 months, or just over 52 weeks. | year
@@ -524,16 +524,16 @@ SW | In {Taipei}, the sun will rise tomorrow at {6:00 a.m.} and it will set at {
 # learn
 C | Where was Molly's mother going on her business trip? | Molly's mother was going to Tokyo, Japan.
 C | What was wrong with Molly's father in the morning? | Molly's father had a bad earache in the morning.
-C | What did Molly put on her father's forehead? | She put a cold washcloth on his forehead.
+C | What did Molly put on her father's forehead? | Molly put a cold washcloth on her father's forehead.
 C | How many hours ahead of Los Angeles is Tokyo? | Tokyo is sixteen hours ahead of Los Angeles.
-G | What is Molly going to do all day? | Molly is going to take care of her father all day.
-G | What is your mom going to do tomorrow? | My mom is going to cook dinner tomorrow.
-G | Are you going to read a good book tonight? | Yes, I'm going to read a good book tonight.
-G | What are you going to do this weekend? | I'm going to visit my grandmother this weekend.
+G | What is Molly going to do all day? | Molly is going to take care of her father all day. | is going to · take care · all day
+G | What is your mom going to do tomorrow? | My mom is going to cook dinner tomorrow. | is going to · cook dinner · tomorrow
+G | Are you going to read a good book tonight? | Yes, I'm going to read a good book tonight. | I'm going to · Yes · good book
+G | What are you going to do this weekend? | I'm going to visit my grandmother this weekend. | I'm going to · visit · grandmother
 V | Your ___ is Tokyo, so you should be at the airport early. | destination
 V | Remember, ___ can only check two bags. | passengers
 V | You should take some ___ and go back to bed. | medicine
-V | Now Dad has a headache and a ___, so I'm giving him water. | fever
+V | Now Dad has a headache and a ___, so Molly gives Dad water. | fever
 # battle
 T | What are you going to do this weekend? | I'm going to read a good book this weekend.
 T | How did Molly take care of her father? | She put a cold washcloth on his forehead.
@@ -606,10 +606,10 @@ C | What do we call coal, oil, and natural gas? | We call coal, oil, and natural
 C | What does hydropower use to make electricity? | Hydropower uses moving water in rivers and dams.
 C | What did windmills do many years ago? | Windmills made flour from grain many years ago.
 C | Where does solar power come from? | Solar power comes from sunlight on solar panels.
-G | Will we find other sources of green energy? | We may find other sources of green energy.
-G | What might you see in your area? | You might see solar panels in your area.
-G | What might you do on Sunday? | I might visit my aunt on Sunday.
-G | What may your family do this weekend? | My family may see a movie this weekend.
+G | Will scientists find other sources of green energy? | Scientists may find other sources of green energy. | may · find · green energy
+G | What might you see in your area? | You might see solar panels in your area. | might · see · solar panels
+G | What might you do on Sunday? | I might visit my aunt on Sunday. | might · visit · aunt
+G | What may your family do this weekend? | My family may see a movie this weekend. | may · see · movie
 V | Fossil fuels make ___, and this is bad for the Earth. | pollution
 V | This water pushes the blades of a ___. | turbine
 V | Green energy is ___, so it won't run out. | renewable
@@ -677,13 +677,13 @@ SW | This weekend, I may {go to the park}. I might {ride my bike} with {my broth
 ## U10 | Hector the Energy Saver | Where does energy come from?
 # learn
 C | What was Hector's bicycle called? | Hector's special bicycle was called Lightning.
-C | What were Hector's mask and cape made from? | They were made from Uncle Jack's old curtains.
+C | What were Hector's mask and cape made from? | Hector's mask and cape were made from Uncle Jack's old curtains.
 C | What did Hector see stuck in the traffic jam? | Hector saw an ambulance stuck among the cars.
-C | What did Hector tell Mr. Big to put on the roof? | He told Mr. Big to put solar panels on the roof.
-G | How much energy does Hector use? | Hector uses only a little energy.
-G | How many cars were on the road? | There were only a few cars on the road.
-G | Does Mr. Big use a lot of energy? | Yes, Mr. Big uses a lot of energy.
-G | What do you have in your pencil case? | I have a few pencils and a little paper.
+C | What did Hector tell Mr. Big to put on the roof? | Hector told Mr. Big to put solar panels on the roof.
+G | How much energy does Hector use? | Hector uses only a little energy. | a little · Hector · energy
+G | How many cars were on the road? | There were only a few cars on the road. | a few · only · cars
+G | Does Mr. Big use a lot of energy? | Yes, Mr. Big uses a lot of energy. | a lot of · Yes · energy
+G | What do you have in your pencil case? | I have a few pencils and a little paper. | a few · a little · pencils · paper
 V | Hector pressed a ___, and Lightning became a helicopter. | button
 V | You can also take the train or the ___. | subway
 V | Elevators and ___ carried people up and down. | escalators
@@ -751,13 +751,13 @@ SW | I want to be an energy saver like Hector. At home, I can {turn off the ligh
 ## U11 | Mystery in the Gym | How do people make music?
 # learn
 C | Where is the surprise guest at 2:00? | The surprise guest is in the gym at 2:00.
-C | Where did Lisa read about closing your eyes? | Lisa read about it in a magazine.
+C | Where did Lisa read about closing your eyes? | Lisa read about closing your eyes in a magazine.
 C | What does Marco think the loud trumpet call is? | Marco thinks there is an elephant in the gym.
-C | What is the man in the black jacket holding? | He is holding a thin white baton.
-G | Which is louder, the trombone or the cello? | The trombone is louder than the cello.
-G | Which instruments are the loudest in the orchestra? | The timpani drums are the loudest instruments.
-G | Is a trumpeting elephant more deafening than a trombone? | Yes, a trumpeting elephant is more deafening than a trombone.
-G | Which is more beautiful, a cello or a drum? | A cello is more beautiful than a drum.
+C | What is the man in the black jacket holding? | The man in the black jacket is holding a thin white baton.
+G | Which is louder, the trombone or the cello? | The trombone is louder than the cello. | louder than · trombone · cello
+G | Which instruments are the loudest in the orchestra? | The timpani drums are the loudest instruments. | the loudest · timpani drums
+G | Is a trumpeting elephant more deafening than a trombone? | Yes, a trumpeting elephant is more deafening than a trombone. | more deafening than · Yes · elephant
+G | Which is more beautiful, a cello or a drum? | A cello is more beautiful than a drum. | more beautiful than · cello · drum
 V | Marco thinks the surprise guest is an ___. | astronaut
 V | Nobody knows who it is because it's a ___. | mystery
 V | It sounds like lots of bees, so the guest is a ___. | beekeeper
@@ -823,14 +823,14 @@ SP | A: Is the {trombone} as big as the cello? | B: No, it isn't. It's smaller. 
 SW | My favorite instrument is the {cello}. Its sound is {low and beautiful}. I think it is {more beautiful than} a trombone. | Write about your favorite instrument and compare it with another one.
 ## U12 | The World of Instruments | How do people make music?
 # learn
-C | How does a string instrument make music? | It makes music when its strings vibrate.
+C | How does a string instrument make music? | A string instrument makes music when its strings vibrate.
 C | How many strings does the erhu have? | The erhu only has two strings.
 C | What are panpipes usually made of? | Panpipes are usually made of bamboo or cane.
 C | What do djembe drummers use to make a sound? | Djembe drummers use their hands to make a sound.
-G | Is the didgeridoo's sound as low as the tuba's? | Yes, the didgeridoo's sound is as low as the tuba's.
-G | Is the didgeridoo as curved as the tuba? | No, the didgeridoo is not as curved as the tuba.
-G | Is a violin as big as a cello? | No, a violin is not as big as a cello.
-G | How loud is the drum? | The drum is as loud as the falling rain.
+G | Is the didgeridoo's sound as low as the tuba's? | Yes, the didgeridoo's sound is as low as the tuba's. | as low as · Yes · didgeridoo
+G | Is the didgeridoo as curved as the tuba? | No, the didgeridoo is not as curved as the tuba. | not as curved as · No · tuba
+G | Is a violin as big as a cello? | No, a violin is not as big as a cello. | not as big as · No · violin
+G | How loud is the drum? | The drum is as loud as the falling rain. | as loud as · drum · falling rain
 V | The ___ is a woodwind instrument with one tube. | flute
 V | Strings ___, or move very quickly from side to side. | vibrate
 V | The ___, or sound, of the tuba is low. | pitch
@@ -897,11 +897,11 @@ SW | My favorite instrument is the {djembe}. It's a {percussion} instrument. Its
 C | What can a hammer do? | A hammer is a lever that can pull out nails.
 C | What happens when you push down on one end of a seesaw? | The other end of the board goes up.
 C | What simple machine does a doorknob use? | A doorknob uses a wheel and axle.
-C | What do people in wheelchairs use to enter buildings? | They use ramps to go in and out of buildings.
-G | A hammer is a lever. What about a seesaw? | A seesaw is a lever, too.
-G | The wedge isn't a new invention. What about the ramp? | The ramp isn't a new invention, either.
-G | Cars use a wheel and axle. Do bicycles? | Yes, bicycles use a wheel and axle, too.
-G | Harry doesn't fall off the seesaw. Does Jay? | No, Jay doesn't fall off, either.
+C | What do people in wheelchairs use to enter buildings? | People in wheelchairs use ramps to go in and out of buildings.
+G | A hammer is a lever. What about a seesaw? | A seesaw is a lever, too. | too · seesaw · lever
+G | The wedge isn't a new invention. What about the ramp? | The ramp isn't a new invention, either. | either · isn't · ramp
+G | Cars use a wheel and axle. Do bicycles? | Yes, bicycles use a wheel and axle, too. | too · Yes · wheel and axle
+G | Harry doesn't fall off the seesaw. Does Jay? | No, Jay doesn't fall off, either. | either · No · doesn't
 V | A hammer is a lever that can pull out ___. | nails
 V | A ___ is like two ramps put together with one sharp edge. | wedge
 V | A ___ is a ramp that winds around and around in a circle. | screw
@@ -965,12 +965,12 @@ SW | {The screw} and {the lever} are simple machines. I use {a screw} every day 
 # learn
 C | What was Antonio Rossi's job in Venice? | Antonio Rossi was a very talented glassblower in Venice.
 C | Who were the two glass vases for? | The vases were for Mr. Lombardi, the great writer.
-C | What did Clara see when she looked through the glass base? | The letters on the note looked big.
-C | What did Clara wrap around the two glass pieces? | She wrapped a flat piece of wire around them.
-G | How did Antonio make his glassware with the new furnace? | Antonio made his glassware faster than before.
-G | Who worked the most carefully of all? | Clara worked the most carefully of all.
-G | Who came the earliest, Harry or you? | Harry came the earliest of all of us.
-G | How did your class walk compared to their class? | Our class walked more quietly than their class.
+C | What did Clara see when looking through the glass base? | The letters on the note looked big.
+C | What did Clara wrap around the two glass pieces? | Clara wrapped a flat piece of wire around the glass pieces.
+G | How did Antonio make his glassware with the new furnace? | Antonio made his glassware faster than before. | faster than · glassware · before
+G | Who worked the most carefully of all? | Clara worked the most carefully of all. | the most carefully · Clara · of all
+G | Who came the earliest, Harry or you? | Harry came the earliest of all of us. | the earliest · Harry
+G | How did your class walk compared to their class? | Our class walked more quietly than their class. | more quietly than · Our class
 V | Like his father, Antonio was a very talented ___. | glassblower
 V | With his new ___, Antonio made his glassware faster. | furnace
 V | Clara found a length of ___ and pounded it flat. | wire
@@ -1046,10 +1046,10 @@ C | What does a sunflower's life begin with? | A sunflower's life begins with a 
 C | Where do the roots get water and food? | The roots get water and food from the soil.
 C | What do bees bring to the sunflower? | Bees bring pollen with them from other flowers.
 C | What do people use sunflower oil for? | People use sunflower oil for cooking.
-G | What do you fill the pot with? | I fill the pot with a bag of soil.
-G | How do you moisten the soil? | I moisten the soil with a cup of water.
-G | What did you buy at the garden shop? | I bought a box of seeds at the garden shop.
-G | What do you have in your shopping bag? | I have a loaf of bread and a jar of jam.
+G | What do you fill the pot with? | I fill the pot with a bag of soil. | a bag of · soil · pot
+G | How do you moisten the soil? | I moisten the soil with a cup of water. | a cup of · water · moisten
+G | What did you buy at the garden shop? | I bought a box of seeds at the garden shop. | a box of · seeds · bought
+G | What do you have in your shopping bag? | I have a loaf of bread and a jar of jam. | a loaf of · a jar of · bread · jam
 V | Plant the seed one or two centimeters under the ___. | soil
 V | A single smooth ___ grows higher and higher above the ground. | stem
 V | The flower has bright yellow ___ that grow around it. | petals
@@ -1116,15 +1116,15 @@ SW | First, {fill a pot with soil}. Second, {plant the seed under the soil}. Fin
 C | Where did Marisol plant her single seed? | Marisol planted her seed in a small community garden.
 C | How often did Marisol water her plant? | Marisol watered her plant every day.
 C | What did Mr. Singh carry away from the garden? | Mr. Singh carried away a basket full of beans.
-C | What did Mrs. Rodriguez tell Marisol to do? | She told Marisol to save the seeds and plant again.
-G | What is Marisol curious about? | Marisol is curious about her plant.
-G | What was Marisol surprised at? | She was surprised at the big sunflower.
-G | Was Marisol happy with the mural? | Yes, she was very happy with the mural.
-G | What are you curious about? | I am curious about rain forests.
+C | What did Mrs. Rodriguez tell Marisol to do? | Mrs. Rodriguez told Marisol to save the seeds and plant again.
+G | What is Marisol curious about? | Marisol is curious about her plant. | curious about · Marisol · plant
+G | What was Marisol surprised at? | Marisol was surprised at the big sunflower. | surprised at · big sunflower
+G | Was Marisol happy with the mural? | Yes, Marisol was very happy with the mural. | happy with · Yes · mural
+G | What are you curious about? | I am curious about rain forests. | curious about · rain forests
 V | A group of ___ wants to paint a mural nearby. | teenagers
 V | The flower stood higher than all the plants and ___. | vines
 V | There was a big ___, like on a holiday. | crowd
-V | She saved an extra big slice for a good little ___. | gardener
+V | Mrs. Washington will save an extra big slice for a good little ___. | gardener
 # battle
 T | What are you curious about? | I'm curious about life on other planets.
 T | What did Mrs. Rodriguez tell Marisol to do? | She told Marisol to save the seeds and plant again next spring.
@@ -1189,17 +1189,17 @@ SP | A: Which plant is important to you? | B: I chose the {banana} plant because
 SW | {Apples} grow {on trees}. {Carrots} grow {in the ground}. | Write two sentences about where plants grow, using in or on.
 ## U17 | My Journey with Captain Magellan | Why do we explore?
 # learn
-C | How many men and ships sailed from Spain in 1519? | They sailed with 250 men and five ships.
+C | How many men and ships sailed from Spain in 1519? | Magellan sailed from Spain with 250 men and five ships.
 C | Why couldn't the ships move in November 1519? | The ships couldn't move because there was no wind.
-C | What did the men fill the ships with in Indonesia? | They filled the ships with spices in Indonesia.
+C | What did the men fill the ships with in Indonesia? | The men filled the ships with spices in Indonesia.
 C | How many men came home to Spain? | Only 18 men came home to Spain after three years.
-G | Where does Captain Magellan tell Juan to go? | He tells Juan to go up to the deck.
-G | How did the ships reach the Pacific Ocean? | The ships sailed through a narrow strait.
-G | Where did the ships sail after they left Spain? | They sailed down the coast of South America.
-G | How do I get to the park? | Walk down this street and go through the gate.
+G | Where does Captain Magellan tell Juan to go? | Captain Magellan tells Juan to go up to the deck. | up to · deck · Juan
+G | How did the ships reach the Pacific Ocean? | The ships sailed through a narrow strait. | through · sailed · strait
+G | Where did the ships sail after leaving Spain? | The ships sailed down the coast of South America. | down · coast · South America
+G | How do I get to the park? | Walk down this street and go through the gate. | down · through · street · gate
 V | The ships reach the ___ of South America in December. | coast
 V | Winter was cold and windy, with fog and ___. | hail
-V | They sail through a narrow area of water called a ___. | strait
+V | The ships sail through a narrow area of water called a ___. | strait
 V | The men are not ___, and some men die. | healthy
 # battle
 T | Give directions from the door to your desk. | Walk through the door and go around the table.
@@ -1264,18 +1264,18 @@ SP | A: Congratulations on winning the {race}! | B: Thank you! | A: You did a gr
 SW | I {brushed my teeth} before I {went to bed}. I {ate an apple} after I {got home}. | Write two sentences about your day using before and after.
 ## U18 | Jacques Cousteau | Why do we explore?
 # learn
-C | What did a friend give young Jacques? | A friend gave him a pair of goggles.
-C | What did Cousteau and Emile Gagnan create? | They created a breathing device called the Aqua-Lung.
-C | What did Cousteau turn his boat into? | He turned his boat into a research lab and film studio.
-C | What did Cousteau find in the waters of Antarctica? | He found penguins, humpback whales, and squid there.
-G | What did Cousteau want to do underwater? | Cousteau wanted to stay underwater longer.
-G | What did Cousteau need to use to breathe underwater? | He needed to use the Aqua-Lung to breathe underwater.
-G | What do you have to do every school day? | I have to be on time for school.
-G | Do you need to clean your room today? | Yes, I need to clean my room today.
-V | A friend gave him a pair of ___ to see underwater. | goggles
+C | What did a friend give young Jacques? | A friend gave Jacques a pair of goggles.
+C | What did Cousteau and Emile Gagnan create? | Cousteau and Gagnan created a breathing device called the Aqua-Lung.
+C | What did Cousteau turn his boat into? | Cousteau turned his boat into a research lab and film studio.
+C | What did Cousteau find in the waters of Antarctica? | Cousteau found penguins, humpback whales, and squid in Antarctica.
+G | What did Cousteau want to do underwater? | Cousteau wanted to stay underwater longer. | wanted to · stay · longer
+G | What did Cousteau need to use to breathe underwater? | Cousteau needed to use the Aqua-Lung to breathe underwater. | needed to · Aqua-Lung · breathe
+G | What do you have to do every school day? | I have to be on time for school. | have to · on time · school
+G | Do you need to clean your room today? | Yes, I need to clean my room today. | need to · Yes · clean · room
+V | A friend gave Jacques a pair of ___ to see underwater. | goggles
 V | An air hose tethered the ___ to a boat. | diver
 V | Off the coast of Australia, they saw coral reefs and ___ forests. | kelp
-V | His TV series brought whales, octopuses, otters, and ___ into living rooms. | dolphins
+V | Cousteau's TV series brought whales, octopuses, otters, and ___ into living rooms. | dolphins
 # battle
 T | What do you want to do this summer? | I want to go swimming in the ocean.
 T | Why did doctors tell young Jacques to swim? | They wanted him to build up his strength.
