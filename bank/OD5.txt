@@ -5,10 +5,10 @@ C | Why did the dodos have nothing to eat? | Sailors cut down the forests, so th
 C | What did hunters make from the quaggas' skins? | Hunters killed the quaggas and made their skins into bags.
 C | Why do scientists think the woolly mammoth became extinct? | Scientists think the weather changed and there was less grass to eat.
 C | Where can tigers live safely today? | Tigers have sanctuaries, which are places where no one can hurt them.
-G | How long have sea wolves not existed? | Sea wolves haven't existed for almost seventy years.
-G | How long has the elephant bird been extinct? | The elephant bird has been extinct for over a thousand years.
-G | What has the mammoth been doing all night? | The mammoth has been looking for the dodo all night.
-G | Has Mina been reading tonight? | Yes, she has been reading a book about dodos.
+G | How long have sea wolves not existed? | Sea wolves haven't existed for almost seventy years. | haven't existed · for · seventy years
+G | How long has the elephant bird been extinct? | The elephant bird has been extinct for over a thousand years. | has been · extinct · a thousand years
+G | What has the mammoth been doing all night? | The mammoth has been looking for the dodo all night. | has been looking · the dodo · all night
+G | Has Mina been reading tonight? | Yes, she has been reading a book about dodos. | Yes · has been reading · a book
 V | The dodo was a bird that couldn't fly, and now it is ___. | extinct
 V | The weather changed, so the mammoth lost its grassy ___. | habitat
 V | The tiger is lucky because it has a ___ where no one hurts it. | sanctuary
@@ -95,11 +95,11 @@ SW | The {tiger} is an endangered animal. It lives in {the jungle}. We can prote
 C | Why have many animals disappeared from the foothills? | People have cleared the forests to grow crops, and the animals' habitat has suffered.
 C | How did Jim Corbett learn to identify animals as a boy? | He taught himself to identify animals and birds by the sounds they made.
 C | Why did the big cats start eating people? | They were eating people because they couldn't hunt other animals.
-C | What did Jim Corbett do after he became interested in conservation? | He gave lectures and inspired people to respect wildlife.
-G | How many tigers did Corbett shoot between 1907 and 1938? | Between 1907 and 1938, Corbett shot nineteen tigers and fourteen leopards.
-G | What have people done to the forests in the foothills? | People have cleared the forests to grow crops.
-G | What do tigers do every day? | Tigers go to the river every day to drink water.
-G | What are the tigers doing right now? | The tigers are going to the river to drink right now.
+C | What did Jim Corbett do after becoming interested in conservation? | He gave lectures and inspired people to respect wildlife.
+G | How many tigers did Corbett shoot between 1907 and 1938? | Between 1907 and 1938, Corbett shot nineteen tigers and fourteen leopards. | shot · nineteen tigers · fourteen leopards
+G | What have people done to the forests in the foothills? | People have cleared the forests to grow crops. | have cleared · forests · crops
+G | What do tigers do every day? | Tigers go to the river every day to drink water. | go · river · every day
+G | What are the tigers doing right now? | The tigers are going to the river to drink right now. | are going · river · right now
 V | These hills once provided a home to many ___ types of wildlife. | diverse
 V | Later, Jim became a ___ and a hunter of man-eating tigers. | tracker
 V | ___ was common because people could sell tiger skins and bones. | Poaching
@@ -165,14 +165,14 @@ SP | A: Do you think tigers will survive? | B: Yes, I think tigers will survive.
 SW | We should protect {tigers}. They are endangered because {poachers hunt them}. We can help by {making more reserves}. | Write three sentences about an animal we should protect and why.
 ## U3 | Teeth: The Cavity and Have You Any Idea? | What are teeth for?
 # learn
-C | What did the boy eat just before he felt the nasty ache? | He felt a nasty ache after a big bite of chocolate cake.
+C | What did the boy eat just before feeling the nasty ache? | He felt a nasty ache after a big bite of chocolate cake.
 C | What did the dentist find inside the boy's tooth? | The dentist said the boy had a cavity right inside his tooth.
 C | What did the drill sound like? | The drill sounded like an angry bee buzzing in his head.
 C | What does the herbivore do with its incisor teeth? | The herbivore uses its incisor teeth to slice up the grass.
-G | Could the boy chew after he got a cavity? | No, he couldn't chew after he got a cavity.
-G | Could you read by the time you were four? | Yes, I could read by the time I was four.
-G | Will the boy be able to eat cake after the filling? | Yes, he will be able to eat cake after the filling.
-G | What couldn't you do ten years ago? | Ten years ago, I could crawl, but I couldn't walk.
+G | Could the boy chew after getting a cavity? | No, he couldn't chew after he got a cavity. | No · couldn't chew · cavity
+G | Could you read by the time you were four? | Yes, I could read by the time I was four. | Yes · could read · four
+G | Will the boy be able to eat cake after the filling? | Yes, he will be able to eat cake after the filling. | Yes · will be able to · cake
+G | What couldn't you do ten years ago? | Ten years ago, I could crawl, but I couldn't walk. | could crawl · couldn't walk · ten years ago
 V | My ___ are bright white like tigers' teeth. | canines
 V | I scrub my ___ noon and night and at the break of day. | gums
 V | The dentist said I had a ___ right inside my tooth. | cavity
@@ -254,11 +254,11 @@ SW | I'm good at {math}. I'm interested in {animals}. I'm afraid of {spiders}. |
 C | Why is a missing shark tooth automatically replaced? | The shark has two sets of teeth, so a missing tooth is replaced.
 C | How do alligators and crocodiles use their teeth? | They use their teeth to seize prey, which they swallow whole.
 C | How do vampire bats get their food? | Vampire bats pierce holes in their prey's skin and lap up the blood.
-C | What do beavers build with the logs they drag to the water? | Beavers use the logs to build a lodge and create a dam.
-G | What must an animal with comb-like lower front teeth be? | It must be a prosimian because it cleans its fur with its teeth.
-G | Can an animal with four legs be a spider? | No, it can't be a spider because a spider has eight legs.
-G | What might an animal with long, poisonous fangs be? | It might be a snake, but I'm not sure.
-G | What must an animal with three-meter tusks be? | It has to be an elephant because its tusks are so long.
+C | What do beavers build with the logs dragged to the water? | Beavers use the logs to build a lodge and create a dam.
+G | What must an animal with comb-like lower front teeth be? | It must be a prosimian because it cleans its fur with its teeth. | must be · prosimian · fur
+G | Can an animal with four legs be a spider? | No, it can't be a spider because a spider has eight legs. | No · can't be · eight legs
+G | What might an animal with long, poisonous fangs be? | It might be a snake, but I'm not sure. | might be · snake · not sure
+G | What must an animal with three-meter tusks be? | It has to be an elephant because its tusks are so long. | has to be · elephant · tusks
 V | A poisonous snake can push ___ through its fangs. | venom
 V | Hyenas' small teeth are set in ___ jaws that can crush bones. | powerful
 V | Walruses have two ivory teeth called ___ that grow almost a meter long. | tusks
@@ -330,10 +330,10 @@ C | What are the oldest wheels that we know about? | The oldest wheels that we k
 C | How were heavy stones transported before the wheel was invented? | Heavy stones were hauled on a platform that rolled forward on top of logs.
 C | How did the Egyptians make wheels lighter and faster? | The Egyptians made ring-shaped wheels, which were lighter and turned faster.
 C | What could a water mill do? | A water mill could grind wheat into flour much faster than a person could.
-G | Will wheels always be a central part of life? | Yes, wheels will always be a central part of life.
-G | What are you going to do next week? | I'm going to visit my uncle next week.
-G | What is going to happen when you see big, black clouds? | It's going to rain tonight because the clouds are big and black.
-G | When will the sun rise tomorrow? | The sun will rise at 6:05 tomorrow morning.
+G | Will wheels always be a central part of life? | Yes, wheels will always be a central part of life. | Yes · will always be · central part
+G | What are you going to do next week? | I'm going to visit my uncle next week. | going to visit · my uncle · next week
+G | What is going to happen when you see big, black clouds? | It's going to rain tonight because the clouds are big and black. | going to rain · tonight · clouds
+G | When will the sun rise tomorrow? | The sun will rise at 6:05 tomorrow morning. | will rise · 6:05 · tomorrow
 V | We depend on wheels for much more than just ___. | transportation
 V | Today we call this invention a wheel and ___ system. | axle
 V | Adding metal to the ___ made the wheel more durable. | rim
@@ -398,14 +398,14 @@ SP | A: Where are you going on your trip? | B: We're going to {the beach}. | A: 
 SW | This summer, I plan {to visit my grandma}. I hope {to swim in the sea}. I promise {to study English every day}. | Write three sentences about your plans using a verb followed by to.
 ## U6 | Planet SinRota | Why are wheels important?
 # learn
-C | Why did Zoog's dad tell him to fetch Doctor P721? | Zoog's grandmother was sick with a fever and purple spots.
+C | Why did Zoog have to fetch Doctor P721? | Zoog's grandmother was sick with a fever and purple spots.
 C | Why was Zoog's life tedious? | His planet had no books, no clocks, no computers, and no TV.
 C | How did Zoog bring the shopping home every evening? | He dragged a heavy sled behind him to and from the store.
 C | What did Zoog see in the park on the blue planet? | He saw children playing on skateboards and in-line skates in a park.
-G | What are you doing after school today? | I'm meeting my friends at the pizza place after school.
-G | When are we meeting our friends on Friday? | We are meeting our friends at 2:00 on Friday.
-G | What is Zoog going to do with his pictures? | He's going to show his parents the pictures in the morning.
-G | Will things on SinRota ever be the same again? | No, things will never be the same again on SinRota.
+G | What are you doing after school today? | I'm meeting my friends at the pizza place after school. | I'm meeting · my friends · pizza place
+G | When are we meeting our friends on Friday? | We are meeting our friends at 2:00 on Friday. | are meeting · 2:00 · Friday
+G | What is Zoog going to do with his pictures? | He's going to show his parents the pictures in the morning. | going to show · his parents · in the morning
+G | Will things on SinRota ever be the same again? | No, things will never be the same again on SinRota. | No · will never be · the same
 V | The ___ Zoog bounced off to the doctor's house on his pogo stick. | obedient
 V | Zoog felt ___ that he had good friends and no serious problems. | fortunate
 V | The picture in the telescope was ___, but he could see water and mountains. | blurry
@@ -473,14 +473,14 @@ SP | A: Oh, no! {I missed the bus}. What should I do? | B: Why don't you ask you
 SW | Last week, I {drew a picture of a car}. Yesterday, I {felt very happy} because {my team won the game}. | Write three sentences about last week using past tense verbs like drew, felt, became, dug, gave, and lit.
 ## U7 (partial) | Magdi and the Dolphin | How do animals communicate?
 # learn
-C | What did Magdi see when he looked out of the window? | Magdi looked out of the window and saw clear blue skies.
+C | What did Magdi see out of the window in the morning? | Magdi looked out of the window and saw clear blue skies.
 C | What did Magdi put on the hook of his fishing rod? | He put a piece of bread on the hook to attract fish.
 C | Why did Magdi's boat drift out to sea? | Big waves from a storm were shaking his boat and pushing it out.
 C | How did the dolphin move through the water? | The dolphin used its powerful tail to propel its body through the water.
-G | What did Magdi say to his dad about the day? | Magdi said that it was a beautiful day for fishing.
-G | What did Malik and Ali say to Magdi from the beach? | They said that there was a storm and he should come back.
-G | What did Magdi's dad say about Magdi and fishing? | His dad said that Magdi was always happy when he went fishing.
-G | What did Tom say when you called him? | Tom said that he was working and couldn't talk.
+G | What did Magdi say to his dad about the day? | Magdi said that it was a beautiful day for fishing. | said that · was · beautiful day
+G | What did Malik and Ali say to Magdi from the beach? | They said that there was a storm and he should come back. | said that · there was · storm
+G | What did Magdi's dad say about Magdi and fishing? | His dad said that Magdi was always happy when he went fishing. | said that · was always happy · fishing
+G | What did Tom say on the phone? | Tom said that he was working and couldn't talk. | said that · was working · couldn't talk
 V | The dolphin taught Magdi how to ___ deep down to the ocean floor. | dive
 V | He pushed the boat into the water until it began to ___. | float
 V | The dolphin taught him how to ___ through the water like a parrot fish. | glide
@@ -554,12 +554,12 @@ SW | We had a big storm last night, but {it cleared up this morning}. {Magdi} we
 # learn
 C | Where do hippos mostly communicate? | Hippos mostly communicate underwater by making noises called grunts and bellows.
 C | What does the honeybees' waggle dance help other bees do? | The dance helps other bees locate the nectar, water, or pollen.
-C | What do vervet monkeys do when they hear the eagle signal? | When they hear the eagle signal, they hide on the forest floor.
+C | What do vervet monkeys do after hearing the eagle signal? | When they hear the eagle signal, they hide on the forest floor.
 C | How does the honeyguide attract a honey badger? | The honeyguide makes noises and flaps its wings to attract a honey badger.
-G | What did the scientist tell us about Kanzi? | He told us that Kanzi was learning new things every day.
-G | What did Alex tell Dr. Pepperberg when he got a letter right? | Alex told Dr. Pepperberg that he wanted a nut.
-G | What did the classmate ask the scientist? | A classmate asked the scientist what Kanzi was learning.
-G | What did Wei tell you about animals? | Wei told me that he was interested in wild animals.
+G | What did the scientist tell us about Kanzi? | He told us that Kanzi was learning new things every day. | told us that · was learning · every day
+G | What did Alex tell Dr. Pepperberg after getting a letter right? | Alex told Dr. Pepperberg that he wanted a nut. | told · that · wanted a nut
+G | What did the classmate ask the scientist? | A classmate asked the scientist what Kanzi was learning. | asked the scientist · what · was learning
+G | What did Wei tell you about animals? | Wei told me that he was interested in wild animals. | told me that · was interested · wild animals
 V | Hippos bellow to defend their ___, which is their own space. | territory
 V | Vervet monkeys have an alarm ___ for each predator. | signal
 V | Predators ___ their prey, so animals need a warning sign. | threaten
@@ -631,10 +631,10 @@ C | What did the Mesopotamians invent five thousand years ago? | Five thousand y
 C | How did the people in Sumer tell a story? | They made pictures on clay tablets to tell a story.
 C | What did the Egyptians learn to make from papyrus? | The Egyptians learned to make paper from a plant called papyrus.
 C | What did the Maya mix to make their chocolate drink? | The Maya mixed cocoa beans with spices, water, and chilies.
-G | Who invented the compass? | The Chinese invented a device called a compass.
-G | Who did the Chinese invent the compass for? | They invented it for Chinese sailors, to help them navigate.
-G | Where did the Mesopotamians live? | They lived between two huge rivers, the Euphrates and the Tigris.
-G | Which civilization built huge pyramids in Mexico? | The Maya built huge pyramids and sculptures in Mexico.
+G | Who invented the compass? | The Chinese invented a device called a compass. | The Chinese · invented · compass
+G | Who did the Chinese invent the compass for? | They invented it for Chinese sailors, to help them navigate. | invented it for · Chinese sailors · navigate
+G | Where did the Mesopotamians live? | They lived between two huge rivers, the Euphrates and the Tigris. | lived between · Euphrates · Tigris
+G | Which civilization built huge pyramids in Mexico? | The Maya built huge pyramids and sculptures in Mexico. | The Maya · built · pyramids
 V | Many countries have made ___ to our modern life. | contributions
 V | The Chinese invented a ___ called a compass. | device
 V | The Maya were an advanced ___ with many interesting customs. | civilization
@@ -704,10 +704,10 @@ C | How did Akiko travel to Brussels? | Akiko traveled to Brussels, the capital 
 C | What did Akiko spot on the roof of the palace? | She spotted a black, yellow, and red flag on the roof.
 C | Who invented pralines, and when? | Jean Neuhaus invented pralines in 1912 in Belgium.
 C | What did Jean and Akiko mix to make pralines? | They mixed butter, sugar, chocolate, and almonds, and ladled it into molds.
-G | Is there a chocolate store near the square? | Yes, there is one right down that street.
-G | Has Akiko ever tasted Belgian chocolate before this trip? | No, she hasn't, but she has always wanted to.
-G | Did Akiko bite the praline exactly in half? | Yes, she did, and then everything went dark around her.
-G | Does Akiko know the recipe for pralines now? | Yes, she does, because she made them with Jean.
+G | Is there a chocolate store near the square? | Yes, there is one right down that street. | Yes · there is · down that street
+G | Has Akiko ever tasted Belgian chocolate before this trip? | No, she hasn't, but she has always wanted to. | No · she hasn't · always wanted to
+G | Did Akiko bite the praline exactly in half? | Yes, she did, and then everything went dark around her. | Yes · she did · went dark
+G | Does Akiko know the recipe for pralines now? | Yes, she does, because she made them with Jean. | Yes · she does · made them · Jean
 V | The air was full of ___ smells, creamy, nutty smells. | delicious
 V | Looking up, Akiko could ___ a black, yellow, and red flag. | spot
 V | Everything went dark and she felt slightly ___. | dizzy
@@ -786,10 +786,10 @@ C | How many people get fresh water from mountains? | Mountains provide fresh wa
 C | What happens when the snow melts in the spring? | The water flows down the slopes into streams, waterfalls, and rivers.
 C | Where does the Ganges River start? | The Ganges River starts in the Himalayan mountain range in India.
 C | Why do farmers build terraces into steep mountainsides? | They build terraces to grow crops and help control the flow of water.
-G | Where is corn found? | Corn is found in the Sierra Mountains of Mexico.
-G | Are potatoes grown in the Andes? | Yes, two thousand different types of potatoes are grown in the Andes.
-G | What are mountains sometimes called? | Mountains are sometimes called the water towers of the world.
-G | What are French fries made from? | French fries are made from potatoes, which first came from the Andes.
+G | Where is corn found? | Corn is found in the Sierra Mountains of Mexico. | is found · Sierra Mountains · Mexico
+G | Are potatoes grown in the Andes? | Yes, two thousand different types of potatoes are grown in the Andes. | Yes · are grown · two thousand · Andes
+G | What are mountains sometimes called? | Mountains are sometimes called the water towers of the world. | are sometimes called · water towers · world
+G | What are French fries made from? | French fries are made from potatoes, which first came from the Andes. | are made from · potatoes · Andes
 V | Most of the water is stored as snow and as ice in ___. | glaciers
 V | Mount Cameroon rises to more than 4,000 meters at its ___. | peak
 V | The best tea and coffee are grown at an ___ of about 1,500 meters. | altitude
@@ -860,10 +860,10 @@ C | Where were Samantha and Robert's parents? | Their parents were picnicking in
 C | What did Robert think the old stone tower was? | Robert thought it was Sir Geoffrey Entwhistle's secret fort.
 C | What did the old man offer the children? | He invited them in for a cup of hot cocoa.
 C | What did the children see when the sun came out? | They saw the mountain range and the sky reflected in a distant lake.
-G | Was the mountain named for a famous explorer? | Yes, Entwhistle Peak was named for the explorer Sir Geoffrey Entwhistle.
-G | Where were the stone stairs carved? | The stone stairs were carved into the side of the mountain.
-G | Whose weather forecasts were shown on TV for twenty years? | The old man's weather forecasts were shown on TV for twenty years.
-G | When was Mount Everest climbed? | Mount Everest was climbed in 1953 by Hillary and Tenzing Norgay.
+G | Was the mountain named for a famous explorer? | Yes, Entwhistle Peak was named for the explorer Sir Geoffrey Entwhistle. | Yes · was named for · Sir Geoffrey Entwhistle
+G | Where were the stone stairs carved? | The stone stairs were carved into the side of the mountain. | were carved · side of the mountain
+G | Whose weather forecasts were shown on TV for twenty years? | The old man's weather forecasts were shown on TV for twenty years. | were shown · old man's · twenty years
+G | When was Mount Everest climbed? | Mount Everest was climbed in 1953 by Hillary and Tenzing Norgay. | was climbed · 1953 · Hillary
 V | The dark ___ of Entwhistle Peak towered above them against the sky. | silhouette
 V | Entwhistle Peak is a ___ mountain in the Andes range. | jagged
 V | Robert began to ___ when the old man asked who he was. | stammer
@@ -946,14 +946,14 @@ SP | A: I'm going to the mountains on a cold and snowy day. Do you think I shoul
 SW | A book was {written} about {the mountain climber}. After many years, the name of the explorer was {known} all over the world. | Write two sentences in the past passive using irregular past participles.
 ## U13 | The Sound of Money and the Smell of Soup | Why do we use money?
 # learn
-C | How much money did Erman have when he left his village? | Erman had little money; in fact, he only had three gold coins.
+C | How much money did Erman have when leaving his village? | Erman had little money; in fact, he only had three gold coins.
 C | What did the rude man want for the room? | The man wanted three gold coins for the room.
 C | What did the rude man say Erman had stolen? | He screamed that Erman had stolen the smells of his soup.
 C | How did the Hodja pay the man? | He paid for the smell of soup with the sound of money.
-G | How did Erman knock at the door? | Erman knocked at the door very nervously because he was afraid.
-G | What kind of man opened the door? | A terrifying man with huge muscles opened the door.
-G | How did the man repeat the price? | The man repeated the price aggressively and looked fierce.
-G | How often did the Hodja read a newspaper in court? | The Hodja often read a newspaper in court, as he did that day.
+G | How did Erman knock at the door? | Erman knocked at the door very nervously because he was afraid. | nervously · knocked · afraid
+G | What kind of man opened the door? | A terrifying man with huge muscles opened the door. | terrifying · huge muscles · opened
+G | How did the man repeat the price? | The man repeated the price aggressively and looked fierce. | aggressively · fierce · repeated
+G | How often did the Hodja read a newspaper in court? | The Hodja often read a newspaper in court, as he did that day. | often · newspaper · court
 V | There were people selling jewels, spices, leather, ___ vases, and clothes. | delicate
 V | Erman turned to the man ___ and asked for some soup. | bravely
 V | The Hodja was a ___ man and a judge in the law court. | wise
@@ -1037,14 +1037,14 @@ SP | A: What do you want right now? | B: Now, I want to save for a {game}. What 
 SW | My {brother} is {extremely} {funny}. He tells jokes {really} well. | Write two sentences about a person you know, using adverbs of degree like very, really, or extremely.
 ## U14 | The History of Money | Why do we use money?
 # learn
-C | What did people exchange to get the things they needed long ago? | People exchanged cows, sheep, camels, and crops to get what they needed.
+C | What did people exchange to get the things people needed long ago? | People exchanged cows, sheep, camels, and crops to get what they needed.
 C | Why did shells become valuable? | You can't find shells everywhere, so they became precious and valuable.
 C | What did the Chinese first print money on? | The Chinese first printed money on leather from animals' skins.
 C | Why are bills difficult to copy now? | Bills now have colorful, complicated designs and metal threads across them.
-G | What would you do if you had a plane? | If I had a plane, I would fly to Peru.
-G | What would happen if you had a lot of coins in your pocket? | If I had a lot of coins, they would make a hole.
-G | What would you buy if you had some money? | If I had some money, I would buy a new game.
-G | Would you need many coins if you had paper money? | No, if I had paper money, I wouldn't need so many coins.
+G | What would you do if you had a plane? | If I had a plane, I would fly to Peru. | If I had · would fly · Peru
+G | What would happen if you had a lot of coins in your pocket? | If I had a lot of coins, they would make a hole. | If I had · would make · a hole
+G | What would you buy if you had some money? | If I had some money, I would buy a new game. | If I had · would buy · new game
+G | Would you need many coins if you had paper money? | No, if I had paper money, I wouldn't need so many coins. | No · if I had · wouldn't need · coins
 V | Long ago, people would ___ one thing for another thing they needed. | barter
 V | Around 3,000 years ago, people decided that ___ were a good form of money. | shells
 V | At last the world had its first paper ___. | currency
@@ -1114,10 +1114,10 @@ C | Where does Jason deCaires Taylor put his sculptures? | He puts his sculpture
 C | How big is The Silent Evolution? | It is a permanent artificial reef with 400 life-size sculptures of people.
 C | Who does Taylor work with to create habitats? | Taylor works with marine biologists to create habitats for marine animals.
 C | What does the Volkswagen Beetle car enclose? | A life-size copy of a Volkswagen Beetle encloses a lobster city.
-G | How do the sculptures look after a few years underwater? | After a few years, the sculptures look bumpy and rough.
-G | How did you feel this morning? | I felt sick this morning, but I'm OK now.
-G | How does the lemon smell and taste? | This lemon smells good, but it tastes bitter.
-G | How does your new pillow feel? | My new pillow feels very soft and comfortable.
+G | How do the sculptures look after a few years underwater? | After a few years, the sculptures look bumpy and rough. | look · bumpy · rough
+G | How did you feel this morning? | I felt sick this morning, but I'm OK now. | felt sick · this morning · OK now
+G | How does the lemon smell and taste? | This lemon smells good, but it tastes bitter. | smells good · tastes bitter
+G | How does your new pillow feel? | My new pillow feels very soft and comfortable. | feels · soft · comfortable
 V | Humans never cease to find ___ ways of expressing themselves. | innovative
 V | Over time, ___ begins to grow on the figures, as does coral. | algae
 V | Different colors emerge as the marine plants ___ on their new habitat. | settle
@@ -1188,10 +1188,10 @@ C | What does a playwright do first? | First, a playwright writes a play that ex
 C | Who became the most famous writer in the English language? | William Shakespeare, a poet and playwright, became the most famous English writer.
 C | Where is the ship sailing at the beginning of the play? | The ship is sailing from Tunis, in North Africa, to Italy.
 C | Where does the sailor tell the important people to go? | The sailor tells them to go back to their cabins and keep quiet.
-G | Is it easy to calm down in a storm? | No, it's difficult to calm down in a storm.
-G | Is it dangerous to climb a mountain in a storm? | Yes, it's dangerous to climb a mountain in a storm.
-G | What is fun to do at school? | It's fun to act in a play with my classmates.
-G | Is it easy to learn English? | It's easy to learn English if you read a lot of books.
+G | What does the sailor say about calming down in a storm? | It's difficult to calm down in a storm. | It's difficult · to calm down · storm
+G | How dangerous is climbing a mountain in a storm? | It's dangerous to climb a mountain in a storm. | It's dangerous · to climb · storm
+G | What is fun to do at school? | It's fun to act in a play with my classmates. | It's fun · to act · a play
+G | Is learning English easy or hard? | It's easy to learn English if you read a lot of books. | It's easy · to learn · read a lot
 V | A ___ writes a play that expresses feelings about life. | playwright
 V | A ___ is a violent storm at sea. | tempest
 V | Everybody on board is ___ that the waves will break up the ship. | petrified
@@ -1276,10 +1276,10 @@ C | What is the hotel in Finland made of? | The hotel in Finland is made entirel
 C | What does an architect do before construction can begin? | The architect draws detailed plans and makes a model of the building.
 C | Why was the Dorobanti Tower designed to be extremely strong? | It was designed to be strong because Bucharest is in an earthquake zone.
 C | What do the arches of the Sheikh Zayed Bridge look like? | The arches look like wavy sand dunes in the desert.
-G | What did you see in the pool? | I saw a shark in the pool yesterday.
-G | Where is the apple? | There's an apple in the fridge for you.
-G | Where did you go last summer? | We went to Spain last summer with my family.
-G | How often do you go to the pool? | I go to the pool every weekend with my friends.
+G | What did you see in the pool? | I saw a shark in the pool yesterday. | a shark · the pool · yesterday
+G | Where is the apple? | There's an apple in the fridge for you. | an apple · the fridge
+G | Where did you go last summer? | We went to Spain last summer with my family. | went to Spain · last summer · my family
+G | How often do you go to the pool? | I go to the pool every weekend with my friends. | the pool · every weekend · my friends
 V | Zaha Hadid was an ___ who designed countless buildings. | architect
 V | The model helps the architect decide how much ___ will be needed. | steel
 V | When the planning is finished and approved, ___ can begin. | construction
@@ -1351,10 +1351,10 @@ C | Why was Peril Castle built in the 15th century? | Peril Castle was built in 
 C | Where did Uncle Robert find the first half of the coin? | He found it in the attic while looking through old boxes.
 C | What did Thomas find in the secret drawer of the box? | Thomas found an old map of the castle in the secret drawer.
 C | What had the magpie collected in the passageway? | The magpie had collected a key, a Roman coin, a ring, and a spoon.
-G | What did Thomas and Uncle Robert need to find? | They needed to find the other half of the gold coin.
-G | Are you going to explore Peril Castle this weekend? | Yes, I'm going to explore Peril Castle with my uncle this weekend.
-G | What do you like about castles? | I like castles with turrets and a deep moat around them.
-G | Will you see the castles of Wales someday? | Yes, I will see the castles of Wales someday.
+G | What did Thomas and Uncle Robert need to find? | They needed to find the other half of the gold coin. | needed to find · other half · gold coin
+G | Are you going to explore Peril Castle this weekend? | Yes, I'm going to explore Peril Castle with my uncle this weekend. | Yes · going to explore · my uncle · this weekend
+G | What do you like about castles? | I like castles with turrets and a deep moat around them. | like · turrets · deep moat
+G | Will you see the castles of Wales someday? | Yes, I will see the castles of Wales someday. | Yes · will see · Wales · someday
 V | The castle's ___ looked terrifying against the evening sky. | turrets
 V | Robert pulled a lever and the ___ swung down over the moat. | drawbridge
 V | Thomas saw a box with a rusty ___ on it. | padlock
