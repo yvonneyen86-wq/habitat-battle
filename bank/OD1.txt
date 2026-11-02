@@ -1,16 +1,18 @@
 === OD1 ===
 ## U1 | Families and Friends | Who are your family and friends?
 # learn
-What does "grandmother" mean? | your mother's or father's mother
-What does "parents" mean? | a mother and a father
-What does "friends" mean? | people you like and play with
-Spell the word "mother". | m-o-t-h-e-r
-Spell the word "sister". | s-i-s-t-e-r
-Finish the sentence: I ___ six years old. | am (I'm six years old.)
-Finish the sentence: He ___ eight years old. | is (He's eight years old.)
-Who does Jake live with? | his mother, father, and sisters
-Is Kim's family big or small? | small (She lives with her mother.)
-Is your family big or small?
+C | How old is Jake? | Jake is seven years old.
+C | Who does Jake live with? | He lives with his mother, father, and sisters.
+C | Is Kim's family big or small? | Kim's family is small.
+C | What do friends do together? | Friends play together and share things.
+G | How old is Mandy? | She is eight years old.
+G | Is Jake's family big? | Yes, his family is big.
+G | Are friends important? | Yes, friends are important.
+G | Is Kim six or seven? | Kim is six years old.
+V | Jake lives with his ___, father, and sisters. | mother
+V | Mandy lives with her ___, grandfather, and grandmother. | brother
+V | Kim's ___ is small. | family
+V | Good ___ play together and share things. | friends
 # battle
 T | Tell us about your family. Who is in it? | I live with my mother and father.
 T | How old are you? | I'm seven years old.
@@ -72,16 +74,18 @@ SP | A: Hello, Emma. This is my {brother}. | B: Hi! I'm Emma. It's nice to meet 
 SW | I'm {Lisa}. I'm {eight} years old. My family is {big}. | Write about yourself and your family.
 ## U2 | Elliot's New Friend | Who are your family and friends?
 # learn
-What does "lonely" mean? | sad because you have no friends with you
-What does "scared" mean? | afraid of something
-What does "tortoise" mean? | a slow animal with a hard shell
-Spell the word "elephant". | e-l-e-p-h-a-n-t
-Spell the word "rabbit". | r-a-b-b-i-t
-Point to one animal near you. Say: ___ is a zebra. | This
-Point to many animals far away. Say: ___ are lions. | Those
-Why is Elliot sad? | He can't find his family.
-Who is Elliot's new friend? | Tuti, a tortoise
-Do animals have friends? What do you think?
+C | How does Elliot feel at the start? | Elliot is sad and lonely.
+C | What animal is Tuti? | Tuti is a tortoise.
+C | What can't Elliot find? | He can't find his family.
+C | What do Elliot and Tuti do together? | They eat, play, and sleep together.
+G | What is this animal? | This is a tortoise.
+G | What are those animals? | Those are zebras.
+G | Are those lions? | Yes, those are lions.
+G | Is that Elliot's family? | Yes, that's his family.
+V | Elliot is an ___. | elephant
+V | Elliot is sad and ___. | lonely
+V | The zebras are ___ and run away. | scared
+V | Elliot and Tuti eat, play, and ___. | sleep
 # battle
 T | Tell us about a pet. What is it? | I have a hamster. It is small.
 T | What animal do you like? Why? | I like rabbits. They are cute.
@@ -144,16 +148,18 @@ SP | A: This is Tim. He's my friend. | B: Does he have a pet? | A: Yes. He has a
 SW | This is {Tim}. He's my friend. He has a {hamster}. We {play} together. | Write about your friend and his or her pet.
 ## U3 | Colors | Where can we see colors?
 # learn
-What does "purple" mean? | a color made from red and blue
-What does "dark" mean? | with no light, like the night
-What does "fireworks" mean? | bright colors and lights in the night sky
-Spell the word "yellow". | y-e-l-l-o-w
-Spell the word "green". | g-r-e-e-n
-Finish the sentence: There ___ a black kitten. | is (There's a black kitten.)
-Finish the sentence: There ___ two white kittens. | are
-In the poem, how many red butterflies are in the tree? | six
-What color is the sky in the poem? | blue
-What is your favorite color? Why?
+C | How many red butterflies are in the tree? | There are six red butterflies in the tree.
+C | What color are the lizards? | The lizards are green.
+C | What color is the sky? | The sky is blue.
+C | What color are the clouds? | The clouds are white.
+G | What is in the tree? | There are twenty animals in the tree.
+G | How many brown birds are there? | There are four brown birds.
+G | How many purple cats are in the tree? | There are three purple cats in the tree.
+G | Is there a yellow dog in the tree? | Yes, there are two yellow dogs.
+V | There are six ___ butterflies in the tree. | red
+V | There are five ___ lizards in the tree. | green
+V | The sky is ___. | blue
+V | The clouds are ___. | white
 # battle
 T | What colors can you see in the classroom? | I can see red, blue, and green.
 T | Tell us about your favorite color. | My favorite color is blue.
@@ -212,16 +218,18 @@ SP | A: Do you want to play with me? | B: Sure! | A: Let's {color}! | B: OK. Goo
 SW | There is a {blue} {bird} in my yard. There are two {brown} dogs. | Write two sentences about the colors you can see.
 ## U4 | Let's Make Colors | Where can we see colors?
 # learn
-What does "mix" mean? | to put two things together
-What does "mural" mean? | a big picture on a wall
-What does "seaweed" mean? | a plant that grows in the ocean
-Spell the word "starfish". | s-t-a-r-f-i-s-h
-Spell the word "jacket". | j-a-c-k-e-t
-Finish the sentence: The starfish is ___ the seashell. (below it) | under
-Finish the sentence: The seaweed is ___ to the fish. | next
-What are the three primary colors? | red, blue, and yellow
-What do red and yellow make? | orange
-Would you like to paint a mural at your school? Why?
+C | What are the three primary colors? | The primary colors are red, blue, and yellow.
+C | What do red and yellow make? | Red and yellow make orange.
+C | What do the children paint? | They paint a mural of the ocean.
+C | What color is the sand? | The sand is yellow.
+G | Where is the blue starfish? | The starfish is under the seashell.
+G | Where is the red fish? | The red fish is next to the seaweed.
+G | Where are the seashells? | The seashells are on the sand.
+G | Where are you in your picture? | I am in the ocean.
+V | We ___ red and yellow to make orange. | mix
+V | The children paint a ___ of the ocean. | mural
+V | There's yellow ___ in the mural. | sand
+V | The blue ___ is under the seashell. | starfish
 # battle
 T | Where is your pencil? | My pencil is on the desk.
 T | What color are your shoes? | My shoes are white.
@@ -279,16 +287,18 @@ SP | A: Look at my picture! I'm in the ocean. | B: What do you have? | A: I have
 SW | The {starfish} is {under} the {seashell}. It is {orange}. | Write two sentences about where something is in your picture and what color it is.
 ## U5 | Animal Homes | Where do animals live?
 # learn
-What does "nest" mean? | a home that a bird makes for its chicks
-What does "hive" mean? | the home of honeybees
-What does "tree hollow" mean? | a hole inside a tree
-Spell the word "eagle". | e-a-g-l-e
-Spell the word "crab". | c-r-a-b
-Ask about the eagle. ___ is the eagle? | Where
-Answer: Where are the chicks? | They're in the nest.
-Where do honeybees make honey? | in the hive
-How many legs does a crab have? | ten
-Why do animals live in different places?
+C | Where is the eagle's nest? | The eagle's nest is high in a tree.
+C | What do honeybees make in the hive? | They make honey in the hive.
+C | How many legs do crabs have? | Crabs have ten legs.
+C | Where does an opossum live? | An opossum lives inside a tree hollow.
+G | Where are the chicks? | They're in the nest.
+G | Where's the opossum? | It's inside a tree hollow.
+G | Where do crabs live? | They live under water and on land.
+G | Where's the honey? | It's in the hive.
+V | Eagles keep their ___ safe in the nest. | chicks
+V | Honeybees make a ___ for their home. | hive
+V | Some ___ make their homes in old seashells. | crabs
+V | An ___ lives inside a tree hollow. | opossum
 # battle
 T | Where is your pencil? | It's on the desk.
 T | Where does a honeybee live? | A honeybee lives in a hive.
@@ -350,16 +360,18 @@ SP | A: Watch out! Be careful! | B: Why? What is it? | A: It's a {beehive}. | B:
 SW | The {eagle} lives in a {nest}. Its home is {high in a tree}. | Write two sentences about an animal and its home.
 ## U6 | My Friend Anak | Where do animals live?
 # learn
-What does "take care of" mean? | to help and look after someone
-What does "miss" mean? | to feel sad because someone is not here
-What does "take a nap" mean? | to sleep for a short time
-Spell the word "morning". | m-o-r-n-i-n-g
-Spell the word "rainforest". | r-a-i-n-f-o-r-e-s-t
-Ask about a thing. ___ that? It's a tree. | What's
-Ask about a person. ___ this? It's Anak. | Who's
-What is Anak? | an orangutan
-Who takes care of Anak? | Dian
-Is Dian happy or sad at the end of the story? Why?
+C | Who takes care of Anak? | Dian takes care of Anak.
+C | What does baby Anak drink? | She drinks milk from a bottle.
+C | What does Anak eat when she is four? | She eats fruit, leaves, and flowers.
+C | Where does Anak live when she is twelve? | She lives in the rainforest.
+G | Who's Anak? | Anak is a young orangutan.
+G | Who's Dian? | Dian is Anak's special friend.
+G | What's that in the bottle? | It's milk for Anak.
+G | What's this place? | It's the Happy House Reserve.
+V | Anak is a baby ___. | orangutan
+V | Dian works at a reserve in the ___. | rainforest
+V | I ___ Anak about the rainforest. | teach
+V | I ___ Anak, but I'm happy. | miss
 # battle
 T | What time of day do you sleep? | I sleep at night.
 T | What do you do in the morning? | I eat breakfast in the morning.
@@ -421,16 +433,18 @@ SP | A: I have three clues. It's small. It lives in the woods. It's brown. | B: 
 SW | What is it? It is a {squirrel}. It lives in the {woods}. It is {brown}. | Write about an animal: what it is, where it lives, and what color it is.
 ## U7 | The Four Seasons | How are seasons different?
 # learn
-What does "warm" mean? | a little hot
-What does "cool" mean? | a little cold
-What does "snowy" mean? | with a lot of snow
-Spell the word "winter". | w-i-n-t-e-r
-Spell the word "cloudy". | c-l-o-u-d-y
-Finish the sentence: It ___ hot in the summer. | gets
-Finish the sentence: It ___ snow in the summer. | doesn't
-What color do leaves turn in the fall? | red, yellow, and orange
-Which season comes after fall? | winter
-What is your favorite season? Why?
+C | How many seasons are in a year? | There are four seasons in a year.
+C | What helps plants grow in spring? | The rain helps plants grow.
+C | Which season comes after summer? | Fall comes after summer.
+C | What covers the ground in winter? | The snow covers the ground.
+G | Does it get hot in summer? | Yes, it gets hot in summer.
+G | Does it snow in summer? | No, it doesn't snow in summer.
+G | What happens in spring? | It gets warm and it rains a lot.
+G | Does it get cold in winter? | Yes, it gets cold and it snows.
+V | In spring, it gets ___ outside. | warm
+V | In summer, the days are ___ and the nights are short. | long
+V | In fall, it gets ___ outside. | cool
+V | In winter, it gets ___ and it snows. | cold
 # battle
 T | What is the weather like today? | It's sunny and warm today.
 T | Tell us about winter. | It gets cold and it snows.
@@ -493,16 +507,18 @@ SP | A: Do you want to play in the {snow} with me? | B: Sure! | A: Great! Let's 
 SW | It gets {hot} in the {summer}. It doesn't {snow}. | Write two sentences about your favorite season.
 ## U8 | Arnold's Apple Tree | How are seasons different?
 # learn
-What does "build a snowman" mean? | to make a man out of snow
-What does "fly a kite" mean? | to make a kite go up in the wind
-What does "grow" mean? | to get bigger
-Spell the word "swing". | s-w-i-n-g
-Spell the word "kite". | k-i-t-e
-Finish the sentence: I ___ a swing. I don't make apple pies. | make
-Ask: ___ you watch honeybees? Yes, I do. | Do
-What does Arnold build in the summer? | a tree house
-What color are the apples in the fall? | red
-What do you do in your favorite season?
+C | What does Arnold have? | Arnold has an apple tree.
+C | What does Arnold build in summer? | He builds a tree house.
+C | What color are the apples in fall? | The apples are big and red.
+C | Who eats the popcorn and berries? | The birds eat them.
+G | What do you make in spring, Arnold? | I make a swing for my apple tree.
+G | Do you build a snowman in winter? | Yes, I build a snowman in winter.
+G | Do you make apple pies in summer? | No, I don't make apple pies in summer.
+G | Do you watch honeybees? | Yes, I watch honeybees in spring.
+V | I ___ small buds grow on my apple tree. | watch
+V | I ___ a tree house in my apple tree. | build
+V | Red apples ___ to the ground. | fall
+V | My family and I make apple ___. | pies
 # battle
 T | What do you do in the summer? | I go to the beach in the summer.
 T | Do you ride a bicycle? | Yes, I do. I ride a bicycle.
@@ -565,16 +581,18 @@ SP | A: What do you do in the spring? | B: I {ride a bicycle} in the spring. | A
 SW | In the {spring}, I {fly a kite}. I don't {build a snowman}. | Write two sentences about what you do in your favorite season.
 ## U9 | Working with Numbers | How do numbers help us?
 # learn
-What does "plus sign" mean? | the sign + that tells us to add
-What does "equals sign" mean? | the sign = that shows the same amount
-What does "even numbers" mean? | numbers like 2, 4, 6, 8, and 10
-Spell the word "pencil". | p-e-n-c-i-l
-Spell the word "backpack". | b-a-c-k-p-a-c-k
-Finish the sentence: I ___ four shells. | have
-Finish the sentence: They ___ have a pet. | don't
-Two plus three equals what? | five
-Is seven an odd number or an even number? | odd
-Where do people add things together?
+C | What does the number line show? | It shows the numbers 1 to 20 in order.
+C | What color are the even numbers? | The even numbers are blue.
+C | What does the plus sign tell us? | It tells us to add the numbers together.
+C | How do we say 2 + 3 = 5? | Two plus three equals five.
+G | How many seashells do you have? | I have eight orange seashells.
+G | Do they have red crabs? | Yes, they have six red crabs.
+G | Do you have a ruler? | No, I don't have a ruler.
+G | What do you have in your backpack? | I have two pencils and a notebook.
+V | Some numbers are even, and some numbers are ___. | odd
+V | This is a ___ sign: +. | plus
+V | After the equals sign comes the ___. | answer
+V | We use ___ every day to count things. | addition
 # battle
 T | What school things do you have? | I have a pen and a ruler.
 T | How old are you? | I'm seven years old.
@@ -634,16 +652,18 @@ SP | A: Olly, how old are you? | B: I'm {seven} years old. How about you, Ben? |
 SW | I have {two} {pencils}. I don't have {a ruler}. | Write two sentences about the things you have and don't have.
 ## U10 | Stone Soup | How do numbers help us?
 # learn
-What does "pot" mean? | a big thing we cook soup in
-What does "sausages" mean? | long pieces of meat we eat
-What does "tasty" mean? | very good to eat
-Spell the word "carrots". | c-a-r-r-o-t-s
-Spell the word "soup". | s-o-u-p
-Ask: ___ you have potatoes? No, I don't. | Do
-Ask: ___ do you have? I have carrots. | What
-What does Hans put in the pot first? | water and stones
-Why do the people have tasty soup at the end? | They add their food together.
-What is the lesson of the story?
+C | What does Hans put in the pot first? | He puts water in the pot first.
+C | How many stones do Ann and Olga each find? | They each find four stones.
+C | How many potatoes does the woman have? | The woman has five potatoes.
+C | What do the people from the town add? | They add onions and carrots.
+G | Do you have any food? | No, I don't have any food.
+G | Do you have potatoes? | Yes, I have five potatoes.
+G | What do you have? | I have two sausages.
+G | Do you have any sausages? | No, we don't have any sausages.
+V | The family has a big ___. | pot
+V | Ann and Olga put ___ into the pot. | stones
+V | The man puts two ___ into the pot. | sausages
+V | Everyone eats some stone ___. | soup
 # battle
 T | What is in your favorite soup? | My favorite soup has carrots and onions.
 T | Do you have a notebook? | Yes, I do. I have a notebook.
@@ -707,16 +727,18 @@ SP | A: I have two {oranges}. | B: I have one. How many do we have? | A: Two plu
 SW | I have {potatoes} and {onions}. Let's make {potato} soup! It is tasty. | Write about the food you have and the soup you want to make.
 ## U11 | The Farmer and the Hat | What do we need?
 # learn
-What does "farmer" mean? | a person who grows food and keeps animals
-What does "fancy" mean? | not plain; very special and beautiful
-What does "sell" mean? | to give something and get money for it
-Spell the word "market". | m-a-r-k-e-t
-Spell the word "cow". | c-o-w
-Finish the sentence: He ___ a hat. He doesn't want a cow. | wants
-Finish the sentence: She ___ need a dress. | doesn't
-What does Farmer Flores sell at the market? | his cow
-What does the cow give them every day? | milk
-What is the lesson of the story?
+C | What does Farmer Flores grow? | He grows carrots, potatoes, and onions.
+C | Where does Mrs. Flores sell the milk? | She sells the milk at the market.
+C | What does Farmer Flores buy for himself? | He buys a very fancy hat.
+C | What does the farmer do at the end? | He buys his cow back.
+G | Does the farmer have a lot of money? | No, he doesn't have a lot of money.
+G | What does Mrs. Flores want? | She wants to go to the dance.
+G | Does the farmer need his cow? | Yes, he needs his cow.
+G | Does he want the fancy hat at the end? | No, he doesn't want the hat.
+V | Tomas Flores is a ___. | farmer
+V | Farmer Flores has a ___. | cow
+V | The cow gives lots of ___ every day. | milk
+V | He buys a very ___ hat for himself. | fancy
 # battle
 T | What do you want? | I want a new bicycle.
 T | What does your friend have? | She has a comic book.
@@ -780,16 +802,18 @@ SP | A: Can I borrow your {comic book}, please? | B: Sure, Sara. Here you are. |
 SW | I have {a doll}. I don't have {a board game}. I want {a comic book}. | Write about the things you have and the things you want.
 ## U12 | Wants and Needs | What do we need?
 # learn
-What does "need" mean? | something you must have to live
-What does "want" mean? | something you would like to have
-What does "job" mean? | the work people do to get money
-Spell the word "doctor". | d-o-c-t-o-r
-Spell the word "juice". | j-u-i-c-e
-Ask: ___ she have a doll? Yes, she does. | Does
-Ask: What ___ she want? She wants stickers. | does
-What three things do we need to live? | a home, food and water, and clothes
-What does a police officer do? | helps us and keeps us safe
-What do you need? Do you have these things?
+C | What does Maria want? | Maria wants a kitten.
+C | What do we need to keep us warm? | We need clothes to keep us warm.
+C | Why do people have jobs? | People have jobs to get money.
+C | What does a farmer do? | A farmer grows food.
+G | Does Maria want a bicycle? | No, she wants a kitten.
+G | What does Akif want? | He wants a new bicycle.
+G | Does Ji-Min need a pencil? | Yes, she needs a pencil for her homework.
+G | What does Sam need? | He needs new sneakers to walk to school.
+V | People have jobs to get ___. | money
+V | We need food and ___ to keep healthy. | water
+V | ___ have service jobs and help us learn. | Teachers
+V | Police officers ___ us and keep us safe. | help
 # battle
 T | What do you need for school? | I need a pencil and a notebook.
 T | What does your mother do? | My mother is a teacher.
@@ -849,16 +873,18 @@ SP | A: We want {soda}. | B: Yes! And we want chips! | A: We need fruit. | B: An
 SW | I need {water} and {food}. I want {a cookie}. | Write about the things you need and the things you want.
 ## U13 | Where's Your Home? | Where do we live?
 # learn
-What does "neighborhood" mean? | a place where families live, work, and play
-What does "the country" mean? | a place with woods, farms, and fields
-What does "address" mean? | words and numbers that tell us where a home is
-Spell the word "city". | c-i-t-y
-Spell the word "street". | s-t-r-e-e-t
-Finish the sentence: Jenna___ house is in the country. | 's (Jenna's)
-Ask: Is Ali___ house in the city? | 's (Ali's)
-Where do many people live in a city? | in apartments
-Are houses in the country close together or far apart? | far apart
-Where would you like to live? Why?
+C | What is a neighborhood? | A neighborhood is where families live, work, and play.
+C | Where does Jenna live? | Jenna lives on a farm in the country.
+C | What is Cairo? | Cairo is a big city.
+C | What does an address tell us? | An address tells us where a home is.
+G | Where is Matias's house? | Matias's house is in a town.
+G | Whose apartment is in the city? | Nada's apartment is in the city.
+G | Is this Jenna's house? | Yes, it's Jenna's house.
+G | What is Mason's address? | Mason's address is 19 Main Street, Rivertown.
+V | The ___ is very big. | world
+V | Some homes are ___ and some are houses. | apartments
+V | Loreto is a small ___. | town
+V | In the ___ there are woods, farms, and fields. | country
 # battle
 T | Where do you live? | I live in an apartment in the city.
 T | What is your neighborhood like? | My neighborhood is quiet and safe.
@@ -921,16 +947,18 @@ SP | A: This is my {house}. Come in. | B: Wow, Emma! Your home is really nice. |
 SW | I live in {Zhubei}. My home is {an apartment}. {Lily}'s home is in {the country}. | Write where you live and where your friend lives.
 ## U14 | City Mouse and Country Mouse | Where do we live?
 # learn
-What does "orchard" mean? | a place with many fruit trees
-What does "cornfield" mean? | a field where corn grows
-What does "department store" mean? | a big store that sells many things
-Spell the word "library". | l-i-b-r-a-r-y
-Spell the word "museum". | m-u-s-e-u-m
-Finish the sentence: ___ home is in the city. (he) | His
-Ask: Is ___ apartment small? (you) | your
-Where do the two mice sleep in the city? | in a new hotel
-Why does Country Mouse run? | He hears a loud noise. It is cats.
-What is the lesson of the story?
+C | Where does City Mouse live? | City Mouse lives in the city.
+C | What do the mice eat in the country? | They eat corn and apples.
+C | How do the mice go to the city? | They take a train to the city.
+C | Where do they sleep in the city? | They sleep in a new hotel.
+G | Where is City Mouse's home? | His home is in the city.
+G | Is your neighborhood quiet, Country Mouse? | Yes, my neighborhood is quiet.
+G | Is the mice's city hotel old? | No, their hotel is new.
+G | Where is your cousin's home, City Mouse? | His home is in the country.
+V | They go to the ___ and eat some corn. | cornfield
+V | They go to the ___ and eat some apples. | orchard
+V | They sleep in an ___ barn. | old
+V | They sleep in a new ___. | hotel
 # battle
 T | Is there a park in your neighborhood? | Yes, there is a park near my home.
 T | Tell us about your friend's home. | Her home is in the city.
@@ -995,16 +1023,18 @@ SP | A: Is there a {park} in your neighborhood? | B: Yes, there is. | A: Is ther
 SW | My home is in {the city}. My neighborhood is {noisy}. There is a {park} in my neighborhood. | Write about your home and the places in your neighborhood.
 ## U15 | Percussion Instruments | How can we make music?
 # learn
-What does "strike" mean? | to hit something
-What does "shake" mean? | to move something quickly up and down
-What does "xylophone" mean? | an instrument with wooden bars
-Spell the word "drum". | d-r-u-m
-Spell the word "loud". | l-o-u-d
-Finish the sentence: I'm ___ the drum. (play) | playing
-Finish the sentence: She ___ shaking the tambourine. (no) | isn't
-How do we play the cymbals? | We strike two cymbals together.
-What shape is a triangle instrument? | a triangle
-Which percussion instrument is your favorite? Why?
+C | What do we do with percussion instruments? | We strike or shake them.
+C | What does a xylophone have? | A xylophone has wooden bars.
+C | How do we play the cymbals? | We strike two cymbals together.
+C | Why is a triangle called a triangle? | Its shape is a triangle.
+G | What is the boy doing? | He's striking the big white drum.
+G | What is the girl doing? | She's striking the xylophone with mallets.
+G | Are you playing the drums? | Yes, I'm playing the drums.
+G | Is the boy playing small cymbals? | No, he's playing big cymbals.
+V | Percussion ___ are big and small. | instruments
+V | We ___ drums with our hands or mallets. | strike
+V | A ___ is like a small drum. | tambourine
+V | When we play the ___, we strike two together. | cymbals
 # battle
 T | What are you doing now? | I'm sitting in the classroom.
 T | How does a drum sound? | A drum sounds loud.
@@ -1068,16 +1098,18 @@ SP | A: Can you help me, please? | B: Sure! Let's {play the drum} together. | A:
 SW | I'm playing the {drum}. I'm {striking} it. It sounds {loud} and {fast}. | Write about a percussion instrument you are playing.
 ## U16 | Let's Make Music | How can we make music?
 # learn
-What does "concert" mean? | a show where people play music
-What does "practice an instrument" mean? | to play it again and again to get good
-What does "buy tickets" mean? | to pay money to go to a show
-Spell the word "parade". | p-a-r-a-d-e
-Spell the word "circus". | c-i-r-c-u-s
-Ask: ___ you singing? Yes, I am. | Are
-Ask: ___ she dancing? No, she isn't. | Is
-What do the students use to make drums? | buckets and pots
-How do the students get money for new instruments? | They sell tickets to a concert.
-Is it a good idea to ask friends and family for help? Why?
+C | What do the students want? | They want music lessons.
+C | Why can't the students buy instruments? | They don't have any money.
+C | What are the buckets and pots? | The buckets and pots are their drums.
+C | Who is helping the students? | Ms. King is helping them.
+G | Are the parents taking pictures? | Yes, they are taking pictures.
+G | Is Ms. King helping the students? | Yes, she is helping them.
+G | Are the people clapping? | Yes, they are clapping and giving money.
+G | Are Fay and Oscar striking drums? | No, they are shaking their instruments.
+V | We need a good ___. | idea
+V | We can sell ___ and get money. | tickets
+V | Our parents are taking ___. | pictures
+V | It's ___ night and the people buy tickets. | concert
 # battle
 T | What are you doing? | I'm reading a book.
 T | What kind of show do you like? | I like the circus.
@@ -1141,16 +1173,18 @@ SP | A: What are we doing? | B: You're playing instruments and walking. It's a {
 SW | My favorite performance is a {concert}. Are the people {singing}? Yes, they are! | Write about your favorite kind of performance.
 ## U17 | Living and Nonliving Things (partial) | What are living things?
 # learn
-What does "living" mean? | alive; it can grow, move, and breathe
-What does "nonliving" mean? | not alive; it can't grow or breathe
-What does "breathe" mean? | to take air in and out
-Spell the word "plant". | p-l-a-n-t
-Spell the word "grass". | g-r-a-s-s
-Finish the sentence: An animal ___ grow. | can
-Finish the sentence: A toy ___ grow. | can't
-Can a plant breathe air? | Yes, it can.
-Does a ball move by itself? | No, it doesn't.
-Do all living things need a home?
+C | What can a living thing do? | A living thing can grow and change.
+C | What do living things need? | They need food, water, and air.
+C | What do plants make their food from? | Plants make food from sunlight, water, and air.
+C | Is a ball a living thing? | No, a ball is a nonliving thing.
+G | Can plants move by themselves? | No, plants can't move by themselves.
+G | Can a ball move by itself? | No, it can only move if we move it.
+G | Can animals get food and water? | Yes, animals can get food and water.
+G | Can a toy breathe? | No, a toy can't breathe.
+V | A ___ thing can grow and change. | living
+V | Living things ___ air. | breathe
+V | A toy is a ___ thing. | nonliving
+V | People and animals can ___ by themselves. | move
 # battle
 T | Name one living thing. What can it do? | A tree is living. It can grow.
 T | Name one nonliving thing. | A bicycle is a nonliving thing.
@@ -1214,16 +1248,18 @@ SP | A: Oh, no! My {drum} is broken! | B: I'm sorry. That's OK. I can fix it. | 
 SW | A {tree} is a living thing. It can {grow and change}. A {ball} is a nonliving thing. It can't {breathe}. | Write about one living thing and one nonliving thing.
 ## U18 | The Gingerbread Man | What are living things?
 # learn
-What does "chase" mean? | to run after someone
-What does "catch" mean? | to get and hold someone who is running
-What does "junk food" mean? | food that is not healthy, like chips and soda
-Spell the word "bake". | b-a-k-e
-Spell the word "healthy". | h-e-a-l-t-h-y
-Finish the sentence: You ___ run away! | should
-Finish the sentence: You ___ stay here. (no) | shouldn't
-Who makes the gingerbread man? | an old woman
-Who eats the gingerbread man at the end? | the fox
-Why does the fox tell the gingerbread man to climb on his nose?
+C | Who bakes the gingerbread man? | An old woman bakes the gingerbread man.
+C | Where does the gingerbread man see the cow? | He sees the cow in a grassy field.
+C | Why can't they catch the gingerbread man? | He is too fast.
+C | Who eats the gingerbread man? | The fox eats the gingerbread man.
+G | Should the gingerbread man run fast? | Yes, he should run fast.
+G | Should he talk to the fox? | No, he shouldn't talk to the fox.
+G | What should the gingerbread man do at the river? | He should swim across the river.
+G | Should you run in the classroom? | No, you shouldn't run in the classroom.
+V | The old woman ___ the cookie in the oven. | bakes
+V | The old woman and old man ___ the gingerbread man. | chase
+V | You can't ___ me, I'm the gingerbread man! | catch
+V | Climb on my nose, and we can ___ the river. | cross
 # battle
 T | What should you do to be healthy? | I should eat healthy food.
 T | What shouldn't you do in school? | I shouldn't run in the classroom.
