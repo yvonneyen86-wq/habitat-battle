@@ -5,10 +5,10 @@ C | What do birds have on their bodies? | Birds have two wings and feathers.
 C | What helps fish breathe in water? | Gills help fish breathe in water.
 C | Where do amphibians lay their eggs? | Amphibians lay their soft eggs in water.
 C | What do baby mammals drink? | Baby mammals drink milk from their mothers.
-G | Do gills help fish breathe? | Yes, they help them breathe.
-G | What do fish have on their bodies? | They have scales on their bodies.
-G | Do birds lay eggs? | Yes, they lay eggs with hard shells.
-G | How do feathers help birds? | They help them fly and keep them warm.
+G | Do gills help fish breathe? | Yes, they help them breathe. | Yes · they · them
+G | What do fish have on their bodies? | They have scales on their bodies. | They · scales
+G | Do birds lay eggs? | Yes, they lay eggs with hard shells. | Yes · they · hard shells
+G | How do feathers help birds? | They help them fly and keep them warm. | They · them · fly · warm
 V | Fish have ___ to help them breathe in water. | gills
 V | Birds have two ___ and feathers. | wings
 V | ___ can live on land and in water. | Amphibians
@@ -74,10 +74,10 @@ C | Where do Leo and Lily live? | They live in a big garden near a forest.
 C | What does Lily eat? | She eats worms, nuts, and berries.
 C | What does Leo hunt for? | He hunts for mice and birds.
 C | What hits the fox on the head? | A pinecone falls and hits the fox on the head.
-G | Does Lily always escape from Leo? | Yes, she always escapes from Leo.
-G | Is Lily usually nervous? | Yes, she is usually very nervous.
-G | How often does Leo try to catch Lily now? | He hardly ever tries to catch Lily now.
-G | Do Leo and Lily fight now? | No, they never fight now.
+G | Does Lily always escape from Leo? | Yes, she always escapes from Leo. | always · escapes
+G | Is Lily usually nervous? | Yes, she is usually very nervous. | usually · nervous
+G | How often does Leo try to catch Lily now? | He hardly ever tries to catch Lily now. | hardly ever · tries · catch
+G | Do Leo and Lily fight now? | No, they never fight now. | never · fight
 V | Lily eats ___, nuts, and berries. | worms
 V | Leo ___ through the garden very slowly and quietly. | creeps
 V | Lily ___ a pinecone, and it falls on the fox. | pecks
@@ -146,10 +146,10 @@ C | What are the three states of things in our world? | The three states are sol
 C | What is a liquid? | A liquid is a thing that can flow.
 C | What happens when we make water very cold? | It freezes and changes to ice.
 C | What happens when we heat water? | It boils and changes to steam.
-G | What was the snow before it melted? | It was a solid, and now it's a liquid.
-G | Was the water a liquid before it froze? | Yes, it was a liquid, and now it's ice.
-G | Were the ice cubes hard an hour ago? | Yes, they were hard, but now they're water.
-G | What was this orange juice before? | It was an orange, and now it's juice.
+G | What was the snow before, a solid or a liquid? | It was a solid, and now it's a liquid. | was · solid · liquid
+G | Was the water a liquid before? | Yes, it was a liquid, and now it's ice. | was · liquid · ice
+G | Were the ice cubes hard an hour ago? | Yes, they were hard, but now they're water. | were · hard · water
+G | What was this orange juice before? | It was an orange, and now it's juice. | was · orange · juice
 V | A ___ is a thing that can flow. | liquid
 V | When we heat water, it boils and changes to ___. | steam
 V | When ice or snow heats up, it ___ and changes to water. | melts
@@ -219,10 +219,10 @@ C | Why did the ice cream melt? | The freezer door was open all night.
 C | Who teaches the students to make ice cream? | Mr. Jenkins teaches the students to make ice cream.
 C | What is in the mixture? | The mixture is cream, sugar, and vanilla.
 C | What do the students put into the big bag? | They put the salt and the ice cubes into the big bag.
-G | Was the freezer door open? | Yes, it was open all night.
-G | Were the students happy about the ice cream? | No, they weren't happy at first.
-G | Where was the ice cream? | It was in the freezer in the cafeteria.
-G | Was Mr. Jenkins's freezer closed all night? | Yes, it was closed, so he had ice.
+G | Was the freezer door open? | Yes, it was open all night. | was · open · all night
+G | Were the students happy about the ice cream? | No, they weren't happy at first. | weren't · happy
+G | Where was the ice cream? | It was in the freezer in the cafeteria. | was · freezer · cafeteria
+G | Was Mr. Jenkins's freezer closed all night? | Yes, it was closed, so he had ice. | was · closed · ice
 V | Mix the sugar, vanilla, and ___. | cream
 V | ___ the mixture into the small bag. | Pour
 V | Put the ___ and the ice cubes into the big bag. | salt
@@ -289,11 +289,11 @@ SW | My favorite food is {salad}. It's a mixture. It has {tomatoes}, {cucumbers}
 C | How did people communicate long ago? | Long ago, people used letters to communicate.
 C | How long did great-grandma's letter take to get to London? | It took two months to get there.
 C | How did people get news before newspapers? | People talked to each other to get news.
-C | How long does it take to travel from New York to Boston today? | It takes 30 minutes to travel from New York to Boston today.
-G | What did people listen to for news long ago? | They listened to the news on the radio.
-G | Did people travel by airplane long ago? | No, they didn't travel by airplane.
-G | How did people travel long ago? | They traveled by horse and cart.
-G | What did you do last night? | I cleaned my room and talked to my friend.
+C | How long is the trip from New York to Boston today? | It takes 30 minutes to travel from New York to Boston today.
+G | What did people listen to for news long ago? | They listened to the news on the radio. | listened · news · radio
+G | Did people travel by airplane long ago? | No, they didn't travel by airplane. | didn't travel · airplane
+G | How did people travel long ago? | They traveled by horse and cart. | traveled · horse · cart
+G | What did you do last night? | I cleaned my room and talked to my friend. | cleaned · talked · room · friend
 V | Long ago, people used ___ to communicate. | letters
 V | Today, letters are carried by ___. | airplane
 V | Later, people listened to the ___ for news. | radio
@@ -360,15 +360,15 @@ SW | Long ago, people {traveled by horse and cart}. Now we {travel by airplane}.
 # learn
 C | Where did Carlo's family live in 1910? | They lived in Italy, and they were very poor.
 C | How did Carlo's family travel to the United States? | They traveled by ship.
-C | Where did they arrive after ten days? | They arrived at Ellis Island in New York.
+C | Where did Carlo's family arrive after ten days? | They arrived at Ellis Island in New York.
 C | Who checked everyone at Ellis Island? | Doctors checked everyone at Ellis Island.
-G | Did Carlo's family travel by ship? | Yes, they traveled by ship.
-G | Did they arrive in two days? | No, they didn't arrive in two days.
-G | Where did they live in New York? | They lived with Carlo's uncle.
-G | What did the clerks do at Ellis Island? | They asked the people many questions.
-V | They were very ___, so they came to the United States. | poor
+G | Did Carlo's family travel by ship? | Yes, they traveled by ship. | traveled · ship
+G | Did Carlo's family arrive in two days? | No, they didn't arrive in two days. | didn't arrive · two days
+G | Where did Carlo's family live in New York? | They lived with Carlo's uncle. | lived · uncle
+G | What did the clerks do at Ellis Island? | They asked the people many questions. | asked · questions
+V | Carlo and his family were very ___, so they came to the United States. | poor
 V | The ship was ___ and dirty. | crowded
-V | The ___ asked them many questions. | clerks
+V | The ___ asked the people many questions. | clerks
 V | People who weren't healthy couldn't ___ New York. | enter
 # battle
 T | How did Carlo's family travel to the United States? | They traveled by ship.
@@ -448,10 +448,10 @@ C | What do we do when we subtract things? | We take them away from other things
 C | What sign do all subtraction problems have? | All subtraction math problems have a minus sign.
 C | How do we usually write subtraction problems for double-digit numbers? | We usually write them in a column.
 C | How many cookies did Alma's friends eat? | Her friends ate three cookies.
-G | How many cookies did Alma buy? | She bought five cookies.
-G | How many grapes did Olivia give to her sister? | She gave twenty grapes to her little sister.
-G | Did May eat six carrots? | No, she ate three carrots.
-G | Did Jay buy four pencils? | No, he didn't buy four pencils.
+G | How many cookies did Alma buy? | She bought five cookies. | bought · five cookies
+G | How many grapes did Olivia give to her sister? | She gave twenty grapes to her little sister. | gave · twenty grapes · sister
+G | Did May eat six carrots? | No, she ate three carrots. | ate · three carrots
+G | Did Jay buy four pencils? | No, he didn't buy four pencils. | didn't buy · four pencils
 V | When we subtract, we can see how many things are ___. | left
 V | We write problems for double-digit numbers in a ___. | column
 V | We write problems for single-digit numbers in a ___. | row
@@ -519,10 +519,10 @@ C | Where did Bandar live? | He lived in the woods near a small town.
 C | How many cookies did Bandar see at the bakery? | He saw thirty beautiful cookies.
 C | Who chased Bandar at the restaurant? | The cook chased Bandar at the restaurant.
 C | Where did the candy maker take Bandar? | He took him back to the woods.
-G | Did Bandar go to a candy store? | Yes, he went to a candy store.
-G | What did Bandar do with the cookies? | He stole them and ate them.
-G | Did Bandar let go of the candy? | No, he didn't let go of the candy.
-G | Where did Bandar hide after the baker chased him? | He ran up a tree and hid in the leaves.
+G | Did Bandar go to a candy store? | Yes, he went to a candy store. | went · candy store
+G | What did Bandar do with the cookies? | He stole them and ate them. | stole · ate
+G | Did Bandar let go of the candy? | No, he didn't let go of the candy. | didn't let go · candy
+G | Where did Bandar hide from the baker? | He ran up a tree and hid in the leaves. | ran · hid · tree · leaves
 V | Bandar was ___ and decided to go into the town. | bored
 V | "You ___ little monkey!" the baker cried. | greedy
 V | The ___ made thirty beautiful cookies. | baker
@@ -596,10 +596,10 @@ C | Who usually makes the rules at home? | Parents usually make the rules at hom
 C | Who makes the school rules? | Teachers and the principal make the school rules.
 C | What can't we do in the school library? | We can't eat, drink, or be noisy there.
 C | Why must we listen to the lifeguards? | Lifeguards make sure we are safe near the water.
-G | Whose book is this? | This book is hers.
-G | Whose pencils are these? | These pencils are his.
-G | Is that notebook yours? | Yes, that notebook is mine.
-G | Are these toys ours? | No, they aren't ours, they're theirs.
+G | Whose book is this? | This book is hers. | hers · book
+G | Whose pencils are these? | These pencils are his. | his · pencils
+G | Is that notebook yours? | Yes, that notebook is mine. | mine · notebook
+G | Are these toys ours? | No, they aren't ours, they're theirs. | theirs · aren't ours
 V | Teachers and the ___ make the school rules. | principal
 V | ___ help us follow the rules in the school library. | Librarians
 V | You can't eat, drink, or ___ near the pool. | litter
@@ -666,14 +666,14 @@ C | What does Ricky Raccoon help put away? | He helps put all of the toys away.
 C | What do the gorillas do with their food? | They grab their food.
 C | What does the ox do before opening a door? | He always knocks before opening a door.
 C | What do bears share? | Bears share their toys and their honey.
-G | May I come in? | Yes, you may come in.
-G | Can I play outside now? | No, you can't play outside now.
-G | May I watch TV? | No, you may not watch TV.
-G | Can I have some juice? | Yes, you can have some juice.
+G | May I come in? | Yes, you may come in. | may · come in
+G | Can I play outside now? | No, you can't play outside now. | can't · play outside
+G | May I watch TV? | No, you may not watch TV. | may not · watch TV
+G | Can I have some juice? | Yes, you can have some juice. | can · some juice
 V | Bears always ___ their toys and their honey. | share
 V | The ox always ___ before opening a door. | knocks
 V | Gorillas are rude, and they ___ their food. | grab
-V | Everyone says, "How ___ of him!" | thoughtful
+V | The ox knocks, and everyone says, "How ___ of him!" | thoughtful
 # battle
 T | What does Ricky Raccoon do when he comes over to play? | He helps put all of the toys away.
 B | Bears share their toys with another bear.
@@ -735,10 +735,10 @@ C | What are some natural resources? | Air, sunlight, water, wood, and land are 
 C | What do plants need to grow? | Plants need sunlight and land to grow.
 C | What makes the air dirty? | Smoke from cars and factories makes the air dirty.
 C | Where does trash go? | Trash goes to places called landfills.
-G | Where is the smoke? | There's smoke in the air above the city.
-G | Where is the landfill? | The landfill is across from the park.
-G | Is the trash can in front of the tree? | No, the trash can is behind the tree.
-G | What is behind the pond? | There are trees behind the pond.
+G | Where is the smoke? | There's smoke in the air above the city. | above · smoke · city
+G | Where is the landfill? | The landfill is across from the park. | across from · landfill · park
+G | Is the trash can in front of the tree? | No, the trash can is behind the tree. | behind · trash can · tree
+G | What is behind the pond? | There are trees behind the pond. | behind · trees · pond
 V | ___ from cars and factories makes the air dirty. | Smoke
 V | Trash goes to places called ___. | landfills
 V | Plants need ___ and land to grow. | sunlight
@@ -807,15 +807,15 @@ SW | I see {sunlight} every day. I see {water} and {trees}, too. We need them to
 C | What is the juice carton made of? | The carton is made of hard paper.
 C | Where was the carton on January 15? | It was sitting on a shelf in a big store.
 C | How did the carton get into the lake? | The wind blew it into the water.
-C | What did they recycle the carton into? | They recycled it into a notebook.
-G | Where is the trash can at the lake? | There is a trash can behind the tree.
-G | Is there a bicycle in front of the red bin? | No, there's a bicycle next to the green bin.
-G | Where is the carton's bottle friend? | He is across from the carton in a bin.
-G | Is the little carton behind the juice carton? | No, it's in front of the juice carton.
+C | What did the recycling plant make from the carton? | They recycled the carton into a notebook.
+G | Where is the trash can at the lake? | There is a trash can behind the tree. | behind · trash can · tree
+G | Is there a bicycle in front of the red bin? | No, there's a bicycle next to the green bin. | next to · bicycle · green bin
+G | Where is the carton's bottle friend? | He is across from the carton in a bin. | across from · carton · bin
+G | Is the little carton behind the juice carton? | No, it's in front of the juice carton. | in front of · juice carton
 V | I'm an orange juice ___! | carton
 V | I'm sitting on a ___ in a big store. | shelf
 V | There are large ___ that make loud noises. | machines
-V | He caught me and a plastic ___ in his net. | bottle
+V | The man caught me and a plastic ___ in his net. | bottle
 # battle
 T | Where did the little girl leave the carton? | She left it in front of the lake.
 B | The wind blew me into the water.
@@ -878,10 +878,10 @@ C | How can slow music make us feel? | Slow music can make us feel sleepy.
 C | How can fast music make us feel? | Fast music can make us feel excited.
 C | Why do mothers play flute music for their babies at night? | It helps the babies sleep.
 C | What can we imagine when the music is fast? | We can imagine an animal running.
-G | When does Pedro listen to slow music? | He listens to slow music at night.
-G | When does Amanda listen to fast music? | She listens to fast music in the morning.
-G | When does Sandy have a dance lesson? | She has a dance lesson in the evening.
-G | When does he go to school with friends? | He goes to school with friends on Monday.
+G | When does Pedro listen to slow music? | He listens to slow music at night. | at night · listens
+G | When does Amanda listen to fast music? | She listens to fast music in the morning. | in the morning · listens
+G | When does Sandy have a dance lesson? | She has a dance lesson in the evening. | in the evening · dance lesson
+G | When does Pedro go to school with friends? | He goes to school with friends on Monday. | on Monday · goes · school
 V | Some music is ___, and some music is low. | high
 V | Slow music can make us feel ___. | sleepy
 V | There are no right or ___ feelings about music. | wrong
@@ -951,10 +951,10 @@ C | What notes make Olga feel happy? | High and slow notes make her feel happy.
 C | Why must Olga play Alonso's part tonight? | Alonso has the flu.
 C | Why does Mr. Perez think Olga plays well? | She practices every day.
 C | Whose music does Olga hear on the computer? | She hears her own music because Mr. Perez recorded her.
-G | When did Mark go to music class? | He went to music class yesterday morning.
-G | When did Gus play the cymbals? | He played the cymbals last week.
-G | What did he play last night? | Last night he played the piano.
-G | Did he practice the piano last week? | Yes, he practiced the piano last week.
+G | When did Mark go to music class? | He went to music class yesterday morning. | yesterday morning · went
+G | When did Gus play the cymbals? | He played the cymbals last week. | last week · played · cymbals
+G | What did Mark play last night? | Last night he played the piano. | last night · played · piano
+G | Did Gus practice the piano last week? | Yes, he practiced the piano last week. | last week · practiced · piano
 V | Olga is very ___ because she must play Alonso's part. | worried
 V | Alonso has the ___, so he can't play tonight. | flu
 V | When Olga finishes, her eyes fill with ___. | tears
@@ -1025,10 +1025,10 @@ C | What does a force do? | A force makes something move.
 C | Which force moves something toward you? | A pull moves something toward you.
 C | What happens when we throw a ball with a small force? | The ball doesn't go far.
 C | What is speed? | Speed is how fast things move.
-G | Which is lighter, a ball or a desk? | A ball is lighter than a desk.
-G | Is a desk heavier than a ball? | Yes, a desk is heavier than a ball.
-G | What's slower than an airplane? | A train is slower than an airplane.
-G | Which is faster, a horse or a tortoise? | A horse is faster than a tortoise.
+G | Which is lighter, a ball or a desk? | A ball is lighter than a desk. | lighter than · ball · desk
+G | Is a desk heavier than a ball? | Yes, a desk is heavier than a ball. | heavier than · desk · ball
+G | What's slower than an airplane? | A train is slower than an airplane. | slower than · train · airplane
+G | Which is faster, a horse or a tortoise? | A horse is faster than a tortoise. | faster than · horse · tortoise
 V | A ___ is a force that moves something away from you. | push
 V | A ___ moves something toward you. | pull
 V | We need a big force to move a real car because it's ___. | heavy
@@ -1097,13 +1097,13 @@ C | Where did the family of goats live? | They lived on East Mountain.
 C | What did the goats push each other with? | They pushed each other with their horns.
 C | Why did Black Goat move to West Mountain? | He moved there because he was angry.
 C | How did the goats feel at the end of the story? | They were angry, tired, wet, cold, and hungry.
-G | Who is the oldest brother in the family? | Brown Goat is the oldest brother in the family.
-G | Who is the smartest brother? | Black Goat is the smartest brother.
-G | Where is the juiciest grass? | The juiciest grass is on East Mountain.
-G | What does Brown Goat drink on West Mountain? | He drinks the coldest water in the pond.
+G | Who is the oldest brother in the family? | Brown Goat is the oldest brother in the family. | the oldest · Brown Goat
+G | Who is the smartest brother? | Black Goat is the smartest brother. | the smartest · Black Goat
+G | Where is the juiciest grass? | The juiciest grass is on East Mountain. | the juiciest · grass · East Mountain
+G | What does Brown Goat drink on West Mountain? | He drinks the coldest water in the pond. | the coldest · water · pond
 V | The goats were very ___ and never said sorry. | stubborn
-V | They pushed each other with their ___. | horns
-V | They didn't move ___ or backward. | forward
+V | The goats pushed each other with their ___. | horns
+V | The goats didn't move ___ or backward. | forward
 V | Black Goat was angry, so he moved to ___ Mountain. | West
 # battle
 T | Why did Black Goat move to West Mountain? | He was angry after the fight.
@@ -1170,10 +1170,10 @@ C | How many corners does a square have? | A square has four corners.
 C | What do all triangles have? | All triangles have three straight lines and three corners.
 C | What did George W. Hart make his sculpture from? | He made his sculpture from wood.
 C | What shapes did Ben Heine use to make his picture? | He used lots of circles to make his picture.
-G | Are there any triangles in the picture? | No, there aren't any triangles.
-G | Is there any red paint? | No, there isn't any red paint.
-G | How many shapes are there in the collage? | There are a lot of shapes in the collage.
-G | Is there any snow in this collage? | Yes, there's a lot of snow in this collage.
+G | Are there any triangles in the picture? | No, there aren't any triangles. | aren't any · triangles
+G | Is there any red paint? | No, there isn't any red paint. | isn't any · red paint
+G | How many shapes are there in the collage? | There are a lot of shapes in the collage. | a lot of · shapes · collage
+G | Is there any snow in this collage? | Yes, there's a lot of snow in this collage. | a lot of · snow · collage
 V | ___ have two sides, but they aren't straight. | Crescents
 V | ___ don't have sides, lines, or corners. | Spirals
 V | Squares have four ___ sides and four corners. | straight
@@ -1244,13 +1244,13 @@ C | What did Maki see on the table? | She saw some colored paper on the table.
 C | What did Maki make with the red square? | She made a red crane.
 C | What did Maki make for the seal? | She made him a purple ball.
 C | What did Maki make with the golden paper? | She made a big, round sun.
-G | Did Maki have any pencils? | No, she didn't have any pencils.
-G | How many seals were there? | There was one orange seal.
-G | How much paper was there? | There was a lot of paper.
-G | Were there any fish in the water? | Yes, there was one green fish.
+G | Did Maki have any pencils? | No, she didn't have any pencils. | didn't have any · pencils
+G | How many seals were there? | There was one orange seal. | was one · orange seal
+G | How much paper was there? | There was a lot of paper. | a lot of · paper
+G | Were there any fish in the water? | Yes, there was one green fish. | was one · green fish
 V | The paper was ___, and there were a lot of colors. | shiny
 V | Maki bent the paper in the middle and at the ___. | edges
-V | She made an orange ___ and a purple ball. | seal
+V | Maki made an orange ___ and a purple ball. | seal
 V | The last piece of paper was ___. | golden
 # battle
 T | What did Maki make with the blue paper? | She made water and crumpled it to make waves.
