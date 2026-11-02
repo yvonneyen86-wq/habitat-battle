@@ -592,6 +592,7 @@ body.lite .amb-canvas{display:none}
 .overlay .ck{display:inline-block;background:#fff;border-radius:99px;padding:.2cqmin 1.4cqmin;font-weight:900}.overlay .ck.k-C{color:#1971c2}.overlay .ck.k-G{color:#7048e8}.overlay .ck.k-V{color:#e8590c}
 .overlay .fullsent{color:#2f9e44;font-weight:900;font-size:2.6cqmin;margin:-.6cqmin 0 .8cqmin}
 .overlay .q .blank{display:inline-block;min-width:14cqmin;border-bottom:.6cqmin solid #e8590c;vertical-align:baseline;height:1em;margin:0 .6cqmin}.overlay .ans .fill{color:#e8590c}
+.overlay .wbank{display:flex;flex-wrap:wrap;gap:1.2cqmin;justify-content:center;margin:.4cqmin 0 1cqmin}.overlay .wopt{display:inline-flex;align-items:center;gap:.8cqmin;background:#fff;border:.35cqmin solid #e8590c;color:#1e2433;border-radius:1.6cqmin;padding:.8cqmin 2cqmin;font-size:3.4cqmin;font-weight:900}.overlay .wopt i{font-style:normal;font-family:var(--emoji);font-size:4.2cqmin}.overlay .wopt.hit{background:#e8590c;color:#fff}
 #bp-bar{display:none}#bp-call{display:none}
 body.bp-on .sv{position:fixed;inset:0;z-index:60;display:flex;flex-direction:column;gap:8px;background:#1e2433;padding:10px 16px 12px}
 body.bp-on .main{grid-template-columns:minmax(0,1fr) 360px}
@@ -1126,8 +1127,15 @@ function log(t){S.log.push(t);if(S.log.length>40)S.log.splice(0,S.log.length-40)
 function lines(txt){return String(txt||'').split('\n').map(l=>l.trim()).filter(Boolean).slice(0,400);}
 const CARD_KINDS={C:['📖','Textbook'],G:['🧩','Grammar'],V:['🔤','Word · fill in the blank']};
   function cardQ(c){const q=esc(c.q);return c.kind==='V'?q.replace(/_{2,}/g,'<span class="blank"></span>'):q;}
+  function cardWords(c){const lu=ltUnits().find(x=>x.n===c.u&&(!S.bankSel||x.level===S.bankSel.level))||ltUnits().find(x=>x.n===c.u);const ws=lu?lu.words:[];
+    const same=(a,w)=>{a=a.toLowerCase();w=w.toLowerCase();return a===w||a===w+'s'||a+'s'===w||a.replace(/s$/,'')===w.replace(/s$/,'')||a===w+'es'||a.replace(/ies$/,'y')===w;};
+    const find=a=>ws.find(w=>same(a,w.w));
+    const opts=gatherQs().filter(x=>x.kind==='V'&&x.u===c.u&&x.a).map(x=>x.a);const seen=new Set(),bank=[];opts.forEach(a=>{const k=a.toLowerCase();if(!seen.has(k)){seen.add(k);bank.push(a);}});
+    return {pic:(find(c.a||'')||{}).pic||'',bank:bank.map(a=>({a,pic:(find(a)||{}).pic||''}))};}
+  function cardBank(c){if(c.kind!=='V'||!c.a)return '';const w=cardWords(c);if(!w.bank.length)return '';const seed=c.u*31+(c.a||'').length;const arr=w.bank.slice().sort((x,y)=>((x.a.charCodeAt(0)*7+seed)%13)-((y.a.charCodeAt(0)*7+seed)%13));
+    return `<div class="wbank">${arr.map(o=>`<span class="wopt${H.showAns&&o.a===c.a?' hit':''}">${o.pic?`<i>${esc(o.pic)}</i>`:''}${esc(o.a)}</span>`).join('')}</div>`;}
   function cardA(c){if(!c.a)return '';if(c.kind==='V'&&/_{2,}/.test(c.q)){return 'Answer: <b>'+esc(c.a)+'</b> — '+esc(c.q).replace(/_{2,}/g,'<b class="fill">'+esc(c.a)+'</b>');}return (c.kind?'Model answer: ':'Answer: ')+esc(c.a);}
-  function gatherQs(){return lines(S.qText).map(l=>{let t=l;const m=/^\s*U\d{1,2}\s*\|/i.exec(t);if(m)t=t.slice(m[0].length);let kind='';const km=/^\s*([CGV])\s*\|/.exec(t);if(km){kind=km[1];t=t.slice(km[0].length);}const k=t.indexOf('|');const o=k<0?{q:t.trim(),a:''}:{q:t.slice(0,k).trim(),a:t.slice(k+1).trim()};o.kind=kind;o.src=l;return o;}).filter(x=>x.q);}
+  function gatherQs(){return lines(S.qText).map(l=>{let t=l,un=0;const m=/^\s*U(\d{1,2})\s*\|/i.exec(t);if(m){un=+m[1];t=t.slice(m[0].length);}let kind='';const km=/^\s*([CGV])\s*\|/.exec(t);if(km){kind=km[1];t=t.slice(km[0].length);}const k=t.indexOf('|');const o=k<0?{q:t.trim(),a:''}:{q:t.slice(0,k).trim(),a:t.slice(k+1).trim()};o.kind=kind;o.u=un;o.src=l;return o;}).filter(x=>x.q);}
 function battleQs(){return lines(S.bText).map(parseQ).filter(Boolean);}
 function pick(listFn,orderKey,ptrKey){const qs=listFn();if(!qs.length)return null;if(!S[orderKey].length||S[ptrKey]>=S[orderKey].length||S[orderKey].length!==qs.length){S[orderKey]=qs.map((_,i)=>i).sort(()=>Math.random()-.5);S[ptrKey]=0;}return qs[S[orderKey][S[ptrKey]++]]||qs[0];}
 function skey(){return CR.inRunner&&CR.init&&CR.init.session?'habitat-cr-'+CR.init.session.id:'habitat-host';}
@@ -1569,7 +1577,7 @@ function renderOverlay(){
   if(S.phase==='battle'&&S.battle&&S.battle.vote){const v=S.battle.vote,c=voteCounts(),tot=Math.max(1,c.reduce((a,x)=>a+x,0)),n=Object.keys(v.votes).length;
     o.innerHTML=`<div class="kind">🗳️ Vote for the best sentence</div><div class="vote-items">${v.items.map((it,i)=>{const pp=P(it.pid);return `<div class="vi${v.revealed&&v.winner===i?' win':''}${!v.revealed&&H.voter?' pick':''}" ${!v.revealed?`data-act="vote-cast" data-i="${i}"`:''}>${v.revealed?`<i class="fill" style="width:${Math.round(c[i]/tot*100)}%"></i>`:''}<span class="L">${'ABCD'[i]}</span><span class="tx">${esc(it.text)}${v.revealed&&v.winner===i&&pp?`<small> — ${charById(pp.char).e} ${esc(pp.name)}</small>`:''}</span>${v.revealed?`<b class="cnt">${c[i]}</b>`:''}</div>`;}).join('')}</div>${v.revealed?'':`<div class="voters">${Object.values(S.players).filter(p=>!p.pre).map(p=>`<button class="vb${H.voter===p.pid?' cur':''}${v.votes[p.pid]!=null?' done':''}" data-act="vote-as" data-pid="${p.pid}" style="--tc:${teamColor(p.team)}">${charById(p.char).e} ${esc(p.name)}${v.votes[p.pid]!=null?' ✓':''}</button>`).join('')}</div>`}<div class="hint">🗳️ ${n} vote${n===1?'':'s'} so far · Students vote on their tablets${v.revealed?'':H.voter?` · <b>Now tap the sentence ${esc(P(H.voter)?.name||'')} chooses</b>`:' · or tap a name, then a sentence, to vote for them'}</div><div class="acts">${v.revealed?'':'<button class="btn primary" data-act="vote-reveal">🏅 Show results</button>'}<button class="btn" data-act="vote-close">Close</button></div>`;o.hidden=false;return;}
   if(S.phase==='gather'&&S.lt&&S.lt.cat!=='sw'&&!H.ltHideText&&ltUnit()){const h=ltOverlayHTML();if(h){o.innerHTML=h;o.hidden=false;return;}}
-  if(S.phase==='gather'&&S.card){const c=S.card;const kk=CARD_KINDS[c.kind];o.innerHTML=`<div class="kind">Question Card · Everyone${kk?` · <span class="ck k-${c.kind}">${kk[0]} ${kk[1]}</span>`:''}</div><div class="q">${cardQ(c)}</div>${c.kind==='V'?'<div class="fullsent">✍️ Say the whole sentence with the missing word.</div>':c.kind?'<div class="fullsent">✍️ Answer in a full sentence.</div>':''}<div class="ans">${H.showAns&&c.a?cardA(c):''}</div><div class="acts">${c.a?`<button class="btn" data-act="show-ans">${H.showAns?'Hide':'Show'} answer</button>`:''}<button class="btn primary" data-act="card">Next question</button><button class="btn" data-act="card-close">Close</button></div><div class="hint">Reward the student who answers: tap ✓ +${CORRECT_COINS} 🪙 in the player list.</div>`;o.hidden=false;return;}
+  if(S.phase==='gather'&&S.card){const c=S.card;const kk=CARD_KINDS[c.kind];o.innerHTML=`<div class="kind">Question Card · Everyone${kk?` · <span class="ck k-${c.kind}">${kk[0]} ${kk[1]}</span>`:''}</div><div class="q">${cardQ(c)}</div>${c.kind==='V'?cardBank(c)+'<div class="fullsent">✍️ Choose the word and say the whole sentence.</div>':c.kind?'<div class="fullsent">✍️ Answer in a full sentence.</div>':''}<div class="ans">${H.showAns&&c.a?cardA(c):''}</div><div class="acts">${c.a?`<button class="btn" data-act="show-ans">${H.showAns?'Hide':'Show'} answer</button>`:''}<button class="btn primary" data-act="card">Next question</button><button class="btn" data-act="card-close">Close</button></div><div class="hint">Reward the student who answers: tap ✓ +${CORRECT_COINS} 🪙 in the player list.</div>`;o.hidden=false;return;}
   o.hidden=true;
 }
 function renderConsole(){
@@ -1646,7 +1654,7 @@ function phonBattle(u){const ws=phonWords(u);const out=[];(u.build||[]).forEach(
 function applyBank(replace){
   const b=H.bank,lv=OD_BANK[b.level],picked=[...b.units].sort((a,c)=>a-c);if(!picked.length)return;
   const us=lv.units.filter(u=>b.units.has(u.n));
-  const L=us.map(u=>(u.learn.length?u.learn:phonLearn(u)).join('\n')).join('\n'),B=us.map(u=>(u.battle.length?u.battle:phonBattle(u)).join('\n')).join('\n');
+  const L=us.map(u=>(u.learn.length?u.learn:phonLearn(u)).map(l=>/^\s*U\d{1,2}\s*\|/i.test(l)?l:`U${u.n} | ${l}`).join('\n')).join('\n'),B=us.map(u=>(u.battle.length?u.battle:phonBattle(u)).join('\n')).join('\n');
   S.qText=replace?L:(S.qText.trim()+'\n'+L).trim();S.bText=replace?B:(S.bText.trim()+'\n'+B).trim();S.qOrder=[];S.bOrder=[];
   S.bankSel={level:b.level,units:picked};
   {const lts=us.map(u=>ltFromUnit(u,b.level));S.ltUnits=replace?lts:ltUnits().concat(lts);S.ltU=replace?0:Math.max(0,S.ltUnits.length-lts.length);S.lt=null;}
