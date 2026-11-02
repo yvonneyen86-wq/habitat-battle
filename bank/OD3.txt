@@ -1,16 +1,18 @@
 === OD3 ===
 ## U1 | Having Fun | How do people have fun?
 # learn
-What does "festival" mean? | a special time when people celebrate with food, music, and dancing
-What does "family reunion" mean? | a time when aunts, uncles, cousins, and grandparents come together
-What does "championship" mean? | the final game that decides the best team
-Spell the word "wedding". | w-e-d-d-i-n-g
-Spell the word "festival". | f-e-s-t-i-v-a-l
-Which is correct: The game is exciting, or The game is excited? | The game is exciting.
-Finish the sentence: The people are ___ (excite). | excited
-What do children in China often get at Chinese New Year? | money in red paper envelopes
-How often do people watch the World Cup soccer championships? | every four years
-What is your favorite way to have fun in each season?
+C | What do children often get at Chinese New Year? | Children often get money in red paper envelopes.
+C | What do families do at Diwali? | Families light candles and decorate their homes with flowers.
+C | How many countries play volleyball? | People play volleyball in 211 countries.
+C | What do folk dancers wear in Turkey? | Folk dancers in Turkey wear colorful costumes.
+G | How do the people feel at the soccer game? | The people at the game are very excited.
+G | Is a long race tiring or boring? | A long race is very tiring.
+G | How do you feel after a long race? | I feel very tired after a long race.
+G | What does Jay think about races? | Jay thinks that races are very boring.
+V | Diwali is the ___ of lights in India. | festival
+V | A ___ is always a big celebration in Egypt. | wedding
+V | The first team to reach a ___ of 25 wins. | score
+V | Every country sends its best ___ to the Olympic Games. | athletes
 # battle
 T | Tell us about a festival you know. | At Chinese New Year, families clean their homes and eat delicious food.
 T | What did you do at your last family reunion? | I played volleyball with my cousins at the family reunion.
@@ -77,16 +79,18 @@ SP | A: Look at the two weddings. What is the same? | B: Everyone is {dancing} i
 SW | {Last Saturday}, I went to {a fair} with my family. We {ate delicious food and played fun games}. It was {exciting}! | Write three sentences about a fun event you went to, using a time word and past tense verbs.
 ## U2 | The Red Rubber Ball | How do people have fun?
 # learn
-What does "bounce" mean? | to hit the ground and come back up again
-What does "toss" mean? | to throw something gently
-What does "balance" mean? | to keep steady and not fall over
-Spell the word "canyon". | c-a-n-y-o-n
-Spell the word "bounce". | b-o-u-n-c-e
-Change the verb to a gerund: Ashanti's friends like (skip). | Ashanti's friends like skipping.
-Fill in the blank: ___ a ball is lots of fun. (bounce) | Bouncing a ball is lots of fun.
-Who is Da Ga in Ashanti's game? | the boa constrictor in the center of the circle
-How does Hyo win Omok? | He lines up five of his stones.
-Why are games often more fun when you play with other people?
+C | Where does Carlos kick his red rubber ball? | Carlos kicks his ball high up on Antuco Mountain.
+C | What does Ashanti act like in Da Ga? | Ashanti acts like a snake in the center of the circle.
+C | How many stones does Hyo need to line up? | Hyo needs to line up five of his stones to win.
+C | What does Papa draw in the sand? | Papa draws boxes in the sand for La Thunkuna.
+G | What do Ashanti's friends like doing? | Ashanti's friends like skipping around the circle.
+G | What does Maria like doing in the game? | Maria likes landing on one foot.
+G | Is bouncing a ball fun? | Yes, bouncing a ball is lots of fun.
+G | What is fun to do with a ball? | Kicking it high in the sky is fun.
+V | Ashanti tries to ___ the next Da Ga. | tag
+V | The ball flies over a forest, white ___, and an ocean. | cliffs
+V | Maria puts her arms out to keep her ___. | balance
+V | High in the sky, the ball flies over ___, canyons, and streams. | lakes
 # battle
 T | What game do you like playing with friends? | I like playing tag with my friends after school.
 T | How does Maria keep her balance in La Thunkuna? | She puts her arms out to keep her balance.
@@ -147,16 +151,18 @@ SP | A: I'm worried about {tomorrow's game}. | B: Don't worry. You can do it! | 
 SW | {What} is your favorite game? {Where} do you play it? {Why} do you like it? | Write three questions about games, each starting with who, what, when, where, or why.
 ## U3 | Letters to a Friend | Why do people move to new places?
 # learn
-What does "neighbor" mean? | a person who lives next to you or near your house
-What does "surgeon" mean? | a doctor who does operations in a hospital
-What does "classmate" mean? | a student who is in your class
-Spell the word "neighbor". | n-e-i-g-h-b-o-r
-Spell the word "fishing". | f-i-s-h-i-n-g
-Which is correct: When I was five, I can ride a bike, or I could ride a bike? | When I was five, I could ride a bike.
-Finish the sentence: Sati couldn't ice skate before, but now she ___ ice skate. | can
-Where did Sati move from and to? | from Mumbai, India to St. Cloud, Minnesota
-What is Sati's father's new job? | He is a surgeon at the hospital.
-Would you like to move to a new country? Why or why not?
+C | Where is Sati's new house? | Sati's new house is in St. Cloud, Minnesota.
+C | What is Sati's dad's new job? | Sati's dad is a surgeon at the hospital.
+C | What do Sati and Sunil do every Saturday in October? | They rake leaves in their yard every Saturday.
+C | What lessons is Sati taking with Emily? | Sati is taking tap dance lessons with Emily.
+G | Could Sati ice skate before she moved? | No, Sati couldn't ice skate before she moved.
+G | Can Sati ice skate now? | Yes, now Sati can ice skate on the lake.
+G | Why can't Sati play with Nisha now? | Sati can't play with Nisha because Nisha is in India.
+G | What could you do when you were five? | I could read short words when I was five.
+V | ___ is hard work, and we are still unpacking boxes. | Moving
+V | Dad started his new job as a ___ at the hospital. | surgeon
+V | Sunil and I threw ___ and went sledding with Emily. | snowballs
+V | Emily is my neighbor and my ___ at school. | classmate
 # battle
 T | What could you do when you were younger? | When I was younger, I could read short words.
 T | What winter activity did Sati do with Emily? | Sati went ice skating on a lake with Emily.
@@ -222,16 +228,18 @@ SP | A: I'm sorry to bother you, but can you help me? | B: Sure. I can help you.
 SW | In {India}, the summers are {rainy}, but in {Minnesota} the summers are {sunny}. | Write two sentences that use but to show how two places or people are different.
 ## U4 | Moving from Here to There | Why do people move to new places?
 # learn
-What does "rural area" mean? | a place in the country with farms and few people
-What does "suburb" mean? | an area near the outside of a city where many families live
-What does "immigrant" mean? | a person who moves to another country to live there
-Spell the word "hospital". | h-o-s-p-i-t-a-l
-Spell the word "suburb". | s-u-b-u-r-b
-Finish the sentence: If I'm sleepy, I ___ to the park. | run
-Match the parts: When I'm hungry, ___. | I have a snack.
-Why do people move from rural areas to cities? | to find jobs and a better life
-What do suburbs have more space for? | schools, hospitals, clinics, shopping malls, and zoos
-Would you rather live in a suburb or in the center of a city? Why?
+C | Why do people move from rural areas to urban areas? | People move to urban areas to get a job.
+C | Where are suburbs? | Suburbs are near the outside of a city.
+C | Why did immigrants from Europe move to Brazil? | They moved to Brazil to work in factories.
+C | Where did the grandparents move when the child was five? | The grandparents moved to Portugal for the warm weather.
+G | What happens when another city has good services? | When a city has good services, people want to move there.
+G | What happens if ice gets warm? | If ice gets warm, it melts.
+G | Where do you go if you get sick? | If I get sick, I go to the clinic.
+G | What do you do when you are hungry? | When I am hungry, I have a snack.
+V | Every day, people pack their ___ and move to new places. | belongings
+V | Families with children like to live in the ___. | suburbs
+V | People move ___ to find a better way of life. | abroad
+V | Older people often move to places with better ___. | weather
 # battle
 T | What do you do when you feel thirsty? | When I'm thirsty, I drink a glass of water.
 T | Why did the boy's family move to Chengdu? | His father moved to Chengdu to find work.
@@ -293,16 +301,18 @@ SP | A: What kind of community do you like the most? | B: I like {suburban} area
 SW | I want to move to {Australia} because {the weather there is often sunny}. I also like it because {there are beautiful beaches}. | Write two complete sentences with because about a place you want to move to.
 ## U5 | Three Poets | Why do people write poems?
 # learn
-What does "insect" mean? | a small animal with six legs, such as a bee or a beetle
-What does "thicket" mean? | a group of bushes or small trees growing close together
-What does "escape" mean? | to get away from a place
-Spell the word "butterfly". | b-u-t-t-e-r-f-l-y
-Spell the word "grasshopper". | g-r-a-s-s-h-o-p-p-e-r
-Finish the sentence: What were they doing last night? They ___ watching television. | were
-Change to past continuous: I (eat) breakfast at seven this morning. | I was eating breakfast at seven this morning.
-In Michael Rosen's poem, what escaped from the jar? | a raisin
-What did Aileen Fisher love to write about? | insects
-Which poem did you like best? Why?
+C | Which two countries do the three poets come from? | They come from the United States and the United Kingdom.
+C | What did Aileen Fisher love to write about? | Aileen Fisher loved to write about insects.
+C | Which famous book did Robert Louis Stevenson write? | Robert Louis Stevenson wrote the famous Treasure Island.
+C | How do insects smell in "But I Wonder..."? | Insects smell with feelers, not with little noses.
+G | What were Michael Rosen and his daughter doing? | They were eating at a table together.
+G | What was the raisin doing on the table? | The raisin was whooshing across the table like a shooting star.
+G | What were they doing last night? | They were watching television last night.
+G | What was Sarah doing yesterday afternoon? | She was playing in the park yesterday afternoon.
+V | A ___ has escaped from the jar on the table. | raisin
+V | Now it's leaping in the air like a ___. | kangaroo
+V | The crickets sing in the ___, and the katydids sing in trees. | thickets
+V | Aileen Fisher loved to write about ladybugs and ___. | bees
 # battle
 T | What were you doing this morning at seven o'clock? | I was eating breakfast with my mom at seven o'clock.
 T | What was the raisin doing in the poem? | The raisin was leaping in the air like a kangaroo.
@@ -365,16 +375,18 @@ SP | A: Look. There are three {butterflies} in this picture. | B: Yes, I see. In
 SW | I see a {big green} {grasshopper}. It is {jumping in the thicket}. I wonder {how it sings}. | Write three short lines about an insect, with the size word before the color word.
 ## U6 | You Can Be a Poet | Why do people write poems?
 # learn
-What does "syllable" mean? | one part of a word that has one vowel sound
-What does "observe" mean? | to watch something carefully
-What does "rhyming words" mean? | words that end with the same sound, like cat and hat
-Spell the word "snowflakes". | s-n-o-w-f-l-a-k-e-s
-Spell the word "adjective". | a-d-j-e-c-t-i-v-e
-Finish the sentence: I was walking to school when I ___ an orange butterfly. (see) | saw
-Which part tells what was going on: I was reading a book when the phone rang? | I was reading a book
-How many lines does a cinquain poem have? | five lines
-Where does the haiku poem come from? | Japan
-Do you prefer writing poems or reading poems? Why?
+C | How many lines does a cinquain poem have? | A cinquain poem has five lines.
+C | Where does haiku come from? | Haiku poems come from the country of Japan.
+C | How do you write the topic word in an acrostic poem? | You write the topic word vertically, up and down.
+C | What are haiku poems often about? | Haiku poems are often about nature and the four seasons.
+G | What happened when you were walking to school this morning? | I was walking to school when I saw an orange butterfly.
+G | What was Jen doing when her phone rang? | Jen was going to the movies when her phone rang.
+G | What happened when Mike was reading a book? | Mike was reading a book when he fell asleep.
+G | What were you doing when the rain came down? | I was dreaming of the ocean when the rain came down.
+V | Haiku poems use an exact number of ___ in each line. | syllables
+V | Line 2 of a cinquain has two ___ that describe the topic. | adjectives
+V | Line 3 has three action ___ that end in -ing. | verbs
+V | A ___ hops through the grass, looking for a worm. | robin
 # battle
 T | Tell us about a time something surprised you. | I was walking in the park when I saw a snake.
 T | What does a good poet do? | A good poet observes things carefully.
@@ -438,16 +450,18 @@ SP | A: Which poem do you like best? | B: I like the {haiku} best. | A: What do 
 SW | The {snow} is {dancing} in the air. The {stars} are {winking} at me. | Write two sentences with action verbs that make nature come to life.
 ## U7 | Time and the Earth | How do we measure time?
 # learn
-What does "orbit" mean? | to travel around something, like the Earth around the sun
-What does "time zone" mean? | an area of the world that has the same time
-What does "noon" mean? | twelve o'clock in the middle of the day
-Spell the word "minute". | m-i-n-u-t-e
-Spell the word "multiply". | m-u-l-t-i-p-l-y
-Finish the sentence: It's 7:00 a.m. now. In four hours, it ___ 11:00 a.m. | will be
-Make a future fact: Now it's 8:00 p.m. In two hours ... | In two hours, it will be 10:00 p.m.
-What is the imaginary line that the Earth spins on called? | an axis
-How many minutes are there in one day? | 1,440 minutes
-How long does it take you to get to school in the morning?
+C | How did people tell time before clocks? | People watched the sun move across the sky.
+C | What is the imaginary line the Earth spins on called? | The imaginary line is called an axis.
+C | How many minutes are there in one day? | There are 1,440 minutes in one day.
+C | How many time zones do we divide the Earth into? | We divide the Earth into 24 time zones.
+G | What time will it be here in two hours? | In two hours, it will be noon here.
+G | Will it be noon on the other side of the world? | No, it won't be noon on the other side.
+G | What time will the sun rise tomorrow? | Tomorrow the sun will rise at 6:00 a.m.
+G | What will the weather be like tomorrow? | The weather tomorrow will be sunny and windy.
+V | At ___, when the sun was very high, people ate and rested. | noon
+V | The Earth travels around, or ___, the sun. | orbits
+V | One ___ is equal to 12 months, or just over 52 weeks. | year
+V | ___ 24 hours times 60 minutes to get the answer. | Multiply
 # battle
 T | What time will it be in three hours? | In three hours, it will be five o'clock.
 T | How did people tell time before clocks? | People watched the sun move across the sky.
@@ -508,16 +522,18 @@ SP | A: What time will the sun rise tomorrow in {Taipei}? | B: It will rise at 6
 SW | In {Taipei}, the sun will rise tomorrow at {6:00 a.m.} and it will set at {5:30 p.m.}. The weather tomorrow will be {sunny and warm}. | Write about the sunrise, the sunset, and the weather tomorrow in a city you choose.
 ## U8 | Doctor Molly | How do we measure time?
 # learn
-What does "passenger" mean? | a person who travels in a plane, bus, or car but does not drive it
-What does "destination" mean? | the place where someone is going
-What does "fever" mean? | when you are sick and your body feels very hot
-Spell the word "passport". | p-a-s-s-p-o-r-t
-Spell the word "medicine". | m-e-d-i-c-i-n-e
-Finish the sentence: I ___ call my friend tonight. (going to) | am going to
-Change to a future plan: My mom cooks today. Tomorrow my dad ... | Tomorrow my dad is going to cook.
-How many hours ahead of Los Angeles is Tokyo? | sixteen hours
-What was wrong with Molly's father in the morning? | He had a bad earache.
-What do your parents do when you are sick?
+C | Where was Molly's mother going on her business trip? | Molly's mother was going to Tokyo, Japan.
+C | What was wrong with Molly's father in the morning? | Molly's father had a bad earache in the morning.
+C | What did Molly put on her father's forehead? | She put a cold washcloth on his forehead.
+C | How many hours ahead of Los Angeles is Tokyo? | Tokyo is sixteen hours ahead of Los Angeles.
+G | What is Molly going to do all day? | Molly is going to take care of her father all day.
+G | What is your mom going to do tomorrow? | My mom is going to cook dinner tomorrow.
+G | Are you going to read a good book tonight? | Yes, I'm going to read a good book tonight.
+G | What are you going to do this weekend? | I'm going to visit my grandmother this weekend.
+V | Your ___ is Tokyo, so you should be at the airport early. | destination
+V | Remember, ___ can only check two bags. | passengers
+V | You should take some ___ and go back to bed. | medicine
+V | Now Dad has a headache and a ___, so I'm giving him water. | fever
 # battle
 T | What are you going to do this weekend? | I'm going to read a good book this weekend.
 T | How did Molly take care of her father? | She put a cold washcloth on his forehead.
@@ -586,16 +602,18 @@ SP | A: Excuse me. Which way is the {cafeteria}? | B: It's down the hall, next t
 SW | {Tomorrow}, I'm going to {visit my grandmother}. Then I'm going to {play soccer with my friends}. | Write about two plans you have for this weekend using going to.
 ## U9 | Green Energy | Where does energy come from?
 # learn
-What does "pollution" mean? | dirty air, water, or land that is bad for the Earth
-What does "renewable" mean? | something that won't run out, like wind or sunlight
-What does "wind turbine" mean? | a machine with blades that uses wind to make electricity
-Spell the word "electricity". | e-l-e-c-t-r-i-c-i-t-y
-Spell the word "pollution". | p-o-l-l-u-t-i-o-n
-Change the sentence to show you are not sure: I will go to soccer practice on Saturday. | I may go to soccer practice on Saturday. / I might go to soccer practice on Saturday.
-Which word shows something is not sure: We might see solar panels, or We will see solar panels? | might
-What are fossil fuels made from? | plants that grew millions of years ago
-What does hydropower use to make electricity? | moving water in rivers and dams
-What is the best way to save energy at school?
+C | What do we call coal, oil, and natural gas? | We call coal, oil, and natural gas fossil fuels.
+C | What does hydropower use to make electricity? | Hydropower uses moving water in rivers and dams.
+C | What did windmills do many years ago? | Windmills made flour from grain many years ago.
+C | Where does solar power come from? | Solar power comes from sunlight on solar panels.
+G | Will we find other sources of green energy? | We may find other sources of green energy.
+G | What might you see in your area? | You might see solar panels in your area.
+G | What might you do on Sunday? | I might visit my aunt on Sunday.
+G | What may your family do this weekend? | My family may see a movie this weekend.
+V | Fossil fuels make ___, and this is bad for the Earth. | pollution
+V | This water pushes the blades of a ___. | turbine
+V | Green energy is ___, so it won't run out. | renewable
+V | ___ is energy that we get from plants around us. | Biomass
 # battle
 T | What might you do this weekend? | I might go jogging with my dad on Sunday.
 T | Why is green energy important? | Green energy is clean and it won't run out.
@@ -658,16 +676,18 @@ SP | A: What will you do after school today? | B: I'll probably {do my homework}
 SW | This weekend, I may {go to the park}. I might {ride my bike} with {my brother}. | Write two sentences about what you may or might do this weekend.
 ## U10 | Hector the Energy Saver | Where does energy come from?
 # learn
-What does "traffic jam" mean? | a long line of cars that cannot move on the road
-What does "carpool" mean? | a group of people who travel to work or school in one car
-What does "escalator" mean? | moving stairs that carry people up or down
-Spell the word "helicopter". | h-e-l-i-c-o-p-t-e-r
-Spell the word "ambulance". | a-m-b-u-l-a-n-c-e
-Choose a little or a few: I have ___ pencils. | a few
-Choose a little or a lot of: Mr. Big uses ___ energy. | a lot of
-What did Hector's bicycle Lightning turn into? | a helicopter
-Where did Hector take the ambulance? | to the hospital
-Would you like to be a superhero who saves energy? Why?
+C | What was Hector's bicycle called? | Hector's special bicycle was called Lightning.
+C | What were Hector's mask and cape made from? | They were made from Uncle Jack's old curtains.
+C | What did Hector see stuck in the traffic jam? | Hector saw an ambulance stuck among the cars.
+C | What did Hector tell Mr. Big to put on the roof? | He told Mr. Big to put solar panels on the roof.
+G | How much energy does Hector use? | Hector uses only a little energy.
+G | How many cars were on the road? | There were only a few cars on the road.
+G | Does Mr. Big use a lot of energy? | Yes, Mr. Big uses a lot of energy.
+G | What do you have in your pencil case? | I have a few pencils and a little paper.
+V | Hector pressed a ___, and Lightning became a helicopter. | button
+V | You can also take the train or the ___. | subway
+V | Elevators and ___ carried people up and down. | escalators
+V | ___ reduce traffic jams and save fossil fuels. | Carpools
 # battle
 T | What do you have in your pencil case? | I have a few pencils and a little glue.
 T | How can Mr. Big's company save energy? | It can use solar panels for electricity.
@@ -730,16 +750,18 @@ SP | A: I see a {bus}. It can carry a lot of people. That saves energy. | B: Tha
 SW | I want to be an energy saver like Hector. At home, I can {turn off the lights}. In my city, I can {take the subway} instead of {a taxi}. | Write three ways you can save energy at home and in your city.
 ## U11 | Mystery in the Gym | How do people make music?
 # learn
-What does "conductor" mean? | a person who stands in front of an orchestra and leads the musicians
-What does "deafening" mean? | so loud that you cannot hear anything else
-What does "orchestra" mean? | a large group of musicians who play together
-Spell the word "trombone". | t-r-o-m-b-o-n-e
-Spell the word "scientist". | s-c-i-e-n-t-i-s-t
-Give the comparative and superlative of "loud". | louder than, the loudest
-Give the comparative of "beautiful". | more beautiful than
-What did Lisa hear first in the gym? | a low, deep booming sound like thunder
-Who was the mystery guest? | a conductor with an orchestra
-What is your favorite instrument to listen to? Why?
+C | Where is the surprise guest at 2:00? | The surprise guest is in the gym at 2:00.
+C | Where did Lisa read about closing your eyes? | Lisa read about it in a magazine.
+C | What does Marco think the loud trumpet call is? | Marco thinks there is an elephant in the gym.
+C | What is the man in the black jacket holding? | He is holding a thin white baton.
+G | Which is louder, the trombone or the cello? | The trombone is louder than the cello.
+G | Which instruments are the loudest in the orchestra? | The timpani drums are the loudest instruments.
+G | Is a trumpeting elephant more deafening than a trombone? | Yes, a trumpeting elephant is more deafening than a trombone.
+G | Which is more beautiful, a cello or a drum? | A cello is more beautiful than a drum.
+V | Marco thinks the surprise guest is an ___. | astronaut
+V | Nobody knows who it is because it's a ___. | mystery
+V | It sounds like lots of bees, so the guest is a ___. | beekeeper
+V | The ___ turns around and says, "Welcome to the orchestra!" | conductor
 # battle
 T | Compare two instruments you know. | A tuba is louder than a flute.
 T | What did Marco think was in the gym? | Marco thought there was an elephant in the gym.
@@ -801,16 +823,18 @@ SP | A: Is the {trombone} as big as the cello? | B: No, it isn't. It's smaller. 
 SW | My favorite instrument is the {cello}. Its sound is {low and beautiful}. I think it is {more beautiful than} a trombone. | Write about your favorite instrument and compare it with another one.
 ## U12 | The World of Instruments | How do people make music?
 # learn
-What does "vibrate" mean? | to move very quickly from side to side
-What does "pitch" mean? | how high or low a sound is
-What does "traditional" mean? | something people in a place have done for a long time
-Spell the word "violin". | v-i-o-l-i-n
-Spell the word "didgeridoo". | d-i-d-g-e-r-i-d-o-o
-Finish the sentence: The didgeridoo's sound is ___ low ___ the tuba's sound. | as, as
-Make a sentence with not as ... as: A violin / big / a cello. | A violin is not as big as a cello.
-How many strings does an erhu have? | two strings
-What are the four instrument families? | strings, woodwinds, brass, and percussion
-Which instrument from the unit would you like to play? Why?
+C | How does a string instrument make music? | It makes music when its strings vibrate.
+C | How many strings does the erhu have? | The erhu only has two strings.
+C | What are panpipes usually made of? | Panpipes are usually made of bamboo or cane.
+C | What do djembe drummers use to make a sound? | Djembe drummers use their hands to make a sound.
+G | Is the didgeridoo's sound as low as the tuba's? | Yes, the didgeridoo's sound is as low as the tuba's.
+G | Is the didgeridoo as curved as the tuba? | No, the didgeridoo is not as curved as the tuba.
+G | Is a violin as big as a cello? | No, a violin is not as big as a cello.
+G | How loud is the drum? | The drum is as loud as the falling rain.
+V | The ___ is a woodwind instrument with one tube. | flute
+V | Strings ___, or move very quickly from side to side. | vibrate
+V | The ___, or sound, of the tuba is low. | pitch
+V | Panpipes are made of a different ___ such as bamboo. | material
 # battle
 T | Compare two things in your pencil case. | My pencil is not as long as my ruler.
 T | How is a djembe different from a snare drum? | Djembe drummers use their hands, but snare drummers use drumsticks.
@@ -870,16 +894,18 @@ SP | A: My instrument is shiny. It's as long as my arm. | B: Is it a {flute}? | 
 SW | My favorite instrument is the {djembe}. It's a {percussion} instrument. Its sound is {as steady as my heartbeat}. | Write about an instrument using it's and its.
 ## U13 | Simple Machines | How do inventions change our lives?
 # learn
-What does "lever" mean? | a board that rests on a point and lifts things when you push one end
-What does "wedge" mean? | a tool with a sharp edge that pushes things apart
-What does "ramp" mean? | a flat surface with one high end and one low end
-Spell the word "seesaw". | s-e-e-s-a-w
-Spell the word "screw". | s-c-r-e-w
-Finish the sentence: I loved that movie! I did, ___. | too
-Finish the sentence: I didn't do well on the test. I didn't, ___. | either
-Which simple machine is a hammer? | a lever
-Name two things that use a wheel and axle. | cars and bicycles
-Which invention is the most important in your life? Why?
+C | What can a hammer do? | A hammer is a lever that can pull out nails.
+C | What happens when you push down on one end of a seesaw? | The other end of the board goes up.
+C | What simple machine does a doorknob use? | A doorknob uses a wheel and axle.
+C | What do people in wheelchairs use to enter buildings? | They use ramps to go in and out of buildings.
+G | A hammer is a lever. What about a seesaw? | A seesaw is a lever, too.
+G | The wedge isn't a new invention. What about the ramp? | The ramp isn't a new invention, either.
+G | Cars use a wheel and axle. Do bicycles? | Yes, bicycles use a wheel and axle, too.
+G | Harry doesn't fall off the seesaw. Does Jay? | No, Jay doesn't fall off, either.
+V | A hammer is a lever that can pull out ___. | nails
+V | A ___ is like two ramps put together with one sharp edge. | wedge
+V | A ___ is a ramp that winds around and around in a circle. | screw
+V | People use an ___ for chopping wood. | axe
 # battle
 T | Agree with this sentence: I like riding my bike. | I do, too.
 T | Why are hills and mountains called ramps? | They have one high end and one low end.
@@ -937,16 +963,18 @@ SP | A: Airplanes make it easier to travel all around the world. | B: That's tru
 SW | {The screw} and {the lever} are simple machines. I use {a screw} every day when I {turn on a lamp}. | Write about two simple machines you use every day.
 ## U14 | Clara's Invention | How do inventions change our lives?
 # learn
-What does "glassblower" mean? | a person who makes glass items by blowing air into hot glass
-What does "delicate" mean? | easy to break
-What does "workshop" mean? | a room where someone makes or fixes things
-Spell the word "eyeglasses". | e-y-e-g-l-a-s-s-e-s
-Spell the word "furnace". | f-u-r-n-a-c-e
-Give the comparative adverb of "fast". | faster than
-Give the superlative adverb of "carefully". | the most carefully
-What did Antonio Rossi make? | beautiful glass items such as vases and pitchers
-What did Clara invent? | eyeglasses
-What invention would you like to make? Why?
+C | What was Antonio Rossi's job in Venice? | Antonio Rossi was a very talented glassblower in Venice.
+C | Who were the two glass vases for? | The vases were for Mr. Lombardi, the great writer.
+C | What did Clara see when she looked through the glass base? | The letters on the note looked big.
+C | What did Clara wrap around the two glass pieces? | She wrapped a flat piece of wire around them.
+G | How did Antonio make his glassware with the new furnace? | Antonio made his glassware faster than before.
+G | Who worked the most carefully of all? | Clara worked the most carefully of all.
+G | Who came the earliest, Harry or you? | Harry came the earliest of all of us.
+G | How did your class walk compared to their class? | Our class walked more quietly than their class.
+V | Like his father, Antonio was a very talented ___. | glassblower
+V | With his new ___, Antonio made his glassware faster. | furnace
+V | Clara found a length of ___ and pounded it flat. | wire
+V | Clara made something very useful when she invented ___. | eyeglasses
 # battle
 T | Compare how you and a friend run. | I run faster than my friend.
 T | What happened when Clara bumped the vases? | The vases fell to the ground and broke.
@@ -1014,16 +1042,18 @@ SP | A: What did you do when you were little? | B: When I was little, I used to 
 SW | Before the invention of {eyeglasses}, {many people couldn't see well}. After the invention of {the airplane}, {the world became a smaller place}. | Write about how life was before and after an invention.
 ## U15 | The Life of a Sunflower | What do plants give us?
 # learn
-What does "sprout" mean? | to begin to grow from a seed
-What does "pollen" mean? | yellow powder in a flower that helps make new seeds
-What does "oxygen" mean? | the gas in the air that people and animals breathe
-Spell the word "petal". | p-e-t-a-l
-Spell the word "oxygen". | o-x-y-g-e-n
-Choose the measure word: a ___ of bread. | loaf
-Choose the measure word: a ___ of jam. | jar
-How long does a sunflower seed take to sprout? | about one week
-What do the leaves make when they turn sunlight into energy? | oxygen
-What part of your breakfast came from plants?
+C | What does a sunflower's life begin with? | A sunflower's life begins with a seed.
+C | Where do the roots get water and food? | The roots get water and food from the soil.
+C | What do bees bring to the sunflower? | Bees bring pollen with them from other flowers.
+C | What do people use sunflower oil for? | People use sunflower oil for cooking.
+G | What do you fill the pot with? | I fill the pot with a bag of soil.
+G | How do you moisten the soil? | I moisten the soil with a cup of water.
+G | What did you buy at the garden shop? | I bought a box of seeds at the garden shop.
+G | What do you have in your shopping bag? | I have a loaf of bread and a jar of jam.
+V | Plant the seed one or two centimeters under the ___. | soil
+V | A single smooth ___ grows higher and higher above the ground. | stem
+V | The flower has bright yellow ___ that grow around it. | petals
+V | When leaves make energy, they make ___, too. | oxygen
 # battle
 T | What are you going to buy at the store? | I'm going to buy a loaf of bread and a jar of jam.
 T | What do bees bring to the sunflower? | Bees bring pollen from other flowers.
@@ -1083,16 +1113,18 @@ SP | A: May I borrow your {pencil}? | B: Sure. Here you are. | A: Thanks! Are yo
 SW | First, {fill a pot with soil}. Second, {plant the seed under the soil}. Finally, {water the soil and wait for it to sprout}. | Write the steps to grow a plant using first, second, and finally.
 ## U16 | The Garden of Happiness | What do plants give us?
 # learn
-What does "community" mean? | all the people who live in one place
-What does "curious" mean? | wanting to know or learn about something
-What does "bloom" mean? | when a flower opens
-Spell the word "teenagers". | t-e-e-n-a-g-e-r-s
-Spell the word "garden". | g-a-r-d-e-n
-Finish the sentence: Marisol is curious ___ her plant. | about
-Finish the sentence: She was surprised ___ the big sunflower. | at
-What did Marisol plant in the Garden of Happiness? | a single seed
-What happened to the sunflower when autumn came? | Its leaves turned brown and dry.
-How does a garden bring happiness to people?
+C | Where did Marisol plant her single seed? | Marisol planted her seed in a small community garden.
+C | How often did Marisol water her plant? | Marisol watered her plant every day.
+C | What did Mr. Singh carry away from the garden? | Mr. Singh carried away a basket full of beans.
+C | What did Mrs. Rodriguez tell Marisol to do? | She told Marisol to save the seeds and plant again.
+G | What is Marisol curious about? | Marisol is curious about her plant.
+G | What was Marisol surprised at? | She was surprised at the big sunflower.
+G | Was Marisol happy with the mural? | Yes, she was very happy with the mural.
+G | What are you curious about? | I am curious about rain forests.
+V | A group of ___ wants to paint a mural nearby. | teenagers
+V | The flower stood higher than all the plants and ___. | vines
+V | There was a big ___, like on a holiday. | crowd
+V | She saved an extra big slice for a good little ___. | gardener
 # battle
 T | What are you curious about? | I'm curious about life on other planets.
 T | What did Mrs. Rodriguez tell Marisol to do? | She told Marisol to save the seeds and plant again next spring.
@@ -1157,16 +1189,18 @@ SP | A: Which plant is important to you? | B: I chose the {banana} plant because
 SW | {Apples} grow {on trees}. {Carrots} grow {in the ground}. | Write two sentences about where plants grow, using in or on.
 ## U17 | My Journey with Captain Magellan | Why do we explore?
 # learn
-What does "explorer" mean? | a person who travels to new places to learn about them
-What does "strait" mean? | a narrow area of water between two pieces of land
-What does "coast" mean? | the land next to the sea
-Spell the word "lightning". | l-i-g-h-t-n-i-n-g
-Spell the word "waterfall". | w-a-t-e-r-f-a-l-l
-Finish the sentence: Walk ___ this street and ___ the park. (down, through) | Walk down this street and through the park.
-Finish the sentence: Go ___ to the deck and check the sails. | up
-Where was Magellan from? | Portugal
-Why did Europeans go to Indonesia? | to trade for spices
-Where would you like to explore? Why?
+C | How many men and ships sailed from Spain in 1519? | They sailed with 250 men and five ships.
+C | Why couldn't the ships move in November 1519? | The ships couldn't move because there was no wind.
+C | What did the men fill the ships with in Indonesia? | They filled the ships with spices in Indonesia.
+C | How many men came home to Spain? | Only 18 men came home to Spain after three years.
+G | Where does Captain Magellan tell Juan to go? | He tells Juan to go up to the deck.
+G | How did the ships reach the Pacific Ocean? | The ships sailed through a narrow strait.
+G | Where did the ships sail after they left Spain? | They sailed down the coast of South America.
+G | How do I get to the park? | Walk down this street and go through the gate.
+V | The ships reach the ___ of South America in December. | coast
+V | Winter was cold and windy, with fog and ___. | hail
+V | They sail through a narrow area of water called a ___. | strait
+V | The men are not ___, and some men die. | healthy
 # battle
 T | Give directions from the door to your desk. | Walk through the door and go around the table.
 T | What happened to Captain Magellan? | He died in a battle on the island of Mactan.
@@ -1230,16 +1264,18 @@ SP | A: Congratulations on winning the {race}! | B: Thank you! | A: You did a gr
 SW | I {brushed my teeth} before I {went to bed}. I {ate an apple} after I {got home}. | Write two sentences about your day using before and after.
 ## U18 | Jacques Cousteau | Why do we explore?
 # learn
-What does "goggles" mean? | special glasses that let you see underwater
-What does "diver" mean? | a person who goes underwater with special equipment
-What does "kelp" mean? | a kind of seaweed that grows in the ocean
-Spell the word "dolphin". | d-o-l-p-h-i-n
-Spell the word "octopus". | o-c-t-o-p-u-s
-Choose want to or need to: I ___ exercise to stay healthy. | need to
-Choose want to or have to: They ___ be on time for school. | have to
-What did Cousteau and Emile Gagnan create? | the Aqua-Lung, a machine that lets a diver breathe underwater
-What did a friend give young Jacques? | a pair of goggles
-Would you like to explore under the ocean? Why?
+C | What did a friend give young Jacques? | A friend gave him a pair of goggles.
+C | What did Cousteau and Emile Gagnan create? | They created a breathing device called the Aqua-Lung.
+C | What did Cousteau turn his boat into? | He turned his boat into a research lab and film studio.
+C | What did Cousteau find in the waters of Antarctica? | He found penguins, humpback whales, and squid there.
+G | What did Cousteau want to do underwater? | Cousteau wanted to stay underwater longer.
+G | What did Cousteau need to use to breathe underwater? | He needed to use the Aqua-Lung to breathe underwater.
+G | What do you have to do every school day? | I have to be on time for school.
+G | Do you need to clean your room today? | Yes, I need to clean my room today.
+V | A friend gave him a pair of ___ to see underwater. | goggles
+V | An air hose tethered the ___ to a boat. | diver
+V | Off the coast of Australia, they saw coral reefs and ___ forests. | kelp
+V | His TV series brought whales, octopuses, otters, and ___ into living rooms. | dolphins
 # battle
 T | What do you want to do this summer? | I want to go swimming in the ocean.
 T | Why did doctors tell young Jacques to swim? | They wanted him to build up his strength.
