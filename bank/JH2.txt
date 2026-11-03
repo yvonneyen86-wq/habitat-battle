@@ -1,1180 +1,577 @@
 === JH2 ===
-// Junior High Grammar 2 - Zhubei grammar class, one grammar point per unit. Sections like the Oxford Discover banks (# learn, # battle, # words, # reading, # grammar, # speak-write).
-## U1 | Adverbs of Frequency | How often do you do things?
-# learn
-C | What time does Mia always get up on weekdays? | Mia always gets up at six thirty on weekdays.
-C | What does Mia often watch on the bus? | Mia often watches short videos on TikTok on the bus.
-C | How often does Mia stay up late? | Mia never stays up late.
-C | Why is Mia's brother always sleepy in class? | Mia's brother is always sleepy because he frequently stays up late.
-G | How often do you watch YouTube on weekdays? | I sometimes watch YouTube on weekdays. | sometimes · watch YouTube · on weekdays
-G | How often are you late for school? | I am never late for school. | am never · late for school
-G | What does your brother usually do after dinner? | My brother usually plays online games after dinner. | usually plays · online games · after dinner
-G | How often does your family eat breakfast at home? | My family always eats breakfast at home. | always eats · at home
-V | I ___ stay up late. I go to bed at ten every night. | never
-V | Leo is a ___ student. He always finishes his homework first. | disciplined
-V | I am ___ in class because I stayed up late last night. | sleepy
-V | We ___ watch TV, maybe once a month, because we have too much homework. | seldom
-# battle
-F | I always am late for school. | I am always late for school.
-F | He plays usually online games after dinner. | He usually plays online games after dinner.
-F | Everyone are always happy when the weekend comes. | Everyone is always happy when the weekend comes.
-F | How many do you watch Reels on Instagram? | How often do you watch Reels on Instagram?
-B | My sister often chats online with her friends after dinner.
-B | Leo always gets up at six in the morning.
-B | They are never at home on Sundays.
-T | How often do you stay up late on weekends? | I sometimes stay up late on weekends.
-T | What do you usually do after school? | I usually do my homework after school.
-W | seldom | Make a sentence with the word "seldom".
-W | frequently | Make a sentence with the word "frequently".
-C | Which is better after dinner, watching short videos or chatting online with friends? | watching short videos | chatting online with friends
-Z | Put "never" in this sentence: "Kevin is late for school."
-S | How often do you use your phone on weekdays and on weekends?
-# words
-always | al·ways | al/ways | 🔁
-usually | u·su·al·ly | u/su/al/ly | 📅
-often | of·ten | of/ten | 🔄
-sometimes | some·times | some/times | 🌗
-seldom | sel·dom | sel/dom | 🐢
-never | nev·er | nev/er | 🚫
-frequently | fre·quent·ly | fre/quent/ly | ⚡
-disciplined | dis·ci·plined | dis/ci/plined | 🎯
-tired | tired | t/ired | 😩
-sleepy | sleep·y | sleep/y | 😴
-reporter | re·port·er | re/port/er | 🎤
-interview | in·ter·view | in/ter/view | 🎙️
-# reading
-> Junior Reporter: Mia's Digital Life
-> Hi! I am Ethan, a junior reporter at a junior high school in Zhubei. This week I interviewed my classmate Mia about her digital life.
-> On weekdays, Mia always gets up at six thirty. She is never late for school. After school, she usually waits for the bus with her friends. On the bus, she often watches short videos on TikTok, but she seldom plays online games.
-> At night, Mia sometimes chats online with her classmates. She is often tired after dinner, but she never stays up late. "I am usually in bed by ten thirty," she said. Her brother is different. He frequently stays up late, so he is always sleepy in class.
-> Mia is a disciplined student. On weekends, she usually goes shopping or plays basketball. Everyone in our class says she is kind and healthy. My report: Mia's digital life is a healthy one!
-RC | Who did Ethan interview this week? | his classmate Mia | his brother | his teacher
-RC | What does Mia seldom do on the bus? | play online games | watch short videos | chat with friends
-RC | What does "disciplined" mean in the passage? | good at following healthy rules | always sleepy | often late
-RT | What time is Mia usually in bed? | Mia is usually in bed by ten thirty.
-RT | How often does Mia chat online with her classmates? | Mia sometimes chats online with her classmates at night.
-RT | How is Mia's brother different from Mia? | Mia's brother frequently stays up late, but Mia never stays up late.
-RS | How is your digital life the same as Mia's or different from Mia's?
-RS | Does Mia's brother need to change his habits? Why or why not?
-# grammar
-GT | Adverbs of frequency: where do they go?
-R | **be + always / usually / often** → I am **always** happy on Fridays.
-R | **always / often / never + verb** → I **often** watch YouTube after dinner.
-R | **How often do / does** + subject + verb? → **How often does** Leo play games?
-R | **Everyone / Nobody + is / likes** (singular verb) → **Everyone is** always happy on weekends.
-R | **seldom / never** = not much / not at all → We **seldom** watch TV on weekdays.
-G | I am never late for school.
-G | My brother usually plays online games after dinner.
-G | The weather in Taipei is often rainy in winter.
-G | Does Leo sometimes go shopping with his friends?
-G | We seldom watch TV because we have too much homework.
-G | Kevin and I are always online on weekends.
-G | Leo is usually hungry at seven o'clock.
-# speak-write
-SP | A: How often do you watch Reels? | B: I watch Reels almost every day. | A: How often do you {play online games}? | B: I seldom do that. I have too much homework. | play online games / chat online / go shopping / stay up late / watch TV
-SW | I {always} {get up at six thirty} on weekdays. I am {never} {late for school}. | Write three sentences about your daily habits with adverbs of frequency.
-## U2 | Past Continuous: was / were + V-ing | What were you doing at that time?
-# learn
-C | When did someone take the trophy from Room 205? | Someone took the trophy at 4:00 PM last Friday.
-C | What was Amy doing at 4:00 PM? | Amy was waiting for the bus outside the school gate.
-C | What was Mr. Lin doing near the gym? | Mr. Lin was washing his car near the gym.
-C | What was Coco doing in the library? | Coco was doing her homework and listening to music.
-G | What were you doing at 8:00 last night? | I was doing my homework at 8:00 last night. | was doing · at 8:00 last night
-G | What was your mom doing when you got home yesterday? | My mom was cooking dinner when I got home. | was cooking · when · got home
-G | What were your classmates doing when the teacher came in? | My classmates were talking when the teacher came in. | were talking · came in
-G | Were you sleeping at this time yesterday? | No, I wasn't sleeping. I was taking a shower. | wasn't sleeping · was taking
-V | The police asked the ___, "What did you see at 4:00?" | witness
-V | Ben was the first ___ because he was near the room. | suspect
-V | Amy's ___ was simple: she was waiting for the bus. | alibi
-V | Someone stole my bike! The police are looking into the ___. | theft
-# battle
-F | What were you do when I called you? | What were you doing when I called you?
-F | They was playing basketball at that time. | They were playing basketball at that time.
-F | I was eating dinner when he was calling me. | I was eating dinner when he called me.
-F | My mom were cooking dinner at 7:00 last night. | My mom was cooking dinner at 7:00 last night.
-B | They were playing basketball when it started to rain.
-B | My brother wasn't playing video games when I came home.
-B | What were they doing at this time yesterday?
-T | What were you doing at 9:00 last night? | I was watching TV at 9:00 last night.
-T | What was your family doing at this time yesterday? | My family was eating dinner at this time yesterday.
-W | witness | Make a sentence with the word "witness".
-W | alibi | Make a sentence with the word "alibi".
-C | Which is a better alibi, "I was sleeping at home" or "I was playing basketball with my team"? | I was sleeping at home | I was playing basketball with my team
-Z | What is the V-ing form of "swim"?
-S | What were you doing when your mom called you for dinner yesterday?
-# words
-alibi | al·i·bi | al/i/bi | 🕵️
-mystery | mys·ter·y | mys/ter/y | ❓
-theft | theft | th/eft | 💰
-suspect | sus·pect | sus/pect | 🤔
-witness | wit·ness | wit/ness | 👀
-trophy | tro·phy | tro/phy | 🏆
-sleeping | sleep·ing | sleep/ing | 😴
-cooking | cook·ing | cook/ing | 🍳
-waiting | wait·ing | wait/ing | ⏳
-shower | show·er | show/er | 🚿
-bark | bark | b/ark | 🐕
-knock | knock | kn/ock | 🚪
-# reading
-> Mystery Briefing: The Missing Trophy
-> Detectives, listen up! Last Friday at 4:00 PM, someone took the basketball trophy from Room 205 at Zhubei Junior High. At that time, the classroom door was open, and the hallway was quiet.
-> We have three suspects. Amy says she was waiting for the bus outside the school gate. Ben says he was playing basketball in the gym with his team. Coco says she was doing her homework in the library, and she was listening to music.
-> We also have a witness. Mr. Lin, the guard, was washing his car near the gym. He says, "The boys were playing basketball, but Ben wasn't playing. He was drinking water by the door." Then a dog started to bark, and Mr. Lin looked up. A girl was running down the hallway!
-> Who was telling the truth, and who wasn't? Check every alibi. What were the suspects really doing at 4:00? Solve the mystery!
-RC | Where was the trophy before someone took it? | in Room 205 | in the gym | in the library
-RC | Who was washing a car near the gym? | Mr. Lin | Ben | Amy
-RC | What was the girl in the hallway doing? | She was running. | She was sleeping. | She was cooking.
-RT | What was Ben doing at 4:00, according to Ben? | Ben was playing basketball in the gym with his team.
-RT | What was happening in the hallway when Mr. Lin looked up? | A girl was running down the hallway when Mr. Lin looked up.
-RT | Was Ben playing basketball at 4:00, according to Mr. Lin? | No, Ben wasn't playing basketball. Ben was drinking water by the door.
-RS | Who do you think took the trophy? Why do you think so?
-RS | What were you doing at 4:00 PM last Friday? Tell us your alibi.
-# grammar
-GT | Past continuous: was / were + V-ing
-R | **I / he / she / it + was + V-ing** → My mom **was cooking** dinner.
-R | **you / we / they + were + V-ing** → They **were playing** basketball.
-R | **wasn't / weren't + V-ing** → My brother **wasn't playing** games.
-R | **Was / Were + subject + V-ing?** → **Were** you **sleeping** at 10:00?
-R | long action **was / were + V-ing** · short action **past simple** → I **was eating** when he **called**.
-G | My mom was cooking dinner when I got home.
-G | What were you doing at 8:00 last night?
-G | Were you sleeping when I called you?
-G | Kevin was playing an online game when the lights went out.
-G | Who were you chatting with online last night?
-G | The students were listening to music at that time.
-G | The dog was barking outside at this time yesterday.
-# speak-write
-SP | A: What were you doing at 4:00 last Friday? | B: I was doing my homework in the library. | A: Really? I think you were {playing basketball}! | B: No, I wasn't. Ask the librarian! | playing basketball / waiting for the bus / watching TV / listening to music / sleeping
-SW | At 8:00 last night, I was {doing my homework}. My {mom} was {cooking dinner}. | Write your alibi: what were you and your family doing at 8:00 last night?
-## U3 | When vs While: Long and Short Actions | What happened while you were busy?
-# learn
-C | What happened while Jason was brushing his teeth? | While Jason was brushing his teeth, his cat broke a cup.
-C | What did Jason see at the bus stop? | Jason saw an accident while he was waiting for the bus.
-C | What was Leo doing while Jason was drawing a picture? | Leo was playing basketball while Jason was drawing a picture.
-C | What did Jason find under his bed? | Jason found 100 dollars when he was cleaning his room.
-G | What were you doing when the bell rang this morning? | I was listening to the teacher when the bell rang. | was listening · when · rang
-G | What happened while you were waiting for the bus? | While I was waiting for the bus, I saw a big black cat. | While · was waiting · saw
-G | What was your dad doing while your mom was cooking? | My dad was washing the dishes while my mom was cooking. | was washing · while · was cooking
-G | What were you doing when the earthquake happened? | When the earthquake happened, I was watching TV. | When · happened · was watching
-V | I was taking a shower when the ___ rang. It was the mail carrier. | doorbell
-V | We were sleeping when the ___ happened. The whole house shook! | earthquake
-V | While I was waiting for the bus, I saw an ___ on the road. | accident
-V | I was reading quietly. ___, the lights went out! | suddenly
-# battle
-F | While the phone rang, I was taking a shower. | When the phone rang, I was taking a shower.
-F | When I was studying, my brother plays games. | When I was studying, my brother was playing games. / While I was studying, my brother was playing games.
-F | My cat was jump on the table when I came home. | My cat was jumping on the table when I came home.
-F | He broke his leg while he runs. | He broke his leg while he was running.
-B | I was taking a shower when the doorbell rang.
-B | While my sister was studying, I was playing games.
-B | The lights went out while we were having dinner.
-T | What were you doing when your mom called you last night? | I was doing my homework when my mom called me.
-T | What happened while you were walking to school today? | While I was walking to school, I saw a bird.
-W | suddenly | Make a sentence with the word "suddenly".
-W | while | Make a sentence with the word "while".
-C | Which is a worse surprise: the lights went out while you were gaming, or it started to rain while you were playing basketball? | the lights went out | it started to rain
-Z | Is "the phone rang" a long action or a short action?
-S | Tell us about a surprise: what happened while you were doing something?
-# words
-when | when | wh/en | ⏰
-while | while | wh/ile | ⏳
-doorbell | door·bell | door/bell | 🔔
-earthquake | earth·quake | earth/quake | 🏚️
-accident | ac·ci·dent | ac/ci/dent | 🚑
-suddenly | sud·den·ly | sud/den/ly | ⚡
-shower | show·er | show/er | 🚿
-brush | brush | br/ush | 🪥
-basketball | bas·ket·ball | bas/ket/ball | 🏀
-picture | pic·ture | pic/ture | 🖼️
-lights | lights | l/ights | 💡
-rang | rang | r/ang | 📞
-# reading
-> My Crazy Busy Day
-> Yesterday was a crazy day for me, Jason, a student in Zhubei. In the morning, while I was brushing my teeth, my cat jumped on the table and broke a cup. When I was eating breakfast, the phone rang. It was my grandma!
-> Then, while I was waiting for the bus, I saw an accident. A boy fell off his bike, but he was fine. At school, while I was drawing a picture, my friend Leo was playing basketball outside. Suddenly, it started to rain.
-> In the afternoon, we were listening to the teacher when the bell rang. School was over!
-> In the evening, while my mom was cooking dinner, my dad was washing the dishes. I was taking a shower when the lights went out. Later, when I was cleaning my room, I found 100 dollars under my bed. It was a long day!
-RC | What broke while Jason was brushing his teeth? | a cup | a bike | a window
-RC | Who called when Jason was eating breakfast? | his grandma | his mom | Leo
-RC | What happened when Jason was taking a shower? | The lights went out. | The phone rang. | It started to rain.
-RT | What were Jason's mom and dad doing in the evening? | Jason's mom was cooking dinner while his dad was washing the dishes.
-RT | What happened while Leo was playing basketball? | While Leo was playing basketball, it started to rain.
-RT | What were Jason and his classmates doing when the bell rang? | Jason and his classmates were listening to the teacher when the bell rang.
-RS | Which part of Jason's day was the craziest? Why do you think so?
-RS | What happened to you on a busy day? Use when or while.
-# grammar
-GT | When vs While: short and long actions
-R | **when + short action** (past simple) → I was taking a shower **when the doorbell rang**.
-R | **while + long action** (was / were + V-ing) → **While my sister was studying**, I was playing games.
-R | two long actions → **While my mom was cooking, my dad was washing** the dishes.
-R | **When / While clause first + comma** → **When the earthquake happened,** we were watching TV.
-G | When the teacher walked into the classroom, the students were talking.
-G | While my dad was washing the car, it started to snow.
-G | When I saw the accident, I was waiting for the bus.
-G | While my mom was cleaning the room, she found 100 dollars.
-G | He broke his leg while he was running.
-G | I found a coin while I was cleaning my room.
-G | The students were listening to the teacher when the bell rang.
-# speak-write
-SP | A: You look tired! | B: I had a crazy morning. | A: What happened while you were {eating breakfast}? | B: The phone rang, and I spilled my milk! | eating breakfast / brushing your teeth / taking a shower / waiting for the bus / walking to school
-SW | Yesterday, while I was {waiting for the bus}, {I saw a big black cat}. When {the bell rang}, I was {listening to the teacher}. | Write about your busy day with when and while.
-## U4 | Future: will vs be going to | What are you going to do next weekend?
-# learn
-C | What is Ruby going to have in the morning? | Ruby is going to have a big breakfast with her family.
-C | How are Ruby and her brother going to visit their grandparents? | Ruby and her brother are going to take the bus.
-C | What are Ruby and her classmates going to watch at 2:00 PM? | Ruby and her classmates are going to watch a funny movie.
-C | Why will Ruby bring a lot of water? | Ruby will bring a lot of water because it is going to be sunny and hot.
-G | What are you going to do this Saturday? | I am going to visit my grandparents this Saturday. | am going to · visit · this Saturday
-G | What do you think the weather will be like tomorrow? | I think it will rain tomorrow. | I think · will rain · tomorrow
-G | Your friend is very hungry. What will you say? | I will make a sandwich for you. | will make · sandwich
-G | What are you going to be in the future? | I am going to be a doctor in the future. | am going to be · in the future
-V | I ___ I will finish my homework before 9:00 PM. | promise
-V | Look at those dark clouds! It is going to rain ___. | soon
-V | We had a great time at the party. It was a ___ day! | wonderful
-V | I am so ___ about our trip to Japan next summer! | excited
-# battle
-F | I will going to travel to Korea next year. | I am going to travel to Korea next year. / I will travel to Korea next year.
-F | The phone is ringing! I am going to get it. | The phone is ringing! I will get it.
-F | I going to visit my aunt this Sunday. | I am going to visit my aunt this Sunday.
-F | She will goes shopping tomorrow. | She will go shopping tomorrow.
-B | I am going to visit Japan with my family.
-B | I promise I will help you with your homework.
-B | They are going to have a big party this Saturday.
-T | What are you going to do tonight? | I am going to finish my homework tonight.
-T | What do you think your life will be like in 2050? | I think I will have a flying car in 2050.
-W | promise | Make a sentence with the word "promise".
-W | tomorrow | Make a sentence with the word "tomorrow".
-C | Which is a better plan for Saturday, staying at home or watching a funny movie with friends? | staying at home | watching a funny movie with friends
-Z | Will or be going to: "The phone is ringing! I ___ get it."
-S | What are you going to do next summer vacation?
-# words
-promise | prom·ise | prom/ise | 🤝
-soon | soon | s/oon | ⏳
-wonderful | won·der·ful | won/der/ful | 🌈
-excited | ex·cit·ed | ex/cit/ed | 🤩
-tomorrow | to·mor·row | to/mor/row | 📅
-tonight | to·night | to/night | 🌙
-future | fu·ture | fu/ture | 🚀
-plan | plan | pl/an | 📝
-maybe | may·be | may/be | 🤷
-grandparents | grand·par·ents | grand/par/ents | 👵
-movie | mov·ie | mov/ie | 🎬
-finally | fi·nal·ly | fi/nal/ly | 🏁
-# reading
-> My Super Saturday
-> Hi, I'm Ruby, and I live in Zhubei. This Saturday is going to be super! I already have a plan. First, in the morning, I am going to have a big breakfast with my family. Then my brother and I are going to take the bus to visit our grandparents.
-> After that, I am going to meet my classmates at the mall. We are going to watch a funny movie at 2:00 PM. We already have the tickets! After the movie, maybe we will buy some pearl milk tea.
-> The weather report says it is going to be sunny and hot, so I think I will bring a lot of water. My mom is not going to come with us, but she said, "I will pick you up at 6:00."
-> Finally, I am going to finish my homework on Saturday night. I promise I won't stay up late! I believe it will be a wonderful day.
-RC | Who is Ruby going to meet at the mall? | her classmates | her grandparents | her mom
-RC | What time is the movie going to start? | at 2:00 PM | at 6:00 PM | at 9:00 AM
-RC | Who will pick Ruby up at 6:00? | Ruby's mom | Ruby's brother | Ruby's grandma
-RT | What is Ruby going to do on Saturday night? | Ruby is going to finish her homework on Saturday night.
-RT | What does Ruby promise? | Ruby promises she won't stay up late.
-RT | What will Ruby and her classmates maybe buy after the movie? | Maybe Ruby and her classmates will buy some pearl milk tea.
-RS | Which part of Ruby's Super Saturday sounds the most fun to you? Why?
-RS | What are you going to do this Saturday? Tell us your plan with First, After that and Finally.
-# grammar
-GT | Future: will vs be going to
-R | **am / is / are + going to + verb** (a plan) → I **am going to visit** my grandma next Sunday.
-R | **will + verb** (a promise or a decision now) → The phone is ringing! I **will get** it!
-R | **I think / maybe + will** (an opinion) → I think it **will rain** tomorrow.
-R | evidence now → **is going to** → Look at those dark clouds! It **is going to rain**.
-R | **am not going to / won't + verb** → I **won't** stay up late tonight.
-G | I am going to visit my grandma next Sunday.
-G | I think it will rain tomorrow.
-G | My brother is going to be a doctor in the future.
-G | What are you going to do tonight?
-G | We are going to watch a movie at 7:00 PM.
-G | Maybe I will go shopping tomorrow.
-G | Look at those dark clouds! It is going to rain soon.
-# speak-write
-SP | A: What are you going to do this weekend? | B: I'm going to visit my grandparents. | A: That sounds fun! Are you going to {take the bus}? | B: Yes, and I will bring some pearl milk tea for everyone! | take the bus / have a big breakfast / meet your cousins / watch a funny movie / go to the night market
-SW | This Saturday, I am going to {visit my grandparents}. After that, I am going to {watch a funny movie}. I think it will {be sunny}, so I will {bring water}. | Write your plan for next Saturday with be going to and will.
-## U5 | Be going to: Travel Plans | What are you going to do on your trip?
-# learn
-C | What has Mia's family already booked for the trip? | Mia's family has already booked flight tickets and a hotel.
-C | What are Mia and her mom going to wear at the palace? | Mia and her mom are going to wear traditional Hanbok.
-C | Who isn't going to go to the museum with Mia's family? | Mia's little brother isn't going to go to the museum.
-C | What is Mia's family going to eat on the last day? | Mia's family is going to eat Korean BBQ for dinner.
-G | What are you going to do this summer? | I am going to travel abroad with my family this summer. | am going to · travel
-G | Where is Kevin going to go next Sunday? | Kevin is going to go to a museum in Taipei. | is going to · museum
-G | Are you going to buy any souvenirs on your trip? | Yes, I am. I am going to buy souvenirs for my friends. | am going to · souvenirs
-G | Is your sister going to come to the tower with you? | No, she isn't. My sister isn't going to come to the tower. | isn't going to · tower
-V | We are going to stay at a ___ in the city center. | hotel
-V | My sister is going to buy cute ___ like pens and notebooks. | stationery
-V | We are going to buy ___ for our friends at the gift shop. | souvenirs
-V | Are you going to stay in Taiwan or travel ___? | abroad
-# battle
-F | What you going to do this weekend? | What are you going to do this weekend?
-F | My sister is going to not go to the museum. | My sister isn't going to go to the museum. / My sister is not going to go to the museum.
-F | We are going to visiting a palace tomorrow. | We are going to visit a palace tomorrow.
-F | Where are you going go next summer? | Where are you going to go next summer?
-B | We are going to visit a famous palace tomorrow.
-B | My dad is going to book a hotel tonight.
-B | Are you going to try any local food there?
-T | What are you going to eat on your next trip? | I am going to eat ramen on my next trip.
-T | Where is your family going to go this summer? | My family is going to go to Japan this summer.
-W | souvenir | Make a sentence with the word "souvenir".
-W | museum | Make a sentence with the word "museum".
-C | Which is better for a family trip, a theme park or a museum? | A theme park | A museum
-Z | Make it negative: "We are going to swim in the sea."
-S | What are you going to do on your next holiday?
-# words
-travel | trav·el | trav/el | ✈️
-hotel | ho·tel | ho/tel | 🏨
-palace | pal·ace | pal/ace | 🏯
-tower | tow·er | tow/er | 🗼
-museum | mu·se·um | mu/se/um | 🏛️
-souvenir | sou·ve·nir | sou/ve/nir | 🎁
-culture | cul·ture | cul/ture | 🎎
-traditional | tra·di·tion·al | tra/di/tion/al | 👘
-stationery | sta·tion·er·y | sta/tion/er/y | ✏️
-unforgettable | un·for·get·ta·ble | un/for/get/ta/ble | 🌟
-itinerary | i·tin·er·ar·y | i/tin/er/ar/y | 🗓️
-abroad | a·broad | a/broad | 🌏
-# reading
-> Mia's Seoul Travel Blog
-> Hi, everyone! My family is going to visit Seoul next month. We have already booked our flight tickets and a hotel in the city center. I am so excited!
-> First, we are going to visit a palace. My mom and I are going to wear traditional Hanbok and take lots of photos. Then, we are going to ride the roller coasters at a theme park.
-> Next, my dad is going to take us to a museum. My little brother isn't going to come with us. He is going to stay at the hotel with Grandma because he gets tired easily.
-> On the last day, we are going to shop for stationery and buy souvenirs for our friends. Finally, we are going to eat Korean BBQ for dinner. I think this trip is going to be unforgettable!
-RC | What is Mia's family going to do first in Seoul? | Visit a palace | Eat Korean BBQ | Go to a museum
-RC | Who is going to stay at the hotel with Mia's brother? | Grandma | Mia's mom | Mia's dad
-RC | What is Mia's family going to buy on the last day? | Stationery and souvenirs | Roller coaster tickets | Hanbok and posters
-RT | What are Mia and her mom going to do at the palace? | Mia and her mom are going to wear Hanbok and take photos.
-RT | Why isn't Mia's brother going to go to the museum? | Mia's brother isn't going to go because he gets tired easily.
-RT | What is Mia's family going to ride at the theme park? | Mia's family is going to ride the roller coasters.
-RS | If you visit Seoul, what are you going to do first?
-RS | Which part of Mia's trip are you going to like best? Why?
-# grammar
-GT | Be going to: plans and itineraries
-R | **S + am/is/are + going to + V** → We **are going to** visit a palace.
-R | **S + be + not + going to + V** → My sister **isn't going to** go to the museum.
-R | **Am/Is/Are + S + going to + V?** → **Are** you **going to** buy souvenirs? Yes, I am. / No, I'm not.
-R | **What / Where + be + S + going to + V?** → **Where are** you **going to** go?
-R | **First, Then, Next, Finally** → **First**, we are going to visit a palace. **Then**, we are going to eat lunch.
-G | We are going to travel to South Korea next month.
-G | My parents are going to see the famous tower.
-G | My sister isn't going to go to the museum.
-G | Are you going to buy any souvenirs in Seoul?
-G | What are you going to do this summer?
-G | First, we are going to visit a traditional palace.
-G | On the last day, we are going to eat Korean BBQ.
-# speak-write
-SP | A: What are you going to do this summer? | B: I am going to travel abroad with my family. | A: Are you going to {visit a palace}? | B: Yes, I am. It is going to be fun! | visit a palace / see a parade / try local food / take photos / buy souvenirs
-SW | This summer, I am going to {travel to Japan}. First, I am going to {visit a castle}. Then, I am going to {eat ramen}. | Write your own travel plan. Use First and Then.
-## U6 | Adverbs of Manner: -ly | How do we describe the way people do things?
-# learn
-C | How did the Tortoise agree to the rematch? | The Tortoise agreed politely.
-C | Why did the Hare stop at the river? | The Hare stopped because he could not swim well.
-C | How did the Tortoise cross the river? | The Tortoise swam easily across the river.
-C | How did the animals clap at the end of the race? | The animals clapped happily at the end of the race.
-G | How does your teacher explain the rules? | My teacher explains the rules patiently. | patiently · explains
-G | How does Amy sing in the school choir? | Amy sings beautifully in the school choir. | beautifully · sings
-G | How does your brother play basketball? | My brother plays basketball well. | well · plays
-G | How should people drive on a rainy day? | People should drive carefully on a rainy day. | carefully · drive
-V | The Tortoise walked slowly but ___ to the finish line. | steadily
-V | Please talk ___ in the library. | quietly
-V | The Hare laughed ___ at the slow Tortoise. | loudly
-V | The mother held her baby ___ in her arms. | gently
-# battle
-F | He sings bad. | He sings badly.
-F | The Hare ran fastly. | The Hare ran fast.
-F | My brother plays the piano goodly. | My brother plays the piano well.
-F | The children played happyly in the park. | The children played happily in the park.
-B | The students are reading quietly in the library.
-B | Please drive carefully on the busy street.
-B | The Tortoise walked slowly but steadily.
-T | How do you do your homework? | I do my homework carefully.
-T | How does your best friend speak English? | My best friend speaks English clearly.
-W | carefully | Make a sentence with the word "carefully".
-W | loudly | Make a sentence with the word "loudly".
-C | Which is better in a race, running quickly or walking steadily? | Running quickly | Walking steadily
-Z | What is the adverb of "good"?
-S | What can you do well? How do you do it?
-# words
-quickly | quick·ly | quick/ly | ⚡
-slowly | slow·ly | slow/ly | 🐌
-happily | hap·pi·ly | hap/pi/ly | 😊
-quietly | qui·et·ly | qui/et/ly | 🤫
-loudly | loud·ly | loud/ly | 📢
-carefully | care·ful·ly | care/ful/ly | ⚠️
-steadily | stead·i·ly | stead/i/ly | 👣
-gently | gent·ly | gent/ly | 🤲
-patiently | pa·tient·ly | pa/tient/ly | ⏳
-proudly | proud·ly | proud/ly | 😤
-politely | po·lite·ly | po/lite/ly | 🙇
-tortoise | tor·toise | tor/toise | 🐢
-# reading
-> The Tortoise and the Hare: The Rematch
-> A year after the famous race, the Hare said proudly, "I want a rematch!" The Tortoise agreed politely, and all the animals came to watch excitedly.
-> The race started. The Hare ran quickly, but this time he did not sleep. He looked back and laughed loudly. Then he came to a river. He could not swim well, so he stopped angrily.
-> Meanwhile, the Tortoise walked slowly but steadily. At the river, he swam easily across the water. Then he walked quietly toward the finish line.
-> The Hare waited at the river for a long time. Finally, the Tortoise came back, put the Hare gently on his back and swam across again. The two friends crossed the finish line together, and everyone clapped happily.
-RC | How did the Hare run at the start of the rematch? | Quickly | Slowly | Quietly
-RC | What stopped the Hare in the rematch? | A river | A tree | A long sleep
-RC | How did the Tortoise walk toward the finish line? | Quietly | Loudly | Angrily
-RT | How did the Hare ask for a rematch? | The Hare asked for a rematch proudly.
-RT | How did the Tortoise carry the Hare across the river? | The Tortoise carried the Hare gently on his back.
-RT | How did the two friends finish the race? | The two friends crossed the finish line together.
-RS | Do you like the ending of the rematch story? Why or why not?
-RS | What do you do carefully every day?
-# grammar
-GT | Adverbs of manner: how we do things
-R | **adjective + -ly** → quiet → **quietly**, loud → **loudly**
-R | **-y → -ily** → happy → **happily**, angry → **angrily**
-R | **-le → -ly** → gentle → **gently**, terrible → **terribly**
-R | **irregular** → good → **well**, fast → **fast**
-R | **verb + adverb** → The Tortoise **walks slowly**. · My brother **plays the piano well**.
-G | The Hare ran quickly and was soon far ahead.
-G | The Tortoise smiled happily at the finish line.
-G | My brother plays the piano very well.
-G | It is raining heavily outside today.
-G | The teacher explains the rules patiently.
-G | Please speak clearly so everyone can hear you.
-G | He is a bad singer, so he sings badly.
-# speak-write
-SP | A: Let's play Mime the Adverb! | B: OK. Please walk to the door. | A: How should I walk? | B: Walk {slowly}! | slowly / quickly / quietly / happily / angrily / proudly
-SW | My {mom} is a {careful} driver. She drives {carefully}. | Write about two people you know: one adjective sentence and one adverb sentence for each.
-## U7 | Comparatives: -er than / more ... than | How do we compare two things?
-# learn
-C | Where does Amy's cousin Ben live? | Ben lives in a small village in Hualien.
-C | Why is going to school easier for Amy? | Going to school is easier because the MRT is faster than the bus.
-C | What does Ben say about the air in the country? | Ben says the air in the country is fresher.
-C | Why is shopping harder in Ben's village? | Shopping is much harder because there are no big malls.
-G | Which is taller, Taipei 101 or your school? | Taipei 101 is much taller than my school. | taller than · Taipei 101
-G | Which is more expensive, a smartphone or a pencil? | A smartphone is more expensive than a pencil. | more expensive · than
-G | Which season do you like better, summer or winter? | I like summer better than winter. | better than · summer
-G | Is the city busier than the country? | Yes. The city is busier than the country. | busier than · city
-V | The air in the city is ___ than the air in the country. | dirtier
-V | People in the village are ___ than people in the city. | friendlier
-V | The country is ___ than the city at night. | quieter
-V | The weather today is much ___ than yesterday. | better
-# battle
-F | This box is more heavy than that one. | This box is heavier than that one.
-F | This phone is expensiver than my old one. | This phone is more expensive than my old one.
-F | My test score is more better than last time. | My test score is better than last time.
-F | The city is busyer than the country. | The city is busier than the country.
-F | Leo is taller his brother. | Leo is taller than his brother.
-B | City life is busier than country life.
-B | Learning English is more interesting than learning Math.
-B | The weather today is much better than yesterday.
-T | Which do you like better, the city or the country? Why? | I like the country better because the air is fresher.
-T | Which is more difficult for you, English or Math? | Math is more difficult than English for me.
-W | peaceful | Make a sentence with the word "peaceful".
-W | environment | Make a sentence with the word "environment".
-C | Which is better for young people, city life or country life? | City life | Country life
-Z | What is the comparative of "bad"?
-S | How is your hometown different from Taipei?
-# words
-taller | tall·er | tall/er | 🏙️
-busier | bus·i·er | bus/i/er | 🚦
-easier | eas·i·er | eas/i/er | 👍
-dirtier | dirt·i·er | dirt/i/er | 🗑️
-friendlier | friend·li·er | friend/li/er | 🤝
-fresher | fresh·er | fresh/er | 🌿
-quieter | qui·et·er | qui/et/er | 🤫
-better | bet·ter | bet/ter | ⭐
-worse | worse | w/orse | 👎
-exciting | ex·cit·ing | ex/cit/ing | 🎢
-peaceful | peace·ful | peace/ful | 🕊️
-environment | en·vi·ron·ment | en/vi/ron/ment | 🌳
-# reading
-> City Girl, Country Boy
-> Amy lives in Taipei, and her cousin Ben lives in a small village in Hualien. Every summer, Amy visits Ben, and the two cousins talk about their homes.
-> Amy thinks city life is more exciting than country life. The buildings are taller, and the night markets are busier. The MRT is faster than the bus in Ben's village, so going to school is easier for her.
-> Ben disagrees. He says the air in the country is fresher and the streets are quieter. The mountains are more beautiful than tall buildings, and his neighbors are friendlier, too.
-> However, Ben thinks some things are worse in the country. Shopping is much harder because there are no big malls. In the end, both cousins agree that each home is better in its own way.
-RC | Where does Amy live? | In Taipei | In Hualien | In a small village
-RC | What does Amy think about city life? | City life is more exciting | City life is quieter | City life is more peaceful
-RC | What does Ben think is worse in the country? | Shopping | The air | The neighbors
-RT | Why does Ben like the country better? | Ben likes the country because the air is fresher and the streets are quieter.
-RT | What does Ben say about the mountains? | Ben says the mountains are more beautiful than tall buildings.
-RT | What do Amy and Ben agree on in the end? | Amy and Ben agree that each home is better in its own way.
-RS | Do you agree with Amy or with Ben? Why?
-RS | Is your neighborhood busier or quieter than Ben's village?
-# grammar
-GT | Comparatives: -er than / more ... than
-R | **short adjective + -er + than** → tall → **taller than**, cheap → **cheaper than**
-R | **-y → -ier** → busy → **busier**, friendly → **friendlier**
-R | **more + long adjective + than** → **more exciting than**, **more expensive than**
-R | **irregular** → good → **better**, bad → **worse**
-R | **much + comparative** → Math is **much harder** than Art.
-G | In the city, the buildings are taller.
-G | The air in the country is fresher than in the city.
-G | The mountains are more beautiful than the tall buildings.
-G | This new smartphone is more expensive than my old one.
-G | Health is more important than money.
-G | The traffic in the city is worse than in the country.
-G | Kevin is happier because he can play in the fields.
-# speak-write
-SP | A: Do you like the city or the country? | B: I like the country. | A: Why? | B: The country is {quieter} than the city. | quieter / fresher / more peaceful / more beautiful / cleaner
-SW | I think {summer} is {better} than {winter} because {the days are longer}. | Write a comparison report about two things you know well.
-## U8 | Superlatives: the -est / the most | How do we compare three or more things?
-# learn
-C | What is the highest mountain in the world? | Mt. Everest is the highest mountain in the world.
-C | What does the Great Barrier Reef have? | The Great Barrier Reef has the most colorful fish.
-C | Which place is the most expensive on the dream trip? | Dubai is the most expensive place on the dream trip.
-C | What is the least exciting part of any trip? | The long flight is the least exciting part of any trip.
-G | Who is the tallest student in your class? | Kevin is the tallest student in my class. | the tallest · class
-G | What is the most popular sport at your school? | Basketball is the most popular sport at my school. | the most popular · sport
-G | What is the best food in Taiwan? | Beef noodles are the best food in Taiwan. | the best · food
-G | Which class is the least stressful for you? | Art is the least stressful class for me. | the least stressful · Art
-V | Mt. Everest is the ___ mountain on Earth. | highest
-V | Tokyo is the ___ city in Japan. | busiest
-V | The blue whale is the ___ animal in the world. | largest
-V | The cafeteria is the ___ place in our school. | noisiest
-# battle
-F | Kevin is most smart student in our class. | Kevin is the smartest student in our class.
-F | February is shortest month of the year. | February is the shortest month of the year.
-F | The blue whale is the most large animal in the world. | The blue whale is the largest animal in the world.
-F | This is the more interesting book in the library. | This is the most interesting book in the library.
-F | Tokyo is the busyest city in Japan. | Tokyo is the busiest city in Japan.
-B | Mt. Everest is the highest mountain on Earth.
-B | The best part of any trip is making memories.
-B | Art is the least stressful class at school.
-T | What is the most delicious food at a night market? | Fried chicken is the most delicious food at a night market.
-T | Which month is the hottest in Taiwan? | July is the hottest month in Taiwan.
-W | biggest | Make a sentence with the word "biggest".
-W | colorful | Make a sentence with the word "colorful".
-C | Which is the most exciting place for a class trip, Tokyo or Australia? | Tokyo | Australia
-Z | What is the superlative of "good"?
-S | What is the best place in your city? Why?
-# words
-highest | high·est | high/est | 🏔️
-largest | larg·est | larg/est | 🐋
-busiest | bus·i·est | bus/i/est | 🚇
-noisiest | nois·i·est | nois/i/est | 📣
-biggest | big·gest | big/gest | 🐘
-coldest | cold·est | cold/est | 🥶
-smartest | smart·est | smart/est | 🧠
-shortest | short·est | short/est | 📏
-famous | fa·mous | fa/mous | 🌟
-colorful | col·or·ful | col/or/ful | 🐠
-expensive | ex·pen·sive | ex/pen/sive | 💰
-stressful | stress·ful | stress/ful | 😰
-# reading
-> The Best Trip Around the World
-> What is the most exciting trip you can imagine? My dream trip is going to take me to the most famous places on Earth.
-> First, I am going to visit Nepal to see Mt. Everest. It is the highest mountain in the world, and the air there is the thinnest. Next, I am going to fly to Australia. The Great Barrier Reef is the largest coral reef, and it has the most colorful fish.
-> Then, I am going to go to Tokyo, the busiest city I know. The trains there are the fastest, and the ramen is the most delicious! After that, I am going to visit Dubai. It has the tallest building in the world, but it is the most expensive place on my trip.
-> The least exciting part of any trip is the long flight. But the best part is making memories with my family.
-RC | Where is Mt. Everest? | In Nepal | In Australia | In Japan
-RC | Which city is the busiest on the trip? | Tokyo | Dubai | Sydney
-RC | What is the best part of any trip? | Making memories with family | The long flight | Shopping in luxury malls
-RT | What can people see at the Great Barrier Reef? | People can see the most colorful fish at the Great Barrier Reef.
-RT | What does Dubai have? | Dubai has the tallest building in the world.
-RT | Why is the long flight not fun? | The long flight is the least exciting part of any trip.
-RS | Which place on the dream trip is the most interesting to you? Why?
-RS | What is the best trip you have ever taken?
-# grammar
-GT | Superlatives: the -est / the most / the least
-R | **the + adj-est** (1 syllable) → fast → **the fastest**, tall → **the tallest**
-R | **double the last letter + -est** (CVC) → big → **the biggest**, hot → **the hottest**
-R | **-y → the -iest** → busy → **the busiest**, noisy → **the noisiest**
-R | **the most + adj** (2+ syllables) → **the most interesting**, **the most famous**
-R | **irregular · the least** → good → **the best**, bad → **the worst** · **the least stressful**
-G | Mt. Everest is the highest mountain in the world.
-G | Kevin is the smartest student in our class.
-G | February is the shortest month of the year.
-G | The cafeteria is the noisiest place in the whole school.
-G | Dubai might be the most expensive place to visit.
-G | The best part of any trip is making memories.
-G | Is Taipei the biggest city in Taiwan?
-# speak-write
-SP | A: Let's make a class records poster! | B: Good idea. Who is the {tallest} student? | A: I think Kevin is the {tallest}. | B: I agree with you! | tallest / smartest / funniest / fastest / most creative
-SW | {Tokyo} is the {busiest} city I know. It has the {fastest} trains in the world. | Make a World Records poster about three amazing places.
-## U9 | Must, Must Not, Should, Shouldn't | How do we talk about rules and advice?
-# learn
-C | Where does Zog want to go? | Zog wants to go to a night market in Hsinchu.
-C | What must Zog not use at the night market? | Zog must not use his laser eyes at the night market.
-C | Why should Zog bring some cash? | Zog should bring some cash because many small stalls don't take credit cards.
-C | What should Zog do with his cup and bag? | Zog should keep his cup and bag until he finds a trash can.
-G | What must students do when the fire alarm rings? | When the fire alarm rings, students must leave the classroom immediately. | must · leave · fire alarm
-G | What must students not do in the library? | Students must not eat in the library. | must not · eat
-G | Your friend looks tired. What advice can you give your friend? | You should go to bed early tonight. | should · go to bed
-G | What shouldn't teenagers drink every day? | Teenagers shouldn't drink too many sugary drinks every day. | shouldn't · drink · sugary
-V | Safety is the first ___ when we travel. | priority
-V | Zog should be ___ and say "Thank you." | polite
-V | You must not run in the ___ at school. | hallway
-V | On a plane, you must fasten your ___. | seatbelt
-# battle
-F | You must to fasten your seatbelt on a plane. | You must fasten your seatbelt on a plane.
-F | Students should to study hard for the test. | Students should study hard for the test.
-F | Zog musts follow the school rules. | Zog must follow the school rules.
-F | She shoulds speak softly on the train. | She should speak softly on the train.
-B | You must raise your hand before speaking in class.
-B | We should speak softly on the train in Japan.
-B | You must not use your phone in the hallway.
-T | What is one rule at your school? | At my school, we must wear a uniform every day.
-T | What should a smart traveler prepare before a trip to Japan? | A smart traveler should prepare some yen before the trip.
-W | rule | Make a sentence with the word "rule".
-W | polite | Make a sentence with the word "polite".
-C | Which is more important for a traveler, safety or fun? | safety | fun
-Z | Which is correct: "You must go" or "You must to go"?
-S | What should a new student at your school do on the first day?
-# words
-rule | rule | r/ule | 📏
-strict | strict | str/ict | 👮
-safety | safe·ty | safe/ty | 🦺
-priority | pri·or·i·ty | pri/or/i/ty | 🥇
-manners | man·ners | man/ners | 🙇
-polite | po·lite | po/lite | 🙏
-patient | pa·tient | pa/tient | ⏳
-pleasant | pleas·ant | pleas/ant | 😊
-alien | a·li·en | a/li/en | 👽
-hallway | hall·way | hall/way | 🚪
-seatbelt | seat·belt | seat/belt | 💺
-complicated | com·pli·cat·ed | com/pli/cat/ed | 🧩
-# reading
-> Zog Visits the Night Market
-> Zog, the exchange student from Planet No-Rule, wants to visit a night market in Hsinchu. His classmate Amy writes a short survival guide for him. "There are some rules you must follow and some things you should do," she says.
-> First, safety is the priority. The market is crowded, so Zog must stay with his friends. He must not use his laser eyes to cook the sausages because it is dangerous for everyone.
-> Next, Zog should bring some cash. Many small stalls are old and don't take credit cards. He should also speak softly and be patient in line. Good manners make the market pleasant for everyone.
-> Finally, Zog must not throw trash on the street. He should keep his cup and bag until he finds a trash can. Amy smiles. "Learning our rules is complicated, but you are a polite alien, Zog!"
-RC | Who writes the survival guide for Zog? | Amy | Zog's teacher | Zog's mother
-RC | Why must Zog stay with his friends? | The market is crowded. | The market is closed. | The market is quiet.
-RC | What must Zog not do on the street? | throw trash | speak softly | bring cash
-RT | Why must Zog not use his laser eyes at the market? | Zog must not use his laser eyes because it is dangerous for everyone.
-RT | What should Zog do in line? | Zog should speak softly and be patient in line.
-RT | What does Amy think of Zog at the end? | Amy thinks Zog is a polite alien.
-RS | What rules should visitors follow at a night market in Taiwan?
-RS | What advice would you give to an alien on Earth?
-# grammar
-GT | Must and Should: Rules and Advice
-R | **must + base verb** = a rule  →  You must fasten your seatbelt.
-R | **must not + base verb** = it is forbidden  →  We must not throw trash on the beach.
-R | **should + base verb** = advice  →  You should go to bed early.
-R | **shouldn't + base verb** = advice not to do it  →  Teenagers shouldn't drink too many sugary drinks.
-R | No **to** and no **-s** after a modal  →  He must go. (not "must to go" or "musts go")
-G | You must not eat in the library.
-G | Students should study hard for the test.
-G | When the fire alarm rings, we must leave immediately.
-G | Zog should say thank you to his teacher.
-G | You must not talk while the teacher is talking.
-G | Travelers should respect the local culture.
-G | We must keep the beach clean for the fish.
-# speak-write
-SP | A: What are the rules at your school? | B: We must wear a uniform. | A: Must we {raise our hands} in class? | B: Yes, we must. We should be polite, too. | raise our hands / speak English / stay quiet / be on time / listen carefully
-SW | At my school, we must {wear a uniform}. We must not {run in the hallway}. We should {be polite to teachers}. | Write three rules or pieces of advice for a new student at your school.
-## U10 | Ditransitive Verbs: to and for | How do we say who gets something?
-# learn
-C | What did Kevin buy for Ms. Lin? | Kevin bought a big cake for Ms. Lin.
-C | What did Amy make for Ms. Lin? | Amy made Ms. Lin a card with forty names on it.
-C | What did Ms. Lin tell the class at the party? | Ms. Lin told the class a funny story about her first day as a teacher.
-C | What did Ms. Lin send each student after the party? | Ms. Lin sent each student a thank-you email.
-G | What did your mom cook for you last night? | My mom cooked dinner for me last night. | cooked · for me
-G | What can you lend a friend who forgot a pen? | I can lend my pen to my friend. | lend · to my friend
-G | What did your teacher show the class yesterday? | My teacher showed us a video yesterday. | showed · us
-G | What will you buy for your best friend's birthday? | I will buy a new bag for my best friend. | buy · for
-V | Can you ___ me your eraser? I will give it back tomorrow. | lend
-V | I don't understand. Please ___ this question to me. | explain
-V | Tom told Amy a ___, and Amy didn't tell anyone. | secret
-V | I looked up the new word in my ___. | dictionary
-# battle
-F | Can you explain me this question? | Can you explain this question to me?
-F | I gave Kevin it yesterday. | I gave it to Kevin yesterday.
-F | Mom made a cake to me. | Mom made a cake for me. / Mom made me a cake.
-F | He sent a letter for his friend. | He sent a letter to his friend. / He sent his friend a letter.
-B | She bought a new dress for her sister.
-B | Mr. Wang teaches us math every Monday.
-B | Please show your new phone to me.
-T | What did someone give you for your last birthday? | My aunt gave me a new watch for my birthday.
-T | What can you make for your family? | I can make breakfast for my family.
-W | lend | Make a sentence with the word "lend".
-W | send | Make a sentence with the word "send".
-C | Which is a better gift for a friend, a book or a cake? | a book | a cake
-Z | Fill in the blank: "Dad bought a bike ___ me." To or for?
-S | What is the best gift you ever gave someone, and who did you give it to?
-# words
-give | give | g/ive | 🎁
-send | send | s/end | 📮
-show | show | sh/ow | 👀
-lend | lend | l/end | 🤝
-teach | teach | t/each | 🧑‍🏫
-cook | cook | c/ook | 🍳
-explain | ex·plain | ex/plain | 💬
-suggest | sug·gest | sug/gest | 💡
-dictionary | dic·tion·ar·y | dic/tion/ar/y | 📖
-secret | se·cret | se/cret | 🤫
-letter | let·ter | let/ter | ✉️
-breakfast | break·fast | break/fast | 🥞
-# reading
-> A Surprise Party for Ms. Lin
-> Ms. Lin teaches us English, and next week she is moving to Tainan. Our class planned a surprise party for her on Friday.
-> On Friday morning, everyone had a job. Kevin bought a big cake for Ms. Lin. Amy made her a card with forty names on it. Ben's mother cooked us some fried rice, and his father found a speaker for us. I wrote a short poem and showed it to my classmates before the party.
-> At three o'clock, Ms. Lin walked in. We gave her the card and sang a song. She told us a funny story about her first day as a teacher. Then she showed us an old photo of our class.
-> After the party, Ms. Lin sent each student a thank-you email. In my email, she wrote, "You taught me something, too: a class can be a family." Next month, I will send her a photo of our class garden.
-RC | Why did the class plan a party for Ms. Lin? | Ms. Lin is moving to Tainan. | Ms. Lin has a birthday. | Ms. Lin won a prize.
-RC | Who cooked fried rice for the class? | Ben's mother | Ben's father | Kevin
-RC | What did Ms. Lin show the class? | an old photo of the class | a funny video | a new phone
-RT | What did the writer show to the classmates before the party? | The writer showed a short poem to the classmates.
-RT | What did Ben's father find for the class? | Ben's father found a speaker for the class.
-RT | What will the writer send Ms. Lin next month? | The writer will send Ms. Lin a photo of the class garden.
-RS | What gift would you give to your favorite teacher, and why?
-RS | Who teaches you something important, and what does that person teach you?
-# grammar
-GT | Giving Verbs with Two Objects
-R | **verb + person + thing**  →  I gave Kevin a pen.
-R | **verb + thing + to + person** (give, send, show, lend, tell, teach)  →  I gave a pen to Kevin.
-R | **verb + thing + for + person** (buy, make, cook, get, find)  →  She bought a book for me.
-R | Thing is a pronoun: **verb + it / them + to / for + person**  →  I gave it to Kevin.
-R | **explain / suggest / say + thing + to + person**  →  Please explain this question to me.
-G | She lent some money to Tom yesterday.
-G | Mom cooked a big dinner for us.
-G | He sent his friend a letter from Japan.
-G | My mother tells me a story every night.
-G | Can you lend your dictionary to me?
-G | Dad made us breakfast this morning.
-G | I gave it to Kevin after class.
-# speak-write
-SP | A: Welcome to the Gift Exchange Station! | B: Hi! What can I give my partner? | A: You can give your partner {a storybook}. | B: Great! I will give it to my partner now. | a storybook / a cake / a letter / some stickers / a pen
-SW | I gave {my sister} {a card}. I bought {a cake} for {my mom}. | Write about gifts you gave or bought for your family. Use both patterns.
-## U11 | Linking Verbs + Adjective | How do we describe how things look, sound and feel?
-# learn
-C | How did the pineapple feel? | The pineapple felt rough and a little sharp.
-C | What did the wind chime sound like? | The wind chime sounded soft and pleasant, like tiny bells.
-C | How did the wool scarf feel to Amy? | The wool scarf felt soft to Amy.
-C | How did the seashell smell? | The seashell smelled salty like the sea.
-G | How does a lemon taste? | A lemon tastes sour. | tastes · sour
-G | How does chocolate cake smell? | Chocolate cake smells sweet. | smells · sweet
-G | How did your classmate look after the long test? | My classmate looked tired after the long test. | looked · tired
-G | What happens to the weather in December? | The weather gets cold in December. | gets · cold
-V | The seashell smelled ___ like the sea. | salty
-V | This old milk smells ___. Don't drink it! | terrible
-V | Lily touched the pineapple ___. | carefully
-V | Please stay ___ in the library. | quiet
-# battle
-F | The flower smells sweetly. | The flower smells sweet.
-F | He looks angrily today. | He looks angry today.
-F | The food tastes well. | The food tastes good.
-F | He felt sadly about the news. | He felt sad about the news.
-B | The soup smells delicious and tastes salty.
-B | Please stay quiet while the baby is sleeping.
-B | She touched the kitten gently with her hand.
-T | How does your favorite food taste? | My favorite food, beef noodles, tastes rich and delicious.
-T | How do you feel on a rainy Monday morning? | I feel tired and sleepy on a rainy Monday morning.
-W | rough | Make a sentence with the word "rough".
-W | gently | Make a sentence with the word "gently".
-C | Which is better on a cold day, hot soup or ice cream? | hot soup | ice cream
-Z | Which is correct: "The food tastes good" or "The food tastes well"?
-S | Describe your favorite place. How does your favorite place look, sound and smell?
-# words
-smell | smell | sm/ell | 👃
-taste | taste | t/aste | 👅
-sound | sound | s/ound | 🔊
-rough | rough | r/ough | 🪨
-smooth | smooth | sm/ooth | 🧈
-salty | salt·y | salt/y | 🧂
-delicious | de·li·cious | de/li/cious | 😋
-strange | strange | str/ange | 🤔
-terrible | ter·ri·ble | ter/ri/ble | 🤢
-gently | gent·ly | gent/ly | 🐱
-carefully | care·ful·ly | care/ful/ly | 🔍
-quiet | qui·et | qui/et | 🤫
-# reading
-> The Mystery Box Challenge
-> Every Friday, our class plays the Mystery Box Challenge. Today, Mr. Chen put four things in a big box. We could not look inside, so we used our other senses.
-> First, Lily touched something carefully. "It feels rough and a little sharp," she said. It was a pineapple! It smelled sweet, too.
-> Next, Tom shook the box gently. Something sounded soft and pleasant, like tiny bells. It was a wind chime. Then Amy felt a long, warm thing. "This feels soft," she said happily. It was a wool scarf.
-> The last thing was a seashell. It felt smooth and cold, and it smelled salty like the sea. When Tom put it to his ear, it sounded strange, like the wind.
-> At the end, everyone looked excited. The room got noisy, so Mr. Chen asked us to stay quiet. "Your descriptions sound great," he said.
-RC | Why did the students use their other senses? | The students could not look inside the box. | The box was too small. | Mr. Chen told a story.
-RC | What sounded like tiny bells? | the wind chime | the seashell | the pineapple
-RC | Why did Mr. Chen ask the class to stay quiet? | The room got noisy. | The room got cold. | The class got tired.
-RT | How did the seashell sound when Tom put the seashell to his ear? | The seashell sounded strange, like the wind.
-RT | How did Tom shake the box? | Tom shook the box gently.
-RT | How did the students look at the end? | The students looked excited at the end.
-RS | What is your favorite smell, and how does that smell make you feel?
-RS | Choose a thing in your classroom. How does that thing look and feel?
-# grammar
-GT | Linking Verbs + Adjective
-R | **linking verb + adjective** (subject = adjective)  →  He looks tired.
-R | Sense verbs **look / sound / smell / taste / feel + adjective**  →  The soup smells delicious.
-R | Change and stay verbs **become / get / turn / stay / keep + adjective**  →  The weather got cold.
-R | **action verb + adverb**  →  She felt the blanket carefully.
-R | **good** = adjective · **well** = adverb  →  The food tastes good. · She sings well.
-G | This old blanket feels soft and warm.
-G | The milk smells terrible, so don't drink it.
-G | The weather became cold in the evening.
-G | She smiled sweetly at the little kitten.
-G | The thunderstorm sounds loud and scary tonight.
-G | He tasted the soup carefully before dinner.
-G | Please stay quiet during the test.
-# speak-write
-SP | A: Close your eyes and touch the thing in the box. | B: OK, I am ready. | A: How does the thing feel? Does it feel {soft}? | B: Yes, it does! Let me guess what it is. | soft / rough / smooth / warm / cold / sharp
-SW | My favorite place is {the beach}. It looks {beautiful}. It sounds {peaceful}. I walk there {slowly}. | Write about your favorite place. Use three linking verbs and one action verb + adverb.
-## U12 | Infinitives: to + Verb | How do we talk about plans, hopes and reasons?
-# learn
-C | What does Mia plan to read every month? | Mia plans to read one English book every month.
-C | Why does Mia go to the library? | Mia goes to the library to borrow some books.
-C | What did Mia's coach tell Mia to do? | Mia's coach told Mia to practice every day after school.
-C | Why does Mia hope to save money? | Mia hopes to save money to buy a new bike.
-G | What do you want to do this weekend? | I want to watch a movie this weekend. | want to · watch
-G | Why do people go to the supermarket? | People go to the supermarket to buy food. | to buy · supermarket
-G | What is important to do every day? | It is important to exercise every day. | It is important · to exercise
-G | What did your mom tell you not to do? | My mom told me not to eat candy before dinner. | told me · not to eat
-V | Mia went to the library to ___ some books. | borrow
-V | It is ___ to swim in this river. | dangerous
-V | I ___ to help you tomorrow. I won't forget! | promise
-V | Let's ___ our friends to come to the party. | invite
-# battle
-F | I want go to the park. | I want to go to the park.
-F | He decided to not go to the party. | He decided not to go to the party.
-F | It is important drink enough water. | It is important to drink enough water.
-F | She enjoys to play basketball. | She enjoys playing basketball.
-B | She studied hard to pass the exam.
-B | Dad asked me to turn off the TV.
-B | It is hard to learn a new language.
-T | What do you hope to do next summer? | I hope to visit my grandparents next summer.
-T | Why do students go to the library? | Students go to the library to borrow books.
-W | decide | Make a sentence with the word "decide".
-W | promise | Make a sentence with the word "promise".
-C | Which is more fun on a weekend, to play basketball or to watch a movie? | to play basketball | to watch a movie
-Z | Which is correct: "to not go" or "not to go"?
-S | What are three things you want to do this year?
-# words
-decide | de·cide | de/cide | 🤔
-promise | prom·ise | prom/ise | 🤞
-agree | a·gree | a/gree | 👍
-invite | in·vite | in/vite | 💌
-borrow | bor·row | bor/row | 📚
-important | im·por·tant | im/por/tant | ⭐
-dangerous | dan·ger·ous | dan/ger/ous | ⚠️
-plan | plan | pl/an | 🗓️
-hope | hope | h/ope | 🌈
-choose | choose | ch/oose | 👉
-exam | ex·am | ex/am | 📝
-concert | con·cert | con/cert | 🎤
-# reading
-> Mia's Plans for the New School Year
-> This year, Mia wants to become a better student and a healthier person. She wrote a dream list on the first day of school.
-> First, Mia plans to read one English book every month. She often goes to the library to borrow some books. It is not easy to read in English, but it is fun to learn new words.
-> Second, Mia decided to join the basketball team. Her coach told her to practice every day after school. Mia promised not to be late.
-> Third, Mia hopes to save money to buy a new bike. She also wants to learn to cook, so she asked her grandma to teach her.
-> Finally, Mia wants to go to Japan. Her parents promised to take the family there next summer. "It is important to have goals," Mia says. "I need to work hard, and I choose not to give up."
-RC | What did Mia write on the first day of school? | a dream list | a letter | an email
-RC | What did Mia decide to join? | the basketball team | the music club | the cooking class
-RC | Who will teach Mia to cook? | Mia's grandma | Mia's coach | Mia's parents
-RT | What did Mia promise the coach? | Mia promised not to be late.
-RT | Why does Mia want to save money? | Mia wants to save money to buy a new bike.
-RT | Where did Mia's parents promise to take the family next summer? | Mia's parents promised to take the family to Japan next summer.
-RS | What is one goal you want to reach this year?
-RS | What is something your parents want you to do every day?
-# grammar
-GT | Infinitives: to + Verb
-R | **want / decide / plan / hope / promise + to V**  →  I want to eat pizza.
-R | Purpose: **to V** = in order to  →  I went to the store to buy milk.
-R | **It is + adjective + to V**  →  It is important to exercise every day.
-R | Negative: **not to V**  →  He decided not to go.
-R | **tell / ask / want / teach / invite + person + to V**  →  Mom told me to clean my room.
-G | We plan to visit Taipei next week.
-G | He saved money to buy a new phone.
-G | It is fun to play basketball after school.
-G | She promised not to be late again.
-G | They invited us to come to the party.
-G | He taught me to ride a bike.
-G | Tom went to the library to borrow some books.
-# speak-write
-SP | A: What do you want to do this year? | B: I want to learn to swim. What about you? | A: I hope to {visit Japan}. | B: That sounds fun! I hope you can do it! | visit Japan / join the band / learn to cook / read ten books / save money
-SW | This year, I want to {learn to swim}. I plan to {read ten books}. I promise not to {be late}. It is {important} to {have goals}. | Write about your plans for this year. Use to + verb, not to + verb and It is + adjective + to + verb.
-## U13 | Gerunds: V-ing as a Noun | What do you enjoy doing?
-# learn
-C | What is Kevin's favorite hobby? | Playing basketball is Kevin's favorite hobby.
-C | What does Kevin practice every day after school? | Kevin practices shooting every day after school.
-C | What does Kevin avoid eating at the night market? | Kevin avoids eating junk food at the night market.
-C | What did Kevin's teacher suggest bringing on the camping trip? | Kevin's teacher suggested bringing a raincoat.
-G | What do you enjoy doing on weekends? | I enjoy playing basketball on weekends. | enjoy · playing
-G | What is Amy good at? | Amy is good at singing English songs. | good at · singing
-G | What should Ben avoid doing before bed? | Ben should avoid playing video games before bed. | avoid · playing
-G | What did Lisa finish doing last night? | Lisa finished writing her essay last night. | finished · writing
-V | I ___ reading comics on weekends. | enjoy
-V | Kevin left the classroom ___ saying goodbye. | without
-V | Taking photos is my favorite ___. | hobby
-V | You should ___ eating too much sugar. | avoid
-# battle
-F | He finished to write his homework. | He finished writing his homework.
-F | I enjoy to play badminton with my friends. | I enjoy playing badminton with my friends.
-F | She is good at sing English songs. | She is good at singing English songs.
-F | Thank you for help me with my math. | Thank you for helping me with my math.
-B | Swimming is good exercise for everyone.
-B | Lisa is interested in learning Japanese.
-B | Do you mind opening the window for me?
-T | What do you avoid doing before a test? | I avoid staying up late before a test.
-T | What are you afraid of doing? | I am afraid of speaking in front of the class.
-W | practice | Make a sentence with the word "practice".
-W | without | Make a sentence with the word "without".
-C | Which is a better hobby, reading comics or playing basketball? | Reading comics | Playing basketball
-Z | What comes after "enjoy": "to play" or "playing"?
-S | What do you enjoy doing after school, and why?
-# words
-enjoy | en·joy | en/joy | 😊
-finish | fin·ish | fin/ish | 🏁
-practice | prac·tice | prac/tice | 🎹
-avoid | a·void | a/void | 🚫
-suggest | sug·gest | sug/gest | 💡
-consider | con·sid·er | con/sid/er | 🤔
-hobby | hob·by | hob/by | 🎨
-comics | com·ics | com/ics | 📚
-essay | es·say | es/say | 📝
-camping | camp·ing | camp/ing | ⛺
-without | with·out | with/out | 🙅
-interested | in·ter·est·ed | in/ter/est/ed | 🔍
-# reading
-> My Daily Life: Kevin's Week
-> My name is Kevin, and I am in grade eight. Playing basketball is my favorite hobby. I practice shooting every day after school, and I never give up when I miss. My coach says that keeping calm is the key.
-> I also enjoy reading comics, but I always finish writing my essay before opening a comic book. On weekends, I am interested in cooking. Making fried rice is easy, and my sister thanks me for cooking dinner.
-> I want to be healthy, too. I avoid eating junk food at the night market, and I quit drinking soda last month. I am not good at getting up early, though. Waking up at six is really hard for me!
-> Next week, my class is going camping in the mountains. Our teacher suggested bringing a raincoat. I am considering taking my guitar, too. How about joining us?
-RC | What does Kevin do before opening a comic book? | He finishes writing his essay. | He plays basketball. | He cooks fried rice.
-RC | What did Kevin quit last month? | Drinking soda | Eating junk food | Reading comics
-RC | What is really hard for Kevin? | Getting up early | Making fried rice | Practicing shooting
-RT | Why does Kevin's sister thank Kevin? | Kevin's sister thanks Kevin for cooking dinner.
-RT | What is Kevin interested in on weekends? | Kevin is interested in cooking on weekends.
-RT | What does Kevin's coach say is the key? | Kevin's coach says that keeping calm is the key.
-RS | What do you practice doing every day?
-RS | What do you avoid doing to stay healthy?
-# grammar
-GT | Gerunds: V-ing as a Noun
-R | **V-ing as the subject**  →  Swimming is good exercise.
-R | **enjoy / finish / practice / mind / avoid / keep / give up + V-ing**  →  I enjoy reading comics.
-R | **V-ing subject = It is + Adj + to V**  →  Getting up early is hard. = It is hard to get up early.
-R | **preposition + V-ing** (good at, interested in, afraid of, thank you for, without, before, after, How about)  →  She is good at singing.
-R | **be + V-ing = progressive** · **verb + V-ing = gerund**  →  She is reading. · She enjoys reading.
-G | Reading books makes me happy every day.
-G | He practices playing the piano every day.
-G | You should avoid eating too much sugar.
-G | I am interested in learning French this year.
-G | We are considering moving to Hsinchu next year.
-G | Wash your hands before eating your lunch.
-G | He left the party without saying goodbye.
-G | Taking photos is my favorite hobby.
-# speak-write
-SP | A: What do you enjoy doing after school? | B: I enjoy playing basketball. How about you? | A: I enjoy {reading comics}. | B: Cool! Let's try it together this weekend. | reading comics / drawing pictures / playing the guitar / cooking noodles / taking photos
-SW | {Playing basketball} is my favorite hobby. I am good at {shooting}, but I avoid {playing in the rain}. | Write about your hobby. Use a V-ing subject, "good at" and "avoid".
-## U14 | to V vs V-ing: Four Verb Groups | When do we use to V, and when do we use V-ing?
-# learn
-C | What did Mr. Lin want to test in Grammar Arena? | Mr. Lin wanted to test the four verb groups.
-C | What did the Tigers decide to do? | The Tigers decided to go first.
-C | Which team won the Grammar Arena game? | The Eagles won the game by one point.
-C | What did Mr. Lin tell the class to remember? | Mr. Lin told the class to remember to review the chameleon verbs.
-G | Leo locked the door an hour ago. What does Leo remember doing? | Leo remembers locking the door. | remembers · locking
-G | Mia is going out, and it is raining. What should Mia remember to bring? | Mia should remember to bring an umbrella. | remember · to bring
-G | Jason felt tired on his bike ride. What did Jason stop to do? | Jason stopped to take a rest. | stopped · to take
-G | What do you plan to do this weekend? | I plan to visit Grandma this weekend. | plan · to visit
-V | Don't ___ to bring your ID card tomorrow. | forget
-V | Please ___ to mail the letter today. | remember
-V | It started to rain, so I opened my ___. | umbrella
-V | I ___ to keep your secret. | promise
-# battle
-F | He avoided to answer the question. | He avoided answering the question.
-F | She enjoy to play the piano. | She enjoys playing the piano.
-F | I want going to the night market tonight. | I want to go to the night market tonight.
-F | Yesterday I forgot locking the door, so a cat came in. | Yesterday I forgot to lock the door, so a cat came in.
-F | Jason was tired, so he stopped taking a rest. | Jason was tired, so he stopped to take a rest.
-B | Remember to do your homework tonight.
-B | He stopped eating late-night snacks last month.
-B | I will never forget riding a bike for the first time.
-T | What do you hope to do in the future? | I hope to become a doctor in the future.
-T | What will you never forget doing? | I will never forget camping with my friends.
-W | stop | Make a sentence with the word "stop".
-W | remember | Make a sentence with the word "remember".
-C | Which do you prefer, swimming or running? | Swimming | Running
-Z | Does "decide" take "to V" or "V-ing"?
-S | What is something you want to learn, and what is something you enjoy doing?
-# words
-remember | re·mem·ber | re/mem/ber | 🧠
-forget | for·get | for/get | 😵
-stop | stop | st/op | 🛑
-try | try | tr/y | 💪
-prefer | pre·fer | pre/fer | 👍
-continue | con·tin·ue | con/tin/ue | ⏩
-decide | de·cide | de/cide | 🎯
-promise | prom·ise | prom/ise | 🤝
-umbrella | um·brel·la | um/brel/la | 🌂
-begin | be·gin | be/gin | 🚦
-hate | hate | h/ate | 😠
-snack | snack | sn/ack | 🍪
-# reading
-> Grammar Arena: The Big Match
-> On Friday, Class 802 played Grammar Arena. Mr. Lin wanted to test the four verb groups. The Tigers decided to go first, and the Eagles agreed to wait. Everyone hoped to win the golden cup.
-> In Round 1, Amy from the Eagles shouted, "Enjoy, finish, practice, mind and avoid take V-ing!" Ben from the Tigers remembered that want, plan and promise take to V. The Tigers kept scoring, and the Eagles started to worry.
-> Round 3 was the chameleon round, with remember, forget, stop and try. Mr. Lin read a card: "Jason was tired, so he stopped ___ a rest." Ben said "taking," but the answer was "to take." Jason stopped to rest. He did not quit resting!
-> In the end, the Eagles won by one point. Amy said, "I will never forget playing this game. Next time, I will try to study even harder." Mr. Lin smiled. "Remember to review the chameleon verbs tonight!"
-RC | What did the Eagles agree to do? | Wait | Go first | Leave the game
-RC | Which verbs were in the chameleon round? | remember, forget, stop and try | enjoy, finish, practice and mind | want, plan, hope and promise
-RC | What was the correct answer on Mr. Lin's card? | to take | taking | take
-RT | What will Amy never forget? | Amy will never forget playing Grammar Arena.
-RT | What will Amy try to do next time? | Amy will try to study even harder next time.
-RT | What did Ben remember about want, plan and promise? | Ben remembered that want, plan and promise take to V.
-RS | What do you remember doing when you were little?
-RS | What do you need to stop doing, and why?
-# grammar
-GT | to V vs V-ing
-R | **TO group + to V**: want, need, decide, plan, hope, learn, agree, promise, would like  →  I decided to join the club.
-R | **ING group + V-ing**: enjoy, finish, practice, mind, avoid, keep, give up, quit  →  Keep trying!
-R | **Both, same meaning**: like, love, hate, start, begin, continue, prefer  →  I like to swim. = I like swimming.
-R | **remember / forget to V** = not done yet · **remember / forget V-ing** = already done  →  Remember to lock the door. · I remember locking the door.
-R | **stop to V** = stop in order to do · **stop V-ing** = quit · **try to V** = make an effort · **try V-ing** = test a way  →  He stopped to rest. · Try pressing this button.
-G | Jason was tired, so he stopped to rest.
-G | She forgot to bring her umbrella today.
-G | I remember visiting the zoo when I was little.
-G | Don't forget to call me tonight.
-G | It started to rain after lunch.
-G | Kelly loves singing English songs with her friends.
-G | We decided to visit Grandma this Sunday.
-G | Try pressing this button to open the door.
-# speak-write
-SP | A: Are you ready for the school trip? | B: Almost. What should I remember to bring? | A: Remember to bring your {umbrella}. | B: Thanks! I won't forget. | umbrella / ID card / water bottle / jacket / lunch box
-SW | I want to {learn Japanese} this year. I enjoy {watching anime}, and I will never forget {visiting Tokyo}. | Write about your plans and a memory. Use "want to V", "enjoy V-ing" and "never forget V-ing".
-## U15 | Reflexive and Indefinite Pronouns | How do we use myself, someone and nobody?
-# learn
-C | What did Grandma bake by herself? | Grandma baked a cake by herself.
-C | What was Rita's sister teaching herself? | Rita's sister was teaching herself to play the ukulele.
-C | What was Max doing when the cake went missing? | Max was looking at himself in the mirror.
-C | Who ate the cake? | Lucky, the family dog, ate the cake.
-G | Amy made this cake with no help. Who made the cake? | Amy made the cake herself. | herself · made
-G | Ken's grandpa lives alone. How does Ken's grandpa live? | Ken's grandpa lives by himself. | by himself · lives
-G | Is anyone in the classroom at midnight? | No, nobody is in the classroom at midnight. | nobody · is
-G | What would you like to eat for lunch today? | I would like something delicious for lunch. | something delicious · would like
-V | She looked at ___ in the mirror. | herself
-V | Max cut ___ while he was cooking. | himself
-V | Is there ___ I can help you with? | anything
-V | I looked ___ for my keys, but I didn't find them. | everywhere
-# battle
-F | He made this kite hisself. | He made this kite himself.
-F | Everyone are here today. | Everyone is here today.
-F | I want to buy special something for Mom. | I want to buy something special for Mom.
-F | I didn't see somebody in the park. | I didn't see anybody in the park. / I didn't see anyone in the park. / I saw nobody in the park.
-F | The kids enjoyed theirselves at the party. | The kids enjoyed themselves at the party.
-B | She taught herself to play the guitar.
-B | Please help yourselves to some cookies, kids.
-B | Listen! Someone is knocking on the door.
-T | Did you do anything fun last weekend? | Yes, I did something fun with my family last weekend.
-T | Who do you talk to when you feel nervous? | I talk to myself when I feel nervous.
-W | nobody | Make a sentence with the word "nobody".
-W | myself | Make a sentence with the word "myself".
-C | Which is better, studying by yourself or studying with friends? | Studying by yourself | Studying with friends
-Z | What is the reflexive pronoun for "they"?
-S | What is something you taught yourself to do?
-# words
-myself | my·self | my/self | 🙋
-himself | him·self | him/self | 👦
-herself | her·self | her/self | 👧
-themselves | them·selves | them/selves | 👪
-ourselves | our·selves | our/selves | 🙌
-yourself | your·self | your/self | 👉
-someone | some·one | some/one | 👤
-anything | an·y·thing | an/y/thing | ❓
-nobody | no·bod·y | no/bod/y | 🙅
-everywhere | ev·ery·where | ev/ery/where | 🌍
-mirror | mir·ror | mir/ror | 🪞
-principal | prin·ci·pal | prin/ci/pal | 🏫
-# reading
-> Pronoun Detective: The Missing Cake
-> Last Saturday, Grandma baked a cake by herself. She put it on the kitchen table and said, "Nobody can eat it before dinner!" Then she went out to buy something special for the party.
-> One hour later, the cake was gone. "Did anyone take it?" asked my brother Max. "Not me," said my sister. "I was teaching myself to play the ukulele." Max said, "I was looking at myself in the mirror." I wanted to find the answer myself, so I became Detective Rita.
-> I looked everywhere: under the sofa, behind the door and in the yard. I found nothing in the kitchen, but then I saw something white on the floor. It was cream! Somebody was hiding under the table. It was Lucky, our dog, and he was enjoying himself with the last piece of cake.
-> When Grandma came home, she laughed. "Help yourselves to some cookies instead," she said. Everyone was happy again.
-RC | Where did Grandma put the cake? | On the kitchen table | In the yard | Under the sofa
-RC | What did Rita see on the floor? | Something white | Something red | Nothing
-RC | What did Grandma go out to buy? | Something special for the party | A new cake | Cookies for Lucky
-RT | Why did Rita become Detective Rita? | Rita wanted to find the answer herself.
-RT | Where did Rita look for the cake? | Rita looked everywhere, under the sofa, behind the door and in the yard.
-RT | What did Grandma tell everyone to do? | Grandma told everyone to help themselves to some cookies.
-RS | Tell us about a time you found something by yourself.
-RS | What can you do by yourself at home?
-# grammar
-GT | Reflexive and Indefinite Pronouns
-R | **my / your / our + self / selves** · **him / her / it / them + self / selves**  →  myself, ourselves, himself, themselves (not hisself, not theirselves)
-R | **subject = object**  →  I cut myself while cooking. · **emphasis**  →  I made this cake myself.
-R | **by oneself** = alone · **enjoy oneself** · **help oneself to** · **teach oneself**  →  She lives by herself.
-R | **some-** in statements and offers · **any-** in questions and negatives  →  I want something. · Is there anything here?
-R | **everyone / nobody + singular verb** · **something + adjective**  →  Everyone is here. · something delicious
-G | I cut myself while cooking dinner.
-G | She introduced herself to the new class.
-G | Did you enjoy yourselves at the party?
-G | My grandma lives by herself in Hsinchu.
-G | Would you like something to drink?
-G | There is nothing in the box.
-G | Everybody likes Ms. Chen very much.
-G | The principal himself came to our class today.
-# speak-write
-SP | A: Welcome to my party! | B: Thanks! Everything looks delicious. | A: Please help yourself to some {cake}. | B: Thank you. I am really enjoying myself! | cake / cookies / fruit / pizza / juice
-SW | I taught myself to {draw cartoons}. Nobody {helped me}, but everyone {likes my pictures} now. | Write about something you learned by yourself. Use "myself", "nobody" and "everyone".
-## U16 | Tag Questions | How do we ask someone to agree with us?
-# learn
-C | When does Ms. Chen's class play Tag Question Ping-Pong? | Ms. Chen's class plays Tag Question Ping-Pong every Tuesday.
-C | What does Player B do in the game? | Player B hits back the tag as fast as possible.
-C | Who got the first point in the game? | Nina got the first point in the game.
-C | What tag does a negative sentence need? | A negative sentence needs a positive tag.
-G | Leo likes pizza, doesn't he? What do you say? | Yes, he does. Leo likes pizza very much. | he does · likes
-G | You can swim, can't you? What do you say? | Yes, I can. I can swim very well. | I can · swim
-G | Amy went to Taipei yesterday, didn't she? What do you say? | Yes, she did. Amy went to Taipei by train. | she did · went
-G | You aren't late today, are you? What do you say? | No, I am not. I am right on time today. | No · I am not
-V | A positive statement needs a ___ tag. | negative
-V | Use ___ intonation when you ask a real question. | rising
-V | The winner of the game is the ___. | champion
-V | Use a ___ like he or she in the tag, not a name. | pronoun
-# battle
-F | They went home, don't they? | They went home, didn't they?
-F | She is a student, is she? | She is a student, isn't she?
-F | Tom plays tennis, doesn't Tom? | Tom plays tennis, doesn't he?
-F | I'm right, am not I? | I'm right, aren't I?
-F | Let's go to the park, will we? | Let's go to the park, shall we?
-B | You like pizza, don't you?
-B | She can swim very well, can't she?
-B | There is a cat under the table, isn't there?
-T | Make a tag question to ask your friend about the weather today. | It is hot today, isn't it?
-T | Make a tag question about your best friend's hobby. | My best friend Ken likes drawing, doesn't he?
-W | agree | Make a sentence with the word "agree".
-W | champion | Make a sentence with the word "champion".
-C | Which tag is harder to remember, "aren't I" or "shall we"? | aren't I | shall we
-Z | What is the tag for "Everyone is here, ..."?
-S | Ask your partner two tag questions about his or her weekend.
-# words
-tag | tag | t/ag | 🔖
-statement | state·ment | state/ment | 💬
-intonation | in·to·na·tion | in/to/na/tion | 🎵
-rising | ris·ing | ris/ing | 📈
-falling | fall·ing | fall/ing | 📉
-agree | a·gree | a/gree | 👍
-confirm | con·firm | con/firm | ✅
-positive | pos·i·tive | pos/i/tive | ➕
-negative | neg·a·tive | neg/a/tive | ➖
-pronoun | pro·noun | pro/noun | 👥
-champion | cham·pi·on | cham/pi/on | 🏆
-pizza | piz·za | piz/za | 🍕
-# reading
-> Tag Question Ping-Pong
-> Every Tuesday, Ms. Chen's class plays Tag Question Ping-Pong. Two players stand face to face. Player A reads a sentence card, and Player B hits back the tag as fast as possible. A positive statement needs a negative tag, and a negative statement needs a positive tag.
-> Today, Leo played against Nina. Leo read, "You like bubble tea ..." Nina answered, "don't you?" Point for Nina! Then Nina read, "Tom went home early ..." Leo said, "doesn't he?" Ms. Chen shook her head. "Tom went home, so we need did. The answer is didn't he."
-> The last card was a trap: "I'm the champion ..." Leo thought for a second. "Am not I? No, aren't I?" He was right. The score was nine to nine, wasn't it?
-> Ms. Chen smiled. "Remember, always use a pronoun in the tag. Use falling intonation when you only want someone to agree. Let's play again next week, shall we?"
-RC | What tag did Nina give for "You like bubble tea"? | don't you | do you | doesn't you
-RC | What was the correct tag for "Tom went home early"? | didn't he | doesn't he | wasn't he
-RC | What was the score near the end of the game? | Nine to nine | Ten to nine | Nine to eight
-RT | Why was Leo's tag for "Tom went home early" wrong? | Leo's tag was wrong because "went" is past tense, so the tag needs "didn't."
-RT | What tag did Leo give for "I'm the champion"? | Leo gave the tag "aren't I" for "I'm the champion."
-RT | When should players use falling intonation? | Players should use falling intonation when they only want someone to agree.
-RS | What tag question can you ask your teacher about today's homework?
-RS | Do you like games like Tag Question Ping-Pong? Why or why not?
-# grammar
-GT | Tag Questions
-R | **positive statement, negative tag** · **negative statement, positive tag**  →  He is your brother, isn't he? · They aren't coming, are they?
-R | **be / can / will / should: repeat it in the tag**  →  She is a student, isn't she? · You can swim, can't you?
-R | **ordinary verb: use do / does / did**  →  She plays tennis, doesn't she? · They went home, didn't they?
-R | **Let's: shall we** · **imperative: will you** · **I'm: aren't I** · **There is: isn't there**  →  Let's go, shall we? · Open the door, will you?
-R | **everyone / nobody: they** · **nothing: it** · **nobody, nothing: positive tag**  →  Nobody called, did they? · Nothing happened, did it?
-G | It is hot today, isn't it?
-G | They were late for school, weren't they?
-G | He doesn't eat meat, does he?
-G | She will come to the party, won't she?
-G | Let's go to the night market, shall we?
-G | Everyone is here today, aren't they?
-G | Nothing happened at school today, did it?
-G | You can play the guitar, can't you?
-# speak-write
-SP | A: You like {bubble tea}, don't you? | B: Yes, I do. How about you? | A: Me too. Let's get some after school, shall we? | B: Sure! That sounds great. | bubble tea / pizza / ice cream / fried chicken / noodles
-SW | My best friend {likes basketball}, {doesn't he}? We {went to the park} last week, {didn't we}? | Write two tag questions about your best friend. Check the tag for each verb.
+// Junior High Grammar 2 - Zhubei grammar class. Exam template: # choice (Q), # cloze (T, > text with [1]..[5], K), # reading-test (T, > text, RQ). Correct option first; the game shuffles.
+## U1 | Adverbs of Frequency |
+# choice
+Q | Leo ___ late for school. He is a good student. | is never | never is | never | does never
+Q | My brother ___ online games after dinner. | usually plays | plays usually | usually play | usually playing
+Q | A: ___ do you watch Reels on Instagram? B: About three times a week. | How often | How many | How long | How much
+Q | Everyone ___ always happy when the weekend comes. | is | are | be | am
+Q | Kevin and I ___ online on weekends. | are always | always are | is always | always is
+Q | My sister often ___ online with her friends after dinner. | chats | chat | chatting | to chat
+Q | We ___ watch TV on weekdays because we have too much homework. | seldom | always | often | usually
+Q | A: Does Leo sometimes go shopping with his classmates? B: Yes, ___. | he does | he is | he goes | does he
+Q | Nobody in my class ___ up late on school nights. | stays | stay | staying | are staying
+Q | The weather in Taipei ___ rainy in winter. | is often | often is | often | does often
+Q | How often ___ your father wash the car on weekends? | does | do | is | are
+Q | Mia always finishes her homework before nine. She is a very ___ student. | disciplined | sleepy | tired | lazy
+Q | Ken ___ up late. He goes to bed at nine thirty every night. | never stays | stays never | never stay | is never stay
+Q | My brother stays up late every night, so he is ___ sleepy in class. | always | never | seldom | sometimes
+Q | Leo ___ breakfast at home, but today he ate at school. | usually eats | eats usually | usually eating | is usually eat
+# cloze
+T | Junior Reporter: Ben's Digital Life
+> Hi, I am Ella, a junior reporter at my school. Today I interviewed my classmate Ben about his digital life. Ben [1] gets up at six thirty on weekdays, so he is never late for school. On the bus, he often [2] short videos on TikTok. After school, he [3] chats online with his friends, but only on Fridays.
+> I asked him, "[4] do you stay up late?" He said, "Almost never. I am [5] in bed by ten." Everyone in our class says Ben is a disciplined student. My report: Ben's digital life is a healthy one!
+K | 1 | always | is always | always is | does always
+K | 2 | watches | watch | watching | is watch
+K | 3 | sometimes | always | usually | never
+K | 4 | How often | How many | How long | How much
+K | 5 | usually | usual | never | seldom
+# reading-test
+T | Leo and Kevin: Two Different Habits
+> Leo and Kevin are classmates at a junior high school in Zhubei. They are good friends, but their habits are very different.
+> Leo is a disciplined student. He always gets up at six in the morning, and he never misses breakfast. After school, he usually plays basketball with his friends. He seldom plays online games on weekdays, and he never stays up late. He is usually in bed by ten thirty, so he is never sleepy in class.
+> Kevin is different. He often watches Reels and short videos until midnight. He frequently stays up late, so he is always tired in the morning. He sometimes skips breakfast because he gets up late. His teacher often sees him sleeping in class.
+> On weekends, Leo and Kevin are always together at the park. Last Sunday, Kevin said, "I want to be like Leo. Next week, I want to go to bed before eleven." Our teacher says, "Everyone needs enough sleep. How often do you stay up late?"
+RQ | What is the passage mainly about? | the habits of two classmates | how to play basketball well | a new online game | a school trip to the park
+RQ | How often does Leo stay up late? | never | sometimes | often | always
+RQ | Why is Kevin always tired in the morning? | He frequently stays up late. | He plays basketball every day. | He gets up at six. | He eats a big breakfast.
+RQ | In the passage, a "disciplined" student is a student who ... | follows good rules for himself | is often sleepy in class | plays games all night | is often late for school
+## U2 | Past Continuous: was / were + V-ing |
+# choice
+Q | At 8:00 last night, my mom ___ dinner in the kitchen. | was cooking | were cooking | is cooking | was cook
+Q | What ___ you doing at this time yesterday? | were | was | did | are
+Q | They ___ basketball at 4:00 yesterday afternoon. | were playing | was playing | are playing | were play
+Q | A: What were you doing when I called you? B: I ___ a shower. | was taking | were taking | was take | am taking
+Q | My brother ___ video games when I came home. He was doing his homework. | wasn't playing | weren't playing | didn't playing | isn't playing
+Q | ___ you sleeping when I knocked on your bedroom door? | Were | Was | Did | Do
+Q | I was eating lunch when my phone suddenly ___. | rang | rings | ring | ringing
+Q | What game ___ Kevin playing when the lights went out? | was | were | did | does
+Q | The kids were sleeping, and the dog ___ outside. | was barking | were barking | is barking | was bark
+Q | A: Were you watching TV at nine? B: No, I ___. I was reading a book. | wasn't | weren't | didn't | don't
+Q | Who were you ___ with online when I knocked on your door? | chatting | chat | chatted | to chat
+Q | Tom was ___ in the pool at 3:00 yesterday afternoon. | swimming | swiming | swim | swims
+Q | The police asked the ___, "What did you see at 4:00?" | witness | suspect | theft | mystery
+Q | Ben's ___ was simple: he was playing basketball with his team at that time. | alibi | witness | theft | mystery
+Q | Amy and Coco ___ for the bus at the school gate at 4:00 PM. | were waiting | was waiting | are waiting | were wait
+# cloze
+T | The Missing Phone
+> Last Monday at 3:00 PM, someone took Ms. Wang's phone from the teachers' office. Detective Lily asked three students, "What [1] you doing at 3:00?" Tom said, "I [2] for the bus at the school gate." Jenny said, "My friend and I [3] in the library. We were doing our homework."
+> Max said, "I [4] basketball at that time. I was sleeping in the classroom!" Then Lily talked to the guard, Mr. Chen. He was a [5]. He said, "At 3:00, I was watching the hallway. A boy was running out of the office!" Who was telling a lie?
+K | 1 | were | was | did | are
+K | 2 | was waiting | were waiting | am waiting | was wait
+K | 3 | were studying | was studying | are studying | were study
+K | 4 | wasn't playing | weren't playing | didn't playing | wasn't play
+K | 5 | witness | suspect | theft | alibi
+# reading-test
+T | Who Ate the Class Cake?
+> Last Friday, Class 802 had a party for their teacher, Ms. Lin. At 11:30 AM, the class leader, Amy, put a big chocolate cake on the teacher's desk. At 12:10, half of the cake was gone!
+> The class asked everyone, "What were you doing between 11:30 and 12:10?" Ben said he was playing basketball in the gym. Coco and Ivy said they were practicing a song in the music room. David said he was sleeping at his desk, but nobody saw him in the classroom.
+> Then the cleaning lady, Mrs. Hsu, told the class something important. "I was cleaning the hallway at about noon. A boy with chocolate on his face was walking out of Room 802. He was holding a fork and smiling!"
+> In the end, David said sorry. He wasn't sleeping at his desk. He was eating the cake! The class laughed, and David bought a new cake for Ms. Lin the next day.
+RQ | What is the story mainly about? | finding out who ate a cake | a basketball game in the gym | a song for a music contest | how to make a chocolate cake
+RQ | What were Coco and Ivy doing at that time? | practicing a song | playing basketball | cleaning the hallway | sleeping at their desks
+RQ | Who was the witness in the story? | Mrs. Hsu | Ben | Amy | Ms. Lin
+RQ | What can we learn about David? | He lied at first. | He was really sleeping. | He was playing basketball. | He cleaned the hallway.
+## U3 | When vs While: Long and Short Actions |
+# choice
+Q | I was taking a shower ___ the doorbell rang. | when | while | during | so
+Q | ___ my sister was studying, I was playing games in my room. | While | During | So | But
+Q | While my dad was washing the car, it suddenly ___ to snow. | started | was starting | starts | start
+Q | When the teacher walked into the classroom, the students ___. | were talking | was talking | talk | are talking
+Q | He broke his leg while he ___ in the park. | was running | were running | runs | run
+Q | ___ the earthquake happened, we were watching TV in the living room. | When | While | During | So
+Q | The lights went out while we ___ dinner. | were having | was having | have | are having
+Q | While my mom was cooking, my dad ___ the dishes. | was washing | were washing | washes | is washing
+Q | When I was studying, my brother ___ games in his room. | was playing | plays | is playing | were playing
+Q | A: What were you doing when I called you? B: I ___ my homework. | was doing | was do | am doing | were doing
+Q | My cat ___ on the table when I came home. | was jumping | was jump | were jumping | is jumping
+Q | I found 100 dollars ___ I was cleaning my room. | while | during | so | but
+Q | What ___ you doing when the earthquake happened last night? | were | did | are | was
+Q | We were watching a movie at home. ___, the lights went out! | Suddenly | Slowly | Usually | Quietly
+Q | While I was waiting for the bus, I saw an ___. A car hit a bike. | accident | earthquake | doorbell | umbrella
+# cloze
+T | Dear Diary: A Crazy Day
+> Dear Diary, yesterday was a crazy day! In the morning, [1] I was brushing my teeth, my little brother knocked on the bathroom door. Then I was eating breakfast when the phone [2]. It was Grandma! At school, while I was drawing a picture, my friends [3] basketball outside. Suddenly, it started to rain.
+> In the evening, [4] the lights went out, I was taking a shower. It was so dark! Later, while I [5] my room, I found my lost watch under the bed. What a day!
+K | 1 | while | during | so | but
+K | 2 | rang | was ringing | rings | ring
+K | 3 | were playing | was playing | are playing | plays
+K | 4 | when | while | during | so
+K | 5 | was cleaning | were cleaning | am cleaning | was clean
+# reading-test
+T | An Email About the Earthquake
+> Hi Emma, how are you? Something scary happened last night. At about 9:30, my family was at home. While my mom was cooking noodles, my dad was watching the news on TV. I was doing my math homework in my room. Suddenly, my desk started to shake. It was an earthquake!
+> When the shaking started, my little sister was taking a shower. She screamed and ran out with soap on her head! My dad turned off the stove, and we all got under the big table. While we were waiting under the table, our cat was sleeping on the sofa. She didn't even wake up!
+> The earthquake stopped after about thirty seconds. Nobody was hurt, but a cup fell off the table and broke. When I went back to my room, my homework was on the floor.
+> Did you feel the earthquake in Taipei? Write back soon! Love, Grace
+RQ | Why did Grace write this email? | to tell Emma about an earthquake | to ask for help with math | to invite Emma to dinner | to sell her cat
+RQ | What was Grace's sister doing when the shaking started? | taking a shower | cooking noodles | watching the news | doing homework
+RQ | What was the cat doing while the family was waiting under the table? | sleeping on the sofa | running out of the house | hiding under the bed | eating noodles
+RQ | In the passage, the word "shake" means to ... | move quickly from side to side | stop moving | make a loud noise | fall asleep
+## U4 | Future: will vs be going to |
+# choice
+Q | Look at those dark clouds! It ___ rain soon. | is going to | will going to | going to | is going
+Q | A: The phone is ringing! B: I ___ get it! | will | am going to | going to | will to
+Q | I ___ visit my grandma next Sunday. I already bought the train ticket. | am going to | will going to | going to | am go to
+Q | I think it ___ rain tomorrow, so take an umbrella. | will | is | going to | does
+Q | My brother ___ be a doctor in the future. He studies very hard. | is going to | are going to | going to | is going
+Q | What ___ you going to do tonight? | are | will | do | is
+Q | I promise I ___ help you with your English homework. | will | am going | going to | will to
+Q | My sister will ___ shopping with her friends tomorrow. | go | goes | going | to go
+Q | I ___ stay up late tonight. I have a test tomorrow morning. | am not going to | not going to | will not going to | don't going to
+Q | A: I'm so hungry. B: Wait! I ___ make a sandwich for you. | will | am going to | going to | will be
+Q | They ___ a big party this Saturday. They already sent the invitations. | are going to have | is going to have | will going to have | are going to having
+Q | ___ your parents going to take the bus to Taipei this weekend? | Are | Will | Do | Is
+Q | Maybe I ___ go to the movies tomorrow. I'm not sure yet. | will | am | going to | do
+Q | We are going to visit Japan next summer. I am so ___! | excited | exciting | tired | sleepy
+Q | A: Can you keep a secret? B: Of course. I ___ I won't tell anyone. | promise | plan | worry | forget
+# cloze
+T | My Plan for Next Saturday
+> Next Saturday is going to be a busy day for me. First, I [1] visit my grandparents in Hsinchu. My mom already bought the train tickets. After that, my cousins and I [2] watch a funny movie at 2:00 PM. We already have the tickets, too!
+> The weather report says it [3] be sunny and hot, so I think I [4] bring a lot of water. My little brother is sick, so he [5] come with us. Finally, I am going to finish my homework before 9:00 PM. I believe it will be a wonderful day!
+K | 1 | am going to | will going to | going to | am go to
+K | 2 | are going to | is going to | will going to | going to
+K | 3 | is going to | are going to | going to | will going to
+K | 4 | will | am | going to | does
+K | 5 | isn't going to | aren't going to | not going to | won't going to
+# reading-test
+T | My Future Diary
+> Hello! My name is Andy. Our English teacher asked us to write about the future. Here is my plan and my guess about life in 2050.
+> First, my plan. I am going to study hard in junior high and senior high. After that, I am going to go to a university in Taipei because I want to be a scientist. My parents already know about my plan, and they are going to help me.
+> Now, my guess. I think life in 2050 will be very different. People will have flying cars, and robots will cook dinner for us. Maybe students won't go to school every day. They will take classes at home with computers. I believe the air will be cleaner, too.
+> But some things won't change. I will still love my family, and I will always eat my grandma's beef noodles. I promise I will visit her every week!
+RQ | What is the passage mainly about? | Andy's plans and guesses about the future | a trip to Taipei with grandma | how robots cook beef noodles | Andy's homework for math class
+RQ | What does Andy want to be? | a scientist | a teacher | a cook | a driver
+RQ | According to Andy, what will robots do in 2050? | cook dinner for people | drive flying cars | teach at schools | visit grandparents
+RQ | In the passage, the word "guess" is closest to ... | an idea about the future | a plan that is booked | a true story | a school test
+## U5 | Be going to: Travel Plans |
+# choice
+Q | We ___ travel to South Korea next month. We already booked our flight tickets. | are going to | is going to | going to | will going to
+Q | A: What ___ you going to do this summer? B: I'm going to visit Osaka. | are | do | will | is
+Q | My sister ___ go to the museum with us. She is going to shop instead. | isn't going to | is going to not | not going to | doesn't going to
+Q | A: Are you going to buy any souvenirs? B: Yes, ___. | I am | I do | I will | I going
+Q | A: Are you going to stay in Taiwan? B: No, ___. We are going to Japan. | I'm not | I don't | I won't | I amn't
+Q | Where ___ Kevin going to go next Sunday? | is | are | does | will
+Q | ___ your parents going to see the parade tonight? | Are | Is | Do | Will
+Q | On the last day, we are going to ___ Korean BBQ for dinner. | eat | eating | eats | to eat
+Q | Mia and her mom ___ Hanbok at the palace tomorrow. | are going to wear | are going to wearing | going to wear | is going to wear
+Q | We are going to visit a palace first. ___, we are going to see a parade. | Then | First | Before | Yesterday
+Q | A: What ___ going to eat in Osaka? B: I'm going to eat ramen. | are you | you | you are | do you
+Q | They ___ visit their aunt in Taipei next Sunday. They already bought the train tickets. | are going to | will going to | is going to | going
+Q | We are going to visit a ___ called Lotte World and ride the roller coasters. | theme park | museum | palace | gift shop
+Q | I am going to buy some ___ for my friends at the gift shop. | souvenirs | flight tickets | itineraries | hotels
+Q | I think this trip is going to be ___. I will never forget it! | unforgettable | traditional | spicy | boring
+# cloze
+T | My Summer Adventure in Osaka
+> Hi, everyone! This summer, my family and I [1] travel to Osaka for four days. We have already booked our flight tickets and a hotel. First, we are going to visit Osaka Castle and take many photos. Then we are going to explore a theme park and ride the roller coasters. My little brother [2] ride them because he is only six. He is going to watch a parade instead.
+> [3] are we going to eat? Ramen and takoyaki, of course! On the last day, we [4] buy souvenirs at a gift shop. Are my friends going to get gifts? Yes, they [5]! I think this trip is going to be unforgettable.
+K | 1 | are going to | is going to | going to | will going to
+K | 2 | isn't going to | aren't going to | not going to | is going to not
+K | 3 | What | Where | When | Who
+K | 4 | are going to | are going | going to | is going to
+K | 5 | are | do | will | is
+# reading-test
+T | The Wu Family's Tokyo Itinerary
+> The Wu family is going to take a five-day trip to Tokyo next month. Last week, they visited a travel agent, Ms. Ho, and made an itinerary. They have already booked their flight tickets and a hotel near the city center.
+> On the first day, they are going to arrive in the afternoon, so they aren't going to do much. They are just going to try some local food near the hotel. On the second day, they are going to visit an old temple, and Mrs. Wu and her daughter Amy are going to wear traditional kimonos.
+> On the third and fourth days, they are going to go to a theme park and a museum. Mr. Wu doesn't like roller coasters, so he isn't going to go to the theme park. He is going to visit a famous tower instead.
+> On the last day, the whole family is going to shop for souvenirs. Amy is going to buy cute stationery for her classmates. "This trip is going to be unforgettable," Amy says.
+RQ | What is the passage mainly about? | the Wu family's travel plan | how to book a hotel | a famous theme park in Taiwan | Amy's school life
+RQ | Why isn't Mr. Wu going to go to the theme park? | He doesn't like roller coasters. | He is going to work. | He feels sick. | He has no ticket.
+RQ | What are the Wus going to do on the first day? | try local food near the hotel | visit an old temple | shop for souvenirs | go to a museum
+RQ | An "itinerary" is most likely ... | a plan for each day of a trip | a kind of Japanese clothing | a ticket for a roller coaster | a gift for classmates
+## U6 | Adverbs of Manner: -ly |
+# choice
+Q | The Hare is a fast runner. He runs very ___. | fast | fastly | faster | fastest
+Q | My brother is a good piano player. He plays the piano ___. | well | good | goodly | goodily
+Q | The baby is sleeping. Please close the door ___. | gently | gentle | gentlely | gentlily
+Q | The children are laughing ___ in the park. | happily | happy | happyly | happly
+Q | He is a bad singer. He sings ___. | badly | bad | badily | baddly
+Q | It is raining ___ outside, so take an umbrella. | heavily | heavy | heavyly | heaviness
+Q | Your new dress looks ___. Where did you buy it? | beautiful | beautifully | beautifuly | beauty
+Q | The teacher is patient. She explains the rules ___. | patiently | patient | patience | patiencely
+Q | A: How does Amy speak English? B: She speaks it very ___. | clearly | clear | clearer | clearily
+Q | Please ___ on the busy street. | drive carefully | drive careful | careful drive | carefully driving
+Q | The Tortoise didn't stop. He walked slowly but ___. | steadily | steady | steadyly | steadly
+Q | The angry man shouted ___ at the taxi driver. | angrily | angry | angryly | angerly
+Q | A: Did you finish your homework? B: Yes. I did it ___, so I can play games now. | quickly | quick | quickness | quicklier
+Q | The Hare woke up and ran ___ to the finish line. | madly | mad | madily | madder
+Q | A: The soup smells ___. B: Thanks! I made it myself. | good | well | goodly | goodily
+# cloze
+T | Sports Day Diary
+> Today was Sports Day at our school. My friend Leo is a fast runner, and he always talks [1] about it. "I will win easily," he said before the race. When the race started, Leo ran very [2], and soon he was far ahead. He looked back at us and waved [3].
+> But Leo did not watch the road [4], and he fell down near the finish line. Meanwhile, Mia ran slowly but steadily. She passed Leo [5] and won the race! Leo stood up, shook her hand and said, "You ran really well today. Slow and steady wins the race!"
+K | 1 | proudly | proud | proudness | prouder
+K | 2 | fast | fastly | faster | fastest
+K | 3 | happily | happy | happyly | happiness
+K | 4 | carefully | careful | carefuly | care
+K | 5 | quietly | quiet | quietness | quietily
+# reading-test
+T | Mime the Adverb!
+> Last Friday, our English teacher, Ms. Chen, taught us a new game called Mime the Adverb. First, she wrote some adverbs on small cards, like quickly, angrily and proudly. Then each student took a card and acted out an action in that way. The class had to guess the adverb.
+> Kevin went first. He walked very slowly to the door, and he looked tired. Everyone shouted, "Slowly!" Next, Amy took a card. She brushed her hair gently and smiled at the mirror. Some students said "beautifully," but the answer was "gently."
+> The funniest part was Ben's turn. He ate an invisible bowl of noodles very fast and very noisily, and then he looked at the empty bowl sadly. Nobody could guess his word for a long time. Finally, Mia said, "Hungrily!" She was right.
+> At the end, Ms. Chen said, "You all acted well today. Remember, an adverb tells us how you do something." We all clapped loudly.
+RQ | What is the passage mainly about? | A game that helps students learn adverbs | A cooking class at school | A singing contest in English class | How to brush your hair gently
+RQ | What did Kevin do during his turn? | He walked slowly to the door. | He ate noodles noisily. | He brushed his hair gently. | He clapped his hands loudly.
+RQ | What was the adverb on Ben's card? | hungrily | noisily | sadly | gently
+RQ | In the third paragraph, the word "invisible" means ... | not able to be seen | very hot | very delicious | very big
+## U7 | Comparatives: -er than / more ... than |
+# choice
+Q | This box is ___ than that one. I can't carry it. | heavier | more heavy | heavyer | heaviest
+Q | This new smartphone is ___ than my old one. | more expensive | expensiver | most expensive | expensive
+Q | My test score this time is ___ than last time. | better | more better | gooder | best
+Q | In the city, the streets are ___ than in the country. | busier | busyer | more busy | busiest
+Q | Leo is taller ___ his younger brother. | than | then | that | as
+Q | The traffic in the city is ___ than in the country. | worse | badder | more bad | more worse
+Q | Math is ___ harder than Art for me. | much | very | more | most
+Q | The Tortoise walks ___ than the Hare. | more slowly | slowlier | more slow | slowlyer
+Q | A: Which is bigger, Taipei or Hsinchu? B: Taipei is ___. | bigger | biger | more big | biggest
+Q | People in the village are ___ than people in the big city. | friendlier | friendlyer | more friendlier | friendliest
+Q | The air in the country is ___ than the air in the city. | fresher | freshier | freshest | fresh
+Q | Health is ___ important than money. | more | much | most | very
+Q | A: Is summer colder than winter? B: No. Summer is ___ than winter. | hotter | hoter | more hot | hottest
+Q | Shopping in the city is ___ than shopping in a small village. | easier | easyer | more easy | easiest
+Q | At night, the country is ___ than the noisy city. | more peaceful | peacefuler | most peaceful | peaceful
+# cloze
+T | A Letter from the Country
+> Dear Leo, I moved to my grandpa's farm in Hualien last month, and life here is very different. The air is [1] than the air in Taipei, and the nights are much quieter. The green mountains are [2] than the tall buildings in the city, too.
+> Of course, some things are [3] here. The bus comes only twice a day, so going to school is [4] than before. There are no big malls or night markets, but the people are friendlier [5] the people in the city. I think I am happier here. Please visit me this summer! Your friend, Kevin
+K | 1 | fresher | freshier | freshest | most fresh
+K | 2 | more beautiful | beautifuler | most beautiful | beautiful
+K | 3 | worse | badder | more bad | worst
+K | 4 | harder | more hard | hardder | hardest
+K | 5 | than | then | as | that
+# reading-test
+T | My Comparison Report: Summer vs. Winter
+> My name is Jenny, and this is my comparison report on summer and winter in Taiwan. Many of my classmates like summer better, but I disagree with them.
+> In summer, the days are longer and hotter. It is often 35 degrees in July, so going outside is more tiring than staying at home. Summer vacation is longer than winter vacation, but the weather is worse because of typhoons and heavy rain.
+> Winter is colder, but I think it is much more comfortable. I can wear my warm jacket and drink hot milk tea. Food tastes better in winter, too. Hot pot is more delicious when the weather is cold! Also, Lunar New Year is in winter, and it is more exciting than any summer holiday.
+> Overall, summer is more popular with my friends, but winter is more suitable for me. Which season do you like better?
+RQ | What is the purpose of Jenny's report? | To compare two seasons and give her opinion | To tell readers about a trip to Japan | To teach people how to cook hot pot | To explain how typhoons are formed
+RQ | According to Jenny, why is the weather worse in summer? | Because of typhoons and heavy rain | Because the days are shorter | Because hot pot is more expensive | Because summer vacation is too short
+RQ | Which of the following is TRUE? | Summer vacation is longer than winter vacation. | Jenny likes summer better than winter. | Winter days are hotter than summer days. | Hot pot tastes worse in winter.
+RQ | In the last paragraph, the word "suitable" is closest in meaning to ... | right or good for someone | very cold | very expensive | hard to understand
+## U8 | Superlatives: the -est / the most |
+# choice
+Q | Kevin is ___ student in our class. He always gets 100. | the smartest | most smart | the most smart | smartest
+Q | February is ___ month of the year. | the shortest | shortest | the shorter | the most short
+Q | The blue whale is ___ animal in the world. | the largest | the most large | the larger | largest
+Q | This is ___ book in the library. Everyone loves it. | the most interesting | the more interesting | the interestingest | most interesting
+Q | Tokyo is often called ___ city in Japan. | the busiest | the busyest | the most busy | busiest
+Q | Mt. Everest is ___ mountain on Earth. | the highest | the higher | the most high | highest
+Q | This is ___ cake I have ever eaten! | the best | the most good | the better | the goodest
+Q | Yesterday was ___ day of my life. I lost my phone and my wallet. | the worst | the baddest | the most bad | the worse
+Q | July is ___ month of the year in Taiwan. | the hottest | the hotest | the most hot | the hotter
+Q | The Great Barrier Reef has ___ fish in the sea. | the most colorful | the colorfulest | the more colorful | most colorful
+Q | Art is ___ stressful class because there are no tests. | the least | the less | least | the most
+Q | A: Who is ___ person in your family? B: My baby sister. She is always laughing. | the funniest | the funnyest | the most funny | the funnier
+Q | Dubai might be ___ place to visit because of its luxury malls. | the most expensive | the expensivest | the more expensive | most expensive
+Q | The cafeteria is the ___ place in the whole school. | noisiest | noisyest | noiser | noisier
+Q | A: Is Taipei ___ city in Taiwan? B: I think so. It has millions of people. | the biggest | bigger | the most big | biggest
+# cloze
+T | Our Class Records Poster
+> This week, our class made a records poster for the classroom wall. Everyone voted for the class "bests." Kevin is [1] student in our class, so he won "The Tallest." Amy gets 100 on almost every test. She is the [2] student we know, and she helps everyone with math.
+> Ben won "The Funniest" because his jokes are [3] in the class. Mia draws [4] pictures of all of us, so she is "The Most Creative." She also painted our poster with ten different colors. Our teacher said it was [5] poster in the whole school, and we won a prize!
+K | 1 | the tallest | tallest | the most tall | the taller
+K | 2 | smartest | most smart | smarter | smartiest
+K | 3 | the best | the most good | the better | the goodest
+K | 4 | the most beautiful | the beautifulest | more beautiful | beautifullest
+K | 5 | the most colorful | the colorfulest | the more colorful | most colorful
+# reading-test
+T | The Great School Debate
+> Last Tuesday, Class 802 held a debate: "Which is the best part of school?" Four students gave their opinions. Leo spoke first. "The best part is P.E. class. It is the most exciting class of the week, and we can run and play basketball. It is also the least stressful class because there are no written tests."
+> Amy disagreed. "I think the library is the best place in school. It is the quietest room, and it has the most interesting books. I can read there for hours."
+> Ben laughed. "For me, lunch is the most important time of the day! The cafeteria is the noisiest place in school, but the fried chicken is the most delicious food we get all week."
+> Finally, Mia said, "Art is the most creative class, and Mr. Hsu is the kindest teacher I know." In the end, the class voted. P.E. got the most votes and won the debate.
+RQ | What is the passage mainly about? | Students' opinions about the best part of school | A basketball game between two classes | How to cook fried chicken | A new library at the school
+RQ | Why does Leo think P.E. is the least stressful class? | There are no written tests. | The teacher is the kindest. | It is the quietest class. | The food is the most delicious.
+RQ | According to Ben, which place is the noisiest in school? | The cafeteria | The library | The art room | The classroom
+RQ | In the first paragraph, the word "opinions" means ... | what people think about something | the rules of a game | the prizes for a contest | the questions on a test
+## U9 | Must, Must Not, Should, Shouldn't |
+# choice
+Q | You ___ fasten your seatbelt on a plane. It is a rule. | must | must to | musts | musting
+Q | Students should ___ hard if they want to get good grades. | study | to study | studies | studying
+Q | You ___ eat in the library. It is a strict rule. | must not | don't have to | should | must
+Q | A: I feel tired today. B: You ___ go to bed early tonight. | should | must not | shouldn't | don't
+Q | Zog is a new student. He ___ follow the school rules like everyone else. | must | musts | must to | is must
+Q | In Japan, she should ___ softly on the train. | speak | speaks | to speak | speaking
+Q | When the fire alarm rings, we must ___ the classroom immediately. | leave | leaves | to leave | left
+Q | Teenagers ___ drink too many sugary drinks. They are bad for their health. | shouldn't | should | must | don't should
+Q | You ___ talk while the teacher is talking. It is rude. | must not | must | should | have to
+Q | In our class, you must ___ your hand before speaking. | raise | raises | to raise | raising
+Q | A: Must I wear a uniform tomorrow? B: Yes, you ___. It is a school rule. | must | mustn't | musts | must to
+Q | We ___ prepare some yen because some small shops don't take credit cards. | should | shouldn't | must not | should to
+Q | Travelers should ___ the local culture when they visit a new country. | respect | respects | to respect | respected
+Q | You ___ swim too far alone. The ocean is dangerous. | shouldn't | should | must | should to
+Q | Zog ___ use his laser eyes in the hallway. It is too dangerous. | must not | must | should | doesn't have to
+# cloze
+T | Welcome to Our School, Zog!
+> Dear Zog, welcome to our school! Here are some rules and tips for you. First, you [1] wear a uniform every day. It is a school rule. You must not [2] in the hallway, because it is dangerous for everyone.
+> In class, you must [3] your hand before you speak. You [4] use your laser eyes on the classroom clock, and you must not eat your pencil! Also, you look tired after your long trip, so you [5] go to bed early tonight. Don't worry. Learning our rules is complicated at first, but you will be fine. Your friend, Amy
+K | 1 | must | must to | musts | must not
+K | 2 | run | runs | to run | running
+K | 3 | raise | to raise | raises | raising
+K | 4 | must not | must | should | have to
+K | 5 | should | shouldn't | must not | should to
+# reading-test
+T | Class Trip to Kyoto: Rules and Tips
+> Dear Grade 8 students, our class trip to Kyoto, Japan, is next month. Safety is our priority, so there are some rules you must follow and some things you should do.
+> Rules: You must bring your passport to the airport. You must stay with your group at all times, and you must not leave the hotel at night without a teacher. On the plane, you must fasten your seatbelt when the light is on.
+> Tips: You should prepare some yen before the trip because many small shops in Kyoto do not take credit cards. People in Japan are usually quiet on trains, so you should speak softly. You shouldn't eat while you are walking on the street, because many people there think it is rude.
+> Finally, you should bring a small bag for your trash. There are not many trash cans on the streets. Please respect the local culture and have a pleasant trip! Ms. Wu, Grade 8 Director
+RQ | What is the purpose of this notice? | To give rules and tips for a trip | To sell plane tickets to Japan | To teach students some Japanese | To invite parents to a school party
+RQ | What must students NOT do on the trip? | Leave the hotel at night without a teacher | Bring their passports to the airport | Speak softly on the trains | Prepare some yen before the trip
+RQ | Why should students bring a small bag? | There are not many trash cans. | Small shops do not sell bags. | They must carry their passports in it. | The hotel does not give them bags.
+RQ | In the third paragraph, the word "rude" is closest in meaning to ... | not polite | very tasty | very fast | not expensive
+## U10 | Ditransitive Verbs: to and for |
+# choice
+Q | I gave ___ yesterday. He was very happy. | it to Kevin | Kevin it | it for Kevin | to Kevin it
+Q | Mom made a birthday cake ___ me. | for | to | with | at
+Q | He sent a letter ___ his friend in Japan. | to | for | at | of
+Q | Can you explain ___? I don't understand it. | this question to me | me this question | this question me | to me this question
+Q | My mother ___ me a story every night. | tells | says | explains | speaks
+Q | Mr. Wang teaches ___ every Monday. | us math | math us | we math | to us math
+Q | She bought a new dress ___ her sister. | for | to | of | with
+Q | A: Where are my new comic books? B: I lent ___ last week. | them to Ben | Ben them | them for Ben | to Ben them
+Q | Dad cooked ___ this morning. | us breakfast | breakfast us | to us breakfast | breakfast to us
+Q | She showed her new phone ___ all her classmates. | to | for | at | with
+Q | Mr. Lee ___ us a funny story in class today. | told | said | explained | suggested
+Q | Grandpa found an old bike ___ me in his garage. | for | to | at | of
+Q | A: What did Amy give you? B: She gave ___ a gift card. | me | I | my | mine
+Q | Please send ___ when you finish the photos. | them to me | me them | them for me | to me them
+Q | Can you ___ me some money? I will pay you back tomorrow. | lend | borrow | say | explain
+# cloze
+T | Our Class Gift Exchange
+> Last Friday, our class had a gift exchange party. Everyone brought a gift for a secret partner. I bought a storybook [1] my partner, Ben. When I gave [2], he smiled and said, "Thank you! I love stories."
+> Ben's partner was Mia. Ben made her a card, and his mom made [3] some cookies, too. Mia showed the card [4] everyone in the class. Then our teacher, Ms. Lin, [5] us a story about her favorite gift. It was a letter from her first student. At the end, we all wrote Ms. Lin a thank-you card.
+K | 1 | for | to | at | with
+K | 2 | it to him | him it | it for him | to him it
+K | 3 | us | to us | we | our
+K | 4 | to | for | at | with
+K | 5 | told | said | explained | spoke
+# reading-test
+T | A Thank-You Email to Grandma
+> Hi Grandma, thank you for the birthday card! You sent it to me from Kaohsiung, and it arrived on my birthday. I want to tell you about my special day.
+> In the morning, Dad made me pancakes, and Mom cooked a big dinner for the whole family. My sister Lily gave me a pair of headphones. She bought them for me with her own money, so I was very surprised.
+> At school, my best friend Ken lent me his new comic book. I will give it back to him next week. My English teacher, Ms. Lin, showed the class a short video and taught us a birthday song in English.
+> Grandma, you always tell me stories about your childhood. When I visit you next month, I will show you my photos and teach you the English song! Love, Amy
+RQ | Why did Amy write this email? | To thank Grandma and describe her birthday | To ask Grandma for some money | To invite Grandma to a party | To tell Grandma about a test
+RQ | What did Lily give Amy? | A pair of headphones | Some pancakes | A comic book | A birthday card
+RQ | What will Amy do next week? | Give the comic book back to Ken | Visit Grandma in Kaohsiung | Buy some headphones for Lily | Teach Ms. Lin a new song
+RQ | In the last paragraph, the word "childhood" means ... | the time when someone was a child | a small house in the country | a kind of birthday gift | a song for young children
+## U11 | Linking Verbs + Adjective |
+# choice
+Q | The flowers in Grandma's garden smell ___. | sweet | sweetly | sweeten | sweetness
+Q | Ben didn't sleep well last night, so he looks ___ today. | tired | tiredly | tire | tiredness
+Q | Kate sings very ___. Everyone in our class loves her voice. | well | good | beautiful | nice
+Q | This chocolate cake tastes ___. Can I have another piece? | good | well | badly | terribly
+Q | Please stay ___ in the library. People are reading. | quiet | quietly | quietness | quiets
+Q | In December, the weather gets ___ in Hsinchu. | cold | coldly | coldness | colds
+Q | My old blanket ___ soft and warm. | feels | feel | feeling | is feel
+Q | Mom tasted the soup ___ before she served dinner. | carefully | careful | care | more careful
+Q | A: How does the new song sound? B: It sounds ___. | beautiful | beautifully | beauty | beautify
+Q | When Tom heard the bad news, he felt ___. | sad | sadly | sadness | sadden
+Q | Mr. Lin looked at us ___ because we were too noisy. | angrily | angry | anger | angrier
+Q | In autumn, the leaves on the trees ___ red and yellow. | turn | turns | turning | are turn
+Q | A: Don't drink that milk! It smells ___. B: Oh no, thanks! | terrible | terribly | terror | terrify
+Q | This new sweater ___ soft. I love touching it. | feels | tastes | sounds | smells
+Q | This lemon ___ very sour. I can't eat it. | tastes | hears | listens | sees
+# cloze
+T | My Favorite Place
+> My favorite place is my grandma's garden in Zhubei. In spring, it looks [1] with red and yellow flowers everywhere. The roses smell [2], and the bees fly [3] from flower to flower all day.
+> In the evening, the garden becomes quiet. The wind sounds soft, and the grass feels cool under my feet. Grandma often makes lemon tea for me. It tastes a little sour, but it is very [4]. I sit under the big tree and read [5] until dinner. When I am in the garden, I always feel happy and calm.
+K | 1 | beautiful | beautifully | beauty | beautify
+K | 2 | sweet | sweetly | sweetness | sweeten
+K | 3 | busily | busy | business | busyness
+K | 4 | good | well | nicely | badly
+K | 5 | quietly | quiet | quietness | quiets
+# reading-test
+T | Mystery Box Day in Class 805
+> Last Friday, Ms. Wu brought four mystery boxes to class. "Close your eyes and use your other senses," she said. Each group had to describe the thing in its box with linking verbs.
+> Group 1 opened its box slowly and smelled something wonderful. "It smells sweet, and it feels smooth," said Ivy. It was a bar of chocolate. Group 2 touched a piece of sandpaper. It felt rough, so they held it carefully.
+> Group 3 had a small music box. When Leo turned the key, it sounded soft and pleasant. Everyone stayed quiet to listen to it. Group 4 found a rose. It looked fresh, but one boy touched it too quickly and cried, "Ouch! It feels sharp!"
+> At the end, Ms. Wu smiled. "Your descriptions sound great. Remember: after look, sound, smell, taste and feel, use an adjective. After action verbs, use an adverb."
+RQ | What is the passage mainly about? | A class game with mystery boxes | A trip to a chocolate shop | A music lesson in Class 805 | How to make a music box
+RQ | What did Group 2 touch? | A piece of sandpaper | A bar of chocolate | A fresh rose | A small music box
+RQ | Why did everyone stay quiet? | To listen to the music box | To smell the chocolate | To touch the sandpaper | To open the boxes
+RQ | Why did the boy cry "Ouch!"? | The rose felt sharp. | The rose smelled bad. | The rose looked old. | The rose sounded strange.
+## U12 | Infinitives: to + Verb |
+# choice
+Q | I want ___ Japan with my family next summer. | to visit | visit | visiting | visited
+Q | Amy needs ___ harder for the English test. | to study | study | studying | studies
+Q | Ken was sick, so he decided ___ to the party. | not to go | to not go | not go | don't go
+Q | It is important ___ enough water every day. | to drink | drink | drinks | drank
+Q | Tom went to the library ___ some books for his report. | to borrow | borrow | borrowed | for borrow
+Q | Mom told me ___ my room before dinner. | to clean | clean | cleaning | cleaned
+Q | Our teacher asked us ___ late for class again. | not to be | to not be | not be | don't be
+Q | Ms. Lin ___ us to come to her piano concert on Sunday. | invited | let | made | had
+Q | ___ is dangerous to swim in this river after a heavy rain. | It | This | That | There
+Q | A: What would you like ___? B: Some orange juice, please. | to drink | drink | drinking | drank
+Q | My grandpa taught me ___ a bike when I was six. | to ride | ride | riding | rode
+Q | They ___ to help us clean the classroom after school. | agreed | enjoyed | finished | practiced
+Q | I want ___ to my birthday party on Saturday. | you to come | you come | you coming | to you come
+Q | It is not easy ___ a new language, but it is fun. | to learn | learn | learned | learns
+Q | A: Why did you get up so early? B: ___ catch the first bus to Taipei. | To | For | Because | So
+# cloze
+T | My Plans for This Year
+> This year, I have a long dream list. First, I want [1] better at English, so I plan to read one English book every month. My mom often takes me to the library [2] books. Second, I hope to join the school band. It is not easy [3] the trumpet, but my music teacher promised to help me.
+> Third, I decided [4] video games on school nights. It is a hard rule for me! My dad also asked me [5] my little brother with his homework. This year will be busy, but it is important to have goals.
+K | 1 | to get | get | getting | got
+K | 2 | to borrow | borrow | borrowing | borrowed
+K | 3 | to play | play | plays | played
+K | 4 | not to play | to not play | not play | don't play
+K | 5 | to help | help | helping | helped
+# reading-test
+T | English Summer Camp
+> Do you want to speak English better? Do you hope to make new friends? Then come and join our English Summer Camp! The camp runs from July 7 to July 11 at Zhubei Junior High School.
+> Every morning, students will learn to sing English songs and to give short speeches. In the afternoon, teachers will take students to the science museum to practice English with visitors from other countries. On the last day, each team will perform a short play for the parents.
+> It is easy to sign up. Ask your parents to fill in the form, and bring it to Room 203 before June 20. The camp costs 2,000 dollars. Please remember to bring your own water bottle every day. We also want students not to bring phones to class.
+> It is fun to learn English with friends. Don't miss this chance!
+RQ | What is the purpose of this notice? | To invite students to join a camp | To tell parents about a test | To sell water bottles | To find new English teachers
+RQ | Why will students go to the science museum? | To practice English with visitors | To perform a short play | To sign up for the camp | To buy water bottles
+RQ | Where should students bring the form? | To Room 203 | To Room 302 | To the school library | To the science museum
+RQ | What does the school want students not to bring to class? | Their phones | Their water bottles | The sign-up form | Their English books
+## U13 | Gerunds: V-ing as a Noun |
+# choice
+Q | I enjoy ___ comics with my brother on weekends. | reading | to read | read | reads
+Q | Lisa finished ___ her essay at ten last night. | writing | to write | write | wrote
+Q | ___ is good exercise for people of all ages. | Swimming | Swim | Swims | To swimming
+Q | Amy is good at ___ English songs. | singing | sing | to sing | sang
+Q | We have worked for two hours. I suggest ___ a break. | taking | to take | take | took
+Q | Do you mind ___ the window? It's really hot in here. | opening | to open | open | opened
+Q | You should avoid ___ too much junk food at the night market. | eating | to eat | eat | ate
+Q | Kevin left the classroom without ___ goodbye to anyone. | saying | say | to say | said
+Q | A: How about ___ to the movies tonight? B: Sounds great! | going | go | to go | went
+Q | Lisa is interested in ___ Japanese this year. | learning | learn | to learn | learns
+Q | Getting up early on cold mornings ___ hard for me. | is | are | am | be
+Q | My dad gave up ___ last year, and now he is healthier. | smoking | to smoke | smoke | smoked
+Q | Look! The kids ___ in the pool right now. | are swimming | swimming | swim | to swim
+Q | Ben ___ playing the piano for an hour every day. | practices | wants | hopes | decides
+Q | Our family is considering ___ to Hsinchu next year. | moving | to move | move | moved
+# cloze
+T | My Daily Life
+> Hi, I'm Nina. [1] is my favorite hobby, so I take my camera everywhere. Every day after school, I practice [2] pictures of birds in the park. I am not good at [3] still, so it is hard for me! My mom always tells me to finish my homework first. After [4] my homework, I go out with my camera.
+> I also want to stay healthy. I avoid [5] junk food, and I go jogging with my dad on weekends. Next month, my class is going camping in the mountains. I can't wait to take pictures of the stars!
+K | 1 | Taking photos | Take photos | Takes photos | To taking photos
+K | 2 | taking | to take | take | took
+K | 3 | keeping | keep | to keep | kept
+K | 4 | finishing | finish | to finish | finished
+K | 5 | eating | to eat | eat | ate
+# reading-test
+T | Meet the Champion: Sam Lee
+> This month, our school newspaper talked to Sam Lee from Class 812. He won first place in the city's Rubik's Cube contest.
+> Q: When did you start? Sam: I started playing with a cube at the age of nine. At first, solving it took me an hour! But I kept trying, and I never gave up.
+> Q: How do you practice? Sam: I practice solving the cube for thirty minutes every evening. I also enjoy watching videos of world champions. Learning their tricks is really helpful.
+> Q: Is it hard? Sam: Yes. I am afraid of making mistakes in front of people, so the contest was scary. Taking deep breaths helps me stay calm. My advice? Stop worrying about winning. Just enjoy doing it!
+RQ | What is the interview mainly about? | How Sam became a cube champion | How to buy a Rubik's Cube | Why Sam quit his hobby | The school newspaper team
+RQ | How long does Sam practice every evening? | Thirty minutes | One hour | Nine minutes | Two hours
+RQ | What helps Sam stay calm? | Taking deep breaths | Watching videos | Making mistakes | Talking to people
+RQ | The words "gave up" in paragraph 2 mean ... | stopped trying | started again | won a prize | felt happy
+## U14 | to V vs V-ing: Four Verb Groups |
+# choice
+Q | We decided ___ Grandma in Tainan this Sunday. | to visit | visiting | visit | visited
+Q | He avoided ___ the teacher's question in class. | answering | to answer | answer | answered
+Q | Don't forget ___ the door when you leave the house. | to lock | locking | lock | locked
+Q | I remember ___ the zoo with my dad when I was five. | visiting | to visit | visit | visits
+Q | Jason was tired, so he stopped ___ a rest under a tree. | to take | taking | take | took
+Q | My uncle wants to lose weight, so he stopped ___ late-night snacks. | eating | to eat | eat | ate
+Q | I'll never forget ___ a bike for the first time. | riding | to ride | ride | rode
+Q | I tried ___ the window, but it was too heavy to move. | to open | open | opened | opens
+Q | The door won't open. Try ___ this red button. | pressing | press | pressed | presses
+Q | She ___ playing the piano. She plays it every evening. | enjoys | wants | hopes | plans
+Q | It started ___ after lunch, so we stayed inside. | to rain | rained | rains | rain
+Q | A: Did you mail the letter? B: Oh no! I forgot ___ it. | to mail | mailing | mail | mailed
+Q | Kelly loves ___ English songs with her friends. | singing | sing | sang | sings
+Q | I promise ___ your secret. I won't tell anyone. | to keep | keeping | keep | kept
+Q | A: Would you like ___ a movie with us tonight? B: Sure! | to watch | watching | watch | watched
+# cloze
+T | A Trip to Kenting
+> Last Saturday, my family went to Kenting. Before we left, Mom said, "Remember [1] the windows!" I closed them all. On the way, Dad felt sleepy, so he stopped [2] a cup of coffee. We finished [3] our sandwiches in the car and arrived at noon.
+> The beach was beautiful. My sister and I enjoyed [4] in the sea all afternoon. In the evening, I wanted to call Grandma, but I couldn't find my phone. Oh no! I forgot [5] it! It was still on my desk at home. Still, I'll never forget this fun trip.
+K | 1 | to close | closing | close | closed
+K | 2 | to buy | buying | buy | bought
+K | 3 | eating | to eat | eat | ate
+K | 4 | swimming | to swim | swim | swam
+K | 5 | to bring | bringing | bring | brought
+# reading-test
+T | My 30-Day Healthy Challenge
+> Last month, I decided to try a 30-day healthy challenge. I wanted to feel better and sleep better. My doctor suggested drinking more water and going to bed early.
+> The first week was hard. I love drinking bubble tea, and I hate going to bed before eleven. But I promised to follow the plan. I stopped buying bubble tea after school, and I started to jog with my dad every morning.
+> In the second week, I sometimes forgot to drink water at school. So I tried putting a sticker on my water bottle. It worked! Every time I saw the sticker, I remembered to drink.
+> Now the challenge is over. I feel more awake in class, and I don't mind getting up early anymore. I will never forget finishing my first 30-day challenge. Next month, I plan to learn to cook healthy meals.
+RQ | What is the writer mainly writing about? | A healthy challenge the writer finished | A trip with the writer's doctor | A new bubble tea shop | A cooking class at school
+RQ | What did the writer stop doing after school? | Buying bubble tea | Jogging with Dad | Drinking water | Going to bed early
+RQ | Why did the writer put a sticker on the water bottle? | To remember to drink water | To make the bottle pretty | To show it to the doctor | To win a prize
+RQ | What does the writer plan to do next month? | Learn to cook healthy meals | Stop drinking water | Start a jogging club | Visit the doctor again
+## U15 | Reflexive and Indefinite Pronouns |
+# choice
+Q | Be careful with that knife, Tom! Don't cut ___. | yourself | you | your | yours
+Q | On the first day of school, Amy introduced ___ to the class. | herself | her | hers | she
+Q | The kids enjoyed ___ at the birthday party last night. | themselves | theirselves | them | themself
+Q | Everyone ___ here today. Let's start the class. | is | are | be | were
+Q | I want to buy ___ for Mom's birthday. | something special | special something | anything special | special anything
+Q | I looked for my keys, but I couldn't find them ___. | anywhere | somewhere | nowhere | anything
+Q | A: Would you like ___ to drink? B: Yes, some juice, please. | something | nothing | everything | somewhere
+Q | My grandpa doesn't live with us. He lives by ___. | himself | hisself | him | his
+Q | Listen! ___ is knocking on the door. Can you open it? | Someone | Anyone | Anywhere | Somewhere
+Q | There is ___ in the box. It's empty. | nothing | something | anything | everything
+Q | Nobody helped us. We taught ___ to play the ukulele. | ourselves | ourself | us | our
+Q | A: Did anyone help you with the cake? B: No, I made it by ___. | myself | me | my | mine
+Q | Please help ___ to some cookies, kids. | yourselves | yourself | you | your
+Q | The story ___ is short, but the words in it are hard. | itself | itsself | it | its
+Q | It's raining hard, so nobody ___ to go out. | wants | want | wanting | to want
+# cloze
+T | Pronoun Detective: The Mystery Box
+> On Monday morning, Ms. Chen found [1] strange on her desk. It was a small box with a card. "Who put this here?" she asked. [2] answered, and the room was quiet. Inside the box, Ms. Chen saw a chocolate cake. "Did you make this cake [3], Amy?" she asked. Amy shook her head. "I can't bake. Maybe Ben did."
+> Ben smiled. "My sister and I made it [4] last night. We wanted to say thank you." Ms. Chen was very happy. "Thank you! Everyone [5] welcome to have a piece!"
+K | 1 | something | anything | somewhere | anywhere
+K | 2 | Nobody | Anybody | Everybody | Anywhere
+K | 3 | yourself | yourselves | your | you
+K | 4 | ourselves | ourself | us | themselves
+K | 5 | is | are | be | am
+# reading-test
+T | A Weekend by Myself
+> Hi Jenny! Last weekend, my parents went to Tainan, so I stayed home by myself for the first time. On Saturday morning, I wanted to make something delicious for lunch. I tried to cook fried rice, but I burned it and cut myself with the knife! Luckily, it was only a small cut.
+> In the afternoon, I taught myself to play a new song on the guitar by watching videos. Nobody was home to hear me, so I sang loudly. It was fun! In the evening, I looked everywhere for my phone, but I couldn't find it anywhere. Then I found it in the fridge!
+> On Sunday, my parents came home with something special for me: a box of pineapple cakes. Everyone in my family loves them. I enjoyed myself, but next time I want someone to stay with me. Love, Kelly
+RQ | Why did Kelly write this email? | To tell Jenny about her weekend alone | To invite Jenny to Tainan | To ask Jenny for a recipe | To sell some pineapple cakes
+RQ | What happened when Kelly cooked fried rice? | She cut herself. | She made something delicious. | She found her phone. | She called her parents.
+RQ | Where did Kelly find her phone? | In the fridge | Under the sofa | In her bedroom | In Tainan
+RQ | What can we learn about Kelly? | She wants company next time. | She can't play the guitar at all. | She doesn't like pineapple cakes. | She went to Tainan with her parents.
+## U16 | Tag Questions |
+# choice
+Q | Leo likes pizza with a lot of cheese, ___? | doesn't he | isn't he | does he | doesn't Leo
+Q | They went home early yesterday, ___? | didn't they | don't they | weren't they | did they
+Q | A: Kevin can't come to the party tonight, ___? B: No, he can't. He's sick. | can he | can't he | does he | is he
+Q | A: You finished your homework, ___? B: Yes, I did. | didn't you | don't you | haven't you | did you
+Q | Your brother doesn't eat meat, ___? | does he | doesn't he | is he | did he
+Q | It's really hot in the classroom today, ___? | isn't it | is it | doesn't it | isn't today
+Q | Let's go to the park after school, ___? | shall we | will we | don't we | shall us
+Q | Please open the window for me, ___? | will you | do you | shall you | are you
+Q | I'm the winner of this game, ___? | aren't I | am not I | isn't I | don't I
+Q | There is a cat under the table, ___? | isn't there | isn't it | is there | doesn't it
+Q | Everyone is here for the meeting, ___? | aren't they | isn't it | isn't he | are they
+Q | Nobody called me this morning, ___? | did they | didn't they | did it | didn't it
+Q | Your sister will come to the concert, ___? | won't she | will she | doesn't she | isn't she
+Q | You weren't at school yesterday, ___? | were you | weren't you | did you | was you
+Q | Nothing happened while I was away, ___? | did it | didn't it | did they | was it
+# cloze
+T | Ready for Sports Day
+> Mia: Hi, Ben. You are on the relay team this year, [1]? Ben: Yes, I am. But I'm a little nervous. We didn't win last year, [2]? Mia: No, we didn't. But you practiced every day this month. You run really fast now, [3]? Ben: I guess so. Ms. Lin will watch the race, [4]?
+> Mia: Yes, she will. And everyone in our class will come to cheer for you. Let's make a big poster for the team tonight, [5]? Ben: Great idea! I'll bring some colored pens and paper.
+K | 1 | aren't you | are you | don't you | isn't it
+K | 2 | did we | didn't we | do we | were we
+K | 3 | don't you | do you | aren't you | didn't you
+K | 4 | won't she | will she | doesn't she | won't Ms. Lin
+K | 5 | shall we | will we | don't we | shall us
+# reading-test
+T | The New Student
+> On Monday, a new student came to Class 806. His name was Daniel, and he was from Canada. At lunch, Emma sat next to him. "You're Daniel, aren't you?" she asked. "Yes, I am," he said with a smile.
+> Emma wanted to make him feel welcome. "You don't speak Chinese, do you?" Daniel laughed. "Only a little. My grandma is from Taichung, so I can say a few words."
+> Then Emma pointed at his lunch box. "Your mom made that, didn't she? It smells great." "No, I made it myself," Daniel answered. Emma was surprised. "You can cook, can't you? That's so cool!"
+> After school, Emma said, "There's a basketball game on Friday, isn't there? Let's go together, shall we?" Daniel agreed. He felt nervous on his first day, but now he had a new friend.
+RQ | What is the story mainly about? | A new student making a friend | A basketball game on Friday | A cooking class at school | A trip to Canada
+RQ | Where is Daniel from? | Canada | Taichung | Taipei | Japan
+RQ | Who made Daniel's lunch? | Daniel himself | Daniel's mom | Daniel's grandma | Emma
+RQ | When Emma says "Let's go together, shall we?", she is ... | making a suggestion | saying no to Daniel | asking for his lunch | feeling angry
