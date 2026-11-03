@@ -8,7 +8,43 @@ ok = True
 def bad(msg):
     global ok
     print(msg); ok = False
+def check_exam(f):
+    """Junior High exam template: # choice (15 Q), # cloze (T, > text with [1]..[5], 5 K), # reading-test (T, > text, 4 RQ)."""
+    txt = open(f, encoding='utf-8').read(); n = 0
+    for blk in re.split(r'^(?=## )', txt, flags=re.M):
+        if not blk.startswith('## '): continue
+        n += 1; head = blk.split('\n', 1)[0]; mode = None; seen = []; q = 0; kT = 0; kTxt = []; kK = []; rT = 0; rTxt = []; rQ = 0
+        if re.search(r'[\u4e00-\u9fff]', blk): bad(f'{f}: {head}: Chinese text')
+        for l in [x.strip() for x in blk.split('\n')[1:]]:
+            if not l or l.startswith('//'): continue
+            if l in ('# choice', '# cloze', '# reading-test'): mode = l; seen.append(l); continue
+            p = [x.strip() for x in l.split('|')]
+            def opts4():
+                o = p[-4:]
+                if len(p) < 6 or any(not x for x in o) or len({x.lower() for x in o}) != 4: bad(f'{f}: {head}: need 4 different options: {l[:80]}')
+            if mode == '# choice':
+                if p[0] != 'Q' or l.count('___') != 1: bad(f'{f}: {head}: choice line must be Q | stem ___ | 4 options: {l[:80]}')
+                opts4(); q += 1
+            elif mode == '# cloze':
+                if l.startswith('>'): kTxt.append(l[1:])
+                elif p[0] == 'T': kT += 1
+                elif p[0] == 'K': opts4(); kK.append(p[1])
+                else: bad(f'{f}: {head}: cloze lines are T, > text, K: {l[:60]}')
+            elif mode == '# reading-test':
+                if l.startswith('>'): rTxt.append(l[1:])
+                elif p[0] == 'T': rT += 1
+                elif p[0] == 'RQ': opts4(); rQ += 1
+                else: bad(f'{f}: {head}: reading-test lines are T, > text, RQ: {l[:60]}')
+            else: bad(f'{f}: {head}: line outside a section: {l[:60]}')
+        if seen != ['# choice', '# cloze', '# reading-test']: bad(f'{f}: {head}: sections must be # choice, # cloze, # reading-test')
+        if q < 10: bad(f'{f}: {head}: only {q} choice questions')
+        nums = [int(x) for x in re.findall(r'\[(\d+)\]', ' '.join(kTxt))]
+        if kT != 1 or nums != list(range(1, len(kK) + 1)) or [int(x) for x in kK] != nums or len(kK) < 3: bad(f'{f}: {head}: cloze needs one T, blanks [1].. in order matching K lines (blanks {nums}, K {kK})')
+        if rT != 1 or not rTxt or rQ < 3: bad(f'{f}: {head}: reading-test needs one T, a passage and at least 3 RQ')
+    print(os.path.basename(f), n, 'units (exam template)')
 for f in sorted(glob.glob(os.path.join(root, 'bank', 'OD*.txt')) + glob.glob(os.path.join(root, 'bank', 'OPW*.txt')) + glob.glob(os.path.join(root, 'bank', 'JH*.txt'))):
+    if os.path.basename(f).startswith('JH'):
+        check_exam(f); continue
     phon = os.path.basename(f).startswith('OPW')
     s = open(f, encoding='utf-8').read(); cur = None; mode = None; units = 0; rq = None; lt = 0; sq = None; buckets = None
     def close_unit():
