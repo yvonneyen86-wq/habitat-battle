@@ -589,6 +589,22 @@ body.lite .amb-canvas{display:none}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 
 /* ---- Learning Time activities ---- */
+.rclock{font-family:var(--display);font-size:1.4rem;color:#e8590c}
+.rlist{display:grid;gap:4px;margin:6px 0}.rrow{display:grid;grid-template-columns:1fr auto auto;gap:8px;align-items:center;border-left:4px solid var(--tc);background:#fff;border-radius:8px;padding:4px 8px}.rrow small{color:var(--muted)}
+.overlay .rbig{font-family:var(--display);font-size:11cqmin;line-height:1;color:#e8590c;margin:.5cqmin 0}
+.overlay .rteams{display:grid;gap:1cqmin;width:min(90%,80cqmin);margin:1cqmin auto}.overlay .rt{display:grid;grid-template-columns:18cqmin 1fr 10cqmin;gap:1.2cqmin;align-items:center;font-weight:900;font-size:2.8cqmin}.overlay .rt i{height:3cqmin;background:#e9ecef;border-radius:99px;overflow:hidden}.overlay .rt s{display:block;height:100%;background:var(--tc);transition:width .4s}
+.overlay .rtop{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8cqmin 2cqmin;width:min(92%,90cqmin);margin:1cqmin auto}.overlay .rtp{display:grid;grid-template-columns:5cqmin 1fr auto;gap:1cqmin;align-items:center;background:#fff;border-left:.8cqmin solid var(--tc);border-radius:1cqmin;padding:.6cqmin 1.2cqmin;font-size:2.6cqmin}.overlay .rtp em{font-style:normal;font-weight:900}
+.overlay .rush-rep{width:min(96%,120cqmin);text-align:left}.overlay .rh{font-weight:900;font-size:2.6cqmin;margin:1.4cqmin 0 .6cqmin;color:#1971c2}
+.overlay .ubars{display:grid;gap:.6cqmin}.overlay .ub{display:grid;grid-template-columns:7cqmin minmax(0,1fr) 30cqmin 8cqmin;gap:1cqmin;align-items:center;font-size:2.2cqmin}.overlay .ub .ut{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.overlay .ub i{height:2.4cqmin;background:#e9ecef;border-radius:99px;overflow:hidden}.overlay .ub s{display:block;height:100%}.overlay .ub em{font-style:normal;font-weight:900}
+.overlay .ub i.hi s{background:#2f9e44}.overlay .ub i.ok s{background:#74b816}.overlay .ub i.mid s{background:#f59f00}.overlay .ub i.low s{background:#e03131}
+.overlay .rtab{max-height:46cqmin;overflow:auto;border-radius:1cqmin}.overlay .rtab table{border-collapse:collapse;width:100%;font-size:2cqmin;background:#fff}.overlay .rtab th,.overlay .rtab td{padding:.5cqmin .8cqmin;border-bottom:1px solid #e9ecef;text-align:center;white-space:nowrap}.overlay .rtab td.nm{text-align:left;border-left:.6cqmin solid var(--tc);font-weight:800}.overlay .rtab td small{display:block;color:#868e96;font-size:1.5cqmin}.overlay .rtab td.rv{text-align:left;white-space:normal}.overlay .rtab td.rv span{display:inline-block;background:#fff5f5;color:#c92a2a;border-radius:99px;padding:0 1cqmin;margin:.2cqmin;font-weight:800}.overlay .rtab td.rv em{color:#2f9e44;font-style:normal;font-weight:800}
+.overlay td.hi{background:#ebfbee;color:#2b8a3e}.overlay td.ok{background:#f4fce3;color:#5c940d}.overlay td.mid{background:#fff4e6;color:#d9480f}.overlay td.low{background:#fff5f5;color:#c92a2a;font-weight:900}.overlay td.na{color:#adb5bd}
+.overlay .mm{margin:0;padding-left:3cqmin;font-size:2cqmin}.overlay .mm .k{color:#868e96;font-weight:800;margin-right:.6cqmin}.overlay .mm small{color:#c92a2a;font-weight:900}
+.qtag.k-RUSH{background:#e8590c}.qtag.k-F{background:#d6336c}.qtag.k-V{background:#e8590c}.qtag.k-B{background:#7048e8}
+.rprog{display:flex;gap:10px;justify-content:center;font-weight:800;color:var(--muted);font-size:.9rem}.rprog span:first-child{color:#2f9e44}
+.rblank{display:inline-block;min-width:4.5em;border-bottom:4px solid #e8590c;color:transparent}.rfix{font-family:var(--display);font-size:1.25rem;background:#ebfbee;border:2px solid #40c057;border-radius:12px;padding:8px 12px;margin:6px 0}.rfix b{color:#2b8a3e}.qp.rx{color:#e03131}
+.bk.rw{font-size:1.3rem;padding:12px 6px}
+.rmine{display:grid;gap:4px;margin-top:6px;width:100%}.rmine div{display:grid;grid-template-columns:auto 1fr auto;gap:8px;padding:4px 10px;border-radius:10px;background:#f8f9fa;font-size:.92rem;text-align:left}.rmine div span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.rmine .hi{background:#ebfbee}.rmine .ok{background:#f4fce3}.rmine .mid{background:#fff4e6}.rmine .low{background:#fff5f5;color:#c92a2a;font-weight:800}
 .overlay .ck{display:inline-block;background:#fff;border-radius:99px;padding:.2cqmin 1.4cqmin;font-weight:900}.overlay .ck.k-C{color:#1971c2}.overlay .ck.k-G{color:#7048e8}.overlay .ck.k-V{color:#e8590c}
 .overlay .fullsent{color:#2f9e44;font-weight:900;font-size:2.6cqmin;margin:-.6cqmin 0 .8cqmin}
 .overlay .q .blank{display:inline-block;min-width:14cqmin;border-bottom:.6cqmin solid #e8590c;vertical-align:baseline;height:1em;margin:0 .6cqmin}.overlay .ans .fill{color:#e8590c}
@@ -1152,16 +1168,87 @@ function pub(){
     def:b.def?{teams:b.def.teams,q:b.def.q}:null,
     boss:b.boss?{name:b.boss.name,e:b.boss.e,hp:b.boss.hp,max:b.boss.max,defeated:!!b.boss.defeated}:null,
     vote:b.vote?{items:b.vote.items.map(x=>x.text),revealed:b.vote.revealed,counts:b.vote.revealed?voteCounts():null,winner:b.vote.revealed?b.vote.winner:-1,n:Object.keys(b.vote.votes).length}:null};}
-  return{code:S.code,scene:S.scene,phase:S.phase,teams:S.teams.slice(0,S.teamCount),teamCount:S.teamCount,players:S.players,log:S.log.slice(-4),battle:bp,results:S.results,tab3d:!!S.tab3d,lt:ltPub()};
+  return{code:S.code,scene:S.scene,phase:S.phase,teams:S.teams.slice(0,S.teamCount),teamCount:S.teamCount,players:S.players,log:S.log.slice(-4),battle:bp,results:S.results,tab3d:!!S.tab3d,lt:ltPub(),rush:rushPub()};
 }
-function myView(pid){const b=S.battle,lt=ltMy(pid);if(!pid||!b)return lt?{lt}:null;const sb=b.subs[pid],v=b.vote,p=P(pid);
+function myView(pid){const b=S.battle,lt=ltMy(pid),rush=rushMy(pid);if(!pid||!b)return (lt||rush)?{lt,rush}:null;const sb=b.subs[pid],v=b.vote,p=P(pid);
   return{qid:b.qid,ok:b.ok[pid]||0,act:b.acts[pid]||null,sub:sb?{text:sb.text,ok:sb.ok}:null,choice:b.choice[pid]??-1,buzz:b.buzz.indexOf(pid),
     defender:!!(b.def&&p&&b.def.teams.includes(p.team)),blocked:!!(b.def&&b.def.blocks[pid]),spell:!!b.spells[pid],
-    vote:v?{mine:v.items.findIndex(x=>x.pid===pid),voted:v.votes[pid]??-1}:null,lt};}
+    vote:v?{mine:v.items.findIndex(x=>x.pid===pid),voted:v.votes[pid]??-1}:null,lt,rush};}
 function broadcast(){const s=pub();for(const[conn,info]of H.conns){if(conn.open){const me=info.pid&&S.players[info.pid]?info.pid:null;try{conn.send({t:'state',s,me,my:myView(me)});}catch(e){}}}}
 function sendTo(pid,m){for(const[conn,info]of H.conns)if(info.pid===pid&&conn.open)try{conn.send(m);}catch(e){}}
 const sendErr=(pid,msg)=>sendTo(pid,{t:'toast',msg});
 
+/* ===== ⚡ Practice Rush: every tablet works through auto-graded bank items at its own pace; the report shows weak units ===== */
+function rushItemsFor(level,nums){const lv=OD_BANK[level];if(!lv)return {items:[],units:[]};const items=[],units=[];
+  lv.units.filter(u=>nums.includes(u.n)).forEach(u=>{const out=[],seen=new Set();const add=o=>{const k=o.k+'|'+(o.q||'')+'|'+(Array.isArray(o.a)?o.a.join('/'):o.a);if(seen.has(k))return;seen.add(k);out.push(o);};
+    const fs=l=>l.split('|').map(x=>x.trim());
+    (u.battle.length?u.battle:(typeof phonBattle==='function'?phonBattle(u):[])).forEach(l=>{const p=fs(l);const t=(p[0]||'').toUpperCase();
+      if(t==='F'&&p[1]&&p[2])add({k:'F',q:p[1],a:p[2].split(/\s+\/\s+/).map(x=>x.trim()).filter(Boolean)});
+      else if(t==='B'&&p[1]&&p[1].split(/\s+/).length>=3)add({k:'B',a:p[1]});});
+    [...(u.grammar||[]),...(u.build||[])].forEach(l=>{const p=fs(l);if((p[0]||'').toUpperCase()==='G'&&p[1]&&p[1].split(/\s+/).length>=3&&p[1].split(/\s+/).length<=14)add({k:'B',a:p[1]});});
+    const vs=(u.learn||[]).map(fs).filter(p=>(p[0]||'').toUpperCase()==='V'&&p[1]&&p[2]&&/_{2,}/.test(p[1]));const vAns=[...new Set(vs.map(p=>p[2]))];
+    const wordsList=(u.words||[]).map(l=>fs(l)[0]).filter(Boolean);
+    vs.forEach(p=>{let opts=vAns.slice();for(const w of wordsList){if(opts.length>=4)break;if(!opts.some(o=>o.toLowerCase()===w.toLowerCase()))opts.push(w);}if(!opts.includes(p[2]))opts.push(p[2]);add({k:'V',q:p[1],a:p[2],opts:opts.slice(0,4)});});
+    if(!out.length)return;units.push({n:u.n,title:u.title});const c={F:0,B:0,V:0};out.forEach(o=>{o.u=u.n;o.id=u.n+'.'+o.k+(c[o.k]++);items.push(o);});});
+  return {items,units};}
+function rushStart(min){if(!S.bankSel)return toast('Pick units in 📚 Textbook first.');const {items,units}=rushItemsFor(S.bankSel.level,S.bankSel.units);
+  if(!items.length)return toast('These units have no practice items.');
+  S.lt=null;S.card=null;H.rushView=null;const now=Date.now();
+  S.rush={on:true,ended:false,ver:now,min,startedAt:now,endsAt:now+min*60000,level:S.bankSel.level,units,items,res:{}};
+  log(`⚡ Practice Rush! ${min} minutes · ${S.bankSel.level} U${units.map(u=>u.n).join(', ')} · ${items.length} questions`);changed();
+  banner('PRACTICE RUSH!',`${min} minutes · answer as many as you can`,'#e8590c');fanfare();}
+function rushRes(pid){const R=S.rush;return R.res[pid]||(R.res[pid]={done:{},retry:{},a:0,ok:0,streak:0,best:0});}
+function rushMsg(pid,m){const R=S.rush,p=P(pid);if(!R||!R.on||!p||!m)return;const id=String(m.id||'');const it=R.items.find(x=>x.id===id);if(!it)return;const r=rushRes(pid);
+  if(m.retry){if(r.done[id]===0&&r.retry[id]==null){r.retry[id]=m.ok?1:0;changed();}return;}
+  if(r.done[id]!=null)return;r.done[id]=m.ok?1:0;r.a++;
+  if(m.given!=null&&!m.ok){r.wrong=r.wrong||{};r.wrong[id]=String(m.given).slice(0,160);}
+  if(m.ok){r.ok++;r.streak++;r.best=Math.max(r.best,r.streak);p.coins+=1;pairTally(p);floatText(pid,'+1 🪙');
+    if(r.streak%5===0){p.coins+=1;floatText(pid,`🔥 ${r.streak} in a row! +1`,'#e8590c');burst(pid,['🔥','⭐'],10,{speed:18});}}
+  else r.streak=0;
+  if(p.pair)pairFlip(p);changed();}
+function rushSendItems(conn){const R=S.rush;if(!R)return;try{conn.send({t:'rush-items',ver:R.ver,items:R.items});}catch(e){}}
+function rushPub(){const R=S.rush;if(!R)return null;return {on:R.on,ended:R.ended,ver:R.ver,endsIn:R.endsAt-Date.now(),min:R.min,level:R.level,units:R.units,n:R.items.length};}
+function rushMy(pid){const R=S.rush;if(!R||!pid)return null;const r=R.res[pid];return r?{done:r.done,retry:r.retry,a:r.a,ok:r.ok,streak:r.streak}:{done:{},retry:{},a:0,ok:0,streak:0};}
+function rushTick(){const R=S&&S.rush;if(!R||!R.on)return;const left=R.endsAt-Date.now();const el=$('#rush-clock');if(el)el.textContent=fmtTime(left);if(left<=0)rushEnd();}
+function rushEnd(){const R=S.rush;if(!R||!R.on)return;R.on=false;R.ended=true;const rep=rushReport(R);S.rushHist=[rep].concat(S.rushHist||[]).slice(0,10);H.rushView=0;
+  log(`⏱ Practice Rush over! Class score ${rep.pct}% · see the report`);changed();fanfare();banner("TIME'S UP!",'Practice report','#1971c2');}
+function rushReport(R){const byU={};R.units.forEach(u=>byU[u.n]={n:u.n,title:u.title,a:0,ok:0});const miss={};
+  const students=Object.values(S.players).filter(p=>!p.pre).map(p=>{const r=R.res[p.pid]||{done:{},a:0,ok:0,best:0};const uu={};R.units.forEach(u=>uu[u.n]={a:0,ok:0});
+    Object.entries(r.done).forEach(([id,v])=>{const it=R.items.find(x=>x.id===id);if(!it)return;uu[it.u].a++;byU[it.u].a++;if(v){uu[it.u].ok++;byU[it.u].ok++;}else{const m=miss[id]||(miss[id]={id,k:it.k,u:it.u,q:it.q||'',a:Array.isArray(it.a)?it.a[0]:it.a,wrong:0});m.wrong++;}});
+    const pct=x=>x.a?Math.round(x.ok/x.a*100):null;
+    const weak=R.units.map(u=>({n:u.n,title:u.title,a:uu[u.n].a,pct:pct(uu[u.n])})).filter(x=>x.a>=2&&x.pct<70).sort((a,b)=>a.pct-b.pct).slice(0,3);
+    return {pid:p.pid,name:p.name,color:teamColor(p.team),a:r.a,ok:r.ok,pct:pct(r),best:r.best||0,units:Object.fromEntries(Object.entries(uu).map(([n,x])=>[n,{a:x.a,ok:x.ok,pct:pct(x)}])),weak};}).sort((a,b)=>(b.ok-a.ok)||(b.pct||0)-(a.pct||0));
+  const units=Object.values(byU).map(x=>({...x,pct:x.a?Math.round(x.ok/x.a*100):null}));const tA=units.reduce((s,x)=>s+x.a,0),tOk=units.reduce((s,x)=>s+x.ok,0);
+  const missed=Object.values(miss).sort((a,b)=>b.wrong-a.wrong).slice(0,6);
+  return {at:Date.now(),level:R.level,min:R.min,units,students,missed,pct:tA?Math.round(tOk/tA*100):0,answered:tA};}
+function rushPctCls(v){return v==null?'na':v>=85?'hi':v>=70?'ok':v>=50?'mid':'low';}
+function rushReportHTML(rep,full){const uh=rep.units.map(u=>`<th title="${esc(u.title)}">U${u.n}</th>`).join('');
+  const rows=rep.students.map(st=>`<tr><td class="nm" style="--tc:${st.color}">${esc(st.name)}</td><td class="tot ${rushPctCls(st.pct)}">${st.pct==null?'–':st.pct+'%'}<small>${st.ok}/${st.a}</small></td>${rep.units.map(u=>{const x=st.units[u.n]||{};return `<td class="${rushPctCls(x.pct)}">${x.pct==null?'–':x.pct+'%'}</td>`;}).join('')}<td class="rv">${st.weak.length?st.weak.map(w=>`<span>U${w.n} ${esc(w.title)}</span>`).join(''):(st.a?'<em>All strong 💪</em>':'<em>No answers</em>')}</td></tr>`).join('');
+  const bars=rep.units.map(u=>`<div class="ub"><b>U${u.n}</b><span class="ut">${esc(u.title)}</span><i class="${rushPctCls(u.pct)}"><s style="width:${u.pct||0}%"></s></i><em>${u.pct==null?'–':u.pct+'%'}</em></div>`).join('');
+  const missed=rep.missed.length?`<div class="rh">Most missed</div><ol class="mm">${rep.missed.map(m=>`<li><span class="k">U${m.u} · ${m.k==='F'?'Fix it':m.k==='B'?'Build':'Blank'}</span> ${m.q?esc(m.q)+' → ':''}<b>${esc(m.a)}</b> <small>✗ ${m.wrong}</small></li>`).join('')}</ol>`:'';
+  return `<div class="rush-rep"><div class="rh">By unit · class ${rep.pct}% · ${rep.answered} answers</div><div class="ubars">${bars}</div>${full?`<div class="rh">By student · Review = units under 70%</div><div class="rtab"><table><thead><tr><th>Name</th><th>All</th>${uh}<th>Review</th></tr></thead><tbody>${rows}</tbody></table></div>${missed}`:''}</div>`;}
+function rushReportText(rep){const d=new Date(rep.at);const L=[`Practice Rush report · ${rep.level} · ${d.toLocaleDateString()} ${d.toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'})} · ${rep.min} min`,`Class: ${rep.pct}% (${rep.answered} answers)`,'By unit:'];
+  rep.units.forEach(u=>L.push(`  U${u.n} ${u.title}: ${u.pct==null?'-':u.pct+'%'} (${u.ok}/${u.a})`));L.push('By student:');
+  rep.students.forEach(st=>L.push(`  ${st.name}: ${st.pct==null?'-':st.pct+'%'} (${st.ok}/${st.a})${st.weak.length?' · Review: '+st.weak.map(w=>`U${w.n} ${w.title} ${w.pct}%`).join('; '):''}`));
+  if(rep.missed.length){L.push('Most missed:');rep.missed.forEach(m=>L.push(`  U${m.u} ${m.q?m.q+' -> ':''}${m.a} (x${m.wrong})`));}return L.join('\n');}
+function rushPanel(){const R=S.rush,hist=S.rushHist||[];
+  if(R&&R.on){const rows=Object.values(S.players).filter(p=>!p.pre).map(p=>({p,r:R.res[p.pid]||{a:0,ok:0,streak:0}})).sort((a,b)=>b.r.ok-a.r.ok);
+    return `<h2>⚡ Practice Rush <span class="sp"></span><b id="rush-clock" class="rclock">${fmtTime(R.endsAt-Date.now())}</b></h2><div class="panel"><small>${esc(R.level)} U${R.units.map(u=>u.n).join(', ')} · ${R.items.length} questions · auto-graded on the tablets</small>
+      <div class="rlist">${rows.map(({p,r})=>`<div class="rrow" style="--tc:${teamColor(p.team)}"><span>${charById(p.char).e} ${esc(p.name)}</span><b>✓ ${r.ok}</b><small>${r.a?Math.round(r.ok/r.a*100)+'%':'–'} · ${r.a}/${R.items.length}${r.streak>=3?' · 🔥'+r.streak:''}</small></div>`).join('')||'<small>Waiting for students…</small>'}</div>
+      <div class="row"><button class="btn" data-act="rush-more">+2 min</button><button class="btn war" data-act="rush-stop">⏹ Stop &amp; show report</button></div></div>`;}
+  const last=hist[0];const can=!!S.bankSel;
+  return `<h2>⚡ Practice Rush</h2><div class="panel"><small>${can?`Students practise ${esc(S.bankSel.level)} U${S.bankSel.units.join(', ')} on their own tablets: fix the mistake, build sentences, fill the blanks. Auto-graded; the report shows each student's weak units.`:'Pick units in 📚 Textbook first (choose several grammar units to review).'}</small>
+    <div class="row">${[10,15,20].map(m=>`<button class="btn${m===15?' primary':''}" data-act="rush-start" data-min="${m}" ${can?'':'disabled'}>⚡ ${m} min</button>`).join('')}</div>
+    ${last?`<div class="row"><button class="btn" data-act="rush-report" data-i="0">📊 Last report (${last.pct}%)</button>${hist.length>1?`<select id="rush-hist">${hist.map((h,i)=>`<option value="${i}">${new Date(h.at).toLocaleDateString()} ${esc(h.level)} · ${h.pct}%</option>`).join('')}</select>`:''}<button class="btn" data-act="rush-copy" data-i="0">📋 Copy</button></div>`:''}</div>`;}
+function rushOverlay(o){if(S.phase!=='gather')return false;const R=S.rush;
+  if(R&&R.on){const rows=Object.values(S.players).filter(p=>!p.pre).map(p=>({p,r:R.res[p.pid]||{a:0,ok:0,streak:0}})).sort((a,b)=>b.r.ok-a.r.ok);const ts=S.teams.slice(0,S.teamCount).map((t,ti)=>({t,ok:rows.filter(x=>x.p.team===ti).reduce((s,x)=>s+x.r.ok,0)}));const mx=Math.max(1,...ts.map(x=>x.ok));
+    o.innerHTML=`<div class="kind">⚡ Practice Rush · ${esc(R.level)} U${R.units.map(u=>u.n).join(', ')}</div><div class="rbig" id="rush-clock2">${fmtTime(R.endsAt-Date.now())}</div>
+      <div class="rteams">${ts.map(x=>`<div class="rt" style="--tc:${x.t.color}"><span>${esc(x.t.name)}</span><i><s style="width:${Math.round(x.ok/mx*100)}%"></s></i><b>✓ ${x.ok}</b></div>`).join('')}</div>
+      <div class="rtop">${rows.slice(0,8).map((x,i)=>`<div class="rtp" style="--tc:${teamColor(x.p.team)}"><b>${i<3?['🥇','🥈','🥉'][i]:i+1}</b><span>${charById(x.p.char).e} ${esc(x.p.name)}</span><em>✓ ${x.r.ok}${x.r.streak>=3?' 🔥'+x.r.streak:''}</em></div>`).join('')}</div>
+      <div class="hint">Answer on your tablet · ✓ = +1 🪙 · 5 in a row = bonus 🔥</div>`;o.hidden=false;return true;}
+  const hist=S.rushHist||[];if(H.rushView!=null&&hist[H.rushView]){const rep=hist[H.rushView];
+    o.innerHTML=`<div class="kind">📊 Practice Report · ${esc(rep.level)} · ${rep.min} min</div>${rushReportHTML(rep,true)}<div class="acts"><button class="btn" data-act="rush-copy" data-i="${H.rushView}">📋 Copy report</button><button class="btn primary" data-act="rush-close">Close</button></div>`;o.hidden=false;return true;}
+  return false;}
 function pairFlip(p){if(p&&p.pair)p.turn=((p.turn||0)+1)%p.pair.length;}
 function pairTally(p){if(p&&p.pair){p.pairOk=p.pair.map((x,i)=>(p.pairOk||[])[i]||0);p.pairOk[p.turn||0]++;}}
 function pairName(a){return a.length>2?a.slice(0,-1).join(', ')+' & '+a[a.length-1]:a.join(' & ');}
@@ -1192,6 +1279,7 @@ function freshBattle(){return{round:0,step:'idle',q:null,qid:0,ok:{},subs:{},act
 function ensureBattle(b){const f=freshBattle();for(const k in f)if(b[k]===undefined)b[k]=f[k];return b;}
 function startBattle(){
   if(!Object.keys(S.players).length)return toast('Add players first.');
+  if(S.rush&&S.rush.on)rushEnd();H.rushView=null;
   S.phase='battle';S.showQR=false;S.card=null;S.lt=null;S.results=null;S.battle=freshBattle();crStart();
   Object.values(S.players).forEach(p=>{p.hp=maxHp(p);p.down=false;p.pts=0;p.streak=0;});
   log(`⚔️ Battle start! ${S.battleMin} minutes. Answer to attack, build or repair!`);
@@ -1425,6 +1513,8 @@ function onStudent(conn,m){
   const pid=info.pid;if(!pid||!S.players[pid])return;
   if(m.t==='buy')buy(pid,m.item);
   if(m.t==='lt')ltMsg(pid,m);
+  if(m.t==='rush')rushMsg(pid,m);
+  if(m.t==='rush-get')return rushSendItems(conn);
   if(m.t==='look'){S.players[pid].av=cleanAv(m.av,S.players[pid].name);changed();return;}
   if(m.t==='answer')onAnswer(pid,m.text);
   if(m.t==='build')onBuild(pid,m.words);
@@ -1466,7 +1556,7 @@ function hostShell(){
   makeQR($('#qr'),220);fxSetup();apply3d();setTimeout(warm3d,4000);
   setInterval(tick,1000);
 }
-function tick(){
+function tick(){rushTick();{const e2=$('#rush-clock2');if(e2&&S.rush&&S.rush.on)e2.textContent=fmtTime(S.rush.endsAt-Date.now());}
   const b=S&&S.battle;if(!b||S.phase!=='battle')return;
   const left=b.endsAt-Date.now();const el=$('#tm');if(el){el.textContent=fmtTime(left);el.classList.toggle('warn',left<120000);}
   if(left<=0&&!b.timeUpShown){b.timeUpShown=true;save();banner("TIME'S UP!",'Finish this round, then press End Battle','#f08c00');beep(440,.3);}
@@ -1573,6 +1663,7 @@ function renderStage(){
 }
 function renderOverlay(){
   const o=$('#ovl');
+  if(rushOverlay(o))return;
   if(S.phase==='end'&&S.results){const r=S.results,m=['🥇','🥈','🥉','🏅'];
     o.innerHTML=`<div class="kind">Battle Results</div><div class="podium">${r.teams.map((t,i)=>`<div class="pr${i===0?' first':''}" style="--tc:${t.color}"><span class="m">${m[i]||''}</span><span>${esc(t.name)}</span><small style="color:var(--muted)">❤️ ${t.pct}% left</small><b>🏆 ${t.pts}</b></div>`).join('')}</div>${r.mvp&&r.mvp.pts>0?`<div class="mvp">⭐ MVP: ${r.mvp.e} <b>${esc(r.mvp.name)}</b> (${esc(r.mvp.team)}) · 🏆 ${r.mvp.pts}</div>`:''}${r.pairs&&r.pairs.length?`<div class="pairs">${r.pairs.map(x=>`<span style="--tc:${x.color}">${x.e} ${(x.names||[x.a,x.b]).map((n,i)=>`<b>${esc(n)}</b> ${(x.ok||[])[i]||0} ✓`).join(' · ')}</span>`).join('')}</div>`:''}<div class="acts"><button class="btn primary" data-act="ovl-hide">Show the battlefield</button></div>`;
     o.hidden=!!H.hideResults;return;}
@@ -1612,7 +1703,7 @@ function renderConsole(){
     if(q&&q.type==='C'&&live){const n=[0,1].map(i=>Object.values(b.choice).filter(v=>v===i).length);top+=`<h2>⚖️ Choices</h2><div class="panel"><div class="row"><span class="chipx a">A. ${esc(q.opts[0])}: <b>${n[0]}</b></span><span class="chipx b">B. ${esc(q.opts[1])}: <b>${n[1]}</b></span></div><small>Ask students to explain with "because". Grade the best reasons with ⭐ or 🌟.</small></div>`;}
     if(q&&q.type==='Z'&&live){top+=`<h2>🔔 Buzzer</h2><div class="panel">${b.buzz.length?b.buzz.map((pid,i)=>{const p=P(pid);return p?`<div class="row"><b>${i<3?['🥇','🥈','🥉'][i]:'#'+(i+1)}</b><span>${charById(p.char).e} ${esc(p.name)}</span><span class="sp" style="flex:1"></span>${tierBtns(pid,b.ok[pid]||false).replace('<div class="row">','').replace(/<\/div>$/,'')}</div>`:'';}).join(''):'<small>Waiting for the first buzz…</small>'}</div>`;}
   }
-  if(ph==='gather')top+=renderLTPanel();
+  if(ph==='gather')top+=rushPanel()+(S.rush&&S.rush.on?'':renderLTPanel());
   const teamsHTML=`<h2>Teams</h2><div class="teams">${ts.map(t=>`<div class="tcard" style="--tc:${t.color}"><div class="tn">${esc(t.name)}</div><div class="ts">${ph==='gather'?`<b>${t.coins}</b> 🪙 · `:`<b>${t.pts}</b> 🏆 · `}❤️ ${t.hp}/${t.max} · 👤 ${t.count}</div>${ph==='gather'?`<div class="ta"><button class="btn" data-act="team-coin" data-team="${t.ti}">+1 🪙 all</button></div>`:''}</div>`).join('')}</div>`;
   const rows=ps.length?ps.map(p=>{const ch=charById(p.char),c=CLASSES[ch.c],h=habOf(p);
     const items=Array.from({length:3},(_,k)=>k<p.items?c.icon:'·').join('');
@@ -1924,6 +2015,12 @@ function onHostClick(e){
     case 'sound':H.sound=!H.sound;renderHeader();break;
     case 'sv-open':openStudentView(Object.values(S.players).find(p=>!p.pre)?.pid||'new');break;
     case 'sv-close':closeStudentView();break;
+      case 'rush-start':rushStart(+b.dataset.min||15);break;
+      case 'rush-stop':rushEnd();break;
+      case 'rush-more':if(S.rush&&S.rush.on){S.rush.endsAt+=120000;changed();}break;
+      case 'rush-report':{const sel=$('#rush-hist');H.rushView=sel?+sel.value:+b.dataset.i||0;renderOverlay();break;}
+      case 'rush-close':H.rushView=null;if(S.rush&&!S.rush.on)S.rush=null;changed();break;
+      case 'rush-copy':{const sel=$('#rush-hist');const i=b.closest('#ovl')?+b.dataset.i:(sel?+sel.value:+b.dataset.i||0);const rp=(S.rushHist||[])[i];if(rp){const t=rushReportText(rp);(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>toast('Report copied.'),()=>{H.rushCopy=t;toast('Copy failed — select the text in the console.');});}break;}
       case 'bp-open':if(H.bp&&H.bp.on)closeBoardPlay();else openBoardPlay();break;
       case 'bp-close':closeBoardPlay();break;
       case 'bp-tab':bpSwitch(b.dataset.pid);break;
@@ -2007,7 +2104,7 @@ function studentConnect(){
   peer.on('error',e=>{ST.status=e.type==='peer-unavailable'?`Game ${JOIN} is not open yet. Waiting for the teacher…`:'Connection problem. Retrying…';sRender();retrySoon();});
 }
 function crTabletAnswer(answer){const s=ST.s,b=s&&s.battle;if(!CR.inRunner||!CR.init.me)return;crEvent('answer',{student:CR.init.me.id,question:b&&b.q?b.q.ci:undefined,answer:String(answer).slice(0,300),correct:null,auto:false});}
-function sRecv(m){if(!m)return;if(m.t==='state'){ST.s=m.s;ST.me=m.me;ST.my=m.my;if(CR.inRunner&&CR.init.me&&!ST.me&&!ST.claimSent){ST.claimSent=true;sSend({t:'claim',crId:CR.init.me.id,av:ST.av});setTimeout(()=>{ST.claimSent=false;},4000);}if(m.s.battle)ST.deadline=Date.now()+m.s.battle.endsIn;sRender();}if(m.t==='toast')toast(m.msg);if(m.t==='fx'){if(m.k==='wrong'){toast('Not quite! Try again.');const l=$('#bline');if(l&&!RM){l.classList.remove('shake');void l.offsetWidth;l.classList.add('shake');}}if(m.k==='right')sBurst($('#s-dock'),['🧩','✨','⭐'],14);if(m.k==='cheer'&&ST.mini)ST.mini.react('happy',m.tier);}}
+function sRecv(m){if(!m)return;if(m.t==='rush-items'){ST.rushItems=m.items;ST.rushVer=m.ver;ST.qKey='';sRender();return;}if(m.t==='state'){ST.s=m.s;ST.me=m.me;ST.my=m.my;if(CR.inRunner&&CR.init.me&&!ST.me&&!ST.claimSent){ST.claimSent=true;sSend({t:'claim',crId:CR.init.me.id,av:ST.av});setTimeout(()=>{ST.claimSent=false;},4000);}if(m.s.battle)ST.deadline=Date.now()+m.s.battle.endsIn;sRender();}if(m.t==='toast')toast(m.msg);if(m.t==='fx'){if(m.k==='wrong'){toast('Not quite! Try again.');const l=$('#bline');if(l&&!RM){l.classList.remove('shake');void l.offsetWidth;l.classList.add('shake');}}if(m.k==='right')sBurst($('#s-dock'),['🧩','✨','⭐'],14);if(m.k==='cheer'&&ST.mini)ST.mini.react('happy',m.tier);}}
 function retrySoon(){clearTimeout(ST.retry);ST.retry=setTimeout(studentConnect,3000);}
 function sBgHost(){return ST.embedded?$('#sv-app'):null;}
 function sBackground(scene){
@@ -2151,6 +2248,7 @@ function sPlay(s,me){sMini(s,me);
   }
 }
 function sDock(s,me,c){
+  if(s.phase==='gather'&&s.rush)return sRushDock(s,me);
   if(s.phase==='gather'&&s.lt&&s.lt.cat)return sLtDock(s,me);
   const b=s.battle,my=ST.my||{},q=b&&b.q;
   if(b&&q&&ST.draftQid!==b.qid){ST.draftQid=b.qid;ST.draft=q.type==='F'?q.text:'';ST.bld={qid:b.qid,order:[]};}
@@ -2355,9 +2453,56 @@ function sLtClick(a,b){const L=ST.lt,s=ST.s,lt=s&&s.lt;if(!L||!lt)return false;c
   if(a==='lt-swap'){L.swap=!L.swap;redraw();return true;}
   if(a==='lt-key'){L.key++;redraw();return true;}
   return false;}
+function rushOrder(items,seed){const by={};items.forEach(it=>(by[it.u]=by[it.u]||[]).push(it));const lists=Object.keys(by).map(k=>seedShuffle(by[k],seed+'|'+k));const out=[];let i=0;while(lists.some(l=>i<l.length)){lists.forEach(l=>{if(i<l.length)out.push(l[i].id);});i++;}return out;}
+function rushNorm(t){t=String(t||'').toLowerCase().replace(/[‘’ʼ]/g,"'").replace(/[“”]/g,'"');
+  t=t.replace(/\bcan't\b/g,'can not').replace(/\bcannot\b/g,'can not').replace(/\bwon't\b/g,'will not').replace(/\bshan't\b/g,'shall not').replace(/n't\b/g,' not').replace(/\bi'm\b/g,'i am').replace(/'re\b/g,' are').replace(/'ve\b/g,' have').replace(/'ll\b/g,' will').replace(/\b(he|she|it|that|there|what|who|where|here)'s\b/g,'$1 is');
+  return t.replace(/[.,!?;:"()]/g,' ').replace(/\s+/g,' ').trim();}
+function rushOkF(given,alts){const g=rushNorm(given),r=String(given||'').toLowerCase().replace(/[.,!?;:"]/g,' ').replace(/\s+/g,' ').trim();return alts.some(a=>rushNorm(a)===g||String(a).toLowerCase().replace(/[.,!?;:"]/g,' ').replace(/\s+/g,' ').trim()===r);}
+function sRushDock(s,me){const R=s.rush,my=(ST.my&&ST.my.rush)||{done:{},retry:{},a:0,ok:0,streak:0},pop=$('#s-pop'),dock=$('#s-dock');
+  if(!ST.rushItems||ST.rushVer!==R.ver){if(ST.rushAsked!==R.ver){ST.rushAsked=R.ver;sSend({t:'rush-get'});}const k='load|'+R.ver;if(ST.qKey!==k){ST.qKey=k;pop.className='s-pop';pop.innerHTML='<div class="qp">⚡ Loading questions…</div>';pop.hidden=false;dock.innerHTML='';}return;}
+  if(!ST.rush||ST.rush.ver!==R.ver)ST.rush={ver:R.ver,order:rushOrder(ST.rushItems,ST.me+'|'+R.ver),placed:[],fb:null,retried:{},draft:null};
+  const L=ST.rush,items=ST.rushItems,byId=Object.fromEntries(items.map(x=>[x.id,x])),unitT=n=>{const u=(R.units||[]).find(x=>x.n===n);return u?('U'+u.n+' '+u.title):'U'+n;};
+  ST.rushEnd=Date.now()+R.endsIn;const head=`<div class="qtag k-RUSH">⚡ Practice Rush · <span id="rtm">${fmtTime(ST.rushEnd-Date.now())}</span></div>`;
+  if(!R.on){const key='end|'+R.ver+'|'+my.a+'|'+my.ok;if(ST.qKey===key)return;ST.qKey=key;const per={};Object.entries(my.done||{}).forEach(([id,v])=>{const it=byId[id];if(!it)return;const x=per[it.u]||(per[it.u]={a:0,ok:0});x.a++;if(v)x.ok++;});
+    const rows=(R.units||[]).map(u=>{const x=per[u.n]||{a:0,ok:0};const pc=x.a?Math.round(x.ok/x.a*100):null;return {u,x,pc};});const weak=rows.filter(r=>r.x.a>=2&&r.pc<70).sort((a,b)=>a.pc-b.pc);
+    pop.className='s-pop';pop.innerHTML=`<div class="qtag k-RUSH">⏱ Time's up!</div><div class="qp">✓ ${my.ok} of ${my.a} correct${my.a?` · ${Math.round(my.ok/my.a*100)}%`:''}</div><div class="rmine">${rows.map(r=>`<div class="${rushPctCls(r.pc)}"><b>U${r.u.n}</b><span>${esc(r.u.title)}</span><em>${r.pc==null?'–':r.pc+'%'}</em></div>`).join('')}</div>`;pop.hidden=false;
+    dock.innerHTML=weak.length?`<div class="dock-msg"><b>📚 Review these:</b><span>${weak.map(r=>`U${r.u.n} ${esc(r.u.title)}`).join('<br>')}</span></div>`:`<div class="dock-msg"><b>💪 Great work!</b><span>${my.a?'All your units are strong.':'Ask your teacher to start the next rush.'}</span></div>`;return;}
+  let cur=null,retry=false;
+  if(L.fb)cur=byId[L.fb.id];
+  else{const nid=L.order.find(id=>my.done[id]==null);if(nid)cur=byId[nid];else{const rid=L.order.find(id=>my.done[id]===0&&(my.retry||{})[id]==null&&!L.retried[id]);if(rid){cur=byId[rid];retry=true;}}}
+  const key=['q',R.ver,cur&&cur.id,retry,!!L.fb,my.a,L.placed.join(','),L.pick||''].join('|');if(ST.qKey===key){const e=$('#rtm');if(e)e.textContent=fmtTime(ST.rushEnd-Date.now());return;}ST.qKey=key;
+  const prog=`<div class="rprog"><span>✓ ${my.ok}</span><span>${my.a} answered</span>${my.streak>=3?`<span>🔥 ${my.streak}</span>`:''}</div>`;
+  pop.className='s-pop';pop.hidden=false;
+  if(!cur){pop.innerHTML=head+prog+`<div class="qp">All ${items.length} done! 🎉</div>`;dock.innerHTML=`<div class="dock-msg"><b>Amazing!</b><span>You finished every question. Wait for the timer.</span></div>`;return;}
+  L.cur=cur.id;L.retry=retry;const ut=`<small class="hint">${esc(unitT(cur.u))}${retry?' · 🔁 Try again':''}</small>`;
+  if(L.fb){const f=L.fb,ans=Array.isArray(cur.a)?cur.a[0]:cur.a;pop.innerHTML=head+prog+ut+`<div class="qp rx">❌ Not quite</div>${cur.q?`<div class="hint">${esc(cur.q)}</div>`:''}<div class="rfix">✅ ${cur.k==='V'?esc(cur.q).replace(/_{2,}/,'<b>'+esc(ans)+'</b>'):esc(ans)}</div>${f.given?`<small class="hint">You: ${esc(f.given)}</small>`:''}`;
+    dock.innerHTML=`<div class="brow"><button class="btn primary big" data-sact="rush-next">Next ➜</button></div>`;return;}
+  if(cur.k==='F'){pop.innerHTML=head+prog+ut+`<div class="qtag k-F">✏️ Fix the mistake</div><div class="qp">${esc(cur.q)}</div>`;
+    dock.innerHTML=`<div class="answer"><textarea id="rans" maxlength="200" rows="2" autocapitalize="sentences"></textarea><button class="btn primary send" data-sact="rush-check">✓ Check</button></div><small class="hint">Change the sentence so it is correct.</small>`;const ta=$('#rans');if(ta){ta.value=L.draft!=null&&L.draftFor===cur.id?L.draft:cur.q;L.draftFor=cur.id;ta.addEventListener('input',()=>{L.draft=ta.value;});}return;}
+  if(cur.k==='V'){pop.innerHTML=head+prog+ut+`<div class="qtag k-V">🔤 Fill the blank</div><div class="qp">${esc(cur.q).replace(/_{2,}/,'<span class="rblank">____</span>')}</div>`;
+    dock.innerHTML=`<div class="buckets">${seedShuffle(cur.opts||[cur.a],ST.me+cur.id).map(w=>`<button class="bk rw" data-sact="rush-pick" data-w="${esc(w)}">${esc(w)}</button>`).join('')}</div>`;return;}
+  const words=cur.a.split(/\s+/);if(L.tilesFor!==cur.id){L.tilesFor=cur.id;L.tiles=seedShuffle(words.map((c,k)=>({c,k})),ST.me+cur.id);L.placed=[];}const ord=L.placed;
+  pop.innerHTML=head+prog+ut+`<div class="qtag k-B">🧩 Build the sentence</div><div class="hint">Put the words in order.</div>`;
+  dock.innerHTML=`<div class="builder"><div class="bline" id="rbline">${ord.length?ord.map((k,pos)=>`<button class="tile" data-sact="rush-unplace" data-i="${pos}">${esc(L.tiles.find(t=>t.k===k).c)}</button>`).join(''):'<span class="ph">Tap the words below ⬇️</span>'}</div><div class="bpool">${L.tiles.map(t=>ord.includes(t.k)?'':`<button class="tile" data-sact="rush-place" data-k="${t.k}">${esc(t.c)}</button>`).join('')}</div><div class="brow"><button class="btn" data-sact="rush-reset">↺ Reset</button><button class="btn primary" data-sact="rush-check" ${ord.length<words.length?'disabled':''}>✓ Check</button></div></div>`;}
+function sRushClick(a,b){const s=ST.s,L=ST.rush;if(!s||!s.rush||!L)return;const it=(ST.rushItems||[]).find(x=>x.id===L.cur);const redraw=()=>{ST.qKey='';sDock(s,s.players[ST.me],classOf(s.players[ST.me]));};
+  if(a==='rush-next'){L.fb=null;L.placed=[];L.draft=null;redraw();return;}
+  if(!it||!s.rush.on)return;
+  if(a==='rush-place'){const k=+b.dataset.k;if(!L.placed.includes(k))L.placed.push(k);redraw();return;}
+  if(a==='rush-unplace'){L.placed.splice(+b.dataset.i,1);redraw();return;}
+  if(a==='rush-reset'){L.placed=[];redraw();return;}
+  let ok=false,given='';
+  if(a==='rush-pick'){given=b.dataset.w;ok=given===it.a;}
+  else if(a==='rush-check'){if(it.k==='F'){const ta=$('#rans');given=ta?ta.value:'';if(!given.trim())return;ok=rushOkF(given,it.a);}else{given=L.placed.map(k=>L.tiles.find(t=>t.k===k).c).join(' ');ok=given===it.a;}}
+  else return;
+  const msg={t:'rush',id:it.id,ok,given};if(L.retry){msg.retry=1;L.retried[it.id]=1;}
+  if(!sSend(msg))return;crTabletAnswer('rush:'+it.id+':'+(ok?'ok':'x'));
+  if(ok){sBurst($('#s-dock'),['⭐','✨','🪙'],12);L.placed=[];L.draft=null;}else{L.fb={id:it.id,given:it.k==='V'?given:(it.k==='F'?given:given)};if(navigator.vibrate)try{navigator.vibrate(60);}catch(e){}}
+  setTimeout(redraw,ok?250:0);}
+setInterval(()=>{const e=document.getElementById('rtm');if(e&&ST&&ST.rushEnd)e.textContent=fmtTime(ST.rushEnd-Date.now());},1000);
 function sPlayClick(e){
   if(ST.view!=='play')return;const b=e.target.closest('[data-sact]');if(!b||b.disabled)return;const a=b.dataset.sact;
   if(a==='shop'){sOpenShop(true);return;}
+  if(a.startsWith('rush-')){sRushClick(a,b);return;}
   if(a.startsWith('lt-')&&sLtClick(a,b))return;
   if(a==='shop-close'){if(ST.lookOpen){ST.av=ST.avBak||ST.av;store(avKey(),ST.av);sOpenLook(false);}else sOpenShop(false);return;}
   if(a==='look'){sOpenLook(true);return;}if(a==='look-cancel'){ST.av=ST.avBak||ST.av;store(avKey(),ST.av);sOpenLook(false);return;}
