@@ -15,6 +15,7 @@ Live site: https://yvonneyen86-wq.github.io/habitat-battle/ (GitHub Pages, branc
 ## Layout
 - `index.html` — the whole game (teacher console + projector stage + student tablet view). ~460 KB; about 140 KB of that is the 3D stage bundle between `/*3D-BUNDLE-BEGIN*/` and `/*3D-BUNDLE-END*/` — **never edit that block by hand**, edit `3d/*.js` and run `python3 3d/build.py`, which rebuilds the demo page and re-embeds the bundle.
 - `bank/OD1.txt … OD5.txt` — Oxford Discover question bank, one file per level, 18 units each. **The hosted game fetches these at load time**, so editing a bank file on GitHub changes the questions without touching `index.html`. The same data is also embedded in `index.html` as `const OD_BANK=…` (offline fallback); regenerate it with `python3 tools/build_bank.py` after editing bank files.
+- `bank/JH1.txt … JH3.txt` — Junior High Grammar (竹北國中文法班), one grammar point per unit, same format as the OD banks (# learn/# battle/# words/# reading/# grammar/# speak-write); listed in the Textbook picker as Grammar 1–3. Unit plan and sources: `docs/國中文法題庫規劃.md`. Grade-9 units L14–L17 wait for the teacher's lesson plans.
 - `tools/check_bank.py` — validates bank files (run before committing bank edits).
 - `tools/build_bank.py` — embeds bank files into `index.html`.
 - `tools/mkpreview.py` — builds `preview.html` (teacher screen with sample students, no network) for Claude artifact previews.

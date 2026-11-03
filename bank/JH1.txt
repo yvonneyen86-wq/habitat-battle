@@ -1,0 +1,733 @@
+=== JH1 ===
+// Junior High Grammar 1 - Zhubei grammar class, one grammar point per unit. Sections like the Oxford Discover banks (# learn, # battle, # words, # reading, # grammar, # speak-write).
+## U1 | Be Verbs: am / is / are | How do we say who we are?
+# learn
+C | How old is Amy Chen? | Amy Chen is twelve years old.
+C | Who is Ms. Lin? | Ms. Lin is Amy's English teacher.
+C | Are Kevin and Ben brothers? | Yes, Kevin and Ben are twin brothers.
+C | What is Amy's mom's job? | Amy's mom is a doctor.
+G | How old are you? | I am thirteen years old. | am · years old
+G | Is your English teacher kind? | Yes, my English teacher is kind. | is · kind
+G | Are your classmates noisy today? | No, my classmates aren't noisy today. | aren't · noisy
+G | Is Leo a good singer? | No, Leo isn't a good singer. | isn't · singer
+V | Amy is a new ___ at Zhubei Junior High. | student
+V | Ms. Lin is our English ___. | teacher
+V | Kevin and Ben are my ___. | classmates
+V | I am ___, so I want a sandwich. | hungry
+# battle
+F | I is a student. | I am a student.
+F | Leo and Kevin is my friends. | Leo and Kevin are my friends.
+F | She not is tired today. | She isn't tired today. / She is not tired today.
+F | Are Amy a new student? | Is Amy a new student?
+B | My English teacher is very kind.
+B | Kevin and Ben are not in the gym.
+B | Are you and Leo in Class 701?
+T | Who is your best friend? | My best friend is Leo.
+T | How are you today? | I am happy today.
+W | happy | Make a sentence with the word "happy".
+W | classmate | Make a sentence with the word "classmate".
+C | Which is better, a big class or a small class? | a big class | a small class
+Z | Which be verb goes with "they": am, is or are?
+S | Who is your best friend, and what is your friend like?
+# words
+student | stu·dent | stu/dent | 🧑‍🎓
+teacher | teach·er | teach/er | 👩‍🏫
+classmate | class·mate | class/mate | 👫
+friend | friend | fr/iend | 🤝
+brother | broth·er | broth/er | 👦
+sister | sis·ter | sis/ter | 👧
+doctor | doc·tor | doc/tor | 👩‍⚕️
+happy | hap·py | hap/py | 😊
+tired | tired | t/ired | 😴
+hungry | hun·gry | hun/gry | 🍔
+twelve | twelve | tw/elve | 🎂
+# reading
+> Hello from Class 701
+> Hi! My name is Amy Chen. I am twelve years old. I am a new student at Zhubei Junior High. My class is 701. I am very happy today.
+> This is my friend Leo. He is in my class too. Leo is tall and funny. He isn't a good singer, but he is a great basketball player.
+> Ms. Lin is our English teacher. She is kind, and her class is fun. Kevin and Ben are my classmates. They are twins! Kevin is next to the window, and Ben is near the door.
+> My family is at home now. My mom is a doctor, and my dad is a cook. My brother is ten. Are you a new student too? Please write to me!
+RC | Which class is Amy in? | Class 701 | Class 702 | Class 801
+RC | What is Leo good at? | basketball | singing | drawing
+RC | Where is Kevin in the classroom? | next to the window | near the door | behind Amy
+RT | What is Amy's dad's job? | Amy's dad is a cook.
+RT | Is Ms. Lin kind? | Yes, Ms. Lin is kind.
+RT | Are Kevin and Ben in Amy's class? | Yes, Kevin and Ben are Amy's classmates.
+RS | What is your English teacher like?
+RS | Who is in your family?
+# grammar
+GT | Be verbs: am / is / are
+R | **I am** · **you / we / they are** · **he / she / it is** → I am Amy. They are twins.
+R | Negative: **is not = isn't** · **are not = aren't** · **I'm not** → Leo isn't a singer.
+R | Question: **Be + subject ...?** → Is Ms. Lin your teacher? Yes, she is.
+R | Short forms: **I'm · you're · he's · she's · it's · we're · they're** → She's kind.
+G | My name is Amy, and I am twelve.
+G | Leo is tall and very funny.
+G | Kevin and Ben are not in Class 702.
+G | Is Ms. Lin your English teacher?
+G | We are happy to be at school.
+G | My mom is a doctor in Zhubei.
+# speak-write
+SP | A: Hi, I'm Amy. Are you new here? | B: Yes, I am. I'm Leo. | A: Are you {hungry}? | B: No, I'm not. Are you? | hungry / tired / sleepy / happy / busy
+SW | My name is {Amy}. I am {twelve} years old. My best friend is {Leo}. {He} is {funny}. | Write about you and your best friend.
+## U2 | This, That, These, Those + a / an | What is this, and what are those?
+# learn
+C | Whose pencil case is in the box? | The blue pencil case is Amy's.
+C | What are the two red things in the box? | The two red things are Leo's rulers.
+C | Is the umbrella Kevin's? | Yes, the umbrella is Kevin's.
+C | What does Ms. Lin say about the orange? | Ms. Lin says this orange is old.
+G | What is this on Ms. Lin's desk? | This is an eraser. | This · an eraser
+G | What are those near the door? | Those are umbrellas. | Those · umbrellas
+G | Are these your notebooks? | Yes, these are my notebooks. | these · notebooks
+G | What is that in Leo's backpack? | That is an orange. | That · an orange
+V | Leo has two red ___ for math class. | rulers
+V | Kevin's ___ is blue, and it keeps him dry. | umbrella
+V | Please write your name in your ___. | notebook
+V | I have an ___ for lunch today. | orange
+# battle
+F | This is a eraser. | This is an eraser.
+F | These is my books. | These are my books.
+F | That are two boxs. | Those are two boxes.
+F | I have three childs. | I have three children.
+B | These are my new pencils and erasers.
+B | Is that an orange in your backpack?
+B | Those boxes are very heavy today.
+T | What is in your backpack today? | My backpack has two notebooks and an eraser.
+T | Point at something far away. What is that? | That is a clock.
+W | umbrella | Make a sentence with the word "umbrella".
+W | box | Make a sentence with the word "box".
+C | Which is better for school, a backpack or a shopping bag? | a backpack | a shopping bag
+Z | What is the plural of "box"?
+S | Show us three things on your desk. What are these?
+# words
+eraser | e·ras·er | e/ras/er | 🧽
+ruler | ru·ler | ru/ler | 📏
+pencil | pen·cil | pen/cil | ✏️
+notebook | note·book | note/book | 📓
+backpack | back·pack | back/pack | 🎒
+box | box | b/ox | 📦
+umbrella | um·brel·la | um/brel/la | ☂️
+orange | or·ange | or/ange | 🍊
+child | child | ch/ild | 🧒
+watch | watch | w/atch | ⌚
+dictionary | dic·tion·ar·y | dic/tion/ar/y | 📖
+# reading
+> The Lost and Found Box
+> Ms. Lin has a big box in her classroom. It is the Lost and Found Box. Today, the box is full!
+> "What is this?" Ms. Lin asks. It is a blue pencil case. "That is my pencil case!" says Amy. "Thank you!"
+> "And what are these?" Ms. Lin asks. These are two red rulers and an eraser. "Those are Leo's rulers," says Kevin. "But the eraser isn't Leo's."
+> Next, Ms. Lin finds an umbrella, three notebooks and an orange. "Is this your umbrella, Kevin?" "Yes, it is!" Kevin says. "And these notebooks are mine too."
+> Nobody wants the orange. "Hmm, this orange is very old," Ms. Lin says. The children laugh. Now the box is almost empty. Ms. Lin puts the box next to the door.
+RC | What is the first thing in Ms. Lin's hand? | a blue pencil case | a red ruler | an orange
+RC | Whose rulers are in the box? | Leo's | Kevin's | Amy's
+RC | What is very old? | the orange | the umbrella | the box
+RT | Whose umbrella is in the box? | The umbrella is Kevin's.
+RT | How many notebooks are in the box? | Three notebooks are in the box.
+RT | Is the eraser Leo's? | No, the eraser isn't Leo's.
+RS | What is in your backpack today?
+RS | What are those things on the wall of your classroom?
+# grammar
+GT | This / that / these / those + a / an
+R | **this / that** + one thing → This is a pencil. That is an apple.
+R | **these / those** + two or more things → These are pencils. Those are boxes.
+R | **a** + consonant sound · **an** + vowel sound → a ruler, an eraser, an umbrella
+R | Plurals: **-s** · **-es** · **-y → -ies** · **child → children** → books, boxes, dictionaries, children
+G | This is an eraser, and that is a ruler.
+G | Are these your books on the desk?
+G | Those are not my notebooks.
+G | That is an old umbrella.
+G | These boxes are full of oranges.
+G | Is this your new backpack, Leo?
+# speak-write
+SP | A: Excuse me. What is that? | B: That is the Lost and Found Box. | A: Is this your {eraser}? | B: Yes, it is. Thank you! | eraser / ruler / pencil / notebook / umbrella
+SW | This is my {backpack}. These are my {pencils}. That is {an umbrella}. | Write about things in your classroom with this, these and that.
+## U3 | There Is / There Are + Places | What is in your room?
+# learn
+C | How many bedrooms are there in Kevin's apartment? | There are three bedrooms in Kevin's apartment.
+C | Where is Kevin's cat? | Kevin's cat is under the desk.
+C | Is there a TV in Kevin's room? | No, there isn't a TV in Kevin's room.
+C | What is near Kevin's apartment? | There is a park near Kevin's apartment.
+G | What is on your desk? | There is a lamp on my desk. | There is · on
+G | How many students are there in your class? | There are twenty-five students in my class. | There are · students
+G | Is there a park near your school? | Yes, there is a park near my school. | there is · near
+G | Are there any eggs in your fridge? | No, there aren't any eggs in my fridge. | aren't · any
+V | Mimi the cat is ___ the desk. | under
+V | There is a bed next to the ___. | window
+V | The TV is ___ the sofa and the bookcase. | between
+V | The eggs are in the ___. | fridge
+# battle
+F | There are a cat under the table. | There is a cat under the table.
+F | There is two lamps on the desk. | There are two lamps on the desk.
+F | There isn't some eggs in the fridge. | There aren't any eggs in the fridge.
+F | Is there any books on the bookcase? | Are there any books on the bookcase?
+B | There is a small lamp on my desk.
+B | Are there any chairs in the kitchen?
+B | There are two parks near our school.
+T | What is in your bedroom? | There is a bed and a desk in my bedroom.
+T | Where is your backpack now? | My backpack is under my chair.
+W | between | Make a sentence with the word "between".
+W | behind | Make a sentence with the word "behind".
+C | Which is better for homework, a desk in the bedroom or a table in the kitchen? | a desk in the bedroom | a table in the kitchen
+Z | Fill in: "___ there any apples in the box?" Is or Are?
+S | What is there near your home?
+# words
+bedroom | bed·room | bed/room | 🛏️
+lamp | lamp | l/amp | 💡
+chair | chair | ch/air | 🪑
+window | win·dow | win/dow | 🪟
+sofa | so·fa | so/fa | 🛋️
+kitchen | kitch·en | kitch/en | 🍳
+fridge | fridge | fr/idge | 🧊
+under | un·der | un/der | ⬇️
+behind | be·hind | be/hind | 🔙
+between | be·tween | be/tween | ↔️
+park | park | p/ark | 🏞️
+# reading
+> Kevin's Room
+> Kevin lives in an apartment in Zhubei. There are three bedrooms in the apartment. Kevin's room is small, but Kevin loves it.
+> There is a bed next to the window. There is a desk in front of the bed. On the desk, there is a lamp, and there are two books. Kevin's cat, Mimi, is under the desk.
+> There isn't a TV in Kevin's room. The TV is in the living room, between the sofa and the bookcase.
+> There is a big fridge in the kitchen. Are there any eggs in the fridge? Yes, there are six. Kevin wants an egg sandwich!
+> Near the apartment, there is a park. There are many trees in the park. Kevin and Leo are often there after school.
+RC | Where is the bed in Kevin's room? | next to the window | under the desk | in the kitchen
+RC | How many eggs are there in the fridge? | six | two | three
+RC | Where is the TV? | in the living room | in Kevin's room | in the kitchen
+RT | What is on Kevin's desk? | There is a lamp and there are two books on Kevin's desk.
+RT | Are there many trees in the park? | Yes, there are many trees in the park.
+RT | Where is the TV in the living room? | The TV is between the sofa and the bookcase.
+RS | What is there in your bedroom?
+RS | What is there near your school?
+# grammar
+GT | There is / there are + prepositions of place
+R | **There is** + one thing → There is a cat under the table.
+R | **There are** + two or more things → There are two books on the desk.
+R | **There isn't / There aren't any** · **Is there ...? / Are there any ...?** → Are there any eggs? Yes, there are.
+R | Place words: **in · on · under · next to · behind · in front of · between · near** → The cat is behind the sofa.
+R | **How many ... are there?** → How many students are there? There are twenty-five.
+G | There is a cat under the table.
+G | There are two windows in my bedroom.
+G | Is there a lamp on your desk?
+G | There aren't any eggs in the fridge.
+G | The sofa is between the lamp and the bookcase.
+G | How many chairs are there in the kitchen?
+# speak-write
+SP | A: Is there a park near your home? | B: Yes, there is. It is next to my school. | A: Is there a {bookstore} near your home too? | B: No, there isn't. | bookstore / library / hospital / supermarket / bus stop
+SW | There is {a bed} in my room. There are {two windows}. My {desk} is {next to} the {bed}. | Write about your bedroom.
+## U4 | Present Simple: I / You / We / They | What do you do every day?
+# learn
+C | When do Amy and her friends get up? | Amy and her friends get up early on school days.
+C | What do Amy and Leo like? | Amy and Leo like English.
+C | Where do the students eat lunch? | The students eat lunch in the classroom.
+C | What do Leo and Kevin do after school? | Leo and Kevin play basketball after school.
+G | What time do you get up on school days? | I get up at six thirty. | get up · six thirty
+G | Do you eat breakfast at home? | Yes, I eat breakfast at home. | eat · breakfast
+G | What do you and your friends do after school? | We play basketball after school. | We play · after school
+G | Do your parents watch TV at night? | No, my parents don't watch TV at night. | don't watch · at night
+V | I eat ___ at seven in the morning. | breakfast
+V | We do our ___ after school. | homework
+V | We don't go to school on the ___. | weekend
+V | Kevin and I play ___ in the park. | basketball
+# battle
+F | I doesn't like math. | I don't like math.
+F | They plays basketball after school. | They play basketball after school.
+F | Do you likes English? | Do you like English?
+F | We not go to school on Sundays. | We don't go to school on Sundays.
+B | We eat lunch in the classroom every day.
+B | Do you take the bus to school?
+B | My friends and I don't watch TV.
+T | What do you do on weekends? | I visit my grandparents on weekends.
+T | What do you eat for breakfast? | I eat bread and drink milk for breakfast.
+W | homework | Make a sentence with the word "homework".
+W | library | Make a sentence with the word "library".
+C | Which do you like better after school, playing sports or reading books? | playing sports | reading books
+Z | Say the negative: "I like math."
+S | What do you do after school every day?
+# words
+breakfast | break·fast | break/fast | 🥞
+lunch | lunch | l/unch | 🍱
+dinner | din·ner | din/ner | 🍝
+homework | home·work | home/work | 📝
+weekend | week·end | week/end | 🗓️
+morning | morn·ing | morn/ing | 🌅
+basketball | bas·ket·ball | bas/ket/ball | 🏀
+piano | pi·an·o | pi/an/o | 🎹
+library | li·brar·y | li/brar/y | 📚
+early | ear·ly | ear/ly | ⏰
+bus | bus | b/us | 🚌
+together | to·geth·er | to/geth/er | 👫
+# reading
+> Our School Day
+> Hi, I'm Amy. My friends and I go to Zhubei Junior High. We get up early on school days. I get up at six thirty.
+> I eat breakfast with my family. We don't eat a big breakfast. We usually have eggs and milk. Then I take the bus to school.
+> At school, we have seven classes. Leo and I like English, but we don't like math very much. At noon, we eat lunch in the classroom. After lunch, we sleep for a short time.
+> After school, Leo and Kevin play basketball. I don't play basketball. I go to the library and do my homework. At night, I practice the piano.
+> On weekends, we don't go to school. My friends and I see a movie or ride bikes together. Do you like weekends? We love weekends!
+RC | How many classes do the students have? | seven | six | eight
+RC | What do the students do after lunch? | sleep for a short time | play basketball | go home
+RC | What do Amy and her friends do on weekends? | see a movie or ride bikes | go to school | do math homework
+RT | What do Amy and her family usually have for breakfast? | Amy and her family usually have eggs and milk.
+RT | Do Amy and Leo like math? | No, Amy and Leo don't like math very much.
+RT | Do Amy and her family eat a big breakfast? | No, Amy and her family don't eat a big breakfast.
+RS | What do you and your friends do at lunchtime?
+RS | What do you usually do on weekends?
+# grammar
+GT | Present simple: I / you / we / they
+R | Habits and facts: **I / you / we / they + verb** → We play basketball after school.
+R | Negative: **don't + verb** → I don't like math.
+R | Question: **Do + subject + verb ...?** → Do you like English? Yes, I do. / No, I don't.
+R | Time words: **every day · on Mondays · after school · at night** → I read at night.
+G | I get up at six every day.
+G | We don't go to school on Sundays.
+G | Do you and Leo walk to school?
+G | My friends and I play basketball after school.
+G | They don't eat breakfast at home.
+G | We practice the piano every night.
+G | What do you do on weekends?
+# speak-write
+SP | A: What do you do after school? | B: I play basketball with Leo. | A: Do you {read books} after school too? | B: No, I don't. I do my homework. | read books / watch TV / play games / ride a bike / go to the library
+SW | I get up at {six thirty}. I {eat breakfast} with my family. After school, I {play basketball}. I don't {watch TV} at night. | Write about your school day.
+## U5 | Present Simple: He / She / It | What does your family do every day?
+# learn
+C | Where does Leo's father work? | Leo's father works in a restaurant.
+C | What time does Leo's mother get up? | Leo's mother gets up at five thirty.
+C | What does Grandma do every morning? | Grandma walks in the park every morning.
+C | When does Mia study English? | Mia studies English every evening.
+G | What does your mother do in the morning? | My mother cooks breakfast in the morning. | cooks · breakfast
+G | Does your best friend play basketball? | Yes, my best friend plays basketball. | plays · basketball
+G | What time does your school start? | My school starts at seven thirty. | starts · seven thirty
+G | Does your father watch TV at night? | No, my father doesn't watch TV at night. | doesn't watch · at night
+V | Leo's mother works at a ___ near home. | hospital
+V | Grandma reads the ___ in the evening. | newspaper
+V | Lucky is the family ___. | dog
+V | Leo's father is a ___ in a restaurant. | cook
+# battle
+F | Leo play basketball after school. | Leo plays basketball after school.
+F | My sister studys English every day. | My sister studies English every day.
+F | She don't like coffee. | She doesn't like coffee.
+F | Does Amy likes cats? | Does Amy like cats?
+F | He watchs TV at night. | He watches TV at night.
+B | My mother goes to work by bus.
+B | Does your brother play the piano?
+B | Kevin doesn't eat breakfast at home.
+T | What does your best friend do after school? | My best friend plays games after school.
+T | What does your mother do on weekends? | My mother goes shopping on weekends.
+W | hospital | Make a sentence with the word "hospital".
+W | walk | Make a sentence with the word "walk".
+C | Which pet is better for a busy family, a cat or a dog? | a cat | a dog
+Z | Say the "she" form of these verbs: watch, go, study.
+S | What does one person in your family do every day?
+# words
+father | fa·ther | fa/ther | 👨
+mother | moth·er | moth/er | 👩
+grandma | grand·ma | grand/ma | 👵
+nurse | nurse | n/urse | 🩺
+cook | cook | c/ook | 🧑‍🍳
+office | of·fice | of/fice | 🏢
+hospital | hos·pi·tal | hos/pi/tal | 🏥
+evening | eve·ning | eve/ning | 🌆
+dog | dog | d/og | 🐶
+walk | walk | w/alk | 🚶
+study | stud·y | stud/y | 📖
+newspaper | news·pa·per | news/pa/per | 📰
+# reading
+> Leo's Busy Family
+> Leo lives with his family in Zhubei. Everyone in Leo's family is busy.
+> Leo's father is a cook. He works in a restaurant. He goes to work at ten and comes home late. He doesn't eat dinner with the family on weekdays.
+> Leo's mother is a nurse. She works at a hospital near their home. She gets up at five thirty every morning. She watches the news before work.
+> Grandma doesn't have a job now. She walks in the park every morning. In the evening, she reads the newspaper and cooks dinner.
+> Leo's sister, Mia, studies English every evening. Leo plays basketball after school. And what about Lucky, the family dog? Lucky sleeps all day! Does Lucky work? No, he doesn't!
+RC | What is Leo's mother's job? | a nurse | a cook | a teacher
+RC | What does Leo's mother do before work? | watches the news | walks the dog | reads the newspaper
+RC | Who sleeps all day? | Lucky | Grandma | Mia
+RT | Does Leo's father eat dinner with the family on weekdays? | No, Leo's father doesn't eat dinner with the family on weekdays.
+RT | What does Grandma do in the evening? | Grandma reads the newspaper and cooks dinner.
+RT | What does Leo do after school? | Leo plays basketball after school.
+RS | What does your mother or father do every morning?
+RS | What does your best friend like to do?
+# grammar
+GT | Present simple: he / she / it
+R | **he / she / it + verb-s** → Leo plays. Mom works. The dog sleeps.
+R | **-es / -ies / has**: go → **goes** · watch → **watches** · study → **studies** · have → **has**
+R | Negative: **doesn't + verb** → Grandma doesn't have a job.
+R | Question: **Does + subject + verb ...?** → Does Leo play basketball? Yes, he does.
+R | **What / Where / When does ...?** → Where does Leo's mother work?
+G | My sister studies English every evening.
+G | Leo's father works in a restaurant.
+G | Does Amy take the bus to school?
+G | Grandma doesn't drink coffee in the morning.
+G | What time does the store open?
+G | The dog sleeps under the sofa all day.
+G | Ms. Lin teaches English at our school.
+# speak-write
+SP | A: What does your mother do? | B: My mother is a nurse. She works at a hospital. | A: Does your mother {cook dinner} every day? | B: Yes, she does. | cook dinner / walk the dog / read the newspaper / watch TV / go shopping
+SW | My {mother} is a {nurse}. {She} gets up at {six}. {She} {walks the dog} after work. | Write about one person in your family.
+## U6 | Present continuous: be + V-ing | What are people doing right now?
+# learn
+C | What is Amy doing on Saturday morning? | Amy is making a video call to Leo.
+C | What is Leo's grandma cooking? | Leo's grandma is cooking eggs.
+C | What are the kids outside doing? | The kids are playing soccer outside.
+C | What is Amy's dad doing in the rain? | Amy's dad is washing the car in the rain.
+G | What are you doing right now? | I am studying English right now. | am studying · right now
+G | What is Ms. Lin doing at the moment? | Ms. Lin is writing on the board. | is writing · board
+G | Is Kevin sleeping now? | No, Kevin isn't sleeping. He is playing games. | isn't sleeping · is playing
+G | Look! What are the students doing in the park? | The students are running in the park. | are running · park
+V | Listen! Amy is ___ a song. | singing
+V | Leo is ___ in the pool now. | swimming
+V | Shh! The baby is ___. | sleeping
+V | We are ___ for the English test. | studying
+# battle
+F | Amy is play the piano now. | Amy is playing the piano now.
+F | Look! The boys running in the park. | Look! The boys are running in the park.
+F | Kevin are writing a letter. | Kevin is writing a letter.
+F | I am makeing a cake right now. | I am making a cake right now.
+F | What you are doing now? | What are you doing now?
+B | Ms. Lin is reading a book now.
+B | My friends are swimming in the pool.
+B | Look! The cat is sleeping on the sofa.
+T | What is your mom doing right now? | My mom is cooking dinner right now.
+T | What are your classmates doing at the moment? | My classmates are reading books at the moment.
+W | dancing | Make a sentence with the word "dancing".
+W | listening | Make a sentence with the word "listening".
+C | Which is more fun on Sunday, playing games or playing basketball? | playing games | playing basketball
+Z | What is the -ing form of "run"?
+S | What are you doing right now? Tell the class.
+# words
+playing | play·ing | play/ing | ⚽
+running | run·ning | run/ning | 🏃
+swimming | swim·ming | swim/ming | 🏊
+cooking | cook·ing | cook/ing | 🍳
+singing | sing·ing | sing/ing | 🎤
+dancing | danc·ing | danc/ing | 💃
+sleeping | sleep·ing | sleep/ing | 😴
+writing | writ·ing | writ/ing | ✍️
+studying | stud·y·ing | stud/y/ing | 📚
+watching | watch·ing | watch/ing | 📺
+listening | lis·ten·ing | lis/ten/ing | 🎧
+now | now | n/ow | ⏰
+# reading
+> Amy's Video Call
+> It is Saturday morning. Amy is sitting on her bed. She is making a video call to her friend Leo. Leo is visiting his grandma in Tainan this weekend.
+> "What are you doing, Leo?" Amy asks. "I'm eating breakfast with Grandma," Leo says. "She is cooking eggs. Grandpa is reading the newspaper."
+> Then Leo shows Amy the window. "Look! Some kids are playing soccer outside. A man is running with his dog. It's very sunny here."
+> "It's raining in Zhubei," Amy says. "My little brother is sleeping. Mom is watching TV, and Dad is washing the car in the rain!" Leo laughs. "Your dad is funny. Is he getting wet?" "Yes, he is!" Amy says.
+> At the end, Amy waves. "I'm studying for a test now. Talk to you later, Leo!"
+RC | Where is Leo this weekend? | in Tainan | in Zhubei | at school
+RC | What is Leo's grandpa doing? | reading the newspaper | cooking eggs | washing the car
+RC | What is the weather like in Zhubei? | rainy | sunny | windy
+RT | What is Leo doing with Grandma? | Leo is eating breakfast with Grandma.
+RT | What is the man outside doing? | The man is running with his dog.
+RT | What is Amy studying for now? | Amy is studying for a test now.
+RS | Imagine a video call right now. What is your family doing?
+RS | Look out the window. What are people doing?
+# grammar
+GT | Present continuous: am / is / are + V-ing
+R | I **am** + V-ing · you / we / they **are** + V-ing · he / she / it **is** + V-ing → Leo is eating breakfast.
+R | Spelling: make → **making** · run → **running** · study → **studying**
+R | Negative **isn't / aren't + V-ing** → Kevin isn't sleeping.
+R | Questions **Are you + V-ing?** · **What is he doing?** → What are you doing?
+R | Signal words: **now · right now · at the moment · Look! · Listen!**
+G | Look! The kids are playing soccer in the park.
+G | Mom is cooking dinner now.
+G | Dad is washing the dishes in the kitchen.
+G | What are you doing right now?
+G | I am doing my homework at the moment.
+G | Leo isn't watching TV now.
+G | Listen! Amy is singing in her room.
+# speak-write
+SP | A: Hi, Leo! What are you doing? | B: I'm watching TV. What about you? | A: I'm {reading} a comic book. | B: Cool! Talk to you later. | reading / drawing / making / writing
+SW | Right now, I am {sitting in class}. My friend is {reading a book}. The teacher is {writing on the board}. | Write about what people are doing now.
+## U7 | Can / can't: ability and permission | What can you do, and what can't you do?
+# learn
+C | What can Amy play very well? | Amy can play the piano very well.
+C | How many balls can Leo juggle? | Leo can juggle five balls.
+C | What can't Super Kevin do? | Super Kevin can't ride a bike.
+C | What can Kevin do at the talent show? | Kevin can do magic.
+G | What can you do well? | I can draw pictures well. | can draw · well
+G | Can your dad cook? | Yes, my dad can cook noodles. | can cook · noodles
+G | What can't penguins do? | Penguins can't fly. | can't fly · penguins
+G | Can students eat in the classroom? | No, students can't eat in the classroom. | can't eat · classroom
+V | Amy can play the ___ very well. | piano
+V | Leo can ___ five balls. | juggle
+V | Kevin can do ___ tricks. | magic
+V | Ms. Lin can speak three ___. | languages
+# battle
+F | Amy can sings well. | Amy can sing well.
+F | Leo cans swim. | Leo can swim.
+F | Kevin can to ride a bike. | Kevin can ride a bike.
+F | Do you can speak English? | Can you speak English?
+B | Super Kevin can fly over the city.
+B | Can I use your phone, Mom?
+B | My little brother can't swim yet.
+T | What can you cook? | I can cook fried rice.
+T | What can't your pet do? | My dog can't climb trees.
+W | guitar | Make a sentence with the word "guitar".
+W | talent | Make a sentence with the word "talent".
+C | Which is a better talent, singing or doing magic? | singing | doing magic
+Z | What is the long form of "can't"?
+S | What can you do well, and what can't you do?
+# words
+talent | tal·ent | tal/ent | 🌟
+guitar | gui·tar | gui/tar | 🎸
+piano | pi·an·o | pi/an/o | 🎹
+magic | mag·ic | mag/ic | 🪄
+juggle | jug·gle | jug/gle | 🤹
+dance | dance | d/ance | 💃
+draw | draw | dr/aw | 🎨
+ride | ride | r/ide | 🚲
+speak | speak | sp/eak | 🗣️
+cook | cook | c/ook | 🍳
+swim | swim | sw/im | 🏊
+language | lan·guage | lan/guage | 🌏
+# reading
+> The Talent Show
+> Every year, Zhubei Junior High has a talent show. This year, Ms. Lin's class is ready. Everyone can do something different.
+> Amy can play the piano very well. She can also sing, but she can't dance. Leo can't sing at all, but he can juggle five balls! Kevin can do magic. He can make a coin disappear.
+> Super Kevin is a little different. He can fly, and he can lift a car. But he can't ride a bike! "Can you help me?" he asks Leo. "Sure, I can teach you," Leo says.
+> Before the show, Ms. Lin tells the class the rules. "You can bring your guitar, but you can't eat in the hall. You can take photos, but you can't talk during the show."
+> At the end, everyone claps. Can Ms. Lin's class win the prize? Yes, they can!
+RC | What can't Amy do? | dance | sing | play the piano
+RC | What can Kevin make disappear? | a coin | a ball | a car
+RC | Where can't students eat? | in the hall | at home | in the park
+RT | What can Super Kevin lift? | Super Kevin can lift a car.
+RT | Who can teach Super Kevin to ride a bike? | Leo can teach Super Kevin to ride a bike.
+RT | What can students bring to the show? | Students can bring their guitars.
+RS | What talent can you show at a talent show?
+RS | What are two rules in your classroom? Use can or can't.
+# grammar
+GT | Can / can't: ability and permission
+R | **can + base verb** → Amy can sing. (not: can sings)
+R | **can't = cannot** → Leo can't sing at all.
+R | Questions **Can + subject + base verb?** → Can you swim? Yes, I can. / No, I can't.
+R | Permission **Can I ...?** · requests **Can you ...?** → Can I use your pen?
+G | Kevin can speak three languages.
+G | Super Kevin can fly, but he can't ride a bike.
+G | Can your dog swim in the river?
+G | Can I open the window, please?
+G | You can't eat in the classroom.
+G | Can you help me with my homework?
+G | What can your little brother do?
+# speak-write
+SP | A: Can you {swim}? | B: Yes, I can. Can you? | A: No, I can't. Can you teach me? | B: Sure! Let's practice on Saturday. | swim / dance / juggle / cook / draw
+SW | I can {play the piano}, but I can't {dance}. My friend can {swim}, but my friend can't {cook}. | Write about what you and your friend can and can't do.
+## U8 | Wh-questions: what / who / where / how | How do we ask for information?
+# learn
+C | Where is Mia from? | Mia is from Kaohsiung.
+C | How old is Mia? | Mia is thirteen years old.
+C | Who is Mia's best friend in Zhubei? | Mia's best friend is Leo.
+C | What is Mia's hobby? | Mia's hobby is drawing.
+G | Where does your uncle work? | My uncle works at a hospital. | works · at a hospital
+G | When do you get up on school days? | I get up at seven o'clock. | get up · at seven
+G | How much is the bubble tea? | The bubble tea costs sixty dollars. | costs · sixty dollars
+G | Whose bag is this? | This is Amy's bag. | Amy's · bag
+V | ___ is your birthday? It's in May. | When
+V | ___ pencil case is this? It's Leo's. | Whose
+V | Mia's ___ is drawing. | hobby
+V | Kevin can't find his ___. | wallet
+# battle
+F | Where your uncle works? | Where does your uncle work?
+F | What time you get up? | What time do you get up?
+F | How old are your sister? | How old is your sister?
+F | Who's bag is this? | Whose bag is this?
+F | Where does Leo lives? | Where does Leo live?
+B | Where does your best friend live?
+B | What time does the movie start?
+B | How many books do you have?
+T | What is your favorite food? | My favorite food is beef noodles.
+T | How do you go to school? | I go to school by bus.
+W | birthday | Make a sentence with the word "birthday".
+W | favorite | Make a sentence with the word "favorite".
+C | Which is a better question for a new friend, "What is your hobby?" or "How old are you?" | What is your hobby? | How old are you?
+Z | Which question word asks about a place?
+S | You meet a new student. What three questions do you ask?
+# words
+who | who | wh/o | 🧑
+what | what | wh/at | ❓
+where | where | wh/ere | 📍
+when | when | wh/en | 📅
+whose | whose | wh/ose | 🎒
+how | how | h/ow | 🤔
+interview | in·ter·view | in/ter/view | 🎙️
+birthday | birth·day | birth/day | 🎂
+hobby | hob·by | hob/by | 🎨
+favorite | fa·vor·ite | fa/vor/ite | ❤️
+lost | lost | l/ost | 🔍
+wallet | wal·let | wal/let | 👛
+# reading
+> Meet Our New Student
+> This week, our school newspaper has an interview with a new student. Amy talks to Mia, a new girl in Ms. Lin's class.
+> Amy: Where are you from, Mia? Mia: I'm from Kaohsiung. My family lives in Zhubei now. Amy: How old are you? Mia: I'm thirteen. My birthday is in May. Amy: Who is your best friend here? Mia: Leo is! He sits next to me.
+> Amy: What is your hobby? Mia: I love drawing. I draw cats every day. Amy: When do you get up? Mia: I get up at six thirty. I take the bus to school. Amy: How do you like Zhubei? Mia: I like it a lot. The people are very friendly.
+> After the interview, Mia sees a wallet on the floor. "Whose wallet is this?" she asks. Amy looks at it. "It's Kevin's! He can't find it." Mia gives the wallet to Kevin. "Thank you, Mia!" Kevin says. "Welcome to our school!"
+RC | When is Mia's birthday? | in May | in June | in March
+RC | What does Mia draw every day? | cats | dogs | flowers
+RC | Whose wallet does Mia find? | Kevin's | Leo's | Amy's
+RT | When does Mia get up? | Mia gets up at six thirty.
+RT | How does Mia go to school? | Mia takes the bus to school.
+RT | Who sits next to Mia? | Leo sits next to Mia.
+RS | What question do you want to ask Mia?
+RS | How do you like your school?
+# grammar
+GT | Wh-questions
+R | **Wh-word + be + subject?** → Where is Mia from?
+R | **Wh-word + do / does + subject + base verb?** → Where does your uncle work?
+R | **what** thing · **who** person · **where** place · **when / what time** time · **how** way
+R | **how old · how many · how much** → How much is the bubble tea?
+R | **whose + noun** → Whose bike is this? It's Amy's.
+G | Where does your uncle work?
+G | How old is your cousin?
+G | Whose bike is this? It's Amy's.
+G | What time does Leo get up?
+G | Who is your English teacher?
+G | How many students are in your class?
+G | When is your birthday party?
+# speak-write
+SP | A: Excuse me. Whose {bag} is this? | B: I think it's Kevin's. | A: Where is Kevin now? | B: He is in the library. | bag / umbrella / jacket / pencil case / water bottle
+SW | My name is {Amy}. I am {thirteen}. I live in {Zhubei}. My hobby is {drawing}. | Answer four Wh-questions about you: who, how old, where and what.
+## U9 | Past simple (I): was / were | Where were you yesterday?
+# learn
+C | Where were Amy and her brother in the morning? | Amy and her brother were at the park.
+C | Why were there many people at the mall? | There were many people because a new movie was out.
+C | What was the weather like in the evening? | It was rainy in the evening.
+C | Where was Amy's mom all day? | Amy's mom was at the office all day.
+G | Where were you last Sunday? | I was at the park last Sunday. | was · last Sunday
+G | How was the weather yesterday? | It was rainy yesterday. | was · rainy
+G | Were your friends at the mall last night? | Yes, my friends were at the mall last night. | were · mall
+G | Was Kevin at school yesterday? | No, Kevin wasn't at school yesterday. | wasn't · yesterday
+V | The movie ___ was full of people. | theater
+V | Everyone was ___ about the new movie. | excited
+V | It was ___ yesterday, so we were at home. | rainy
+V | ___, Kevin wasn't at school. | Yesterday
+# battle
+F | It is rainy yesterday. | It was rainy yesterday.
+F | They was happy last night. | They were happy last night.
+F | Nobody were at the mall yesterday. | Nobody was at the mall yesterday.
+F | Kevin and Leo was at the park. | Kevin and Leo were at the park.
+F | Was you at home last night? | Were you at home last night?
+B | My cousins were at my house last weekend.
+B | There were many people in the theater.
+B | Everyone was excited about the new movie.
+T | Where were you last Saturday? | I was at my grandma's house last Saturday.
+T | How were you this morning? | I was a little tired this morning.
+W | yesterday | Make a sentence with the word "yesterday".
+W | excited | Make a sentence with the word "excited".
+C | Which was more fun when you were little, the park or the toy store? | the park | the toy store
+Z | Fill in was or were: "They ___ at home last night."
+S | Where were you yesterday afternoon, and how was your day?
+# words
+yesterday | yes·ter·day | yes/ter/day | 📅
+theater | the·a·ter | the/a/ter | 🎬
+excited | ex·cit·ed | ex/cit/ed | 🤩
+tired | tired | t/ired | 🥱
+hungry | hun·gry | hun/gry | 🍔
+sleepy | sleep·y | sleep/y | 😴
+rainy | rain·y | rain/y | 🌧️
+sunny | sun·ny | sun/ny | ☀️
+funny | fun·ny | fun/ny | 😂
+busy | bus·y | bus/y | 💼
+mall | mall | m/all | 🛍️
+full | full | f/ull | 🈵
+# reading
+> Yesterday Was a Crazy Day
+> My name is Amy. Yesterday was Sunday, and it was a crazy day. In the morning, it was sunny and hot. My brother and I were at the park with our dog. The park was full of people, and everyone was happy.
+> In the afternoon, I was at the Zhubei shopping mall with Leo and Kevin. There were many people at the mall because a new movie was out. The theater was full! We were very excited, and the movie was so funny.
+> In the evening, it was rainy. I was tired and hungry. Was Mom at home? No, she wasn't. She was at the office all day because she was very busy. Dad wasn't at home either. He was at the gym.
+> Last night, there was a new video online, but I was too sleepy. At ten o'clock, I was in bed. It was a long day, but it was a great day!
+RC | What day was yesterday for Amy? | Sunday | Saturday | Monday
+RC | Who was Amy with at the mall? | Leo and Kevin | her brother | her mom
+RC | Where was Amy's dad in the evening? | at the gym | at the office | at the mall
+RT | How was the weather in the morning? | It was sunny and hot in the morning.
+RT | How was the movie? | The movie was so funny.
+RT | Where was Amy at ten o'clock? | Amy was in bed at ten o'clock.
+RS | How was your day yesterday?
+RS | Where were you last night, and who were you with?
+# grammar
+GT | Past simple (I): was / were
+R | **was** with I · he · she · it · one person or thing → Amy was tired.
+R | **were** with you · we · they · two or more → My friends were at the park.
+R | Negative **wasn't / weren't** · question **Was / Were + subject ...?** → Was it cold yesterday? Yes, it was.
+R | **There was / There were** → There were many people at the mall.
+R | **Nobody / Everyone + was** → Nobody was at school last Sunday.
+G | My friends and I were at the park yesterday.
+G | Were you at home last night?
+G | Nobody was at the mall yesterday.
+G | It is sunny today, but it was rainy yesterday.
+G | Kevin wasn't at school yesterday.
+G | There were many people in the shopping mall.
+G | Where were you last Sunday afternoon?
+# speak-write
+SP | A: Where were you yesterday? | B: I was at the {park}. | A: Was it fun? | B: Yes! Everyone was very happy. | park / mall / zoo / beach / library
+SW | Yesterday was {Sunday}. It was {sunny}. I was at {the park} with {my friends}. I was {happy} because {the weather was nice}. | Write about you yesterday: the day, the weather, the place and your feelings.
+## U10 | Past simple (II): regular / irregular | What did you do yesterday?
+# learn
+C | What did Super Kevin eat for breakfast? | Super Kevin ate two eggs for breakfast.
+C | Where did the girl lose her cat? | The girl lost her cat at the Zhubei night market.
+C | Where did Super Kevin find the cat? | Super Kevin found the cat on a roof.
+C | What did Super Kevin write in the evening? | Super Kevin wrote a blog post.
+G | What did you eat for breakfast this morning? | I ate toast and drank milk. | ate · drank
+G | Where did your family go last weekend? | My family went to the zoo last weekend. | went · last weekend
+G | What did Kevin buy at the mall? | Kevin bought a new phone at the mall. | bought · phone
+G | Did Leo clean his room yesterday? | No, Leo didn't clean his room yesterday. | didn't clean · yesterday
+V | Super Kevin ___ to the night market immediately. | flew
+V | Super Kevin ___ the cat back to the girl. | gave
+V | Super Kevin ___ a photo with the cat. | took
+V | The blog post went ___ on the Internet. | viral
+# battle
+F | Kevin buyed a new phone yesterday. | Kevin bought a new phone yesterday.
+F | I didn't went to school last Friday. | I didn't go to school last Friday.
+F | Did you saw the monster? | Did you see the monster?
+F | Yesterday Super Kevin goes to the mall and fought the monster. | Yesterday Super Kevin went to the mall and fought the monster.
+F | Amy writed a blog post last night. | Amy wrote a blog post last night.
+B | Super Kevin flew to the mall immediately.
+B | My father bought a new car last week.
+B | I didn't have breakfast this morning.
+T | What did you do last Sunday? | I played basketball with my friends last Sunday.
+T | What did you see on the way to school today? | I saw a big dog on the way to school.
+W | found | Make a sentence with the word "found".
+W | secret | Make a sentence with the word "secret".
+C | Which was a better day for Super Kevin, fighting a monster or finding a lost cat? | fighting a monster | finding a lost cat
+Z | What is the past tense of "buy"?
+S | What did you do last weekend? Tell us with First, Then and Finally.
+# words
+went | went | w/ent | 🚶
+saw | saw | s/aw | 👀
+flew | flew | fl/ew | 🦸
+found | found | f/ound | 🔍
+gave | gave | g/ave | 🎁
+wrote | wrote | wr/ote | ✍️
+took | took | t/ook | 📸
+looked | looked | l/ooked | 🔎
+clapped | clapped | cl/apped | 👏
+secret | se·cret | se/cret | 🤫
+viral | vi·ral | vi/ral | 📱
+immediately | im·me·di·ate·ly | im/me/di/ate/ly | ⚡
+# reading
+> Super Kevin and the Lost Cat
+> Last Saturday was a quiet day for Super Kevin. He usually stays in his secret room on weekends, but last Saturday he had a big job.
+> First, he woke up at eight and ate two eggs. Then, he saw a post online. A little girl lost her cat at the Zhubei night market! Super Kevin flew there immediately.
+> He looked everywhere. He searched under tables and behind the food stands. After that, he heard a small meow on a roof. He climbed up and found the cat. The cat was scared, so Super Kevin held it gently.
+> Finally, he gave the cat back to the girl. She smiled and said, "Thank you!" Everyone clapped. In the evening, Super Kevin wrote a blog post and took a photo with the cat. The post went viral! He didn't sleep early that night because he read all the comments.
+RC | When did Super Kevin wake up? | at eight | at six | at ten
+RC | What did Super Kevin hear on the roof? | a small meow | a loud dog | a phone
+RC | Why didn't Super Kevin sleep early? | He read all the comments. | He ate a late dinner. | He fought a monster.
+RT | How did Super Kevin go to the night market? | Super Kevin flew to the night market.
+RT | What did the girl say to Super Kevin? | The girl said thank you to Super Kevin.
+RT | What did Super Kevin do in the evening? | Super Kevin wrote a blog post and took a photo with the cat.
+RS | What did Super Kevin do first, then and finally? Tell the story.
+RS | What did you do last Saturday?
+# grammar
+GT | Past simple (II): regular and irregular verbs
+R | Regular: **V + -ed** → clean → cleaned · look → looked · stop → stopped
+R | Irregular families: **AAA** cut / cut / cut · **ABA** come / came / come · **ABB** buy / bought / bought · **ABC** eat / ate / eaten
+R | Negative **didn't + base verb** → I didn't go. (not: didn't went)
+R | Question **Did + subject + base verb?** → Did you see the teacher?
+R | Story order: **First, ... Then, ... After that, ... Finally, ...**
+G | He cleaned his room yesterday morning.
+G | My family went to the zoo last weekend.
+G | Did you see the teacher five minutes ago?
+G | Last Friday, Kevin lost his wallet on the school bus.
+G | First, Super Kevin ate a quick breakfast.
+G | I didn't watch TV last night.
+G | Finally, Super Kevin won the fight!
+# speak-write
+SP | A: What did you do last weekend? | B: I {went to the beach}. How about you? | A: I stayed home and watched a movie. | B: That sounds fun! | went to the beach / visited my grandma / played basketball / made a cake / ate hot pot
+SW | Last {Saturday}, I {went to the night market}. First, I {ate fried chicken}. Then, I {bought a new hat}. Finally, I {took photos with my friends}. | Write about a day last week. Use First, Then and Finally.
