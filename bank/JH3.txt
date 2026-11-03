@@ -1,295 +1,145 @@
 === JH3 ===
-// Junior High Grammar 3 - Zhubei grammar class, one grammar point per unit. Sections like the Oxford Discover banks (# learn, # battle, # words, # reading, # grammar, # speak-write).
-## U1 | Present Perfect: Experience | What have you done in your life so far?
-# learn
-C | What has Mia already climbed with her father? | Mia has already climbed Yushan with her father.
-C | How many times has Mia visited Taipei 101? | Mia has visited Taipei 101 twice.
-C | What food has Mia eaten only once? | Mia has eaten Indian food only once.
-C | What has Mia never seen in her life? | Mia has never seen snow in her life.
-G | Have you ever been to Japan? | Yes, I have been to Japan before. | have been · before
-G | What is the best food you have ever eaten? | The best food I have ever eaten is beef noodles. | have ever eaten · best
-G | Has your best friend ever ridden a horse? | No, my best friend has never ridden a horse. | has never · ridden
-G | What have you already learned this year? | I have already learned how to play the guitar. | have already · learned
-V | Winning the speech contest was my biggest ___ this year. | achievement
-V | Lisa has ___ eaten Indian food, but she wants to try it. | never
-V | I have ___ finished my homework, so I can play games now. | already
-V | Kevin has ___ Taipei 101 three times with his family. | visited
-# battle
-F | Did you ever eat sushi in Japan? | Have you ever eaten sushi in Japan?
-F | I have went to Tainan with my grandparents before. | I have been to Tainan with my grandparents before.
-F | My brother has ate stinky tofu twice. | My brother has eaten stinky tofu twice.
-F | Tom never seen a real panda before. | Tom has never seen a real panda before.
-F | I have saw that movie three times. | I have seen that movie three times.
-B | I have never ridden a horse before.
-B | Have you ever tried stinky tofu at a night market?
-B | Mia has already climbed Yushan with her father.
-T | What is one thing you have never done? | I have never seen snow in my life.
-T | Which country have you been to? | I have been to Japan, but I haven't been to Korea yet.
-W | experience | Make a sentence with the word "experience".
-W | proud | Make a sentence with the word "proud".
-C | Which is a better experience, climbing a mountain or swimming in the sea? | climbing a mountain | swimming in the sea
-Z | What is the past participle of "eat"?
-S | What is the most exciting thing you have ever done?
-# words
-experience | ex·pe·ri·ence | ex/pe/ri/ence | 🌟
-achievement | a·chieve·ment | a/chieve/ment | 🏆
-bucket list | buck·et list | buck/et list | 📝
-lifetime | life·time | life/time | ⏳
-proud | proud | pr/oud | 😊
-explorer | ex·plor·er | ex/plor/er | 🧭
-journal | jour·nal | jour/nal | 📓
-never | nev·er | nev/er | 🚫
-already | al·read·y | al/read/y | ✅
-eaten | eat·en | eat/en | 🍣
-visited | vis·it·ed | vis/it/ed | 🗺️
-tried | tried | tr/ied | 🧗
-# reading
-> My Bucket List Challenge
-> Last month, our English teacher gave us a fun challenge. Each student wrote a bucket list of ten things to try before graduation. Now we share the things we have already done.
-> Mia is a ninth grader in Zhubei. She has already climbed Yushan with her father, and she has learned how to swim. She is very proud of these two achievements.
-> Mia has never been abroad, but she has visited Taipei 101 twice. She has tried stinky tofu many times, and she has eaten Indian food only once. "It was spicy, but I loved it!" she says.
-> However, Mia has never ridden a horse, and she has never seen snow. These things are still on her list. She writes every new experience in her explorer's journal. "My life is exciting, and I want to try more things!" Mia says.
-RC | What has Mia learned how to do? | swim | ride a horse | ski
-RC | Where does Mia write her new experiences? | in her explorer's journal | on the classroom whiteboard | in a letter to her teacher
-RC | How many things are on each student's bucket list? | ten | five | twenty
-RT | What two achievements is Mia proud of? | Mia is proud that she has climbed Yushan and learned how to swim.
-RT | What two things has Mia never done? | Mia has never ridden a horse, and she has never seen snow.
-RT | What did Mia think of the Indian food? | Mia thought the Indian food was spicy, but she loved it.
-RS | What is one thing on your bucket list that you have never done?
-RS | Have you ever tried a food that you didn't like?
-# grammar
-GT | Present Perfect: Experience
-R | **have / has + p.p.** = an experience from birth until now  →  I **have been** to Japan before.
-R | **Have you ever** + p.p.?  →  Yes, I **have**. · No, I **haven't**. · No, I **have never** tried it.
-R | Time words **ever / never / already / before** go with the present perfect  →  I **have already learned** how to swim.
-R | Regular p.p. = **V-ed**; irregular p.p. must be memorised  →  visit**ed**, learn**ed**, tri**ed** · **eaten**, **read**, **been**
-G | I have already learned how to swim.
-G | Have you ever eaten Indian food?
-G | My parents have never been to Europe.
-G | This is the best cake I have ever eaten.
-G | Ben has read that comic book twice.
-G | We have visited the science museum before.
-G | Has your sister ever tried bungee jumping?
-# speak-write
-SP | A: What is on your bucket list? | B: I want to try new things. What have you never done? | A: I have never {ridden a horse}. | B: Me neither! Let's try it together someday. | ridden a horse / seen snow / climbed a mountain / eaten stinky tofu / been to Japan
-SW | I have already {learned how to swim}. I have never {seen snow}, but I want to try it! | Write your Lifetime Achievement Report: one thing you have already done and one thing you have never done.
-## U2 | Present Perfect: Just, Yet, Since, For | What have you just done, and what haven't you done yet?
-# learn
-C | What has Ms. Lin just checked? | Ms. Lin has just checked the bus tickets.
-C | How long has Leo studied for the science test? | Leo has studied for the science test for four days.
-C | What hasn't Amy found yet? | Amy hasn't found her hat yet.
-C | Why hasn't Kevin packed anything yet? | Kevin hasn't packed anything yet because he has been sick since yesterday.
-G | How long have you lived in your town? | I have lived in my town for ten years. | have lived · for
-G | Have you finished your homework yet? | No, I haven't finished my homework yet. | haven't finished · yet
-G | What have you just done? | I have just eaten lunch with my friends. | have just · eaten
-G | Since when have you studied English? | I have studied English since I was six. | have studied · since
-V | I have played basketball for two hours, so I am ___. | exhausted
-V | Sam has gone to the teacher's ___ to get the vocabulary cards. | office
-V | I haven't finished my history ___ yet. | report
-V | I have already packed my ___ for the school trip. | schoolbag
-# battle
-F | I have studied English since three years. | I have studied English for three years.
-F | My aunt has lived in Hsinchu for 2020. | My aunt has lived in Hsinchu since 2020.
-F | Have you yet cleaned your desk? | Have you cleaned your desk yet?
-F | Sam has been to the library, so he is not here now. | Sam has gone to the library, so he is not here now.
-F | The school bell has rung just. | The school bell has just rung.
-B | The school bell has just rung.
-B | I haven't finished my English report yet.
-B | My sister has been in the library for three hours.
-T | How long have you known your best friend? | I have known my best friend for five years.
-T | What have you already done today? | I have already eaten breakfast and cleaned my room.
-W | exhausted | Make a sentence with the word "exhausted".
-W | since | Make a sentence with the word "since".
-C | Which is better after school, finishing homework first or resting first? | finishing homework first | resting first
-Z | Since or for: which word goes with "three hours"?
-S | What have you done since this morning?
-# words
-just | just | j/ust | ⏱️
-yet | yet | y/et | ⏳
-since | since | s/ince | 📅
-already | al·read·y | al/read/y | ✅
-exhausted | ex·haust·ed | ex/haust/ed | 😫
-schoolbag | school·bag | school/bag | 🎒
-report | re·port | re/port | 📄
-whiteboard | white·board | white/board | 📋
-hallway | hall·way | hall/way | 🚪
-office | of·fice | of/fice | 🏢
-productive | pro·duc·tive | pro/duc/tive | 💪
-weekend | week·end | week/end | 🎉
-# reading
-> The Day Before the School Trip
-> It is Thursday afternoon, and Class 9B is going to Kenting tomorrow. Ms. Lin has just checked the bus tickets. "Has everyone packed a schoolbag yet?" she asks.
-> Leo has been busy since Monday. He has studied for the science test for four days, and he has just finished it. Now he is completely exhausted, but he is very happy.
-> Amy has already packed her schoolbag, but she hasn't found her hat yet. Kevin hasn't packed anything yet because he has been sick since yesterday.
-> Where is Sam? Sam isn't here. He has gone to the office to get the trip cards, and he hasn't come back yet. Ms. Lin has been to the office too, and she has just come back with a big box of snacks. "Have a great trip, everyone!" she says.
-RC | Where is Class 9B going tomorrow? | to Kenting | to Taipei | to the zoo
-RC | Why is Sam not in the classroom? | Sam has gone to the office. | Sam has been sick since yesterday. | Sam has gone home.
-RC | What has Ms. Lin just come back with? | a big box of snacks | the bus tickets | a new hat
-RT | How does Leo feel now? | Leo is completely exhausted, but he is very happy.
-RT | What has Amy already done? | Amy has already packed her schoolbag.
-RT | What is the difference between Sam and Ms. Lin? | Sam has gone to the office, but Ms. Lin has been to the office and come back.
-RS | What have you done since Monday?
-RS | What is one thing you haven't done yet this week?
-# grammar
-GT | Present Perfect: Just, Yet, Since, For
-R | **just** goes between have/has and the p.p.  →  The school bell **has just rung**! Let's go home.
-R | **yet** goes at the end of negatives and questions  →  I **haven't** finished my report **yet**. · **Have** you cleaned your desk **yet**?
-R | **since** + a point in time · **for** + a length of time  →  **since 2024** / **since this morning** · **for three hours** / **for five days**
-R | **have been to** = went and came back · **have gone to** = went and is still there  →  Sam **has gone to** the office. He isn't here.
-G | Leo has just finished the science test.
-G | Have you packed your schoolbag yet?
-G | Kevin has been sick since yesterday.
-G | We have lived in Zhubei for eight years.
-G | I have already cleaned the whiteboard.
-G | My dad has gone to Tokyo on a business trip.
-G | I have been to the cafeteria twice today.
-# speak-write
-SP | A: Have you seen Sam? | B: Sam isn't here. He has gone to the {office}. | A: Oh! Has Sam come back yet? | B: No, not yet. Let's wait a few minutes. | office / library / cafeteria / gym / nurse's office
-SW | I have {studied for the science test} since {Monday}. I have just {finished my report}, but I haven't {cleaned my room} yet. | Write about your productive week: use since or for, just and yet.
-## U3 | Present Perfect vs Past Simple | Is it finished and cut off, or is it connected to now?
-# learn
-C | How many times has the writer been to Kenting? | The writer has been to Kenting three times.
-C | How did the writer's family go to Kenting last summer? | The writer's family went to Kenting by train.
-C | What did the writer's brother try for the first time? | The writer's brother tried snorkeling for the first time.
-C | When did the writer's family book the hotel? | The writer's family booked the hotel three days ago.
-G | Have you ever eaten sushi? Where did you eat it? | Yes, I have. I ate it at a restaurant near my school. | have · ate
-G | How long has your family lived in your home? | My family has lived in our home since 2015. | has lived · since
-G | What did you do last weekend? | I visited my grandma last weekend. | visited · last weekend
-G | What have you done so far today? | I have eaten breakfast and finished two classes so far. | have eaten · so far
-V | We went to the zoo three days ___. | ago
-V | My family ate dinner at a Japanese ___ last night. | restaurant
-V | I have ___ started a new hobby, and I love it. | recently
-V | Have you ever eaten fresh ___ by the sea? | seafood
-# battle
-F | I have gone to Japan last year. | I went to Japan last year.
-F | Amy has bought a new bag yesterday. | Amy bought a new bag yesterday.
-F | Mr. Wang lived here since 2020. | Mr. Wang has lived here since 2020.
-F | The students didn't finish their homework yet. | The students haven't finished their homework yet.
-F | We have went to the zoo three days ago. | We went to the zoo three days ago.
-B | I saw that movie with my cousin last night.
-B | Have you ever eaten Indian food before?
-B | My sister has studied English since she was six.
-T | When did you start studying English? | I started studying English when I was seven.
-T | How long have you studied at this school? | I have studied at this school for two years.
-W | yesterday | Make a sentence with the word "yesterday".
-W | recently | Make a sentence with the word "recently".
-C | Which is a better place for a summer trip, Kenting or Taipei? | Kenting | Taipei
-Z | Past simple or present perfect? "I ___ (see) that movie yesterday."
-S | Have you ever been to a beach? When did you go, and what did you do there?
-# words
-yesterday | yes·ter·day | yes/ter/day | 📅
-ago | a·go | a/go | ⏪
-recently | re·cent·ly | re/cent/ly | 🆕
-timeline | time·line | time/line | 📏
-restaurant | res·tau·rant | res/tau/rant | 🍽️
-sushi | su·shi | su/shi | 🍣
-seafood | sea·food | sea/food | 🦐
-snorkel | snor·kel | snor/kel | 🤿
-hotel | ho·tel | ho/tel | 🏨
-summer | sum·mer | sum/mer | ☀️
-trip | trip | tr/ip | 🧳
-train | train | tr/ain | 🚆
-# reading
-> Last Summer in Kenting
-> Have you ever been to Kenting? I have been there three times. My last trip was last summer, and it has been my best trip so far.
-> We went there by train in July. On the first day, we swam in the sea and ate seafood at a small restaurant. The next day, my brother tried snorkeling for the first time. He loved it!
-> Since that trip, my brother has watched many videos about fish. He has already bought his own snorkel, and he has saved money for two months for an underwater camera.
-> I haven't gone back to Kenting yet, but my family has recently planned another trip. My dad booked the hotel three days ago, and we leave next Friday. I can't wait!
-RC | When did the writer's family go to Kenting? | in July | in January | in October
-RC | What has the writer's brother already bought? | his own snorkel | an underwater camera | a train ticket
-RC | What did the writer's family do on the first day? | swam in the sea and ate seafood | went snorkeling | booked a hotel
-RT | What has the writer's brother done since the trip? | The writer's brother has watched many videos about fish.
-RT | How long has the writer's brother saved money for a camera? | The writer's brother has saved money for a camera for two months.
-RT | Why can't the writer wait? | The writer can't wait because the family has planned another trip to Kenting.
-RS | Have you ever been to Kenting? Tell us about your trip.
-RS | What did you do last summer, and what have you done since then?
-# grammar
-GT | Present Perfect vs Past Simple
-R | **Past simple** = finished and cut off from now, with a clear past time  →  I **ate** sushi **yesterday**. · She **lived** here **in 2020**.
-R | **Present perfect** = connected to now, with no clear past time  →  I **have eaten** sushi **before**. · She **has lived** here **since 2020**.
-R | Past simple: **yesterday / last week / three days ago / in 2020 / when I was young** · Present perfect: **ever / never / already / yet / just / since / for / so far / recently**
-R | Ask with **Have you ever ...?**, then ask for details in the past simple  →  Have you ever been to Taipei 101? When **did** you **go**? I **went** there last summer.
-G | I went to Kenting with my family last summer.
-G | I have been to Kenting three times so far.
-G | Mr. Chen has lived in Zhubei since 2020.
-G | My cousin lived in Tainan when she was young.
-G | We haven't seen that new movie yet.
-G | My brother broke his arm last Monday.
-G | When did you buy that new bag?
-# speak-write
-SP | A: Have you ever been to Kenting? | B: Yes, I have. I went there last summer. | A: What did you do there? | B: I {swam in the sea}, and I had a great time! | swam in the sea / ate fresh seafood / rode a bike / visited the aquarium / tried snorkeling
-SW | I have been to {Kenting} {twice}. I went there {last summer}, and I {ate fresh seafood}. | Write about a place you have visited: use the present perfect for the experience and the past simple for the details.
-## U4 | Passive Voice (I): be + p.p. | How do we talk about what is done, not who does it?
-# learn
-C | When was the new library opened? | The new library was opened last Saturday.
-C | How many books were given to the library? | Over 3,000 books were given to the library.
-C | What was the fire started by? | The fire was started by an old heater.
-C | Where was the stolen bike found? | The stolen bike was found near the park.
-G | What languages are spoken in Taiwan? | Mandarin and Taiwanese are spoken in Taiwan. | are spoken · in Taiwan
-G | When was your school built? | My school was built about thirty years ago. | was built · ago
-G | Who was the telephone invented by? | The telephone was invented by Alexander Graham Bell. | was invented · by
-G | Are phones allowed in your classroom? | No, phones are not allowed in my classroom. | are not allowed · classroom
-V | The old ___ was built over the river 100 years ago. | bridge
-V | My bike was ___ yesterday, so I walked to school. | stolen
-V | The light bulb was ___ more than 140 years ago. | invented
-V | This letter was ___ by my grandma in 1990. | written
-# battle
-F | The letter was write by Tom. | The letter was written by Tom.
-F | This bridge built 100 years ago. | This bridge was built 100 years ago.
-F | The cakes was made by my mom. | The cakes were made by my mom.
-F | My phone is stolen yesterday. | My phone was stolen yesterday.
-F | The window was breaking by the ball. | The window was broken by the ball.
-B | This temple was built 200 years ago.
-B | The park is cleaned every week.
-B | Is this book sold in Taiwan?
-T | Change to the passive: "Many people visit this museum every year." | This museum is visited by many people every year.
-T | Change to the passive: "Someone stole my bike yesterday." | My bike was stolen yesterday.
-W | invented | Make a sentence with the word "invented".
-W | museum | Make a sentence with the word "museum".
-C | Which invention is more important, the phone or the computer? | the phone | the computer
-Z | What is the past participle of "write"?
-S | Think of a famous building. When was the building built?
-# words
-passive | pas·sive | pas/sive | 🔄
-active | ac·tive | ac/tive | 🏃
-temple | tem·ple | tem/ple | 🛕
-bridge | bridge | br/idge | 🌉
-museum | mu·se·um | mu/se/um | 🏛️
-headline | head·line | head/line | 📰
-library | li·brar·y | li/brar/y | 📚
-rescued | res·cued | res/cued | 🚒
-stolen | sto·len | sto/len | 🦹
-invented | in·vent·ed | in/vent/ed | 💡
-written | writ·ten | writ/ten | ✍️
-broken | bro·ken | bro/ken | 💔
-# reading
-> This Week's Town News
-> A new library was opened in our town last Saturday. It was built in only ten months, and it is visited by hundreds of students every day. Over 3,000 books were given to the library by local families.
-> On Monday night, three kittens were rescued from a burning house. The fire was started by an old heater. Luckily, nobody was hurt, and the kittens were taken to an animal hospital.
-> At our school, a bike was stolen from the parking area on Tuesday. The bike was found near the park the next day. Now all the bikes are locked every afternoon.
-> Finally, a new school song was written by a ninth grader! The song is sung by all the students every morning, and it was played on the radio last week.
-RC | How long did the builders work on the new library? | ten months | ten years | ten weeks
-RC | Where were the three kittens taken? | to an animal hospital | to the new library | to the park
-RC | Who was the new school song written by? | a ninth grader | a music teacher | a local family
-RT | What happened to the three kittens? | The three kittens were rescued from a burning house.
-RT | What is done to all the bikes every afternoon? | All the bikes are locked every afternoon.
-RT | Where was the new school song played last week? | The new school song was played on the radio last week.
-RS | Which news story do you like best, and why?
-RS | What is one thing that is made or sold in your town?
-# grammar
-GT | Passive Voice (I): be + p.p.
-R | Active stresses the doer; the **passive** stresses what is done  →  Tom cleans the room.  →  The room **is cleaned** (by Tom).
-R | Present: **am / is / are + p.p.** · Past: **was / were + p.p.**  →  The game **is played** by millions of people. · Three cats **were rescued** from the fire.
-R | Three steps: object → subject · verb → **be + p.p.** · subject → **by** + doer (can be left out)  →  They built this temple. → This temple **was built** (by them).
-R | Negative: **be + not + p.p.** · Question: **Be + S + p.p.?**  →  Phones **are not allowed** in class. · **Is** this book **sold** in Taiwan?
-R | Use the **p.p.**, not V-ing  →  The window **was broken**. (passive) · The window was breaking. (past continuous)
-G | A new school was built in Zhubei.
-G | This song is loved by teenagers around the world.
-G | Three cats were rescued from the fire.
-G | The flowers are watered every day.
-G | My bike was stolen yesterday afternoon.
-G | When was the classroom door locked?
-G | The classroom wasn't cleaned last Friday.
-# speak-write
-SP | A: Look at this headline! | B: What happened? | A: A {bike} was stolen from our school yesterday. | B: Oh no! Was it found near the school? | bike / phone / laptop / bag / camera
-SW | {Sushi} is eaten {all over the world}. It is made with {rice and fish}. It was invented in {Japan}. | Write a passive riddle about a food or an object, and let your classmates guess it.
+// Junior High Grammar 3 - Zhubei grammar class. Exam template: # choice (Q), # cloze (T, > text with [1]..[5], K), # reading-test (T, > text, RQ). Correct option first; the game shuffles.
+## U1 | Present Perfect: Experience |
+# choice
+Q | I have ___ sushi before, and I really love it. | eaten | ate | eat | eating
+Q | ___ you ever been to Taipei 101 with your family? | Have | Did | Do | Are
+Q | Riding a horse is on my bucket list because I have ___ done it. | never | ever | already | yet
+Q | A: Have you ever tried stinky tofu? B: No, I ___. It smells too strong. | haven't | didn't | don't | wasn't
+Q | Mia has already ___ Yushan with her father twice. | climbed | climb | climbing | climbs
+Q | This is the best cake I have ___ eaten in my life! | ever | never | yet | already
+Q | Kevin ___ Indian food, so he wants to try it this weekend. | has never eaten | has ever eaten | has never ate | never eaten
+Q | We ___ to Japan twice, but we have never visited Korea. | have been | have went | has been | are been
+Q | Lisa has ___ that Harry Potter book three times. | read | readed | reading | reads
+Q | A: Has your sister ever seen snow? B: Yes, she ___. She saw it in Japan. | has | have | did | does
+Q | I am very proud of myself because I have ___ learned how to swim. | already | ever | yet | before
+Q | Have you ever ___ a famous singer in person? | met | meet | meeting | meeted
+Q | Winning the speech contest is the biggest ___ I have ever had. | achievement | achieve | achieved | achieving
+Q | Tom ___ a real panda twice so far, once in Taipei and once in China. | has seen | seen | have seen | seeing
+Q | Ben ___ never been abroad, but he wants to travel to Europe someday. | has | have | is | was
+# cloze
+T | My Explorer's Journal
+> Hi, I'm Amy. I love trying new things, so I keep an explorer's journal. In it, I write down every new experience. I [1] to Hualien twice, and I have [2] Indian food with my cousin. It was spicy but delicious!
+> I have also learned how to ride a bike, and I am very proud [3] myself. However, there are still many things on my bucket list. I have [4] seen snow, and I haven't climbed Yushan yet. My dad has climbed it three times. "[5] you ever climbed a mountain at night?" I asked him. "Yes, I have. It was amazing!" he said.
+K | 1 | have been | have went | has been | was been
+K | 2 | eaten | ate | eat | eating
+K | 3 | of | at | for | in
+K | 4 | never | ever | yet | already
+K | 5 | Have | Did | Do | Has
+# reading-test
+T | Experience Bingo in Class 9A
+> Last Friday, Ms. Yvonne's class played Experience Bingo. Each student got a card with sixteen boxes, like "has been to Taipei 101" or "has eaten Indian food." Students walked around and asked, "Have you ever ...?" When a classmate said, "Yes, I have," he or she signed the box.
+> Leo won the game first. He found people for four boxes in a row in just ten minutes. "Many of my classmates have been to Taipei 101, so that box was easy," he said. The hardest box was "has seen a whale." Only one student, Nina, has done it. She saw one on a boat trip in Hualien last summer.
+> After the game, the students wrote their Lifetime Achievement Reports. Kevin wrote, "I have never flown on a plane, but I have already ridden a horse twice." Ms. Yvonne put all the reports on the classroom wall. "Your lives are more exciting than you think," she told them.
+RQ | What is the passage mainly about? | a class game about life experiences | a trip to Taipei 101 | how to watch whales in Hualien | Kevin's first plane trip
+RQ | Why was the Taipei 101 box easy for Leo? | Many classmates have been there. | Leo has been there many times. | Ms. Yvonne helped him with it. | It was the first box.
+RQ | Which is TRUE about Kevin? | He has ridden a horse before. | He has flown on a plane twice. | He won the bingo game first. | He has seen a whale.
+RQ | In the first paragraph, "signed the box" means the classmate ... | wrote his or her name in it | drew a picture in it | asked a question about it | won a prize for it
+## U2 | Present Perfect: Just, Yet, Since, For |
+# choice
+Q | I have studied English ___ I was six years old. | since | for | ago | when
+Q | My sister has been in the library ___ three hours. | for | since | ago | during
+Q | The school bell has ___ rung! Let's go home. | just | yet | ever | ago
+Q | I can't go out to play. I haven't finished my history report ___. | yet | already | just | ever
+Q | A: Where is Sam? B: He ___ the teacher's office. He isn't here now. | has gone to | has been to | have gone to | goes to
+Q | I ___ the cafeteria twice today, and now I am back in class. | have been to | have gone to | has been to | has gone to
+Q | A: Have you guys cleaned the whiteboard ___? B: Yes, we have just done it! | yet | ago | since | for
+Q | Leo has studied hard for the science test ___ Tuesday. | since | for | from | ago
+Q | I have played basketball for two hours, so I am completely ___. | exhausted | exhausting | exhaust | exhausts
+Q | Kevin ___ sick since yesterday, so he can't come to school today. | has been | was | is | have been
+Q | I have already ___ my math homework, but I haven't packed my schoolbag yet. | finished | finish | finishing | finishes
+Q | My parents ___ in Zhubei since 2011. | have lived | has lived | lived | are live
+Q | I ___ that movie last night, so I can tell you about it. | saw | have seen | have saw | see
+Q | A: Is Amy ready for the school trip? B: Yes. She has ___ packed her schoolbag. | already | yet | since | ever
+Q | ___ Ms. Lin come back from the office yet? | Has | Did | Is | Have
+# cloze
+T | My Productive Week
+> Dear Diary, it is Friday night, and I am exhausted. I have studied for the big science test [1] Monday. I have also worked on my history report [2] five days. Tonight, I have [3] finished it! Now I can finally relax.
+> But my week is not over yet. Our class is going to Kenting tomorrow, and I haven't packed my schoolbag [4]. I can't find my hat, either. My brother can't help me because he [5] Taichung to visit our grandma. He will come back on Sunday, so I have to find it by myself.
+K | 1 | since | for | ago | at
+K | 2 | for | since | in | ago
+K | 3 | just | yet | ever | since
+K | 4 | yet | already | just | ever
+K | 5 | has gone to | has been to | have gone to | went from
+# reading-test
+T | A Busy Week for Class 9B
+> Dear parents, this has been a busy week for Class 9B. The students have prepared for the school science fair since Monday. Most groups have already finished their posters, and two groups have just started their experiments. They haven't written their reports yet, so they will stay after school on Thursday.
+> Some of you have asked about Mr. Chen, our science teacher. He has gone to Tainan for a teachers' meeting, and he hasn't come back yet. He will return next Monday. Until then, Ms. Wu will help the students with their projects.
+> Also, the new school library has been open for two weeks now. Many students have been to it already, and they love the comfortable chairs. Please remind your child to return borrowed books on time.
+> Thank you for your help. Best wishes, Ms. Yvonne
+RQ | Why did Ms. Yvonne write this email? | to tell parents about the class's week | to invite parents to a meeting | to ask parents to buy new chairs | to say the science fair is over
+RQ | What haven't the students done yet? | written their reports | made their posters | visited the new library | started any experiments
+RQ | Where is Mr. Chen now? | in Tainan | in the new library | in the classroom | at home
+RQ | What can we learn about the new library? | It opened about two weeks ago. | Students don't like it at all. | Mr. Chen works there now. | It has no chairs yet.
+## U3 | Present Perfect vs Past Simple |
+# choice
+Q | I ___ to Japan with my family last year. | went | have gone | have been | have went
+Q | Ms. Wang ___ here since 2020, and she loves this town. | has lived | lived | lives | is living
+Q | Amy ___ a new bag at the mall yesterday. | bought | has bought | have bought | buys
+Q | We ___ to the zoo three days ago and saw the pandas. | went | have went | have gone | go
+Q | A: Have you ever eaten Indian food? B: Yes. I ___ it at a restaurant last month. | ate | have eaten | eat | have ate
+Q | A: Have you ever been to Taipei 101? B: Yes, I have. A: When ___ there? | did you go | have you gone | have you been | do you go
+Q | The students haven't finished their science homework ___. | yet | ago | last night | yesterday
+Q | My brother ___ his arm last Monday, so he can't play basketball now. | broke | has broken | breaks | has broke
+Q | Mr. Lin has known his best friend ___ they were in elementary school. | since | for | when | ago
+Q | I have been to Kenting three times ___. | so far | last year | two days ago | in 2020
+Q | My grandma ___ in Tainan when she was young. | lived | has lived | have lived | lives
+Q | I ___ this game for two years, and I still play it every weekend. | have played | played | play | was playing
+Q | A: ___ you visit your grandma last Sunday? B: Yes, I did. | Did | Have | Do | Has
+Q | Kevin has ___ started a new hobby, and he practices it every day. | recently | yesterday | ago | last week
+Q | Our class ___ fresh seafood at a small restaurant in Kenting last summer. | ate | has eaten | have eaten | eats
+# cloze
+T | A Rainy Day in Taipei
+> Last Saturday, my family [1] to Taipei by train. We wanted to visit Taipei 101, but it rained all day. So we [2] the National Palace Museum instead. I have been to that museum twice [3], but it was my little sister's first time. She loved the old jade cabbage.
+> After that, we ate dinner at a Japanese restaurant. I [4] sushi many times since I was little, but this was the best sushi I have ever eaten! We came home late at night. We [5] Taipei 101 yet, so we plan to go back next month.
+K | 1 | went | has gone | have gone | goes
+K | 2 | visited | have visited | visit | visiting
+K | 3 | so far | ago | last year | yesterday
+K | 4 | have eaten | ate | eat | has eaten
+K | 5 | haven't visited | didn't visit | don't visit | hasn't visited
+# reading-test
+T | Meet Our New Classmate
+> Hana is a new student in Class 9C. She came to Taiwan from Japan in August, and she has studied at our school for three months. We asked her some questions for the school newspaper.
+> "Have you ever been to Taiwan before?" we asked. "Yes, I have," Hana said. "I visited Taipei with my parents when I was ten. We went to Taipei 101 and ate beef noodles. Since then, I have always wanted to live here."
+> Hana has made many friends so far. She has joined the dance club, and she has already learned some Chinese. "Last week, I ordered bubble tea by myself for the first time!" she said happily. But there is one thing she hasn't done yet. "I haven't tried stinky tofu. My friends say it smells terrible, but they love it."
+> At the end of the interview, Hana smiled and said, "Taiwan has become my second home."
+RQ | What is the passage mainly about? | a new student from Japan | a trip to Taipei 101 | how to make bubble tea | the school dance club
+RQ | When did Hana first visit Taiwan? | when she was ten | in August this year | last week | three months ago
+RQ | What hasn't Hana done yet? | tried stinky tofu | ordered bubble tea | joined a club | eaten beef noodles
+RQ | What does Hana mean by "Taiwan has become my second home"? | She is happy living in Taiwan. | She wants to go back to Japan. | She has two houses in Taiwan. | She misses her parents a lot.
+## U4 | Passive Voice (I): be + p.p. |
+# choice
+Q | This old temple in Lukang ___ about 200 years ago. | was built | is built | built | was building
+Q | The letter was ___ by Tom, not by his sister. | written | write | wrote | writing
+Q | This song ___ by teenagers around the world. | is loved | loves | is loving | are loved
+Q | Three cats ___ from the fire by the firefighters last night. | were rescued | was rescued | are rescued | rescued
+Q | The park ___ every week, so it is always clean. | is cleaned | cleans | is cleaning | are cleaned
+Q | Phones ___ in class. Please put them in your bag. | are not allowed | do not allow | are not allow | not allowed
+Q | My bike ___ yesterday, so I walked to school today. | was stolen | is stolen | was stole | stole
+Q | ___ this comic book sold in Taiwan bookstores? | Is | Does | Do | Has
+Q | A: When ___ the door locked? B: At ten o'clock last night. | was | is | did | does
+Q | The window ___ by a baseball during the game this afternoon. | was broken | was breaking | is broken | broke
+Q | The flowers in our school garden are ___ every morning. | watered | water | watering | waters
+Q | The telephone ___ by Alexander Graham Bell in 1876. | was invented | invented | was invent | is inventing
+Q | The classrooms ___ yesterday, so they were dirty this morning. | weren't cleaned | didn't clean | aren't cleaned | wasn't cleaned
+Q | This museum is ___ by many people every year. | visited | visit | visiting | visits
+Q | A new school ___ in Zhubei last year, and it has a big library. | was built | is built | built | has built
+# cloze
+T | Big News from Our Town
+> Last weekend, a fire started in an old house near Zhubei Station. Nobody [1], but three cats were inside the house. Luckily, they [2] by two brave firefighters. Later, the news said the fire [3] by an old heater.
+> Now the cats live with a kind family on Main Street. They [4] by the family's daughter, Amy, every morning and every night. "They eat a lot, and they sleep on my bed!" Amy said. The old house was badly damaged, [5] the owner will build a new one next year.
+K | 1 | was hurt | hurt | were hurt | is hurt
+K | 2 | were rescued | was rescued | rescued | are rescued
+K | 3 | was started | started | is started | was starting
+K | 4 | are fed | feed | are feeding | is fed
+K | 5 | so | but | because | if
+# reading-test
+T | Passive Riddles: Guess What It Is
+> Ms. Yvonne's class played a guessing game today. Each student wrote a riddle in the passive voice, and the others guessed the answer. Here are three of the best riddles.
+> Riddle 1: It is eaten by people all over the world. It is made with rice and fish. It was invented in Japan a long time ago. What is it?
+> Riddle 2: It was built in Taipei, and it was opened in 2004. For a few years, it was called the tallest building in the world. Every New Year's Eve, fireworks are shot from it. What is it?
+> Riddle 3: It was invented by Alexander Graham Bell in 1876. In the past, it was used only at home, but now it is carried in almost everyone's pocket. Calls are made with it every day. What is it?
+RQ | What is the passage mainly about? | riddles written in the passive voice | the history of Japanese food | famous buildings in Taipei | how phones are made
+RQ | What is the answer to Riddle 2? | Taipei 101 | a temple | a museum | a bridge
+RQ | According to Riddle 3, how is the telephone different now? | It is carried in people's pockets. | It is used only at home. | It was invented in Japan. | It is made with rice.
+RQ | Which sentence is TRUE according to the riddles? | Sushi was invented in Japan. | Taipei 101 was opened in 1876. | Fireworks are shot from a telephone. | The riddles were written by Ms. Yvonne.
