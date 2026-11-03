@@ -1218,7 +1218,10 @@ function rushMsg(pid,m){const R=S.rush,p=P(pid);if(!R||!R.on||!p||!m)return;cons
     if(r.streak%5===0){p.coins+=1;floatText(pid,`🔥 ${r.streak} in a row! +1`,'#e8590c');burst(pid,['🔥','⭐'],10,{speed:18});}}
   else r.streak=0;
   if(p.pair)pairFlip(p);changed();}
-function rushSendItems(conn){const R=S.rush;if(!R)return;try{conn.send({t:'rush-items',ver:R.ver,items:R.items});}catch(e){}}
+function rushSendItems(conn){const R=S.rush;if(!R)return;const list=[],seen={};
+  R.items.forEach(it=>{if(it.grp&&!seen[it.grp]){seen[it.grp]=1;list.push({p:it.grp,title:it.title,text:it.text});}const o={...it};if(o.grp){delete o.text;delete o.title;}list.push(o);});
+  const parts=[];let cur=[],len=0;list.forEach(x=>{const l=JSON.stringify(x).length;if(cur.length&&len+l>9000){parts.push(cur);cur=[];len=0;}cur.push(x);len+=l;});if(cur.length)parts.push(cur);
+  parts.forEach((pc,i)=>setTimeout(()=>{try{conn.send({t:'rush-items',ver:R.ver,part:i,of:parts.length,list:pc});}catch(e){}},i*40));}
 function rushPub(){const R=S.rush;if(!R)return null;return {on:R.on,ended:R.ended,ver:R.ver,endsIn:R.endsAt-Date.now(),min:R.min,level:R.level,units:R.units,n:R.items.length};}
 function rushMy(pid){const R=S.rush;if(!R||!pid)return null;const r=R.res[pid];return r?{done:r.done,retry:r.retry,a:r.a,ok:r.ok,streak:r.streak}:{done:{},retry:{},a:0,ok:0,streak:0};}
 function rushTick(){const R=S&&S.rush;if(!R||!R.on)return;const left=R.endsAt-Date.now();const el=$('#rush-clock');if(el)el.textContent=fmtTime(left);if(left<=0)rushEnd();}
@@ -2116,7 +2119,10 @@ function studentConnect(){
   peer.on('error',e=>{ST.status=e.type==='peer-unavailable'?`Game ${JOIN} is not open yet. Waiting for the teacher…`:'Connection problem. Retrying…';sRender();retrySoon();});
 }
 function crTabletAnswer(answer){const s=ST.s,b=s&&s.battle;if(!CR.inRunner||!CR.init.me)return;crEvent('answer',{student:CR.init.me.id,question:b&&b.q?b.q.ci:undefined,answer:String(answer).slice(0,300),correct:null,auto:false});}
-function sRecv(m){if(!m)return;if(m.t==='rush-items'){ST.rushItems=m.items;ST.rushVer=m.ver;ST.qKey='';sRender();return;}if(m.t==='state'){ST.s=m.s;ST.me=m.me;ST.my=m.my;if(CR.inRunner&&CR.init.me&&!ST.me&&!ST.claimSent){ST.claimSent=true;sSend({t:'claim',crId:CR.init.me.id,av:ST.av});setTimeout(()=>{ST.claimSent=false;},4000);}if(m.s.battle)ST.deadline=Date.now()+m.s.battle.endsIn;sRender();}if(m.t==='toast')toast(m.msg);if(m.t==='fx'){if(m.k==='wrong'){toast('Not quite! Try again.');const l=$('#bline');if(l&&!RM){l.classList.remove('shake');void l.offsetWidth;l.classList.add('shake');}}if(m.k==='right')sBurst($('#s-dock'),['🧩','✨','⭐'],14);if(m.k==='cheer'&&ST.mini)ST.mini.react('happy',m.tier);}}
+function sRecv(m){if(!m)return;if(m.t==='rush-items'){if(m.items){ST.rushItems=m.items;ST.rushVer=m.ver;ST.qKey='';sRender();return;}
+  if(!ST.rushBuf||ST.rushBuf.ver!==m.ver||ST.rushBuf.of!==m.of)ST.rushBuf={ver:m.ver,of:m.of,parts:{}};ST.rushBuf.parts[m.part]=m.list||[];
+  if(Object.keys(ST.rushBuf.parts).length===m.of){const all=[].concat(...Array.from({length:m.of},(_,i)=>ST.rushBuf.parts[i]));const pas={};all.forEach(x=>{if(x.p)pas[x.p]=x;});
+    ST.rushItems=all.filter(x=>!x.p).map(x=>x.grp&&pas[x.grp]?{...x,title:pas[x.grp].title,text:pas[x.grp].text}:x);ST.rushVer=m.ver;ST.rushBuf=null;ST.qKey='';sRender();}return;}if(m.t==='state'){ST.s=m.s;ST.me=m.me;ST.my=m.my;if(CR.inRunner&&CR.init.me&&!ST.me&&!ST.claimSent){ST.claimSent=true;sSend({t:'claim',crId:CR.init.me.id,av:ST.av});setTimeout(()=>{ST.claimSent=false;},4000);}if(m.s.battle)ST.deadline=Date.now()+m.s.battle.endsIn;sRender();}if(m.t==='toast')toast(m.msg);if(m.t==='fx'){if(m.k==='wrong'){toast('Not quite! Try again.');const l=$('#bline');if(l&&!RM){l.classList.remove('shake');void l.offsetWidth;l.classList.add('shake');}}if(m.k==='right')sBurst($('#s-dock'),['🧩','✨','⭐'],14);if(m.k==='cheer'&&ST.mini)ST.mini.react('happy',m.tier);}}
 function retrySoon(){clearTimeout(ST.retry);ST.retry=setTimeout(studentConnect,3000);}
 function sBgHost(){return ST.embedded?$('#sv-app'):null;}
 function sBackground(scene){
@@ -2475,7 +2481,7 @@ function rushNorm(t){t=String(t||'').toLowerCase().replace(/[‘’ʼ]/g,"'").re
   return t.replace(/[.,!?;:"()]/g,' ').replace(/\s+/g,' ').trim();}
 function rushOkF(given,alts){const g=rushNorm(given),r=String(given||'').toLowerCase().replace(/[.,!?;:"]/g,' ').replace(/\s+/g,' ').trim();return alts.some(a=>rushNorm(a)===g||String(a).toLowerCase().replace(/[.,!?;:"]/g,' ').replace(/\s+/g,' ').trim()===r);}
 function sRushDock(s,me){const R=s.rush,my=(ST.my&&ST.my.rush)||{done:{},retry:{},a:0,ok:0,streak:0},pop=$('#s-pop'),dock=$('#s-dock');
-  if(!ST.rushItems||ST.rushVer!==R.ver){if(ST.rushAsked!==R.ver){ST.rushAsked=R.ver;sSend({t:'rush-get'});}const k='load|'+R.ver;if(ST.qKey!==k){ST.qKey=k;pop.className='s-pop';pop.innerHTML='<div class="qp">⚡ Loading questions…</div>';pop.hidden=false;dock.innerHTML='';}return;}
+  if(!ST.rushItems||ST.rushVer!==R.ver){if(ST.rushAsked!==R.ver){ST.rushAsked=R.ver;ST.rushAskedAt=Date.now();sSend({t:'rush-get'});}const k='load|'+R.ver;if(ST.qKey!==k){ST.qKey=k;pop.className='s-pop';pop.innerHTML='<div class="qp">⚡ Loading questions…</div><small class="hint">If nothing appears in a few seconds, reload this page.</small>';pop.hidden=false;dock.innerHTML='';}return;}
   if(!ST.rush||ST.rush.ver!==R.ver)ST.rush={ver:R.ver,order:rushOrder(ST.rushItems,ST.me+'|'+R.ver),placed:[],fb:null,retried:{},draft:null};
   const L=ST.rush,items=ST.rushItems,byId=Object.fromEntries(items.map(x=>[x.id,x])),unitT=n=>{const u=(R.units||[]).find(x=>x.n===n);return u?('U'+u.n+' '+u.title):'U'+n;};
   ST.rushEnd=Date.now()+R.endsIn;const head=`<div class="qtag k-RUSH">⚡ Practice Rush · <span id="rtm">${fmtTime(ST.rushEnd-Date.now())}</span></div>`;
@@ -2518,7 +2524,7 @@ function sRushClick(a,b){const s=ST.s,L=ST.rush;if(!s||!s.rush||!L)return;const 
   if(!sSend(msg))return;crTabletAnswer('rush:'+it.id+':'+(ok?'ok':'x'));
   if(ok){sBurst($('#s-dock'),['⭐','✨','🪙'],12);L.placed=[];L.draft=null;}else{L.fb={id:it.id,given:it.k==='V'?given:(it.k==='F'?given:given)};if(navigator.vibrate)try{navigator.vibrate(60);}catch(e){}}
   setTimeout(redraw,ok?250:0);}
-setInterval(()=>{const e=document.getElementById('rtm');if(e&&ST&&ST.rushEnd)e.textContent=fmtTime(ST.rushEnd-Date.now());},1000);
+setInterval(()=>{const e=document.getElementById('rtm');if(e&&ST&&ST.rushEnd)e.textContent=fmtTime(ST.rushEnd-Date.now());const r=ST&&ST.s&&ST.s.rush;if(r&&r.on&&ST.rushVer!==r.ver&&ST.rushAskedAt&&Date.now()-ST.rushAskedAt>4000){ST.rushAskedAt=Date.now();ST.rushBuf=null;sSend({t:'rush-get'});}},1000);
 function sPlayClick(e){
   if(ST.view!=='play')return;const b=e.target.closest('[data-sact]');if(!b||b.disabled)return;const a=b.dataset.sact;
   if(a==='shop'){sOpenShop(true);return;}
