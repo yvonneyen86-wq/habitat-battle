@@ -1821,25 +1821,38 @@ function crEvent(kind,data){if(CR.inRunner)try{CR.event(kind,data);}catch(e){}}
 function crStart(){if(CR.inRunner&&S&&!S.crStarted){S.crStarted=true;crEvent('start',{});}}
 function crSplitLines(ls){const L=[],B=[];let mode=null;for(const raw of ls){const l=String(raw).trim();if(l==='# learn'){mode='L';continue;}if(l==='# battle'){mode='B';continue;}if(!l||l.startsWith('//')||l.startsWith('##')||l.startsWith('==='))continue;const t=l.split('|')[0].trim().toUpperCase();const isB=mode==='B'||(mode==null&&!!QTYPES[t]&&l.includes('|'));(isB?B:L).push(l);}return{L,B};}
 function crHostSetup(){const init=CR.init;const sess=init.session||{};
-  if(S.crSession!==sess.id){S=newState({scene:S.scene,teamCount:S.teamCount,teams:S.teams,battleMin:(init.card&&init.card.minutes)||S.battleMin});S.crSession=sess.id;}
+  if(S.crSession!==sess.id){const wasG=S.crGrouped;S=newState({scene:S.scene,teamCount:wasG?2:S.teamCount,teams:wasG?TEAM_DEFAULT.map(t=>({...t})):S.teams,battleMin:(init.card&&init.card.minutes)||S.battleMin});S.crSession=sess.id;}
   S.showQR=false;
   const qs=init.questions&&Array.isArray(init.questions.lines)?init.questions.lines.map(String):null;
   if(qs){S.crLines=qs;const{L,B}=crSplitLines(qs);S.crLearnSrc={};if(!L.length&&B.length){B.forEach(l=>{const q=parseQ(l);if(!q||!q.text)return;const card=q.type==='B'?`Say this sentence: ${q.model}`:q.type==='W'?`Make a sentence with "${q.word}".`:q.text;const line=q.model&&q.type!=='B'?`${card} | ${q.model}`:card;L.push(line);S.crLearnSrc[line]=l;});}
     if(L.length)S.qText=L.join('\n');if(B.length)S.bText=B.join('\n');S.qOrder=[];S.bOrder=[];S.bankSel=null;}
-  const studs=Array.isArray(init.students)?init.students:[];const counts=S.teams.slice(0,S.teamCount).map((_,i)=>Object.values(S.players).filter(p=>p.team===i).length);
+  const studs=Array.isArray(init.students)?init.students:[];
+  const grp=crGroups(init,studs);if(!grp&&S.crGrouped){S.teams=TEAM_DEFAULT.map(t=>({...t}));S.teamCount=2;Object.values(S.players).forEach(p=>{if(p.team>=2)p.team=p.team%2;});}S.crGrouped=!!grp;if(grp){while(S.teams.length<4)S.teams.push({...TEAM_DEFAULT[S.teams.length]});S.teamCount=Math.max(2,Math.min(4,grp.groups.length));grp.groups.slice(0,S.teamCount).forEach((g,i)=>{S.teams[i]={...S.teams[i],name:g.label};});}
+  const counts=S.teams.slice(0,S.teamCount).map((_,i)=>Object.values(S.players).filter(p=>p.team===i).length);
   studs.forEach(st=>{if(!st||!st.id)return;const name=String(st.name||st.id).replace(/\s+/g,' ').trim().slice(0,14)||String(st.id).slice(0,14);let p=Object.values(S.players).find(x=>x.crId===st.id);
-    if(!p){const team=counts.indexOf(Math.min(...counts));counts[team]++;const pid=newPlayer(name,CHARS[rnd(CHARS.length)].id,team);p=S.players[pid];p.crId=st.id;p.pre=true;p.online=false;p.av=avFromName(name);}else p.name=name;});
+    const gi=grp?grp.of[st.id]:undefined,gTeam=gi==null?null:gi%S.teamCount;
+    if(!p){const team=gTeam!=null?gTeam:counts.indexOf(Math.min(...counts));counts[team]++;const pid=newPlayer(name,CHARS[rnd(CHARS.length)].id,team);p=S.players[pid];p.crId=st.id;p.pre=true;p.online=false;p.av=avFromName(name);}else{p.name=name;if(gTeam!=null)p.team=gTeam;}
+    p.crGroup=gi!=null?grp.groups[gi].key:undefined;});
   Object.values(S.players).forEach(p=>{if(p.crId&&!studs.some(st=>st&&st.id===p.crId))delete S.players[p.pid];});
-  S.log=[`📋 ${sess.className||'Class'} · ${studs.length} students. Tablets join by themselves.`];
+  S.log=[`📋 ${sess.className||'Class'} · ${studs.length} students${grp?` in ${grp.groups.length} groups`:''}. Tablets join by themselves.`];
   crLoadUnit(init);crMode();
   CR.on('cr:end',crFinish);}
 /* runner: the unit the runner sent (## Un … with # words/# reading/# grammar/# speak-write) becomes the Learning Time unit */
 function crLoadUnit(init){try{const lines=S.crLines||[];if(!lines.some(l=>/^##\s/.test(l)))return;const us=parseBankText(lines.join('\n'));if(!us.length)return;const lv=init.questions&&init.questions.level?(init.questions.series||'OD')+init.questions.level:(S.bankSel&&S.bankSel.level)||'OD';S.ltUnits=us.map(u=>ltFromUnit(u,lv));S.ltU=0;}catch(e){}}
 /* runner: index.html?mode=words|reading|grammar|speak opens that Learning Time activity right away (battle / none = normal console) */
 function crMode(){const m=(new URLSearchParams(location.search).get('mode')||'').toLowerCase();const cat={words:'words',reading:'reading',grammar:'grammar',speak:'sw',sw:'sw','speak-write':'sw'}[m];if(!cat||S.lt)return;const u=ltUnit();if(!u||!ltHas(u,cat))return;try{ltStart(cat);}catch(e){}}
+/* runner groups: cr:init may carry groups (init.groups / init.teams = [{id,name,students:[ids]}]) or a group on each student (group / groupId / groupName / team / teamName); each group becomes one game team (max 4; more groups share teams) */
+function crGroups(init,studs){const key=v=>v==null||v===''?null:String(typeof v==='object'?(v.id??v.name??''):v);const of={},groups=[],idx={};
+  const addG=(k,name)=>{if(idx[k]==null){idx[k]=groups.length;groups.push({key:k,name:name==null?k:String(name)});}return idx[k];};
+  const list=Array.isArray(init.groups)?init.groups:Array.isArray(init.teams)?init.teams:null;
+  if(list)list.forEach((g,i)=>{if(!g)return;const k=key(g.id??g.key??g.name??('g'+(i+1)));const gi=addG(k,g.name??g.label??k);const mem=g.students||g.members||g.studentIds||g.ids||[];(Array.isArray(mem)?mem:[]).forEach(m=>{const id=typeof m==='object'?m&&m.id:m;if(id!=null)of[String(id)]=gi;});});
+  studs.forEach(st=>{if(!st||!st.id||of[st.id]!=null)return;const g=st.group??st.groupId??st.team??st.teamId??st.groupName??st.teamName;const k=key(g);if(k==null)return;const nm=typeof g==='object'?(g.name??k):(st.groupName??st.teamName??k);of[st.id]=addG(k,nm);});
+  if(groups.length<2)return null;
+  groups.forEach((g,i)=>{const n=String(g.name||'').trim();g.label=/^[\x20-\x7e]{1,14}$/.test(n)&&!/^\d+$/.test(n)?n:(/^\d+$/.test(n)?'Group '+n:'Group '+(i+1));});
+  return {groups,of};}
 function crFinish(){if(!CR.inRunner||H.crFinished)return;H.crFinished=true;try{if(S.phase==='battle'&&S.battle){H.hideResults=false;endBattle();}}catch(e){}
   const ps=Object.values(S.players).filter(p=>p.crId).sort((a,b)=>(b.pts||0)-(a.pts||0)||b.coins-a.coins);
-  crEvent('finish',{results:ps.map((p,i)=>({student:p.crId,score:p.pts||0,points:p.coins||0,rank:i+1,team:teamName(p.team)}))});}
+  crEvent('finish',{results:ps.map((p,i)=>({student:p.crId,score:p.pts||0,points:p.coins||0,rank:i+1,team:p.crGroup!=null?p.crGroup:teamName(p.team)}))});}
 /* ===== Learning Time activities (Words / Reading / Grammar / Speak & Write) — content comes from the four extra sections of a bank unit ===== */
 const LT_CATS={words:['🔤','Words'],reading:['📖','Reading'],grammar:['🧩','Grammar'],sw:['💬','Speak & Write']};
 /* R lines in # grammar = Learn Grammar box (title | line | line …); shown on the board before the sentences */
