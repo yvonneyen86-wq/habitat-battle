@@ -1264,7 +1264,7 @@ function rushOverlay(o){if(S.phase!=='gather')return false;const R=S.rush;
       <div class="rtop">${rows.slice(0,8).map((x,i)=>`<div class="rtp" style="--tc:${teamColor(x.p.team)}"><b>${i<3?['🥇','🥈','🥉'][i]:i+1}</b><span>${charById(x.p.char).e} ${esc(x.p.name)}</span><em>✓ ${x.r.ok}${x.r.streak>=3?' 🔥'+x.r.streak:''}</em></div>`).join('')}</div>
       <div class="hint">Answer on your tablet · ✓ = +1 🪙 · 5 in a row = bonus 🔥</div>`;o.hidden=false;return true;}
   const hist=S.rushHist||[];if(H.rushView!=null&&hist[H.rushView]){const rep=hist[H.rushView];
-    o.innerHTML=`<div class="kind">📊 Practice Report · ${esc(rep.level)} · ${rep.min} min</div>${rushReportHTML(rep,true)}<div class="acts"><button class="btn" data-act="rush-copy" data-i="${H.rushView}">📋 Copy report</button><button class="btn primary" data-act="rush-close">Close</button></div>`;o.hidden=false;return true;}
+    o.innerHTML=`<div class="kind">📊 Practice Report · ${esc(rep.level)} · ${rep.min} min</div>${rushReportHTML(rep,true)}<div class="acts"><button class="btn" data-act="rush-copy" data-i="${H.rushView}">📋 Copy report</button><button class="btn primary" data-act="rush-close">Close</button>${CR.inRunner?'':'<button class="btn" data-act="new-game">🆕 New class</button>'}</div>`;o.hidden=false;return true;}
   return false;}
 function pairFlip(p){if(p&&p.pair)p.turn=((p.turn||0)+1)%p.pair.length;}
 function pairTally(p){if(p&&p.pair){p.pairOk=p.pair.map((x,i)=>(p.pairOk||[])[i]||0);p.pairOk[p.turn||0]++;}}
@@ -1682,7 +1682,7 @@ function renderOverlay(){
   const o=$('#ovl');
   if(rushOverlay(o))return;
   if(S.phase==='end'&&S.results){const r=S.results,m=['🥇','🥈','🥉','🏅'];
-    o.innerHTML=`<div class="kind">Battle Results</div><div class="podium">${r.teams.map((t,i)=>`<div class="pr${i===0?' first':''}" style="--tc:${t.color}"><span class="m">${m[i]||''}</span><span>${esc(t.name)}</span><small style="color:var(--muted)">❤️ ${t.pct}% left</small><b>🏆 ${t.pts}</b></div>`).join('')}</div>${r.mvp&&r.mvp.pts>0?`<div class="mvp">⭐ MVP: ${r.mvp.e} <b>${esc(r.mvp.name)}</b> (${esc(r.mvp.team)}) · 🏆 ${r.mvp.pts}</div>`:''}${r.pairs&&r.pairs.length?`<div class="pairs">${r.pairs.map(x=>`<span style="--tc:${x.color}">${x.e} ${(x.names||[x.a,x.b]).map((n,i)=>`<b>${esc(n)}</b> ${(x.ok||[])[i]||0} ✓`).join(' · ')}</span>`).join('')}</div>`:''}<div class="acts"><button class="btn primary" data-act="ovl-hide">Show the battlefield</button></div>`;
+    o.innerHTML=`<div class="kind">Battle Results</div><div class="podium">${r.teams.map((t,i)=>`<div class="pr${i===0?' first':''}" style="--tc:${t.color}"><span class="m">${m[i]||''}</span><span>${esc(t.name)}</span><small style="color:var(--muted)">❤️ ${t.pct}% left</small><b>🏆 ${t.pts}</b></div>`).join('')}</div>${r.mvp&&r.mvp.pts>0?`<div class="mvp">⭐ MVP: ${r.mvp.e} <b>${esc(r.mvp.name)}</b> (${esc(r.mvp.team)}) · 🏆 ${r.mvp.pts}</div>`:''}${r.pairs&&r.pairs.length?`<div class="pairs">${r.pairs.map(x=>`<span style="--tc:${x.color}">${x.e} ${(x.names||[x.a,x.b]).map((n,i)=>`<b>${esc(n)}</b> ${(x.ok||[])[i]||0} ✓`).join(' · ')}</span>`).join('')}</div>`:''}<div class="acts"><button class="btn primary" data-act="ovl-hide">Show the battlefield</button>${CR.inRunner?'':'<button class="btn" data-act="new-game">🆕 New class</button>'}</div>`;
     o.hidden=!!H.hideResults;return;}
   if(S.phase==='battle'&&S.battle&&S.battle.vote){const v=S.battle.vote,c=voteCounts(),tot=Math.max(1,c.reduce((a,x)=>a+x,0)),n=Object.keys(v.votes).length;
     o.innerHTML=`<div class="kind">🗳️ Vote for the best sentence</div><div class="vote-items">${v.items.map((it,i)=>{const pp=P(it.pid);return `<div class="vi${v.revealed&&v.winner===i?' win':''}${!v.revealed&&H.voter?' pick':''}" ${!v.revealed?`data-act="vote-cast" data-i="${i}"`:''}>${v.revealed?`<i class="fill" style="width:${Math.round(c[i]/tot*100)}%"></i>`:''}<span class="L">${'ABCD'[i]}</span><span class="tx">${esc(it.text)}${v.revealed&&v.winner===i&&pp?`<small> — ${charById(pp.char).e} ${esc(pp.name)}</small>`:''}</span>${v.revealed?`<b class="cnt">${c[i]}</b>`:''}</div>`;}).join('')}</div>${v.revealed?'':`<div class="voters">${Object.values(S.players).filter(p=>!p.pre).map(p=>`<button class="vb${H.voter===p.pid?' cur':''}${v.votes[p.pid]!=null?' done':''}" data-act="vote-as" data-pid="${p.pid}" style="--tc:${teamColor(p.team)}">${charById(p.char).e} ${esc(p.name)}${v.votes[p.pid]!=null?' ✓':''}</button>`).join('')}</div>`}<div class="hint">🗳️ ${n} vote${n===1?'':'s'} so far · Students vote on their tablets${v.revealed?'':H.voter?` · <b>Now tap the sentence ${esc(P(H.voter)?.name||'')} chooses</b>`:' · or tap a name, then a sentence, to vote for them'}</div><div class="acts">${v.revealed?'':'<button class="btn primary" data-act="vote-reveal">🏅 Show results</button>'}<button class="btn" data-act="vote-close">Close</button></div>`;o.hidden=false;return;}
@@ -1788,9 +1788,24 @@ function renderSetup(){
   <label for="btext">Battle questions — one per line. <b>T</b> type | question | model · <b>S</b> speak | question · <b>B</b> builder | correct sentence · <b>F</b> fix | wrong sentence | correct sentence · <b>W</b> word bomb | word | prompt · <b>P</b> picture talk (speak) / <b>PT</b> (type) | emojis | prompt · <b>C</b> choose | question | option A | option B · <b>Z</b> buzzer | question</label>
   <textarea id="btext">${esc(d.bText)}</textarea>
   <div class="mrow"><button class="btn" data-act="m-close">Cancel</button><button class="btn primary" data-act="d-save">Save</button></div>
-  <div class="danger"><button class="btn bad" data-act="reset-game">${H.confirm==='reset'?'Click again: reset coins & habitats':'Reset game (keep players)'}</button><button class="btn bad" data-act="new-game">${H.confirm==='new'?'Click again: new room code':'New class (new QR code)'}</button></div>
+  <div class="danger"><button class="btn bad" data-act="reset-game">${H.confirm==='reset'?'Click again: reset coins & habitats':'Reset game (keep players)'}</button>${CR.inRunner?'':`<button class="btn bad" data-act="new-game">🆕 New class (new QR code)</button>`}</div>
   </div></div>`;
 }
+/* New class: one tap opens a clear confirm dialog (from Setup, the results screen or the Practice report); the next class starts with no players and a new room code */
+function openNewClass(){if(CR.inRunner)return;H.ncDraft=null;if($('#qtext')&&H.setupDraft){readSetupInputs();H.ncDraft=H.setupDraft;}H.confirm=null;
+  const ps=Object.values(S.players),names=ps.slice(0,12).map(p=>esc(p.name)).join(', ')+(ps.length>12?` +${ps.length-12} more`:''),rep=(S.rushHist||[]).length;
+  $('#modal-root').innerHTML=`<div class="modal-bg"><div class="modal" role="dialog" aria-label="New class"><h2>🆕 Start a new class?</h2>
+  <ul style="margin:0;padding-left:1.2em;line-height:1.6">${ps.length?`<li>Removes <b>${ps.length}</b> player${ps.length>1?'s':''}: ${names}</li>`:'<li>No players in this class yet.</li>'}<li>New room code and QR code. The old tablets are disconnected.</li><li>Keeps the scene, team names, textbook units and questions.</li></ul>
+  ${rep?`<p style="margin:0;color:var(--muted)">The Practice Rush report of this class will be cleared. <button class="btn" data-act="rush-copy" data-i="0">📋 Copy report</button></p>`:''}
+  <div class="mrow"><button class="btn" data-act="m-close">Cancel</button><button class="btn primary" data-act="nc-go">🆕 Yes, new class</button></div></div></div>`;}
+function doNewClass(){if(CR.inRunner)return;const o=S,d=H.ncDraft||{scene:o.scene,teamCount:o.teamCount,teams:o.teams,qText:o.qText,bText:o.bText,battleMin:o.battleMin,tab3d:o.tab3d};H.ncDraft=null;
+  if(H.bp&&H.bp.on){H.bp.on=false;clearTimeout(H.bpTimer);document.body.classList.remove('bp-on');}
+  if(H.svConn||document.body.classList.contains('sv-on'))closeStudentView();
+  H.conns.forEach((_,c)=>{try{c.close();}catch(e){}});H.conns.clear();
+  S=newState({scene:d.scene,teamCount:d.teamCount,teams:d.teams,qText:d.qText,bText:d.bText,battleMin:d.battleMin});
+  Object.assign(S,{tab3d:!!d.tab3d,ui3d:!!o.ui3d,bankSel:o.bankSel||null,ltUnits:o.ltUnits||[],ltU:o.ltU||0});
+  Object.assign(H,{confirm:null,hideResults:false,rushView:null,voter:null,showAns:false,showModel:false,ltHideText:false});
+  $('#modal-root').innerHTML='';makeQR($('#qr'),220);changed();startHost();toast('New class! Students scan the new QR code.');}
 function readSetupInputs(){const d=H.setupDraft;for(let i=0;i<d.teamCount;i++){const el=$('#tn'+i);if(el)d.teams[i].name=el.value.trim()||TEAM_DEFAULT[i].name;}const q=$('#qtext');if(q)d.qText=q.value;const b=$('#btext');if(b)d.bText=b.value;}
 function openBigQR(){$('#modal-root').innerHTML=`<div class="modal-bg" data-act="m-close"><div class="modal bigqr"><h2>Scan to join!</h2><div class="qr" id="bigqr"></div><div class="code">${esc(S.code)}</div><small style="color:var(--muted);word-break:break-all">${esc(joinURL())}</small><button class="btn primary" data-act="m-close">Close</button></div></div>`;makeQR($('#bigqr'),600);}
 function openAdd(){$('#modal-root').innerHTML=`<div class="modal-bg"><div class="modal" role="dialog" aria-label="Add a player"><h2>Add a player</h2><p style="margin:0;color:var(--muted)">For a student without a tablet. You can choose actions for them with the buttons in their row.</p>
@@ -2050,7 +2065,7 @@ function onHostClick(e){
       case 'rush-more':if(S.rush&&S.rush.on){S.rush.endsAt+=120000;changed();}break;
       case 'rush-report':{const sel=$('#rush-hist');H.rushView=sel?+sel.value:+b.dataset.i||0;renderOverlay();break;}
       case 'rush-close':H.rushView=null;if(S.rush&&!S.rush.on)S.rush=null;changed();break;
-      case 'rush-copy':{const sel=$('#rush-hist');const i=b.closest('#ovl')?+b.dataset.i:(sel?+sel.value:+b.dataset.i||0);const rp=(S.rushHist||[])[i];if(rp){const t=rushReportText(rp);(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>toast('Report copied.'),()=>{H.rushCopy=t;toast('Copy failed — select the text in the console.');});}break;}
+      case 'rush-copy':{const sel=$('#rush-hist');const i=b.closest('#ovl')||b.closest('#modal-root')?+b.dataset.i:(sel?+sel.value:+b.dataset.i||0);const rp=(S.rushHist||[])[i];if(rp){const t=rushReportText(rp);(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>toast('Report copied.'),()=>{H.rushCopy=t;toast('Copy failed — select the text in the console.');});}break;}
       case 'bp-open':if(H.bp&&H.bp.on)closeBoardPlay();else openBoardPlay();break;
       case 'bp-close':closeBoardPlay();break;
       case 'bp-tab':bpSwitch(b.dataset.pid);break;
@@ -2078,7 +2093,8 @@ function onHostClick(e){
     case 'd-save':{readSetupInputs();const d=H.setupDraft;S.scene=d.scene;S.teamCount=d.teamCount;S.teams=d.teams;S.qText=d.qText;S.bText=d.bText;S.battleMin=d.battleMin;S.tab3d=!!d.tab3d;S.qOrder=[];S.bOrder=[];
       Object.values(S.players).forEach(p=>{if(p.team>=S.teamCount)p.team=0;});log(`Welcome to ${SCENES[S.scene].name}!`);$('#modal-root').innerHTML='';changed();break;}
     case 'reset-game':if(H.confirm==='reset'){Object.values(S.players).forEach(p=>Object.assign(p,{coins:0,lv:1,hp:HPMAX[1],armor:0,inv:{atk:0,def:0,heal:0},items:0,powers:0,dash:false,warp:false,down:false,pts:0}));S.phase='gather';S.battle=null;S.results=null;S.card=null;S.log=['New game! Answer questions to collect supplies.'];H.confirm=null;$('#modal-root').innerHTML='';changed();}else{readSetupInputs();H.confirm='reset';renderSetup();}break;
-    case 'new-game':if(H.confirm==='new'){readSetupInputs();const d=H.setupDraft;S=newState({scene:d.scene,teamCount:d.teamCount,teams:d.teams,qText:d.qText,bText:d.bText,battleMin:d.battleMin});H.confirm=null;H.conns.forEach((_,c)=>{try{c.close();}catch(e){}});H.conns.clear();$('#modal-root').innerHTML='';makeQR($('#qr'),220);changed();startHost();}else{readSetupInputs();H.confirm='new';renderSetup();}break;
+    case 'new-game':openNewClass();break;
+    case 'nc-go':doNewClass();break;
   }
 }
 function svOptions(sel){const el=$('#sv-who');if(!el)return;el.innerHTML=Object.values(S.players).map(p=>`<option value="${p.pid}">${charById(p.char).e} ${esc(p.name)} (${esc(teamName(p.team))})</option>`).join('')+'<option value="new">➕ New student (join screen)</option>';el.value=sel;}
