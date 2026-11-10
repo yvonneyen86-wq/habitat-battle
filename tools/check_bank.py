@@ -64,7 +64,8 @@ for f in sorted(glob.glob(os.path.join(root, 'bank', 'OD*.txt')) + glob.glob(os.
         if not l or l.startswith('===') or l.startswith('//'): continue
         n = l.count('|'); t = l.split('|')[0].strip()
         if mode == 'B':
-            if t not in ('S', 'T', 'B', 'F', 'W', 'P', 'PT', 'C', 'Z'): bad(f'{f}:{i}: unknown type "{t}"')
+            if t not in ('S', 'T', 'B', 'F', 'W', 'P', 'PT', 'C', 'Z', 'M'): bad(f'{f}:{i}: unknown type "{t}"')
+            if t == 'M' and n < 3: bad(f'{f}:{i}: M needs question | correct | wrong (| wrong | wrong)')
             if t == 'C' and n < 3: bad(f'{f}:{i}: C needs question | option A | option B')
             if t == 'F' and n < 2: bad(f'{f}:{i}: F needs wrong | correct')
             if t in ('W', 'P', 'PT') and n < 1: bad(f'{f}:{i}: {t} needs a value')
