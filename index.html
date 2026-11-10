@@ -1280,7 +1280,7 @@ function rushOverlay(o){if(S.phase!=='gather')return false;const R=S.rush;
       <div class="rtop">${rows.slice(0,8).map((x,i)=>`<div class="rtp" style="--tc:${teamColor(x.p.team)}"><b>${i<3?['🥇','🥈','🥉'][i]:i+1}</b><span>${charById(x.p.char).e} ${esc(x.p.name)}</span><em>✓ ${x.r.ok}${x.r.streak>=3?' 🔥'+x.r.streak:''}</em></div>`).join('')}</div>
       <div class="hint">Answer on your tablet · ✓ = +1 🪙 · 5 in a row = bonus 🔥</div>`;o.hidden=false;return true;}
   const hist=S.rushHist||[];if(H.rushView!=null&&hist[H.rushView]){const rep=hist[H.rushView];
-    o.innerHTML=`<div class="kind">📊 Practice Report · ${esc(rep.level)} · ${rep.min} min</div>${rushReportHTML(rep,true)}<div class="acts"><button class="btn" data-act="rush-copy" data-i="${H.rushView}">📋 Copy report</button><button class="btn primary" data-act="rush-close">Close</button>${CR.inRunner?'':'<button class="btn" data-act="new-game">🆕 New class</button>'}</div>`;o.hidden=false;return true;}
+    o.innerHTML=`<div class="kind">📊 Practice Report · ${esc(rep.level)} · ${rep.min} min</div>${rushReportHTML(rep,true)}<div class="acts"><button class="btn" data-act="rush-copy" data-i="${H.rushView}">📋 Copy report</button><button class="btn primary" data-act="rush-close">Close</button><button class="btn" data-act="end-game">🏁 End game</button>${CR.inRunner?'':'<button class="btn" data-act="new-game">🆕 New class</button>'}</div>`;o.hidden=false;return true;}
   return false;}
 function pairFlip(p){if(p&&p.pair)p.turn=((p.turn||0)+1)%p.pair.length;}
 function pairTally(p){if(p&&p.pair){p.pairOk=p.pair.map((x,i)=>(p.pairOk||[])[i]||0);p.pairOk[p.turn||0]++;}}
@@ -1637,7 +1637,7 @@ function renderHeader(){
   <span class="chip"><span class="dot ${H.status}"></span>${esc(H.statusText)}</span><span class="chip">Code <b>${esc(S.code)}</b></span><span class="sp"></span>
   ${ph==='gather'?`<button class="btn" data-act="qr-toggle">${S.showQR?'Hide QR':'Show QR'}</button><button class="btn" data-act="qr-big">Big QR</button><button class="btn" data-act="card">❓ Question Card</button><button class="btn" data-act="all-coin">🪙 +1 Everyone</button><button class="btn" data-act="roster">📋 Class list</button><button class="btn war" data-act="start-battle">⚔️ Start Battle</button>`:''}
   ${ph==='battle'?`<button class="btn" data-act="qr-big">Big QR</button><button class="btn war" data-act="end-battle">🏁 End Battle</button>`:''}
-  ${ph==='end'?`<button class="btn" data-act="back-gather">🌱 Back to Learning</button>`:''}
+  ${ph==='end'?`<button class="btn" data-act="back-gather">🌱 Back to Learning</button><button class="btn" data-act="end-game">🏁 End game</button>`:''}
   <button class="btn" data-act="bank">📚 ${S.bankSel?esc(S.bankSel.level)+' U'+S.bankSel.units.join(','):'Textbook'}</button>
   <button class="btn" data-act="sv-open">📱 Student view</button>
     <button class="btn${H.bp&&H.bp.on?' war':''}" data-act="bp-open" title="Play on the whiteboard without tablets">🖥️ Board play</button>
@@ -1702,7 +1702,7 @@ function renderOverlay(){
   const o=$('#ovl');
   if(rushOverlay(o))return;
   if(S.phase==='end'&&S.results){const r=S.results,m=['🥇','🥈','🥉','🏅'];
-    o.innerHTML=`<div class="kind">Battle Results</div><div class="podium">${r.teams.map((t,i)=>`<div class="pr${i===0?' first':''}" style="--tc:${t.color}"><span class="m">${m[i]||''}</span><span>${esc(t.name)}</span><small style="color:var(--muted)">❤️ ${t.pct}% left</small><b>🏆 ${t.pts}</b></div>`).join('')}</div>${r.mvp&&r.mvp.pts>0?`<div class="mvp">⭐ MVP: ${r.mvp.e} <b>${esc(r.mvp.name)}</b> (${esc(r.mvp.team)}) · 🏆 ${r.mvp.pts}</div>`:''}${r.pairs&&r.pairs.length?`<div class="pairs">${r.pairs.map(x=>`<span style="--tc:${x.color}">${x.e} ${(x.names||[x.a,x.b]).map((n,i)=>`<b>${esc(n)}</b> ${(x.ok||[])[i]||0} ✓`).join(' · ')}</span>`).join('')}</div>`:''}<div class="acts"><button class="btn primary" data-act="ovl-hide">Show the battlefield</button>${CR.inRunner?'':'<button class="btn" data-act="new-game">🆕 New class</button>'}</div>`;
+    o.innerHTML=`<div class="kind">Battle Results</div><div class="podium">${r.teams.map((t,i)=>`<div class="pr${i===0?' first':''}" style="--tc:${t.color}"><span class="m">${m[i]||''}</span><span>${esc(t.name)}</span><small style="color:var(--muted)">❤️ ${t.pct}% left</small><b>🏆 ${t.pts}</b></div>`).join('')}</div>${r.mvp&&r.mvp.pts>0?`<div class="mvp">⭐ MVP: ${r.mvp.e} <b>${esc(r.mvp.name)}</b> (${esc(r.mvp.team)}) · 🏆 ${r.mvp.pts}</div>`:''}${r.pairs&&r.pairs.length?`<div class="pairs">${r.pairs.map(x=>`<span style="--tc:${x.color}">${x.e} ${(x.names||[x.a,x.b]).map((n,i)=>`<b>${esc(n)}</b> ${(x.ok||[])[i]||0} ✓`).join(' · ')}</span>`).join('')}</div>`:''}<div class="acts"><button class="btn primary" data-act="ovl-hide">Show the battlefield</button><button class="btn" data-act="end-game">🏁 End game</button>${CR.inRunner?'':'<button class="btn" data-act="new-game">🆕 New class</button>'}</div>`;
     o.hidden=!!H.hideResults;return;}
   if(S.phase==='battle'&&S.battle&&S.battle.vote){const v=S.battle.vote,c=voteCounts(),tot=Math.max(1,c.reduce((a,x)=>a+x,0)),n=Object.keys(v.votes).length;
     o.innerHTML=`<div class="kind">🗳️ Vote for the best sentence</div><div class="vote-items">${v.items.map((it,i)=>{const pp=P(it.pid);return `<div class="vi${v.revealed&&v.winner===i?' win':''}${!v.revealed&&H.voter?' pick':''}" ${!v.revealed?`data-act="vote-cast" data-i="${i}"`:''}>${v.revealed?`<i class="fill" style="width:${Math.round(c[i]/tot*100)}%"></i>`:''}<span class="L">${'ABCD'[i]}</span><span class="tx">${esc(it.text)}${v.revealed&&v.winner===i&&pp?`<small> — ${charById(pp.char).e} ${esc(pp.name)}</small>`:''}</span>${v.revealed?`<b class="cnt">${c[i]}</b>`:''}</div>`;}).join('')}</div>${v.revealed?'':`<div class="voters">${Object.values(S.players).filter(p=>!p.pre).map(p=>`<button class="vb${H.voter===p.pid?' cur':''}${v.votes[p.pid]!=null?' done':''}" data-act="vote-as" data-pid="${p.pid}" style="--tc:${teamColor(p.team)}">${charById(p.char).e} ${esc(p.name)}${v.votes[p.pid]!=null?' ✓':''}</button>`).join('')}</div>`}<div class="hint">🗳️ ${n} vote${n===1?'':'s'} so far · Students vote on their tablets${v.revealed?'':H.voter?` · <b>Now tap the sentence ${esc(P(H.voter)?.name||'')} chooses</b>`:' · or tap a name, then a sentence, to vote for them'}</div><div class="acts">${v.revealed?'':'<button class="btn primary" data-act="vote-reveal">🏅 Show results</button>'}<button class="btn" data-act="vote-close">Close</button></div>`;o.hidden=false;return;}
@@ -1810,9 +1810,20 @@ function renderSetup(){
   <label for="btext">Battle questions — one per line. <b>T</b> type | question | model · <b>S</b> speak | question · <b>B</b> builder | correct sentence · <b>F</b> fix | wrong sentence | correct sentence · <b>W</b> word bomb | word | prompt · <b>P</b> picture talk (speak) / <b>PT</b> (type) | emojis | prompt · <b>C</b> choose | question | option A | option B · <b>Z</b> buzzer | question · <b>M</b> multiple choice | question with ___ | correct | wrong | wrong | wrong</label>
   <textarea id="btext">${esc(d.bText)}</textarea>
   <div class="mrow"><button class="btn" data-act="m-close">Cancel</button><button class="btn primary" data-act="d-save">Save</button></div>
-  <div class="danger"><button class="btn bad" data-act="reset-game">${H.confirm==='reset'?'Click again: reset coins & habitats':'Reset game (keep players)'}</button>${CR.inRunner?'':`<button class="btn bad" data-act="new-game">🆕 New class (new QR code)</button>`}</div>
+  <div class="danger"><button class="btn bad" data-act="end-game">🏁 End game (back to zero)</button>${CR.inRunner?'':`<button class="btn bad" data-act="new-game">🆕 New class (new QR code)</button>`}</div>
   </div></div>`;
 }
+/* End game: everything back to zero (coins, levels, habitats, supplies, points) so the next game starts fresh; keep the players, or start a new class */
+function openEndGame(){H.confirm=null;H.ncDraft=null;const n=Object.keys(S.players).length;
+  $('#modal-root').innerHTML=`<div class="modal-bg"><div class="modal" role="dialog" aria-label="End game"><h2>🏁 End the game?</h2>
+  <ul style="margin:0;padding-left:1.2em;line-height:1.6"><li>Coins, levels, habitats, supplies and 🏆 points go back to <b>zero</b>.</li><li>The next game starts fresh.</li></ul>
+  <div class="mrow"><button class="btn" data-act="m-close">Cancel</button><button class="btn primary" data-act="eg-go">🏁 End game · keep ${n} player${n===1?'':'s'}</button>${CR.inRunner?'':'<button class="btn bad" data-act="nc-go">🆕 End game · new class</button>'}</div></div></div>`;}
+function doEndGame(){if(H.busy)return toast('Wait for this round to finish.');
+  if(S.rush&&S.rush.on)rushEnd();
+  Object.values(S.players).forEach(p=>Object.assign(p,{coins:0,lv:1,hp:HPMAX[1],armor:0,inv:{atk:0,def:0,heal:0},items:0,powers:0,dash:false,warp:false,down:false,pts:0,streak:0,turn:0,pairOk:p.pair?p.pair.map(()=>0):p.pairOk}));
+  Object.assign(S,{phase:'gather',battle:null,results:null,card:null,lt:null,rush:null,qOrder:[],qPtr:0,bOrder:[],bPtr:0,showQR:true,log:['New game! Answer questions to collect supplies.']});
+  Object.assign(H,{confirm:null,hideResults:false,rushView:null,voter:null,showAns:false,showModel:false,ltHideText:false});
+  $('#modal-root').innerHTML='';changed();toast('Game over! Everything is back to zero.');}
 /* New class: one tap opens a clear confirm dialog (from Setup, the results screen or the Practice report); the next class starts with no players and a new room code */
 function openNewClass(){if(CR.inRunner)return;H.ncDraft=null;if($('#qtext')&&H.setupDraft){readSetupInputs();H.ncDraft=H.setupDraft;}H.confirm=null;
   const ps=Object.values(S.players),names=ps.slice(0,12).map(p=>esc(p.name)).join(', ')+(ps.length>12?` +${ps.length-12} more`:''),rep=(S.rushHist||[]).length;
@@ -2115,7 +2126,8 @@ function onHostClick(e){
     case 'd-tab3d':readSetupInputs();H.setupDraft.tab3d=b.dataset.v==='1';renderSetup();break;
     case 'd-save':{readSetupInputs();const d=H.setupDraft;S.scene=d.scene;S.teamCount=d.teamCount;S.teams=d.teams;S.qText=d.qText;S.bText=d.bText;S.battleMin=d.battleMin;S.tab3d=!!d.tab3d;S.qOrder=[];S.bOrder=[];
       Object.values(S.players).forEach(p=>{if(p.team>=S.teamCount)p.team=0;});log(`Welcome to ${SCENES[S.scene].name}!`);$('#modal-root').innerHTML='';changed();break;}
-    case 'reset-game':if(H.confirm==='reset'){Object.values(S.players).forEach(p=>Object.assign(p,{coins:0,lv:1,hp:HPMAX[1],armor:0,inv:{atk:0,def:0,heal:0},items:0,powers:0,dash:false,warp:false,down:false,pts:0}));S.phase='gather';S.battle=null;S.results=null;S.card=null;S.log=['New game! Answer questions to collect supplies.'];H.confirm=null;$('#modal-root').innerHTML='';changed();}else{readSetupInputs();H.confirm='reset';renderSetup();}break;
+    case 'reset-game':case 'end-game':openEndGame();break;
+    case 'eg-go':doEndGame();break;
     case 'new-game':openNewClass();break;
     case 'nc-go':doNewClass();break;
   }
