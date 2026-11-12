@@ -4,6 +4,7 @@ Plays the game with a real browser (Playwright + Chromium): one teacher page and
 pages, connected through a mock PeerJS (`mockpeer.js`), so no network is needed.
 
 ```
+node tools/e2e/all.js                    # everything below, one PASS/FAIL line per step (QUICK=1 skips the last two)
 node tools/e2e/tests.js                  # regression checks, PASS/FAIL per line
 node tools/e2e/lesson.js OD1 1,2         # a whole lesson played by bots (level, units)
 node tools/e2e/lesson.js OPW1 8 .8 8     # phonics / alphabet level

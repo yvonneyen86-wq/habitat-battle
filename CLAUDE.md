@@ -13,7 +13,7 @@ Live site: https://yvonneyen86-wq.github.io/habitat-battle/ (GitHub Pages, branc
 - Do not change the PeerJS id prefix (`habitatbattle-ivan-`) or the URL scheme `?join=CODE`.
 
 ## Layout
-- `index.html` — the whole game (teacher console + projector stage + student tablet view). ~460 KB; about 140 KB of that is the 3D stage bundle between `/*3D-BUNDLE-BEGIN*/` and `/*3D-BUNDLE-END*/` — **never edit that block by hand**, edit `3d/*.js` and run `python3 3d/build.py`, which rebuilds the demo page and re-embeds the bundle.
+- `index.html` — the whole game (teacher console + projector stage + student tablet view). ~1.27 MB: about 760 KB is the embedded question bank (`const OD_BANK=…`, one very long line — never print it whole), about 133 KB the 3D stage bundle between `/*3D-BUNDLE-BEGIN*/` and `/*3D-BUNDLE-END*/` — **never edit that block by hand**, edit `3d/*.js` and run `python3 3d/build.py`, which rebuilds the demo page and re-embeds the bundle.
 - `bank/OD1.txt … OD5.txt` — Oxford Discover question bank, one file per level, 18 units each. **The hosted game fetches these at load time**, so editing a bank file on GitHub changes the questions without touching `index.html`. The same data is also embedded in `index.html` as `const OD_BANK=…` (offline fallback); regenerate it with `python3 tools/build_bank.py` after editing bank files.
 - `bank/JH1.txt … JH3.txt` — Junior High Grammar (竹北國中文法班), one grammar point per unit, **exam template, not the OD format**: `# choice` (15 × `Q | stem with ___ | correct | wrong | wrong | wrong`), `# cloze` (`T | title`, `> text with [1]…[5]`, 5 × `K | n | correct | wrong×3`), `# reading-test` (`T | title`, `> paragraphs`, 4 × `RQ | question | correct | wrong×3`); correct option first, the game shuffles. Used by ⚡ Practice Rush (all three parts) and by ⚔️ Battle: `examBattle(u)` turns the 15 choice + 5 cloze items into `M` battle lines (a cloze blank is asked inside its own sentence); no Learning Time / cards. Listed as Grammar 1–3. Unit plan: `docs/國中文法題庫規劃.md`. Grade-9 L14–L17 wait for the teacher's lesson plans.
 - `tools/check_bank.py` — validates bank files (run before committing bank edits).
@@ -58,7 +58,7 @@ G | correct sentence
 SP | A: line | B: line | A: My {leg} hurts! | B: line | leg / head / ear   ({} = swappable key word, last field = the words to swap)
 SW | My favorite animal group is {birds}. They have {wings}. | prompt      ({} = parts the student changes in their own sentences)
 ```
-Phonics levels (`bank/OPW1.txt … OPW5.txt`, Oxford Phonics World) use these sections instead of `# learn/# battle` (battle + learn lines are generated from them):
+Phonics levels (`bank/OPW1.txt … OPW4.txt`, Oxford Phonics World; there is no OPW5 file yet) use these sections instead of `# learn/# battle` (battle + learn lines are generated from them):
 ```
 ## U1 | Short a: cat, hat, map |
 # sound
@@ -87,6 +87,7 @@ Content for the four Learning Time sections comes from the scanned Oxford Discov
 - Learning Time activities (`S.lt`, host `ltStart/ltStop/ltNext/ltMsg/ltGrade/renderLTPanel/ltBoardHTML/ltOverlayHTML`, tablet `sLtDock/sLtClick`, student messages `{t:'lt',k:'word'|'gram'|'choice'|'type'|'hand'|'write'}`): the per-unit content is built by `ltFromUnit()` when a textbook unit is applied (`S.ltUnits`, `S.ltU`), and the panel appears in the console during `gather`. Auto-judged items pay +1 🪙 (+2 for a first-try grammar sentence); teacher-graded ones ✓ +2 / ⭐ +3.
 - Battle length: Setup or the `⚔️ Battle` panel in the gather console (`battlePanel()`, `battle-min` → `S.battleMin`).
 - Question types parsed by `parseQ()`; battle flow: `nextRound()` → grading (`markCorrect(pid, tier 1|2|3)`) → students `onAct()` → optional `startDefense()` → `resolveRound()`. Extras: `summonBoss()`, `openVote()/revealVote()`, `requestSpell()/castSpell()`.
+- Shuffles use `shuf()` (Fisher–Yates) on the host and `seedShuffle()` on the tablets; never a random sort comparator (it is biased). `🏁 End Battle` opens a confirm dialog (`openEndBattle` → `eb-go`); `crFinish` ends the battle directly.
 - `H.busy` is true while `nextRound()`/`resolveRound()` animate: anything that leaves or changes the battle (`endBattle`, `backToGather`, `doEndGame`, `askCustom`) must check it; `resolveRound()` runs in `try/finally` and stops when `S.battle` is no longer its battle. `renderConsole()` keeps the value/focus of console inputs (`#cq`) across re-renders.
 - Connections: the tablet reconnects only through `studentConnect()` (stale peers/conns are ignored by comparing with `ST.peer`/`ST.conn`), `sWake()` re-sends `hello` when a tablet wakes up; the host rebuilds its peer only when it is destroyed or no tablet is connected (a signalling blip must not close working data channels). A `join` with an unknown cid adopts an offline player with the same name and team. One state message must stay under PeerJS's 16 KB JSON limit (≈32 players with an OD5 reading open).
 - Alphabet level: `alphaL(w,letters,sort)` gives the letter a picture belongs to (fox → x); never judge by `w.w[0]`. `seedShuffle()` mixes its seed; the board shows reading options shuffled and without letters. `ltPairJoin()` pairs students who arrive during Speak & Write.
@@ -104,7 +105,7 @@ Content for the four Learning Time sections comes from the scanned Oxford Discov
 ## How to test a change
 1. `python3 -c "import re;s=open('index.html').read();open('/tmp/x.js','w').write(re.findall(r'<script[^>]*>([\s\S]*?)</script>',s)[-1])" && node --check /tmp/x.js` (the game is the **last** `<script>`; the two before it are the classroom-runner bridge)
 2. `python3 tools/check_bank.py`
-3. `node tools/e2e/tests.js` (regression checks, all must PASS) and `node tools/e2e/lesson.js OD1 1,2` (a whole lesson played by bots: one teacher page + six student pages on a mock PeerJS; any line starting with `!!` is a problem). Also run `lesson.js OPW1 8` / `lesson.js JH1 1,2` when phonics or exam code changed. See `tools/e2e/README.md`. When you fix a bug, add a check for it to `tests.js`.
+3. `node tools/e2e/all.js` runs steps 1–3 in one go (syntax, bank check, 3D smoke test, regression checks, a bot-played lesson, the runner testbench) and prints one PASS/FAIL line per step. The parts: `node tools/e2e/tests.js` (regression checks, all must PASS) and `node tools/e2e/lesson.js OD1 1,2` (a whole lesson played by bots: one teacher page + six student pages on a mock PeerJS; any line starting with `!!` is a problem). Also run `lesson.js OPW1 8` / `lesson.js JH1 1,2` when phonics or exam code changed. See `tools/e2e/README.md`. When you fix a bug, add a check for it to `tests.js`.
 3b. For a manual look: serve locally (`python3 -m http.server 8080`), open `index.html`, press **📱 Student view**, play one Learning-Time question and one battle round.
 4. Commit and push to `main`. Tell the teacher in Chinese what changed and that the site updates in 1–2 minutes.
 
