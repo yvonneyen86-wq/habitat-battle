@@ -850,7 +850,7 @@ function parseBankText(txt){
   for(const raw of String(txt).split('\n')){const l=raw.trim();
     if(l.startsWith('## ')){const parts=l.slice(3).split('|').map(x=>x.trim());const m=parts[0].match(/\d+/);if(!m)continue;const partial=/\(partial\)/.test(parts[0]+(parts[1]||''));
       cur={n:+m[0],title:(parts[1]||'').replace('(partial)','').trim(),bq:parts[2]||'',learn:[],battle:[],words:[],reading:[],grammar:[],sw:[],sound:[],story:[],sort:[],pairs:[],build:[],choice:[],cloze:[],rtest:[],partial};units.push(cur);mode=null;continue;}
-    const sec=BANK_SECTIONS[l];if(sec){mode=sec;continue;}
+    if(l.startsWith('#')&&!l.startsWith('##')){const sec=BANK_SECTIONS[l.toLowerCase().replace(/^#\s*/,'# ').replace(/[\s:]+$/,'')];if(sec){mode=sec;continue;}}
     if(!l||l.startsWith('===')||l.startsWith('//')||!cur||!mode)continue;
     cur[mode].push(l);}
   units.sort((a,b)=>a.n-b.n);return units;
@@ -1163,7 +1163,7 @@ const P=pid=>S.players[pid];
 const teamName=ti=>S.teams[ti]?.name||'Team';
 const teamColor=ti=>S.teams[ti]?.color||'#888';
 function log(t){S.log.push(t);if(S.log.length>40)S.log.splice(0,S.log.length-40);}
-function lines(txt){return String(txt||'').split('\n').map(l=>l.trim()).filter(Boolean).slice(0,400);}
+function lines(txt){return String(txt||'').split('\n').map(l=>l.trim()).filter(Boolean).slice(0,1200);}
 const CARD_KINDS={C:['📖','Textbook'],G:['🧩','Grammar'],V:['🔤','Word · fill in the blank']};
   function cardQ(c){const q=esc(c.q);return c.kind==='V'?q.replace(/_{2,}/g,'<span class="blank"></span>'):q;}
   function cardWords(c){const lu=ltUnits().find(x=>x.n===c.u&&(!S.bankSel||x.level===S.bankSel.level))||ltUnits().find(x=>x.n===c.u);const ws=lu?lu.words:[];
@@ -1298,7 +1298,7 @@ function allCoins(){Object.values(S.players).forEach(p=>{p.coins++;if(p.crId)crE
 function buy(pid,item){
   const p=P(pid);if(!p)return;const c=classOf(p);
   if(item==='upgrade'){if(p.lv>=3)return sendErr(pid,'Your habitat is already the biggest!');const cost=UPGRADE_COST[p.lv];if(p.coins<cost)return sendErr(pid,`You need ${cost} 🪙.`);
-    p.coins-=cost;p.lv++;p.hp=HPMAX[p.lv];p.down=false;if(p.crId)crEvent('points',{student:p.crId,delta:-cost,reason:'upgrade'});const h=habOf(p);log(`${p.name} built a ${h[0]}! ${h[1]} (❤️ ${HPMAX[p.lv]})`);chime();
+    p.coins-=cost;p.lv++;if(S.phase==='battle'){if(!p.down)p.hp=Math.min(HPMAX[p.lv],p.hp+HPMAX[p.lv]-HPMAX[p.lv-1]);}else{p.hp=HPMAX[p.lv];p.down=false;}if(p.crId)crEvent('points',{student:p.crId,delta:-cost,reason:'upgrade'});const h=habOf(p);log(`${p.name} built a ${h[0]}! ${h[1]} (❤️ ${HPMAX[p.lv]})`);chime();
     setTimeout(()=>{popHab(pid);burst(pid,['🔨','✨',h[1]],16,{ring:true,g:0,speed:18,drag:.95});confetti(pid,[teamColor(p.team),'#ffd43b'],24);},60);}
   else if(['atk','def','heal'].includes(item)){if(p.inv[item]>=INV_CAP)return sendErr(pid,`You can carry ${INV_CAP} at most.`);if(p.coins<GEAR_COST)return sendErr(pid,`You need ${GEAR_COST} 🪙.`);
     p.coins-=GEAR_COST;p.inv[item]++;if(p.crId)crEvent('points',{student:p.crId,delta:-GEAR_COST,reason:'gear:'+item});const g=c[item];log(`${p.name} got a ${g[0]} ${g[1]}`);beep(880);setTimeout(()=>burst(pid,[g[1]],6,{speed:18}),60);}
@@ -1324,7 +1324,7 @@ async function nextRound(custom){
   const q=custom||pick(battleQs,'bOrder','bPtr');if(!q)return toast('Add battle questions in Setup.');
   H.busy=true;
   if(b.round>0)Object.values(S.players).forEach(p=>{p.streak=b.ok[p.pid]?(p.streak||0)+1:0;});
-  q.ci=crIndex(q.src);b.round++;b.qid++;b.q=q;crStart();Object.assign(b,{ok:{},subs:{},acts:{},choice:{},buzz:[],tries:{},def:null,vote:null,spells:{}});b.step='question';H.showModel=false;
+  q.ci=crIndex(q.src);b.round++;b.qid++;b.q=q;crStart();Object.assign(b,{ok:{},subs:{},acts:{},choice:{},buzz:[],tries:{},def:null,vote:null,spells:{}});b.tallied={};b.step='question';H.showModel=false;
     if(b.round>1)Object.values(S.players).forEach(p=>pairFlip(p));
   const revived=Object.values(S.players).filter(p=>p.down);
   revived.forEach(p=>{p.down=false;p.hp=Math.ceil(maxHp(p)/2);p.armor=0;});
@@ -1335,16 +1335,16 @@ async function nextRound(custom){
   banner(`ROUND ${b.round}`,QTYPES[q.type]);
   for(const p of revived){await sleep(120);popHab(p.pid);burst(p.pid,['🔨','✨'],10,{ring:true,g:0,speed:16,drag:.95});floatText(p.pid,'Rebuilt!');}
   if(drop){await sleep(700);Object.values(S.players).filter(p=>p.team===drop.ti).forEach(p=>{burst(p.pid,['📦','🛡️'],6,{speed:16});floatText(p.pid,'+2 🛡️','#495057');});}
-  H.busy=false;
+  await sleep(450);H.busy=false;if(S.phase==='battle')renderConsole();
 }
 function markCorrect(pid,tier=1,auto=false){
   const b=S.battle,p=P(pid);if(!b||!['question','defense'].includes(b.step)||!p)return;
   if(tier&&(b.ok[pid]||0)!==tier&&p.crId)crEvent('grade',{student:p.crId,question:b.q&&b.q.ci,level:['','good','great','amazing'][tier],points:0,auto:!!auto});
   if(tier){const prev=b.ok[pid]||0;b.ok[pid]=tier;
-    if(b.subs[pid]){b.subs[pid].ok=tier;if(!prev&&b.q&&TYPED.has(b.q.type)){b.approved.push({pid,text:b.subs[pid].text,round:b.round});if(b.approved.length>40)b.approved.shift();}}
+    if(b.subs[pid]){b.subs[pid].ok=tier;if(!prev&&b.q&&TYPED.has(b.q.type)&&b.q.type!=='F'){b.approved=b.approved.filter(a=>!(a.pid===pid&&a.round===b.round));b.approved.push({pid,text:b.subs[pid].text,round:b.round});if(b.approved.length>40)b.approved.shift();}}
     if(prev!==tier){beep(tier===3?990:820);floatText(pid,tier===3?'🌟 AMAZING!':tier===2?'⭐ GREAT!':'✓',tier===3?'#e8590c':tier===2?'#f08c00':'#2f9e44');burst(pid,tier===3?['🌟','✨','⚡']:tier===2?['⭐','⚡']:['⚡'],tier===3?18:tier===2?10:5,{speed:18});
-      if(!prev){log(`${p.name} ${tier===3?'gave an AMAZING answer! 🌟':tier===2?'gave a great answer! ⭐':'can take an action! ⚡'}`);pairTally(p);}if(ui3d())H.hb3d.correct(pid,tier);sendTo(pid,{t:'fx',k:'cheer',tier});}
-  }else{delete b.ok[pid];delete b.acts[pid];if(b.subs[pid])b.subs[pid].ok=false;}
+      if(!prev){log(`${p.name} ${tier===3?'gave an AMAZING answer! 🌟':tier===2?'gave a great answer! ⭐':'can take an action! ⚡'}`);if(!b.tallied)b.tallied={};if(!b.tallied[pid]){b.tallied[pid]=1;pairTally(p);}}if(ui3d())H.hb3d.correct(pid,tier);sendTo(pid,{t:'fx',k:'cheer',tier});}
+  }else{delete b.ok[pid];delete b.acts[pid];if(b.subs[pid])b.subs[pid].ok=false;b.approved=b.approved.filter(a=>!(a.pid===pid&&a.round===b.round));}
   changed();
 }
 function approveAllGood(){const b=S.battle;if(!b||!b.q)return;Object.entries(b.subs).forEach(([pid,sb])=>{if(sb.ok!=null||!P(pid))return;if(!checkOK(sentenceCheck(sb.text)))return;if(b.q.type==='W'&&!wordHit(sb.text,b.q.word))return;markCorrect(pid,meter(sb.text).score>=5?2:1);});}
@@ -1370,7 +1370,7 @@ function onBuzz(pid){const b=S.battle;if(!b||b.step!=='question'||!b.q||b.q.type
 function onAct(pid,kind,target){
   const b=S.battle,p=P(pid);if(!b||!['question','defense'].includes(b.step)||!p)return;
   if(!b.ok[pid])return sendErr(pid,'Answer the question first!');if(b.acts[pid])return sendErr(pid,'You already chose. Watch the screen!');
-  if(kind==='attack'){if(bossOn())target='boss';else{target=+target;if(!(target>=0&&target<S.teamCount)||target===p.team)return;}}
+  if(kind==='attack'){if(bossOn())target='boss';else{target=+target;if(!(target>=0&&target<S.teamCount)||target===p.team)return;if(!Object.values(S.players).some(q=>q.team===target))return sendErr(pid,'That team has no players. Pick another action!');}}
   else if(!['build','repair'].includes(kind))return;
   b.acts[pid]={kind,target:kind==='attack'?target:null};beep(900,.06);changed();
 }
@@ -1390,13 +1390,14 @@ async function resolveRound(){
   const b=S.battle;if(!b||!['question','defense'].includes(b.step)||H.busy)return;
   H.busy=true;const blocks={};if(b.def)Object.keys(b.def.blocks).forEach(pid=>{const p=P(pid);if(p)blocks[p.team]=(blocks[p.team]||0)+1;});
   b.step='resolving';changed();
+  try{
   const acts=Object.entries(b.acts).filter(([pid])=>P(pid));
   if(!acts.length)log('No actions this round.');
   const support=acts.filter(([,a])=>a.kind!=='attack'),attacks=acts.filter(([,a])=>a.kind==='attack').sort(()=>Math.random()-.5);
   if(acts.length)banner('ACTION!','',teamColor(0));
   await sleep(acts.length?900:100);
   for(const[pid,a]of support){
-    const p=P(pid),c=classOf(p),m=(b.ok[pid]||1)>=2?2:1;
+    if(S.battle!==b)return;const p=P(pid);if(!p)continue;const c=classOf(p),m=(b.ok[pid]||1)>=2?2:1;
     if(p.down||a.kind==='repair'){
       const use=p.inv.heal>0;if(use)p.inv.heal--;const amt=(use?4:1)*m;
       if(p.down){p.down=false;p.hp=Math.max(Math.ceil(maxHp(p)/2),Math.min(maxHp(p),amt));log(`${p.name} rebuilt the ${habOf(p)[0]}! 🔨`);}
@@ -1409,7 +1410,9 @@ async function resolveRound(){
     await sleep(380);
   }
   for(const[pid,a]of attacks){
-    const p=P(pid);if(!p)continue;const c=classOf(p),tier=b.ok[pid]||1;
+    if(S.battle!==b)return;const p=P(pid);if(!p)continue;const c=classOf(p),tier=b.ok[pid]||1;
+    if(a.target==='boss'){if(!bossOn())continue;}
+    else if(!Object.values(S.players).some(q=>q.team===a.target&&!q.down)){log(`${p.name}'s attack missed. ${teamName(a.target)} is already down!`);continue;}
     const use=p.inv.atk>0;if(use)p.inv.atk--;let dmg=(use?3:1)*(tier>=2?2:1),note=tier===3?' 🌟 Critical!':tier===2?' ⭐ ×2':'';
     if((p.streak||0)>=2){dmg+=1;note+=' 🔥 Streak!';}
     if(p.dash){dmg*=2;p.dash=false;note+=' Dino Dash!';}
@@ -1438,9 +1441,10 @@ async function resolveRound(){
     if(ko){await sleep(200);burst(v.pid,['💨','💤','⭐'],14,{speed:20});floatText(pid,'+3 🏆','#c92a2a');}
     await sleep(420);
   }
-  if(bossOn())await bossAttack(blocks);
-  b.step='done';b.acts={};H.busy=false;changed();
-  if(acts.length&&!b.boss){const ts=teamStats(S).sort((x,y)=>y.pts-x.pts);if(ts[0])log(`After round ${b.round}: ${ts[0].name} leads with ${ts[0].pts} 🏆`);changed();}
+  if(S.battle===b&&bossOn())await bossAttack(blocks);
+  if(S.battle===b&&acts.length&&!b.boss){const ts=teamStats(S).sort((x,y)=>y.pts-x.pts);if(ts[0])log(`After round ${b.round}: ${ts[0].name} leads with ${ts[0].pts} 🏆`);}
+  }catch(e){console.error(e);}
+  finally{H.busy=false;if(S.battle===b){b.step='done';b.acts={};}changed();}
 }
 function bossPt(){return elCenter($('#boss-e'));}
 function summonBoss(){
@@ -1500,11 +1504,11 @@ function openVote(){
 }
 function voteCounts(){const v=S.battle.vote;const c=v.items.map(()=>0);Object.values(v.votes).forEach(i=>{if(c[i]!==undefined)c[i]++;});return c;}
 function onVote(pid,i){const v=S.battle&&S.battle.vote;if(!v||v.revealed||!P(pid))return;i=+i;if(!(i>=0&&i<v.items.length))return;if(v.items[i].pid===pid)return sendErr(pid,"You can't vote for your own sentence!");v.votes[pid]=i;beep(800,.04);changed();}
-function revealVote(){const v=S.battle&&S.battle.vote;if(!v||v.revealed)return;const c=voteCounts();let w=0;c.forEach((n,i)=>{if(n>c[w])w=i;});v.revealed=true;v.winner=w;const p=P(v.items[w].pid);
+function revealVote(){const v=S.battle&&S.battle.vote;if(!v||v.revealed)return;const c=voteCounts();const mx=Math.max(...c);if(!(mx>0))return toast('No votes yet. Ask the students to tap a sentence, or press Close.');const tops=c.map((n,i)=>n===mx?i:-1).filter(i=>i>=0);const w=tops[rnd(tops.length)];v.revealed=true;v.winner=w;const p=P(v.items[w].pid);
   if(p){p.coins+=3;p.pts+=3;if(p.crId)crEvent('points',{student:p.crId,delta:3,reason:'best sentence'});log(`🏅 Best sentence: ${p.name} — “${v.items[w].text}” (+3 🪙 +3 🏆)`);}changed();fanfare();banner('BEST SENTENCE!',p?p.name:'','#0c8599');if(ui3d()&&p)H.hb3d.cheer(p.pid);setTimeout(()=>confetti(stageMid(),PARTY,70,{speed:55}),200);}
 function closeVote(){if(S.battle){S.battle.vote=null;changed();}}
 function endBattle(){
-  if(!S.battle)return;
+  if(!S.battle)return;if(H.busy)return toast('Wait for this round to finish, then press End Battle.');
   const ts=teamStats(S).sort((a,b)=>b.pts-a.pts||b.pct-a.pct);
   const mvp=Object.values(S.players).sort((a,b)=>b.pts-a.pts)[0];
   S.results={teams:ts.map(t=>({name:t.name,color:t.color,pts:t.pts,pct:Math.round(t.pct*100)})),mvp:mvp?{name:mvp.name,e:charById(mvp.char).e,pts:mvp.pts,team:teamName(mvp.team)}:null,
@@ -1513,7 +1517,7 @@ function endBattle(){
   fanfare();banner(`${ts[0]?.name||'Game'} WINS!`,'🏆 Great battle, everyone!',ts[0]?.color);
   setTimeout(()=>{confetti({x:FX.w*.3,y:FX.h*.7},PARTY,70,{speed:60});confetti({x:FX.w*.7,y:FX.h*.7},PARTY,70,{speed:60});},400);
 }
-function backToGather(){S.phase='gather';S.battle=null;S.results=null;Object.values(S.players).forEach(p=>{p.hp=maxHp(p);p.down=false;p.armor=0;p.dash=false;p.warp=false;});log('Back to learning time! Collect more supplies.');changed();}
+function backToGather(){if(H.busy)return toast('Wait for this round to finish.');S.phase='gather';S.battle=null;S.results=null;Object.values(S.players).forEach(p=>{p.hp=maxHp(p);p.down=false;p.armor=0;p.dash=false;p.warp=false;});log('Back to learning time! Collect more supplies.');changed();}
 
 /* ----- connections ----- */
 function startHost(){
@@ -1521,10 +1525,10 @@ function startHost(){
   try{H.peer&&H.peer.destroy();}catch(e){}
   H.status='wait';H.statusText='Connecting…';renderHeader();
   const peer=new Peer(peerIdFor(S.code),peerOpts());H.peer=peer;
-  peer.on('open',()=>{H.status='on';H.statusText='Ready for players';H.retries=0;renderHeader();if(CR.inRunner&&!H.crReady){H.crReady=true;CR.ready(S.code);}});
-  peer.on('connection',conn=>{H.conns.set(conn,{pid:null,cid:null});conn.on('data',m=>{try{onStudent(conn,m);}catch(e){console.error(e);}});conn.on('close',()=>dropConn(conn));conn.on('error',()=>dropConn(conn));});
-  peer.on('disconnected',()=>{if(!peer.destroyed){H.status='wait';H.statusText='Reconnecting…';renderHeader();setTimeout(()=>{try{peer.reconnect();}catch(e){}},1500);}});
-  peer.on('error',e=>{if(['unavailable-id','network','server-error','socket-error','socket-closed'].includes(e.type)){H.status='wait';H.statusText=e.type==='unavailable-id'?'Re-opening the room…':'Network problem, retrying…';renderHeader();H.retries=(H.retries||0)+1;clearTimeout(H.rt);H.rt=setTimeout(startHost,Math.min(10000,2000+H.retries*1000));}});
+  peer.on('open',()=>{clearTimeout(H.rt);H.status='on';H.statusText='Ready for players';H.retries=0;renderHeader();if(CR.inRunner&&!H.crReady){H.crReady=true;CR.ready(S.code);}});
+  peer.on('connection',conn=>{H.conns.set(conn,{pid:null,cid:null});conn.on('data',m=>{try{onStudent(conn,m);}catch(e){console.error(e);}});conn.on('close',()=>dropConn(conn));conn.on('error',()=>{if(!conn.open)dropConn(conn);});});
+  peer.on('disconnected',()=>{if(peer!==H.peer)return;if(!peer.destroyed){H.status='wait';H.statusText='Reconnecting…';renderHeader();setTimeout(()=>{try{peer.reconnect();}catch(e){}},1500);}});
+  peer.on('error',e=>{if(peer!==H.peer)return;if(['unavailable-id','network','server-error','socket-error','socket-closed'].includes(e.type)){H.status='wait';H.statusText=e.type==='unavailable-id'?'Re-opening the room…':'Network problem, retrying…';renderHeader();H.retries=(H.retries||0)+1;clearTimeout(H.rt);H.rt=setTimeout(()=>{if(H.peer!==peer)return;if(!peer.destroyed&&!peer.disconnected&&peer.open){H.status='on';H.statusText='Ready for players';renderHeader();return;}/* tablets that are still connected keep working without the signalling server: only rebuild the room when it is really gone or nobody is connected */if(peer.destroyed||![...H.conns.keys()].some(c=>c.open))startHost();},Math.min(10000,2000+H.retries*1000));}});
 }
 function dropConn(conn){const info=H.conns.get(conn);H.conns.delete(conn);if(info&&info.pid&&S.players[info.pid]){if(![...H.conns.values()].some(x=>x.pid===info.pid)&&!S.players[info.pid].manual){S.players[info.pid].online=false;changed();}}}
 function onStudent(conn,m){
@@ -1536,16 +1540,17 @@ function onStudent(conn,m){
     if(!name0||!CHARS.some(c=>c.id===m.char)||!(team>=0&&team<S.teamCount))return conn.send({t:'toast',msg:'Please type your name, pick a team and a character.'});
       const names=[name0];mates.forEach(x=>{if(!names.some(y=>y.toLowerCase()===x.toLowerCase()))names.push(x);});const pair=names.length>1?names.slice(0,3):null,name=pair?pairName(pair):name0;
     let pid=S.cidMap[info.cid];
+    if(!pid||!S.players[pid]){const back=Object.values(S.players).find(x=>!x.manual&&!x.pre&&!x.crId&&!x.online&&x.team===team&&x.name.toLowerCase()===name.toLowerCase()&&![...H.conns.values()].some(c=>c.pid===x.pid));if(back){pid=back.pid;S.cidMap[info.cid]=pid;log(`${name} is back! ${charById(m.char).e}`);}}
     if(!pid||!S.players[pid]){pid=newPlayer(name,m.char,team);S.cidMap[info.cid]=pid;log(`${name} joined ${teamName(team)}! ${charById(m.char).e}${pair?' 👥':''}`);chime();setTimeout(()=>{popHab(pid);burst(pid,['✨','🎉'],12,{ring:true,g:0,speed:16,drag:.95});},120);}
     else Object.assign(S.players[pid],{name,char:m.char,team,online:true});
       Object.assign(S.players[pid],{pair,turn:pair?Math.min(S.players[pid].turn||0,pair.length-1):0,pairOk:pair?pair.map((x,i)=>(S.players[pid].pairOk||[])[i]||0):null});
     S.players[pid].av=cleanAv(m.av,name);
-    info.pid=pid;changed();return;
+    info.pid=pid;ltPairJoin(pid);changed();return;
   }
-  if(m.t==='claim'&&m.crId){const p=Object.values(S.players).find(x=>x.crId===m.crId);if(!p)return conn.send({t:'toast',msg:'Your name is not in this class. Ask your teacher.'});p.pre=false;p.online=true;p.av=cleanAv(m.av,p.name);S.cidMap[info.cid]=p.pid;info.pid=p.pid;if(!S.crSeen)S.crSeen={};if(!S.crSeen[p.pid]){S.crSeen[p.pid]=1;log(`${p.name} is here! ${charById(p.char).e}`);chime();}changed();return;}
+  if(m.t==='claim'&&m.crId){const p=Object.values(S.players).find(x=>x.crId===m.crId);if(!p)return conn.send({t:'toast',msg:'Your name is not in this class. Ask your teacher.'});p.pre=false;p.online=true;p.av=cleanAv(m.av,p.name);S.cidMap[info.cid]=p.pid;info.pid=p.pid;if(!S.crSeen)S.crSeen={};if(!S.crSeen[p.pid]){S.crSeen[p.pid]=1;log(`${p.name} is here! ${charById(p.char).e}`);chime();}ltPairJoin(p.pid);changed();return;}
   if(m.t==='claim'){const p=S.players[m.pid];if(!p||!p.pre)return conn.send({t:'toast',msg:'That name is already taken. Ask your teacher.'});
     const old=S.cidMap[info.cid];if(old&&old!==m.pid&&S.players[old]&&S.players[old].pre===false&&![...H.conns.values()].some(x=>x!==info&&x.pid===old))S.players[old].online=false;
-    p.pre=false;p.online=true;p.av=cleanAv(m.av,p.name);S.cidMap[info.cid]=m.pid;info.pid=m.pid;log(`${p.name} joined ${teamName(p.team)}! ${charById(p.char).e}`);chime();setTimeout(()=>{popHab(m.pid);burst(m.pid,['✨','🎉'],12,{ring:true,g:0,speed:16,drag:.95});},120);changed();return;}
+    p.pre=false;p.online=true;p.av=cleanAv(m.av,p.name);S.cidMap[info.cid]=m.pid;info.pid=m.pid;log(`${p.name} joined ${teamName(p.team)}! ${charById(p.char).e}`);chime();setTimeout(()=>{popHab(m.pid);burst(m.pid,['✨','🎉'],12,{ring:true,g:0,speed:16,drag:.95});},120);ltPairJoin(m.pid);changed();return;}
   const pid=info.pid;if(!pid||!S.players[pid])return;
   if(m.t==='buy')buy(pid,m.item);
   if(m.t==='lt')ltMsg(pid,m);
@@ -1706,7 +1711,7 @@ function renderOverlay(){
     o.hidden=!!H.hideResults;return;}
   if(S.phase==='battle'&&S.battle&&S.battle.vote){const v=S.battle.vote,c=voteCounts(),tot=Math.max(1,c.reduce((a,x)=>a+x,0)),n=Object.keys(v.votes).length;
     o.innerHTML=`<div class="kind">🗳️ Vote for the best sentence</div><div class="vote-items">${v.items.map((it,i)=>{const pp=P(it.pid);return `<div class="vi${v.revealed&&v.winner===i?' win':''}${!v.revealed&&H.voter?' pick':''}" ${!v.revealed?`data-act="vote-cast" data-i="${i}"`:''}>${v.revealed?`<i class="fill" style="width:${Math.round(c[i]/tot*100)}%"></i>`:''}<span class="L">${'ABCD'[i]}</span><span class="tx">${esc(it.text)}${v.revealed&&v.winner===i&&pp?`<small> — ${charById(pp.char).e} ${esc(pp.name)}</small>`:''}</span>${v.revealed?`<b class="cnt">${c[i]}</b>`:''}</div>`;}).join('')}</div>${v.revealed?'':`<div class="voters">${Object.values(S.players).filter(p=>!p.pre).map(p=>`<button class="vb${H.voter===p.pid?' cur':''}${v.votes[p.pid]!=null?' done':''}" data-act="vote-as" data-pid="${p.pid}" style="--tc:${teamColor(p.team)}">${charById(p.char).e} ${esc(p.name)}${v.votes[p.pid]!=null?' ✓':''}</button>`).join('')}</div>`}<div class="hint">🗳️ ${n} vote${n===1?'':'s'} so far · Students vote on their tablets${v.revealed?'':H.voter?` · <b>Now tap the sentence ${esc(P(H.voter)?.name||'')} chooses</b>`:' · or tap a name, then a sentence, to vote for them'}</div><div class="acts">${v.revealed?'':'<button class="btn primary" data-act="vote-reveal">🏅 Show results</button>'}<button class="btn" data-act="vote-close">Close</button></div>`;o.hidden=false;return;}
-  if(S.phase==='gather'&&S.lt&&S.lt.cat!=='sw'&&!H.ltHideText&&ltUnit()){const h=ltOverlayHTML();if(h){o.innerHTML=h;o.hidden=false;return;}}
+  if(S.phase==='gather'&&S.lt&&(S.lt.cat!=='sw'||(ltUnit()&&ltUnit().phon))&&!H.ltHideText&&ltUnit()){const h=ltOverlayHTML();if(h){o.innerHTML=h;o.hidden=false;return;}}
   if(S.phase==='gather'&&S.card){const c=S.card;const kk=CARD_KINDS[c.kind];o.innerHTML=`<div class="kind">Question Card · Everyone${kk?` · <span class="ck k-${c.kind}">${kk[0]} ${kk[1]}</span>`:''}</div><div class="q">${cardQ(c)}</div>${c.kind==='V'?cardBank(c)+'<div class="fullsent">✍️ Choose the word and say the whole sentence.</div>':c.kind?cardCue(c)+'<div class="fullsent">✍️ Answer in a full sentence.</div>':''}<div class="ans">${H.showAns&&c.a?cardA(c):''}</div><div class="acts">${c.hint?`<button class="btn" data-act="show-cue">💡 ${H.showCue?'Hide':'Show'} hints</button>`:''}${c.a?`<button class="btn" data-act="show-ans">${H.showAns?'Hide':'Show'} answer</button>`:''}<button class="btn primary" data-act="card">Next question</button><button class="btn" data-act="card-close">Close</button></div><div class="hint">Reward the student who answers: tap ✓ +${CORRECT_COINS} 🪙 in the player list.</div>`;o.hidden=false;return;}
   o.hidden=true;
 }
@@ -1758,11 +1763,13 @@ function renderConsole(){
     <div class="acts">${btns}<button class="btn x" data-act="remove" data-pid="${p.pid}">${H.confirm==='rm-'+p.pid?'Remove?':'✕'}</button></div></div>`;}).join('')
     :`<div class="empty">No players yet. Students scan the QR code, type their name, pick a team and a character.<br><br>Code: <b>${esc(S.code)}</b></div>`;
   const legend=ph==='gather'?`<div class="legend"><b>Learning Time</b><br>Students earn 🪙 coins and spend them on their tablets:<br>🏠 Upgrade habitat (${UPGRADE_COST[1]} / ${UPGRADE_COST[2]} 🪙): more ❤️ (10 → 15 → 20)<br>⚔️ Attack gear (${GEAR_COST} 🪙): 3 damage instead of 1<br>🛡️ Defense gear (${GEAR_COST} 🪙): +3 wall instead of +1<br>🍖 Supplies (${GEAR_COST} 🪙): +4 ❤️ instead of +1<br>⭐ 3 class items charge a power. Press <b>⚔️ Start Battle</b> for the last ${S.battleMin} minutes.</div>`
-    :`<div class="legend"><b>Battle rules</b><br>Correct answer = 1 action. ⭐ Great = ×2. 🌟 Amazing = ×2 and through walls. 🔥 3 correct rounds in a row = +1 damage. 🪄 Powers need a spell read out loud. Attacks hit the strongest habitat on the other team first. A habitat at 0 ❤️ sleeps 💤 for one round, then rebuilds at half ❤️. 🏆 points: damage dealt, +1 for build/repair, +3 for a KO. The team with the lowest ❤️ gets a 📦 supply drop each round.</div>`;
+    :`<div class="legend"><b>Battle rules</b><br>Correct answer = 1 action. ⭐ Great = ×2. 🌟 Amazing = ×2 and through walls. 🔥 3 correct rounds in a row = +1 damage. ⚡ 3 class items charge a power: tap it on the tablet. Attacks hit the strongest habitat on the other team first. A habitat at 0 ❤️ sleeps 💤 for one round, then rebuilds at half ❤️. 🏆 points: damage dealt, +1 for build/repair, +3 for a KO. The team with the lowest ❤️ gets a 📦 supply drop each round.</div>`;
+  const keep=[...$('#console').querySelectorAll('input[id],textarea[id]')].filter(e=>e.type!=='checkbox'&&e.type!=='radio').map(e=>({id:e.id,v:e.value,f:document.activeElement===e,a:e.selectionStart,z:e.selectionEnd}));
   $('#console').innerHTML=top+teamsHTML+`<h2><span>Players</span> <small style="font-family:var(--body);font-size:.85rem;color:var(--muted)">${ps.length}</small><span class="sp"></span><button class="btn" data-act="add-open">+ Add player</button></h2><div class="plist">${rows}</div>${legend}`;
+  keep.forEach(k=>{const e=document.getElementById(k.id);if(!e||!$('#console').contains(e))return;e.value=k.v;if(k.f){e.focus();try{e.setSelectionRange(k.a,k.z);}catch(_){}}});
 }
 function flashRow(pid){requestAnimationFrame(()=>{const r=$('#row-'+pid);if(r){r.classList.remove('flash');void r.offsetWidth;r.classList.add('flash');}});}
-function askCustom(type){const el=$('#cq');const t=(el&&el.value||'').trim();if(!t)return toast('Type a question first.');el.value='';nextRound({type,text:t,model:''});}
+function askCustom(type){const el=$('#cq');const t=(el&&el.value||'').trim();if(!t)return toast('Type a question first.');if(H.busy)return toast('Wait for this round to finish.');el.value='';nextRound({type,text:t,model:''});}
 
 /* ----- modals ----- */
 function openBank(){H.bank={level:(S.bankSel&&S.bankSel.level)||'OD1',units:new Set(S.bankSel?S.bankSel.units:[])};renderBank();}
@@ -1782,8 +1789,8 @@ function renderBank(){
 }
 /* phonics units carry no # learn / # battle lines: make simple ones from their words and sentences */
 function phonWords(u){return (u.words||[]).map(l=>l.split('|').map(x=>x.trim())).filter(p=>p[0]);}
-function phonLearn(u){const ws=phonWords(u);const snd=(u.sound||[]).map(l=>l.split('|')[0].trim()).filter(Boolean);const out=ws.slice(0,8).map(p=>`Spell the word for ${p[p.length-1]&&!/[a-z]/i.test(p[p.length-1])?p[p.length-1]:'the picture'}: ${p[0].length} letters. | ${p[0]}`);if(snd.length)out.push(`Say three words with the ${snd.join(' / ')} sound.`);return out;}
-function phonBattle(u){const ws=phonWords(u);const out=[];(u.build||[]).forEach(l=>{const p=l.split('|').map(x=>x.trim());const t=p[0].toUpperCase()==='G'?p[1]:p[0];if(t)out.push('B | '+t);});ws.slice(0,6).forEach(p=>out.push(`W | ${p[0]} | Make a sentence with the word ${p[0]}.`));const pr=(u.pairs||[]).map(l=>l.split('|').map(x=>x.trim()).filter(Boolean)).filter(p=>p.length>=2);if(pr.length)out.push(`Z | Say these pairs fast: ${pr.slice(0,4).map(p=>p[0]+' / '+p[1]).join(', ')}`);if(ws.length>=4)out.push(`P | ${ws.slice(0,4).map(p=>p[p.length-1]).filter(x=>x&&!/[a-z]/i.test(x)).join('')} | Say the words and the sounds you hear.`);return out;}
+function phonLearn(u){const ws=phonWords(u);const snd=(u.sound||[]).map(l=>l.split('|')[0].trim()).filter(Boolean);const out=ws.slice(0,8).map(p=>{const pic=p.length>1?p[p.length-1]:'';const ch=(p.length>=2?p[1]:'').split('/').map(x=>x.trim()).filter(Boolean);return pic&&!/[a-z]/i.test(pic)?`Spell the word for ${pic}: ${p[0].length} letters. | ${p[0]}`:`Read this word: ${p[0]}. What sounds can you hear?${ch.length>1?' | '+ch.join(' - '):''}`;});if(snd.length)out.push(`Say three words with the ${snd.join(' / ')} sound.`);return out;}
+function phonBattle(u){const ws=phonWords(u);const out=[];(u.build||[]).forEach(l=>{const p=l.split('|').map(x=>x.trim());const t=p[0].toUpperCase()==='G'?p[1]:p[0];if(t)out.push('B | '+t);});ws.slice(0,6).forEach(p=>out.push(`W | ${p[0]} | Make a sentence with the word ${p[0]}.`));const pr=(u.pairs||[]).map(l=>l.split('|').map(x=>x.trim()).filter(Boolean)).filter(p=>p.length>=2);if(pr.length)out.push(`Z | Say these pairs fast: ${pr.slice(0,4).map(p=>p[0]+' / '+p[1]).join(', ')}`);{const em=ws.slice(0,4).map(p=>p.length>1?p[p.length-1]:'').filter(x=>x&&!/[a-z]/i.test(x)).join('');if(ws.length>=4&&em)out.push(`P | ${em} | Say the words and the sounds you hear.`);}return out;}
 function applyBank(replace){
   const b=H.bank,lv=OD_BANK[b.level],picked=[...b.units].sort((a,c)=>a-c);if(!picked.length)return;
   const us=lv.units.filter(u=>b.units.has(u.n));
@@ -1879,14 +1886,14 @@ function crHostSetup(){const init=CR.init;const sess=init.session||{};
       if(!L.length)us.forEach(u=>(u.learn.length?u.learn:(u.choice||[]).length||(u.cloze||[]).length?[]:phonLearn(u)).forEach(x=>L.push(x)));}catch(e){}}if(!L.length&&B.length){B.forEach(l=>{const q=parseQ(l);if(!q||!q.text)return;const card=q.type==='B'?`Say this sentence: ${q.model}`:q.type==='W'?`Make a sentence with "${q.word}".`:q.text;const line=q.model&&q.type!=='B'?`${card} | ${q.model}`:card;L.push(line);S.crLearnSrc[line]=l;});}
     if(L.length)S.qText=L.join('\n');if(B.length)S.bText=B.join('\n');S.qOrder=[];S.bOrder=[];S.bankSel=null;}
   const studs=Array.isArray(init.students)?init.students:[];
-  const grp=crGroups(init,studs);if(!grp&&S.crGrouped){S.teams=TEAM_DEFAULT.map(t=>({...t}));S.teamCount=2;Object.values(S.players).forEach(p=>{if(p.team>=2)p.team=p.team%2;});}S.crGrouped=!!grp;if(grp){while(S.teams.length<4)S.teams.push({...TEAM_DEFAULT[S.teams.length]});S.teamCount=Math.max(2,Math.min(4,grp.groups.length));grp.groups.slice(0,S.teamCount).forEach((g,i)=>{S.teams[i]={...S.teams[i],name:g.label};});}
+  const grp=crGroups(init,studs);if(!grp&&S.crGrouped){S.teams=TEAM_DEFAULT.map(t=>({...t}));S.teamCount=2;Object.values(S.players).forEach(p=>{if(p.team>=2)p.team=p.team%2;});}S.crGrouped=!!grp;if(grp){while(S.teams.length<4)S.teams.push({...TEAM_DEFAULT[S.teams.length]});S.teamCount=Math.max(2,Math.min(4,grp.groups.length));grp.groups.slice(0,S.teamCount).forEach((g,i)=>{S.teams[i]={...S.teams[i],name:g.label,color:g.color||TEAM_DEFAULT[i].color};});}
   const counts=S.teams.slice(0,S.teamCount).map((_,i)=>Object.values(S.players).filter(p=>p.team===i).length);
   studs.forEach(st=>{if(!st||!st.id)return;const name=String(st.name||st.id).replace(/\s+/g,' ').trim().slice(0,14)||String(st.id).slice(0,14);let p=Object.values(S.players).find(x=>x.crId===st.id);
     const gi=grp?grp.of[st.id]:undefined,gTeam=gi==null?null:gi%S.teamCount;
     if(!p){const team=gTeam!=null?gTeam:counts.indexOf(Math.min(...counts));counts[team]++;const pid=newPlayer(name,CHARS[rnd(CHARS.length)].id,team);p=S.players[pid];p.crId=st.id;p.pre=true;p.online=false;p.av=avFromName(name);}else{p.name=name;if(gTeam!=null)p.team=gTeam;}
     p.crGroup=gi!=null?grp.groups[gi].key:undefined;});
   Object.values(S.players).forEach(p=>{if(p.crId&&!studs.some(st=>st&&st.id===p.crId))delete S.players[p.pid];});
-  S.log=[`📋 ${sess.className||'Class'} · ${studs.length} students${grp?` in ${grp.groups.length} groups`:''}. Tablets join by themselves.`];
+  S.log=[`📋 ${/^[\x20-\x7e]{1,24}$/.test(String(sess.className||''))?sess.className:'Class'} · ${studs.length} students${grp?` in ${grp.groups.length} groups`:''}. Tablets join by themselves.`];
   crLoadUnit(init);crMode();
   CR.on('cr:end',crFinish);}
 /* runner: the unit the runner sent (## Un … with # words/# reading/# grammar/# speak-write) becomes the Learning Time unit */
@@ -1897,7 +1904,7 @@ function crMode(){const m=(new URLSearchParams(location.search).get('mode')||'')
 function crGroups(init,studs){const key=v=>v==null||v===''?null:String(typeof v==='object'?(v.id??v.name??''):v);const of={},groups=[],idx={};
   const addG=(k,name)=>{if(idx[k]==null){idx[k]=groups.length;groups.push({key:k,name:name==null?k:String(name)});}return idx[k];};
   const list=Array.isArray(init.groups)?init.groups:Array.isArray(init.teams)?init.teams:null;
-  if(list)list.forEach((g,i)=>{if(!g)return;const k=key(g.id??g.key??g.name??('g'+(i+1)));const gi=addG(k,g.name??g.label??k);const mem=g.students||g.members||g.studentIds||g.ids||[];(Array.isArray(mem)?mem:[]).forEach(m=>{const id=typeof m==='object'?m&&m.id:m;if(id!=null)of[String(id)]=gi;});});
+  if(list)list.forEach((g,i)=>{if(!g)return;const k=key(g.id??g.key??g.name??('g'+(i+1)));const gi=addG(k,g.name??g.label??k);of[k]=gi;if(typeof g.color==='string'&&/^#[0-9a-f]{6}$/i.test(g.color))groups[gi].color=g.color;const mem=g.students||g.members||g.studentIds||g.ids||[];(Array.isArray(mem)?mem:[]).forEach(m=>{const id=typeof m==='object'?m&&m.id:m;if(id!=null)of[String(id)]=gi;});});
   studs.forEach(st=>{if(!st||!st.id||of[st.id]!=null)return;const g=st.group??st.groupId??st.team??st.teamId??st.groupName??st.teamName;const k=key(g);if(k==null)return;const nm=typeof g==='object'?(g.name??k):(st.groupName??st.teamName??k);of[st.id]=addG(k,nm);});
   if(groups.length<2)return null;
   groups.forEach((g,i)=>{const n=String(g.name||'').trim();g.label=/^[\x20-\x7e]{1,14}$/.test(n)&&!/^\d+$/.test(n)?n:(/^\d+$/.test(n)?'Group '+n:'Group '+(i+1));});
@@ -1931,6 +1938,7 @@ function cropFit(img){const el=img.parentNode;if(!el||!img.naturalWidth)return;c
   if(cropRO&&!el._ro){el._ro=1;cropRO.observe(el);}const W=el.clientWidth,H=el.clientHeight;if(!W||!H)return;const sc=Math.min(W/cw,H/ch);
   img.style.width=(nw*sc).toFixed(2)+'px';img.style.height=(nh*sc).toFixed(2)+'px';img.style.left=((W-cw*sc)/2-x/100*nw*sc).toFixed(2)+'px';img.style.top=((H-ch*sc)/2-y/100*nh*sc).toFixed(2)+'px';}
 const cropRO=window.ResizeObserver?new ResizeObserver(es=>es.forEach(e=>{const i=e.target.querySelector('img');if(i&&i.naturalWidth)cropFit(i);})):null;
+function alphaL(w,letters,sort){const ls=letters||[];const it=sort&&sort.items&&sort.items.find(x=>x.w===w.w);if(it&&ls.includes(it.b))return it.b;if(ls.includes(w.w[0]))return w.w[0];return ls.find(l=>w.w.includes(l))||w.w[0];}
 function ltFromUnit(u,level){const o={level,n:u.n,title:u.title,words:[],reading:null,grammar:[],rules:[],sw:null};
   (u.words||[]).forEach(l=>{const p=l.split('|').map(x=>x.trim());if(!p[0])return;const syl=(p[1]||p[0]).split('·').map(x=>x.trim()).filter(Boolean),chunks=(p[2]||p[1]||p[0]).split('/').map(x=>x.trim()).filter(Boolean);o.words.push({w:p[0],syl,chunks,pic:p[3]||''});});
   const rl=u.reading||[];if(rl.length){const paras=rl.filter(l=>l.startsWith('>')).map(l=>l.slice(1).trim()).filter(Boolean);const qs=rl.filter(l=>/^R[CTS]\s*\|/i.test(l)).map(l=>{const p=l.split('|').map(x=>x.trim());const t=p[0].toUpperCase().slice(1);return t==='C'?{type:'C',text:p[1],opts:p.slice(2).filter(Boolean)}:t==='T'?{type:'T',text:p[1],model:p[2]||''}:{type:'S',text:p[1]};}).filter(q=>q.text);
@@ -1952,7 +1960,7 @@ function ltFromUnit(u,level){const o={level,n:u.n,title:u.title,words:[],reading
     const norm=t=>String(t).toLowerCase().replace(/[^a-z ]+/g,' ').replace(/\s+/g,' ').trim();
     o.buildPic=bl.map(b=>{if(b.pic)return b.pic;const nb=norm(b.t);const pn=nb.length>5&&(o.reading&&o.reading.panels||[]).find(p=>p.img&&(' '+norm(p.t)+' ').includes(' '+nb+' '));if(pn)return pn.img;const ws=norm(b.t).split(' ');const hit=o.words.filter(w=>ws.includes(w.w)&&w.pic);const ref=hit.find(w=>isPicRef(w.pic));return ref?ref.pic:hit.slice(0,4).map(w=>w.pic).join(' ');});
     o.alpha=/^OPW1$/i.test(level||'');o.letters=o.sound.map(x=>x.let);
-    if(o.alpha){const say=[];o.letters.forEach(L=>{const w=o.words.find(w=>w.w[0]===L&&w.pic);if(w&&!say.includes(w))say.push(w);});o.words.forEach(w=>{if(say.length<4&&w.pic&&!say.includes(w))say.push(w);});o.say=say.slice(0,4);}
+    if(o.alpha){const say=[];o.letters.forEach(L=>{const w=o.words.find(w=>alphaL(w,o.letters,o.sort)===L&&w.pic);if(w&&!say.includes(w))say.push(w);});o.words.forEach(w=>{if(say.length<4&&w.pic&&!say.includes(w))say.push(w);});o.say=say.slice(0,4);}
     o.sw=(o.pairs.length||o.build.length||(o.say&&o.say.length))?{dlg:[],keys:[],model:'',prompt:''}:null;}
   return o;}
 function ltUnits(){return Array.isArray(S.ltUnits)?S.ltUnits:[];}
@@ -1964,30 +1972,34 @@ function ltStart(cat){const u=ltUnit();if(!u||!ltHas(u,cat))return toast('This u
   if(cat==='sw'){const byTeam={};Object.values(S.players).filter(p=>!p.pre).sort((a,b)=>a.pid.localeCompare(b.pid,undefined,{numeric:true})).forEach(p=>{(byTeam[p.team]=byTeam[p.team]||[]).push(p.pid);});
     Object.values(byTeam).forEach(ids=>{for(let k=0;k<ids.length;k+=2){const a=ids[k],b=ids[k+1]||ids[0];if(a===b){S.lt.pairs[a]={partner:null,role:'A'};continue;}S.lt.pairs[a]=Object.assign({},S.lt.pairs[a]||{},{partner:b,role:'A'});if(!S.lt.pairs[b])S.lt.pairs[b]={partner:a,role:'B'};}});}
   log(`${ltCats(u)[cat][0]} ${ltCats(u)[cat][1]} · U${u.n} ${u.title}`);crStart();changed();}
+function ltPairJoin(pid){const l=S.lt,p=P(pid);if(!l||l.cat!=='sw'||!p||p.pre)return;const has=id=>l.pairs[id]&&l.pairs[id].partner&&P(l.pairs[id].partner);if(has(pid))return;
+  const mates=Object.values(S.players).filter(q=>q.pid!==pid&&!q.pre&&q.team===p.team).sort((a,b)=>a.pid.localeCompare(b.pid,undefined,{numeric:true}));const solo=mates.find(q=>!has(q.pid));
+  if(solo){l.pairs[solo.pid]={partner:pid,role:'A'};l.pairs[pid]={partner:solo.pid,role:'B'};}else if(mates.length)l.pairs[pid]={partner:mates[0].pid,role:'B'};else l.pairs[pid]={partner:null,role:'A'};}
 function ltStop(){if(!S.lt)return;S.lt=null;H.ltHideText=false;changed();}
 function ltNext(){const u=ltUnit();if(!S.lt||S.lt.cat!=='reading'||!u||!u.reading)return;if(S.lt.i<u.reading.qs.length-1){S.lt.i++;beep(500,.1);}else{toast('That was the last question.');}changed();}
 function ltPrev(){const u=ltUnit();if(!S.lt||S.lt.cat!=='reading')return;const lo=u&&u.phon&&u.reading?-(u.reading.panels.length||1):-1;if(S.lt.i>lo)S.lt.i--;changed();}
 function ltProg(pid){const l=S.lt;if(!l.prog[pid])l.prog[pid]={done:{},ok:0,tries:{}};return l.prog[pid];}
-function ltCoin(pid,n,why){const p=P(pid);if(!p||n<=0)return;p.coins+=n;pairTally(p);if(p.crId)crEvent('points',{student:p.crId,delta:n,reason:why||'learning time'});floatText(pid,`+${n} 🪙`);burst(pid,['🪙'],Math.min(6,n*2),{speed:18});flashRow(pid);}
+function ltCoin(pid,n,why,quiet){const p=P(pid);if(!p||n<=0)return;p.coins+=n;pairTally(p);if(p.crId&&!quiet)crEvent('points',{student:p.crId,delta:n,reason:why||'learning time'});floatText(pid,`+${n} 🪙`);burst(pid,['🪙'],Math.min(6,n*2),{speed:18});flashRow(pid);}
 /* a tablet reports progress on the current activity */
-function ltMsg(pid,m){ltMsg0(pid,m);const p=P(pid),k=String(m&&m.k||'');if(p&&p.pair&&['word','gram','sort','build','choice','type','write'].includes(k)){pairFlip(p);changed();}
+function ltMsg(pid,m){if(!S.lt||!ltMsg0(pid,m)||!S.lt)return;const p=P(pid),k=String(m&&m.k||'');if(p&&p.pair&&['word','gram','sort','build','choice','type','write'].includes(k)){pairFlip(p);changed();}
     if(p&&['word','gram','sort','build','choice','type','write'].includes(k)){const pr=ltProg(pid),i=+m.i;if(m.ok!==false||(pr.tries&&pr.tries[i]>=2)||['choice','type','write'].includes(k))bpTouched(pid,k);}}
   function ltMsg0(pid,m){const l=S.lt,u=ltUnit(),p=P(pid);if(!l||!u||!p||!m)return;const k=String(m.k||'');
-  if(k==='word'&&l.cat==='words'){const i=+m.i;const w=u.words[i];if(!w)return;const pr=ltProg(pid);if(pr.done[i])return;pr.tries[i]=(pr.tries[i]||0)+1;if(m.ok){pr.done[i]=1;pr.ok++;ltCoin(pid,1,'word');if(pr.ok===u.words.length)log(`${p.name} finished all ${u.words.length} words! 🔤`);}changed();return;}
-  if(k==='gram'&&l.cat==='grammar'){const i=+m.i;if(!u.grammar[i])return;const pr=ltProg(pid);if(pr.done[i])return;pr.tries[i]=(pr.tries[i]||0)+1;if(m.ok){pr.done[i]=pr.tries[i]===1?2:1;pr.ok++;ltCoin(pid,pr.tries[i]===1?2:1,'grammar');if(pr.ok===u.grammar.length)log(`${p.name} built all ${u.grammar.length} sentences! 🧩`);}changed();return;}
-  if(k==='sort'&&l.cat==='grammar'&&u.sort){const i=+m.i;if(!u.sort.items[i])return;const pr=ltProg(pid);if(pr.done[i])return;pr.tries[i]=(pr.tries[i]||0)+1;if(m.ok){pr.done[i]=1;pr.ok++;ltCoin(pid,1,'sound sort');if(pr.ok===u.sort.items.length)log(`${p.name} sorted all ${u.sort.items.length} words! 🧩`);}changed();return;}
-  if(k==='build'&&l.cat==='sw'&&u.build){const i=+m.i;if(!u.build[i])return;const pr=ltProg(pid);if(pr.done[i])return;pr.tries[i]=(pr.tries[i]||0)+1;if(m.ok){pr.done[i]=pr.tries[i]===1?2:1;pr.ok++;ltCoin(pid,pr.tries[i]===1?2:1,'build');if(pr.ok===u.build.length)log(`${p.name} built all ${u.build.length} sentences! 💬`);}changed();return;}
-  if(l.cat==='reading'&&u.reading){const qi=l.i,q=u.reading.qs[qi];if(!q||qi<0)return;const pr=ltProg(pid);
-    if(k==='choice'&&q.type==='C'){if(pr.done[qi]!=null)return;const ok=+m.c===0;pr.done[qi]=ok?1:0;pr.tries[qi]=1;if(ok){pr.ok++;ltCoin(pid,1,'reading');}else{sendTo(pid,{t:'fx',k:'wrong'});}changed();return;}
-    if(k==='type'&&q.type==='T'){const text=String(m.text||'').replace(/\s+/g,' ').trim().slice(0,200);if(!text)return;const sb=l.subs[qi]=l.subs[qi]||{};if(sb[pid]&&sb[pid].ok)return;sb[pid]={text,ok:null,at:Date.now()};beep(600,.05);changed();return;}
-    if(k==='hand'&&q.type==='S'){pr.hand=qi;changed();return;}}
-  if(k==='write'&&l.cat==='sw'){const text=String(m.text||'').replace(/\s+/g,' ').trim().slice(0,300);if(!text)return;const sb=l.subs.write=l.subs.write||{};if(sb[pid]&&sb[pid].ok)return;sb[pid]={text,ok:null,at:Date.now()};beep(600,.05);changed();return;}}
+  if(k==='word'&&l.cat==='words'){const i=+m.i;const w=u.words[i];if(!w)return;const pr=ltProg(pid);if(pr.done[i])return;pr.tries[i]=(pr.tries[i]||0)+1;if(m.ok){pr.done[i]=1;pr.ok++;ltCoin(pid,1,'word');if(pr.ok===u.words.length)log(`${p.name} finished all ${u.words.length} words! 🔤`);}changed();return true;}
+  if(k==='gram'&&l.cat==='grammar'){const i=+m.i;if(!u.grammar[i])return;const pr=ltProg(pid);if(pr.done[i])return;pr.tries[i]=(pr.tries[i]||0)+1;if(m.ok){pr.done[i]=pr.tries[i]===1?2:1;pr.ok++;ltCoin(pid,pr.tries[i]===1?2:1,'grammar');if(pr.ok===u.grammar.length)log(`${p.name} built all ${u.grammar.length} sentences! 🧩`);}changed();return true;}
+  if(k==='sort'&&l.cat==='grammar'&&u.sort){const i=+m.i;if(!u.sort.items[i])return;const pr=ltProg(pid);if(pr.done[i])return;pr.tries[i]=(pr.tries[i]||0)+1;if(m.ok){pr.done[i]=1;pr.ok++;ltCoin(pid,1,'sound sort');if(pr.ok===u.sort.items.length)log(`${p.name} sorted all ${u.sort.items.length} words! 🧩`);}changed();return true;}
+  if(k==='build'&&l.cat==='sw'&&u.build){const i=+m.i;if(!u.build[i])return;const pr=ltProg(pid);if(pr.done[i])return;pr.tries[i]=(pr.tries[i]||0)+1;if(m.ok){pr.done[i]=pr.tries[i]===1?2:1;pr.ok++;ltCoin(pid,pr.tries[i]===1?2:1,'build');if(pr.ok===u.build.length)log(`${p.name} built all ${u.build.length} sentences! 💬`);}changed();return true;}
+  if(l.cat==='reading'&&u.reading){const qi=l.i,q=u.reading.qs[qi];if(!q||qi<0)return;if(m.i!=null&&+m.i!==qi)return;const pr=ltProg(pid);
+    if(k==='choice'&&q.type==='C'){if(pr.done[qi]!=null)return;const ok=+m.c===0;pr.done[qi]=ok?1:0;pr.tries[qi]=1;if(ok){pr.ok++;ltCoin(pid,1,'reading');}else{sendTo(pid,{t:'fx',k:'wrong'});}changed();return true;}
+    if(k==='type'&&q.type==='T'){const text=String(m.text||'').replace(/\s+/g,' ').trim().slice(0,200);if(!text)return;const sb=l.subs[qi]=l.subs[qi]||{};if(sb[pid]&&sb[pid].ok)return;sb[pid]={text,ok:null,at:Date.now()};beep(600,.05);changed();return true;}
+    if(k==='hand'&&q.type==='S'){pr.hand=qi;changed();return true;}}
+  if(k==='write'&&l.cat==='sw'){const text=String(m.text||'').replace(/\s+/g,' ').trim().slice(0,300);if(!text)return;const sb=l.subs.write=l.subs.write||{};if(sb[pid]&&sb[pid].ok)return;sb[pid]={text,ok:null,at:Date.now()};beep(600,.05);changed();return true;}}
 /* teacher grades a typed answer / a piece of writing: ✓ +2, ⭐ +3 (and the class item), ✗ sends it back */
+function ltSpoke(pid){const l=S.lt,u=ltUnit();if(!l||l.cat!=='reading'||!u||!u.reading||!P(pid))return;const q=u.reading.qs[l.i];if(!q||q.type!=='S')return;const pr=ltProg(pid);if(pr.done[l.i]==null){pr.done[l.i]=1;pr.ok++;}delete pr.hand;}
 function ltGrade(pid,key,tier){const l=S.lt;if(!l)return;const sb=l.subs[key]&&l.subs[key][pid];if(!sb)return;const p=P(pid);
   if(tier===0){sb.ok=false;sendTo(pid,{t:'fx',k:'wrong'});changed();return;}
   if(sb.ok)return;sb.ok=tier;const pr=ltProg(pid);if(key!=='write'){pr.done[key]=tier;pr.ok++;}
-  if(tier>=2)greatJob(pid);ltCoin(pid,2,key==='write'?'writing':'reading');
-  if(p&&p.crId)crEvent('grade',{student:p.crId,question:-1,level:tier>=2?'great':'good',points:tier>=2?3:2,auto:false});changed();}
+  if(tier>=2)greatJob(pid);ltCoin(pid,2,key==='write'?'writing':'reading',true);
+  if(p&&p.crId)crEvent('grade',{student:p.crId,level:tier>=2?'great':'good',points:tier>=2?3:2,auto:false});changed();}
 function ltPub(){const l=S.lt,u=ltUnit();if(!l||!u||S.phase!=='gather')return null;const o={cat:l.cat,i:l.i,unit:'U'+u.n+' '+u.title,phon:!!u.phon,alpha:!!u.alpha,letters:u.letters||[]};
   if(l.cat==='words'){o.words=u.words;if(u.phon)o.sound=u.sound;}else if(l.cat==='grammar'){if(u.phon)o.sort=u.sort;else{o.grammar=u.grammar;o.rules=u.rules||[];}}
   else if(l.cat==='reading'&&u.reading)o.reading={title:u.reading.title,paras:u.reading.paras,panels:u.reading.panels||[],qs:u.reading.qs.map(q=>({type:q.type,text:q.text,opts:q.opts||null}))};
@@ -2016,7 +2028,7 @@ function renderLTPanel(){const us=ltUnits();if(!us.length)return `<h2>Learning T
     else if(l.cat==='sw'){const sb=l.subs.write||{};const ents=Object.entries(sb).filter(([pid])=>P(pid)).sort((x,y)=>(x[1].ok===null?0:1)-(y[1].ok===null?0:1)||x[1].at-y[1].at);
       ctl=`<div class="row"><button class="btn" data-act="lt-stop">⏹ Stop</button><small>Pairs practice the dialogue (use 🎤 to spotlight a pair), then write their own sentences below.</small></div><div class="ltq"><b>Model:</b> ${esc(u.sw.model||'')}</div>
       <div class="subs">${ents.length?ents.map(([pid,s])=>`<div class="sub ${s.ok?'ok':s.ok===false?'no':''}"><div class="who" style="color:${teamColor(P(pid).team)}">${esc(P(pid).name)}</div><div class="txt">${esc(s.text)}</div><div class="row"><button class="btn tier t1${s.ok===1?' on':''}" data-act="lt-grade" data-pid="${pid}" data-key="write" data-t="1">✓ Good +2</button><button class="btn tier t2${s.ok>=2?' on':''}" data-act="lt-grade" data-pid="${pid}" data-key="write" data-t="2">⭐ Great +3</button>${s.ok?'':`<button class="btn bad" data-act="lt-grade" data-pid="${pid}" data-key="write" data-t="0">✗ Fix it</button>`}</div></div>`).join(''):'<div class="empty">Waiting for writing…</div>'}</div>`;}
-    else{const list=l.cat==='words'?`${u.phon&&u.sound.length?`<div class="ltq">🔊 Sound: ${u.sound.map(x=>`<b>${esc(x.let)}</b> ${esc(x.label)} ${esc(x.key)}`).join(' · ')}</div>`:''}${u.alpha?`<div class="ltlist letters">${u.letters.map(L=>`<span class="lw"><b>${esc(L.toUpperCase()+L)}</b><i>${u.words.filter(w=>w.w[0]===L).map(w=>wpic(w.pic,'sm')).join(' ')}</i></span>`).join('')}</div>`:`<div class="ltlist words">${u.words.map((w,i)=>`<span class="lw">${wpic(w.pic,'sm')}<b>${esc(w.w)}</b><small>${u.phon?esc(w.chunks.join(' / ')):esc(w.syl.join('·'))+' · '+esc(w.chunks.join(' / '))}</small></span>`).join('')}</div>`}`:u.phon?`<div class="ltlist words">${u.sort.buckets.map(b=>`<span class="lw"><i>🧩</i><b>${esc(b)}</b><small>${esc(u.sort.items.filter(x=>x.b===b).map(x=>x.w).join(', '))}</small></span>`).join('')}</div>`:`${(u.rules||[]).map(r=>`<div class="ltq">🔎 <b>${esc(r.title)}</b> ${r.lines.map(ltMark).join(' · ')}</div>`).join('')}<ol class="ltlist gram">${u.grammar.map(g=>`<li>${esc(g)}</li>`).join('')}</ol>`;
+    else{const list=l.cat==='words'?`${u.phon&&u.sound.length?`<div class="ltq">🔊 Sound: ${u.sound.map(x=>`<b>${esc(x.let)}</b> ${esc(x.label)} ${esc(x.key)}`).join(' · ')}</div>`:''}${u.alpha?`<div class="ltlist letters">${u.letters.map(L=>`<span class="lw"><b>${esc(L.toUpperCase()+L)}</b><i>${u.words.filter(w=>alphaL(w,u.letters,u.sort)===L).map(w=>wpic(w.pic,'sm')).join(' ')}</i></span>`).join('')}</div>`:`<div class="ltlist words">${u.words.map((w,i)=>`<span class="lw">${wpic(w.pic,'sm')}<b>${esc(w.w)}</b><small>${u.phon?esc(w.chunks.join(' / ')):esc(w.syl.join('·'))+' · '+esc(w.chunks.join(' / '))}</small></span>`).join('')}</div>`}`:u.phon?`<div class="ltlist words">${u.sort.buckets.map(b=>`<span class="lw"><i>🧩</i><b>${esc(b)}</b><small>${esc(u.sort.items.filter(x=>x.b===b).map(x=>x.w).join(', '))}</small></span>`).join('')}</div>`:`${(u.rules||[]).map(r=>`<div class="ltq">🔎 <b>${esc(r.title)}</b> ${r.lines.map(ltMark).join(' · ')}</div>`).join('')}<ol class="ltlist gram">${u.grammar.map(g=>`<li>${esc(g)}</li>`).join('')}</ol>`;
       ctl=`<div class="row"><button class="btn" data-act="lt-text">${H.ltHideText?'📺 Show on board':'🙈 Hide from board'}</button><button class="btn" data-act="lt-stop">⏹ Stop</button><small>${l.cat==='words'?(u.alpha?'Students see a picture and tap its first letter: +1 🪙 per picture.':u.phon?'Students build each word sound by sound: +1 🪙 per word.':'Students build each word on their tablets: +1 🪙 per word.'):u.alpha?'Students hear a word (🔊) and tap its first letter: +1 🪙 per word.':u.phon?'Students hear each word and tap the sound they hear: +1 🪙 per word.':'Students unscramble the sentences: +2 🪙 first try, +1 after.'}</small></div>${list}`;}
     body=`${ctl}<div class="ltchips">${chips||'<small>No students yet.</small>'}</div>`;}
   return `<h2>${u.phon?'Phonics activities':'Learning Time activities'}</h2><div class="panel lt"><div class="row">${unitSel}</div><div class="row cats">${cats}</div>${body}</div>`;}
@@ -2027,20 +2039,20 @@ function ltBoardHTML(){const l=S.lt,u=ltUnit();if(!l||!u)return '';const[e,n]=lt
     return `<div class="lp${total&&Object.keys(pr.done).length>=total?' done':''}" style="--tc:${teamColor(p.team)}">${avImg(p.av,p.name,36)}<span>${esc(p.name)}</span><i style="width:${pct}%"></i><b>${w}${l.cat==='reading'&&pr.hand===l.i?' 🙋':''}</b></div>`;}).join('')}</div>`;}
 function ltOverlayHTML(){const l=S.lt,u=ltUnit();if(!l||!u)return '';
   if(u.phon&&l.cat==='reading'&&u.reading){const r=u.reading,P=r.panels.length,q=l.i>=0?r.qs[l.i]:null,k=l.i+P;
-    const body=q?`<div class="panels4 big">${r.panels.map((pn,j)=>`<div class="p4">${pn.img?imgHTML(pn.img,'big'):`<b>${j+1}</b>`}<small>${esc(pn.t)}</small></div>`).join('')}</div><div class="ltqbig"><span class="k">Question ${l.i+1} of ${r.qs.length} · ⚖️ Choose</span><div class="q">${esc(q.text)}</div><div class="opts">${q.opts.map((o,i)=>`<span>${'ABC'[i]}. ${esc(o)}</span>`).join('')}</div></div>`
+    const body=q?`<div class="panels4 big">${r.panels.map((pn,j)=>`<div class="p4">${pn.img?imgHTML(pn.img,'big'):`<b>${j+1}</b>`}<small>${esc(pn.t)}</small></div>`).join('')}</div><div class="ltqbig"><span class="k">Question ${l.i+1} of ${r.qs.length} · ⚖️ Choose</span><div class="q">${esc(q.text)}</div><div class="opts">${seedShuffle(q.opts,'board|'+u.n+'|'+l.i).map(o=>`<span>• ${esc(o)}</span>`).join('')}</div></div>`
       :`<div class="ltpanel big">${imgHTML((r.panels[k]||{}).img,'big')}<p>${esc((r.panels[k]||{}).t||'')}</p></div><div class="hint">Panel ${k+1} of ${P} · read it together, then press Next</div>`;
     return `<div class="kind">📖 Story · U${u.n} ${esc(u.title)}</div>${body}<div class="acts"><button class="btn" data-act="lt-prev" ${l.i<=-P?'disabled':''}>◀</button><button class="btn primary" data-act="lt-next" ${l.i>=r.qs.length-1?'disabled':''}>${l.i<-1?'Next panel ▶':l.i===-1?'▶ First question':'Next question ▶'}</button><button class="btn" data-act="lt-text">🙈 Hide</button></div>`;}
   if(u.phon&&l.cat==='grammar'&&u.sort)return `<div class="kind">🧩 Sound Sort · U${u.n} ${esc(u.title)}</div><div class="ltwords two">${u.sort.buckets.map(b=>`<div class="wc"><b><span>${esc(b)}</span></b><small>${esc(u.sort.items.filter(x=>x.b===b).map(x=>x.w).join(' · '))}</small></div>`).join('')}</div><div class="acts"><button class="btn" data-act="lt-text">🙈 Hide</button></div>`;
   if(u.phon&&l.cat==='sw')return `<div class="kind">💬 Say &amp; Build · U${u.n} ${esc(u.title)}</div>${u.alpha&&u.say.length?`<div class="ltwords"><div class="wc"><div class="pics">${u.say.map(w=>wpic(w.pic,'card')).join('')}</div></div></div>`:u.pairs.length?`<div class="ltwords two">${u.pairs.map(p=>`<div class="wc"><b><span>${esc(p[0])}</span><em>·</em><span>${esc(p[1])}</span></b></div>`).join('')}</div>`:''}<ol class="ltgram">${u.build.map(g=>`<li>${esc(g)}</li>`).join('')}</ol><div class="acts"><button class="btn" data-act="lt-text">🙈 Hide</button></div>`;
-  if(u.alpha&&l.cat==='words')return `<div class="kind">🔤 Letters · U${u.n} ${esc(u.title)}</div><div class="ltwords alpha">${u.letters.map(L=>`<div class="wc"><b><span>${esc(L.toUpperCase()+L)}</span></b><div class="pics">${u.words.filter(w=>w.w[0]===L).map(w=>wpic(w.pic,'card')).join('')}</div></div>`).join('')}</div><div class="acts"><button class="btn" data-act="lt-text">🙈 Hide</button></div>`;
+  if(u.alpha&&l.cat==='words')return `<div class="kind">🔤 Letters · U${u.n} ${esc(u.title)}</div><div class="ltwords alpha">${u.letters.map(L=>`<div class="wc"><b><span>${esc(L.toUpperCase()+L)}</span></b><div class="pics">${u.words.filter(w=>alphaL(w,u.letters,u.sort)===L).map(w=>wpic(w.pic,'card')).join('')}</div></div>`).join('')}</div><div class="acts"><button class="btn" data-act="lt-text">🙈 Hide</button></div>`;
   if(l.cat==='words')return `<div class="kind">🔤 Words · U${u.n} ${esc(u.title)}${u.phon&&u.sound.length?` · ${esc(u.sound.map(x=>x.let).join(' / '))}`:''}</div><div class="ltwords">${u.words.map(w=>`<div class="wc">${wpic(w.pic,'card')}<b>${w.syl.map(x=>`<span>${esc(x)}</span>`).join('<em>·</em>')}</b><small>${esc(w.chunks.join(' / '))}</small></div>`).join('')}</div><div class="acts"><button class="btn" data-act="lt-text">🙈 Hide</button></div>`;
   if(l.cat==='grammar')return `<div class="kind">🧩 Grammar · U${u.n} ${esc(u.title)}</div>${ltRulesHTML(u.rules)}<ol class="ltgram">${u.grammar.map(g=>`<li>${esc(g)}</li>`).join('')}</ol><div class="acts"><button class="btn" data-act="lt-text">🙈 Hide</button></div>`;
   if(!u.reading)return '';const r=u.reading,q=l.i>=0?r.qs[l.i]:null;
   return `<div class="kind">📖 Reading · U${u.n}</div><div class="ltread"><h2>${esc(r.title)}</h2>${r.paras.map(p=>`<p>${esc(p)}</p>`).join('')}</div>
-  ${q?`<div class="ltqbig"><span class="k">Question ${l.i+1} of ${r.qs.length} · ${q.type==='C'?'⚖️ Choose':q.type==='T'?'⌨️ Type a full sentence':'🎤 Answer out loud'}</span><div class="q">${esc(q.text)}</div>${q.type==='C'?`<div class="opts">${q.opts.map((o,i)=>`<span>${'ABC'[i]}. ${esc(o)}</span>`).join('')}</div>`:''}</div>`:'<div class="hint">Read the text together. Press ▶ First question when you are ready.</div>'}
+  ${q?`<div class="ltqbig"><span class="k">Question ${l.i+1} of ${r.qs.length} · ${q.type==='C'?'⚖️ Choose':q.type==='T'?'⌨️ Type a full sentence':'🎤 Answer out loud'}</span><div class="q">${esc(q.text)}</div>${q.type==='C'?`<div class="opts">${seedShuffle(q.opts,'board|'+u.n+'|'+l.i).map(o=>`<span>• ${esc(o)}</span>`).join('')}</div>`:''}</div>`:'<div class="hint">Read the text together. Press ▶ First question when you are ready.</div>'}
   <div class="acts"><button class="btn" data-act="lt-prev" ${l.i<0?'disabled':''}>◀</button><button class="btn primary" data-act="lt-next" ${l.i>=r.qs.length-1?'disabled':''}>${l.i<0?'▶ First question':'Next question ▶'}</button><button class="btn" data-act="lt-text">🙈 Hide text</button></div>`;}
 function addPlayer(name,team,char){name=String(name||'').replace(/\s+/g,' ').trim().slice(0,14);if(!name)return false;const pid=newPlayer(name,char,team,true);log(`${name} joined ${teamName(team)}! ${charById(char).e}`);chime();changed();setTimeout(()=>popHab(pid),100);return true;}
-function openManualAct(pid){const p=P(pid);if(!p)return;$('#modal-root').innerHTML=`<div class="modal-bg"><div class="modal"><h2>${charById(p.char).e} ${esc(p.name)}: choose an action</h2><div class="seg">${bossOn()?`<button data-act="m-act" data-pid="${pid}" data-k="attack" data-t="boss" style="background:#5f3dc4;color:#fff;border-color:#5f3dc4">⚔️ Attack the ${esc(S.battle.boss.name)}</button>`:''}${S.teams.slice(0,S.teamCount).map((t,i)=>i===p.team||bossOn()?'':`<button data-act="m-act" data-pid="${pid}" data-k="attack" data-t="${i}" style="background:${t.color};color:#fff;border-color:${t.color}">⚔️ Attack ${esc(t.name)}</button>`).join('')}<button data-act="m-act" data-pid="${pid}" data-k="build">🛡️ Build</button><button data-act="m-act" data-pid="${pid}" data-k="repair">❤️ Repair</button></div><div class="mrow"><button class="btn" data-act="m-close">Cancel</button></div></div></div>`;}
+function openManualAct(pid){const p=P(pid);if(!p)return;$('#modal-root').innerHTML=`<div class="modal-bg"><div class="modal"><h2>${charById(p.char).e} ${esc(p.name)}: choose an action</h2><div class="seg">${bossOn()?`<button data-act="m-act" data-pid="${pid}" data-k="attack" data-t="boss" style="background:#5f3dc4;color:#fff;border-color:#5f3dc4">⚔️ Attack the ${esc(S.battle.boss.name)}</button>`:''}${S.teams.slice(0,S.teamCount).map((t,i)=>i===p.team||bossOn()||!Object.values(S.players).some(q=>q.team===i)?'':`<button data-act="m-act" data-pid="${pid}" data-k="attack" data-t="${i}" style="background:${t.color};color:#fff;border-color:${t.color}">⚔️ Attack ${esc(t.name)}</button>`).join('')}<button data-act="m-act" data-pid="${pid}" data-k="build">🛡️ Build</button><button data-act="m-act" data-pid="${pid}" data-k="repair">❤️ Repair</button></div><div class="mrow"><button class="btn" data-act="m-close">Cancel</button></div></div></div>`;}
 
 function onHostClick(e){
   const b=e.target.closest('[data-act]');if(!b)return;const a=b.dataset.act,pid=b.dataset.pid,team=+b.dataset.team;
@@ -2066,7 +2078,7 @@ function onHostClick(e){
     case 'show-ans':H.showAns=!H.showAns;renderOverlay();break;
     case 'all-coin':allCoins();break;
     case 'team-coin':teamCoins(team);break;
-    case 'coin':giveCoins(pid,CORRECT_COINS,'answered correctly');if(crId(pid))crEvent('grade',{student:crId(pid),question:S.card&&S.card.ci,level:'good',points:CORRECT_COINS,auto:false});break;
+    case 'coin':ltSpoke(pid);giveCoins(pid,CORRECT_COINS,'answered correctly');if(crId(pid))crEvent('grade',{student:crId(pid),question:S.card&&S.card.ci,level:'good',points:CORRECT_COINS,auto:false});break;
     case 'coin-minus':giveCoins(pid,-1);if(crId(pid))crEvent('points',{student:crId(pid),delta:-1,reason:'teacher'});break;
     case 'great':greatJob(pid);if(crId(pid))crEvent('grade',{student:crId(pid),question:S.card&&S.card.ci,level:'great',points:1,auto:false});break;
     case 'start-battle':startBattle();break;
@@ -2164,6 +2176,7 @@ function initHost(){
   if(!S||!S.code||!S.players||!S.bText)S=newState();
   if(CR.inRunner)crHostSetup();
   if(S.battle){ensureBattle(S.battle);if(S.battle.step==='resolving')S.battle.step='done';}
+  if(S.lt)H.ltHideText=S.lt.cat!=='reading';
   Object.values(S.players).forEach(p=>p.online=!!p.manual);
   applyScene(S.scene);hostShell();render();startHost();loadLiveBank();
 }
@@ -2177,22 +2190,24 @@ function cid(){let c=store('habitat-cid-'+JOIN);if(!c){c=Math.random().toString(
 function sSend(m){if(ST.conn&&ST.conn.open){try{ST.conn.send(m);return true;}catch(e){}}toast('Not connected. Trying again…');return false;}
 function studentConnect(){
   if(typeof Peer==='undefined'){ST.status='No internet connection. Check the Wi-Fi and reload.';sRender();return;}
-  clearTimeout(ST.retry);try{ST.peer&&ST.peer.destroy();}catch(e){}
+  clearTimeout(ST.retry);const old=ST.peer;ST.peer=ST.conn=null;try{old&&old.destroy();}catch(e){}
   const peer=new Peer(undefined,peerOpts());ST.peer=peer;
-  peer.on('open',()=>{
+  peer.on('open',()=>{if(ST.peer!==peer)return;
     const conn=peer.connect(peerIdFor(JOIN),{reliable:true,serialization:'json'});ST.conn=conn;
-    const to=setTimeout(()=>{if(!conn.open){ST.status='Still trying to reach the teacher…';sRender();retrySoon();}},9000);
+    const to=setTimeout(()=>{if(ST.conn===conn&&!conn.open){ST.status='Still trying to reach the teacher…';sRender();retrySoon();}},9000);
     conn.on('open',()=>{clearTimeout(to);conn.send({t:'hello',cid:cid()});});
     conn.on('data',sRecv);
-    conn.on('close',()=>{ST.status='Connection lost. Reconnecting…';ST.s=null;ST.view='';sRender();retrySoon();});
+    conn.on('close',()=>{clearTimeout(to);if(ST.conn!==conn)return;ST.status='Connection lost. Reconnecting…';ST.s=null;ST.view='';sRender();retrySoon();});
   });
-  peer.on('error',e=>{ST.status=e.type==='peer-unavailable'?`Game ${JOIN} is not open yet. Waiting for the teacher…`:'Connection problem. Retrying…';sRender();retrySoon();});
+  peer.on('error',e=>{if(ST.peer!==peer||(ST.conn&&ST.conn.open))return;ST.status=e.type==='peer-unavailable'?`Game ${JOIN} is not open yet. Waiting for the teacher…`:'Connection problem. Retrying…';sRender();retrySoon();});
 }
 function crTabletAnswer(answer){const s=ST.s,b=s&&s.battle;if(!CR.inRunner||!CR.init.me)return;crEvent('answer',{student:CR.init.me.id,question:b&&b.q?b.q.ci:undefined,answer:String(answer).slice(0,300),correct:null,auto:false});}
 function sRecv(m){if(!m)return;if(m.t==='rush-items'){if(m.items){ST.rushItems=m.items;ST.rushVer=m.ver;ST.qKey='';sRender();return;}
   if(!ST.rushBuf||ST.rushBuf.ver!==m.ver||ST.rushBuf.of!==m.of)ST.rushBuf={ver:m.ver,of:m.of,parts:{}};ST.rushBuf.parts[m.part]=m.list||[];
   if(Object.keys(ST.rushBuf.parts).length===m.of){const all=[].concat(...Array.from({length:m.of},(_,i)=>ST.rushBuf.parts[i]));const pas={};all.forEach(x=>{if(x.p)pas[x.p]=x;});
-    ST.rushItems=all.filter(x=>!x.p).map(x=>x.grp&&pas[x.grp]?{...x,title:pas[x.grp].title,text:pas[x.grp].text}:x);ST.rushVer=m.ver;ST.rushBuf=null;ST.qKey='';sRender();}return;}if(m.t==='state'){ST.s=m.s;ST.me=m.me;ST.my=m.my;if(CR.inRunner&&CR.init.me&&!ST.me&&!ST.claimSent){ST.claimSent=true;sSend({t:'claim',crId:CR.init.me.id,av:ST.av});setTimeout(()=>{ST.claimSent=false;},4000);}if(m.s.battle)ST.deadline=Date.now()+m.s.battle.endsIn;sRender();}if(m.t==='toast')toast(m.msg);if(m.t==='fx'){if(m.k==='wrong'){toast('Not quite! Try again.');const l=$('#bline');if(l&&!RM){l.classList.remove('shake');void l.offsetWidth;l.classList.add('shake');}}if(m.k==='right')sBurst($('#s-dock'),['🧩','✨','⭐'],14);if(m.k==='cheer'&&ST.mini)ST.mini.react('happy',m.tier);}}
+    ST.rushItems=all.filter(x=>!x.p).map(x=>x.grp&&pas[x.grp]?{...x,title:pas[x.grp].title,text:pas[x.grp].text}:x);ST.rushVer=m.ver;ST.rushBuf=null;ST.qKey='';sRender();}return;}if(m.t==='state'){ST.lastState=Date.now();ST.s=m.s;ST.me=m.me;ST.my=m.my;if(CR.inRunner&&CR.init.me&&!ST.me&&!ST.claimSent){ST.claimSent=true;sSend({t:'claim',crId:CR.init.me.id,av:ST.av});setTimeout(()=>{ST.claimSent=false;},4000);}if(m.s.battle)ST.deadline=Date.now()+m.s.battle.endsIn;sRender();}if(m.t==='toast')toast(m.msg);if(m.t==='fx'){if(m.k==='wrong'){toast('Not quite! Try again.');const l=$('#bline');if(l&&!RM){l.classList.remove('shake');void l.offsetWidth;l.classList.add('shake');}}if(m.k==='right')sBurst($('#s-dock'),['🧩','✨','⭐'],14);if(m.k==='cheer'&&ST.mini)ST.mini.react('happy',m.tier);}}
+function sWake(){if(document.hidden||MODE!=='student'||ST.embedded||!JOIN||typeof Peer==='undefined')return;if(!ST.conn||!ST.conn.open){if(ST.peer)studentConnect();return;}const t0=ST.lastState||0;try{ST.conn.send({t:'hello',cid:cid()});}catch(e){studentConnect();return;}setTimeout(()=>{if((ST.lastState||0)===t0&&!document.hidden&&ST.conn&&ST.conn.open)studentConnect();},5000);}
+document.addEventListener('visibilitychange',sWake);
 function retrySoon(){clearTimeout(ST.retry);ST.retry=setTimeout(studentConnect,3000);}
 function sBgHost(){return ST.embedded?$('#sv-app'):null;}
 function sBackground(scene){
@@ -2250,6 +2265,7 @@ function jRender(s){const st=ST.jstep;
   $('#j-steps').innerHTML=JSTEPS.map(([e,t],i)=>{const lock=ST.claim&&(i===1||i===2);const ok=(i<st&&jDone(i))||(lock&&st>0);return `<button class="stp${i===st?' cur':''}${ok?' ok':''}" data-jstep="${i}" ${lock||(i>st&&!JSTEPS.slice(0,i).every((_,k)=>jDone(k)))?'disabled':''}><span class="n">${ok?'✓':i+1}</span><span class="e">${e}</span><small>${t}</small></button>`;}).join('');
   const card=$('#j-card');const h=`<h2><span class="big">${JSTEPS[st][0]}</span> ${JSTEPS[st][1]}</h2>`;
   const pre=Object.values(s.players).filter(p=>p.pre);
+  if(st===0&&!(pre.length&&!ST.typing)&&$('#j-name')&&card.contains($('#j-name'))){jNav();return;}
   if(st===0)card.innerHTML=h+(pre.length&&!ST.typing?`<p class="hint">👆 Tap your name</p><div class="namegrid">${pre.map(p=>`<button data-claim="${p.pid}" class="${ST.claim===p.pid?'sel':''}" style="--tc:${s.teams[p.team]?.color||'#888'}"><span class="e">${charById(p.char).e}</span>${esc(p.name)}</button>`).join('')}</div><button class="btn" data-typing="1">✏️ My name is not here</button>`
     :`<input class="name-in" id="j-name" maxlength="14" autocomplete="off" placeholder="Type your English name" value="${esc(ST.name)}"><input class="name-in pair" id="j-pair" maxlength="14" autocomplete="off" placeholder="👥 Partner's name (if you share this tablet)" value="${esc(ST.pair||'')}"><input class="name-in pair" id="j-pair2" maxlength="14" autocomplete="off" placeholder="👥 Third student (optional)" value="${esc(ST.pair2||'')}">${pre.length?'<button class="btn" data-typing="0">👆 Tap my name instead</button>':''}`);
   else if(st===1)card.innerHTML=h+`<div class="team-pick big" id="j-teams">${s.teams.map((t,i)=>`<button data-team="${i}" class="${ST.team===i?'sel':''}" style="--tc:${t.color}"><span class="flag"></span>${esc(t.name)}</button>`).join('')}</div>`;
@@ -2368,7 +2384,7 @@ function sDock(s,me,c){
     const t=my.ok,m=t>=2?2:1;let dmg=(me.inv.atk>0?3:1)*m;if((me.streak||0)>=2)dmg+=1;if(me.dash)dmg*=2;
     const head=todo(BT,3)+(t===3?'<div class="tiermsg t3">🌟 AMAZING! ×2 and through walls!</div>':t===2?'<div class="tiermsg t2">⭐ GREAT answer! Your action is ×2!</div>':'<div class="dock-h">⚡ Good answer! Choose your action</div>');
     const atkSub=`${me.inv.atk>0?c.atk[1]+' ':''}${dmg} damage${me.warp||t===3?' · through walls':''}${(me.streak||0)>=2?' · 🔥':''}`;
-    d=`${head}<div class="acts3"><div class="att">${boss?`<button style="--tc:#5f3dc4" data-sact="act" data-k="attack" data-t="boss">⚔️ Attack the ${esc(boss.name)} ${boss.e}<small>${atkSub}</small></button>`:s.teams.map((tm,i)=>i===me.team?'':`<button style="--tc:${tm.color}" data-sact="act" data-k="attack" data-t="${i}">⚔️ Attack ${esc(tm.name)}<small>${atkSub}</small></button>`).join('')}</div>
+    d=`${head}<div class="acts3"><div class="att">${boss?`<button style="--tc:#5f3dc4" data-sact="act" data-k="attack" data-t="boss">⚔️ Attack the ${esc(boss.name)} ${boss.e}<small>${atkSub}</small></button>`:s.teams.map((tm,i)=>i===me.team||!Object.values(s.players).some(q=>q.team===i)?'':`<button style="--tc:${tm.color}" data-sact="act" data-k="attack" data-t="${i}">⚔️ Attack ${esc(tm.name)}<small>${atkSub}</small></button>`).join('')}</div>
       <div class="two"><button data-sact="act" data-k="build"><img class="wi" src="${WALL_ICO}" alt=""> ${me.down?'Rebuild':'Build'}<small>${me.down?'Rebuild your home':'+'+((me.inv.def>0?3:1)*m)+' wall'}</small></button><button data-sact="act" data-k="repair">❤️ ${me.down?'Rebuild':'Repair'}<small>${me.down?'Rebuild your home':'+'+((me.inv.heal>0?4:1)*m)+' ❤️'}</small></button></div></div>`;
     if(t===3)setTimeout(()=>sBurst(dock,['🌟','✨','⭐','🎉'],22),60);
   }
@@ -2452,14 +2468,14 @@ async function sTransform(oldE,newE,name){
   }finally{ST.anim=false;const me=ST.s&&ST.s.players[ST.me];if(me)he.textContent=classOf(me).hab[me.lv-1][1];}
 }
 /* ===== tablet side of the Learning Time activities (Oxford Discover units and Oxford Phonics World units) ===== */
-function seedShuffle(arr,seed){const a=arr.slice();let x=0;for(const c of String(seed))x=(x*31+c.charCodeAt(0))>>>0;const rnd=()=>{x=(x*1664525+1013904223)>>>0;return x/4294967296;};for(let i=a.length-1;i>0;i--){const j=Math.floor(rnd()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+function seedShuffle(arr,seed){const a=arr.slice();let x=0;for(const c of String(seed))x=(x*31+c.charCodeAt(0))>>>0;x^=x>>>16;x=Math.imul(x,0x85ebca6b)>>>0;x^=x>>>13;x=Math.imul(x,0xc2b2ae35)>>>0;x^=x>>>16;x>>>=0;const rnd=()=>{x=(x*1664525+1013904223)>>>0;return x/4294967296;};for(let i=a.length-1;i>0;i--){const j=Math.floor(rnd()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
 function ttsVoice(){try{const vs=speechSynthesis.getVoices()||[];const en=vs.filter(v=>/^en[-_]/i.test(v.lang||''));if(!en.length)return null;
   return en.find(v=>/google us english/i.test(v.name))||en.find(v=>/^en[-_]?us/i.test(v.lang)&&/google|samantha|alex|english/i.test(v.name))||en.find(v=>/^en[-_]?us/i.test(v.lang))||en.find(v=>/google/i.test(v.name))||en[0];}catch(e){return null;}}
 function sayWord(w){try{if(!('speechSynthesis' in window))return toast('No voice on this tablet.');speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(String(w||''));u.lang='en-US';u.rate=.8;u.pitch=1;u.volume=1;const v=ttsVoice();if(v)u.voice=v;speechSynthesis.speak(u);}catch(e){}}
 if('speechSynthesis' in window){try{speechSynthesis.getVoices();speechSynthesis.addEventListener('voiceschanged',()=>speechSynthesis.getVoices());}catch(e){}}
 function sLtDock(s,me){const lt=s.lt,my=(ST.my&&ST.my.lt)||{done:{},ok:0,tries:{}},pop=$('#s-pop'),dock=$('#s-dock');
   if(!ST.lt||ST.lt.cat!==lt.cat||ST.lt.unit!==lt.unit){ST.lt={cat:lt.cat,unit:lt.unit,i:0,placed:[],bad:0,swap:false,key:0,draft:''};ST.popKey='';}
-  const L=ST.lt;const todo=(steps,cur)=>`<div class="todo">${steps.map(([e,t],i)=>`<span class="${i<cur?'done':i===cur?'cur':''}"><i>${e}</i>${t}</span>`).join('')}</div>`;
+  const L=ST.lt;if(lt.cat==='reading'&&L.qi!==lt.i){if(L.qi!=null)L.draft='';L.qi=lt.i;}const todo=(steps,cur)=>`<div class="todo">${steps.map(([e,t],i)=>`<span class="${i<cur?'done':i===cur?'cur':''}"><i>${e}</i>${t}</span>`).join('')}</div>`;
   const tag=(e,n)=>`<div class="qtag k-LT">${e} ${n} · ${esc(lt.unit)}</div>`;
   const snd=(lt.sound||[]).map(x=>String(x.let||'').toLowerCase()).filter(Boolean);const isSnd=c=>snd.includes(String(c).toLowerCase());
   /* shared sentence builder (Grammar unscramble, Phonics Say & Build) */
@@ -2475,7 +2491,7 @@ function sLtDock(s,me){const lt=s.lt,my=(ST.my&&ST.my.lt)||{done:{},ok:0,tries:{
   if(lt.cat==='words'&&lt.alpha){const ws=lt.words||[],Ls=lt.letters||[];preloadPics(ws.map(w=>w.pic));let i=L.i;if(my.done[i]||i>=ws.length){i=ws.findIndex((_,k)=>!my.done[k]);if(i<0)i=ws.length;L.i=i;}
     key=['a',i,Object.keys(my.done).length,L.bad].join('|');if(key===ST.qKey)return;ST.qKey=key;
     if(i>=ws.length){ph=tag('🔤','Letters')+`<div class="qp">All ${ws.length} pictures done! 🎉</div>`;d=todo([['👀','Look'],['🔤','Letter'],['🪙','Coins']],3)+`<div class="dock-msg"><b>Great job!</b><span>Wait for your teacher.</span></div>`;}
-    else{const w=ws[i];ph=tag('🔤','Letters')+`<div class="ltprog">${ws.map((_,k)=>`<i class="${my.done[k]?'d':k===i?'c':''}"></i>`).join('')}</div><div class="qp">Picture ${i+1} of ${ws.length}</div><div class="picbox">${wpic(w.pic,'big')}</div><div class="hint">Which letter does it start with?</div>`;
+    else{const w=ws[i];ph=tag('🔤','Letters')+`<div class="ltprog">${ws.map((_,k)=>`<i class="${my.done[k]?'d':k===i?'c':''}"></i>`).join('')}</div><div class="qp">Picture ${i+1} of ${ws.length}</div><div class="picbox">${wpic(w.pic,'big')}</div><div class="hint">${alphaL(w,lt.letters)===w.w[0]?'Which letter does it start with?':'Which letter can you hear in this word?'}</div>`;
       d=todo([['👀','Look'],['🔤','Letter'],['🪙','Coins']],1)+`<div class="buckets">${Ls.map(b=>`<button class="bk" data-sact="lt-letter" data-b="${esc(b)}">${esc(LB(b))}</button>`).join('')}</div><div class="brow"><button class="btn" data-sact="lt-say" data-w="${esc(w.w)}">🔊 Say it</button></div>`;}}
   else if(lt.cat==='words'){const ws=lt.words||[];let i=L.i;if(my.done[i]||i>=ws.length){i=ws.findIndex((_,k)=>!my.done[k]);if(i<0)i=ws.length;L.i=i;L.placed=[];}
     const done=Object.keys(my.done).length;key=['w',i,done,L.placed.join(','),L.bad].join('|');
@@ -2493,7 +2509,7 @@ function sLtDock(s,me){const lt=s.lt,my=(ST.my&&ST.my.lt)||{done:{},ok:0,tries:{
     key=['s',i,Object.keys(my.done).length,L.bad].join('|');if(key===ST.qKey)return;ST.qKey=key;
     if(i>=it.length){ph=tag('🧩','Sound Sort')+`<div class="qp">All ${it.length} words sorted! 🎉</div>`;d=`<div class="dock-msg"><b>Super ears!</b><span>Wait for your teacher.</span></div>`;}
     else{const x=it[i];if(lt.alpha&&L.said!==i){L.said=i;setTimeout(()=>sayWord(x.w),350);}
-      ph=tag('🧩','Sound Sort')+`<div class="ltprog">${it.map((_,k)=>`<i class="${my.done[k]?'d':k===i?'c':''}"></i>`).join('')}</div><div class="qp">Word ${i+1} of ${it.length}</div>${lt.alpha?`<button class="bigear" data-sact="lt-say" data-w="${esc(x.w)}">🔊</button><div class="hint">Listen. Which letter does it start with?</div>`:`<div class="bigword">${esc(x.w)}</div><div class="hint">Which sound do you hear?</div>`}`;
+      ph=tag('🧩','Sound Sort')+`<div class="ltprog">${it.map((_,k)=>`<i class="${my.done[k]?'d':k===i?'c':''}"></i>`).join('')}</div><div class="qp">Word ${i+1} of ${it.length}</div>${lt.alpha?`<button class="bigear" data-sact="lt-say" data-w="${esc(x.w)}">🔊</button><div class="hint">${x.b===x.w[0]?'Listen. Which letter does it start with?':'Listen. Which letter can you hear in this word?'}</div>`:`<div class="bigword">${esc(x.w)}</div><div class="hint">Which sound do you hear?</div>`}`;
       d=todo([['👂','Listen'],['🧩','Sort'],['🪙','Coins']],1)+`<div class="buckets">${bks.map(b=>`<button class="bk" data-sact="lt-bucket" data-b="${esc(b)}">${esc(lt.alpha?LB(b):b)}</button>`).join('')}</div><div class="brow"><button class="btn" data-sact="lt-say" data-w="${esc(x.w)}">🔊 Say it again</button></div>`;}}
   else if(lt.cat==='grammar'){const r=builder(lt.grammar||[],'g','🧩','Grammar','Put the words in order!');if(!r)return;const rl=lt.rules&&lt.rules[0];ph=(rl?`<div class="hint ltrulehint">🔎 <b>${esc(rl.title)}</b> ${rl.lines.slice(0,2).map(ltMark).join(' · ')}</div>`:'')+r.ph;d=r.d;}
   else if(lt.cat==='reading'&&lt.phon){const r=lt.reading||{title:'',qs:[],panels:[]};const P=(r.panels||[]).length,qi=lt.i,q=qi>=0?r.qs[qi]:null;
@@ -2512,6 +2528,7 @@ function sLtDock(s,me){const lt=s.lt,my=(ST.my&&ST.my.lt)||{done:{},ok:0,tries:{
         d=todo([['👂','Read'],['✍️','Answer'],['⭐','Teacher']],ans==null?1:2)+(ans==null?`<div class="choose3">${opts.map((x,j)=>`<button class="opt" data-sact="lt-choice" data-k="${x.k}">${'ABC'[j]}. ${esc(x.o)}</button>`).join('')}</div>`:`<div class="dock-msg"><b>${ans?'✅ Correct! +1 🪙':'❌ Not this one.'}</b><span>${ans?'Wait for the next question.':'The answer is in the text — listen to your teacher.'}</span></div>`);}
       else if(q.type==='T'){const sb=my.sub;const fix=sb&&sb.ok===false;if(fix&&!L.draft)L.draft=sb.text;
         d=todo([['👂','Read'],['✍️','Answer'],['⭐','Teacher']],sb&&sb.ok==null?2:sb&&sb.ok?3:1)+(sb&&sb.ok?`<div class="dock-h">${sb.ok>=2?'⭐ Great sentence! +3 🪙':'✓ Good! +2 🪙'}</div><div class="mine">${esc(sb.text)}</div>`:sb&&sb.ok==null?`<div class="dock-h">📨 Sent! Wait for your teacher.</div><div class="mine">${esc(sb.text)}</div>`:`${fix?'<div class="dock-h" style="color:#e8590c">✏️ Try again! Fix your sentence.</div>':''}<div class="answer"><textarea id="lt-ans" maxlength="200" rows="2" placeholder="Write a full sentence. ✍️  Then tap Send." autocapitalize="sentences">${esc(L.draft||'')}</textarea><button class="btn primary send" data-sact="lt-send">Send ➤</button></div>`);}
+      else if(my.done[qi]){d=todo([['👂','Read'],['🙋','Answer'],['⭐','Teacher']],3)+`<div class="dock-msg"><b>✅ Well said!</b><span>Wait for the next question.</span></div>`;}
       else{d=todo([['👂','Read'],['🙋','Answer'],['⭐','Teacher']],my.hand?2:1)+(my.hand?`<div class="dock-msg"><span class="hand">🙋</span><b>Your hand is up!</b><span>Answer out loud when your teacher calls you.</span></div>`:`<div class="dock-msg"><b>Answer out loud!</b><span>Find the answer in the text.</span></div><button class="buzzbtn small" data-sact="lt-hand">🙋<br>I KNOW!</button>`);}}}
   else if(lt.cat==='sw'&&lt.phon){const pairs=lt.pairs||[],role=L.swap?(my.role==='A'?'B':'A'):(my.role||'A');const col=role==='A'?0:1;
     const r=builder(lt.build||[],'b|'+role,'💬','Say & Build','Build the sentence with the words!',lt.buildPic||[]);if(!r)return;
@@ -2535,7 +2552,7 @@ function sLtClick(a,b){const L=ST.lt,s=ST.s,lt=s&&s.lt;if(!L||!lt)return false;c
     if(lt.cat==='words'){const w=lt.words[L.i];ok=!!w&&L.placed.length===w.chunks.length&&L.placed.every((k,i)=>L.tiles.find(t=>t.k===k).c===w.chunks[i]);if(sSend({t:'lt',k:'word',i:L.i,ok})){if(ok){sBurst($('#s-dock'),['🔤','✨','⭐'],12);L.placed=[];}else{toast('Not quite! Try again.');L.bad++;L.placed=[];shake('.ltboxes');}crTabletAnswer('word:'+(w?w.w:'')+':'+(ok?'ok':'x'));}}
     else{const sents=lt.cat==='grammar'?lt.grammar:lt.build;const kind=lt.cat==='grammar'?'gram':'build';const sent=(sents||[])[L.i];const w=L.placed.map(k=>L.tiles.find(t=>t.k===k).c).join(' ');ok=!!sent&&w===sent;if(sSend({t:'lt',k:kind,i:L.i,ok})){if(ok){sBurst($('#s-dock'),['🧩','✨','⭐'],12);L.placed=[];}else{toast('Not quite! Try again.');L.bad++;shake('#s-dock .bline');}crTabletAnswer(kind+':'+w+':'+(ok?'ok':'x'));}}
     redraw();return true;}
-  if(a==='lt-letter'){const ws=lt.words||[];const w=ws[L.i];if(!w)return true;const ok=w.w[0]===String(b.dataset.b).toLowerCase();if(sSend({t:'lt',k:'word',i:L.i,ok})){if(ok){sBurst($('#s-dock'),['🔤','✨','⭐'],12);}else{toast('Not this letter. Try again!');L.bad++;const l=$('.picbox');if(l){l.classList.remove('shake');void l.offsetWidth;l.classList.add('shake');}}crTabletAnswer('letter:'+w.w+'>'+b.dataset.b+':'+(ok?'ok':'x'));}redraw();return true;}
+  if(a==='lt-letter'){const ws=lt.words||[];const w=ws[L.i];if(!w)return true;const ok=alphaL(w,lt.letters)===String(b.dataset.b).toLowerCase();if(sSend({t:'lt',k:'word',i:L.i,ok})){if(ok){sBurst($('#s-dock'),['🔤','✨','⭐'],12);}else{toast('Not this letter. Try again!');L.bad++;const l=$('.picbox');if(l){l.classList.remove('shake');void l.offsetWidth;l.classList.add('shake');}}crTabletAnswer('letter:'+w.w+'>'+b.dataset.b+':'+(ok?'ok':'x'));}redraw();return true;}
   if(a==='lt-bucket'){const it=(lt.sort&&lt.sort.items)||[];const x=it[L.i];if(!x)return true;const ok=x.b===b.dataset.b;if(sSend({t:'lt',k:'sort',i:L.i,ok})){if(ok){sBurst($('#s-dock'),['🧩','✨','⭐'],12);}else{toast('Listen again! Try the other sound.');L.bad++;const l=$('.bigword');if(l){l.classList.remove('shake');void l.offsetWidth;l.classList.add('shake');}}crTabletAnswer('sort:'+x.w+'>'+b.dataset.b+':'+(ok?'ok':'x'));}redraw();return true;}
   if(a==='lt-full'){L.full=!L.full;redraw();return true;}
   if(a==='lt-choice'){b.disabled=true;if(sSend({t:'lt',k:'choice',i:lt.i,c:+b.dataset.k}))crTabletAnswer('choice:'+b.textContent.trim());return true;}
@@ -2609,7 +2626,7 @@ function sPlayClick(e){
   if(a==='av'){avClick(b);sLook();return;}if(a==='look-shuffle'){ST.av=randomAv();store(avKey(),ST.av);sLook();return;}
   if(a==='look-save'){sOpenLook(false);sSend({t:'look',av:ST.av});toast('Looking good!');return;}
   if(a==='buy'){if(b.dataset.item==='upgrade')sOpenShop(false);sSend({t:'buy',item:b.dataset.item});}
-  if(a==='power')sSend({t:'power'});
+  if(a==='power'){b.disabled=true;sSend({t:'power'});}
   if(a==='act'){b.disabled=true;sSend({t:'act',kind:b.dataset.k,target:b.dataset.t});}
   const q=ST.s&&ST.s.battle&&ST.s.battle.q;
   if(a==='tile-add'&&ST.bld){ST.bld.order.push(+b.dataset.i);sRefreshDock();}
@@ -2631,7 +2648,7 @@ CR.start(function(init){/* inside the classroom runner: roster + questions come 
 },function(){if(MODE==='host')initHost();else{sRender();studentConnect();}
   /* the runner answered after the fallback: adopt its roster/questions now */
   CR.on('cr:init',function(init){if(CR.screen==='tablet'||init.screen==='tablet'){if(MODE!=='student')return;JOIN=String(init.join||'').toUpperCase().replace(/[^A-Z0-9]/g,'').slice(0,8);const a=store(avKey());ST.av=a?cleanAv(a,init.me&&init.me.name):avFromName(init.me&&init.me.name);ST.me=null;ST.view='';if(JOIN){sRender();studentConnect();}}
-    else if(MODE==='host'){crHostSetup();applyScene(S.scene);render();save();if(H.status==='on'&&!H.crReady){H.crReady=true;CR.ready(S.code);}else if(H.status==='off'&&!H.crReady){H.crReady=true;CR.ready(null);}}});});
+    else if(MODE==='host'){const c0=S.code;crHostSetup();applyScene(S.scene);render();save();if(S.code!==c0){H.crReady=false;startHost();}else if(H.status==='on'&&!H.crReady){H.crReady=true;CR.ready(S.code);}else if(H.status==='off'&&!H.crReady){H.crReady=true;CR.ready(null);}}});});
 
 /*3D-BUNDLE-BEGIN*/
 window.HB3D_INIT=function(){
