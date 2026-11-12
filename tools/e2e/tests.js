@@ -104,6 +104,49 @@ const useUnit=async(host,lv,n)=>{await host.click('[data-act="bank"]');await hos
     await host.reload();await host.waitForFunction(()=>typeof S!=='undefined'&&S&&H.status==='on');
     T('teacher reload keeps the class',await host.evaluate(()=>S.code+':'+Object.keys(S.players).length)===code+':1');
     T('no page errors (join)',w.errors.length===0,w.errors.join(' | ').slice(0,300));await w.close();}
+  // ---------- voice answers + lesson summary ----------
+  {const {w,host,studs}=await setup([['Amy'],['Ben','Cal'],['Dan']]);
+    await useUnit(host,'OD1',1);
+    // Learning Time: one word built, one reading choice, one speak question recorded
+    await host.click('[data-act="lt-cat"][data-k="words"]');await sleep(250);
+    await studs[0].evaluate(async()=>{const sl=ms=>new Promise(r=>setTimeout(r,ms));const bs=[...document.querySelectorAll('[data-sact="lt-place"]')].sort((a,b)=>a.dataset.k-b.dataset.k);for(const b of bs){document.querySelector(`[data-sact="lt-place"][data-k="${b.dataset.k}"]`).click();await sl(30);}document.querySelector('[data-sact="lt-check"]').click();});await sleep(250);
+    await host.click('[data-act="lt-stop"]');await host.click('[data-act="lt-cat"][data-k="reading"]');await sleep(200);
+    await host.evaluate(()=>{S.lt.i=6;changed();});await sleep(250);
+    T('speak question: tablet offers 🎙️ Record',await studs[0].evaluate(()=>!!document.querySelector('[data-sact="vox-rec"]')));
+    await studs[0].click('[data-sact="vox-rec"]');await studs[0].waitForSelector('[data-sact="vox-stop"]',{timeout:8000});await sleep(1300);await studs[0].click('[data-sact="vox-stop"]');
+    const got=await host.waitForFunction(()=>H.vox&&H.vox.items.p1&&H.vox.items.p1.url,null,{timeout:10000}).then(()=>true).catch(()=>false);
+    T('recording reaches the teacher',got,await host.evaluate(()=>JSON.stringify(H.vox&&{key:H.vox.key,n:Object.keys(H.vox.items).length})));
+    T('tablet shows the recording was received',await studs[0].waitForFunction(()=>/has your recording/.test(document.querySelector('#s-dock').textContent),null,{timeout:5000}).then(()=>true).catch(()=>false));
+    const size=await host.evaluate(async()=>(await (await fetch(H.vox.items.p1.url)).blob()).size);
+    T('recording is real audio data',size>500,size+' bytes');
+    await host.click('[data-act="vox-play"][data-pid="p1"]');await sleep(300);
+    T('teacher can play it',await host.evaluate(()=>H.voxPlaying==='p1'||H.vox.items.p1.played===true));
+    await host.evaluate(()=>document.querySelector('.subs [data-act="coin"][data-pid="p1"]').click());await sleep(200);
+    await host.click('[data-act="lt-next"]');await sleep(250);
+    T('recordings are dropped at the next question',await host.evaluate(()=>H.vox.key!==''&&Object.keys(H.vox.items).length===0||H.vox.key===''));
+    await host.click('[data-act="lt-stop"]');
+    // battle: speak question, recording, grade, summary
+    await host.click('[data-act="start-battle"]');await sleep(300);await host.evaluate(()=>{nextRound({type:'S',text:'Tell us about your family.',model:''});});await sleep(900);
+    await studs[2].click('[data-sact="vox-rec"]');await studs[2].waitForSelector('[data-sact="vox-stop"]',{timeout:8000});await sleep(1000);await studs[2].click('[data-sact="vox-stop"]');
+    await host.waitForFunction(()=>H.vox&&H.vox.items.p3,null,{timeout:10000}).catch(()=>{});
+    T('battle speak question: recording listed with grade buttons',await host.evaluate(()=>!!document.querySelector('[data-act="vox-play"][data-pid="p3"]')&&!!document.querySelector('.subs [data-act="tier"][data-pid="p3"]')));
+    await host.evaluate(()=>document.querySelector('.subs [data-act="tier"][data-t="2"][data-pid="p3"]').click());await sleep(200);
+    await host.evaluate(()=>{markCorrect('p3',0);markCorrect('p3',2);});
+    await host.evaluate(()=>{S.vox=false;changed();});await sleep(200);
+    T('voice answers can be switched off',await studs[0].evaluate(()=>!document.querySelector('[data-sact="vox-rec"]')));
+    await host.click('[data-act="resolve"]');await host.waitForFunction(()=>!H.busy,null,{timeout:20000});await host.click('[data-act="end-battle"]');await sleep(400);
+    await host.evaluate(()=>document.querySelector('#topbar [data-act="sum-open"]').click());await sleep(200);
+    const rec=await host.evaluate(()=>({p1:S.rec.p1,p3:S.rec.p3}));
+    T('record: Amy built 1 word, spoke once, 1 recording',rec.p1.w===1&&rec.p1.w1===1&&rec.p1.sp===1&&rec.p1.vo===1,JSON.stringify(rec.p1));
+    T('record: Dan 1 of 1 battle rounds, 1 ⭐, counted once after a re-grade',rec.p3.bOk===1&&rec.p3.bN===1&&rec.p3.bGreat===1&&rec.p3.sp===1&&rec.p3.vo===1,JSON.stringify(rec.p3));
+    T('summary table lists every student, English only',await host.evaluate(()=>document.querySelectorAll('.sumtab tbody tr').length===3&&!/[\u3400-\u9fff]/.test(document.body.innerText)));
+    await host.click('[data-act="sum-copy"][data-pid="p1"]:not([data-zh])');await sleep(200);const en=await host.evaluate(()=>navigator.clipboard.readText());
+    T('copy: English summary for one student',/^Amy · Lesson summary/.test(en)&&/Words: built 1/.test(en)&&/1 recording/.test(en),en.replace(/\n/g,' / ').slice(0,160));
+    await host.click('[data-act="sum-copy"][data-pid="p3"][data-zh="1"]');await sleep(200);const zh=await host.evaluate(()=>navigator.clipboard.readText());
+    T('copy: Chinese summary for parents',/Dan/.test(zh)&&/口說/.test(zh)&&/對戰問答：1 回合答對 1 回合/.test(zh),zh.replace(/\n/g,' / ').slice(0,160));
+    await host.click('.modal [data-act="m-close"]');await host.evaluate(()=>document.querySelector('#topbar [data-act="end-game"]').click());await sleep(150);await host.click('[data-act="eg-go"]');await sleep(300);
+    T('End game clears the lesson record',await host.evaluate(()=>Object.keys(S.rec).length===0));
+    T('no page errors (voice + summary)',w.errors.length===0,w.errors.join(' | ').slice(0,300));await w.close();}
   // ---------- bank parser ----------
   {const {w,host}=await setup([]);
     const r=await host.evaluate(()=>{const us=parseBankText('## U1 | Test |\n# Learn\nC | What is it? | It is a cat.\n#battle:\nS | Say hello.\n# Words\ncat | cat | c/at | x');return us[0].learn.length+','+us[0].battle.length+','+us[0].words.length;});

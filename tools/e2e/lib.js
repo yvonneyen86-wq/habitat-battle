@@ -8,9 +8,9 @@ function serve(){return new Promise(res=>{const srv=http.createServer((q,r)=>{le
 const shot=async(page,name)=>{if(process.env.SHOTS){fs.mkdirSync(process.env.SHOTS,{recursive:true});await page.screenshot({path:path.join(process.env.SHOTS,name+'.png')});}};
 async function world(opts={}){
   const srv=process.env.BASE?null:await serve();const BASE=process.env.BASE||`http://127.0.0.1:${srv.address().port}/index.html`;
-  const browser=await chromium.launch();const reg=new Map();const errors=[];const all=[];
+  const browser=await chromium.launch({args:['--use-fake-device-for-media-stream','--use-fake-ui-for-media-stream']});/* fake microphone for the voice-answer tests */const reg=new Map();const errors=[];const all=[];
   async function mk(name,url,vp){
-    const ctx=await browser.newContext({viewport:vp||{width:1366,height:768},deviceScaleFactor:1});
+    const ctx=await browser.newContext({viewport:vp||{width:1366,height:768},deviceScaleFactor:1,permissions:['microphone','clipboard-read','clipboard-write']});
     await ctx.route(/cdn\.jsdelivr|cdnjs\.cloudflare|fonts\.g|drive\.google|googleusercontent/,r=>r.abort());
     await ctx.exposeBinding('__net',async({page},m)=>{
       if(m.k==='reg'){reg.set(m.id,page);return;}
