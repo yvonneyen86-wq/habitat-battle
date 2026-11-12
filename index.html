@@ -1881,6 +1881,12 @@ function renderSetup(){
   </div></div>`;
 }
 /* End game: everything back to zero (coins, levels, habitats, supplies, points) so the next game starts fresh; keep the players, or start a new class */
+/* End Battle asks once before the results screen (same pattern as End game / New class); the classroom runner's cr:end still ends it directly */
+function openEndBattle(){const b=S.battle;if(!b||S.phase!=='battle')return;if(H.busy)return toast('Wait for this round to finish, then press End Battle.');H.confirm=null;
+  const left=b.endsAt-Date.now(),nAct=Object.keys(b.acts).length,open=['question','defense'].includes(b.step);
+  $('#modal-root').innerHTML=`<div class="modal-bg"><div class="modal" role="dialog" aria-label="End battle"><h2>🏁 End the battle?</h2>
+  <ul style="margin:0;padding-left:1.2em;line-height:1.6"><li>Round ${b.round} · ${left>0?fmtTime(left)+' left on the clock':'time is up'}.</li><li>The results screen shows the winning team and the MVP.</li>${open&&nAct?`<li><b>${nAct} action${nAct===1?'':'s'}</b> in this round ${nAct===1?'is':'are'} not resolved yet. Press ⚔️ Resolve first if you want ${nAct===1?'it':'them'} to count.</li>`:''}</ul>
+  <div class="mrow"><button class="btn" data-act="m-close">Keep playing</button><button class="btn primary" data-act="eb-go">🏁 Yes, end the battle</button></div></div></div>`;}
 function openEndGame(){H.confirm=null;H.ncDraft=null;const n=Object.keys(S.players).length;
   $('#modal-root').innerHTML=`<div class="modal-bg"><div class="modal" role="dialog" aria-label="End game"><h2>🏁 End the game?</h2>
   <ul style="margin:0;padding-left:1.2em;line-height:1.6"><li>Coins, levels, habitats, supplies and 🏆 points go back to <b>zero</b>.</li><li>The next game starts fresh.</li><li>The 📊 lesson summary is cleared too — <button class="btn" data-act="sum-open">open it first</button> if you want to copy it.</li></ul>
@@ -2143,7 +2149,8 @@ function onHostClick(e){
     case 'great':greatJob(pid);if(crId(pid))crEvent('grade',{student:crId(pid),question:S.card&&S.card.ci,level:'great',points:1,auto:false});break;
     case 'start-battle':startBattle();break;
     case 'battle-min':S.battleMin=+b.dataset.n||20;changed();break;
-    case 'end-battle':H.hideResults=false;endBattle();break;
+    case 'end-battle':openEndBattle();break;
+    case 'eb-go':$('#modal-root').innerHTML='';H.hideResults=false;endBattle();break;
     case 'back-gather':backToGather();break;
     case 'ovl-hide':H.hideResults=true;renderOverlay();break;
     case 'next-round':nextRound();break;

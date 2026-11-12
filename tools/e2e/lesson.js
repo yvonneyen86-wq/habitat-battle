@@ -57,7 +57,7 @@ const hc=async(host,sel)=>host.evaluate(sel=>{const b=[...document.querySelector
     if(r===3){await shot(host,`battle-${LV}-host`);await shot(studs[1],`battle-${LV}-stu`);}
     if(await host.evaluate(()=>S.phase)!=='battle')break;
   }
-  await hc(host,'[data-act="end-battle"]');await sleep(1500);await ck('end');await shot(host,`end-${LV}-host`);await shot(studs[0],`end-${LV}-stu`);
+  await hc(host,'[data-act="end-battle"]');await sleep(200);await ck('end-battle-dialog');await hc(host,'[data-act="eb-go"]');await sleep(1500);await ck('end');await shot(host,`end-${LV}-host`);await shot(studs[0],`end-${LV}-stu`);
   console.log('end btns',(await btns(host)).slice(0,400));
   await hc(host,'[data-act="end-game"]');await sleep(300);await ck('eg-dialog');await shot(host,`eg-${LV}`);await hc(host,'[data-act="eg-go"]');await sleep(500);await ck('eg-done');
   console.log('after end game',await host.evaluate(()=>S.phase+' '+Object.values(S.players).map(p=>p.name+':'+p.coins+':lv'+p.lv+':'+p.hp).join(' ')));

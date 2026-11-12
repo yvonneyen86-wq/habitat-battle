@@ -18,7 +18,7 @@ const useUnit=async(host,lv,n)=>{await host.click('[data-act="bank"]');await hos
     for(const [i,s] of studs.entries())await send(s,{t:'act',kind:'attack',target:(i+1)%2});
     await sleep(200);await host.click('[data-act="resolve"]');await sleep(700);
     await host.click('[data-act="end-battle"]');await sleep(200);
-    T('End Battle waits for the running round',await host.evaluate(()=>S.phase)==='battle');
+    T('End Battle waits for the running round',await host.evaluate(()=>S.phase==='battle'&&!document.querySelector('.modal [data-act="eb-go"]')));
     // remove a player mid-resolve (support action queued)
     await host.waitForFunction(()=>!H.busy,null,{timeout:30000});
     T('round resolved, damage applied in battle',await host.evaluate(()=>S.phase==='battle'&&S.battle.step==='done'&&Object.values(S.players).some(p=>p.hp<10)));
@@ -134,7 +134,10 @@ const useUnit=async(host,lv,n)=>{await host.click('[data-act="bank"]');await hos
     await host.evaluate(()=>{markCorrect('p3',0);markCorrect('p3',2);});
     await host.evaluate(()=>{S.vox=false;changed();});await sleep(200);
     T('voice answers can be switched off',await studs[0].evaluate(()=>!document.querySelector('[data-sact="vox-rec"]')));
-    await host.click('[data-act="resolve"]');await host.waitForFunction(()=>!H.busy,null,{timeout:20000});await host.click('[data-act="end-battle"]');await sleep(400);
+    await host.click('[data-act="resolve"]');await host.waitForFunction(()=>!H.busy,null,{timeout:20000});await host.click('[data-act="end-battle"]');await sleep(200);
+    T('End Battle asks for confirmation first',await host.evaluate(()=>S.phase==='battle'&&!!document.querySelector('.modal [data-act="eb-go"]')));
+    await host.click('.modal [data-act="m-close"]');await sleep(100);T('Keep playing closes the dialog and the battle goes on',await host.evaluate(()=>S.phase==='battle'&&!document.querySelector('.modal')));
+    await host.click('[data-act="end-battle"]');await host.click('[data-act="eb-go"]');await sleep(400);T('Yes, end the battle shows the results',await host.evaluate(()=>S.phase==='end'&&!!S.results));
     await host.evaluate(()=>document.querySelector('#topbar [data-act="sum-open"]').click());await sleep(200);
     const rec=await host.evaluate(()=>({p1:S.rec.p1,p3:S.rec.p3}));
     T('record: Amy built 1 word, spoke once, 1 recording',rec.p1.w===1&&rec.p1.w1===1&&rec.p1.sp===1&&rec.p1.vo===1,JSON.stringify(rec.p1));
