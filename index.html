@@ -816,7 +816,9 @@ function meter(t){const c=sentenceCheck(t);const conn=CONNECTORS.test(String(t||
 const norm=t=>String(t||'').toLowerCase().replace(/[’']/g,"'").replace(/[^a-z0-9' ]+/g,' ').replace(/\s+/g,' ').trim();
 const escRe=t=>t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
 const wordHit=(text,w)=>!!w&&new RegExp('\\b'+escRe(String(w).toLowerCase().trim()),'i').test(String(text||''));
-function shuffleWords(sent){const w=String(sent).replace(/\s+/g,' ').trim().split(' ');let out=w,n=0;do{out=w.slice().sort(()=>Math.random()-.5);n++;}while(out.join(' ')===w.join(' ')&&n<12&&w.length>1);return out;}
+/* even shuffle (Fisher–Yates); never shuffle with a random sort comparator: it favours the first and last places */
+function shuf(arr){const a=arr.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+function shuffleWords(sent){const w=String(sent).replace(/\s+/g,' ').trim().split(' ');let out=w,n=0;do{out=shuf(w);n++;}while(out.join(' ')===w.join(' ')&&n<12&&w.length>1);return out;}
 function parseQ(l){const q=parseQ0(l);if(q)q.src=l;return q;}
 function parseQ0(l){let parts=l.split('|').map(x=>x.trim());const type=(parts[0]||'').toUpperCase();
   if(!QTYPES[type])return parts[0]?{type:'T',text:parts[0],model:parts[1]||''}:null;
@@ -824,12 +826,12 @@ function parseQ0(l){let parts=l.split('|').map(x=>x.trim());const type=(parts[0]
   const a=parts[1]||'',b=parts[2]||'',c=parts[3]||'';if(!a)return null;
   switch(type){
     case 'S':case 'T':case 'Z':return{type,text:a,model:b};
-    case 'B':{if(b&&a.includes(' / ')){const ch=a.split(/\s*\/\s*/).filter(Boolean);let t=ch,n=0;do{t=ch.slice().sort(()=>Math.random()-.5);n++;}while(t.join(' ')===ch.join(' ')&&n<12&&ch.length>1);return{type,text:'Put the words in order.',model:b,tiles:t};}return{type,text:'Put the words in order.',model:b||a,tiles:shuffleWords(b||a)};}
+    case 'B':{if(b&&a.includes(' / ')){const ch=a.split(/\s*\/\s*/).filter(Boolean);let t=ch,n=0;do{t=shuf(ch);n++;}while(t.join(' ')===ch.join(' ')&&n<12&&ch.length>1);return{type,text:'Put the words in order.',model:b,tiles:t};}return{type,text:'Put the words in order.',model:b||a,tiles:shuffleWords(b||a)};}
     case 'F':return{type,text:a,model:b};
     case 'W':return{type,word:a,text:b||`Make a sentence with the word "${a}".`,model:''};
     case 'P':case 'PT':return{type,pic:a,text:b||'What do you see? What is happening?',model:''};
     case 'C':return{type,text:a,opts:[b||'Yes',c||'No'],model:''};
-    case 'M':{const o=parts.slice(2).filter(Boolean).slice(0,4);if(o.length<2)return null;const opts=o.slice().sort(()=>Math.random()-.5);return{type,text:a,opts,ans:opts.indexOf(o[0]),model:o[0]};}
+    case 'M':{const o=parts.slice(2).filter(Boolean).slice(0,4);if(o.length<2)return null;const opts=shuf(o);return{type,text:a,opts,ans:opts.indexOf(o[0]),model:o[0]};}
   }return null;}
 /* multiple-choice stem: ___ shows as a blank box */
 function mcStem(t){return esc(t).replace(/_{2,}/g,'<span class="blank"></span>');}
@@ -1179,7 +1181,7 @@ const CARD_KINDS={C:['📖','Textbook'],G:['🧩','Grammar'],V:['🔤','Word · 
   function cardA(c){if(!c.a)return '';if(c.kind==='V'&&/_{2,}/.test(c.q)){return 'Answer: <b>'+esc(c.a)+'</b> — '+esc(c.q).replace(/_{2,}/g,'<b class="fill">'+esc(c.a)+'</b>');}return (c.kind?'Model answer: ':'Answer: ')+esc(c.a);}
   function gatherQs(){return lines(S.qText).map(l=>{let t=l,un=0;const m=/^\s*U(\d{1,2})\s*\|/i.exec(t);if(m){un=+m[1];t=t.slice(m[0].length);}let kind='';const km=/^\s*([CGV])\s*\|/.exec(t);if(km){kind=km[1];t=t.slice(km[0].length);}const f=t.split('|').map(x=>x.trim());const o={q:f[0]||'',a:f[1]||'',hint:kind&&kind!=='V'?(f[2]||''):''};if(!kind&&f.length>2)o.a=f.slice(1).join(' | ');o.kind=kind;o.u=un;o.src=l;return o;}).filter(x=>x.q);}
 function battleQs(){return lines(S.bText).map(parseQ).filter(Boolean);}
-function pick(listFn,orderKey,ptrKey){const qs=listFn();if(!qs.length)return null;if(!S[orderKey].length||S[ptrKey]>=S[orderKey].length||S[orderKey].length!==qs.length){S[orderKey]=qs.map((_,i)=>i).sort(()=>Math.random()-.5);S[ptrKey]=0;}return qs[S[orderKey][S[ptrKey]++]]||qs[0];}
+function pick(listFn,orderKey,ptrKey){const qs=listFn();if(!qs.length)return null;if(!S[orderKey].length||S[ptrKey]>=S[orderKey].length||S[orderKey].length!==qs.length){S[orderKey]=shuf(qs.map((_,i)=>i));S[ptrKey]=0;}return qs[S[orderKey][S[ptrKey]++]]||qs[0];}
 function skey(){return CR.inRunner&&CR.init&&CR.init.session?'habitat-cr-'+CR.init.session.id:'habitat-host';}
 function save(){store(skey(),S);}
 let bcastT=null;
@@ -1447,7 +1449,7 @@ async function resolveRound(){
   try{
   const acts=Object.entries(b.acts).filter(([pid])=>P(pid));
   if(!acts.length)log('No actions this round.');
-  const support=acts.filter(([,a])=>a.kind!=='attack'),attacks=acts.filter(([,a])=>a.kind==='attack').sort(()=>Math.random()-.5);
+  const support=acts.filter(([,a])=>a.kind!=='attack'),attacks=shuf(acts.filter(([,a])=>a.kind==='attack'));
   if(acts.length)banner('ACTION!','',teamColor(0));
   await sleep(acts.length?900:100);
   for(const[pid,a]of support){
@@ -1509,7 +1511,7 @@ function summonBoss(){
 }
 async function bossAttack(blocks){
   const b=S.battle,bo=b.boss;const alive=Object.values(S.players).filter(p=>!p.down);if(!alive.length)return;await sleep(500);
-  const targets=alive.sort(()=>Math.random()-.5).slice(0,Math.min(3,alive.length));
+  const targets=shuf(alive).slice(0,Math.min(3,alive.length));
   banner(`${bo.name} attacks!`,'','#5f3dc4');beep(120,.4,'sawtooth',.12);
   await anim($('#boss-e'),[{transform:'scale(1)'},{transform:'scale(1.35) rotate(-8deg)'},{transform:'scale(1)'}],{duration:600});
   for(const v of targets){
@@ -1553,7 +1555,7 @@ function openVote(){
   const b=S.battle;if(!b)return;const seen=new Set(),pool=[];
   for(let i=b.approved.length-1;i>=0&&pool.length<8;i--){const a=b.approved[i];if(!seen.has(a.pid)&&P(a.pid)){seen.add(a.pid);pool.push(a);}}
   if(pool.length<2)return toast('Approve at least 2 typed sentences first.');
-  b.vote={items:pool.sort(()=>Math.random()-.5).slice(0,4).map(a=>({pid:a.pid,text:a.text})),votes:{},revealed:false,winner:-1};
+  b.vote={items:shuf(pool).slice(0,4).map(a=>({pid:a.pid,text:a.text})),votes:{},revealed:false,winner:-1};
   log('🗳️ Vote for the best sentence!');changed();banner('VOTE!','Pick the best sentence on your tablet','#0c8599');
 }
 function voteCounts(){const v=S.battle.vote;const c=v.items.map(()=>0);Object.values(v.votes).forEach(i=>{if(c[i]!==undefined)c[i]++;});return c;}

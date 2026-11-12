@@ -155,6 +155,10 @@ const useUnit=async(host,lv,n)=>{await host.click('[data-act="bank"]');await hos
     T('phonics: no card asks about a picture that is not shown',ph===0,String(ph));
     const gr=await host.evaluate(()=>{const g=crGroups({teams:[{id:'group:red',name:'Red Team',color:'#F06988',members:[{id:'a',name:'Amy'}]},{id:'group:blue',name:'Blue Team',members:[{id:'b',name:'Ben'}]}]},[{id:'group:blue',name:'Blue Team'},{id:'group:red',name:'Red Team'}]);return g?g.of['group:red']+','+g.of['group:blue']+','+g.groups[0].label+','+g.groups[0].color:'null';});
     T('runner: a group listed as a student lands in its own team',gr==='0,1,Red Team,#F06988',gr);
+    const mc=await host.evaluate(()=>{const c=[0,0,0,0],f=Array(12).fill(0),N=8000;for(let i=0;i<N;i++){const q=parseQ('M | She ___ a cat. | has | have | haves | having');c[q.ans]++;f[shuf([...Array(12).keys()])[0]]++;}return {c:c.map(x=>Math.round(x/N*100)),f:f.map(x=>Math.round(x/N*100))};});
+    T('battle multiple choice: the answer is in each place about 25% of the time',mc.c.every(x=>x>=22&&x<=28),mc.c.join('/')+'%');
+    T('question order: each of 12 questions is asked first about 8% of the time',mc.f.every(x=>x>=6&&x<=11),mc.f.join(' '));
+    T('no biased sort-shuffle left in the game code',await host.evaluate(()=>!/sort\(\(\)=>Math\.random\(\)-\.5\)/.test([...document.scripts].map(x=>x.textContent).join('').split('/*3D-BUNDLE-BEGIN*/')[0])));
     const sh=await host.evaluate(()=>{const c=[0,0,0];for(let p=1;p<=24;p++)for(let q=0;q<8;q++)c[seedShuffle([0,1,2],'p'+p+q).indexOf(0)]++;return c.join('/');});
     const parts=sh.split('/').map(Number);T('option shuffle is even across students',Math.min(...parts)>40,sh);
     await w.close();}
