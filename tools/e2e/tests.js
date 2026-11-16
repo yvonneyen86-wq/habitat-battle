@@ -162,6 +162,7 @@ const useUnit=async(host,lv,n)=>{await host.click('[data-act="bank"]');await hos
     T('battle multiple choice: the answer is in each place about 25% of the time',mc.c.every(x=>x>=22&&x<=28),mc.c.join('/')+'%');
     T('question order: each of 12 questions is asked first about 8% of the time',mc.f.every(x=>x>=6&&x<=11),mc.f.join(' '));
     T('no biased sort-shuffle left in the game code',await host.evaluate(()=>!/sort\(\(\)=>Math\.random\(\)-\.5\)/.test([...document.scripts].map(x=>x.textContent).join('').split('/*3D-BUNDLE-BEGIN*/')[0])));
+    T('word voice reads at 0.75 speed',await host.evaluate(()=>/u\.rate=\.75;/.test(String(sayWord))));
     const sh=await host.evaluate(()=>{const c=[0,0,0];for(let p=1;p<=24;p++)for(let q=0;q<8;q++)c[seedShuffle([0,1,2],'p'+p+q).indexOf(0)]++;return c.join('/');});
     const parts=sh.split('/').map(Number);T('option shuffle is even across students',Math.min(...parts)>40,sh);
     await w.close();}
