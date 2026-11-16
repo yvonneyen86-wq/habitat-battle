@@ -143,3 +143,73 @@ RQ | What is the passage mainly about? | riddles written in the passive voice | 
 RQ | What is the answer to Riddle 2? | Taipei 101 | a temple | a museum | a bridge
 RQ | According to Riddle 3, how is the telephone different now? | It is carried in people's pockets. | It is used only at home. | It was invented in Japan. | It is made with rice.
 RQ | Which sentence is TRUE according to the riddles? | Sushi was invented in Japan. | Taipei 101 was opened in 1876. | Fireworks are shot from a telephone. | The riddles were written by Ms. Yvonne.
+## U5 | Passive Voice (II): All Tenses |
+# choice
+Q | The school concert ___ next Friday night. | will be held | will hold | will be hold | has been held
+Q | A new MRT station ___ in Zhubei in the next few years. | is going to be built | is going to build | is going to built | has been built
+Q | This bridge ___ in 1990, and it is still used today. | was built | has been built | will be built | is building
+Q | Phones must ___ during the test. | be turned off | turn off | turned off | be turn off
+Q | Stars can't ___ in the city because there are too many lights. | be seen | see | seen | be saw
+Q | More than 500 trees ___ along the river since last year. | have been planted | has been planted | have planted | are planted
+Q | The milk should ___ in the fridge, or it will go bad. | be kept | keeps | kept | be keep
+Q | My wallet ___! I can't find it anywhere. | has been stolen | has stolen | have been stolen | has been stole
+Q | This table is made ___ wood. You can see it easily. | of | from | for | by
+Q | Paper is made ___ trees, but it doesn't look like wood at all. | from | of | by | for
+Q | In winter, the top of Yushan is covered ___ snow. | with | of | from | for
+Q | Hsinchu is known ___ its strong wind and rice noodles. | for | with | of | from
+Q | The classroom ___ today. The painters will come tomorrow. | won't be painted | won't paint | won't be paint | hasn't painted
+Q | A: ___ this problem be solved? B: Yes, it can. | Can | Is | Has | Does
+Q | The report has ___ by Mr. Lin, so you can read it now. | been written | be written | been wrote | written
+# cloze
+T | Our School Fair Is Coming
+> Our school fair [1] next Saturday, December 12. Many things are ready now. The posters [2] by Class 901, and they are on the walls of every building.
+> Food and drinks [3] in the gym at the fair, so please bring some money. All the trash must [4] into the right bins before you leave. After a fair, the playground is usually covered [5] paper cups and bags, so let's keep it clean this year.
+K | 1 | will be held | will hold | has been held | was held
+K | 2 | have been made | has been made | have made | will be made
+K | 3 | can be bought | can buy | can be buy | can bought
+K | 4 | be put | put | puts | be putting
+K | 5 | with | of | from | for
+# reading-test
+T | A Greener Zhubei
+> Zhubei is changing fast. A new city library has been built near the river, and it was opened last month. More than 20,000 books can be borrowed there, and free English story times are held every Saturday morning.
+> More changes are coming. A new park is going to be built next to the library next year. Two hundred trees will be planted in it, and a bike path will be added along the river. Cars will not be allowed in the park.
+> People in Zhubei can help, too. Trash should be taken home after a picnic, and bottles must be put in the recycling bins. "A clean city cannot be built by the city office alone," said Ms. Lin from the city office. "It must be kept clean by everyone."
+RQ | What is the passage mainly about? | changes in Zhubei and how people can help | how to borrow books from a library | the history of the river in Zhubei | why people like to have picnics
+RQ | Which of these has already been finished? | the new city library | the new park | the bike path | the planting of two hundred trees
+RQ | What will NOT be allowed in the new park? | cars | bikes | trees | picnics
+RQ | What does Ms. Lin mean? | Everyone should help keep the city clean. | Only the city office should clean the city. | The city is already clean enough. | People should not have picnics in the park.
+## U6 | so ... that, too ... to, enough to |
+# choice
+Q | The tea is too hot ___ right now. | to drink | to drink it | drinking | drink
+Q | Kevin is ___ he can carry the heavy box by himself. | so strong that | too strong to | enough strong to | so strong to
+Q | Is your little sister old ___ to go to school? | enough | so | too | very
+Q | ___ he was tired, he finished all his homework. | Although | Because | But | So
+Q | She is ___ to watch this movie. It is for adults only. | too young | so young | young enough | enough young
+Q | My brother is ___ to drive a car. He is twenty. | old enough | enough old | too old | so old
+Q | The bag is too heavy ___ to carry. | for me | of me | to me | that I
+Q | The story was so funny ___ we all laughed. | that | to | because | enough
+Q | Do you have ___ to buy the concert ticket? | enough money | too money | so money | money too
+Q | He ran ___ that he caught the bus. | so fast | too fast | very fast | enough fast
+Q | I was sick, ___ I stayed home yesterday. | so | because | although | but
+Q | Although she is rich, ___ isn't happy. | she | but she | so she | because she
+Q | Because it rained all day, ___ stayed at home. | we | so we | but we | although we
+Q | It was so cold that we couldn't go out. = It was ___ for us to go out. | too cold | so cold | cold enough | enough cold
+Q | Amy is so tall that she can touch the ceiling. = Amy is ___ to touch the ceiling. | tall enough | too tall | so tall | enough tall
+# cloze
+T | Leo's First Race
+> My little brother Leo is seven. Last Sunday he joined his first running race. He was [1] excited that he woke up at five in the morning. Mom said he was too young [2] alone, so I ran with him.
+> [3] it was cold and windy, many people came to watch. Leo is small, but he is fast [4] to keep up with the big kids. He finished the race in twenty minutes. After the race, he was so tired [5] he fell asleep in the car.
+K | 1 | so | too | very | enough
+K | 2 | to run | running | to running | run
+K | 3 | Although | Because | So | But
+K | 4 | enough | so | too | very
+K | 5 | that | to | because | although
+# reading-test
+T | Too Small? Not Really!
+> Mina is the shortest girl in Class 902. When she wanted to join the school basketball team, some classmates laughed. "You are too short to play basketball," one boy said. Mina felt so sad that she didn't eat her lunch that day.
+> But Mina didn't give up. Although she was busy with homework, she practiced for an hour every evening. She couldn't jump high, so she learned to pass and shoot quickly. Her dad said, "You don't have to be tall. You only have to be good enough to help your team."
+> Three months later, Mina took the test for the team. She was so fast that nobody could catch her, and she got eight points. The coach smiled and said, "You are quick enough to play in our next game." Now nobody says Mina is too small.
+RQ | What is the passage mainly about? | A short girl works hard and joins the team. | A tall boy teaches Mina to play basketball. | Basketball is too hard for girls. | Mina's dad is a basketball coach.
+RQ | Why didn't Mina eat her lunch that day? | She felt very sad. | She was too busy with homework. | She wasn't hungry after practice. | Her lunch was too hot to eat.
+RQ | What did Mina do because she couldn't jump high? | She learned to pass and shoot quickly. | She stopped playing basketball. | She practiced jumping every evening. | She asked the coach for help.
+RQ | Which is TRUE about Mina? | She was fast enough to get points in the team test. | She was too slow to join the team. | She practiced only on weekends. | She gave up after three months.
