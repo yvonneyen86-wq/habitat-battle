@@ -833,6 +833,16 @@ function parseQ0(l){let parts=l.split('|').map(x=>x.trim());const type=(parts[0]
     case 'C':return{type,text:a,opts:[b||'Yes',c||'No'],model:''};
     case 'M':{const o=parts.slice(2).filter(Boolean).slice(0,4);if(o.length<2)return null;const opts=shuf(o);return{type,text:a,opts,ans:opts.indexOf(o[0]),model:o[0]};}
   }return null;}
+/* Typing questions for young classes (S.typeMode: 'auto' = easier for OD1 and Phonics, 'type' = always type, 'easy' = always tap & say):
+   T with a model → build the model answer from word tiles (the question stays on screen) · T without a model → say it
+   F → see the wrong sentence, build the correct one from tiles · W → say a sentence with the word (🎙️ can record) · PT → picture talk out loud */
+function typeEasy(){const m=S.typeMode||'auto';if(m==='easy')return true;if(m==='type')return false;return /^(OD1|OPW)/.test((S.bankSel&&S.bankSel.level)||'');}
+function easeQ(q){if(!q||!typeEasy()||!TYPED.has(q.type))return q;
+  if(q.type==='T'){const m=String(q.model||'').trim();return m.split(/\s+/).length>=3?{...q,type:'B',model:m,tiles:shuffleWords(m),eased:'T'}:{...q,type:'S',eased:'T'};}
+  if(q.type==='F'){const m=String(q.model||'').split(/\s+\/\s+/)[0].trim();if(m.split(/\s+/).length<2)return q;return {...q,type:'B',fix:q.text,text:'Fix the mistake. Build the correct sentence.',model:m,tiles:shuffleWords(m),eased:'F'};}
+  if(q.type==='W')return {...q,type:'S',text:`Say a sentence with the word "${q.word}".`,eased:'W'};
+  if(q.type==='PT')return {...q,type:'P',eased:'PT'};
+  return q;}
 /* multiple-choice stem: ___ shows as a blank box */
 function mcStem(t){return esc(t).replace(/_{2,}/g,'<span class="blank"></span>');}
 /* Junior High units: their choice + cloze items become M (multiple choice) battle questions; a cloze blank is asked inside its own sentence (other blanks filled in) */
@@ -1189,7 +1199,7 @@ function changed(){render();save();clearTimeout(bcastT);bcastT=setTimeout(broadc
 function pub(){
   const b=S.battle;let bp=null;
   if(b){const q=b.q;bp={round:b.round,step:b.step,qid:b.qid,endsIn:b.endsAt-Date.now(),
-    q:q?{type:q.type,text:q.text,word:q.word||'',pic:q.pic||'',opts:q.opts||null,tiles:q.tiles||null,ci:q.ci}:null,
+    q:q?{type:q.type,text:q.text,word:q.word||'',pic:q.pic||'',opts:q.opts||null,tiles:q.tiles||null,fix:q.fix||'',ci:q.ci}:null,
     choiceN:[0,1].map(i=>Object.values(b.choice||{}).filter(v=>v===i).length),buzz:(b.buzz||[]).slice(0,3),
     def:b.def?{teams:b.def.teams,q:b.def.q}:null,
     boss:b.boss?{name:b.boss.name,e:b.boss.e,hp:b.boss.hp,max:b.boss.max,defeated:!!b.boss.defeated}:null,
@@ -1328,7 +1338,8 @@ function rushPanel(){const R=S.rush,hist=S.rushHist||[];
   return `<h2>⚡ Practice Rush</h2><div class="panel"><small>${can?`Students practise ${esc(S.bankSel.level)} U${S.bankSel.units.join(', ')} on their own tablets: ${/^JH/.test(S.bankSel.level)?'multiple choice, cloze and reading test':'fix the mistake, build sentences, fill the blanks'}. Auto-graded; the report shows each student's weak units.`:'Pick units in 📚 Textbook first (choose several grammar units to review).'}</small>
     <div class="row">${[10,15,20].map(m=>`<button class="btn${m===15?' primary':''}" data-act="rush-start" data-min="${m}" ${can?'':'disabled'}>⚡ ${m} min</button>`).join('')}</div>
     ${last?`<div class="row"><button class="btn" data-act="rush-report" data-i="0">📊 Last report (${last.pct}%)</button>${hist.length>1?`<select id="rush-hist">${hist.map((h,i)=>`<option value="${i}">${new Date(h.at).toLocaleDateString()} ${esc(h.level)} · ${h.pct}%</option>`).join('')}</select>`:''}<button class="btn" data-act="rush-copy" data-i="0">📋 Copy</button></div>`:''}</div>`;}
-function battlePanel(){const n=battleQs().length;return `<h2>⚔️ Battle</h2><div class="panel"><div class="row"><small>Length</small>${[10,15,20,25,30].map(m=>`<button class="btn${S.battleMin===m?' primary':''}" data-act="battle-min" data-n="${m}">${m} min</button>`).join('')}</div><small>${n?`${n} battle question${n===1?'':'s'} ready${/^JH/.test((S.bankSel&&S.bankSel.level)||'')?' (multiple choice + cloze; the reading test stays in Practice Rush)':''}. Press ⚔️ Start Battle at the top.`:'No battle questions yet: pick units in 📚 Textbook.'}</small></div>`;}
+function typeModeRow(){const m=S.typeMode||'auto';return `<div class="row"><small title="Type-a-sentence, fix-the-mistake and word-bomb questions">Typing questions</small>${[['auto',`Auto${typeEasy()&&m==='auto'?' · easier':''}`],['type','⌨️ Type'],['easy','🧩 Tap & 🎤 Say']].map(([k,t])=>`<button class="btn${m===k?' primary':''}" data-act="type-mode" data-k="${k}">${t}</button>`).join('')}</div>`;}
+function battlePanel(){const n=battleQs().length;return `<h2>⚔️ Battle</h2><div class="panel"><div class="row"><small>Length</small>${[10,15,20,25,30].map(m=>`<button class="btn${S.battleMin===m?' primary':''}" data-act="battle-min" data-n="${m}">${m} min</button>`).join('')}</div>${/^JH/.test((S.bankSel&&S.bankSel.level)||'')?'':typeModeRow()}<small>${n?`${n} battle question${n===1?'':'s'} ready${/^JH/.test((S.bankSel&&S.bankSel.level)||'')?' (multiple choice + cloze; the reading test stays in Practice Rush)':''}. Press ⚔️ Start Battle at the top.`:'No battle questions yet: pick units in 📚 Textbook.'}</small></div>`;}
 function rushOverlay(o){if(S.phase!=='gather')return false;const R=S.rush;
   if(R&&R.on){const rows=Object.values(S.players).filter(p=>!p.pre).map(p=>({p,r:R.res[p.pid]||{a:0,ok:0,streak:0}})).sort((a,b)=>b.r.ok-a.r.ok);const ts=S.teams.slice(0,S.teamCount).map((t,ti)=>({t,ok:rows.filter(x=>x.p.team===ti).reduce((s,x)=>s+x.r.ok,0)}));const mx=Math.max(1,...ts.map(x=>x.ok));
     o.innerHTML=`<div class="kind">⚡ Practice Rush · ${esc(R.level)} U${R.units.map(u=>u.n).join(', ')}</div><div class="rbig" id="rush-clock2">${fmtTime(R.endsAt-Date.now())}</div>
@@ -1377,7 +1388,7 @@ function startBattle(){
 }
 async function nextRound(custom){
   const b=S.battle;if(!b||H.busy)return;
-  const q=custom||pick(battleQs,'bOrder','bPtr');if(!q)return toast('Add battle questions in Setup.');
+  const q=custom||easeQ(pick(battleQs,'bOrder','bPtr'));if(!q)return toast('Add battle questions in Setup.');
   H.busy=true;
   if(b.round>0)Object.values(S.players).forEach(p=>{p.streak=b.ok[p.pid]?(p.streak||0)+1:0;});
   q.ci=crIndex(q.src);b.round++;b.qid++;b.q=q;crStart();Object.assign(b,{ok:{},subs:{},acts:{},choice:{},buzz:[],tries:{},def:null,vote:null,spells:{}});b.tallied={};b.step='question';H.showModel=false;Object.values(S.players).forEach(p=>{if(!p.pre)recOf(p.pid).bN++;});
@@ -1726,12 +1737,13 @@ function renderStage(){
       qb.className='qbar def';qb.innerHTML=`<div class="qt"><span class="kind k-DEF">🛡️ DEFENSE CHALLENGE</span><span>${b.def.teams.map(t=>esc(teamName(t))).join(' & ')} defending</span><span class="cnt">🛡️ ${nb} block${nb===1?'':'s'}</span></div><div class="qp">${esc(b.def.q)}</div>`;}
     else if(q&&b.step!=='idle'){const nOk=Object.keys(b.ok).length,nAct=Object.keys(b.acts).length,nSub=Object.keys(b.subs).length;
       let body='';
-      if(q.type==='B')body=`<div class="qp">Put the words in order:</div><div class="tiles">${(q.tiles||[]).map(w=>`<span>${esc(w)}</span>`).join('')}</div>`;
+      if(q.type==='B')body=`${q.fix?`<div class="qp" style="font-size:2.6cqmin">Find the mistake. Build the correct sentence:</div><div class="wrong">${esc(q.fix)}</div>`:q.eased?`<div class="qp">${esc(q.text)}</div><div class="qp" style="font-size:2.4cqmin">Build the answer:</div>`:'<div class="qp">Put the words in order:</div>'}<div class="tiles">${(q.tiles||[]).map(w=>`<span>${esc(w)}</span>`).join('')}</div>`;
       else if(q.type==='F')body=`<div class="qp" style="font-size:2.6cqmin">Find the mistake and fix it:</div><div class="wrong">${esc(q.text)}</div>`;
       else if(q.type==='W')body=`<div class="bombrow"><span class="bomb">💣 ${esc(q.word)}</span><span class="qp">${esc(q.text)}</span></div>`;
       else if(q.type==='P'||q.type==='PT')body=`<div class="bombrow"><span class="pic">${esc(q.pic)}</span><span class="qp">${esc(q.text)}</span></div>`;
       else if(q.type==='C'){const n=[0,1].map(i=>Object.values(b.choice).filter(v=>v===i).length),tot=Math.max(1,n[0]+n[1]);body=`<div class="qp">${esc(q.text)}</div><div class="opts">${q.opts.map((o,i)=>`<div class="opt ${i?'b':'a'}"><i style="width:${Math.round(n[i]/tot*100)}%"></i><span>${'AB'[i]}. ${esc(o)}</span><b>${n[i]}</b></div>`).join('')}</div>`;}
       else if(q.type==='M'){const rv=H.showModel||['resolving','done'].includes(b.step);body=`<div class="qp">${mcStem(q.text)}</div><div class="opts m4">${q.opts.map((o,i)=>`<div class="opt k${i}${rv&&i===q.ans?' hit':''}${rv&&i!==q.ans?' dim':''}"><span>${'ABCD'[i]}. ${esc(o)}</span>${rv&&i===q.ans?'<b>✓</b>':''}</div>`).join('')}</div>`;}
+      else if(q.type==='S'&&q.word)body=`<div class="bombrow"><span class="bomb">💣 ${esc(q.word)}</span><span class="qp">${esc(q.text)}</span></div>`;
       else if(q.type==='Z')body=`<div class="qp">${esc(q.text)}</div><div class="buzz">${[0,1,2].map(i=>{const pp=P(b.buzz[i]);return `<span class="${pp?'on':''}">${['🥇','🥈','🥉'][i]} ${pp?charById(pp.char).e+' '+esc(pp.name):'…'}</span>`;}).join('')}</div>`;
       else body=`<div class="qp">${esc(q.text)}</div>`;
       qb.className='qbar';qb.innerHTML=`<div class="qt"><span class="kind k-${q.type}">${QTYPES[q.type]}</span><span>Round ${b.round}</span><span class="cnt">${TYPED.has(q.type)?`📝 ${nSub} sent · `:''}✓ ${nOk} correct · ⚡ ${nAct} ready</span></div>${body}${H.showModel&&q.model?`<div class="model">Model: ${esc(q.model)}</div>`:''}`;}
@@ -1784,6 +1796,7 @@ function renderConsole(){
       <div class="row"><input id="cq" placeholder="Or ask your own question…" maxlength="160"><button class="btn" data-act="ask-s" title="Speaking question">🎤</button><button class="btn" data-act="ask-t" title="Typing question">⌨️</button><button class="btn" data-act="ask-z" title="Buzzer question">🔔</button></div>
       <div class="row"><button class="btn boss-b" data-act="boss" ${bossOn()||H.busy?'disabled':''}>${bossOn()?`👹 ${esc(b.boss.name)} ❤️ ${b.boss.hp}/${b.boss.max}`:'👹 Summon Boss'}</button><button class="btn vote-b" data-act="vote-open" ${b.approved.length<2||b.vote?'disabled':''}>🗳️ Vote best sentence</button></div>
       ${q&&q.model?`<div class="row"><button class="btn" data-act="model">${H.showModel?'Hide':'Show'} model answer</button><small>${esc(q.model)}</small></div>`:''}
+      ${/^JH/.test((S.bankSel&&S.bankSel.level)||'')?'':typeModeRow()}
       <small>Ask → grade ✓ Good / ⭐ Great (×2) / 🌟 Amazing (×2 + through walls) → students choose an action → (optional 🛡️ Defense) → ⚔️ Resolve.</small>
     </div>`;
     const spl=Object.keys(b.spells).filter(pid=>P(pid));
@@ -1909,7 +1922,7 @@ function doNewClass(){if(CR.inRunner)return;const o=S,d=H.ncDraft||{scene:o.scen
   if(H.svConn||document.body.classList.contains('sv-on'))closeStudentView();
   H.conns.forEach((_,c)=>{try{c.close();}catch(e){}});H.conns.clear();
   S=newState({scene:d.scene,teamCount:d.teamCount,teams:d.teams,qText:d.qText,bText:d.bText,battleMin:d.battleMin});
-  Object.assign(S,{vox:o.vox!==false,tab3d:!!d.tab3d,ui3d:!!o.ui3d,bankSel:o.bankSel||null,ltUnits:o.ltUnits||[],ltU:o.ltU||0});
+  Object.assign(S,{typeMode:o.typeMode||'auto',vox:o.vox!==false,tab3d:!!d.tab3d,ui3d:!!o.ui3d,bankSel:o.bankSel||null,ltUnits:o.ltUnits||[],ltU:o.ltU||0});
   Object.assign(H,{confirm:null,hideResults:false,rushView:null,voter:null,showAns:false,showModel:false,ltHideText:false});
   $('#modal-root').innerHTML='';makeQR($('#qr'),220);changed();startHost();toast('New class! Students scan the new QR code.');}
 function readSetupInputs(){const d=H.setupDraft;for(let i=0;i<d.teamCount;i++){const el=$('#tn'+i);if(el)d.teams[i].name=el.value.trim()||TEAM_DEFAULT[i].name;}const q=$('#qtext');if(q)d.qText=q.value;const b=$('#btext');if(b)d.bText=b.value;}
@@ -2149,6 +2162,7 @@ function onHostClick(e){
     case 'great':greatJob(pid);if(crId(pid))crEvent('grade',{student:crId(pid),question:S.card&&S.card.ci,level:'great',points:1,auto:false});break;
     case 'start-battle':startBattle();break;
     case 'battle-min':S.battleMin=+b.dataset.n||20;changed();break;
+    case 'type-mode':S.typeMode=['auto','type','easy'].includes(b.dataset.k)?b.dataset.k:'auto';changed();toast(typeEasy()?'Typing questions: students tap words or answer out loud.':'Typing questions: students type their answers.');break;
     case 'end-battle':openEndBattle();break;
     case 'eb-go':$('#modal-root').innerHTML='';H.hideResults=false;endBattle();break;
     case 'back-gather':backToGather();break;
@@ -2493,13 +2507,13 @@ function sDock(s,me,c){
   else{
     const tag=`<div class="qtag k-${q.type}">${TAGS[q.type]} · Round ${b.round}</div>`,qp=`<div class="qp">${esc(q.text)}</div>`;
     switch(q.type){
-      case 'S':ph=tag+qp;d=todo(BT,1)+hand('Raise your hand and answer out loud!','Your teacher will give you ✓ when you answer.')+voxHTML(s.vox==='b'+b.qid?s.vox:'',my.voice);break;
+      case 'S':ph=tag+(q.word?`<div class="bomb">💣 ${esc(q.word)}</div>`:'')+qp;d=todo(BT,1)+hand('Raise your hand and answer out loud!','Your teacher will give you ✓ when you answer.')+voxHTML(s.vox==='b'+b.qid?s.vox:'',my.voice);break;
       case 'T':ph=tag+qp;d=typed();break;
       case 'P':ph=tag+`<div class="pic">${esc(q.pic)}</div>`+qp;d=todo(BT,1)+hand('Look at the picture and tell us!','Use full sentences.')+voxHTML(s.vox==='b'+b.qid?s.vox:'',my.voice);break;
       case 'PT':ph=tag+`<div class="pic">${esc(q.pic)}</div>`+qp;d=typed();break;
       case 'W':ph=tag+`<div class="bomb">💣 ${esc(q.word)}</div>`+qp;d=typed();break;
       case 'F':ph=tag+`<div class="wrong">${esc(q.text)}</div><div class="hint">Find the mistake. Fix the sentence below.</div>`;d=typed();break;
-      case 'B':{ph=tag+'<div class="qp">Put the words in order!</div>';const tiles=q.tiles||[],ord=ST.bld.order;
+      case 'B':{ph=tag+(q.fix?`<div class="wrong">${esc(q.fix)}</div><div class="hint">Find the mistake. Build the correct sentence.</div>`:q.text&&q.text!=='Put the words in order.'?`<div class="qp">${esc(q.text)}</div><div class="hint">Build your answer with the words.</div>`:'<div class="qp">Put the words in order!</div>');const tiles=q.tiles||[],ord=ST.bld.order;
         d=todo(BT,1)+`<div class="builder"><div class="bline" id="bline">${ord.length?ord.map((ti,pos)=>`<button class="tile" data-sact="tile-rm" data-i="${pos}">${esc(tiles[ti])}</button>`).join(''):'<span class="ph">Tap the words below ⬇️</span>'}</div><div class="bpool">${tiles.map((w,i)=>ord.includes(i)?'':`<button class="tile" data-sact="tile-add" data-i="${i}">${esc(w)}</button>`).join('')}</div><div class="brow"><button class="btn" data-sact="tile-reset">↺ Reset</button><button class="btn primary" data-sact="tile-check" ${ord.length<tiles.length?'disabled':''}>✓ Check</button></div></div>`;break;}
       case 'C':ph=tag+qp;
         if(my.choice<0)d=todo(BT,1)+`<div class="dock-h">Choose one!</div><div class="choose">${q.opts.map((o,i)=>`<button class="${i?'b':'a'}" data-sact="choose" data-i="${i}">${'AB'[i]}. ${esc(o)}</button>`).join('')}</div>`;

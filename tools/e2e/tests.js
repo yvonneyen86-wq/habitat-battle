@@ -150,6 +150,27 @@ const useUnit=async(host,lv,n)=>{await host.click('[data-act="bank"]');await hos
     await host.click('.modal [data-act="m-close"]');await host.evaluate(()=>document.querySelector('#topbar [data-act="end-game"]').click());await sleep(150);await host.click('[data-act="eg-go"]');await sleep(300);
     T('End game clears the lesson record',await host.evaluate(()=>Object.keys(S.rec).length===0));
     T('no page errors (voice + summary)',w.errors.length===0,w.errors.join(' | ').slice(0,300));await w.close();}
+  // ---------- typing questions made easier for young classes ----------
+  {const {w,host,studs}=await setup([['Amy'],['Ben']]);
+    await useUnit(host,'OD1',1);
+    const ez=await host.evaluate(()=>{const qs=battleQs();const pick=t=>qs.find(q=>q.type===t&&(t!=='T'||q.model));return {T:easeQ(pick('T')),F:easeQ(pick('F')),W:easeQ(pick('W')),B:easeQ(pick('B'))};});
+    T('OD1 auto: a type-a-sentence question becomes word tiles of the model answer',ez.T.type==='B'&&ez.T.eased==='T'&&ez.T.tiles.join(' ')!==''&&ez.T.text!=='Put the words in order.',JSON.stringify(ez.T).slice(0,140));
+    T('OD1 auto: fix-the-mistake shows the wrong sentence and builds the right one',ez.F.type==='B'&&!!ez.F.fix&&ez.F.model.length>0,JSON.stringify(ez.F).slice(0,140));
+    T('OD1 auto: word bomb becomes a spoken sentence with the word',ez.W.type==='S'&&!!ez.W.word,JSON.stringify(ez.W).slice(0,120));
+    T('questions that need no typing are unchanged',ez.B.type==='B'&&!ez.B.eased);
+    await host.click('[data-act="start-battle"]');await sleep(300);
+    await host.evaluate(()=>{const q=battleQs().find(q=>q.type==='T'&&q.model);nextRound(easeQ(q));});await sleep(1000);
+    T('tablet shows the question and word tiles, no keyboard',await studs[0].evaluate(()=>!!document.querySelector('[data-sact="tile-add"]')&&!document.querySelector('#ans')&&/Build your answer/.test(document.querySelector('#s-pop').textContent)));
+    const ok=await studs[0].evaluate(async()=>{const sl=ms=>new Promise(r=>setTimeout(r,ms));const model=null;const tiles=ST.s.battle.q.tiles;return tiles.length;});
+    await host.evaluate(()=>{const q=S.battle.q;const order=[];const used=new Set();q.model.split(' ').forEach(w=>{const i=q.tiles.findIndex((t,k)=>t===w&&!used.has(k));used.add(i);order.push(i);});window.__order=order;});
+    const order=await host.evaluate(()=>window.__order);
+    await studs[0].evaluate(async o=>{const sl=ms=>new Promise(r=>setTimeout(r,ms));for(const i of o){document.querySelector(`[data-sact="tile-add"][data-i="${i}"]`).click();await sl(30);}document.querySelector('[data-sact="tile-check"]').click();},order);await sleep(400);
+    T('building the model answer counts as correct',await host.evaluate(()=>!!S.battle.ok.p1),ok+' tiles');
+    await host.click('[data-act="type-mode"][data-k="type"]');await sleep(100);
+    T('teacher can switch back to typing',await host.evaluate(()=>{const q=battleQs().find(q=>q.type==='T');return easeQ(q).type==='T'&&S.typeMode==='type';}));
+    await host.click('[data-act="type-mode"][data-k="auto"]');await useUnit(host,'OD3',1);
+    T('auto leaves typing on for older levels (OD3)',await host.evaluate(()=>{const q=battleQs().find(q=>q.type==='T');return easeQ(q).type==='T';}));
+    T('no page errors (typing modes)',w.errors.length===0,w.errors.join(' | ').slice(0,300));await w.close();}
   // ---------- bank parser ----------
   {const {w,host}=await setup([]);
     const r=await host.evaluate(()=>{const us=parseBankText('## U1 | Test |\n# Learn\nC | What is it? | It is a cat.\n#battle:\nS | Say hello.\n# Words\ncat | cat | c/at | x');return us[0].learn.length+','+us[0].battle.length+','+us[0].words.length;});
