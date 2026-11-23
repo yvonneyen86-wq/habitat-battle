@@ -837,11 +837,14 @@ function parseQ0(l){let parts=l.split('|').map(x=>x.trim());const type=(parts[0]
    T with a model → build the model answer from word tiles (the question stays on screen) · T without a model → say it
    F → see the wrong sentence, build the correct one from tiles · W → say a sentence with the word (🎙️ can record) · PT → picture talk out loud */
 function typeEasy(){const m=S.typeMode||'auto';if(m==='easy')return true;if(m==='type')return false;return /^(OD1|OPW)/.test((S.bankSel&&S.bankSel.level)||'');}
+/* a question that is answered out loud must not tell students to type or write: drop a trailing "Type it." / "Type a sentence." and turn a leading Type/Write into Say (Write a question → Ask a question) */
+function sayText(t){let x=String(t||'').trim();const y=x.replace(/\s*\b(?:Type|Write)\s+(?:it|(?:a|one|two|your)\s+(?:full\s+)?(?:sentence|sentences|answer))\s*[.!]?\s*$/i,'').trim();if(y&&y!==x)x=y;
+  x=x.replace(/^(?:Type|Write)\s+a\s+question\b/i,'Ask a question').replace(/^(?:Type|Write)\b/i,'Say');return x||String(t||'');}
 function easeQ(q){if(!q||!typeEasy()||!TYPED.has(q.type))return q;
-  if(q.type==='T'){const m=String(q.model||'').trim();return m.split(/\s+/).length>=3?{...q,type:'B',model:m,tiles:shuffleWords(m),eased:'T'}:{...q,type:'S',eased:'T'};}
+  if(q.type==='T'){const m=String(q.model||'').trim();return m.split(/\s+/).length>=3?{...q,type:'B',model:m,tiles:shuffleWords(m),eased:'T'}:{...q,type:'S',text:sayText(q.text),eased:'T'};}
   if(q.type==='F'){const m=String(q.model||'').split(/\s+\/\s+/)[0].trim();if(m.split(/\s+/).length<2)return q;return {...q,type:'B',fix:q.text,text:'Fix the mistake. Build the correct sentence.',model:m,tiles:shuffleWords(m),eased:'F'};}
   if(q.type==='W')return {...q,type:'S',text:`Say a sentence with the word "${q.word}".`,eased:'W'};
-  if(q.type==='PT')return {...q,type:'P',eased:'PT'};
+  if(q.type==='PT')return {...q,type:'P',text:sayText(q.text),eased:'PT'};
   return q;}
 /* multiple-choice stem: ___ shows as a blank box */
 function mcStem(t){return esc(t).replace(/_{2,}/g,'<span class="blank"></span>');}
