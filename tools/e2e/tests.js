@@ -174,6 +174,21 @@ const useUnit=async(host,lv,n)=>{await host.click('[data-act="bank"]');await hos
     T('teacher can switch back to typing',await host.evaluate(()=>{const q=battleQs().find(q=>q.type==='T');return easeQ(q).type==='T'&&S.typeMode==='type';}));
     await host.click('[data-act="type-mode"][data-k="auto"]');await useUnit(host,'OD3',1);
     T('auto leaves typing on for older levels (OD3)',await host.evaluate(()=>{const q=battleQs().find(q=>q.type==='T');return easeQ(q).type==='T';}));
+    // Learning Time reading: type-a-sentence questions become word tiles too
+    await host.click('[data-act="end-battle"]');await sleep(200);await host.evaluate(()=>{const b=document.querySelector('[data-act="eb-go"]');if(b)b.click();});await sleep(300);
+    await host.evaluate(()=>{const b=document.querySelector('[data-act="back-gather"]');if(b)b.click();});await sleep(200);
+    await useUnit(host,'OD1',1);await host.click('[data-act="lt-cat"][data-k="reading"]');await sleep(200);
+    const ti=await host.evaluate(()=>{const u=ltUnit();const i=u.reading.qs.findIndex(q=>q.type==='T');S.lt.i=i;changed();return i;});await sleep(300);
+    T('reading (OD1): a type-a-sentence question shows word tiles, no keyboard',await studs[0].evaluate(()=>!!document.querySelector('[data-sact="lt-place"]')&&!document.querySelector('#lt-ans')));
+    await studs[1].evaluate(qi=>sSend({t:'lt',k:'rtb',i:qi,ok:true,text:'wrong words here'}),ti);await sleep(200);
+    T('reading tiles: the host checks the answer itself (a false ok is not paid)',await host.evaluate(qi=>{const pr=S.lt.prog.p2;return !pr||pr.done[qi]==null;},ti));
+    const c0=await host.evaluate(()=>S.players.p1.coins);
+    await studs[0].evaluate(async()=>{const sl=ms=>new Promise(r=>setTimeout(r,ms));const q=ST.s.lt.reading.qs[ST.s.lt.i];const words=q.model.split(' ');const used=new Set();for(const w of words){const t=ST.lt.tiles.find(t=>t.c===w&&!used.has(t.k));used.add(t.k);document.querySelector(`[data-sact="lt-place"][data-k="${t.k}"]`).click();await sl(30);}document.querySelector('[data-sact="lt-check"]').click();});await sleep(400);
+    T('reading tiles: building the model answer on the first try pays +2',await host.evaluate(([qi,c0])=>S.lt.prog.p1.done[qi]===2&&S.players.p1.coins===c0+2,[ti,c0]));
+    T('reading tiles: the tablet shows it is done',await studs[0].evaluate(()=>/Perfect/.test(document.querySelector('#s-dock').textContent)));
+    await host.click('[data-act="lt-stop"]');await useUnit(host,'OD3',1);await host.click('[data-act="lt-cat"][data-k="reading"]');await sleep(200);
+    await host.evaluate(()=>{const u=ltUnit();S.lt.i=u.reading.qs.findIndex(q=>q.type==='T');changed();});await sleep(300);
+    T('reading (OD3, Auto): students still type',await studs[0].evaluate(()=>!!document.querySelector('#lt-ans')&&!document.querySelector('[data-sact="lt-place"]')));
     T('no page errors (typing modes)',w.errors.length===0,w.errors.join(' | ').slice(0,300));await w.close();}
   // ---------- bank parser ----------
   {const {w,host}=await setup([]);
